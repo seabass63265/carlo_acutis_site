@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0F1E3C;
+  --color-navy-light: #162848;
+  --color-navy-dark: #0A1428;
+  --color-gold: #C9A96E;
+  --color-gold-light: #E8D4A0;
+  --color-gold-dark: #A8813E;
+  --color-cream: #F9F6F0;
+  --color-cream-dark: #F0EAE0;
+
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F9F6F0;
+  color: #0F1E3C;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes subtlePulse {
+  0%, 100% { opacity: 0.25; }
+  50%       { opacity: 0.55; }
+}
+
+@keyframes fadeInPage {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s cubic-bezier(0.21, 0.47, 0.32, 0.98) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+.hero-glow {
+  animation: subtlePulse 5s ease-in-out infinite;
+}
+
+.gold-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(201,169,110,0.15) 50%, transparent 60%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Typography helpers */
+.text-balance {
+  text-wrap: balance;
+}
