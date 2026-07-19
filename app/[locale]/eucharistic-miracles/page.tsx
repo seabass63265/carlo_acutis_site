@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
-import PageHero from "@/components/PageHero";
-import { Link } from "@/i18n/navigation";
+import MiraclesIntroHero from "@/components/MiraclesIntroHero";
+import MiraclesHeroClient from "@/components/MiraclesHeroClient";
 import MiraclesMapClient from "@/components/MiraclesMapClient";
 import MiraclesInfiniteGrid from "@/components/MiraclesInfiniteGrid";
 import MiracleSkiper from "@/components/MiracleSkiper";
@@ -129,18 +129,14 @@ function WorldMap() {
           {/* LEFT — heading + continent list */}
           <div>
             <AnimateIn>
-              <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                Global Reach
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={0.1}>
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-                Miracles Across the World
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold mb-5">
+                <span className="text-[#C9A96E]">Miracles </span>
+                <span className="text-navy">Across the World</span>
               </h2>
             </AnimateIn>
             <AnimateIn delay={0.15}>
-              <p className="mt-5 text-navy/55 text-lg">
-                Carlo personally researched each documented miracle, tracing physical evidence of Christ&apos;s Real Presence across six continents.
+              <p className="mt-5 text-navy/55 text-lg leading-relaxed">
+                Carlo personally researched and catalogued <strong className="text-navy/75 font-semibold">136 miracles</strong> in his original travelling exhibition. This site documents <strong className="text-navy/75 font-semibold">188</strong> — Carlo&apos;s 136 plus 52 additional miracles drawn from diocesan records, hagiographic sources, and Catholic reference archives, all cited individually on each card.
               </p>
             </AnimateIn>
 
@@ -197,6 +193,57 @@ function WorldMap() {
                 <MiraclesMapClient />
               </div>
             </AnimateIn>
+
+            {/* Sources attribution */}
+            <div className="mt-5 pt-5 border-t border-navy/8">
+              <p className="text-navy/35 text-[10px] font-semibold tracking-[0.18em] uppercase mb-3">Sources</p>
+              <div className="grid grid-cols-1 gap-2">
+                {[
+                  {
+                    label: "Carlo Acutis Exhibition",
+                    detail: "Primary source. The official miracolieucaristici.org website hosts individual PDF panels for each of Carlo's 136 documented miracles — linked directly on each card where available.",
+                    url: "https://www.miracolieucaristici.org/en/liste/list.html",
+                    primary: true,
+                  },
+                  {
+                    label: "Wikipedia",
+                    detail: "Used for the most widely documented miracles where peer-reviewed encyclopaedic articles exist — including Lanciano, Bolsena, Sokółka, Legnica, Tixtla, Akita, Knock, Wilsnack, and the Holy Chalice of Valencia.",
+                    url: "https://en.wikipedia.org",
+                    primary: false,
+                  },
+                  {
+                    label: "EWTN Catholic Library",
+                    detail: "Theological library of Eternal Word Television Network. Used for the Buenos Aires 1996 miracle, approved by then-Archbishop Jorge Bergoglio.",
+                    url: "https://www.ewtn.com",
+                    primary: false,
+                  },
+                  {
+                    label: "Perpetual Eucharistic Adoration",
+                    detail: "Catholic apostolate that documents Eucharistic phenomena worldwide. Referenced for Betania (Venezuela, 1991) and Saint-André (Réunion, 1902).",
+                    url: "https://perpetualeucharisticadoration.com",
+                    primary: false,
+                  },
+                ].map(({ label, detail, url, primary }) => (
+                  <a
+                    key={label}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-start gap-3 p-3 rounded-sm border border-navy/8 hover:border-navy/20 hover:bg-navy/[0.02] transition-all"
+                  >
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 mb-0.5">
+                        <span className="text-[11px] font-semibold text-navy/70 group-hover:text-navy transition-colors">{label}</span>
+                        {primary && (
+                          <span className="text-[8px] font-bold tracking-widest uppercase bg-gold/15 text-gold-dark px-1.5 py-0.5 rounded-sm">Primary</span>
+                        )}
+                      </div>
+                      <p className="text-[10px] text-navy/40 leading-relaxed">{detail}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
 
         </div>
@@ -219,71 +266,69 @@ function CanonizedThroughMiracles() {
     <section className="bg-[#080c18] py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
-        {/* ── Intro ── */}
-        <div className="text-center mb-20 pb-16 border-b border-white/8">
-          <AnimateIn>
-            <p className="text-gold text-[10px] tracking-[0.4em] uppercase font-semibold mb-6">
-              The Path to Sainthood
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-5xl md:text-7xl font-semibold text-white leading-[1.05]">
-              Canonized Through<br />Miracles
-            </h2>
-          </AnimateIn>
-          <AnimateIn delay={0.2}>
-            <p className="mt-8 text-white/45 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-              Throughout history, the Church has carefully investigated miracles as signs of God&apos;s presence in the lives of the saints. In the case of Carlo Acutis, two extraordinary healings were examined by medical experts, theologians, and Vatican officials before being officially recognized as miracles.
-            </p>
-          </AnimateIn>
-        </div>
-
-        {/* ── Interactive miracle selector ── */}
-        <MiracleSkiper />
-
-        {/* ── Timeline ── */}
-        <div className="my-16 py-16 border-t border-b border-white/8">
-          <AnimateIn>
-            <p className="text-center text-white/25 text-[9px] tracking-[0.4em] uppercase font-semibold mb-14">
-              Journey to Sainthood
-            </p>
-          </AnimateIn>
-          <div className="flex flex-col items-center">
-            {SAINTHOOD_TIMELINE.map((item, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <AnimateIn delay={i * 0.1}>
-                  <div className={`flex items-center gap-6 py-2 transition-opacity ${item.highlight ? "opacity-100" : "opacity-55"}`}>
-                    <div className="text-right w-16">
-                      <span className={`font-mono text-base font-bold tabular-nums ${item.highlight ? "text-gold" : "text-white/50"}`}>
-                        {item.year}
-                      </span>
-                    </div>
-                    <div className={`w-2.5 h-2.5 rounded-full border-2 flex-shrink-0 ${item.highlight ? "bg-gold border-gold shadow-[0_0_10px_rgba(201,169,110,0.5)]" : "bg-transparent border-white/25"}`} />
-                    <div className="w-56">
-                      <p className={`font-semibold text-sm ${item.highlight ? "text-white" : "text-white/50"}`}>
-                        {item.event}
-                      </p>
-                      <p className="text-white/25 text-xs mt-0.5">{item.detail}</p>
-                    </div>
-                  </div>
-                </AnimateIn>
-                {i < SAINTHOOD_TIMELINE.length - 1 && (
-                  <div className="w-px h-10 bg-gradient-to-b from-white/15 to-white/5" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ── Closing Quote ── */}
-        <AnimateIn>
-          <div className="mt-20 pt-16 border-t border-white/8 text-center">
-            <blockquote className="mb-10">
-              <p className="font-serif text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed max-w-3xl mx-auto italic">
-                &ldquo;The Church does not canonize miracles. It canonizes saints. Miracles simply reveal the extraordinary ways God continues to work through them.&rdquo;
+        {/* ── Intro + Timeline (left) / Miracle selector (right) ── */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start mb-20 pb-16 border-b border-white/8">
+          {/* Left: heading + description + timeline */}
+          <div>
+            <AnimateIn>
+              <p className="text-gold text-[10px] tracking-[0.4em] uppercase font-semibold mb-6">
+                The Path to Sainthood
               </p>
-            </blockquote>
-            <div className="w-10 h-px bg-gold/40 mx-auto mb-10" />
+            </AnimateIn>
+            <AnimateIn delay={0.1}>
+              <h2 className="font-serif text-5xl md:text-6xl font-semibold text-white leading-[1.05]">
+                Canonized Through<br />Miracles
+              </h2>
+            </AnimateIn>
+            <AnimateIn delay={0.2}>
+              <p className="mt-8 text-white/45 text-base leading-relaxed">
+                Throughout history, the Church has carefully investigated miracles as signs of God&apos;s presence in the lives of the saints. In the case of Carlo Acutis, two extraordinary healings were examined by medical experts, theologians, and Vatican officials before being officially recognized as miracles.
+              </p>
+            </AnimateIn>
+
+            {/* Timeline */}
+            <div className="mt-14">
+              <AnimateIn delay={0.25}>
+                <p className="text-white/25 text-[9px] tracking-[0.4em] uppercase font-semibold mb-10">
+                  Journey to Sainthood
+                </p>
+              </AnimateIn>
+              <div className="flex flex-col">
+                {SAINTHOOD_TIMELINE.map((item, i) => (
+                  <div key={i} className="flex flex-col">
+                    <AnimateIn delay={0.3 + i * 0.1}>
+                      <div className={`flex items-center gap-6 py-2 transition-opacity ${item.highlight ? "opacity-100" : "opacity-55"}`}>
+                        <div className="text-right w-16 shrink-0">
+                          <span className={`font-mono text-base font-bold tabular-nums ${item.highlight ? "text-gold" : "text-white/50"}`}>
+                            {item.year}
+                          </span>
+                        </div>
+                        <div className={`w-2.5 h-2.5 rounded-full border-2 shrink-0 ${item.highlight ? "bg-gold border-gold shadow-[0_0_10px_rgba(201,169,110,0.5)]" : "bg-transparent border-white/25"}`} />
+                        <div>
+                          <p className={`font-semibold text-sm ${item.highlight ? "text-white" : "text-white/50"}`}>
+                            {item.event}
+                          </p>
+                          <p className="text-white/25 text-xs mt-0.5">{item.detail}</p>
+                        </div>
+                      </div>
+                    </AnimateIn>
+                    {i < SAINTHOOD_TIMELINE.length - 1 && (
+                      <div className="ml-[94px] w-px h-8 bg-gradient-to-b from-white/15 to-white/5" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Right: interactive miracle selector */}
+          <AnimateIn delay={0.15} direction="right">
+            <MiracleSkiper />
+          </AnimateIn>
+        </div>
+
+        <AnimateIn>
+          <div className="mt-8 text-center">
             <p className="text-white text-base md:text-lg font-semibold tracking-wide">
               On April 27, 2025, Carlo Acutis was officially declared<br className="hidden md:block" /> a Saint of the Catholic Church.
             </p>
@@ -295,77 +340,21 @@ function CanonizedThroughMiracles() {
   );
 }
 
-/* ─── Educational Resources ──────────────────────────────────────────── */
-function EducationalResources() {
-  return (
-    <section className="py-24 px-6 bg-navy-dark">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <AnimateIn>
-            <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Resources
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white">
-              For Parishes &amp; Schools
-            </h2>
-          </AnimateIn>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Video Presentation",
-              description:
-                "A professionally produced 20-minute documentary suitable for youth groups, RCIA, and adult faith formation.",
-              action: "Request Access",
-            },
-            {
-              title: "Travelling Exhibition",
-              description:
-                "Carlo's original 136-miracle travelling exhibition, available as printed panels or a downloadable digital format.",
-              action: "Book the Exhibition",
-            },
-            {
-              title: "Lesson Plans",
-              description:
-                "Downloadable curriculum packs for middle school, high school, and college students on the Eucharist and Carlo's work.",
-              action: "Download Free",
-            },
-          ].map(({ title, description, action }, i) => (
-            <AnimateIn key={title} delay={i * 0.1}>
-              <div className="border border-white/10 rounded-sm p-8 hover:border-gold/30 hover:bg-white/[0.03] transition-all duration-300">
-                <h3 className="font-serif text-xl text-white font-semibold mb-4">{title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed mb-6">{description}</p>
-                <Link
-                  href="/contact"
-                  className="inline-block text-gold text-xs font-semibold tracking-wide hover:text-gold-light transition-colors"
-                >
-                  {action} →
-                </Link>
-              </div>
-            </AnimateIn>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+
 
 export default function EucharisticMiraclesPage() {
   return (
     <>
-      <PageHero
+      <MiraclesIntroHero />
+      <MiraclesHeroClient
         eyebrow="The Eucharistic Miracles Exhibition"
         title={`${miracles.length} Miracles. One Message.`}
-        crowdCanvas
       />
       <Intro />
       <WorldMap />
       <MiraclesInfiniteGrid />
       <CanonizedThroughMiracles />
-      <EducationalResources />
     </>
   );
 }

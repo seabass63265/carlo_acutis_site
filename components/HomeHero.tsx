@@ -1,6 +1,6 @@
 "use client";
 
-import { Globe, Heart, Share2, Send } from "lucide-react";
+import { FiFacebook, FiInstagram, FiMail, FiLinkedin } from "react-icons/fi";
 import { MinimalistHero } from "@/components/ui/minimalist-hero";
 
 export default function HomeHero() {
@@ -19,10 +19,10 @@ export default function HomeHero() {
       imageAlt="St. Carlo Acutis"
       overlayText={{ part1: "Born", part2: ["Original.", "Holy.", "Beloved.", "Chosen.", "Called.", "Eternal."] }}
       socialLinks={[
-        { icon: Globe, href: "#" },
-        { icon: Heart, href: "#" },
-        { icon: Share2, href: "#" },
-        { icon: Send, href: "/contact" },
+        { icon: FiFacebook, href: "#" },
+        { icon: FiInstagram, href: "#" },
+        { icon: FiMail, href: "/contact" },
+        { icon: FiLinkedin, href: "#" },
       ]}
       locationText="Friends of St. Carlo Acutis Foundation"
     />

@@ -8,6 +8,28 @@ import AnimateIn from "@/components/AnimateIn";
 
 gsap.registerPlugin(Observer);
 
+function sourceLabel(url: string): { label: string; badge: "PDF" | "Wiki" | "Web" } {
+  if (url.includes("/en/download/") && url.endsWith(".pdf"))
+    return { label: "Carlo Acutis Exhibition — individual panel", badge: "PDF" };
+  if (url.includes("miracolieucaristici.org"))
+    return { label: "Carlo Acutis Eucharistic Miracles Exhibition", badge: "Web" };
+  if (url.includes("wikipedia.org/wiki/")) {
+    const slug = url.split("/wiki/")[1] ?? "";
+    return { label: `Wikipedia — ${decodeURIComponent(slug).replace(/_/g, " ")}`, badge: "Wiki" };
+  }
+  if (url.includes("ewtn.com"))
+    return { label: "EWTN — Catholic Library", badge: "Web" };
+  if (url.includes("perpetualeucharisticadoration.com"))
+    return { label: "Perpetual Eucharistic Adoration", badge: "Web" };
+  if (url.includes("magiscenter.com"))
+    return { label: "Magis Center", badge: "Web" };
+  try {
+    return { label: new URL(url).hostname.replace("www.", ""), badge: "Web" };
+  } catch {
+    return { label: url, badge: "Web" };
+  }
+}
+
 export default function MiraclesInfiniteGrid() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -53,11 +75,32 @@ export default function MiraclesInfiniteGrid() {
 
     let incrX = 0;
     let incrY = 0;
+    let lastInteraction = Date.now();
+    let isAutoScrolling = false;
+
+    const AUTO_DELAY = 3000;
+    const AUTO_SPEED = 0.4;
+
+    const ticker = gsap.ticker.add(() => {
+      const idle = Date.now() - lastInteraction > AUTO_DELAY;
+      if (idle && !isAutoScrolling) isAutoScrolling = true;
+      if (!idle && isAutoScrolling) isAutoScrolling = false;
+      if (isAutoScrolling) {
+        incrX -= AUTO_SPEED;
+        incrY -= AUTO_SPEED * 0.55;
+        xTo(incrX);
+        yTo(incrY);
+      }
+    });
+
+    const resetIdle = () => { lastInteraction = Date.now(); };
+    idleResetRef.current = resetIdle;
 
     const observer = Observer.create({
       target: section,
       type: "wheel,touch,pointer",
       onChangeX: (self) => {
+        resetIdle();
         const delta =
           self.event.type === "wheel" ? -self.deltaX : self.deltaX * 2;
         if (self.event.type !== "wheel")
@@ -66,6 +109,7 @@ export default function MiraclesInfiniteGrid() {
         xTo(incrX);
       },
       onChangeY: (self) => {
+        resetIdle();
         const delta =
           self.event.type === "wheel" ? -self.deltaY : self.deltaY * 2;
         if (self.event.type !== "wheel")
@@ -77,11 +121,15 @@ export default function MiraclesInfiniteGrid() {
 
     return () => {
       observer.kill();
+      gsap.ticker.remove(ticker);
     };
   }, [filterCountry]);
 
+  const idleResetRef = useRef<(() => void) | null>(null);
+
   const handlePointerDown = () => {
     pointerRef.current.totalMoved = 0;
+    idleResetRef.current?.();
   };
 
   const handleCardClick = (miracle: Miracle) => {
@@ -95,9 +143,9 @@ export default function MiraclesInfiniteGrid() {
 
   const renderCards = (setKey: string) => (
     <div
-      className="grid p-6"
+      className="grid p-4"
       style={{
-        gap: "10px",
+        gap: "8px",
         gridTemplateColumns: "repeat(11, 152px)",
       }}
       aria-hidden={setKey !== "orig" ? true : undefined}
@@ -109,16 +157,27 @@ export default function MiraclesInfiniteGrid() {
           onPointerDown={handlePointerDown}
           onClick={() => handleCardClick(miracle)}
         >
-          <div className="border border-navy/10 rounded-sm p-3 bg-white hover:border-gold/50 hover:bg-cream transition-all duration-150 group h-full">
-            <p className="text-gold-dark font-semibold text-[10px] tracking-wide leading-none mb-1.5">
+          <div className="relative overflow-hidden rounded-sm group" style={{ height: 196 }}>
+            {miracle.image ? (
+              <img
+                src={miracle.image}
+                alt={miracle.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center">
+                <span className="text-white/10 text-4xl font-serif font-bold">{miracle.location[0]}</span>
+              </div>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
+            <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
               {miracle.year}
             </p>
-            <p className="text-navy font-semibold text-xs leading-snug group-hover:text-navy-light transition-colors">
-              {miracle.location}
-            </p>
-            <p className="text-navy/40 text-[9px] mt-0.5 leading-none">
-              {miracle.country}
-            </p>
+            <div className="absolute bottom-2 left-2 right-2">
+              <p className="text-white font-semibold text-[10px] leading-snug drop-shadow-sm">{miracle.location}</p>
+              <p className="text-white/55 text-[8px] mt-0.5 leading-none">{miracle.country}</p>
+            </div>
           </div>
         </div>
       ))}
@@ -127,29 +186,21 @@ export default function MiraclesInfiniteGrid() {
 
   return (
     <>
-      <section id="miracles-grid" className="pt-12 pb-8 px-6 bg-cream">
+      <section id="miracles-grid" className="pt-12 pb-8 px-6" style={{ background: "#0d0d0d" }}>
         <div className="max-w-7xl mx-auto">
           {filterCountry ? (
             /* Immediate render — no scroll-in animation when user actively filtered */
             <>
-              <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                The Complete Exhibition
-              </p>
-              <div className="flex flex-wrap items-baseline gap-3 mb-2">
-                <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-                  {displayedMiracles.length} Miracle{displayedMiracles.length !== 1 ? "s" : ""}
-                </h2>
-                <span className="font-serif text-2xl md:text-3xl text-navy/50">
-                  from {filterCountry}
-                </span>
-              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#C9A96E] mb-5">
+                The Complete Exhibition — {displayedMiracles.length} Miracle{displayedMiracles.length !== 1 ? "s" : ""} from {filterCountry}
+              </h2>
               <button
                 onClick={() => setFilterCountry(null)}
-                className="mt-3 mb-4 inline-flex items-center gap-2 text-xs font-semibold text-gold-dark border border-gold/30 hover:border-gold hover:bg-gold/5 rounded-sm px-3 py-1.5 transition-all"
+                className="mb-4 inline-flex items-center gap-2 text-xs font-semibold text-[#C9A96E] border border-[#C9A96E]/30 hover:border-[#C9A96E] hover:bg-[#C9A96E]/5 rounded-sm px-3 py-1.5 transition-all"
               >
                 ← View all {miracles.length} miracles
               </button>
-              <p className="text-navy/55 text-lg max-w-xl">
+              <p className="text-white/50 text-lg max-w-xl">
                 {displayedMiracles.length} documented miracle{displayedMiracles.length !== 1 ? "s" : ""} from {filterCountry}. Click any card to read more.
               </p>
             </>
@@ -157,17 +208,12 @@ export default function MiraclesInfiniteGrid() {
             /* Scroll-in animations for the initial unfiltered view */
             <>
               <AnimateIn>
-                <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                  The Complete Exhibition
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.1}>
-                <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy mb-2">
-                  {miracles.length} Miracles
+                <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#C9A96E] mb-5">
+                  The Complete Exhibition — {miracles.length} Miracles
                 </h2>
               </AnimateIn>
-              <AnimateIn delay={0.15}>
-                <p className="mt-4 text-navy/55 text-lg max-w-xl">
+              <AnimateIn delay={0.1}>
+                <p className="text-white/50 text-lg max-w-xl">
                   Pan or scroll to explore every miracle Carlo documented. Click any card to learn more.
                 </p>
               </AnimateIn>
@@ -178,27 +224,35 @@ export default function MiraclesInfiniteGrid() {
 
       {filterCountry ? (
         /* Static grid for filtered results */
-        <div className="bg-cream pt-6 pb-24 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <div className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
+          <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
             {displayedMiracles.map((miracle) => (
               <div
                 key={miracle.id}
                 className="cursor-pointer"
                 onClick={() => setSelected(miracle)}
               >
-                <div className="border border-navy/10 rounded-sm p-4 bg-white hover:border-gold/50 hover:bg-cream transition-all duration-150 group">
-                  <p className="text-gold-dark font-semibold text-[10px] tracking-wide leading-none mb-1.5">
+                <div className="relative overflow-hidden rounded-sm group" style={{ aspectRatio: "3/4" }}>
+                  {miracle.image ? (
+                    <img
+                      src={miracle.image}
+                      alt={miracle.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center">
+                      <span className="text-white/10 text-5xl font-serif font-bold">{miracle.location[0]}</span>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
+                  <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
                     {miracle.year}
                   </p>
-                  <p className="text-navy font-semibold text-sm leading-snug group-hover:text-navy-light transition-colors mb-1">
-                    {miracle.location}
-                  </p>
-                  <p className="text-navy/40 text-[10px] leading-none mb-2">
-                    {miracle.country}
-                  </p>
-                  <p className="text-navy/50 text-[10px] leading-relaxed line-clamp-2">
-                    {miracle.title}
-                  </p>
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <p className="text-white font-semibold text-xs leading-snug drop-shadow-sm">{miracle.location}</p>
+                    <p className="text-white/55 text-[10px] mt-0.5 leading-none">{miracle.country}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -208,7 +262,8 @@ export default function MiraclesInfiniteGrid() {
         /* Infinite scroll grid */
         <div
           ref={sectionRef}
-          className="relative h-[52vh] overflow-hidden bg-cream cursor-grab active:cursor-grabbing pb-24"
+          className="relative h-[75vh] overflow-hidden cursor-grab active:cursor-grabbing pb-24"
+          style={{ background: "#0d0d0d" }}
         >
           <div
             ref={containerRef}
@@ -218,6 +273,10 @@ export default function MiraclesInfiniteGrid() {
             {renderCards("dup1")}
             {renderCards("dup2")}
             {renderCards("dup3")}
+            {renderCards("dup4")}
+            {renderCards("dup5")}
+            {renderCards("dup6")}
+            {renderCards("dup7")}
           </div>
 
           {/* Edge vignette */}
@@ -225,7 +284,7 @@ export default function MiraclesInfiniteGrid() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "radial-gradient(ellipse 90% 90% at 50% 50%, transparent 40%, #f5f0e8 100%)",
+                "radial-gradient(ellipse 90% 90% at 50% 50%, transparent 40%, #0d0d0d 100%)",
             }}
           />
         </div>
@@ -238,9 +297,19 @@ export default function MiraclesInfiniteGrid() {
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-white rounded-sm max-w-lg w-full p-8 shadow-2xl"
+            className="bg-white rounded-sm max-w-lg w-full shadow-2xl overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
+            {selected.image && (
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={selected.image}
+                  alt={selected.title}
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+            )}
+            <div className="p-8">
             <div className="flex items-start justify-between gap-4 mb-5">
               <div>
                 <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">
@@ -265,23 +334,34 @@ export default function MiraclesInfiniteGrid() {
             </p>
             {selected.sources && selected.sources.length > 0 && (
               <div className="mt-5 pt-4 border-t border-cream-dark">
-                <p className="text-navy/35 text-[9px] font-semibold tracking-[0.2em] uppercase mb-2">Sources</p>
-                <ul className="space-y-1">
-                  {selected.sources.map((url) => (
-                    <li key={url}>
-                      <a
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gold-dark hover:text-gold text-[10px] underline underline-offset-2 break-all transition-colors"
-                      >
-                        {url}
-                      </a>
-                    </li>
-                  ))}
+                <p className="text-navy/35 text-[9px] font-semibold tracking-[0.2em] uppercase mb-2.5">Sources</p>
+                <ul className="space-y-2">
+                  {selected.sources.map((url) => {
+                    const { label, badge } = sourceLabel(url);
+                    return (
+                      <li key={url}>
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex items-start gap-2 hover:opacity-80 transition-opacity"
+                        >
+                          <span className={`mt-0.5 shrink-0 text-[8px] font-bold tracking-widest uppercase px-1.5 py-0.5 rounded-sm ${
+                            badge === "PDF"  ? "bg-gold/15 text-gold-dark" :
+                            badge === "Wiki" ? "bg-navy/8 text-navy/50" :
+                                              "bg-navy/6 text-navy/40"
+                          }`}>{badge}</span>
+                          <span className="text-[11px] text-navy/60 group-hover:text-navy/80 leading-snug transition-colors underline underline-offset-2 decoration-navy/20">
+                            {label}
+                          </span>
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
+            </div>
           </div>
         </div>
       )}

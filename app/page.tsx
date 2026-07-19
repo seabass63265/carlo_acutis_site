@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Preloader from "@/components/Preloader";
 
 const LOCALES = [
   { code: "en", label: "English",   native: "English"    },
@@ -58,6 +59,7 @@ const cardVariants = {
 export default function SplashPage() {
   const router = useRouter();
   const [ready, setReady] = useState(false);
+  const [preloaderDone, setPreloaderDone] = useState(false);
   const [videoLocale, setVideoLocale] = useState<string | null>(null);
   const [fadeToBlack, setFadeToBlack] = useState(false);
 
@@ -106,6 +108,11 @@ export default function SplashPage() {
         />
       ))}
 
+      {/* ── Preloader — plays once before the language screen is revealed ── */}
+      {ready && !preloaderDone && (
+        <Preloader onComplete={() => setPreloaderDone(true)} />
+      )}
+
       {/* ── Intro video overlay ── */}
       <AnimatePresence>
         {videoLocale && (
@@ -137,7 +144,7 @@ export default function SplashPage() {
       </AnimatePresence>
 
       {/* ── Logo — top right on mobile, bottom right on desktop ── */}
-      {ready && (
+      {ready && preloaderDone && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -147,10 +154,8 @@ export default function SplashPage() {
           <motion.div
             animate={{ scale: [1, 1.03, 1] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative rounded-full overflow-hidden"
+            className="relative rounded-full overflow-hidden w-[150px] h-[150px] md:w-[100px] md:h-[100px]"
             style={{
-              width: 100,
-              height: 100,
               boxShadow:
                 "0 0 0 1px rgba(201,169,110,0.35), 0 0 0 5px rgba(201,169,110,0.08), 0 0 0 6px rgba(201,169,110,0.18), 0 8px 40px rgba(0,0,0,0.55), 0 0 60px rgba(201,169,110,0.18)",
             }}
@@ -158,9 +163,9 @@ export default function SplashPage() {
             <Image
               src="/FoC Logo w Halo.png"
               alt="Friends of Carlo Acutis"
-              width={100}
-              height={100}
-              className="object-cover"
+              width={150}
+              height={150}
+              className="w-full h-full object-cover"
               priority
             />
           </motion.div>
@@ -168,9 +173,9 @@ export default function SplashPage() {
       )}
 
       {/* ── Main content — bottom left ── */}
-      {ready && (
+      {ready && preloaderDone && (
         <motion.div
-          className="absolute bottom-8 left-4 md:left-20 z-10 flex flex-col items-start"
+          className="absolute bottom-3 left-4 md:bottom-8 md:left-20 z-10 flex flex-col items-start"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -185,7 +190,7 @@ export default function SplashPage() {
           </motion.p>
 
           {/* Language pills */}
-          <div className="grid grid-cols-2 md:flex md:flex-wrap gap-1.5 md:gap-2">
+          <div className="grid grid-cols-3 md:flex md:flex-wrap gap-1.5 md:gap-2">
             {LOCALES.map((locale, i) => (
               <motion.button
                 key={locale.code}

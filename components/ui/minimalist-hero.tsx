@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ComponentType } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+type IconComponent = ComponentType<{ className?: string }>;
 
 interface MinimalistHeroProps {
   logoText: string;
@@ -13,7 +14,7 @@ interface MinimalistHeroProps {
   imageSrc: string;
   imageAlt: string;
   overlayText: { part1: string; part2: string | string[] };
-  socialLinks: { icon: LucideIcon; href: string }[];
+  socialLinks: { icon: IconComponent; href: string }[];
   locationText: string;
   className?: string;
   circleSrc?: string;
@@ -25,7 +26,7 @@ interface MinimalistHeroProps {
   footerText?: string;
 }
 
-const SocialIcon = ({ href, icon: Icon }: { href: string; icon: LucideIcon }) => (
+const SocialIcon = ({ href, icon: Icon }: { href: string; icon: IconComponent }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="text-foreground/60 transition-colors hover:text-foreground">
     <Icon className="h-5 w-5" />
   </a>

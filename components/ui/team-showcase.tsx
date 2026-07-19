@@ -8,6 +8,8 @@ export interface TeamMember {
   name: string;
   role: string;
   image: string;
+  /** Overrides which photo column this member's photo appears in (1-3). Defaults to a round-robin based on list order. */
+  column?: 1 | 2 | 3;
   social?: {
     twitter?: string;
     linkedin?: string;
@@ -23,14 +25,15 @@ interface TeamShowcaseProps {
 export default function TeamShowcase({ members }: TeamShowcaseProps) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
-  const col1 = members.filter((_, i) => i % 3 === 0);
-  const col2 = members.filter((_, i) => i % 3 === 1);
-  const col3 = members.filter((_, i) => i % 3 === 2);
+  const columnOf = (m: TeamMember, i: number) => m.column ?? ((i % 3) + 1);
+  const col1 = members.filter((m, i) => columnOf(m, i) === 1);
+  const col2 = members.filter((m, i) => columnOf(m, i) === 2);
+  const col3 = members.filter((m, i) => columnOf(m, i) === 3);
 
   return (
     <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16 lg:gap-24 select-none w-full max-w-7xl mx-auto py-10 px-4 md:px-8 font-sans">
       {/* Photo grid */}
-      <div className="flex gap-3 md:gap-4 flex-shrink-0 overflow-x-auto pb-1 md:pb-0">
+      <div className="flex gap-3 md:gap-4 flex-shrink-0 overflow-x-auto pb-1 md:pb-0 w-full md:w-auto">
         <div className="flex flex-col gap-3 md:gap-4">
           {col1.map((member) => (
             <PhotoCard

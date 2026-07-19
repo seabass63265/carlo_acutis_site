@@ -22,6 +22,11 @@ type NavTheme = {
   linkText: string;
   linkHover: string;
   divider: string;
+  /** Optional overrides applied once the header goes solid (scrolled/mobile open). Falls back to the base colors above when omitted. */
+  scrollLogoText?: string;
+  scrollLinkText?: string;
+  scrollLinkHover?: string;
+  scrollDivider?: string;
 };
 
 const PAGE_THEMES: Record<string, NavTheme> = {
@@ -44,13 +49,17 @@ const PAGE_THEMES: Record<string, NavTheme> = {
     divider: "border-white/10",
   },
   "/carlo": {
-    bg: "bg-[#EFE5D6]",
+    bg: "bg-transparent",
     scrollBg: "bg-[#EFE5D6]/95 backdrop-blur-sm",
     mobileBg: "bg-[#EFE5D6]",
-    logoText: "text-[#222222]",
-    linkText: "text-[#222222]/50",
-    linkHover: "hover:text-[#222222]",
-    divider: "border-[#222222]/10",
+    logoText: "text-[#F5F0E6]",
+    linkText: "text-[#F5F0E6]/60",
+    linkHover: "hover:text-[#F5F0E6]",
+    divider: "border-white/10",
+    scrollLogoText: "text-[#222222]",
+    scrollLinkText: "text-[#222222]/50",
+    scrollLinkHover: "hover:text-[#222222]",
+    scrollDivider: "border-[#222222]/10",
   },
   "/eucharistic-miracles": {
     bg: "bg-navy-dark",
@@ -105,13 +114,6 @@ function LanguageSwitcher({ theme }: { theme: NavTheme }) {
   );
 }
 
-const navLinks = [
-  { href: "/about", label: "About Us" },
-  { href: "/carlo", label: "Carlo's Story" },
-  { href: "/eucharistic-miracles", label: "Miracles" },
-  { href: "/contact", label: "Contact" },
-];
-
 function CrossIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,7 +131,7 @@ export default function Navbar() {
   const router = useRouter();
   const { trigger: wipeTo } = useGridWipe();
 
-  const theme = PAGE_THEMES[pathname as keyof typeof PAGE_THEMES] ?? PAGE_THEMES["/about"];
+  const rawTheme = PAGE_THEMES[pathname as keyof typeof PAGE_THEMES] ?? PAGE_THEMES["/about"];
 
   function handleCarloClick(e: React.MouseEvent) {
     e.preventDefault();
@@ -179,6 +181,16 @@ export default function Navbar() {
 
   const solid = scrolled || mobileOpen;
 
+  const theme: NavTheme = solid
+    ? {
+        ...rawTheme,
+        logoText: rawTheme.scrollLogoText ?? rawTheme.logoText,
+        linkText: rawTheme.scrollLinkText ?? rawTheme.linkText,
+        linkHover: rawTheme.scrollLinkHover ?? rawTheme.linkHover,
+        divider: rawTheme.scrollDivider ?? rawTheme.divider,
+      }
+    : rawTheme;
+
   return (
     <>
     {/* ── Carlo intro video overlay ── */}
@@ -214,18 +226,19 @@ export default function Navbar() {
         solid ? theme.scrollBg : theme.bg
       }`}
     >
-      <div className="w-full px-10 lg:px-14 flex items-center justify-between h-[88px]">
+      <div className="w-full px-5 lg:px-14 flex items-center justify-between h-16 lg:h-[88px]">
 
         {/* ── Logo ── */}
-        <Link href="/" className="flex items-center gap-3.5 group shrink-0">
+        <Link href="/" className="flex items-center gap-3 lg:gap-3.5 group shrink-0">
           <span className="text-gold transition-transform duration-300 group-hover:scale-110">
             <CrossIcon />
           </span>
           <div className="leading-none">
-            <p className={`font-serif text-[13px] font-semibold tracking-wide transition-colors duration-500 ${theme.logoText}`}>
-              Friends of St. Carlo Acutis
+            <p className={`font-serif font-semibold tracking-wide transition-colors duration-500 text-[11px] lg:text-[13px] ${theme.logoText}`}>
+              <span className="hidden lg:inline">Friends of St. Carlo Acutis</span>
+              <span className="lg:hidden">St. Carlo Acutis</span>
             </p>
-            <p className="text-gold text-[9px] font-sans tracking-[0.28em] uppercase mt-[3px]">
+            <p className="text-gold text-[8px] lg:text-[9px] font-sans tracking-[0.28em] uppercase mt-[3px]">
               Foundation
             </p>
           </div>
@@ -287,10 +300,10 @@ export default function Navbar() {
           className={`lg:hidden p-2 -mr-2 transition-colors duration-500 ${theme.logoText}`}
           aria-label="Toggle navigation menu"
         >
-          <div className="w-6 flex flex-col gap-[5px]">
-            <span className={`block h-[1.5px] bg-current rounded-full transition-all duration-300 origin-center ${mobileOpen ? "rotate-45 translate-y-[6.5px]" : ""}`} />
-            <span className={`block h-[1.5px] bg-current rounded-full transition-all duration-300 ${mobileOpen ? "opacity-0 scale-x-0" : ""}`} />
-            <span className={`block h-[1.5px] bg-current rounded-full transition-all duration-300 origin-center ${mobileOpen ? "-rotate-45 -translate-y-[6.5px]" : ""}`} />
+          <div className="relative w-5 h-[14px]">
+            <span className={`absolute inset-x-0 h-[2px] bg-current rounded-full transition-all duration-300 ${mobileOpen ? "top-[6px] rotate-45" : "top-0"}`} />
+            <span className={`absolute inset-x-0 h-[2px] bg-current rounded-full top-[6px] transition-all duration-300 ${mobileOpen ? "opacity-0 scale-x-0" : ""}`} />
+            <span className={`absolute inset-x-0 h-[2px] bg-current rounded-full transition-all duration-300 ${mobileOpen ? "top-[6px] -rotate-45" : "top-[12px]"}`} />
           </div>
         </button>
       </div>

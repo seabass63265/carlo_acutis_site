@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
-import AboutEditorial from "@/components/AboutEditorial";
+import AboutHero from "@/components/AboutHero";
+import ScrollWaveGallery from "@/components/ScrollWaveGallery";
+import AboutScrollTypography from "@/components/AboutScrollTypography";
 import TeamShowcase, { type TeamMember } from "@/components/ui/team-showcase";
 
 export const metadata: Metadata = {
@@ -8,159 +10,6 @@ export const metadata: Metadata = {
   description:
     "Learn about the Friends of St. Carlo Acutis Foundation — our story, board of directors, and governance.",
 };
-
-/* ─── Foundation Story ───────────────────────────────────────────────── */
-function FoundationStory() {
-  return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <div>
-            <AnimateIn>
-              <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                Our Story
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={0.1}>
-              <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-navy leading-tight mb-8">
-                Born from a Conviction That Faith and Technology Belong Together
-              </h2>
-            </AnimateIn>
-            <AnimateIn delay={0.15}>
-              <p className="text-navy/65 text-lg leading-relaxed mb-6">
-                The Friends of St. Carlo Acutis Foundation was established by a
-                group of Catholics who saw in Carlo Acutis something extraordinary:
-                a teenager who had discovered that the same tools young people use
-                for entertainment and communication could also be used to lead
-                souls to God.
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={0.2}>
-              <p className="text-navy/65 text-lg leading-relaxed mb-6">
-                As the world recognized Carlo through beatification in 2020 and
-                canonization in 2025, we saw an urgent need: to channel the
-                enthusiasm surrounding Carlo&apos;s story into lasting, mission-driven
-                programs that inspire the next generation of digital disciples.
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={0.25}>
-              <p className="text-navy/65 text-lg leading-relaxed">
-                We believe the Church is not behind the times. She simply needs
-                saints — like Carlo — to show the way.
-              </p>
-            </AnimateIn>
-          </div>
-
-          {/* Values */}
-          <div className="space-y-6">
-            {[
-              {
-                title: "Mission",
-                body: "To inspire a new generation of Catholics to use technology, creativity, and digital media as instruments of evangelization, following the example of St. Carlo Acutis.",
-              },
-              {
-                title: "Vision",
-                body: "A world where young Catholics see their gifts — including technological ones — as vocations in service to the Gospel.",
-              },
-              {
-                title: "Values",
-                body: "Faith, transparency, innovation, excellence, community, and an unwavering commitment to truth in the digital age.",
-              },
-            ].map(({ title, body }, i) => (
-              <AnimateIn key={title} direction="left" delay={i * 0.1}>
-                <div className="border border-cream-dark rounded-sm p-8 bg-cream hover:shadow-lg hover:shadow-navy/5 transition-all duration-300">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="block w-6 h-[2px] bg-gold" />
-                    <h3 className="font-serif text-xl font-semibold text-navy">{title}</h3>
-                  </div>
-                  <p className="text-navy/60 text-base leading-relaxed">{body}</p>
-                </div>
-              </AnimateIn>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ─── Timeline ───────────────────────────────────────────────────────── */
-const milestones = [
-  {
-    year: "2006",
-    title: "Carlo Acutis Passes Away",
-    desc: "At just 15, Carlo offers his suffering for the Pope and the Church, dying with extraordinary peace.",
-  },
-  {
-    year: "2013",
-    title: "Cause for Canonization Opened",
-    desc: "The Diocese of Milan officially opens the cause for beatification and canonization of Carlo Acutis.",
-  },
-  {
-    year: "2018",
-    title: "Declared Venerable",
-    desc: "Pope Francis recognizes Carlo's heroic virtue, declaring him Venerable Carlo Acutis.",
-  },
-  {
-    year: "2020",
-    title: "Beatification",
-    desc: "Carlo is beatified in Assisi — a ceremony broadcast globally — with hundreds of thousands attending.",
-  },
-  {
-    year: "2023",
-    title: "Foundation Established",
-    desc: "The Friends of St. Carlo Acutis Foundation is formally incorporated to carry his digital mission forward.",
-  },
-  {
-    year: "2025",
-    title: "Canonization",
-    desc: "Carlo Acutis is canonized by Pope Francis — the world's first millennial saint and patron of the internet.",
-  },
-];
-
-function Timeline() {
-  return (
-    <section className="py-24 px-6 bg-cream" id="timeline">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <AnimateIn>
-            <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              History
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-              Foundation Milestones
-            </h2>
-          </AnimateIn>
-        </div>
-
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-[28px] top-0 bottom-0 w-[2px] bg-cream-dark" />
-
-          <div className="space-y-12">
-            {milestones.map(({ year, title, desc }, i) => (
-              <AnimateIn key={year} delay={i * 0.1}>
-                <div className="flex gap-8 items-start relative">
-                  {/* Dot */}
-                  <div className="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-navy border-2 border-gold flex items-center justify-center shadow-lg shadow-navy/20">
-                    <span className="text-gold font-serif font-semibold text-xs">{year}</span>
-                  </div>
-                  {/* Content */}
-                  <div className="flex-1 pb-2 pt-3">
-                    <h3 className="font-serif text-xl font-semibold text-navy mb-2">{title}</h3>
-                    <p className="text-navy/60 text-base leading-relaxed">{desc}</p>
-                  </div>
-                </div>
-              </AnimateIn>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ─── Board ──────────────────────────────────────────────────────────── */
 const boardMembers: TeamMember[] = [
@@ -193,17 +42,11 @@ const boardMembers: TeamMember[] = [
     social: { linkedin: "#" },
   },
   {
-    id: "5",
-    name: "Thomas Bernardini",
-    role: "Finance Director",
-    image: "https://i.pravatar.cc/400?img=68",
-    social: { linkedin: "#" },
-  },
-  {
     id: "6",
     name: "Anne Fitzgerald",
     role: "Communications Director",
     image: "https://i.pravatar.cc/400?img=9",
+    column: 3,
     social: { linkedin: "#", twitter: "#" },
   },
 ];
@@ -214,12 +57,7 @@ function Board() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <AnimateIn>
-            <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Leadership
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white">
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gold">
               Board of Directors
             </h2>
           </AnimateIn>
@@ -289,10 +127,10 @@ function Governance() {
 export default function AboutPage() {
   return (
     <>
-      <AboutEditorial />
+      <AboutHero />
+      <ScrollWaveGallery />
+      <AboutScrollTypography />
       <Board />
-      <FoundationStory />
-      <Timeline />
       <Governance />
     </>
   );

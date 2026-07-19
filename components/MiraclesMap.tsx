@@ -6,8 +6,7 @@ import { miracles } from "@/components/miracles-data";
 const ROME: [number, number] = [12.4534, 41.9029];
 
 const COUNTRY_COORDS: Record<string, [number, number]> = {
-  // Europe — Italy moved to northern Italy to avoid overlapping the Rome origin dot
-  "Italy":          [ 11.5,     44.5  ],  // near Parma, away from Rome
+  "Italy":          [ 11.5,     44.5  ],
   "Germany":        [ 10.4515,  51.1657],
   "France":         [  2.2137,  46.2276],
   "Poland":         [ 19.1451,  51.9194],
@@ -27,15 +26,14 @@ const COUNTRY_COORDS: Record<string, [number, number]> = {
   "Bulgaria":       [ 25.4858,  42.7339],
   "Slovenia":       [ 14.9955,  46.1512],
   "Ireland":        [ -8.2439,  53.4129],
-  "Scotland":       [ -4.2026,  57.5   ],  // nudged north to separate from Ireland
-  "Malta":          [ 14.3754,  35.5   ],  // nudged south to separate from nearby countries
+  "Scotland":       [ -4.2026,  57.5   ],
+  "Malta":          [ 14.3754,  35.5   ],
   "Luxembourg":     [  6.1296,  49.8153],
   "Latvia":         [ 24.6032,  56.8796],
   "Sweden":         [ 18.6435,  60.1282],
   "Denmark":        [  9.5018,  56.2639],
   "Cyprus":         [ 33.4299,  35.1264],
   "Ukraine":        [ 31.1656,  48.3794],
-  // Americas
   "Argentina":      [-63.6167, -38.4161],
   "Mexico":         [-102.5528, 23.6345],
   "United States":  [-100.0,    38.0   ],
@@ -49,7 +47,6 @@ const COUNTRY_COORDS: Record<string, [number, number]> = {
   "Bolivia":        [-64.9631, -16.2902],
   "Uruguay":        [-55.7658, -32.5228],
   "Canada":         [-96.8165,  56.1304],
-  // Asia
   "India":          [ 78.9629,  20.5937],
   "Philippines":    [121.7740,  12.8797],
   "Japan":          [138.2529,  36.2048],
@@ -57,26 +54,20 @@ const COUNTRY_COORDS: Record<string, [number, number]> = {
   "Indonesia":      [113.9213,  -0.7893],
   "Vietnam":        [108.2772,  14.0583],
   "Georgia":        [ 43.3569,  42.3154],
-  // Middle East
-  "Israel":         [ 34.8516,  31.5   ],  // nudged north to separate from Lebanon
-  "Lebanon":        [ 35.8623,  34.0   ],  // nudged north to separate from Israel
+  "Israel":         [ 34.8516,  31.5   ],
+  "Lebanon":        [ 35.8623,  34.0   ],
   "Egypt":          [ 30.8025,  26.8206],
-  // Africa
   "Nigeria":        [  8.6753,   9.0820],
   "Uganda":         [ 32.2903,   1.3733],
   "South Africa":   [ 22.9375, -30.5595],
-  "Kenya":          [ 37.9062,  -1.5   ],  // nudged south to separate from Uganda
+  "Kenya":          [ 37.9062,  -1.5   ],
   "Ethiopia":       [ 40.4897,   9.1450],
-  // Oceania
   "Australia":      [133.7751, -25.2744],
   "New Zealand":    [172.8352, -40.9006],
-  // Caribbean
   "Martinique":     [-60.9789,  14.6415],
-  // Indian Ocean
   "Réunion":        [ 55.5364, -21.1151],
 };
 
-// Compute counts per country from data
 const countryCounts: Record<string, number> = {};
 for (const m of miracles) {
   countryCounts[m.country] = (countryCounts[m.country] || 0) + 1;
@@ -97,6 +88,16 @@ const ARC_DATA = MIRACLE_SITES.map((site) => ({
   to:   site.coords,
 }));
 
+const P = {
+  gold:        "#C9A96E",
+  goldDark:    "#8B6333",
+  ink:         "rgba(55, 38, 10, 0.72)",
+  inkLight:    "rgba(80, 58, 18, 0.45)",
+  panelBg:     "rgba(242, 232, 206, 0.92)",
+  panelBorder: "rgba(160, 125, 62, 0.28)",
+  panelShadow: "0 1px 8px rgba(60,40,10,0.14)",
+};
+
 function dispatchFilter(country: string) {
   window.dispatchEvent(new CustomEvent("miracles-filter", { detail: { country } }));
   document.getElementById("miracles-grid")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -105,6 +106,22 @@ function dispatchFilter(country: string) {
 export default function MiraclesMap() {
   const [isGlobe, setIsGlobe] = useState(false);
   const mapRef = useRef<MapRef>(null);
+
+  // Dark-gold filter applied directly to WebGL canvas — markers/UI unaffected
+  useEffect(() => {
+    const id = setInterval(() => {
+      const map = mapRef.current;
+      if (!map) return;
+      clearInterval(id);
+      const apply = () => {
+        map.getCanvas().style.filter =
+          "sepia(0.95) saturate(2.6) brightness(0.76) hue-rotate(-8deg) contrast(1.08)";
+      };
+      map.isStyleLoaded() ? apply() : map.once("load", apply);
+      map.on("style.load", apply);
+    }, 50);
+    return () => clearInterval(id);
+  }, []);
 
   // Default to globe on mobile
   useEffect(() => {
@@ -117,7 +134,7 @@ export default function MiraclesMap() {
       const apply = () => {
         map.setProjection({ type: "globe" });
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (map as any).setFog?.({ color: "#111827", "high-color": "#1e3a8a", "space-color": "#000000", "horizon-blend": 0.06, "star-intensity": 0.35 });
+        (map as any).setFog?.({ color: "#2a1a06", "high-color": "#5c3a10", "space-color": "#0a0602", "horizon-blend": 0.05, "star-intensity": 0.18 });
         map.flyTo({ center: [15, 20], zoom: 1.1, duration: 0 });
       };
       map.isStyleLoaded() ? apply() : map.once("load", apply);
@@ -132,7 +149,7 @@ export default function MiraclesMap() {
     map.setProjection(globe ? { type: "globe" } : { type: "mercator" });
     if (globe) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (map as any).setFog?.({ color: "#111827", "high-color": "#1e3a8a", "space-color": "#000000", "horizon-blend": 0.06, "star-intensity": 0.35 });
+      (map as any).setFog?.({ color: "#2a1a06", "high-color": "#5c3a10", "space-color": "#0a0602", "horizon-blend": 0.05, "star-intensity": 0.18 });
     } else {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (map as any).setFog?.(null);
@@ -141,7 +158,7 @@ export default function MiraclesMap() {
   }
 
   return (
-    <div style={{ position: "relative", height: 520, borderRadius: 4, overflow: "hidden", background: "#000000" }}>
+    <div style={{ position: "relative", height: 520, borderRadius: 4, overflow: "hidden", background: "#110D00" }}>
       <Map
         ref={mapRef}
         theme="dark"
@@ -151,69 +168,68 @@ export default function MiraclesMap() {
         maxZoom={8}
         scrollZoom={false}
       >
+        {/* Arcs from Rome */}
         <MapArc
           id="miracles"
           data={ARC_DATA}
           curvature={0.25}
-          paint={{ "line-color": "#D9A441", "line-width": 1.0, "line-opacity": 0.35 }}
-          hoverPaint={{ "line-color": "#D9A441", "line-opacity": 0.9, "line-width": 2.0 }}
+          paint={{ "line-color": P.gold, "line-width": 0.9, "line-opacity": 0.38 }}
+          hoverPaint={{ "line-color": P.gold, "line-opacity": 0.85, "line-width": 1.8 }}
         />
 
-        {/* Rome origin dot — rendered as a small decorative pin, non-clickable */}
+        {/* Rome origin dot */}
         <MapMarker longitude={ROME[0]} latitude={ROME[1]}>
           <MarkerContent>
-            <div style={{ width: 7, height: 7, borderRadius: "50%", background: "#D9A441", border: "1.5px solid #fff", boxShadow: "0 0 6px rgba(217,164,65,0.9)", pointerEvents: "none" }} />
+            <div style={{
+              width: 10, height: 10, borderRadius: "50%",
+              background: P.gold,
+              border: `2px solid ${P.goldDark}`,
+              pointerEvents: "none",
+            }} />
           </MarkerContent>
           <MarkerTooltip>Rome — Carlo&apos;s home</MarkerTooltip>
         </MapMarker>
 
-        {/* Miracle location dots — clickable */}
-        {MIRACLE_SITES.map((site) => (
-          <MapMarker key={site.id} longitude={site.coords[0]} latitude={site.coords[1]}>
-            <MarkerContent>
-              <button
-                onClick={() => dispatchFilter(site.name)}
-                aria-label={`View ${site.count} miracle${site.count !== 1 ? "s" : ""} from ${site.name}`}
-                style={{
-                  width:         site.count >= 10 ? 20 : site.count >= 4 ? 14 : 10,
-                  height:        site.count >= 10 ? 20 : site.count >= 4 ? 14 : 10,
-                  borderRadius:  "50%",
-                  background:    "#C74A2A",
-                  border:        "1.5px solid rgba(255,255,255,0.6)",
-                  display:       "flex",
-                  alignItems:    "center",
-                  justifyContent:"center",
-                  color:         "#fff",
-                  fontSize:      8,
-                  fontWeight:    700,
-                  cursor:        "pointer",
-                  padding:       0,
-                  transition:    "transform 0.15s, box-shadow 0.15s",
-                }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.transform = "scale(1.25)";
-                  e.currentTarget.style.boxShadow = "0 0 8px rgba(199,74,42,0.7)";
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.transform = "scale(1)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                {site.count >= 4 ? site.count : null}
-              </button>
-            </MarkerContent>
-            <MarkerTooltip>
-              {site.name} · {site.count} miracle{site.count !== 1 ? "s" : ""} · Click to explore ↓
-            </MarkerTooltip>
-          </MapMarker>
-        ))}
+        {/* Miracle site markers */}
+        {MIRACLE_SITES.map((site) => {
+          const size = site.count >= 10 ? 14 : site.count >= 4 ? 11 : 8;
+          return (
+            <MapMarker key={site.id} longitude={site.coords[0]} latitude={site.coords[1]}>
+              <MarkerContent>
+                <button
+                  onClick={() => dispatchFilter(site.name)}
+                  aria-label={`View ${site.count} miracle${site.count !== 1 ? "s" : ""} from ${site.name}`}
+                  style={{
+                    width: size, height: size, borderRadius: "50%",
+                    background: P.gold,
+                    border: `1.5px solid ${P.goldDark}`,
+                    cursor: "pointer", padding: 0,
+                    transition: "transform 0.15s, box-shadow 0.15s",
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.transform = "scale(1.5)";
+                    e.currentTarget.style.boxShadow = `0 0 8px ${P.gold}88`;
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.transform = "scale(1)";
+                    e.currentTarget.style.boxShadow = "none";
+                  }}
+                />
+              </MarkerContent>
+              <MarkerTooltip>
+                {site.name} · {site.count} miracle{site.count !== 1 ? "s" : ""} · Click to explore ↓
+              </MarkerTooltip>
+            </MapMarker>
+          );
+        })}
 
-        {/* Custom zoom controls */}
+        {/* Zoom controls — bottom right */}
         <div style={{
           position: "absolute", bottom: 12, right: 12, zIndex: 10,
           display: "flex", flexDirection: "column",
-          background: "rgba(10,14,30,0.85)", border: "1px solid rgba(217,164,65,0.25)",
-          borderRadius: 6, overflow: "hidden", backdropFilter: "blur(8px)",
+          background: P.panelBg, border: `1px solid ${P.panelBorder}`,
+          borderRadius: 4, overflow: "hidden", backdropFilter: "blur(6px)",
+          boxShadow: P.panelShadow,
         }}>
           {[
             { label: "+", title: "Zoom in",  onClick: () => mapRef.current?.zoomTo((mapRef.current.getZoom() ?? 2) + 1, { duration: 300 }) },
@@ -224,12 +240,13 @@ export default function MiraclesMap() {
               aria-label={title}
               onClick={onClick}
               style={{
-                width: 32, height: 32, display: "flex", alignItems: "center", justifyContent: "center",
+                width: 28, height: 28, display: "flex", alignItems: "center", justifyContent: "center",
                 background: "transparent", border: "none",
-                borderBottom: label === "+" ? "1px solid rgba(217,164,65,0.2)" : "none",
-                color: "#D9A441", fontSize: 18, fontWeight: 300, cursor: "pointer", lineHeight: 1, transition: "background 0.15s",
+                borderBottom: label === "+" ? `1px solid ${P.panelBorder}` : "none",
+                color: P.goldDark, fontSize: 17, fontWeight: 300, cursor: "pointer",
+                lineHeight: 1, transition: "background 0.15s",
               }}
-              onMouseEnter={e => (e.currentTarget.style.background = "rgba(217,164,65,0.12)")}
+              onMouseEnter={e => (e.currentTarget.style.background = "rgba(180,145,70,0.15)")}
               onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
             >
               {label}
@@ -237,11 +254,13 @@ export default function MiraclesMap() {
           ))}
         </div>
 
-        {/* Projection toggle */}
+        {/* Projection toggle — top right */}
         <div style={{
-          position: "absolute", top: 12, left: 12, zIndex: 10,
-          display: "flex", background: "rgba(10,14,30,0.85)",
-          border: "1px solid rgba(217,164,65,0.25)", borderRadius: 6, overflow: "hidden", backdropFilter: "blur(8px)",
+          position: "absolute", top: 12, right: 12, zIndex: 10,
+          display: "flex",
+          background: P.panelBg, border: `1px solid ${P.panelBorder}`,
+          borderRadius: 4, overflow: "hidden", backdropFilter: "blur(6px)",
+          boxShadow: P.panelShadow,
         }}>
           {(["Map", "Globe"] as const).map((label) => {
             const active = label === "Globe" ? isGlobe : !isGlobe;
@@ -250,10 +269,10 @@ export default function MiraclesMap() {
                 key={label}
                 onClick={() => toggleProjection(label === "Globe")}
                 style={{
-                  padding: "5px 14px", fontSize: 10, fontWeight: 700,
+                  padding: "5px 13px", fontSize: 9, fontWeight: 700,
                   letterSpacing: "0.18em", textTransform: "uppercase",
-                  color:      active ? "#0a0e1e" : "rgba(217,164,65,0.6)",
-                  background: active ? "#D9A441"  : "transparent",
+                  color:      active ? "#2A1A04" : P.inkLight,
+                  background: active ? P.gold : "transparent",
                   border: "none", cursor: "pointer", transition: "all 0.2s",
                 }}
               >
@@ -263,16 +282,16 @@ export default function MiraclesMap() {
           })}
         </div>
 
-        {/* Click hint */}
+        {/* Click hint — bottom left */}
         <div style={{
           position: "absolute", bottom: 12, left: 12, zIndex: 10,
-          background: "rgba(10,14,30,0.75)", border: "1px solid rgba(217,164,65,0.2)",
-          borderRadius: 4, padding: "4px 10px", backdropFilter: "blur(8px)",
-          color: "rgba(217,164,65,0.6)", fontSize: 9, fontWeight: 700,
-          letterSpacing: "0.15em", textTransform: "uppercase",
-          pointerEvents: "none",
+          background: P.panelBg, border: `1px solid ${P.panelBorder}`,
+          borderRadius: 3, padding: "4px 10px", backdropFilter: "blur(6px)",
+          color: P.ink, fontSize: 9, fontWeight: 600,
+          letterSpacing: "0.14em", textTransform: "uppercase",
+          pointerEvents: "none", boxShadow: P.panelShadow,
         }}>
-          Click a dot to explore miracles
+          ● Click a dot to explore miracles
         </div>
       </Map>
     </div>
