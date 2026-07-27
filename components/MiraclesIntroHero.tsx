@@ -112,7 +112,7 @@ export default function MiraclesIntroHero() {
         style={{ transform: "translateY(-50%) scale(0.25)", transformOrigin: "left bottom" }}
       >
         <h1
-          className="mih-count font-serif text-white leading-none"
+          className="mih-count font-serif text-[#D8C9A8] leading-none"
           style={{ fontSize: "clamp(2.5rem, 25vw, 25rem)" }}
         >
           0
@@ -145,7 +145,7 @@ export default function MiraclesIntroHero() {
         {/* Bottom block: title → line → footer */}
         <div className="absolute bottom-0 left-0 w-full px-8 pb-8">
           <h1
-            className="mih-title font-serif text-white"
+            className="mih-title font-serif text-[#D8C9A8]"
             style={{ fontSize: "clamp(2.5rem, 7vw, 8rem)", lineHeight: 1 }}
           >
             {miracles.length} Miracles
@@ -171,7 +171,7 @@ export default function MiraclesIntroHero() {
           {/* Footer words */}
           <div className="mih-footer flex justify-between items-start pt-4">
             {["Documented", "Verified", "Preserved"].map((word) => (
-              <p key={word} className="text-white/60 text-sm font-medium tracking-wide">
+              <p key={word} className="text-[#D8C9A8]/60 text-sm font-medium tracking-wide">
                 {word}
               </p>
             ))}

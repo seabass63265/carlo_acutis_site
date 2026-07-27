@@ -98,9 +98,11 @@ const P = {
   panelShadow: "0 1px 8px rgba(60,40,10,0.14)",
 };
 
+const TOOLTIP_CLASS =
+  "!bg-[rgba(242,232,206,0.96)] !rounded-sm !px-3.5 !py-2.5 !shadow-[0_1px_8px_rgba(60,40,10,0.18)] border border-[rgba(160,125,62,0.35)] backdrop-blur-sm";
+
 function dispatchFilter(country: string) {
   window.dispatchEvent(new CustomEvent("miracles-filter", { detail: { country } }));
-  document.getElementById("miracles-grid")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 export default function MiraclesMap() {
@@ -159,6 +161,20 @@ export default function MiraclesMap() {
 
   return (
     <div style={{ position: "relative", height: 520, borderRadius: 4, overflow: "hidden", background: "#110D00" }}>
+      {/* Strip MapLibre's default white popup chrome and speech-bubble tail
+          so tooltips read as part of the map's own cream/gold panel system,
+          not a generic browser-default bubble. */}
+      <style>{`
+        .maplibregl-popup-content {
+          background: transparent;
+          padding: 0;
+          box-shadow: none;
+          border-radius: 0;
+        }
+        .maplibregl-popup-tip {
+          display: none;
+        }
+      `}</style>
       <Map
         ref={mapRef}
         theme="dark"
@@ -187,7 +203,14 @@ export default function MiraclesMap() {
               pointerEvents: "none",
             }} />
           </MarkerContent>
-          <MarkerTooltip>Rome — Carlo&apos;s home</MarkerTooltip>
+          <MarkerTooltip className={TOOLTIP_CLASS}>
+            <span style={{ fontFamily: "Georgia, serif", fontSize: 13, fontWeight: 600, color: P.goldDark }}>
+              Rome
+            </span>
+            <span style={{ display: "block", fontSize: 10, letterSpacing: "0.02em", marginTop: 2, color: P.ink }}>
+              Carlo&apos;s home
+            </span>
+          </MarkerTooltip>
         </MapMarker>
 
         {/* Miracle site markers */}
@@ -216,8 +239,13 @@ export default function MiraclesMap() {
                   }}
                 />
               </MarkerContent>
-              <MarkerTooltip>
-                {site.name} · {site.count} miracle{site.count !== 1 ? "s" : ""} · Click to explore ↓
+              <MarkerTooltip className={TOOLTIP_CLASS}>
+                <span style={{ fontFamily: "Georgia, serif", fontSize: 13, fontWeight: 600, color: P.goldDark }}>
+                  {site.name}
+                </span>
+                <span style={{ display: "block", fontSize: 10, letterSpacing: "0.02em", marginTop: 2, color: P.ink }}>
+                  {site.count} miracle{site.count !== 1 ? "s" : ""} · Click to explore ↓
+                </span>
               </MarkerTooltip>
             </MapMarker>
           );

@@ -17,24 +17,23 @@ const footerSections = [
       { href: "/donate", label: "Ways to Give" },
       { href: "/donate#institutional", label: "Institutional Giving" },
       { href: "/donate#corporate", label: "Corporate Partners" },
-      { href: "/contact#volunteer", label: "Volunteer" },
+      { href: "/contact", label: "Volunteer" },
     ],
   },
   {
     heading: "Resources",
     links: [
       { href: "/eucharistic-miracles", label: "Miracle Archive" },
-      { href: "/contact#prayer", label: "Prayer Requests" },
-      { href: "/contact#speaking", label: "Speaking Requests" },
+      { href: "/contact", label: "Prayer Requests" },
+      { href: "/contact", label: "Speaking Requests" },
       { href: "/donate#reports", label: "Annual Reports" },
     ],
   },
 ];
 
 const socials = [
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "YouTube", href: "#" },
+  { label: "Facebook", href: "https://www.facebook.com/friendsofstcarlo" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/friendsofstcarlo/" },
 ];
 
 function CrossIcon() {
@@ -103,7 +102,7 @@ export default function Footer() {
               </h4>
               <ul className="space-y-3">
                 {links.map(({ href, label }) => (
-                  <li key={href}>
+                  <li key={label}>
                     <Link
                       href={href}
                       className="text-white/50 hover:text-white text-sm transition-colors duration-200"

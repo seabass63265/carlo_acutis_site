@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { Link, usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { useGridWipe } from "@/components/GridWipeProvider";
+import { useSvgWipe } from "@/components/SvgWipeProvider";
 
 function GlobeIcon() {
   return (
@@ -40,13 +40,13 @@ const PAGE_THEMES: Record<string, NavTheme> = {
     divider: "border-navy/10",
   },
   "/about": {
-    bg: "bg-navy",
-    scrollBg: "bg-navy",
-    mobileBg: "bg-navy",
-    logoText: "text-white",
-    linkText: "text-white/50",
-    linkHover: "hover:text-white",
-    divider: "border-white/10",
+    bg: "bg-transparent",
+    scrollBg: "bg-cream/95 backdrop-blur-sm",
+    mobileBg: "bg-cream",
+    logoText: "text-navy",
+    linkText: "text-navy/50",
+    linkHover: "hover:text-navy",
+    divider: "border-navy/10",
   },
   "/carlo": {
     bg: "bg-transparent",
@@ -62,11 +62,11 @@ const PAGE_THEMES: Record<string, NavTheme> = {
     scrollDivider: "border-[#222222]/10",
   },
   "/eucharistic-miracles": {
-    bg: "bg-navy-dark",
-    scrollBg: "bg-navy-dark",
+    bg: "bg-transparent",
+    scrollBg: "bg-navy-dark/90 backdrop-blur-sm",
     mobileBg: "bg-navy-dark",
     logoText: "text-white",
-    linkText: "text-white/50",
+    linkText: "text-white/60",
     linkHover: "hover:text-white",
     divider: "border-white/10",
   },
@@ -129,7 +129,7 @@ export default function Navbar() {
   const [fadeOut, setFadeOut] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-  const { trigger: wipeTo } = useGridWipe();
+  const { trigger: wipeTo } = useSvgWipe();
 
   const rawTheme = PAGE_THEMES[pathname as keyof typeof PAGE_THEMES] ?? PAGE_THEMES["/about"];
 
@@ -179,6 +179,26 @@ export default function Navbar() {
     setMobileOpen(false);
   }, [pathname]);
 
+  // On the About page, keep the fixed navbar hidden until AboutHero's image
+  // cascade settles — otherwise it overlaps the busy photo animation.
+  const [heroReady, setHeroReady] = useState(pathname !== "/about");
+  useEffect(() => {
+    if (pathname !== "/about") {
+      setHeroReady(true);
+      return;
+    }
+    setHeroReady(false);
+    function onReady() {
+      setHeroReady(true);
+    }
+    window.addEventListener("about-hero-images-done", onReady);
+    const fallback = setTimeout(onReady, 9000);
+    return () => {
+      window.removeEventListener("about-hero-images-done", onReady);
+      clearTimeout(fallback);
+    };
+  }, [pathname]);
+
   const solid = scrolled || mobileOpen;
 
   const theme: NavTheme = solid
@@ -224,25 +244,24 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         solid ? theme.scrollBg : theme.bg
-      }`}
+      } ${heroReady ? "opacity-100" : "opacity-0 pointer-events-none"}`}
     >
-      <div className="w-full px-5 lg:px-14 flex items-center justify-between h-16 lg:h-[88px]">
+      <div className="w-full px-4 lg:px-14 flex items-center justify-between h-16 lg:h-[88px]">
 
         {/* ── Logo ── */}
-        <Link href="/" className="flex items-center gap-3 lg:gap-3.5 group shrink-0">
-          <span className="text-gold transition-transform duration-300 group-hover:scale-110">
+        <button onClick={() => wipeTo("/")} className="flex items-center gap-1.5 lg:gap-3.5 group shrink-0">
+          <span className="text-gold transition-transform duration-300 group-hover:scale-110 scale-75 lg:scale-100 origin-left shrink-0">
             <CrossIcon />
           </span>
           <div className="leading-none">
-            <p className={`font-serif font-semibold tracking-wide transition-colors duration-500 text-[11px] lg:text-[13px] ${theme.logoText}`}>
-              <span className="hidden lg:inline">Friends of St. Carlo Acutis</span>
-              <span className="lg:hidden">St. Carlo Acutis</span>
+            <p className={`font-serif font-semibold tracking-tighter lg:tracking-wide transition-colors duration-500 text-[11px] lg:text-[13px] whitespace-nowrap ${theme.logoText}`}>
+              Friends of St. Carlo Acutis
             </p>
-            <p className="text-gold text-[8px] lg:text-[9px] font-sans tracking-[0.28em] uppercase mt-[3px]">
+            <p className="text-gold text-[8.5px] lg:text-[9px] font-sans tracking-[0.2em] lg:tracking-[0.28em] uppercase mt-[3px] text-left">
               Foundation
             </p>
           </div>
-        </Link>
+        </button>
 
         {/* ── Desktop nav ── */}
         <nav className="hidden lg:flex items-center gap-9">
@@ -264,32 +283,32 @@ export default function Navbar() {
             Carlo&apos;s Story
           </button>
 
-          <Link
-            href="/eucharistic-miracles"
+          <button
+            onClick={() => wipeTo("/eucharistic-miracles")}
             className={`text-[11px] font-sans font-medium tracking-[0.2em] uppercase transition-colors duration-200 ${
               pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
             Miracles
-          </Link>
+          </button>
 
-          <Link
-            href="/contact"
+          <button
+            onClick={() => wipeTo("/contact")}
             className={`text-[11px] font-sans font-medium tracking-[0.2em] uppercase transition-colors duration-200 ${
               pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
             Contact
-          </Link>
+          </button>
 
-          <Link
-            href="/donate"
+          <button
+            onClick={() => wipeTo("/donate")}
             className={`text-[11px] font-semibold tracking-[0.2em] uppercase transition-colors duration-200 ${
               pathname === "/donate" ? `${theme.logoText}` : "text-gold/80 hover:text-gold"
             }`}
           >
             Donate
-          </Link>
+          </button>
 
           <LanguageSwitcher theme={theme} />
         </nav>
@@ -323,24 +342,24 @@ export default function Navbar() {
           >
             Carlo&apos;s Story
           </button>
-          <Link
-            href="/eucharistic-miracles"
-            className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b transition-colors duration-200 ${theme.divider} ${pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
+          <button
+            onClick={() => { setMobileOpen(false); wipeTo("/eucharistic-miracles"); }}
+            className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
             Miracles
-          </Link>
-          <Link
-            href="/contact"
-            className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b transition-colors duration-200 ${theme.divider} ${pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
+          </button>
+          <button
+            onClick={() => { setMobileOpen(false); wipeTo("/contact"); }}
+            className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
             Contact
-          </Link>
-          <Link
-            href="/donate"
-            className="py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase text-gold"
+          </button>
+          <button
+            onClick={() => { setMobileOpen(false); wipeTo("/donate"); }}
+            className="py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase text-gold text-left"
           >
             Donate
-          </Link>
+          </button>
           <div className={`mt-4 pt-4 border-t ${theme.divider}`}>
             <LanguageSwitcher theme={theme} />
           </div>

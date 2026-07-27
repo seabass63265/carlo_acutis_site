@@ -352,7 +352,7 @@ function Hero() {
             fontSize: "32vw",
             lineHeight: 0.85,
             letterSpacing: "0.01em",
-            color: "#F5F0E6",
+            color: "#D8C9A8",
             whiteSpace: "nowrap",
           }}
         >

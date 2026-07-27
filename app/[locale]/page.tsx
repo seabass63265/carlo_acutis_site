@@ -1,8 +1,11 @@
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
+import { FiArrowRight } from "react-icons/fi";
 import AnimateIn from "@/components/AnimateIn";
 import HomeHero from "@/components/HomeHero";
 import CarloStoryButton from "@/components/CarloStoryButton";
+import NewsGrid, { type NewsCard } from "@/components/NewsGrid";
+import WipeLink from "@/components/WipeLink";
+import { getFacebookPosts, type FacebookPost } from "@/lib/facebook";
 
 /* ─── Mission ────────────────────────────────────────────────────────── */
 function Mission() {
@@ -61,19 +64,19 @@ function Mission() {
             </AnimateIn>
             <AnimateIn direction="left" delay={0.2}>
               <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/carlo"
+                <WipeLink
+                  href="/about"
                   className="bg-gold text-navy-dark text-sm font-semibold px-6 py-3 transition-all duration-200 hover:bg-gold-light"
                 >
-                  Our Story
-                </Link>
-                <Link
+                  About Us
+                </WipeLink>
+                <WipeLink
                   href="/contact"
                   className="text-white text-sm font-semibold px-6 py-3 transition-all duration-200 hover:bg-white/10"
                   style={{ border: "1.5px solid rgba(201,169,110,0.45)" }}
                 >
                   Stay Connected
-                </Link>
+                </WipeLink>
               </div>
             </AnimateIn>
           </div>
@@ -107,7 +110,7 @@ function Mission() {
 /* ─── Who Was Carlo? ─────────────────────────────────────────────────── */
 function WhoWasCarlo() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <AnimateIn direction="right" className="order-2 lg:order-1">
@@ -191,82 +194,174 @@ function WhoWasCarlo() {
 }
 
 /* ─── Initiatives ────────────────────────────────────────────────────── */
-const initiatives = [
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M16 2V30M6 10H26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-    title: "Youth Outreach",
-    description:
-      "Programs and events that introduce Carlo's story to teens and young adults, giving them a Catholic role model for the digital age.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <circle cx="16" cy="16" r="12" stroke="currentColor" strokeWidth="2" />
-        <path d="M8 16h16M16 8c-3 4-3 12 0 16M16 8c3 4 3 12 0 16" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
-    title: "Digital Evangelization",
-    description:
-      "Training Catholics to use technology — social media, video, web — as instruments of the new evangelization.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <rect x="4" y="6" width="24" height="20" rx="1" stroke="currentColor" strokeWidth="2" />
-        <path d="M10 12h12M10 16h8M10 20h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
-    title: "Educational Resources",
-    description:
-      "Downloadable lesson plans, timelines, and videos for parishes, schools, and youth groups to use freely.",
-  },
-  {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-        <path d="M6 28V16L16 4L26 16V28H20V20H12V28H6Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-      </svg>
-    ),
-    title: "Future Projects",
-    description:
-      "Exploring AI, immersive media, and emerging technology to spread the faith to the next generation.",
-  },
-];
+function CardMeta({ number, tags }: { number: string; tags: string[] }) {
+  return (
+    <div className="flex items-center gap-3 font-sans text-[9px] tracking-[0.2em] uppercase text-white/40 mb-4">
+      <span className="text-gold text-[11px] font-medium">{number}</span>
+      {tags.map((tag) => (
+        <span key={tag} className="flex items-center gap-3">
+          <span className="w-px h-2.5 bg-white/10" />
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function CardTitle({ children, center = false }: { children: React.ReactNode; center?: boolean }) {
+  return (
+    <h3 className="relative font-sans text-lg tracking-[0.15em] uppercase text-white mb-3 pb-3 w-fit">
+      {children}
+      <span
+        className={`absolute bottom-0 h-px w-0 bg-gold transition-all duration-500 ease-out group-hover:w-10 ${
+          center ? "left-1/2 -translate-x-1/2" : "left-0"
+        }`}
+      />
+    </h3>
+  );
+}
+
+function CardLink() {
+  return (
+    <a
+      href="#"
+      className="inline-flex items-center gap-3 mt-6 font-sans text-[9px] tracking-[0.2em] uppercase text-white hover:text-gold transition-colors duration-300"
+    >
+      Discover Details
+      <FiArrowRight className="text-gold transition-transform duration-300 group-hover:translate-x-1" />
+    </a>
+  );
+}
 
 function Initiatives() {
   return (
-    <section className="py-24 px-6 bg-navy">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <AnimateIn>
-            <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              What We Do
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white">
-              Featured Initiatives
-            </h2>
-          </AnimateIn>
-        </div>
+    <section className="relative overflow-hidden bg-navy-dark py-24 md:py-40 px-6 md:px-[5vw]">
+      {/* Background grid lines */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute inset-y-0 left-[5vw] w-px bg-white/5" />
+        <div className="absolute inset-y-0 left-1/2 w-px bg-white/5 hidden lg:block" />
+        <div className="absolute inset-y-0 right-[5vw] w-px bg-white/5" />
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {initiatives.map((item, i) => (
-            <AnimateIn key={item.title} delay={i * 0.1}>
-              <div className="group h-full border border-white/10 rounded-sm p-8 hover:border-gold/40 hover:bg-white/[0.03] transition-all duration-300 cursor-pointer">
-                <div className="text-gold/60 mb-6 group-hover:text-gold transition-colors duration-200">
-                  {item.icon}
-                </div>
-                <h3 className="font-serif text-xl text-white font-semibold mb-3 group-hover:text-gold transition-colors duration-200">
-                  {item.title}
-                </h3>
-                <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
-              </div>
-            </AnimateIn>
-          ))}
+      {/* Faint watermark */}
+      <div
+        className="absolute top-[22%] -left-[5%] font-sans font-light uppercase tracking-[0.1em] text-white/[0.025] whitespace-nowrap pointer-events-none select-none"
+        style={{ fontSize: "15vw" }}
+      >
+        Initiatives
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
+        <AnimateIn>
+          <p className="flex items-center gap-4 text-gold text-[10px] font-semibold tracking-[0.3em] uppercase mb-6">
+            What We Do
+            <span className="h-px w-10 bg-gold" />
+          </p>
+        </AnimateIn>
+        <AnimateIn delay={0.1}>
+          <h2 className="mb-16 md:mb-24">
+            <span className="block font-sans text-2xl md:text-3xl font-light tracking-[0.2em] uppercase text-white">
+              Featured
+            </span>
+            <em className="block font-serif italic text-5xl md:text-6xl text-white mt-2">Initiatives</em>
+          </h2>
+        </AnimateIn>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          {/* 01 — Youth Outreach */}
+          <AnimateIn
+            delay={0.15}
+            className="group lg:col-start-1 lg:col-span-7 lg:row-start-1 lg:row-span-3 lg:pr-10 lg:border-r lg:border-white/10"
+          >
+            <CardMeta number="01" tags={["Focus: Community", "Status: Active"]} />
+            <div className="relative w-full h-[280px] lg:h-[600px] overflow-hidden bg-navy mb-6">
+              <Image
+                src="/aboutus43.jpeg"
+                alt="Group of youth looking towards light"
+                fill
+                sizes="(max-width: 1024px) 100vw, 58vw"
+                className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
+              />
+            </div>
+            <CardTitle>Youth Outreach</CardTitle>
+            <p className="text-white/40 text-base font-light leading-relaxed max-w-[80%]">
+              Fostering a new generation through immersive community programs. We create spaces where tradition
+              meets contemporary understanding, providing mentorship and spiritual grounding for young minds
+              navigating a complex world.
+            </p>
+            <CardLink />
+          </AnimateIn>
+
+          {/* 02 — Digital Evangelization */}
+          <AnimateIn
+            delay={0.2}
+            className="group lg:col-start-8 lg:col-span-5 lg:row-start-1 lg:row-span-2 lg:pl-10 lg:top-20 lg:relative"
+          >
+            <CardMeta number="02" tags={["Focus: Technology"]} />
+            <div className="relative w-full h-[240px] lg:h-[350px] overflow-hidden bg-navy mb-6">
+              <Image
+                src="/aboutus15.jpeg"
+                alt="Abstract digital light network"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
+              />
+            </div>
+            <CardTitle>Digital Evangelization</CardTitle>
+            <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
+              Translating timeless messages into modern mediums. Utilizing cutting-edge platforms to build global
+              digital parishes, ensuring our reach extends far beyond physical walls into the daily digital lives
+              of millions.
+            </p>
+            <CardLink />
+          </AnimateIn>
+
+          {/* 03 — Educational Resources */}
+          <AnimateIn
+            delay={0.25}
+            className="group lg:col-start-2 lg:col-span-4 lg:row-start-4 lg:row-span-2 lg:mt-16 flex flex-col items-start lg:items-center lg:text-center"
+          >
+            <CardMeta number="03" tags={["Focus: Knowledge"]} />
+            <div className="relative w-full h-[280px] lg:w-[280px] lg:h-[280px] lg:rounded-full overflow-hidden bg-navy mb-8 lg:mx-auto">
+              <Image
+                src="/aboutus17.jpeg"
+                alt="Classical architecture and light"
+                fill
+                sizes="(max-width: 1024px) 100vw, 280px"
+                className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
+              />
+            </div>
+            <CardTitle center>Educational Resources</CardTitle>
+            <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
+              A comprehensive library of theological, historical, and philosophical materials, curated and
+              digitized for scholars and seekers alike. Elevating discourse through accessible, high-fidelity
+              knowledge.
+            </p>
+            <CardLink />
+          </AnimateIn>
+
+          {/* 04 — Future Projects */}
+          <AnimateIn
+            delay={0.3}
+            className="group lg:col-start-7 lg:col-span-6 lg:row-start-3 lg:row-span-3 lg:pl-10 lg:border-t lg:border-white/10 lg:pt-10 lg:mt-10"
+          >
+            <div className="relative w-full h-[240px] overflow-hidden bg-navy mb-8">
+              <Image
+                src="/aboutus21.jpeg"
+                alt="Minimalist structural architecture"
+                fill
+                sizes="(max-width: 1024px) 100vw, 46vw"
+                className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
+              />
+            </div>
+            <CardMeta number="04" tags={["Phase: Development"]} />
+            <CardTitle>Future Projects</CardTitle>
+            <p className="text-white/40 text-sm font-light leading-relaxed">
+              Architecting the next decade of structural and spiritual growth. From sustainable community centers
+              to innovative philanthropic models, these blueprints define our forward trajectory.
+            </p>
+            <CardLink />
+          </AnimateIn>
         </div>
       </div>
     </section>
@@ -274,13 +369,18 @@ function Initiatives() {
 }
 
 /* ─── News ───────────────────────────────────────────────────────────── */
-const newsItems = [
+// Shown whenever FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN aren't set, or
+// the Graph API request fails — keeps the section populated either way.
+const fallbackNewsItems: NewsCard[] = [
   {
     date: "June 2025",
     tag: "Canonization",
     title: "Carlo Acutis Officially Canonized as the World's First Millennial Saint",
     excerpt:
       "In a historic ceremony in St. Peter's Square, Pope Francis canonized Carlo Acutis, making him the patron of the internet generation.",
+    href: "#",
+    external: false,
+    image: "/gallery/vatican-square.jpg",
   },
   {
     date: "May 2025",
@@ -288,6 +388,9 @@ const newsItems = [
     title: "Foundation Announces Digital Discipleship Summit for Youth Ministers",
     excerpt:
       "Hundreds of youth ministers from across the country gather to learn how to use Carlo's story to inspire their communities.",
+    href: "#",
+    external: false,
+    image: "/gallery/cathedral-interior.jpg",
   },
   {
     date: "April 2025",
@@ -295,58 +398,50 @@ const newsItems = [
     title: "New Educational Resource Pack Released — Free for All Parishes",
     excerpt:
       "Download lesson plans, infographics, and video guides on Carlo's life for confirmation, high school, and college students.",
+    href: "#",
+    external: false,
+    image: "/gallery/candles-church.jpg",
   },
 ];
 
-function LatestNews() {
+const FALLBACK_POST_IMAGE = "/gallery/church-dome.jpg";
+
+function fbPostToCard(post: FacebookPost): NewsCard {
+  const message = post.message ?? "";
+  const firstLine = message.split("\n")[0] ?? "";
+  const title = firstLine.length > 90 ? `${firstLine.slice(0, 87)}…` : firstLine;
+  return {
+    date: new Date(post.created_time).toLocaleDateString("en-US", { month: "long", year: "numeric" }),
+    tag: "Facebook",
+    title: title || "View post on Facebook",
+    excerpt: message,
+    href: post.permalink_url,
+    external: true,
+    image: post.full_picture || FALLBACK_POST_IMAGE,
+  };
+}
+
+async function LatestNews() {
+  const posts = await getFacebookPosts(24);
+  const newsItems = posts && posts.length > 0 ? posts.map(fbPostToCard) : fallbackNewsItems;
+
   return (
     <section className="py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-          <div>
-            <AnimateIn>
-              <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-4">
-                Latest
-              </p>
-            </AnimateIn>
-            <AnimateIn delay={0.1}>
-              <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-                News &amp; Updates
-              </h2>
-            </AnimateIn>
-          </div>
-          <AnimateIn delay={0.15}>
-            <a
-              href="#"
-              className="text-navy/60 hover:text-navy text-sm font-medium underline underline-offset-4 transition-colors"
-            >
-              View all news →
-            </a>
+        <div className="mb-14">
+          <AnimateIn>
+            <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-4">
+              Latest
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={0.1}>
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
+              News &amp; Updates
+            </h2>
           </AnimateIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {newsItems.map((item, i) => (
-            <AnimateIn key={item.title} delay={i * 0.1}>
-              <article className="group bg-white rounded-sm overflow-hidden border border-cream-dark hover:shadow-xl hover:shadow-navy/5 transition-all duration-300 flex flex-col h-full">
-                <div className="bg-navy h-1.5 w-full" />
-                <div className="p-8 flex flex-col flex-1">
-                  <div className="flex items-center gap-3 mb-5">
-                    <span className="text-[10px] font-semibold tracking-widest uppercase text-gold bg-gold/10 px-3 py-1 rounded-full">
-                      {item.tag}
-                    </span>
-                    <span className="text-navy/30 text-xs">{item.date}</span>
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-navy mb-3 group-hover:text-navy-light transition-colors leading-snug flex-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-navy/55 text-sm leading-relaxed mb-6">{item.excerpt}</p>
-                  <div className="text-xs font-semibold text-gold tracking-wide">Read more →</div>
-                </div>
-              </article>
-            </AnimateIn>
-          ))}
-        </div>
+        <NewsGrid items={newsItems} />
       </div>
     </section>
   );
@@ -372,9 +467,9 @@ function QuoteBanner() {
         </AnimateIn>
         <AnimateIn delay={0.3}>
           <div className="mt-10">
-            <Link href="/carlo" className="text-gold text-sm font-semibold hover:text-gold-light tracking-wide transition-colors">
+            <WipeLink href="/carlo" className="text-gold text-sm font-semibold hover:text-gold-light tracking-wide transition-colors">
               Read His Full Story →
-            </Link>
+            </WipeLink>
           </div>
         </AnimateIn>
       </div>
@@ -385,65 +480,94 @@ function QuoteBanner() {
 /* ─── Ways to Support ────────────────────────────────────────────────── */
 const supportOptions = [
   {
-    title: "Individual Giving",
-    description: "Your personal gift fuels youth outreach, educational resources, and digital evangelization — one soul at a time.",
+    number: "01",
+    titleLines: ["Individual", "Giving"],
+    description:
+      "Your personal gift fuels youth outreach, educational resources, and digital evangelization — one soul at a time.",
     cta: "Give Now",
     href: "/donate" as const,
-    accentClass: "bg-gold",
+    barClass: "bg-gold",
+    numberClass: "text-gold/40",
     ctaClass: "bg-gold text-navy-dark hover:bg-gold-light",
   },
   {
-    title: "Institutional Giving",
-    description: "Partner with us as a foundation, diocese, or institution. Access governance documents, impact metrics, and grant information.",
+    number: "02",
+    titleLines: ["Institutional", "Giving"],
+    description:
+      "Partner with us as a foundation, diocese, or institution. Access governance documents, impact metrics, and grant information.",
     cta: "Institutional Partners",
     href: "/donate" as const,
-    accentClass: "bg-navy",
+    barClass: "bg-navy",
+    numberClass: "text-navy/20",
     ctaClass: "bg-navy text-white hover:bg-navy-light",
   },
   {
-    title: "Corporate Partnerships",
-    description: "Align your brand with a mission that transcends generations. Sponsorship and co-branding opportunities available.",
+    number: "03",
+    titleLines: ["Corporate", "Partnerships"],
+    description:
+      "Align your brand with a mission that transcends generations. Sponsorship and co-branding opportunities available.",
     cta: "Corporate Info",
     href: "/donate" as const,
-    accentClass: "bg-navy-dark",
-    ctaClass: "bg-navy-dark text-white hover:bg-navy",
+    barClass: "bg-navy",
+    numberClass: "text-navy/20",
+    ctaClass: "bg-navy text-white hover:bg-navy-light",
   },
 ];
 
 function WaysToSupport() {
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-20">
           <AnimateIn>
-            <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Support the Mission
-            </p>
+            <div className="flex flex-col items-center gap-6">
+              <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase">
+                Support the Mission
+              </p>
+              <span className="w-12 h-px bg-gold/50" />
+            </div>
           </AnimateIn>
           <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">Ways to Give</h2>
+            <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-navy mt-8 mb-6 leading-tight">
+              Ways to Give
+            </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
-            <p className="mt-5 text-navy/55 text-lg max-w-xl mx-auto">
+            <p className="text-lg md:text-xl text-navy/55 font-light leading-relaxed">
               Every gift — large or small — carries Carlo&apos;s message to a new generation.
             </p>
           </AnimateIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="border-t border-navy/10">
           {supportOptions.map((opt, i) => (
-            <AnimateIn key={opt.title} delay={i * 0.1}>
-              <div className="group flex flex-col h-full border border-cream-dark rounded-sm overflow-hidden hover:shadow-2xl hover:shadow-navy/10 transition-all duration-300">
-                <div className={`h-1.5 w-full ${opt.accentClass}`} />
-                <div className="flex-1 p-8 flex flex-col">
-                  <h3 className="font-serif text-2xl font-semibold text-navy mb-4">{opt.title}</h3>
-                  <p className="text-navy/55 text-sm leading-relaxed flex-1 mb-8">{opt.description}</p>
-                  <Link
+            <AnimateIn key={opt.titleLines.join(" ")} delay={i * 0.1}>
+              <div className="group relative flex flex-col lg:flex-row lg:items-center py-10 lg:py-14 border-b border-navy/10 transition-colors duration-500 hover:bg-white/70 -mx-6 px-6 lg:-mx-12 lg:px-12">
+                <span
+                  className={`absolute left-0 top-0 bottom-0 w-1 ${opt.barClass} scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-center hidden lg:block`}
+                />
+
+                <div className="w-full lg:w-4/12 flex items-start gap-5 mb-6 lg:mb-0 pr-8">
+                  <span className={`font-serif italic text-3xl mt-1 shrink-0 ${opt.numberClass}`}>{opt.number}</span>
+                  <h3 className="font-serif text-3xl lg:text-4xl text-navy leading-tight">
+                    {opt.titleLines[0]}
+                    <br />
+                    {opt.titleLines[1]}
+                  </h3>
+                </div>
+
+                <div className="w-full lg:w-5/12 mb-8 lg:mb-0 pr-8 lg:pr-16">
+                  <p className="text-navy/55 text-lg font-light leading-relaxed">{opt.description}</p>
+                </div>
+
+                <div className="w-full lg:w-3/12 flex lg:justify-end">
+                  <WipeLink
                     href={opt.href}
-                    className={`inline-block text-center text-sm font-semibold px-6 py-3 rounded-sm transition-all duration-200 ${opt.ctaClass}`}
+                    className={`inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 ${opt.ctaClass}`}
                   >
-                    {opt.cta} →
-                  </Link>
+                    {opt.cta}
+                    <FiArrowRight className="ml-3" />
+                  </WipeLink>
                 </div>
               </div>
             </AnimateIn>

@@ -47,6 +47,19 @@ export default function MiraclesInfiniteGrid() {
     return () => window.removeEventListener("miracles-filter", handler);
   }, []);
 
+  // Scroll the grid into view only after the filtered (much shorter) layout has
+  // painted — scrolling immediately on the map-click event races the browser's
+  // smooth-scroll against React's re-render, so the target position is computed
+  // against the old, taller infinite-scroll layout and the page overshoots past
+  // the actual cards into blank space below them.
+  useEffect(() => {
+    if (!filterCountry) return;
+    const raf = requestAnimationFrame(() => {
+      document.getElementById("miracles-grid")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [filterCountry]);
+
   // GSAP infinite scroll — only active when no filter is applied
   useEffect(() => {
     if (filterCountry) return;
@@ -223,8 +236,12 @@ export default function MiraclesInfiniteGrid() {
       </section>
 
       {filterCountry ? (
-        /* Static grid for filtered results */
-        <div className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
+        /* Static grid for filtered results — keyed so React always mounts a
+           fresh node here instead of reusing the infinite-scroll grid's DOM
+           element, which GSAP moves around with a raw `transform` outside of
+           React's tracking (a stale transform inherited that way would shove
+           this grid off-screen and make its cards unclickable). */
+        <div key="filtered" className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
           <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
             {displayedMiracles.map((miracle) => (
               <div
@@ -261,6 +278,7 @@ export default function MiraclesInfiniteGrid() {
       ) : (
         /* Infinite scroll grid */
         <div
+          key="infinite"
           ref={sectionRef}
           className="relative h-[75vh] overflow-hidden cursor-grab active:cursor-grabbing pb-24"
           style={{ background: "#0d0d0d" }}

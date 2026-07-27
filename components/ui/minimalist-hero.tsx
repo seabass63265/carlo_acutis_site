@@ -208,7 +208,7 @@ export const MinimalistHero = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.2 }}
-          className={`items-center space-x-4 -translate-x-16 ${footerText ? 'hidden md:flex' : 'flex'}`}
+          className={`items-center space-x-4 md:-translate-x-16 ${footerText ? 'hidden md:flex' : 'flex'}`}
         >
           {footerText ? (
             <motion.div

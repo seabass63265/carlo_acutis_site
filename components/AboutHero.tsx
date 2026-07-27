@@ -164,6 +164,7 @@ export default function AboutHero() {
 
           return tl;
         })
+        .call(() => window.dispatchEvent(new Event("about-hero-images-done")))
         .to(".ah-reveal", { y: 0, duration: 2.5, ease: "hop2", stagger: 0.07, delay: 0.4 })
         .to(split.lines, { yPercent: 0, duration: 2.2, ease: "hop2", stagger: 0.1 }, "<+=0.15");
 
@@ -238,15 +239,6 @@ export default function AboutHero() {
           ))}
         </div>
 
-        {/* Nav — top right */}
-        <nav className="ah-nav absolute top-8 right-8 flex gap-8 pointer-events-auto">
-          {["About", "Mission", "Board", "Contact"].map(item => (
-            <div key={item} className="overflow-hidden">
-              <div className="ah-reveal font-medium text-navy text-sm">{item}</div>
-            </div>
-          ))}
-        </nav>
-
         {/* Team photo — bottom right (desktop only, animated via GSAP) */}
         <div className="ah-team-img absolute right-8 bottom-8 overflow-hidden"
           style={{ width: "38%", height: "52%", clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
@@ -308,7 +300,6 @@ export default function AboutHero() {
         @media (max-width: 767px) {
           /* Hide desktop-only elements */
           .ah-team-img  { display: none !important; }
-          .ah-nav       { display: none !important; }
           .ah-info-row2 { display: none !important; }
 
           /* Text must render above the mosaic images, not underneath them */

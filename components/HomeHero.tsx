@@ -1,6 +1,6 @@
 "use client";
 
-import { FiFacebook, FiInstagram, FiMail, FiLinkedin } from "react-icons/fi";
+import { FiFacebook, FiMail, FiLinkedin } from "react-icons/fi";
 import { MinimalistHero } from "@/components/ui/minimalist-hero";
 
 export default function HomeHero() {
@@ -19,12 +19,11 @@ export default function HomeHero() {
       imageAlt="St. Carlo Acutis"
       overlayText={{ part1: "Born", part2: ["Original.", "Holy.", "Beloved.", "Chosen.", "Called.", "Eternal."] }}
       socialLinks={[
-        { icon: FiFacebook, href: "#" },
-        { icon: FiInstagram, href: "#" },
+        { icon: FiFacebook, href: "https://www.facebook.com/friendsofstcarlo" },
         { icon: FiMail, href: "/contact" },
-        { icon: FiLinkedin, href: "#" },
+        { icon: FiLinkedin, href: "https://www.linkedin.com/company/friendsofstcarlo/" },
       ]}
-      locationText="Friends of St. Carlo Acutis Foundation"
+      locationText="Los Angeles, California"
     />
   );
 }

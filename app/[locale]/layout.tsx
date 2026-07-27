@@ -5,7 +5,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GridWipeProvider } from "@/components/GridWipeProvider";
+import { SvgWipeProvider } from "@/components/SvgWipeProvider";
+import ScrollToTop from "@/components/ScrollToTop";
 
 type Props = {
   children: React.ReactNode;
@@ -34,13 +35,14 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <GridWipeProvider>
+      <SvgWipeProvider>
         <div style={{ animation: "fadeInPage 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards" }}>
+          <ScrollToTop />
           <Navbar />
           <main>{children}</main>
           <Footer />
         </div>
-      </GridWipeProvider>
+      </SvgWipeProvider>
     </NextIntlClientProvider>
   );
 }
