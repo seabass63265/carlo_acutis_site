@@ -47,7 +47,7 @@ export default function DonorsWall() {
           <>
             Supported by a community of{" "}
             <span className="font-semibold" style={{ color: "#D9A441" }}>
-              871+
+              ___+
             </span>{" "}
             generous donors worldwide.
           </>
