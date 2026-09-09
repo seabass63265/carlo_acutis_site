@@ -17,7 +17,8 @@ const boardMembers: TeamMember[] = [
     id: "2",
     name: "Josefina Fernandez McEvoy",
     role: "Founder",
-    image: "https://i.pravatar.cc/400?img=9", // TODO: swap in Josefina's actual headshot
+    image: "/jfm-foc.jpg",
+    column: 2,
     social: { twitter: "#" },
     bio: [
       "Josefina Fernandez McEvoy founded Friends of St. Carlo Acutis, Inc. (\"Friends of Carlo\") in early 2025, after nearly two years of prayerful discernment and due diligence to better understand St. Carlo's calling. Along the way, she consulted with several spiritual and technical mentors who helped crystallize her vision for Friends of Carlo. Through this journey, she came to understand St. Carlo's calling as an invitation to help carry forward his legacy by inspiring young people through his example of faith, technology, and service. In particular, Friends of Carlo seeks to foster young people's screen-based friendship with Jesus by listening to their hopes, challenges, and experiences, and helping them encounter Him online through practical guidance, accompaniment, and meaningful digital engagement.",
@@ -30,7 +31,8 @@ const boardMembers: TeamMember[] = [
     id: "7",
     name: "Father Matthew",
     role: "Spiritual Director",
-    image: "https://i.pravatar.cc/400?img=13", // TODO: swap in Father Matthew's actual headshot
+    image: "/Fr.Matthew-FOC.png",
+    column: 1,
     bio: [
       "\"Your eyes beheld my unformed body. In your book was written all the days that were ordained for me, when none of them as yet existed.\" (Ps. 139:16) God knew us even before we were born. No one comes into this world by mistake or mishap, and no life is a fluke of nature. Rather, God creates each person with a purpose in mind.",
       "I was born in Nanvilli, in what was then Ghana's Upper Region, into a family of six children. It was no accident that my parents, despite having no formal education, accepted Christianity when the Missionaries of Africa arrived in our area. Nor was it by chance that my father insisted all his children receive an education, despite cultural resistance at the time.",
@@ -43,7 +45,7 @@ const boardMembers: TeamMember[] = [
     id: "1",
     name: "Carmen Romero",
     role: "Board Member",
-    image: "/camremnpic.JPG",
+    image: "/carmenpic1.jpeg",
     social: { linkedin: "#", twitter: "#" },
     bio: [
       "Carmen Romero is a board member of Friends of St. Carlo, bringing a multidisciplinary background in technology, business strategy, and community engagement. She holds an MBA from Rome City Institute, where she graduated top of her class and was recognized as Master's Student of the Year. Carmen also holds a Bachelor's in Computer Science from Seattle University and a Game Design Certification from the University of Washington.",
@@ -54,7 +56,7 @@ const boardMembers: TeamMember[] = [
     id: "3",
     name: "Sebastian Rocha",
     role: "Technology Director",
-    image: "/seabasspic.jpg",
+    image: "/seaheadshot.jpg",
     social: { linkedin: "#", twitter: "#" },
     bio: [
       "Sebastian Rocha serves as Technology Director for Friends of St. Carlo Acutis. He earned a bachelor's degree in Computer Science from Loyola Marymount University, with a minor in Statistics and Data Science. His experience spans information technology, product management, and web development, including building accessible digital experiences and using technology to connect organizations with the communities they serve.",
@@ -77,7 +79,7 @@ const boardMembers: TeamMember[] = [
     id: "4",
     name: "John McEvoy",
     role: "Board Secretary & Treasurer",
-    image: "https://i.pravatar.cc/400?img=52", // TODO: swap in John's actual headshot
+    image: "/john-foc.jpg",
     column: 2,
     social: { linkedin: "#" },
     bio: [

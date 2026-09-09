@@ -41,29 +41,29 @@ export default function TeamShowcase({ members }: TeamShowcaseProps) {
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[160px] h-[190px] sm:w-[190px] sm:h-[220px] md:w-[230px] md:h-[270px]"
+              className="w-[176px] h-[283px] sm:w-[209px] sm:h-[328px] md:w-[253px] md:h-[404px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
           ))}
         </div>
-        <div className="flex flex-col gap-3 md:gap-4 mt-[72px] sm:mt-[90px] md:mt-[110px]">
+        <div className="flex flex-col gap-3 md:gap-4 mt-[79px] sm:mt-[99px] md:mt-[121px]">
           {col2.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[178px] h-[208px] sm:w-[210px] sm:h-[245px] md:w-[255px] md:h-[300px]"
+              className="w-[196px] h-[310px] sm:w-[231px] sm:h-[367px] md:w-[281px] md:h-[448px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
           ))}
         </div>
-        <div className="flex flex-col gap-3 md:gap-4 mt-[34px] sm:mt-[42px] md:mt-[52px]">
+        <div className="flex flex-col gap-3 md:gap-4 mt-[37px] sm:mt-[46px] md:mt-[57px]">
           {col3.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[168px] h-[198px] sm:w-[200px] sm:h-[232px] md:w-[242px] md:h-[284px]"
+              className="w-[185px] h-[296px] sm:w-[220px] sm:h-[346px] md:w-[266px] md:h-[424px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
