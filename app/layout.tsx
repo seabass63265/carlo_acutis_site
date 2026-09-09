@@ -32,6 +32,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://friendsofstcarloacutis.com"),
   title: {
     default: "Friends of St. Carlo Acutis Foundation",
     template: "%s | Friends of St. Carlo Acutis Foundation",
@@ -39,6 +40,22 @@ export const metadata: Metadata = {
   description:
     "Inspiring a new generation to use technology, faith, and service to transform the world through the example of St. Carlo Acutis.",
   keywords: ["Carlo Acutis", "Catholic", "foundation", "digital evangelization", "Eucharistic miracles", "faith"],
+  openGraph: {
+    title: "Friends of St. Carlo Acutis Foundation",
+    description:
+      "Inspiring a new generation to use technology, faith, and service to transform the world through the example of St. Carlo Acutis.",
+    url: "https://friendsofstcarloacutis.com",
+    siteName: "Friends of St. Carlo Acutis Foundation",
+    images: [{ url: "/foc-logo-halo.png", width: 2000, height: 2000 }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Friends of St. Carlo Acutis Foundation",
+    description:
+      "Inspiring a new generation to use technology, faith, and service to transform the world through the example of St. Carlo Acutis.",
+    images: ["/foc-logo-halo.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
