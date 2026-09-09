@@ -10,6 +10,8 @@ export interface TeamMember {
   image: string;
   /** Overrides which photo column this member's photo appears in (1-3). Defaults to a round-robin based on list order. */
   column?: 1 | 2 | 3;
+  /** Optional bio paragraphs, revealed inline when the member's row is clicked. */
+  bio?: string[];
   social?: {
     twitter?: string;
     linkedin?: string;
@@ -132,6 +134,7 @@ function MemberRow({
   hoveredId: string | null;
   onHover: (id: string | null) => void;
 }) {
+  const [expanded, setExpanded] = useState(false);
   const isActive = hoveredId === member.id;
   const isDimmed = hoveredId !== null && !isActive;
   const hasSocial =
@@ -139,6 +142,7 @@ function MemberRow({
     member.social?.linkedin ??
     member.social?.instagram ??
     member.social?.behance;
+  const hasBio = !!member.bio?.length;
 
   return (
     <div
@@ -148,6 +152,7 @@ function MemberRow({
       )}
       onMouseEnter={() => onHover(member.id)}
       onMouseLeave={() => onHover(null)}
+      onClick={() => hasBio && setExpanded((v) => !v)}
     >
       <div className="flex items-center gap-3">
         <span
@@ -225,6 +230,28 @@ function MemberRow({
       <p className="mt-2 pl-[35px] text-[9px] md:text-[11px] font-medium uppercase tracking-[0.22em] text-white/40">
         {member.role}
       </p>
+      {hasBio && (
+        <p className="mt-1.5 pl-[35px] text-[14px] md:text-[16px] font-medium normal-case tracking-normal text-white/30 transition-colors duration-200 hover:text-white/60">
+          {expanded ? "− Less" : "+ Bio"}
+        </p>
+      )}
+
+      {hasBio && (
+        <div
+          className="grid pl-[35px] transition-[grid-template-rows] duration-500 ease-out"
+          style={{ gridTemplateRows: expanded ? "1fr" : "0fr" }}
+        >
+          <div className="overflow-hidden">
+            <div className="pt-3 pr-4 pb-1 space-y-3 max-w-xl">
+              {member.bio!.map((paragraph, i) => (
+                <p key={i} className="text-[12.5px] md:text-[13.5px] leading-relaxed text-white/50">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

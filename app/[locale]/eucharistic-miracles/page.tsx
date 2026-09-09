@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
 import MiraclesIntroHero from "@/components/MiraclesIntroHero";
-import MiraclesHeroClient from "@/components/MiraclesHeroClient";
 import MiraclesMapClient from "@/components/MiraclesMapClient";
 import MiraclesInfiniteGrid from "@/components/MiraclesInfiniteGrid";
 import MiracleSkiper from "@/components/MiracleSkiper";
@@ -347,10 +346,6 @@ export default function EucharisticMiraclesPage() {
   return (
     <>
       <MiraclesIntroHero />
-      <MiraclesHeroClient
-        eyebrow="The Eucharistic Miracles Exhibition"
-        title={`${miracles.length} Miracles. One Message.`}
-      />
       <Intro />
       <WorldMap />
       <MiraclesInfiniteGrid />

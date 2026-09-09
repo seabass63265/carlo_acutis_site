@@ -55,9 +55,9 @@ function WhySupport() {
           {/* Impact metrics */}
           <div className="grid grid-cols-2 gap-5">
             {[
-              { value: "$1M+", label: "Total funds deployed to mission" },
-              { value: "50K+", label: "Young people reached annually" },
-              { value: "200+", label: "Parishes served with resources" },
+              { value: "___", label: "Total funds deployed to mission" },
+              { value: "___", label: "Young people reached annually" },
+              { value: "___", label: "Parishes served with resources" },
               { value: "< 15%", label: "Administrative overhead" },
               { value: "100%", label: "Financials audited annually" },
               { value: "6", label: "Board-governed with full transparency" },

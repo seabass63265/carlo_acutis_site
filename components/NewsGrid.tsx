@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiFacebook } from "react-icons/fi";
 import AnimateIn from "@/components/AnimateIn";
 
 export type NewsCard = {
@@ -40,9 +40,13 @@ export default function NewsGrid({ items }: { items: NewsCard[] }) {
               </div>
               <div className="p-8 md:p-10 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-6">
-                  <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gold-dark bg-gold/10 border border-gold/20 px-3 py-1 rounded">
-                    {item.tag}
-                  </span>
+                  {item.tag === "Facebook" ? (
+                    <FiFacebook className="w-4 h-4 text-navy/60" aria-label="Facebook" />
+                  ) : (
+                    <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gold-dark bg-gold/10 border border-gold/20 px-3 py-1 rounded">
+                      {item.tag}
+                    </span>
+                  )}
                   <span className="text-navy/35 text-xs">{item.date}</span>
                 </div>
                 <h3 className="font-serif text-2xl font-semibold text-navy mb-4 group-hover:text-gold-dark transition-colors leading-[1.3] line-clamp-2">

@@ -315,19 +315,19 @@ export default function MiraclesInfiniteGrid() {
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-white rounded-sm max-w-lg w-full shadow-2xl overflow-hidden"
+            className="bg-white rounded-sm max-w-3xl md:max-w-4xl w-full shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh]"
             onClick={(e) => e.stopPropagation()}
           >
             {selected.image && (
-              <div className="h-48 overflow-hidden">
+              <div className="md:w-2/5 flex-shrink-0 bg-[#0d0d0d] flex items-center justify-center max-h-64 md:max-h-none">
                 <img
                   src={selected.image}
                   alt={selected.title}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full max-h-64 md:max-h-[90vh] object-contain"
                 />
               </div>
             )}
-            <div className="p-8">
+            <div className="p-8 overflow-y-auto md:flex-1">
             <div className="flex items-start justify-between gap-4 mb-5">
               <div>
                 <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">

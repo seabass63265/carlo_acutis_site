@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import ChangeLanguageButton from "@/components/ChangeLanguageButton";
 
 const footerSections = [
@@ -32,8 +33,8 @@ const footerSections = [
 ];
 
 const socials = [
-  { label: "Facebook", href: "https://www.facebook.com/friendsofstcarlo" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/friendsofstcarlo/" },
+  { label: "Facebook", href: "https://www.facebook.com/friendsofstcarlo", Icon: FiFacebook },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/friendsofstcarlo/", Icon: FiLinkedin },
 ];
 
 function CrossIcon() {
@@ -82,13 +83,16 @@ export default function Footer() {
 
             {/* Socials */}
             <div className="flex gap-5">
-              {socials.map(({ label, href }) => (
+              {socials.map(({ label, href, Icon }) => (
                 <a
                   key={label}
                   href={href}
-                  className="text-white/35 hover:text-gold text-xs tracking-widest uppercase transition-colors duration-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="text-white/35 hover:text-gold transition-colors duration-200"
                 >
-                  {label}
+                  <Icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
@@ -135,12 +139,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Builder credit */}
-        <div className="pt-6 border-t border-white/5 mt-6 text-center">
-          <p className="text-white/20 text-[10px] tracking-[0.2em] uppercase">
-            Built by <span className="text-white/40">Sebastian Rocha</span>
-          </p>
-        </div>
       </div>
     </footer>
   );

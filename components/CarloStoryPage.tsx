@@ -617,7 +617,7 @@ export default function CarloStoryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
             <Fade delay={0.06}>
-              <PhotoCard src="/gallery/candles-church.jpg" alt="Candles in church" w={220} h={270} rotate={-1.5} caption="Daily Mass, Milan" />
+              <PhotoCard src="/carlopic2.jpg" alt="Candles in church" w={220} h={270} rotate={-1.5} caption="Daily Mass, Milan" />
             </Fade>
 
             <Fade delay={0.14}>
@@ -756,7 +756,7 @@ export default function CarloStoryPage() {
             <div style={{ position: "relative", minHeight: 340 }}>
               <Fade delay={0.1}>
                 <div style={{ position: "absolute", top: 0, left: 20 }}>
-                  <PhotoCard src="/gallery/stained-glass.jpg" alt="Stained glass" w={180} h={220} rotate={2} caption="The Eucharistic Miracles Exhibition" />
+                  <PhotoCard src="/carlopic3.jpg" alt="Stained glass" w={180} h={220} rotate={2} caption="The Eucharistic Miracles Exhibition" />
                 </div>
               </Fade>
               <Fade delay={0.22}>

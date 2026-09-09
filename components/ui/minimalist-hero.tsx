@@ -24,6 +24,7 @@ interface MinimalistHeroProps {
   headlineSplit?: boolean;
   centerLabel?: string;
   footerText?: string;
+  onReadMoreClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const SocialIcon = ({ href, icon: Icon }: { href: string; icon: IconComponent }) => (
@@ -48,6 +49,7 @@ export const MinimalistHero = ({
   headlineSplit = false,
   centerLabel,
   footerText,
+  onReadMoreClick,
 }: MinimalistHeroProps) => {
   const words = Array.isArray(overlayText.part2) ? overlayText.part2 : [overlayText.part2];
   const [wordIndex, setWordIndex] = useState(0);
@@ -159,7 +161,11 @@ export const MinimalistHero = ({
           ) : (
             <>
               <p className="mx-auto max-w-xs text-sm leading-relaxed text-foreground/80 md:mx-0">{mainText}</p>
-              <a href={readMoreLink} className="mt-4 inline-block text-sm font-medium text-foreground underline decoration-from-font">
+              <a
+                href={readMoreLink}
+                onClick={onReadMoreClick}
+                className="mt-4 inline-block text-sm font-medium text-foreground underline decoration-from-font"
+              >
                 Read More
               </a>
             </>

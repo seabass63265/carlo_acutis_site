@@ -237,6 +237,18 @@ export default function Navbar() {
             animate={{ opacity: fadeOut ? 1 : 0 }}
             transition={{ duration: 1.0, ease: [0.4, 0, 0.2, 1] }}
           />
+          {!fadeOut && (
+            <motion.button
+              type="button"
+              onClick={handleVideoEnd}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
+              className="absolute bottom-6 right-6 z-10 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold tracking-widest uppercase backdrop-blur-sm border border-white/25 transition-colors"
+            >
+              Skip →
+            </motion.button>
+          )}
         </motion.div>
       )}
     </AnimatePresence>

@@ -15,6 +15,10 @@ export default function HomeHero() {
       ]}
       mainText="Inspired by St. Carlo Acutis — the first millennial saint — we exist to bring the Gospel to a new generation through faith, technology, and encounter."
       readMoreLink="/carlo"
+      onReadMoreClick={(e) => {
+        e.preventDefault();
+        window.dispatchEvent(new CustomEvent("carlo-story-click"));
+      }}
       imageSrc="/carloheropic0.png"
       imageAlt="St. Carlo Acutis"
       overlayText={{ part1: "Born", part2: ["Original.", "Holy.", "Beloved.", "Chosen.", "Called.", "Eternal."] }}

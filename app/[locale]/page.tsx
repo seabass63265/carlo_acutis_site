@@ -221,15 +221,15 @@ function CardTitle({ children, center = false }: { children: React.ReactNode; ce
   );
 }
 
-function CardLink() {
+function CardLink({ text = "Discover Details", href = "#" }: { text?: string; href?: string }) {
   return (
-    <a
-      href="#"
+    <WipeLink
+      href={href}
       className="inline-flex items-center gap-3 mt-6 font-sans text-[9px] tracking-[0.2em] uppercase text-white hover:text-gold transition-colors duration-300"
     >
-      Discover Details
+      {text}
       <FiArrowRight className="text-gold transition-transform duration-300 group-hover:translate-x-1" />
-    </a>
+    </WipeLink>
   );
 }
 
@@ -289,10 +289,10 @@ function Initiatives() {
               meets contemporary understanding, providing mentorship and spiritual grounding for young minds
               navigating a complex world.
             </p>
-            <CardLink />
+            <CardLink text="Contact Us" href="/contact" />
           </AnimateIn>
 
-          {/* 02 — Digital Evangelization */}
+          {/* 02 — Digital Outreach */}
           <AnimateIn
             delay={0.2}
             className="group lg:col-start-8 lg:col-span-5 lg:row-start-1 lg:row-span-2 lg:pl-10 lg:top-20 lg:relative"
@@ -307,13 +307,13 @@ function Initiatives() {
                 className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
               />
             </div>
-            <CardTitle>Digital Evangelization</CardTitle>
+            <CardTitle>Digital Outreach</CardTitle>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
               Translating timeless messages into modern mediums. Utilizing cutting-edge platforms to build global
               digital parishes, ensuring our reach extends far beyond physical walls into the daily digital lives
               of millions.
             </p>
-            <CardLink />
+            <CardLink text="Contact Us" href="/contact" />
           </AnimateIn>
 
           {/* 03 — Educational Resources */}
@@ -333,11 +333,11 @@ function Initiatives() {
             </div>
             <CardTitle center>Educational Resources</CardTitle>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
-              A comprehensive library of theological, historical, and philosophical materials, curated and
-              digitized for scholars and seekers alike. Elevating discourse through accessible, high-fidelity
-              knowledge.
+              Explore our growing archive of Eucharistic Miracles documented across the centuries, alongside
+              Carlo&apos;s own story — his life, his faith, and the witness that continues to inspire a new
+              generation.
             </p>
-            <CardLink />
+            <CardLink text="Discover Miracles" href="/eucharistic-miracles" />
           </AnimateIn>
 
           {/* 04 — Future Projects */}
@@ -360,7 +360,7 @@ function Initiatives() {
               Architecting the next decade of structural and spiritual growth. From sustainable community centers
               to innovative philanthropic models, these blueprints define our forward trajectory.
             </p>
-            <CardLink />
+            <CardLink text="Contact Us" href="/contact" />
           </AnimateIn>
         </div>
       </div>

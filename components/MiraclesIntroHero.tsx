@@ -132,7 +132,7 @@ export default function MiraclesIntroHero() {
           }}
         >
           <img
-            src="/herophoto1.png"
+            src="/calrohero1.png"
             alt=""
             className="absolute top-1/2 left-1/2 w-full h-full object-cover"
             style={{ transform: "translate(-50%, -50%) scale(2)" }}
