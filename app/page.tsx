@@ -161,7 +161,7 @@ export default function SplashPage() {
             }}
           >
             <Image
-              src="/FoC Logo w Halo.png"
+              src="/foc-logo-halo.png"
               alt="Friends of Carlo Acutis"
               width={150}
               height={150}
