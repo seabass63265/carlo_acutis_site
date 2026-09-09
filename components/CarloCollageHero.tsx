@@ -1,7 +1,7 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, type Transition } from "framer-motion";
 
-const float = {
+const float: { animate: { y: number[] }; transition: Transition } = {
   animate: { y: [0, -6, 0] },
   transition: { duration: 5, repeat: Infinity, ease: "easeInOut" },
 };
