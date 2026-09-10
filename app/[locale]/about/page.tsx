@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AnimateIn from "@/components/AnimateIn";
+import HashScroll from "@/components/HashScroll";
 import AboutHero from "@/components/AboutHero";
 import ScrollWaveGallery from "@/components/ScrollWaveGallery";
 import AboutScrollTypography from "@/components/AboutScrollTypography";
@@ -95,7 +96,7 @@ const boardMembers: TeamMember[] = [
 
 function Board() {
   return (
-    <section className="py-28 px-6 bg-navy-dark" id="board">
+    <section className="py-28 px-6 bg-navy-dark scroll-mt-20" id="board">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <AnimateIn>
@@ -116,7 +117,7 @@ function Board() {
 /* ─── Governance ─────────────────────────────────────────────────────── */
 function Governance() {
   return (
-    <section className="py-24 px-6 bg-white" id="governance">
+    <section className="py-24 px-6 bg-white scroll-mt-20" id="governance">
       <div className="max-w-5xl mx-auto">
 
         {/* Centered headline */}
@@ -202,6 +203,7 @@ function Governance() {
 export default function AboutPage() {
   return (
     <>
+      <HashScroll />
       <AboutHero />
       <ScrollWaveGallery />
       <AboutScrollTypography />
