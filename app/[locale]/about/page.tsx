@@ -19,7 +19,7 @@ const boardMembers: TeamMember[] = [
     role: "Founder",
     image: "/jfm-foc.jpg",
     column: 2,
-    social: { twitter: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/josefinafernandezmcevoy/" },
     bio: [
       "Josefina Fernandez McEvoy founded Friends of St. Carlo Acutis, Inc. (\"Friends of Carlo\") in early 2025, after nearly two years of prayerful discernment and due diligence to better understand St. Carlo's calling. Along the way, she consulted with several spiritual and technical mentors who helped crystallize her vision for Friends of Carlo. Through this journey, she came to understand St. Carlo's calling as an invitation to help carry forward his legacy by inspiring young people through his example of faith, technology, and service. In particular, Friends of Carlo seeks to foster young people's screen-based friendship with Jesus by listening to their hopes, challenges, and experiences, and helping them encounter Him online through practical guidance, accompaniment, and meaningful digital engagement.",
       "Josefina has been VIRTUS-certified in accordance with the Archdiocese of Los Angeles SAFE Environment policies for 17 years.",
@@ -33,6 +33,7 @@ const boardMembers: TeamMember[] = [
     role: "Spiritual Director",
     image: "/Fr.Matthew-FOC.png",
     column: 1,
+    social: { linkedin: "#" },
     bio: [
       "\"Your eyes beheld my unformed body. In your book was written all the days that were ordained for me, when none of them as yet existed.\" (Ps. 139:16) God knew us even before we were born. No one comes into this world by mistake or mishap, and no life is a fluke of nature. Rather, God creates each person with a purpose in mind.",
       "I was born in Nanvilli, in what was then Ghana's Upper Region, into a family of six children. It was no accident that my parents, despite having no formal education, accepted Christianity when the Missionaries of Africa arrived in our area. Nor was it by chance that my father insisted all his children receive an education, despite cultural resistance at the time.",
@@ -46,7 +47,7 @@ const boardMembers: TeamMember[] = [
     name: "Carmen Romero",
     role: "Board Member",
     image: "/carmenpic1.jpeg",
-    social: { linkedin: "#", twitter: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/romerocarmen/" },
     bio: [
       "Carmen Romero is a board member of Friends of St. Carlo, bringing a multidisciplinary background in technology, business strategy, and community engagement. She holds an MBA from Rome City Institute, where she graduated top of her class and was recognized as Master's Student of the Year. Carmen also holds a Bachelor's in Computer Science from Seattle University and a Game Design Certification from the University of Washington.",
       "She supports the foundation's mission through strategic planning and program development, with a commitment to honor Carlo's legacy. Carmen is dedicated to advancing socially responsible innovation and strengthening educational initiatives that empower young people. In her personal time, she's an avid reader, a proud Sims 4 addict, and happiest when she's near the water.",
@@ -57,7 +58,8 @@ const boardMembers: TeamMember[] = [
     name: "Sebastian Rocha",
     role: "Technology Director",
     image: "/seaheadshot.jpg",
-    social: { linkedin: "#", twitter: "#" },
+    objectPosition: "center 25%",
+    social: { linkedin: "https://www.linkedin.com/in/sebastian-rocha1/" },
     bio: [
       "Sebastian Rocha serves as Technology Director for Friends of St. Carlo Acutis. He earned a bachelor's degree in Computer Science from Loyola Marymount University, with a minor in Statistics and Data Science. His experience spans information technology, product management, and web development, including building accessible digital experiences and using technology to connect organizations with the communities they serve.",
       "Sebastian is especially inspired by St. Carlo Acutis, a self-taught developer who used his technical gifts to share the Catholic faith with others. Through Friends of Carlo, Sebastian hopes to help young people encounter Jesus through digital spaces that feel welcoming, meaningful, and sincere. He believes technology is at its best when it helps even one person feel closer to God.",
@@ -67,9 +69,9 @@ const boardMembers: TeamMember[] = [
     id: "6",
     name: "Johnny Vrba",
     role: "Creative Director",
-    image: "/johnnpic.JPG",
+    image: "/JohnnyVrba_Headshot_02.webp",
     column: 3,
-    social: { linkedin: "#", twitter: "#" },
+    social: { linkedin: "https://www.linkedin.com/in/vrba/" },
     bio: [
       "Johnny Vrba is an artist, author, and missionary from the greater Chicagoland area. He served as a college campus missionary from 2022 to 2024 at the University of St. Thomas in Saint Paul, Minnesota. He is the author of Seas the Day: The True Story of Fear, Friendship, and Faith While Stranded at Sea During Covid-19.",
       "His latest mission is to be a catalyst for a new renaissance within the Catholic Church by inspiring the next generation of young artists through storytelling and deeply meaningful multimedia art. During working hours, Johnny helps curate content that amplifies light as a Business Affairs and Acquisitions Administrator at Angel Studios.",

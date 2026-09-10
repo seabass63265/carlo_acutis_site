@@ -88,6 +88,15 @@ const PAGE_THEMES: Record<string, NavTheme> = {
     linkHover: "hover:text-navy",
     divider: "border-navy/10",
   },
+  "/youth-council": {
+    bg: "bg-transparent",
+    scrollBg: "bg-cream/95 backdrop-blur-sm",
+    mobileBg: "bg-cream",
+    logoText: "text-navy",
+    linkText: "text-navy/50",
+    linkHover: "hover:text-navy",
+    divider: "border-navy/10",
+  },
 };
 
 function LanguageSwitcher({ theme }: { theme: NavTheme }) {
@@ -305,6 +314,15 @@ export default function Navbar() {
           </button>
 
           <button
+            onClick={() => wipeTo("/youth-council")}
+            className={`text-[11px] font-sans font-medium tracking-[0.2em] uppercase transition-colors duration-200 ${
+              pathname === "/youth-council" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
+            }`}
+          >
+            Youth Council
+          </button>
+
+          <button
             onClick={() => wipeTo("/contact")}
             className={`text-[11px] font-sans font-medium tracking-[0.2em] uppercase transition-colors duration-200 ${
               pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
@@ -359,6 +377,12 @@ export default function Navbar() {
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
             Miracles
+          </button>
+          <button
+            onClick={() => { setMobileOpen(false); wipeTo("/youth-council"); }}
+            className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/youth-council" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
+          >
+            Youth Council
           </button>
           <button
             onClick={() => { setMobileOpen(false); wipeTo("/contact"); }}

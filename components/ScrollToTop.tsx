@@ -6,6 +6,10 @@ export default function ScrollToTop() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // When navigating to a URL with a hash (e.g. /about#board), let the browser
+    // scroll to that element instead of forcing the page to the top.
+    if (window.location.hash) return;
+
     // globals.css sets `scroll-behavior: smooth` on <html> for in-page anchor
     // links, but that also intercepts Next.js's own scroll-to-top-on-navigate
     // call and turns it into an interruptible animation that can get silently

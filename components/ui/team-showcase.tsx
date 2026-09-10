@@ -10,6 +10,8 @@ export interface TeamMember {
   image: string;
   /** Overrides which photo column this member's photo appears in (1-3). Defaults to a round-robin based on list order. */
   column?: 1 | 2 | 3;
+  /** CSS object-position for the photo (e.g. "center 30%"). Defaults to "center". */
+  objectPosition?: string;
   /** Optional bio paragraphs, revealed inline when the member's row is clicked. */
   bio?: string[];
   social?: {
@@ -116,6 +118,7 @@ function PhotoCard({
         alt={member.name}
         className="w-full h-full object-cover transition-[filter] duration-500"
         style={{
+          objectPosition: member.objectPosition ?? "center",
           filter: isActive
             ? "grayscale(0) brightness(1)"
             : "grayscale(1) brightness(0.7)",

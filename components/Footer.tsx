@@ -15,6 +15,7 @@ const footerSections = [
   {
     heading: "Get Involved",
     links: [
+      { href: "/youth-council", label: "Youth Council" },
       { href: "/donate", label: "Ways to Give" },
       { href: "/donate#institutional", label: "Institutional Giving" },
       { href: "/donate#corporate", label: "Corporate Partners" },
