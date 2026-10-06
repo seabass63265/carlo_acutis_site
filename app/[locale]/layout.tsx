@@ -15,8 +15,8 @@ type Props = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Friends of St. Carlo Acutis Foundation",
-    template: "%s | Friends of St. Carlo Acutis Foundation",
+    default: "Friends of Carlo",
+    template: "%s | Friends of Carlo",
   },
 };
 

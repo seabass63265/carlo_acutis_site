@@ -6,12 +6,12 @@ import { MinimalistHero } from "@/components/ui/minimalist-hero";
 export default function DonateHero() {
   return (
     <MinimalistHero
-      logoText="FoSCA."
+      logoText="FoC."
       navLinks={[]}
       mainText="Every gift helps carry forward the mission of St. Carlo Acutis. Your generosity allows us to inspire young people, strengthen Eucharistic devotion, support pilgrimages and educational initiatives, and create digital resources that bring others closer to Christ."
       readMoreLink="#donate-now"
       imageSrc="/carlopeaking.png"
-      imageAlt="St. Carlo Acutis — Friends of St. Carlo Acutis Foundation"
+      imageAlt="St. Carlo Acutis — Friends of Carlo"
       circleSrc="/backcircle.png"
       circleSize="h-[150vh] w-auto md:h-[1100px] md:w-[1100px] lg:h-[1300px] lg:w-[1300px]"
       circleTop="5%"
@@ -26,7 +26,7 @@ export default function DonateHero() {
         { icon: Share2, href: "#" },
         { icon: Send, href: "/contact" },
       ]}
-      locationText="Friends of St. Carlo Acutis Foundation"
+      locationText="Friends of Carlo"
     />
   );
 }

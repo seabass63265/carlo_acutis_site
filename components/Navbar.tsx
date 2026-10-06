@@ -275,11 +275,11 @@ export default function Navbar() {
             <CrossIcon />
           </span>
           <div className="leading-none">
-            <p className={`font-serif font-semibold tracking-tighter lg:tracking-wide transition-colors duration-500 text-[11px] lg:text-[13px] whitespace-nowrap ${theme.logoText}`}>
-              Friends of St. Carlo Acutis
+            <p className={`font-serif font-semibold tracking-tighter lg:tracking-wide transition-colors duration-500 text-[11px] lg:text-[16px] whitespace-nowrap ${theme.logoText}`}>
+              Friends of Carlo
             </p>
-            <p className="text-gold text-[8.5px] lg:text-[9px] font-sans tracking-[0.2em] lg:tracking-[0.28em] uppercase mt-[3px] text-left">
-              Foundation
+            <p className="hidden lg:block text-gold text-[10px] font-sans tracking-[0.05em] mt-[3px] text-left leading-tight whitespace-nowrap">
+              Building a Global Community of Youth, Faith, Technology &amp; Service
             </p>
           </div>
         </button>

@@ -162,7 +162,7 @@ export default function SplashPage() {
           >
             <Image
               src="/foc-logo-halo.png"
-              alt="Friends of Carlo Acutis"
+              alt="Friends of Carlo"
               width={150}
               height={150}
               className="w-full h-full object-cover"

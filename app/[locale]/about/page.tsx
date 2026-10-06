@@ -9,7 +9,7 @@ import TeamShowcase, { type TeamMember } from "@/components/ui/team-showcase";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn about the Friends of St. Carlo Acutis Foundation — our story, board of directors, and governance.",
+    "Learn about Friends of Carlo — our story, board of directors, and governance.",
 };
 
 /* ─── Board ──────────────────────────────────────────────────────────── */
@@ -96,10 +96,15 @@ const boardMembers: TeamMember[] = [
 
 function Board() {
   return (
-    <section className="py-28 px-6 bg-navy-dark scroll-mt-20" id="board">
+    <section className="py-16 md:py-24 px-6 bg-navy-dark scroll-mt-20 overflow-x-hidden" id="board">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-10">
           <AnimateIn>
+            <p className="text-gold/70 text-[10px] font-semibold tracking-[0.25em] uppercase mb-4">
+              Governance
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={0.06}>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-gold">
               Board of Directors
             </h2>
@@ -117,7 +122,7 @@ function Board() {
 /* ─── Governance ─────────────────────────────────────────────────────── */
 function Governance() {
   return (
-    <section className="py-24 px-6 bg-white scroll-mt-20" id="governance">
+    <section className="py-16 md:py-20 px-6 bg-white scroll-mt-20 overflow-x-hidden" id="governance">
       <div className="max-w-5xl mx-auto">
 
         {/* Centered headline */}
@@ -128,7 +133,7 @@ function Governance() {
             </p>
           </AnimateIn>
           <AnimateIn delay={0.08}>
-            <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-navy leading-tight mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-navy leading-tight mb-6">
               Transparency You Can Trust
             </h2>
           </AnimateIn>
@@ -152,7 +157,7 @@ function Governance() {
             { label: "Independent charity rating",           value: "Excellent" },
           ].map(({ label, value }, i) => (
             <AnimateIn key={label} delay={i * 0.08}>
-              <div className="bg-[#f4f4f4] rounded-xl p-10 text-center">
+              <div className="bg-[#f4f4f4] rounded-xl p-6 md:p-8 text-center">
                 <p className="text-navy font-bold text-3xl mb-3">
                   <span className="text-gold mr-1">↑</span>{value}
                 </p>
@@ -170,7 +175,7 @@ function Governance() {
             </h3>
             <p className="text-navy/60 text-base leading-relaxed">
               Our Board of Directors is responsible for setting the mission and
-              strategic direction of Friends of St. Carlo Acutis, Inc. and for
+              strategic direction of Friends of Carlo and for
               overseeing its finances, operations, and policies as set forth in
               the Articles of Incorporation, and the Bylaws. The Board of
               Directors regularly reviews the operations and policies of the
@@ -181,10 +186,10 @@ function Governance() {
 
           <AnimateIn delay={0.1}>
             <h3 className="font-serif text-2xl font-semibold text-navy mb-4">
-              FOC Bylaws
+              Our Bylaws
             </h3>
             <p className="text-navy/60 text-base leading-relaxed">
-              The Friends of St. Carlo Acutis, Inc.&rsquo;s Bylaws are the
+              The Friends of Carlo Bylaws are the
               internal operating rules set by the Board of Directors to ensure
               the organization is structured and operated exclusively for
               charitable, religious, educational, and scientific purposes

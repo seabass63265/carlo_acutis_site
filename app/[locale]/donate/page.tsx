@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import AnimateIn from "@/components/AnimateIn";
 import { Link } from "@/i18n/navigation";
 import DonorsWall from "@/components/DonorsWall";
@@ -7,7 +8,7 @@ import DonateHero from "@/components/DonateHero";
 export const metadata: Metadata = {
   title: "Ways to Give",
   description:
-    "Support the Friends of St. Carlo Acutis Foundation — individual giving, institutional partnerships, grants, and corporate sponsorships.",
+    "Support Friends of Carlo — individual giving, institutional partnerships, grants, and corporate sponsorships.",
 };
 
 /* ─── Why Support ────────────────────────────────────────────────────── */
@@ -57,7 +58,7 @@ function WhySupport() {
             {[
               { value: "___", label: "Total funds deployed to mission" },
               { value: "___", label: "Young people reached annually" },
-              { value: "___", label: "Parishes served with resources" },
+              { value: "6", label: "Global communities & ministry partners" },
               { value: "< 15%", label: "Administrative overhead" },
               { value: "100%", label: "Financials audited annually" },
               { value: "6", label: "Board-governed with full transparency" },
@@ -70,6 +71,100 @@ function WhySupport() {
               </AnimateIn>
             ))}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── Ministry Partners ──────────────────────────────────────────────── */
+const ministryPartners = [
+  {
+    name: "Diocese of Assisi–Nocera Umbra–Gualdo Tadino",
+    location: "Assisi, Italy",
+  },
+  {
+    name: "Archdiocese of Wa",
+    location: "Ghana",
+  },
+  {
+    name: "St. Carlo Acutis Eucharistic Revival Youth Evangelization Center",
+    location: "Tablas Island, Romblon, Philippines",
+  },
+  {
+    name: "St. Monica Catholic Community and St. Monica Preparatory School",
+    location: "Santa Monica, California",
+  },
+  {
+    name: "St. Thomas the Apostle Parish and School",
+    location: "Los Angeles, California",
+  },
+  {
+    name: "St. Genevieve Parish Schools",
+    location: "Panorama City, California",
+  },
+];
+
+const photoStrip = [
+  { src: "/aboutus26.jpeg", alt: "A priest and two guests sharing a moment of joy at a Friends of Carlo event" },
+  { src: "/aboutus6.jpeg", alt: "Four friends standing together in front of the MCJ sign" },
+  { src: "/Aboutus3.png", alt: "Young pilgrims gathered before St. Carlo Acutis's shrine in Italy" },
+];
+
+function PhotoStrip() {
+  return (
+    <section className="py-16 px-6 bg-white">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+        {photoStrip.map(({ src, alt }, i) => (
+          <AnimateIn key={src} delay={i * 0.08}>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl">
+              <Image src={src} alt={alt} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover" />
+            </div>
+          </AnimateIn>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function MinistryPartners() {
+  return (
+    <section className="py-24 px-6 bg-cream" id="partners">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-14">
+          <AnimateIn>
+            <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
+              Where Your Gifts Go
+            </p>
+          </AnimateIn>
+          <AnimateIn delay={0.1}>
+            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy mb-6">
+              Global Communities &amp; Ministry Partners
+            </h2>
+          </AnimateIn>
+          <AnimateIn delay={0.15}>
+            <p className="text-navy/60 text-lg leading-relaxed max-w-2xl mx-auto">
+              Your generosity has directly supported these dioceses, parishes,
+              schools, and evangelization centers — in our own community and
+              around the world.
+            </p>
+          </AnimateIn>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {ministryPartners.map(({ name, location }, i) => (
+            <AnimateIn key={name} delay={(i % 2) * 0.08}>
+              <div className="bg-white border border-cream-dark rounded-sm p-7 h-full flex flex-col">
+                <p className="font-serif text-lg font-semibold text-navy leading-snug mb-3">
+                  {name}
+                </p>
+                <p className="text-navy/50 text-sm mt-auto flex items-center gap-2">
+                  <span className="text-gold text-[10px]">◆</span>
+                  {location}
+                </p>
+              </div>
+            </AnimateIn>
+          ))}
         </div>
       </div>
     </section>
@@ -104,7 +199,7 @@ const tiers = [
     featured: true,
   },
   {
-    name: "Foundation Partner",
+    name: "Mission Partner",
     amount: "$500 / month",
     impact: "Funds a full digital evangelization project for one parish.",
     features: [
@@ -209,7 +304,7 @@ function InstitutionalGiving() {
             </AnimateIn>
             <AnimateIn delay={0.15}>
               <p className="text-white/60 text-lg leading-relaxed mb-6">
-                The Friends of St. Carlo Acutis Foundation welcomes major gifts
+                Friends of Carlo welcomes major gifts
                 and grants from Catholic foundations, dioceses, religious
                 orders, and aligned institutions. We offer full governance
                 transparency, audited financials, and partnership flexibility.
@@ -270,58 +365,6 @@ function InstitutionalGiving() {
   );
 }
 
-/* ─── Annual Reports ─────────────────────────────────────────────────── */
-function AnnualReports() {
-  return (
-    <section className="py-24 px-6 bg-cream" id="reports">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-14">
-          <AnimateIn>
-            <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Financial Transparency
-            </p>
-          </AnimateIn>
-          <AnimateIn delay={0.1}>
-            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-              Annual Reports &amp; Filings
-            </h2>
-          </AnimateIn>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            { year: "2024", title: "Annual Report", type: "PDF", size: "2.4 MB" },
-            { year: "2024", title: "Form 990", type: "PDF", size: "1.1 MB" },
-            { year: "2024", title: "Audited Financials", type: "PDF", size: "3.2 MB" },
-            { year: "2023", title: "Annual Report", type: "PDF", size: "2.1 MB" },
-            { year: "2023", title: "Form 990", type: "PDF", size: "0.9 MB" },
-            { year: "2023", title: "Audited Financials", type: "PDF", size: "2.8 MB" },
-          ].map(({ year, title, type, size }, i) => (
-            <AnimateIn key={`${year}-${title}`} delay={(i % 3) * 0.08}>
-              <div className="group flex items-center justify-between bg-white border border-cream-dark rounded-sm px-6 py-5 hover:border-gold/40 hover:shadow-md transition-all duration-200 cursor-pointer">
-                <div>
-                  <p className="text-navy font-semibold text-sm">{year} {title}</p>
-                  <p className="text-navy/40 text-xs mt-0.5">{type} · {size}</p>
-                </div>
-                <span className="text-gold/60 group-hover:text-gold transition-colors text-lg">↓</span>
-              </div>
-            </AnimateIn>
-          ))}
-        </div>
-
-        <AnimateIn delay={0.3}>
-          <p className="text-center text-navy/40 text-sm mt-10">
-            Additional documents available upon request.{" "}
-            <Link href="/contact" className="text-gold hover:text-gold-dark underline underline-offset-2 transition-colors">
-              Contact us →
-            </Link>
-          </p>
-        </AnimateIn>
-      </div>
-    </section>
-  );
-}
-
 /* ─── Corporate ──────────────────────────────────────────────────────── */
 function CorporatePartnerships() {
   return (
@@ -340,8 +383,9 @@ function CorporatePartnerships() {
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="mt-5 text-navy/55 text-lg max-w-2xl mx-auto">
-              Align your brand with a mission that speaks to the next generation —
-              Catholics who are young, digitally fluent, and values-driven.
+              Align your brand with a mission that empowers young people of all
+              backgrounds, bridging digital divides and fostering faith,
+              innovation, service, and authentic human flourishing.
             </p>
           </AnimateIn>
         </div>
@@ -447,8 +491,9 @@ export default function DonatePage() {
     <>
       <DonateHero />
       <WhySupport />
+      <PhotoStrip />
+      <MinistryPartners />
       <InstitutionalGiving />
-      <AnnualReports />
       <CorporatePartnerships />
       <DonorsWall />
       <FinalCTA />

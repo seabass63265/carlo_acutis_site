@@ -92,7 +92,7 @@ export default function FoundationHero() {
             className="text-[9px] font-semibold tracking-[0.28em] uppercase"
             style={{ color: "#A7AAB3" }}
           >
-            Friends of St. Carlo Acutis&nbsp;&nbsp;·&nbsp;&nbsp;Foundation
+            Friends of Carlo
           </p>
         </div>
 

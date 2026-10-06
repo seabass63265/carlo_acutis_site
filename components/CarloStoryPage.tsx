@@ -568,10 +568,15 @@ export default function CarloStoryPage() {
               </p>
             </Fade>
 
-            <div style={{ position: "relative", minHeight: 380 }}>
+            <div style={{ position: "relative", minHeight: 600 }}>
               <Fade delay={0.05}>
                 <div style={{ position: "absolute", top: 0, right: 10 }}>
                   <PhotoCard src="/youngcarlo.png" alt="Young Carlo Acutis" w={175} h={220} rotate={-2} caption="Carlo, Milan c. 1999" />
+                </div>
+              </Fade>
+              <Fade delay={0.12}>
+                <div style={{ position: "absolute", top: 330, right: 40, zIndex: 4 }}>
+                  <PhotoCard src="/carlomom.png" alt="Carlo's mom speaking at an event" w={190} h={180} rotate={1.5} caption="Carlo's mom" />
                 </div>
               </Fade>
               <Fade delay={0.18}>

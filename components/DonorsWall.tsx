@@ -1,64 +1,61 @@
-"use client";
+import Image from "next/image";
+import AnimateIn from "@/components/AnimateIn";
 
-import ContributorsWall, { type Contributor } from "@/components/ui/contributors-section";
-
-const names = [
-  "Maria Santos", "James O'Brien", "Lucia Ferretti", "Michael Chen", "Ana Kovač",
-  "Patrick Flynn", "Rosa Delgado", "Thomas Weber", "Chiara Ricci", "Sean Murphy",
-  "Elena Vasquez", "David Kim", "Beatriz Alves", "Marco Bianchi", "Claire Dubois",
-  "Joseph Müller", "Isabel Reyes", "Giovanni Esposito", "Fatima Al-Hassan", "Luke Brennan",
-  "Sofia Lombardi", "Andrew Park", "Magdalena Torres", "Dominic Hartmann", "Cecilia Nwosu",
-  "Francis Xavier", "Theresa Wójcik", "Carlos Medina", "Anne-Marie Leclerc", "Peter Okafor",
-  "Valentina Cruz", "Roberto Silva", "Brigid McCarthy", "Emmanuel Adjei", "Natalia Kowalski",
-  "Benedict Walsh", "Pilar Gómez", "Raphael Morin", "Stella Nakamura", "Timothy Osei",
+const communityPhotos = [
+  "/donors.jpeg",
+  "/donors1.jpeg",
+  "/donors2.jpeg",
+  "/donors3.jpeg",
+  "/donors4.jpeg",
+  "/donors5.jpeg",
 ];
-
-const donors: Contributor[] = Array.from({ length: 200 }, (_, i) => {
-  const name = names[i % names.length];
-  const suffix = i >= names.length ? `_${Math.floor(i / names.length)}` : "";
-  const slug = name.toLowerCase().replace(/[^a-z]/g, "") + suffix;
-  return {
-    username: name + (suffix ? ` (${suffix.slice(1)})` : ""),
-    avatarUrl: `https://i.pravatar.cc/120?u=${encodeURIComponent(slug + i)}`,
-  };
-});
 
 export default function DonorsWall() {
   return (
-    <section
-      className="py-24 bg-navy-dark text-white"
-      style={{ "--wall-bg": "#060b18" } as React.CSSProperties}
-    >
-      <div className="max-w-7xl mx-auto px-6 text-center mb-10">
-        <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-          Our Community
-        </p>
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-4">
-          Thank You, Donors
-        </h2>
-        <p className="text-white/50 text-lg max-w-xl mx-auto">
-          Every gift — large or small — helps carry Carlo&apos;s mission forward. We are grateful for each one.
-        </p>
+    <section className="py-24 bg-navy-dark text-white overflow-hidden">
+      <div className="max-w-2xl mx-auto px-6 text-center">
+        <AnimateIn>
+          <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
+            Our Community
+          </p>
+        </AnimateIn>
+        <AnimateIn delay={0.08}>
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-4">
+            Thank You, Donors
+          </h2>
+        </AnimateIn>
+        <AnimateIn delay={0.14}>
+          <p className="text-white/50 text-lg leading-relaxed">
+            Every gift — large or small — helps carry Carlo&apos;s mission
+            forward. We are grateful for each one.
+          </p>
+        </AnimateIn>
       </div>
 
-      <ContributorsWall
-        title="Donors"
-        subtitle={
-          <>
-            Supported by a community of{" "}
-            <span className="font-semibold" style={{ color: "#D9A441" }}>
-              ___+
-            </span>{" "}
-            generous donors worldwide.
-          </>
+      <AnimateIn delay={0.2}>
+        <div className="group mt-16 overflow-hidden">
+          <div className="donors-marquee flex w-max gap-4 group-hover:[animation-play-state:paused]">
+            {[...communityPhotos, ...communityPhotos].map((src, i) => (
+              <div key={`${src}-${i}`} className="relative h-[220px] w-[220px] shrink-0 overflow-hidden rounded-sm">
+                <Image src={src} alt="" fill sizes="220px" className="object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </AnimateIn>
+
+      <style>{`
+        .donors-marquee {
+          animation: donors-scroll 60s linear infinite;
         }
-        contributors={donors}
-        totalCount={871}
-        columns={16}
-        height={300}
-        speed={20}
-        className="text-white"
-      />
+        @keyframes donors-scroll {
+          from { transform: translateX(0); }
+          to { transform: translateX(calc(-50% - 0.5rem)); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .donors-marquee { animation: none; }
+        }
+      `}</style>
     </section>
   );
 }

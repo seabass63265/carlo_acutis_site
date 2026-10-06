@@ -6,7 +6,7 @@ import { MinimalistHero } from "@/components/ui/minimalist-hero";
 export default function HomeHero() {
   return (
     <MinimalistHero
-      logoText="FoSCA."
+      logoText="FoC."
       navLinks={[
         { label: "HOME", href: "/" },
         { label: "CARLO", href: "/carlo" },

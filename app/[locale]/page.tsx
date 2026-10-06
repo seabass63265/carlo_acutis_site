@@ -19,7 +19,7 @@ function Mission() {
             className="font-sans font-black uppercase leading-[0.88] tracking-tight text-balance mx-auto text-white"
             style={{ fontSize: "clamp(2.4rem, 6vw, 5.5rem)", maxWidth: "860px" }}
           >
-            A Foundation for Real Faith<br />&amp; Encounters with God
+            A Home for Real Faith<br />&amp; Encounters with God
           </h2>
         </AnimateIn>
         <AnimateIn delay={0.15}>
@@ -385,7 +385,7 @@ const fallbackNewsItems: NewsCard[] = [
   {
     date: "May 2025",
     tag: "Events",
-    title: "Foundation Announces Digital Discipleship Summit for Youth Ministers",
+    title: "Friends of Carlo Announces Digital Discipleship Summit for Youth Ministers",
     excerpt:
       "Hundreds of youth ministers from across the country gather to learn how to use Carlo's story to inspire their communities.",
     href: "#",

@@ -21,7 +21,7 @@ const IMAGES = [
 ];
 
 const ASPECT_RATIOS = ["3/2", "4/3", "5/4", "7/5"];
-const BASE_HEIGHT = 375;
+const BASE_HEIGHT = 280;
 
 const WAVES = {
   base:   { amp: 0.1,  freq: 1.0, speed: 1.0, phase: 5.0 },

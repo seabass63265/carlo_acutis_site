@@ -11,8 +11,9 @@ const inputClass =
 const selectClass = `${inputClass} appearance-none pr-8 cursor-pointer text-navy/70`;
 
 const audienceOptions = [
-  "Individual / Faithful",
-  "Parish or Diocese",
+  "Individual",
+  "Corporate Representative",
+  "Parish or Diocese Representative",
   "Educator / Catechist",
   "Media / Press",
   "Donor / Partner Organization",
@@ -20,11 +21,12 @@ const audienceOptions = [
 ];
 
 const reasonOptions = [
+  "Donation",
+  "Partnership",
+  "Volunteering",
   "General Inquiry",
   "Prayer Request",
-  "Partnerships & Giving",
   "Speaking & Media",
-  "Volunteering",
   "Education & Resources",
   "Other",
 ];
@@ -73,6 +75,11 @@ function ContactForm() {
       <div className={fieldWrap}>
         <label className={labelClass}>What&apos;s Your Name?</label>
         <input type="text" placeholder="Full Name" required className={inputClass} />
+      </div>
+
+      <div className={fieldWrap}>
+        <label className={labelClass}>What&apos;s the Name of Your Organization?</label>
+        <input type="text" placeholder="Organization (if applicable)" className={inputClass} />
       </div>
 
       <div className={fieldWrap}>
@@ -159,10 +166,10 @@ export default function ContactHero() {
             <div>
               <h3 className="text-xs font-semibold tracking-widest uppercase text-cream/50 mb-2">Email</h3>
               <a
-                href="mailto:info@friendsofstcarlo.org"
+                href="mailto:info@friendsofstcarloacutis.com"
                 className="text-xl lg:text-2xl font-serif hover:text-gold transition-colors"
               >
-                info@friendsofstcarlo.org
+                info@friendsofstcarloacutis.com
               </a>
             </div>
           </div>

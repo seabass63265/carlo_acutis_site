@@ -253,7 +253,7 @@ export default function AboutHero() {
             <div style={{ flex: 1, marginTop: "-8rem" }}>
               <div className="overflow-hidden">
                 <div className="ah-reveal font-semibold tracking-[0.25em] uppercase"
-                  style={{ color: "#A07840", fontSize: "clamp(16px, 1.8vw, 24px)", whiteSpace: "nowrap" }}>Our Foundation</div>
+                  style={{ color: "#A07840", fontSize: "clamp(16px, 1.8vw, 24px)", whiteSpace: "nowrap" }}>Who We Are</div>
               </div>
             </div>
             <div style={{ flex: 1 }}>
@@ -326,7 +326,7 @@ export default function AboutHero() {
             line-height: 1.4 !important;
           }
 
-          /* Foundation name: tighter, lower so it clears the mosaic photos */
+          /* Brand name: tighter, lower so it clears the mosaic photos */
           .ah-foundation-name {
             gap: 0.5rem !important;
             top: 56% !important;

@@ -55,7 +55,7 @@ export default function AboutEditorial2() {
               style={{ color: "#A07840" }}
               className="text-[10px] font-semibold tracking-[0.35em] uppercase mb-5"
             >
-              Friends of St. Carlo Acutis Foundation
+              Friends of Carlo
             </motion.p>
 
             <motion.h2

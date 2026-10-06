@@ -35,7 +35,7 @@ export default function TeamShowcase({ members }: TeamShowcaseProps) {
   const col3 = members.filter((m, i) => columnOf(m, i) === 3);
 
   return (
-    <div className="flex flex-col md:flex-row items-start gap-12 md:gap-16 lg:gap-24 select-none w-full max-w-7xl mx-auto py-10 px-4 md:px-8 font-sans">
+    <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12 lg:gap-16 select-none w-full max-w-7xl mx-auto py-6 md:py-10 px-4 md:px-8 font-sans">
       {/* Photo grid */}
       <div className="flex gap-3 md:gap-4 flex-shrink-0 overflow-x-auto pb-1 md:pb-0 w-full md:w-auto">
         <div className="flex flex-col gap-3 md:gap-4">
@@ -43,29 +43,29 @@ export default function TeamShowcase({ members }: TeamShowcaseProps) {
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[176px] h-[283px] sm:w-[209px] sm:h-[328px] md:w-[253px] md:h-[404px]"
+              className="w-[132px] h-[212px] sm:w-[157px] sm:h-[246px] md:w-[190px] md:h-[303px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
           ))}
         </div>
-        <div className="flex flex-col gap-3 md:gap-4 mt-[79px] sm:mt-[99px] md:mt-[121px]">
+        <div className="flex flex-col gap-3 md:gap-4 mt-[60px] sm:mt-[74px] md:mt-[91px]">
           {col2.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[196px] h-[310px] sm:w-[231px] sm:h-[367px] md:w-[281px] md:h-[448px]"
+              className="w-[147px] h-[233px] sm:w-[173px] sm:h-[275px] md:w-[211px] md:h-[336px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
           ))}
         </div>
-        <div className="flex flex-col gap-3 md:gap-4 mt-[37px] sm:mt-[46px] md:mt-[57px]">
+        <div className="flex flex-col gap-3 md:gap-4 mt-[28px] sm:mt-[35px] md:mt-[43px]">
           {col3.map((member) => (
             <PhotoCard
               key={member.id}
               member={member}
-              className="w-[185px] h-[296px] sm:w-[220px] sm:h-[346px] md:w-[266px] md:h-[424px]"
+              className="w-[139px] h-[222px] sm:w-[165px] sm:h-[260px] md:w-[200px] md:h-[318px]"
               hoveredId={hoveredId}
               onHover={setHoveredId}
             />
@@ -166,7 +166,7 @@ function MemberRow({
         />
         <span
           className={cn(
-            "text-xl md:text-2xl lg:text-[26px] font-semibold leading-none tracking-tight transition-colors duration-300 font-serif",
+            "text-lg md:text-xl lg:text-[22px] font-semibold leading-none tracking-tight transition-colors duration-300 font-serif",
             isActive ? "text-white" : "text-white/80"
           )}
         >

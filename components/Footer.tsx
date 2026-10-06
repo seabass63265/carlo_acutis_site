@@ -4,7 +4,7 @@ import ChangeLanguageButton from "@/components/ChangeLanguageButton";
 
 const footerSections = [
   {
-    heading: "Foundation",
+    heading: "About",
     links: [
       { href: "/about", label: "About Us" },
       { href: "/carlo", label: "Carlo's Story" },
@@ -28,7 +28,6 @@ const footerSections = [
       { href: "/eucharistic-miracles", label: "Miracle Archive" },
       { href: "/contact", label: "Prayer Requests" },
       { href: "/contact", label: "Speaking Requests" },
-      { href: "/donate#reports", label: "Annual Reports" },
     ],
   },
 ];
@@ -60,10 +59,10 @@ export default function Footer() {
               </span>
               <div>
                 <p className="text-white font-serif font-semibold leading-tight">
-                  Friends of St. Carlo Acutis
+                  Friends of Carlo
                 </p>
-                <p className="text-gold text-[10px] tracking-[0.2em] uppercase mt-0.5">
-                  Foundation
+                <p className="text-gold text-[10px] tracking-[0.04em] mt-1 leading-snug max-w-[240px]">
+                  Building a Global Community of Youth, Faith, Technology &amp; Service
                 </p>
               </div>
             </Link>
@@ -124,7 +123,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} Friends of St. Carlo Acutis Foundation. All rights reserved.
+            © {new Date().getFullYear()} Friends of Carlo. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {["Privacy Policy", "Terms of Use", "Accessibility"].map((item) => (
