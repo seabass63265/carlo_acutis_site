@@ -1,7 +1,9 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function ChangeLanguageButton() {
+  const t = useTranslations("footer");
   const router = useRouter();
 
   function handleClick() {
@@ -14,7 +16,7 @@ export default function ChangeLanguageButton() {
       onClick={handleClick}
       className="text-gold/50 hover:text-gold text-xs tracking-wide transition-colors duration-200 border border-gold/20 hover:border-gold/40 px-3 py-1 rounded-full"
     >
-      🌐 Change Language
+      {t("changeLanguage")}
     </button>
   );
 }

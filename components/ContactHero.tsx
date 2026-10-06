@@ -46,10 +46,31 @@ function PlusIcon({ className }: { className?: string }) {
 
 function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    // Keep a reference: React clears e.currentTarget once the handler yields at await.
+    const form = e.currentTarget;
+    setSending(true);
+    setError(null);
+
+    const data = Object.fromEntries(new FormData(form));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      form.reset();
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong sending your message. Please try again, or email us directly.");
+    } finally {
+      setSending(false);
+    }
   }
 
   if (submitted) {
@@ -74,23 +95,31 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="flex flex-col gap-10 max-w-3xl">
       <div className={fieldWrap}>
         <label className={labelClass}>What&apos;s Your Name?</label>
-        <input type="text" placeholder="Full Name" required className={inputClass} />
+        <input name="name" type="text" placeholder="Full Name" required className={inputClass} />
       </div>
 
       <div className={fieldWrap}>
         <label className={labelClass}>What&apos;s the Name of Your Organization?</label>
-        <input type="text" placeholder="Organization (if applicable)" className={inputClass} />
+        <input name="organization" type="text" placeholder="Organization (if applicable)" className={inputClass} />
       </div>
 
       <div className={fieldWrap}>
         <label className={labelClass}>What&apos;s Your Email?</label>
-        <input type="email" placeholder="your@email.com" required className={inputClass} />
+        <input name="email" type="email" placeholder="your@email.com" required className={inputClass} />
+      </div>
+
+      {/* Honeypot: hidden from real users. Bots that fill it are silently dropped by the API. */}
+      <div aria-hidden className="hidden">
+        <label>
+          Company
+          <input name="company" type="text" tabIndex={-1} autoComplete="off" />
+        </label>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className={`${fieldWrap} relative`}>
           <label className={labelClass}>Who Are You?</label>
-          <select required defaultValue="" className={selectClass}>
+          <select name="audience" required defaultValue="" className={selectClass}>
             <option value="" disabled>Select one</option>
             {audienceOptions.map((option) => (
               <option key={option}>{option}</option>
@@ -100,7 +129,7 @@ function ContactForm() {
         </div>
         <div className={`${fieldWrap} relative`}>
           <label className={labelClass}>What&apos;s This Regarding?</label>
-          <select required defaultValue="" className={selectClass}>
+          <select name="reason" required defaultValue="" className={selectClass}>
             <option value="" disabled>Select one</option>
             {reasonOptions.map((option) => (
               <option key={option}>{option}</option>
@@ -113,6 +142,7 @@ function ContactForm() {
       <div className={fieldWrap}>
         <label className={labelClass}>What&apos;s On Your Heart?</label>
         <textarea
+          name="message"
           rows={4}
           placeholder="Write your message here in no more than five hundred words..."
           required
@@ -120,11 +150,14 @@ function ContactForm() {
         />
       </div>
 
+      {error && <p className="text-sm text-red-700">{error}</p>}
+
       <button
         type="submit"
-        className="mt-2 inline-flex items-center gap-2 bg-navy text-white uppercase tracking-widest text-sm font-semibold py-4 px-10 self-start hover:bg-gold transition-colors duration-300"
+        disabled={sending}
+        className="mt-2 inline-flex items-center gap-2 bg-navy text-white uppercase tracking-widest text-sm font-semibold py-4 px-10 self-start hover:bg-gold transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {sending ? "Sending…" : "Send Message"}
       </button>
     </form>
   );

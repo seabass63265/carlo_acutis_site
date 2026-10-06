@@ -1,1 +1,42 @@
-{}
+{
+  "nav": {
+    "aboutUs": "Sobre nosotros",
+    "carloStory": "La historia de Carlo",
+    "miracles": "Milagros",
+    "youthCouncil": "Consejo Juvenil",
+    "contact": "Contacto",
+    "donate": "Donar",
+    "skip": "Omitir →",
+    "menuToggle": "Abrir u ocultar el menú de navegación",
+    "changeLanguage": "Cambiar idioma",
+    "brand": "Friends of Carlo",
+    "tagline": "Construyendo una comunidad global de jóvenes, fe, tecnología y servicio"
+  },
+  "footer": {
+    "brandTagline": "Construyendo una comunidad global de jóvenes, fe, tecnología y servicio",
+    "description": "Inspiramos a una nueva generación a usar la tecnología, la fe y el servicio para transformar el mundo, siguiendo el ejemplo de Carlo Acutis.",
+    "quote": "“La Eucaristía es mi autopista al Cielo.”",
+    "quoteBy": "— San Carlo Acutis",
+    "about": "Acerca de",
+    "getInvolved": "Participa",
+    "resources": "Recursos",
+    "aboutUs": "Sobre nosotros",
+    "carloStory": "La historia de Carlo",
+    "eucharisticMiracles": "Milagros eucarísticos",
+    "governance": "Gobernanza",
+    "youthCouncil": "Consejo Juvenil",
+    "waysToGive": "Formas de dar",
+    "institutionalGiving": "Donaciones institucionales",
+    "corporatePartners": "Socios corporativos",
+    "volunteer": "Voluntariado",
+    "miracleArchive": "Archivo de milagros",
+    "prayerRequests": "Peticiones de oración",
+    "speakingRequests": "Solicitudes de charlas",
+    "copyright": "© {year} Friends of Carlo. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de uso",
+    "accessibility": "Accesibilidad",
+    "changeLanguage": "🌐 Cambiar idioma",
+    "brand": "Friends of Carlo"
+  }
+}

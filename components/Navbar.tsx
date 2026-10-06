@@ -4,6 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSvgWipe } from "@/components/SvgWipeProvider";
+import { useTranslations } from "next-intl";
 
 function GlobeIcon() {
   return (
@@ -100,6 +101,7 @@ const PAGE_THEMES: Record<string, NavTheme> = {
 };
 
 function LanguageSwitcher({ theme }: { theme: NavTheme }) {
+  const t = useTranslations("nav");
   const params = useParams();
   const router = useRouter();
   const locale = (params?.locale as string | undefined)?.toUpperCase() ?? "EN";
@@ -113,7 +115,7 @@ function LanguageSwitcher({ theme }: { theme: NavTheme }) {
     <button
       onClick={handleClick}
       className={`flex items-center gap-1.5 transition-colors duration-200 group ${theme.linkText} ${theme.linkHover}`}
-      aria-label="Change language"
+      aria-label={t("changeLanguage")}
     >
       <span className={`transition-colors duration-200 ${theme.linkText} ${theme.linkHover}`}>
         <GlobeIcon />
@@ -132,6 +134,7 @@ function CrossIcon() {
 }
 
 export default function Navbar() {
+  const t = useTranslations("nav");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [carloVideo, setCarloVideo] = useState(false);
@@ -255,7 +258,7 @@ export default function Navbar() {
               transition={{ delay: 0.4, duration: 0.4 }}
               className="absolute bottom-6 right-6 z-10 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold tracking-widest uppercase backdrop-blur-sm border border-white/25 transition-colors"
             >
-              Skip →
+              {t("skip")}
             </motion.button>
           )}
         </motion.div>
@@ -276,10 +279,10 @@ export default function Navbar() {
           </span>
           <div className="leading-none">
             <p className={`font-serif font-semibold tracking-tighter lg:tracking-wide transition-colors duration-500 text-[11px] lg:text-[16px] whitespace-nowrap ${theme.logoText}`}>
-              Friends of Carlo
+              {t("brand")}
             </p>
             <p className="hidden lg:block text-gold text-[10px] font-sans tracking-[0.05em] mt-[3px] text-left leading-tight whitespace-nowrap">
-              Building a Global Community of Youth, Faith, Technology &amp; Service
+              {t("tagline")}
             </p>
           </div>
         </button>
@@ -292,7 +295,7 @@ export default function Navbar() {
               pathname === "/about" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
-            About Us
+            {t("aboutUs")}
           </button>
 
           <button
@@ -301,7 +304,7 @@ export default function Navbar() {
               pathname === "/carlo" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
-            Carlo&apos;s Story
+            {t("carloStory")}
           </button>
 
           <button
@@ -310,7 +313,7 @@ export default function Navbar() {
               pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
-            Miracles
+            {t("miracles")}
           </button>
 
           <button
@@ -319,7 +322,7 @@ export default function Navbar() {
               pathname === "/youth-council" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
-            Youth Council
+            {t("youthCouncil")}
           </button>
 
           <button
@@ -328,7 +331,7 @@ export default function Navbar() {
               pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`
             }`}
           >
-            Contact
+            {t("contact")}
           </button>
 
           <button
@@ -337,7 +340,7 @@ export default function Navbar() {
               pathname === "/donate" ? `${theme.logoText}` : "text-gold/80 hover:text-gold"
             }`}
           >
-            Donate
+            {t("donate")}
           </button>
 
           <LanguageSwitcher theme={theme} />
@@ -347,7 +350,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className={`lg:hidden p-2 -mr-2 transition-colors duration-500 ${theme.logoText}`}
-          aria-label="Toggle navigation menu"
+          aria-label={t("menuToggle")}
         >
           <div className="relative w-5 h-[14px]">
             <span className={`absolute inset-x-0 h-[2px] bg-current rounded-full transition-all duration-300 ${mobileOpen ? "top-[6px] rotate-45" : "top-0"}`} />
@@ -364,37 +367,37 @@ export default function Navbar() {
             onClick={() => { setMobileOpen(false); wipeTo("/about"); }}
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/about" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
-            About Us
+            {t("aboutUs")}
           </button>
           <button
             onClick={() => { setMobileOpen(false); handleCarloClick({ preventDefault: () => {} } as React.MouseEvent); }}
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/carlo" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
-            Carlo&apos;s Story
+            {t("carloStory")}
           </button>
           <button
             onClick={() => { setMobileOpen(false); wipeTo("/eucharistic-miracles"); }}
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/eucharistic-miracles" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
-            Miracles
+            {t("miracles")}
           </button>
           <button
             onClick={() => { setMobileOpen(false); wipeTo("/youth-council"); }}
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/youth-council" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
-            Youth Council
+            {t("youthCouncil")}
           </button>
           <button
             onClick={() => { setMobileOpen(false); wipeTo("/contact"); }}
             className={`py-3.5 text-[11px] font-sans font-medium tracking-[0.2em] uppercase border-b text-left transition-colors duration-200 ${theme.divider} ${pathname === "/contact" ? "text-gold" : `${theme.linkText} ${theme.linkHover}`}`}
           >
-            Contact
+            {t("contact")}
           </button>
           <button
             onClick={() => { setMobileOpen(false); wipeTo("/donate"); }}
             className="py-3.5 text-[11px] font-semibold tracking-[0.2em] uppercase text-gold text-left"
           >
-            Donate
+            {t("donate")}
           </button>
           <div className={`mt-4 pt-4 border-t ${theme.divider}`}>
             <LanguageSwitcher theme={theme} />

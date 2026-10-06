@@ -1,1 +1,42 @@
-{}
+{
+  "nav": {
+    "aboutUs": "About Us",
+    "carloStory": "Carlo's Story",
+    "miracles": "Miracles",
+    "youthCouncil": "Youth Council",
+    "contact": "Contact",
+    "donate": "Donate",
+    "skip": "Skip →",
+    "menuToggle": "Toggle navigation menu",
+    "changeLanguage": "Change language",
+    "brand": "Friends of Carlo",
+    "tagline": "Building a Global Community of Youth, Faith, Technology & Service"
+  },
+  "footer": {
+    "brandTagline": "Building a Global Community of Youth, Faith, Technology & Service",
+    "description": "Inspiring a new generation to use technology, faith, and service to transform the world in the example of Carlo Acutis.",
+    "quote": "“The Eucharist is my highway to Heaven.”",
+    "quoteBy": "— St. Carlo Acutis",
+    "about": "About",
+    "getInvolved": "Get Involved",
+    "resources": "Resources",
+    "aboutUs": "About Us",
+    "carloStory": "Carlo's Story",
+    "eucharisticMiracles": "Eucharistic Miracles",
+    "governance": "Governance",
+    "youthCouncil": "Youth Council",
+    "waysToGive": "Ways to Give",
+    "institutionalGiving": "Institutional Giving",
+    "corporatePartners": "Corporate Partners",
+    "volunteer": "Volunteer",
+    "miracleArchive": "Miracle Archive",
+    "prayerRequests": "Prayer Requests",
+    "speakingRequests": "Speaking Requests",
+    "copyright": "© {year} Friends of Carlo. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "accessibility": "Accessibility",
+    "changeLanguage": "🌐 Change Language",
+    "brand": "Friends of Carlo"
+  }
+}

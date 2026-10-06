@@ -1,33 +1,34 @@
 import { Link } from "@/i18n/navigation";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import ChangeLanguageButton from "@/components/ChangeLanguageButton";
+import { getTranslations } from "next-intl/server";
 
 const footerSections = [
   {
-    heading: "About",
+    heading: "about",
     links: [
-      { href: "/about", label: "About Us" },
-      { href: "/carlo", label: "Carlo's Story" },
-      { href: "/eucharistic-miracles", label: "Eucharistic Miracles" },
-      { href: "/about#governance", label: "Governance" },
+      { href: "/about", label: "aboutUs" },
+      { href: "/carlo", label: "carloStory" },
+      { href: "/eucharistic-miracles", label: "eucharisticMiracles" },
+      { href: "/about#governance", label: "governance" },
     ],
   },
   {
-    heading: "Get Involved",
+    heading: "getInvolved",
     links: [
-      { href: "/youth-council", label: "Youth Council" },
-      { href: "/donate", label: "Ways to Give" },
-      { href: "/donate#institutional", label: "Institutional Giving" },
-      { href: "/donate#corporate", label: "Corporate Partners" },
-      { href: "/contact", label: "Volunteer" },
+      { href: "/youth-council", label: "youthCouncil" },
+      { href: "/donate", label: "waysToGive" },
+      { href: "/donate#institutional", label: "institutionalGiving" },
+      { href: "/donate#corporate", label: "corporatePartners" },
+      { href: "/contact", label: "volunteer" },
     ],
   },
   {
-    heading: "Resources",
+    heading: "resources",
     links: [
-      { href: "/eucharistic-miracles", label: "Miracle Archive" },
-      { href: "/contact", label: "Prayer Requests" },
-      { href: "/contact", label: "Speaking Requests" },
+      { href: "/eucharistic-miracles", label: "miracleArchive" },
+      { href: "/contact", label: "prayerRequests" },
+      { href: "/contact", label: "speakingRequests" },
     ],
   },
 ];
@@ -45,7 +46,8 @@ function CrossIcon() {
   );
 }
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("footer");
   return (
     <footer className="bg-navy-dark text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-10">
@@ -59,25 +61,25 @@ export default function Footer() {
               </span>
               <div>
                 <p className="text-white font-serif font-semibold leading-tight">
-                  Friends of Carlo
+                  {t("brand")}
                 </p>
                 <p className="text-gold text-[10px] tracking-[0.04em] mt-1 leading-snug max-w-[240px]">
-                  Building a Global Community of Youth, Faith, Technology &amp; Service
+                  {t("brandTagline")}
                 </p>
               </div>
             </Link>
 
             <p className="text-white/50 text-sm leading-relaxed max-w-xs mb-8">
-              Inspiring a new generation to use technology, faith, and service to transform the world in the example of Carlo Acutis.
+              {t("description")}
             </p>
 
             {/* Carlo quote */}
             <blockquote className="border-l-2 border-gold pl-4 mb-8">
               <p className="text-gold/80 font-serif italic text-sm leading-relaxed">
-                &ldquo;The Eucharist is my highway to Heaven.&rdquo;
+                {t("quote")}
               </p>
               <cite className="text-white/30 text-xs mt-1 block not-italic">
-                — St. Carlo Acutis
+                {t("quoteBy")}
               </cite>
             </blockquote>
 
@@ -102,7 +104,7 @@ export default function Footer() {
           {footerSections.map(({ heading, links }) => (
             <div key={heading}>
               <h4 className="text-gold text-[10px] font-semibold tracking-[0.2em] uppercase mb-5">
-                {heading}
+                {t(heading)}
               </h4>
               <ul className="space-y-3">
                 {links.map(({ href, label }) => (
@@ -111,7 +113,7 @@ export default function Footer() {
                       href={href}
                       className="text-white/50 hover:text-white text-sm transition-colors duration-200"
                     >
-                      {label}
+                      {t(label)}
                     </Link>
                   </li>
                 ))}
@@ -123,16 +125,16 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} Friends of Carlo. All rights reserved.
+            {t("copyright", { year: new Date().getFullYear() })}
           </p>
           <div className="flex items-center gap-6">
-            {["Privacy Policy", "Terms of Use", "Accessibility"].map((item) => (
+            {(["privacy", "terms", "accessibility"] as const).map((item) => (
               <a
                 key={item}
                 href="#"
                 className="text-white/30 hover:text-white/60 text-xs transition-colors duration-200"
               >
-                {item}
+                {t(item)}
               </a>
             ))}
             <ChangeLanguageButton />
