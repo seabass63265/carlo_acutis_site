@@ -1,1 +1,1673 @@
-{}
+{
+  "nav": {
+    "aboutUs": "Sobre nós",
+    "carloStory": "A história de Carlo",
+    "miracles": "Milagres",
+    "youthCouncil": "Conselho Jovem",
+    "contact": "Contato",
+    "donate": "Doar",
+    "skip": "Pular →",
+    "menuToggle": "Abrir ou fechar o menu de navegação",
+    "changeLanguage": "Mudar idioma",
+    "brand": "Friends of Carlo",
+    "tagline": "Construindo uma comunidade global de jovens, fé, tecnologia e serviço"
+  },
+  "footer": {
+    "brandTagline": "Construindo uma comunidade global de jovens, fé, tecnologia e serviço",
+    "description": "Inspirar uma nova geração a usar a tecnologia, a fé e o serviço para transformar o mundo, seguindo o exemplo de Carlo Acutis.",
+    "quote": "“A Eucaristia é a minha autoestrada para o Céu.”",
+    "quoteBy": "— São Carlo Acutis",
+    "about": "Sobre",
+    "getInvolved": "Participe",
+    "resources": "Recursos",
+    "aboutUs": "Sobre nós",
+    "carloStory": "A história de Carlo",
+    "eucharisticMiracles": "Milagres eucarísticos",
+    "governance": "Governança",
+    "youthCouncil": "Conselho Jovem",
+    "waysToGive": "Formas de doar",
+    "institutionalGiving": "Doações institucionais",
+    "corporatePartners": "Parceiros corporativos",
+    "volunteer": "Voluntariado",
+    "miracleArchive": "Arquivo de milagres",
+    "prayerRequests": "Pedidos de oração",
+    "speakingRequests": "Pedidos de palestras",
+    "copyright": "© {year} Friends of Carlo. Todos os direitos reservados.",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "accessibility": "Acessibilidade",
+    "changeLanguage": "🌐 Mudar idioma",
+    "brand": "Friends of Carlo"
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Entre em contato com a Friends of Carlo: para dúvidas gerais, pedidos de oração, convites para palestras e muito mais.",
+    "titleLine1": "VAMOS",
+    "titleLine2": "CONVERSAR",
+    "nameLabel": "Qual é o seu nome?",
+    "namePlaceholder": "Nome completo",
+    "organizationLabel": "Qual é o nome da sua organização?",
+    "organizationPlaceholder": "Organização (se aplicável)",
+    "emailLabel": "Qual é o seu e-mail?",
+    "emailPlaceholder": "seu@email.com",
+    "honeypotLabel": "Empresa",
+    "audienceLabel": "Quem é você?",
+    "reasonLabel": "Qual é o motivo do seu contato?",
+    "selectOne": "Selecione uma opção",
+    "messageLabel": "O que você tem no coração?",
+    "messagePlaceholder": "Escreva sua mensagem aqui, em no máximo quinhentas palavras...",
+    "send": "Enviar mensagem",
+    "sending": "Enviando…",
+    "error": "Algo deu errado ao enviar sua mensagem. Tente novamente ou escreva-nos diretamente.",
+    "sentTitle": "Mensagem enviada",
+    "sentBody": "Obrigado por nos escrever. Um membro da nossa equipe responderá em até 2 a 3 dias úteis.",
+    "sendAnother": "Enviar outra mensagem →",
+    "reachOut": "Escreva para nós",
+    "listen": "Estamos aqui para ouvir e rezar com você.",
+    "emailHeading": "E-mail",
+    "followUs": "Siga-nos",
+    "audience": {
+      "individual": "Pessoa física",
+      "corporate": "Representante de empresa",
+      "parish": "Representante de paróquia ou diocese",
+      "educator": "Educador / catequista",
+      "media": "Imprensa / mídia",
+      "donor": "Doador / organização parceira",
+      "other": "Outro"
+    },
+    "reason": {
+      "donation": "Doação",
+      "partnership": "Parceria",
+      "volunteering": "Voluntariado",
+      "general": "Dúvida geral",
+      "prayer": "Pedido de oração",
+      "speaking": "Palestras e mídia",
+      "education": "Educação e recursos",
+      "other": "Outro"
+    }
+  },
+  "common": {
+    "readMore": "Leia mais",
+    "loadMore": "Carregar mais publicações",
+    "readMoreArticle": "Leia mais",
+    "facebook": "Facebook",
+    "showBio": "+ Biografia",
+    "hideBio": "− Recolher"
+  },
+  "youth": {
+    "meta": {
+      "title": "Conselho Jovem",
+      "description": "O Conselho Jovem da Friends of Carlo é um órgão consultivo de jovens (de 14 a 21 anos) que ajuda a definir a programação juvenil, a evangelização digital e a cultura da organização. As inscrições estão abertas."
+    },
+    "hero": {
+      "eyebrow": "O Conselho Jovem da Friends of Carlo",
+      "title1": "Um lugar",
+      "title2": "à mesa",
+      "body": "Carlo Acutis era um adolescente que usou o que tinha — um notebook, uma câmera, um amor profundo pela Eucaristia — para alcançar o mundo inteiro. O Conselho Jovem reúne jovens que fazem o mesmo pela nossa geração: ajudar a decidir o que a Friends of Carlo constrói, quem ela alcança e como é fazer parte dela.",
+      "apply": "Candidate-se →",
+      "expected": "O que se espera",
+      "imageAlt": "Jovens reunidos"
+    },
+    "purpose": {
+      "eyebrow": "O que é",
+      "title": "Um órgão consultivo do Conselho de Administração",
+      "body1": "O Conselho Jovem aconselha o Conselho de Administração e a Diretora Executiva em assuntos de programação juvenil, evangelização digital e cultura organizacional. Ele lidera pelo menos um projeto por ano em favor da missão, e seus membros são embaixadores do carisma da organização em suas paróquias, escolas, comunidades e na internet.",
+      "body2Before": "O Conselho Jovem atua em caráter",
+      "body2Emphasis": "consultivo",
+      "body2After": "— e não fiduciário. Ele não possui autoridade legal de governança sobre a organização. Sua função é trazer a perspectiva das pessoas que realmente queremos alcançar e garantir que ela seja ouvida onde as decisões são tomadas.",
+      "meetBoard": "Conheça o Conselho de Administração"
+    },
+    "expect": {
+      "eyebrow": "O que você faria",
+      "title": "A parte divertida vem com compromissos reais",
+      "intro": "Ser nomeado para o Conselho significa que as pessoas contam com você. Veja como é um mandato: é um compromisso de um ano.",
+      "items": [
+        {
+          "title": "Reuniões trimestrais",
+          "body": "Reunir-se com o Conselho quatro vezes por ano para revisar programas, opinar sobre o rumo e planejar o projeto anual."
+        },
+        {
+          "title": "Acompanhamentos mensais",
+          "body": "Um breve contato mensal para manter-se conectado entre as reuniões e fazer os projetos andarem."
+        },
+        {
+          "title": "Um projeto anual",
+          "body": "Liderar ou coliderar pelo menos um projeto por mandato que avance a missão — você ajuda a escolher qual."
+        },
+        {
+          "title": "Recomendações ao Conselho de Administração",
+          "body": "Enviar recomendações por escrito para que suas ideias cheguem ao Conselho de Administração em uma forma que possa ser colocada em prática."
+        },
+        {
+          "title": "Seja um embaixador",
+          "body": "Representar o carisma da Friends of Carlo na sua paróquia, escola, comunidade e on-line."
+        },
+        {
+          "title": "Participe por completo",
+          "body": "Tomar parte em todas as atividades do Conselho e levar à mesa a perspectiva da sua própria comunidade."
+        }
+      ]
+    },
+    "who": {
+      "eyebrow": "Quem pode se candidatar",
+      "title": "Se isso tem a ver com você, candidate-se",
+      "requirements": [
+        {
+          "value": "14–21",
+          "label": "Aberto a candidatos entre 14 e 21 anos"
+        },
+        {
+          "value": "Qualquer fé",
+          "label": "Candidatos de qualquer origem religiosa são bem-vindos"
+        },
+        {
+          "value": "1 ano",
+          "label": "Um compromisso de um ano com o Conselho e o seu trabalho"
+        }
+      ],
+      "note": "Queremos que o Conselho represente uma diversidade real de paróquias, escolas e comunidades: de onde quer que você venha, a sua perspectiva faz parte do que faz tudo funcionar.",
+      "imageAlt": "Jovens juntos"
+    },
+    "apply": {
+      "eyebrow": "As inscrições estão abertas",
+      "title": "Pronto para ajudar a construí-lo?",
+      "body": "A inscrição leva poucos minutos. Conte-nos quem você é, de onde vem e por que quer ter um lugar à mesa.",
+      "cta": "Comece a inscrição →"
+    }
+  },
+  "home": {
+    "mission": {
+      "headlineLine1": "Um lar para a fé verdadeira",
+      "headlineLine2": "e para o encontro com Deus",
+      "eyebrow": "Nossa missão",
+      "body": "Inspirados pela vida e pelo testemunho de São Carlo Acutis, existimos para ajudar as pessoas a encontrar Cristo, aprofundar a sua fé e continuar a missão de Carlo de levar o Evangelho ao mundo digital.",
+      "aboutUs": "Sobre nós",
+      "stayConnected": "Fique conectado",
+      "imageAlt": "São Carlo Acutis"
+    },
+    "who": {
+      "eyebrow": "A história de Carlo",
+      "title": "Quem foi Carlo Acutis?",
+      "p1": "Nascido em Londres e criado em Milão, Carlo Acutis era um adolescente que adorava futebol, videogames e Deus. Aos 15 anos foi diagnosticado com leucemia e ofereceu o seu sofrimento “pelo Papa e pela Igreja”; morreu em 2006 com a serenidade de um santo.",
+      "p2": "Carlo aprendeu a programar sozinho e criou um site que catalogava os milagres eucarísticos do mundo, um ato de fé digital que alcançou milhões de pessoas. Foi beatificado em 2020 e canonizado em 2025 como o primeiro santo millennial do mundo.",
+      "quote": "“Todas as pessoas nascem como originais, mas muitas morrem como fotocópias.”",
+      "quoteBy": "Carlo Acutis",
+      "statAgeValue": "15",
+      "statAgeLabel": "Idade na morte",
+      "statMiraclesValue": "136",
+      "statMiraclesLabel": "Milagres eucarísticos catalogados",
+      "statCanonizedValue": "2025",
+      "statCanonizedLabel": "Canonizado",
+      "cta": "Conheça a história de Carlo →",
+      "imageAlt": "Carlo Acutis jovem"
+    },
+    "initiatives": {
+      "eyebrow": "O que fazemos",
+      "watermark": "Iniciativas",
+      "titleTop": "Em destaque",
+      "titleBottom": "Iniciativas",
+      "contactUs": "Fale conosco",
+      "discoverDetails": "Saiba mais",
+      "discoverMiracles": "Conheça os milagres",
+      "card01": {
+        "tags": [
+          "Foco: comunidade",
+          "Status: ativo"
+        ],
+        "title": "Alcance juvenil",
+        "body": "Formar uma nova geração por meio de programas comunitários imersivos. Criamos espaços onde a tradição encontra a sensibilidade contemporânea, oferecendo acompanhamento e fundamento espiritual a jovens que atravessam um mundo complexo.",
+        "imageAlt": "Um grupo de jovens olhando para a luz"
+      },
+      "card02": {
+        "tags": [
+          "Foco: tecnologia"
+        ],
+        "title": "Alcance digital",
+        "body": "Traduzir mensagens atemporais para linguagens modernas. Usamos plataformas de ponta para construir paróquias digitais globais, levando nosso alcance muito além dos muros físicos, até a vida digital diária de milhões de pessoas.",
+        "imageAlt": "Uma rede digital de luz abstrata"
+      },
+      "card03": {
+        "tags": [
+          "Foco: conhecimento"
+        ],
+        "title": "Recursos educativos",
+        "body": "Explore nosso acervo crescente de milagres eucarísticos documentados ao longo dos séculos, junto com a história de Carlo: sua vida, sua fé e o testemunho que continua a inspirar uma nova geração.",
+        "imageAlt": "Arquitetura clássica e luz"
+      },
+      "card04": {
+        "tags": [
+          "Fase: desenvolvimento"
+        ],
+        "title": "Projetos futuros",
+        "body": "Planejar a próxima década de crescimento estrutural e espiritual. De centros comunitários sustentáveis a modelos filantrópicos inovadores, estes projetos definem nossa trajetória futura.",
+        "imageAlt": "Arquitetura estrutural minimalista"
+      }
+    },
+    "news": {
+      "eyebrow": "Últimas",
+      "title": "Notícias e novidades",
+      "tagFacebook": "Facebook",
+      "viewOnFacebook": "Ver publicação no Facebook",
+      "fallback1Date": "junho de 2025",
+      "fallback1Tag": "Canonização",
+      "fallback1Title": "Carlo Acutis é oficialmente canonizado como o primeiro santo millennial do mundo",
+      "fallback1Excerpt": "Em uma cerimônia histórica na Praça de São Pedro, o Papa Francisco canonizou Carlo Acutis, tornando-o padroeiro da geração internet.",
+      "fallback2Date": "maio de 2025",
+      "fallback2Tag": "Eventos",
+      "fallback2Title": "Friends of Carlo anuncia uma cúpula de discipulado digital para líderes de juventude",
+      "fallback2Excerpt": "Centenas de líderes de juventude de todo o país se reúnem para aprender a usar a história de Carlo para inspirar suas comunidades.",
+      "fallback3Date": "abril de 2025",
+      "fallback3Tag": "Recursos",
+      "fallback3Title": "Novo kit de recursos educativos lançado, gratuito para todas as paróquias",
+      "fallback3Excerpt": "Baixe planos de aula, infográficos e guias em vídeo sobre a vida de Carlo para estudantes de crisma, ensino médio e universidade."
+    },
+    "quote": {
+      "text": "Estar sempre perto de Jesus: esse é o programa da minha vida.",
+      "cite": "São Carlo Acutis",
+      "cta": "Leia a história completa dele →"
+    },
+    "support": {
+      "eyebrow": "Apoie a missão",
+      "title": "Formas de doar",
+      "subtitle": "Cada doação, grande ou pequena, leva a mensagem de Carlo a uma nova geração.",
+      "option01Title1": "Doação",
+      "option01Title2": "individual",
+      "option01Body": "Sua doação pessoal impulsiona o alcance juvenil, os recursos educativos e a evangelização digital, uma alma de cada vez.",
+      "option01Cta": "Doe agora",
+      "option02Title1": "Doação",
+      "option02Title2": "institucional",
+      "option02Body": "Faça parceria conosco como fundação, diocese ou instituição. Acesse documentos de governança, indicadores de impacto e informações sobre subvenções.",
+      "option02Cta": "Parceiros institucionais",
+      "option03Title1": "Parcerias",
+      "option03Title2": "corporativas",
+      "option03Body": "Alinhe sua marca a uma missão que transcende gerações. Há oportunidades de patrocínio e cobranding disponíveis.",
+      "option03Cta": "Informações corporativas"
+    },
+    "hero": {
+      "mainText": "Inspirados por São Carlo Acutis, o primeiro santo millennial, existimos para levar o Evangelho a uma nova geração por meio da fé, da tecnologia e do encontro.",
+      "overlayPart1": "Nascido",
+      "overlayWords": [
+        "Original.",
+        "Santo.",
+        "Amado.",
+        "Escolhido.",
+        "Chamado.",
+        "Eterno."
+      ],
+      "locationText": "Los Angeles, Califórnia",
+      "imageAlt": "São Carlo Acutis",
+      "navHome": "INÍCIO",
+      "navCarlo": "CARLO",
+      "navMiracles": "MILAGRES",
+      "navAbout": "SOBRE NÓS"
+    }
+  },
+  "donate": {
+    "meta": {
+      "title": "Formas de doar",
+      "description": "Apoie a Friends of Carlo: doações individuais, parcerias institucionais, subvenções e patrocínios corporativos."
+    },
+    "hero": {
+      "mainText": "Cada doação ajuda a levar adiante a missão de São Carlo Acutis. Sua generosidade nos permite inspirar jovens, fortalecer a devoção eucarística, apoiar peregrinações e iniciativas educativas, e criar recursos digitais que aproximam outras pessoas de Cristo.",
+      "footerText": "Role para baixo para mais informações",
+      "centerLabel": "Doar",
+      "overlayPart1": "Sua doação",
+      "overlayPart2": "transforma vidas",
+      "locationText": "Friends of Carlo",
+      "imageAlt": "São Carlo Acutis — Friends of Carlo"
+    },
+    "why": {
+      "eyebrow": "Por que doar",
+      "title": "Sua doação financia a próxima geração de santos digitais",
+      "body1": "Carlo Acutis mostrou que fé e tecnologia não estão em conflito: podem formar a combinação mais poderosa de todas. Seu apoio torna possível levar essa mensagem a adolescentes, paróquias, escolas e famílias do mundo todo.",
+      "body2": "Administramos com excelente responsabilidade e mantemos as despesas administrativas abaixo de 15%, para que seu dinheiro seja aplicado onde mais importa: programas, alcance e missão.",
+      "cta": "Doe agora →",
+      "metrics": {
+        "funds": "Total de recursos aplicados na missão",
+        "young": "Jovens alcançados todos os anos",
+        "communities": "Comunidades e parceiros pastorais no mundo",
+        "overhead": "Despesas administrativas",
+        "audited": "Demonstrações financeiras auditadas todos os anos",
+        "board": "Governança por conselho, com total transparência"
+      }
+    },
+    "photos": {
+      "photo1": "Um padre e dois convidados compartilhando um momento de alegria em um evento da Friends of Carlo",
+      "photo2": "Quatro amigos juntos diante da placa do MCJ",
+      "photo3": "Jovens peregrinos reunidos diante do santuário de São Carlo Acutis na Itália"
+    },
+    "partners": {
+      "eyebrow": "Para onde vão suas doações",
+      "title": "Comunidades globais e parceiros pastorais",
+      "body": "Sua generosidade apoiou diretamente estas dioceses, paróquias, escolas e centros de evangelização, em nossa própria comunidade e pelo mundo.",
+      "items": [
+        {
+          "name": "Diocese de Assis–Nocera Umbra–Gualdo Tadino",
+          "location": "Assis, Itália"
+        },
+        {
+          "name": "Arquidiocese de Wa",
+          "location": "Gana"
+        },
+        {
+          "name": "Centro de Evangelização Juvenil do Renascimento Eucarístico São Carlo Acutis",
+          "location": "Ilha de Tablas, Romblon, Filipinas"
+        },
+        {
+          "name": "Comunidade Católica Santa Mônica e Escola Preparatória Santa Mônica",
+          "location": "Santa Monica, Califórnia"
+        },
+        {
+          "name": "Paróquia e Escola São Tomé Apóstolo",
+          "location": "Los Angeles, Califórnia"
+        },
+        {
+          "name": "Escolas Paroquiais Santa Genoveva",
+          "location": "Panorama City, Califórnia"
+        }
+      ]
+    },
+    "institutional": {
+      "eyebrow": "Doações institucionais e de fundações",
+      "title": "Para fundações, dioceses e instituições",
+      "body1": "A Friends of Carlo recebe com gratidão doações significativas e subvenções de fundações católicas, dioceses, ordens religiosas e instituições afins. Oferecemos plena transparência na governança, demonstrações financeiras auditadas e flexibilidade nas parcerias.",
+      "body2": "Nossa equipe trabalha de perto com doadores institucionais para alinhar as contribuições a áreas específicas dos programas, desde o alcance juvenil até a infraestrutura digital e a expansão missionária internacional.",
+      "cta": "Fale com nossa equipe de doações →",
+      "items": [
+        {
+          "title": "Transparência financeira total",
+          "body": "Demonstrações financeiras anuais auditadas, formulário 990 do IRS e relatórios em tempo real das despesas dos programas, disponíveis a todos os parceiros institucionais."
+        },
+        {
+          "title": "Documentação de governança",
+          "body": "Estatuto completo, composição do conselho, políticas de conflito de interesses e atas de reuniões, disponíveis mediante solicitação."
+        },
+        {
+          "title": "Busca de oportunidades de subvenção",
+          "body": "Nossa equipe de doações ajudará você a identificar programas de subvenção alinhados às prioridades e aos critérios de elegibilidade da sua fundação."
+        },
+        {
+          "title": "Relatórios de impacto",
+          "body": "Relatórios detalhados de impacto, publicados duas vezes por ano, mostrando exatamente como sua doação foi aplicada e os resultados mensuráveis alcançados."
+        },
+        {
+          "title": "Opções de doação restrita",
+          "body": "As doações podem ser direcionadas a programas específicos: alcance juvenil, evangelização digital, expansão internacional ou dotação patrimonial."
+        }
+      ]
+    },
+    "corporate": {
+      "eyebrow": "Doações corporativas",
+      "title": "Parcerias e patrocínios corporativos",
+      "body": "Alinhe sua marca a uma missão que empodera jovens de todas as origens, reduz as desigualdades digitais e promove a fé, a inovação, o serviço e o desenvolvimento humano autêntico.",
+      "items": [
+        {
+          "title": "Patrocínio master",
+          "description": "Presença de destaque da sua marca em nosso site, em todos os eventos e na Exposição de Milagres Eucarísticos. Inclui oportunidades de fala para executivos."
+        },
+        {
+          "title": "Patrocínio de eventos",
+          "description": "Patrocine eventos específicos: cúpulas juvenis, retiros e conferências. Inclui materiais com a sua marca e presença no local."
+        },
+        {
+          "title": "Cobranding digital",
+          "description": "Sua marca em destaque em nosso conteúdo digital, nas newsletters e nas redes sociais, alcançando um público católico devoto e engajado."
+        },
+        {
+          "title": "Patrocínio de recursos",
+          "description": "Financie e faça cobranding de um recurso educativo específico: planos de aula, vídeos ou ferramentas digitais distribuídos às paróquias de todo o país."
+        },
+        {
+          "title": "Programa de doação equiparada",
+          "description": "Multiplique as doações individuais com a equiparação das contribuições dos seus funcionários ou clientes durante uma campanha."
+        },
+        {
+          "title": "Parceria personalizada",
+          "description": "Recebemos com prazer propostas criativas de parceria, sob medida para as metas de responsabilidade social da sua empresa e para os valores de seus colaboradores."
+        }
+      ],
+      "ctaTitle": "Pronto para explorar uma parceria?",
+      "ctaBody": "Nossa equipe de parcerias corporativas preparará uma proposta personalizada, alinhada aos objetivos e valores da sua organização.",
+      "cta": "Entre em contato →"
+    },
+    "finalCta": {
+      "quote": "Basta ser bom neste curto tempo de vida terrena, e você será feliz para sempre.",
+      "cite": "São Carlo Acutis",
+      "cta": "Faça uma doação hoje →"
+    },
+    "wall": {
+      "eyebrow": "Nossa comunidade",
+      "title": "Obrigado, doadores",
+      "body": "Cada doação, grande ou pequena, ajuda a levar adiante a missão de Carlo. Somos gratos por cada uma delas."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre nós",
+      "description": "Conheça a Friends of Carlo: nossa história, o conselho de administração e a nossa governança."
+    },
+    "board": {
+      "eyebrow": "Governança",
+      "title": "Conselho de Administração",
+      "josefina": {
+        "role": "Fundadora",
+        "bio": [
+          "Josefina Fernandez McEvoy fundou a Friends of St. Carlo Acutis, Inc. (“Friends of Carlo”) no início de 2025, após quase dois anos de discernimento em oração e de pesquisa cuidadosa para compreender melhor a vocação de São Carlo. Ao longo desse caminho, consultou diversos mentores espirituais e técnicos que a ajudaram a dar forma à sua visão para a Friends of Carlo. Nesse processo, compreendeu que a vocação de São Carlo é um convite para dar continuidade ao seu legado, inspirando os jovens com seu exemplo de fé, tecnologia e serviço. Em especial, a Friends of Carlo busca fomentar a amizade que os jovens vivem com Jesus por meio das telas, ouvindo suas esperanças, desafios e experiências, e ajudando-os a encontrá-Lo on-line por meio de orientação prática, acompanhamento e engajamento digital significativo.",
+          "Josefina é certificada pela VIRTUS, em conformidade com as políticas SAFE Environment da Arquidiocese de Los Angeles, há 17 anos.",
+          "Há mais de uma década, Josefina atua em diversos ministérios voluntários na Comunidade Católica Santa Mônica (SMCC), ajudando crianças e adultos a aprofundar sua relação com Jesus e a crescer na fé. Como catequista voluntária no Ministério de Educação Religiosa e Formação na Fé da SMCC por 13 anos, acompanhou crianças a conhecer Jesus de forma mais íntima. Também integrou o Conselho de Formação e Educação na Fé de Adultos da SMCC, onde ajudou a reorganizar os ministérios de formação da paróquia e a lançar iniciativas alinhadas ao seu Plano Estratégico 2020, incluindo pequenos grupos sazonais de partilha da fé, ciclos de palestras e “Vozes da Fé”.",
+          "Josefina concluiu os Exercícios Espirituais Inacianos na Vida Cotidiana 2023-2024, um retiro de oito meses no Centro de Espiritualidade Santa Mônica, e atualmente atua como leitora voluntária no Ministério de Liturgia da SMCC."
+        ]
+      },
+      "matthew": {
+        "role": "Diretor espiritual",
+        "bio": [
+          "“Os teus olhos viram o meu corpo ainda informe; todos os dias que me estavam destinados já estavam escritos no teu livro, antes que existisse um só deles.” (Sl 139,16) Deus nos conhecia antes mesmo de nascermos. Ninguém vem ao mundo por engano ou por acaso, e nenhuma vida é um mero capricho da natureza. Deus cria cada pessoa com um propósito.",
+          "Nasci em Nanvilli, na então Região Superior de Gana, numa família de seis filhos. Não foi por acaso que meus pais, embora sem instrução formal, acolheram o cristianismo quando os Missionários da África chegaram à nossa região. Tampouco foi por acaso que meu pai insistiu para que todos os filhos recebessem educação, apesar da resistência cultural da época.",
+          "Desde jovem senti o chamado ao sacerdócio, inspirado pelos missionários que celebravam a Missa na nossa aldeia. Depois de concluir o certificado de nível avançado, tive a rara oportunidade de cumprir o serviço nacional em uma companhia de seguros à qual muitos dariam qualquer coisa para pertencer. Isso retardou meu caminho rumo ao seminário, sobretudo quando recebi uma licença de estudos remunerada para cursar contabilidade na universidade mais prestigiosa de Gana, com a promessa de voltar a um cargo de gestão. Embora esse caminho fosse promissor, não conseguiu silenciar o chamado mais profundo que Deus havia colocado no meu coração. Em setembro de 1985, ingressei no Seminário Maior Santo Vítor.",
+          "Ordenado sacerdote em 1992, iniciei meu ministério em paróquias recém-criadas e com poucos recursos, primeiro na paróquia Santa Cecília. Depois atuei como capelão e professor em uma escola secundária masculina.",
+          "Meu caminho me levou por fim à Califórnia, onde morei na Comunidade Católica Santa Mônica e obtive um mestrado em administração escolar, antes de voltar a Gana para atuar como diretor de uma escola católica. Hoje sou administrador da catedral da Diocese Católica Romana de Wa, na Província Eclesiástica Metropolitana de Tamale, em Gana, sob a liderança de D. Francis Bomansaan, M.Afr., bispo de Wa. Permaneço profundamente grato por cada passo do caminho que Deus preparou para mim muito antes do meu primeiro suspiro."
+        ]
+      },
+      "carmen": {
+        "role": "Membro do conselho",
+        "bio": [
+          "Carmen Romero é membro do Conselho de Administração da Friends of St. Carlo. Ela traz uma formação multidisciplinar em tecnologia, estratégia de negócios e engajamento comunitário. Possui MBA pelo Rome City Institute, onde se formou em primeiro lugar na turma e foi reconhecida como Estudante de Mestrado do Ano. Carmen também é bacharel em Ciência da Computação pela Seattle University e possui certificação em Game Design pela University of Washington.",
+          "Ela apoia a missão da fundação por meio do planejamento estratégico e do desenvolvimento de programas, com o compromisso de honrar o legado de Carlo. Carmen se dedica a promover a inovação socialmente responsável e a fortalecer iniciativas educativas que capacitam os jovens. No tempo livre, é uma leitora voraz, uma orgulhosa viciada em The Sims 4 e se sente mais feliz quando está perto da água."
+        ]
+      },
+      "sebastian": {
+        "role": "Diretor de tecnologia",
+        "bio": [
+          "Sebastian Rocha é diretor de tecnologia da Friends of St. Carlo Acutis. Formou-se bacharel em Ciência da Computação pela Loyola Marymount University, com especialização complementar em Estatística e Ciência de Dados. Sua experiência abrange tecnologia da informação, gestão de produtos e desenvolvimento web, incluindo a criação de experiências digitais acessíveis e o uso da tecnologia para conectar organizações às comunidades que atendem.",
+          "Sebastian é especialmente inspirado por São Carlo Acutis, um desenvolvedor autodidata que colocou seus dons técnicos a serviço de compartilhar a fé católica com outras pessoas. Por meio da Friends of Carlo, Sebastian espera ajudar os jovens a encontrar Jesus em espaços digitais acolhedores, significativos e sinceros. Ele acredita que a tecnologia está no seu melhor quando ajuda até uma só pessoa a sentir-se mais perto de Deus."
+        ]
+      },
+      "johnny": {
+        "role": "Diretor criativo",
+        "bio": [
+          "Johnny Vrba é artista, autor e missionário da região metropolitana de Chicago. Atuou como missionário universitário de 2022 a 2024 na University of St. Thomas, em Saint Paul, Minnesota. É autor de “Seas the Day”: a história real do medo, da amizade e da fé vividos enquanto esteve preso no mar durante a pandemia de Covid-19.",
+          "Sua missão atual é ser um catalisador de um novo renascimento dentro da Igreja Católica, inspirando a próxima geração de jovens artistas por meio da narrativa e de uma arte multimídia profundamente significativa. No trabalho do dia a dia, Johnny ajuda a selecionar conteúdos que amplificam a luz, como administrador de negócios e aquisições na Angel Studios."
+        ]
+      },
+      "john": {
+        "role": "Secretário e tesoureiro do conselho",
+        "bio": [
+          "John McEvoy é um diretor de segurança do trabalho dedicado, cuja vocação sempre foi proteger pessoas, fortalecer comunidades e construir ambientes onde os outros possam prosperar. Com anos de experiência na liderança de equipes, no apoio a iniciativas de grande porte e no cuidado com o bem-estar de quem está sob sua responsabilidade, John traz uma presença firme e voltada ao serviço em cada função que assume.",
+          "Seu compromisso com a Friends of St. Carlo Acutis nasce de um desejo profundo de ajudar outras pessoas a encontrar a fé de forma acessível, moderna e significativa.",
+          "Inspirado pelo exemplo de São Carlo — viver a santidade na vida cotidiana, na tecnologia e na alegre simplicidade —, John serve à missão de difundir a mensagem de esperança e amor de São Carlo.",
+          "Para John, esse trabalho é mais do que voluntariado: é uma vocação. Ele acredita em criar espaços seguros e acolhedores, nos quais os jovens possam crescer espiritualmente, se conectar uns com os outros e descobrir a beleza de uma fé vivida com autenticidade."
+        ]
+      }
+    },
+    "governance": {
+      "eyebrow": "Governança",
+      "title": "Transparência em que você pode confiar",
+      "body": "Atuamos com os mais altos padrões de governança sem fins lucrativos e de transparência financeira. Nossos doadores merecem saber que cada dólar é usado para avançar a missão.",
+      "stat1": "Empresas confiam no nosso modelo de governança",
+      "stat2": "Anos de operação transparente",
+      "stat3": "Membros do conselho dedicados",
+      "stat4": "Taxa de despesas administrativas",
+      "stat5": "Disponibilidade do relatório anual",
+      "stat6": "Avaliação independente da instituição de caridade",
+      "oversightTitle": "Supervisão do conselho",
+      "oversightBody": "Nosso Conselho de Administração é responsável por definir a missão e a direção estratégica da Friends of Carlo e por supervisionar suas finanças, operações e políticas, conforme estabelecido nos Atos Constitutivos e no Estatuto. O conselho revisa regularmente as operações e as políticas da organização para garantir que cumpram todas as exigências legais e reflitam as melhores práticas do setor.",
+      "bylawsTitle": "Nosso estatuto",
+      "bylawsBody": "O Estatuto da Friends of Carlo estabelece as regras internas de funcionamento definidas pelo Conselho de Administração para garantir que a organização seja estruturada e administrada exclusivamente para fins caridosos, religiosos, educacionais e científicos, nos termos da Seção 501(c)(3) do Código da Receita Federal dos Estados Unidos, e em conformidade com as leis da Califórnia que regem as corporações de benefício público."
+    },
+    "hero": {
+      "titleWords": [
+        "Sobre",
+        "nós"
+      ],
+      "whoWeAre": "Quem somos",
+      "tagline1": "Queremos tornar a fé o mais acessível possível, para que jovens do mundo inteiro possam encontrar Cristo pelas ferramentas digitais que já usam todos os dias.",
+      "tagline2": "Independentemente de sua origem, todo jovem católico deve estar preparado para levar o Evangelho adiante com criatividade, coragem e convicção, seguindo o exemplo de São Carlo Acutis.",
+      "rootedIn": [
+        "Enraizados em",
+        "fé",
+        "esperança",
+        "amor"
+      ],
+      "contactUs": "Fale conosco",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "typography": {
+      "headline": "Nosso trabalho é guiado por uma convicção simples: a história de Carlo não é apenas para ser lembrada, mas para ser vivida. Ao construir uma comunidade enraizada na fé, na esperança e no serviço, esperamos inspirar outras pessoas a usar seus próprios dons para tornar Cristo conhecido no mundo de hoje.",
+      "paragraph": "Reunimos famílias, jovens adultos, educadores, clérigos e comunidades inspirados pelo testemunho de Carlo. Por meio da colaboração, de eventos, de iniciativas educativas e de experiências digitais, buscamos criar oportunidades para que as pessoas encontrem Cristo e cresçam na fé de maneira significativa e duradoura.",
+      "closing": [
+        "Acreditamos que a Igreja",
+        "não está atrasada.",
+        "Ela só precisa de santos",
+        "— como Carlo —",
+        "para mostrar o caminho."
+      ]
+    },
+    "gallery": {
+      "title": "Momentos da missão",
+      "headline": [
+        "Nascido de uma convicção:",
+        "que fé e tecnologia",
+        "pertencem uma à outra"
+      ],
+      "missionLabel": "Missão",
+      "missionText": "Inspirar uma nova geração de católicos a usar a tecnologia, a criatividade e as mídias digitais como instrumentos de evangelização, seguindo o exemplo de São Carlo Acutis.",
+      "visionLabel": "Visão",
+      "visionText": "Um mundo em que os jovens católicos vejam seus dons, inclusive os tecnológicos, como vocações a serviço do Evangelho."
+    }
+  },
+  "carlo": {
+    "storyLabel": "Carlo Acutis — A história",
+    "metaTitle": "A história de Carlo",
+    "metaDescription": "Descubra a vida de São Carlo Acutis, o primeiro santo millennial, que usou a tecnologia para aproximar milhões de pessoas de Deus.",
+    "hero": {
+      "digIn": "MERGULHE",
+      "quote": "Carlo não se tornou santo por ser perfeito. Tornou-se santo porque escolheu Deus todos os dias. Por trás de cada milagre e de cada manchete, havia um adolescente aprendendo a amar Cristo mais profundamente.",
+      "cardQuote": "Estar sempre perto de Jesus: esse é o plano da minha vida.",
+      "cardAuthor": "— Carlo Acutis",
+      "digital": "DIGITAL",
+      "saint": "SANTO",
+      "heavenA": "O Céu é",
+      "heavenB": "nossa casa",
+      "scroll": "Role"
+    },
+    "s01": {
+      "title1": "APENAS UM",
+      "title2": "GAROTO COMUM",
+      "aria": "Apenas um garoto comum",
+      "body": "Carlo era como qualquer outro adolescente. Adorava futebol, videogames, os amigos, os animais e fazer as pessoas rirem. O que o tornava diferente não era ter vivido uma vida extraordinária. Era convidar Deus para os momentos comuns de cada dia.",
+      "photoAlt": "Carlo Acutis jovem",
+      "photoCaption": "Carlo, Milão c. 1999",
+      "momAlt": "A mãe de Carlo falando em um evento",
+      "momCaption": "A mãe de Carlo",
+      "loved": "As pequenas coisas que ele amava:",
+      "items": [
+        "Futebol",
+        "Videogames",
+        "Animais",
+        "Amigos",
+        "Família",
+        "Rir",
+        "Aventura"
+      ],
+      "readMore": "Leia mais →"
+    },
+    "s02": {
+      "title1": "APAIXONADO",
+      "title2": "POR JESUS",
+      "aria": "Apaixonado por Jesus",
+      "photoAlt": "Velas em uma igreja",
+      "photoCaption": "A missa diária, Milão",
+      "quote": "A Eucaristia é a minha autoestrada para o Céu.",
+      "author": "Carlo Acutis",
+      "rosary": "terço, todos os dias",
+      "body": "Desde pequeno, Carlo encontrou algo especial na Eucaristia. Ir à Missa e passar tempo com Jesus tornou-se a melhor parte do seu dia. Ele acreditava que, quanto mais perto estamos de Jesus, mais felizes nos tornamos.",
+      "pullQuote": "“Quando olhamos para o sol, ficamos bronzeados. Quando olhamos para Jesus na Eucaristia, nos tornamos santos.”"
+    },
+    "s03": {
+      "title1": "VIVER",
+      "title2": "SUA FÉ",
+      "aria": "Viver a sua fé",
+      "body": "Carlo não guardava a sua fé dentro das paredes de uma igreja. Vivia-a todos os dias sendo bondoso, defendendo colegas que sofriam bullying, ajudando quem estava em necessidade e tratando sempre os outros com amor e respeito.",
+      "howTitle": "Como ele vivia:",
+      "items": [
+        "Ser bondoso com todos",
+        "Defender colegas vítimas de bullying",
+        "Ajudar quem está em necessidade",
+        "Acolher quem está sozinho",
+        "Tratar todos com amor",
+        "Ver Deus em cada pessoa"
+      ]
+    },
+    "s04": {
+      "age": "11 ANOS",
+      "title1": "UMA MISSÃO",
+      "title2": "NA INTERNET",
+      "aria": "Uma missão na internet",
+      "intro": "Carlo amava computadores e tecnologia, mas via neles algo mais do que entretenimento.",
+      "cards": [
+        {
+          "label": "AUTODIDATA",
+          "desc": "Aprendeu sozinho a criar sites porque queria usar a internet para compartilhar Jesus com o mundo."
+        },
+        {
+          "label": "EVANGELIZADOR",
+          "desc": "Muito antes de as redes sociais fazerem parte da vida cotidiana, Carlo mostrou que a tecnologia podia ser uma força para o bem."
+        },
+        {
+          "label": "PIONEIRO",
+          "desc": "Usou todas as ferramentas digitais ao seu alcance para aproximar os outros de Deus: um santo para a era digital."
+        }
+      ],
+      "strike": "Não é para a escola.",
+      "goldPrefix": "É para as ",
+      "underlined": "almas."
+    },
+    "s05": {
+      "title1": "COMPARTILHAR OS",
+      "title2": "MILAGRES EUCARÍSTICOS",
+      "aria": "Compartilhar os milagres eucarísticos",
+      "body": "Com apenas onze anos, Carlo começou a pesquisar milagres eucarísticos de todo o mundo. Criou um site para que qualquer pessoa pudesse conhecer essas histórias incríveis e descobrir por si mesma a beleza da Eucaristia.",
+      "statLabel": "milagres eucarísticos catalogados",
+      "photoAlt": "Vitral",
+      "photoCaption": "A Exposição dos Milagres Eucarísticos",
+      "whyTitle": "Por que isso importava:",
+      "items": [
+        "Gratuito para todos",
+        "Países do mundo inteiro",
+        "Evidências científicas",
+        "Fotos e história"
+      ]
+    },
+    "s06": {
+      "title1": "UM AMIGO PARA",
+      "title2": "TODOS",
+      "aria": "Um amigo para todos",
+      "body": "Uma das coisas de que as pessoas mais se lembram de Carlo é a forma como tratava os outros. Acolhia a todos, especialmente quem se sentia deixado de lado. Compartilhava o que tinha com quem estava em necessidade e acreditava que cada pessoa merecia ser amada, porque cada pessoa é filha de Deus.",
+      "sayTitle": "O que as pessoas dizem dele:",
+      "items": [
+        "Ele sempre fazia você se sentir visto",
+        "Ele dividia tudo o que tinha",
+        "Ele nunca excluía ninguém",
+        "Ele tratava os pobres como família"
+      ],
+      "quote": "Cada pessoa merece ser amada, porque cada pessoa é filha de Deus.",
+      "author": "Carlo Acutis"
+    },
+    "s07": {
+      "age": "15 ANOS",
+      "title1": "SEUS ÚLTIMOS",
+      "title2": "DIAS",
+      "aria": "Seus últimos dias",
+      "body": "Quando foi diagnosticado com leucemia aos quinze anos, Carlo a enfrentou com uma paz e uma fé extraordinárias. Em vez de pensar apenas em si mesmo, ofereceu seu sofrimento pelo Papa, pela Igreja e pelas pessoas que precisavam da ajuda de Deus. Sua confiança em Jesus nunca vacilou.",
+      "quote": "Ofereço todo o meu sofrimento ao Senhor, pelo Papa e pela Igreja.",
+      "author": "Carlo Acutis",
+      "diagnosedLabel": "Diagnóstico",
+      "deathDate": "12 OUT",
+      "passedLabel": "Partiu para o Céu"
+    },
+    "s08": {
+      "title1": "A SUA HISTÓRIA",
+      "title2": "CONTINUA",
+      "aria": "A sua história continua",
+      "body": "A vida de Carlo pode ter sido breve, mas o seu impacto continua a crescer a cada dia. Por meio dos milagres reconhecidos pela Igreja e dos milhões de pessoas inspiradas pelo seu exemplo, Carlo nos lembra que a santidade não é só para alguns poucos. É algo para o qual todos nós somos chamados.",
+      "canonizedLabel": "CANONIZADO",
+      "canonizedDate": "27 DE ABRIL DE 2025",
+      "canonizedNote": "O primeiro santo millennial",
+      "quote": "Todas as pessoas nascem como originais, mas muitas morrem como fotocópias.",
+      "author": "Carlo Acutis"
+    },
+    "closing": {
+      "line1": "TODOS NASCEMOS",
+      "line2": "ORIGINAIS.",
+      "footer": "Não morra como fotocópia.",
+      "cta": "Continue a missão de Carlo →"
+    }
+  },
+  "miracles": {
+    "meta": {
+      "title": "Milagres eucarísticos",
+      "description": "Conheça os 136 milagres eucarísticos documentados por Carlo Acutis: sinais físicos da Presença real de Cristo na Eucaristia."
+    },
+    "intro": {
+      "title": "O que são os milagres eucarísticos?",
+      "p1": "Um milagre eucarístico é um fenômeno extraordinário, cientificamente inexplicado, ligado à Eucaristia. Mais frequentemente, trata-se da transformação visível de uma hóstia consagrada em tecido humano ou do aparecimento de sangue, verificada por cientistas e médicos de todo o mundo.",
+      "p2": "Carlo Acutis dedicou anos a pesquisar, catalogar e apresentar 136 desses milagres em uma exposição digital itinerante. Seu trabalho levou as evidências da Presença real de Cristo a milhões de pessoas que nunca tinham ouvido essas histórias.",
+      "quote": "“Os milagres eucarísticos são os maiores milagres que Jesus nos deu.”",
+      "quoteBy": "São Carlo Acutis",
+      "photoAlt": "Carlo Acutis"
+    },
+    "map": {
+      "titleGold": "Milagres ",
+      "titleNavy": "ao redor do mundo",
+      "introA": "Carlo pesquisou e catalogou pessoalmente ",
+      "introB": "136 milagres",
+      "introC": " em sua exposição itinerante original. Este site documenta ",
+      "introD": "188",
+      "introE": ": os 136 de Carlo, mais 52 milagres adicionais extraídos de registros diocesanos, fontes hagiográficas e arquivos católicos de referência, todos citados individualmente em cada cartão.",
+      "countryCount": "{count, plural, one {# país} other {# países}}",
+      "miracleCount": "{total} milagres",
+      "statDocumented": "Milagres documentados",
+      "statDocumentedSub": "em 6 continentes",
+      "statYears": "Anos de história",
+      "statYearsSub": "o mais antigo remonta ao ano 500",
+      "statCountries": "Países",
+      "statCountriesSub": "representados na exposição",
+      "statVisitors": "Visitantes no mundo",
+      "statVisitorsSub": "desde o lançamento da exposição",
+      "sources": "Fontes",
+      "primary": "Principal",
+      "sourceList": [
+        {
+          "label": "Exposição de Carlo Acutis",
+          "detail": "Fonte principal. O site oficial miracolieucaristici.org hospeda painéis PDF individuais para cada um dos 136 milagres documentados por Carlo, vinculados diretamente a cada cartão quando disponíveis."
+        },
+        {
+          "label": "Wikipédia",
+          "detail": "Usada para os milagres mais documentados, quando existem verbetes enciclopédicos revisados por pares, incluindo Lanciano, Bolsena, Sokółka, Legnica, Tixtla, Akita, Knock, Wilsnack e o Santo Cálice de Valência."
+        },
+        {
+          "label": "Biblioteca Católica EWTN",
+          "detail": "Biblioteca teológica da Eternal Word Television Network. Usada para o milagre de Buenos Aires de 1996, aprovado na época pelo arcebispo Jorge Bergoglio."
+        },
+        {
+          "label": "Adoração Eucarística Perpétua",
+          "detail": "Apostolado católico que documenta fenômenos eucarísticos ao redor do mundo. Citado para Betânia (Venezuela, 1991) e Saint-André (Reunião, 1902)."
+        }
+      ],
+      "continents": {
+        "Europe": "Europa",
+        "Americas": "Américas",
+        "Asia": "Ásia",
+        "Middle East": "Oriente Médio",
+        "Africa": "África",
+        "Oceania": "Oceania",
+        "Other": "Outros"
+      }
+    },
+    "countries": {
+      "Italy": "Itália",
+      "Germany": "Alemanha",
+      "France": "França",
+      "Poland": "Polônia",
+      "Spain": "Espanha",
+      "Belgium": "Bélgica",
+      "Austria": "Áustria",
+      "Czech Republic": "República Tcheca",
+      "Portugal": "Portugal",
+      "Netherlands": "Países Baixos",
+      "Switzerland": "Suíça",
+      "Hungary": "Hungria",
+      "Croatia": "Croácia",
+      "Lithuania": "Lituânia",
+      "Romania": "Romênia",
+      "Ireland": "Irlanda",
+      "Malta": "Malta",
+      "Scotland": "Escócia",
+      "Slovakia": "Eslováquia",
+      "Serbia": "Sérvia",
+      "Bulgaria": "Bulgária",
+      "Slovenia": "Eslovênia",
+      "Luxembourg": "Luxemburgo",
+      "Latvia": "Letônia",
+      "Sweden": "Suécia",
+      "Denmark": "Dinamarca",
+      "Cyprus": "Chipre",
+      "Ukraine": "Ucrânia",
+      "Argentina": "Argentina",
+      "Peru": "Peru",
+      "Mexico": "México",
+      "Chile": "Chile",
+      "Venezuela": "Venezuela",
+      "Canada": "Canadá",
+      "United States": "Estados Unidos",
+      "Colombia": "Colômbia",
+      "Ecuador": "Equador",
+      "Brazil": "Brasil",
+      "Paraguay": "Paraguai",
+      "Bolivia": "Bolívia",
+      "Uruguay": "Uruguai",
+      "Philippines": "Filipinas",
+      "India": "Índia",
+      "Japan": "Japão",
+      "Indonesia": "Indonésia",
+      "South Korea": "Coreia do Sul",
+      "Vietnam": "Vietnã",
+      "Georgia": "Geórgia",
+      "Egypt": "Egito",
+      "Israel": "Israel",
+      "Lebanon": "Líbano",
+      "Nigeria": "Nigéria",
+      "Uganda": "Uganda",
+      "South Africa": "África do Sul",
+      "Kenya": "Quênia",
+      "Ethiopia": "Etiópia",
+      "Australia": "Austrália",
+      "New Zealand": "Nova Zelândia",
+      "Martinique": "Martinica",
+      "Réunion": "Reunião"
+    },
+    "canonized": {
+      "eyebrow": "O caminho para a santidade",
+      "titleLine1": "Canonizado por meio",
+      "titleLine2": "de milagres",
+      "body": "Ao longo da história, a Igreja investigou com cuidado os milagres como sinais da presença de Deus na vida dos santos. No caso de Carlo Acutis, duas curas extraordinárias foram examinadas por especialistas médicos, teólogos e funcionários do Vaticano antes de serem oficialmente reconhecidas como milagres.",
+      "journey": "O caminho para a santidade",
+      "timeline": [
+        {
+          "event": "Milagre da beatificação",
+          "detail": "Matheus Vianna — Brasil"
+        },
+        {
+          "event": "Carlo é beatificado",
+          "detail": "Assis, Itália"
+        },
+        {
+          "event": "Milagre da canonização",
+          "detail": "Valeria Valverde — Costa Rica"
+        },
+        {
+          "event": "Carlo é canonizado",
+          "detail": "27 de abril, Roma"
+        }
+      ],
+      "closingA": "Em 27 de abril de 2025, Carlo Acutis foi oficialmente declarado",
+      "closingB": "santo da Igreja Católica."
+    },
+    "heroTitle": "{count} milagres",
+    "heroWords": {
+      "documented": "Documentados",
+      "verified": "Verificados",
+      "preserved": "Preservados"
+    },
+    "yearAD": "d.C.",
+    "grid": {
+      "titleAll": "A exposição completa — {count} milagres",
+      "titleFiltered": "A exposição completa — {count, plural, one {# milagre} other {# milagres}} de {country}",
+      "viewAll": "← Ver os {count} milagres",
+      "countFiltered": "{count, plural, one {# milagre documentado} other {# milagres documentados}} de {country}. Clique em qualquer cartão para saber mais.",
+      "intro": "Deslize ou role para explorar cada milagre documentado por Carlo. Clique em qualquer cartão para saber mais.",
+      "sources": "Fontes",
+      "sourcePanel": "Exposição de Carlo Acutis — painel individual",
+      "sourceExhibition": "Exposição de Milagres Eucarísticos de Carlo Acutis",
+      "sourceWiki": "Wikipédia",
+      "sourceEwtn": "EWTN — Biblioteca Católica",
+      "sourcePea": "Adoração Eucarística Perpétua",
+      "sourceMagis": "Magis Center"
+    },
+    "skiper": {
+      "title": "Milagres de Carlo Acutis",
+      "miracle": "Milagre",
+      "tapToRead": "Toque para ler mais →",
+      "location": "Local",
+      "year": "Ano",
+      "person": "Pessoa",
+      "back": "← Voltar aos milagres",
+      "m1": {
+        "label": "O milagre que levou à beatificação",
+        "location": "Brasil",
+        "recognition": "Reconhecido oficialmente pelo Vaticano · Beatificação 2020",
+        "imageAlt": "Milagre I — o milagre da beatificação, Brasil 2013",
+        "steps": [
+          "Um menino chamado Matheus nasceu com uma grave malformação congênita do pâncreas, que causava complicações digestivas severas.",
+          "Sua família pediu a intercessão de Carlo por meio da oração.",
+          "Durante uma celebração de oração, Matheus tocou uma relíquia de Carlo Acutis e rezou pela cura.",
+          "Pouco depois, sua doença desapareceu de forma inesperada e completa.",
+          "Os exames médicos confirmaram que a criança estava completamente curada.",
+          "Os médicos não conseguiram dar nenhuma explicação científica para a recuperação.",
+          "Após anos de investigação do Vaticano, a cura foi oficialmente reconhecida como um milagre atribuído a Carlo Acutis."
+        ]
+      },
+      "m2": {
+        "label": "O milagre que levou à canonização",
+        "location": "Costa Rica",
+        "recognition": "Reconhecido oficialmente pelo Vaticano · Canonização 2025",
+        "imageAlt": "Milagre II — o milagre da canonização, Costa Rica 2022",
+        "steps": [
+          "Valeria sofreu uma lesão cerebral traumática devastadora após um grave acidente de bicicleta.",
+          "Os médicos achavam que as chances de recuperação dela eram extremamente baixas.",
+          "Sua mãe viajou a Assis e rezou junto ao túmulo de Carlo Acutis, entregando a vida da filha à sua intercessão.",
+          "No mesmo dia, Valeria começou a melhorar de forma inesperada.",
+          "Nos dias seguintes, ela se recuperou em um ritmo que os médicos não conseguiam explicar.",
+          "Os exames do cérebro mostraram uma cura dramática e inexplicável do ponto de vista médico.",
+          "Ela teve uma recuperação notável, que superou todas as expectativas médicas.",
+          "Após uma análise minuciosa, o Vaticano reconheceu oficialmente esse fato como o segundo milagre atribuído a Carlo Acutis."
+        ]
+      }
+    },
+    "entries": {
+      "1": {
+        "title": "Carne e sangue de Cristo",
+        "description": "Um monge basiliano que duvidava da Presença real viu a hóstia transformar-se em carne visível e o vinho em sangue. As análises científicas do século XX identificaram o tecido como músculo cardíaco humano, do tipo sanguíneo AB, sem alteração após treze séculos."
+      },
+      "2": {
+        "title": "Hóstia transformada em carne",
+        "description": "Durante a missa, uma hóstia caída no chão foi encontrada transformada em um pequeno pedaço de carne. O bispo Guido verificou o milagre, que permanece documentado nos registros da igreja da época."
+      },
+      "3": {
+        "title": "Conservação milagrosa",
+        "description": "Uma hóstia consagrada, levada a um doente, caiu em um caminho lamacento. Quando foi recuperada dias depois, estava perfeitamente intacta e radiante. O acontecimento levou à construção de um santuário no local."
+      },
+      "4": {
+        "title": "O milagre que comoveu um papa",
+        "description": "Um sacerdote alemão que duvidava, ao celebrar a missa, viu o sangue jorrar da hóstia sobre o corporal. O papa Urbano IV mandou trazer o corporal, declarou-o milagroso e inspirou a festa do Corpus Christi."
+      },
+      "5": {
+        "title": "O corporal de Bolsena",
+        "description": "O corporal manchado de sangue do milagre de Bolsena foi guardado na catedral de Orvieto por ordem do papa Urbano IV. Nessa cidade, são Tomás de Aquino compôs o Ofício do Corpus Christi, inspirado na relíquia."
+      },
+      "6": {
+        "title": "Hóstia preservada do fogo",
+        "description": "Durante um incêndio que destruiu uma igreja, foi encontrado entre os escombros um cibório com hóstias consagradas, intacto e sem queimar. As autoridades eclesiásticas examinaram depois as hóstias e as encontraram em perfeito estado."
+      },
+      "7": {
+        "title": "Hóstias incorruptas por séculos",
+        "description": "Hóstias roubadas da basílica de São Francisco foram recuperadas e colocadas em um cibório. Quando foram reexaminadas em 1914 e em 1950, estavam perfeitamente conservadas: com 220 anos, não apresentavam nenhum sinal de corrupção."
+      },
+      "8": {
+        "title": "A mula se ajoelha diante da hóstia",
+        "description": "Para convencer um herege, santo Antônio de Pádua mostrou a Eucaristia a uma mula faminta. Embora separada da comida, o animal ajoelhou-se diante da hóstia. O herege converteu-se ali mesmo."
+      },
+      "9": {
+        "title": "Uma procissão de fogo",
+        "description": "Uma carroça que transportava vasos sagrados roubados virou, e um cibório voou pelos ares. As hóstias consagradas pareceram elevar-se e flutuar diante da multidão e do clero, até pousarem milagrosamente."
+      },
+      "10": {
+        "title": "A hóstia que sangrava em segredo",
+        "description": "Uma mulher obteve uma hóstia para usar em uma prática de magia popular. Ao envolvê-la em cera, ela começou a sangrar. Apavorada, a enterrou, mas quando o local foi escavado, a hóstia havia se transformado em carne sangrenta."
+      },
+      "11": {
+        "title": "Um judeu testemunha o milagre",
+        "description": "Um homem judeu presenciou a profanação de uma hóstia e viu que ela começou a sangrar abundantemente. Tão comovido, converteu-se imediatamente ao cristianismo. O fato foi documentado e uma igreja foi construída no local."
+      },
+      "12": {
+        "title": "Hóstia usada em magia transformada em carne",
+        "description": "Uma jovem guardou uma hóstia em vez de consumi-la, com a intenção de usá-la em um feitiço. Dias depois, ao abrir o pano, a hóstia havia se transformado em um pedaço de carne. A relíquia ainda se conserva em Alatri."
+      },
+      "13": {
+        "title": "Um moribundo recebe a hóstia",
+        "description": "Um sacerdote partiu para levar a comunhão a um camponês moribundo sem ter uma hóstia consigo, e percebeu a falta no caminho. Ao abrir o breviário, encontrou uma hóstia misteriosamente presente. O camponês recebeu a comunhão e morreu em paz."
+      },
+      "14": {
+        "title": "Hóstia encontrada em uma colmeia",
+        "description": "No campo, foram encontrados vasos sagrados roubados. Dentro de uma colmeia, descobriu-se um cibório com hóstias consagradas. As abelhas haviam construído em volta uma capela de cera, como se guardassem o Santíssimo Sacramento."
+      },
+      "15": {
+        "title": "Sangue eucarístico na toalha do altar",
+        "description": "Sangue apareceu na toalha do altar de uma igreja de Verona durante uma missa celebrada por um sacerdote que duvidava. As autoridades eclesiásticas examinaram as manchas e constataram que se tratava de sangue humano. O tecido está guardado nos arquivos diocesanos."
+      },
+      "16": {
+        "title": "A hóstia que não queimou",
+        "description": "Um incêndio irrompeu em uma igreja veneziana e destruiu os móveis e o altar. Quando os escombros foram removidos, o sacrário foi encontrado intacto. As hóstias consagradas em seu interior não haviam sofrido nenhum dano."
+      },
+      "17": {
+        "title": "Incorruptibilidade na Sardenha",
+        "description": "Um pixide deixado em uma capela abandonada na ilha da Sardenha foi reencontrado décadas depois. As hóstias consagradas que continha estavam perfeitamente intactas e não apresentavam sinais de decomposição, apesar da umidade do local."
+      },
+      "18": {
+        "title": "Uma hóstia conservada milagrosamente",
+        "description": "Uma hóstia que caiu por acidente atrás do altar foi reencontrada um ano depois, durante uma reforma. Estava em perfeitas condições, sobre uma saliência inacessível. O exame médico confirmou que não havia nenhum meio natural de conservação."
+      },
+      "19": {
+        "title": "Hóstia que brilha com luz",
+        "description": "Um sacerdote e vários fiéis testemunhas relataram ter visto uma hóstia consagrada emitir luz visível durante a bênção eucarística. O fenômeno se repetiu por vários dias e foi certificado pelo bispo local."
+      },
+      "20": {
+        "title": "Hóstia flutuando sobre a água",
+        "description": "Piratas que saqueavam a cidade atiraram ao mar um pixide com hóstias consagradas. As testemunhas o viram flutuar em pé sobre as ondas. O cibório chegou intacto à praia, com as hóstias perfeitamente conservadas."
+      },
+      "21": {
+        "title": "Sangue de uma hóstia roubada",
+        "description": "Uma mulher do lugar envolveu em um pano uma hóstia roubada de uma igreja. Ao abri-lo, o pano estava encharcado de sangue. Aterrorizada, voltou à paróquia e se confessou. O pano manchado de sangue foi guardado como relíquia."
+      },
+      "22": {
+        "title": "Clara repele uma invasão",
+        "description": "Quando soldados sarracenos atacaram Assis e escalaram os muros do convento, santa Clara levou a custódia com o Santíssimo Sacramento até a brecha. Os soldados pararam, pareceram cegos e fugiram. O episódio consta em seu processo de canonização."
+      },
+      "23": {
+        "title": "Um sacerdote curado pela hóstia",
+        "description": "Um sacerdote moribundo recebeu o Viático e levantou-se imediatamente do leito de morte. Os médicos que o examinaram não encontraram nenhuma explicação médica para sua recuperação súbita e completa."
+      },
+      "24": {
+        "title": "Hóstia encontrada intacta após uma enchente",
+        "description": "Uma enchente alagou uma igreja de Roma por várias semanas. Quando as águas baixaram, o sacrário foi aberto e encontraram-se hóstias perfeitamente conservadas, sem sinal algum de dano causado pela umidade. O papa Paulo V documentou o evento."
+      },
+      "25": {
+        "title": "Um soldado apunhala a hóstia",
+        "description": "Um soldado golpeou com uma faca uma hóstia roubada, e ela começou imediatamente a sangrar. Apavorado, confessou-se ao sacerdote e devolveu a hóstia. As autoridades eclesiásticas certificaram as manchas de sangue; o tecido ainda é conservado."
+      },
+      "26": {
+        "title": "Hóstia incorrupta através do fogo",
+        "description": "Durante um incêndio que destruiu a sacristia de uma igreja milanesa, o sacrário foi recuperado dos escombros e as hóstias foram encontradas perfeitamente intactas. O milagre foi depois certificado por são Carlos Borromeu."
+      },
+      "27": {
+        "title": "Uma hóstia luminosa à noite",
+        "description": "Pescadores da costa do Adriático viram uma luz pairando sobre o mar. Ao se aproximarem, descobriram que ela vinha de um pixide com hóstias consagradas, flutuando na água. O cibório e as hóstias foram recolhidos intactos."
+      },
+      "28": {
+        "title": "A hóstia que voltou",
+        "description": "Uma hóstia consagrada roubada de uma igreja e jogada em um poço foi encontrada mais tarde dentro do sacrário da igreja, como se tivesse voltado por conta própria. O sacrário estava trancado e sem sinais de mexidas, segundo o pároco e as testemunhas."
+      },
+      "29": {
+        "title": "Sangue que se espalha pelo corporal",
+        "description": "Um sacerdote derramou acidentalmente o precioso Sangue durante a missa, e este se espalhou pelo corporal formando onze rostos, interpretados como Cristo e as almas do purgatório. O corporal, reconhecido pelos bispos locais, ainda hoje atrai peregrinos."
+      },
+      "30": {
+        "title": "Hóstia que sangra após uma profanação",
+        "description": "Uma hóstia consagrada que um ladrão havia perfurado começou a sangrar. O sangue se espalhou pelo pano em que estava envolvida e não pôde ser removido nem com lavagens. O bispo de Regensburg documentou o milagre."
+      },
+      "31": {
+        "title": "Hóstia luminosa em um campo",
+        "description": "Camponeses relataram uma luz intensa em um campo. Ao se aproximarem, encontraram uma hóstia consagrada caída no chão, intacta e cercada de luz. Uma capela foi construída no local e tornou-se um destino de peregrinação."
+      },
+      "32": {
+        "title": "Hóstias conservadas por trinta anos",
+        "description": "Um pixide com hóstias consagradas foi emparedado em uma parede de igreja para protegê-lo durante uma agitação e acabou esquecido. Trinta anos depois, durante obras, foi reencontrado: as hóstias estavam frescas e incorruptas. O bispo Udalschalk certificou o milagre."
+      },
+      "33": {
+        "title": "O precioso Sangue de Weingarten",
+        "description": "Uma relíquia do Sangue de Cristo, que se dizia trazida de Jerusalém durante as cruzadas, foi guardada na abadia beneditina de Weingarten. Nas crônicas da abadia, são registradas numerosas curas relacionadas à relíquia."
+      },
+      "34": {
+        "title": "Uma hóstia carregada por anjos",
+        "description": "Durante um período de profanações de igrejas, uma hóstia consagrada foi vista flutuando pelo ar dentro de uma igreja, carregada por figuras luminosas. O fato foi comunicado ao arcebispo de Colônia e registrado nos arquivos diocesanos."
+      },
+      "35": {
+        "title": "Hóstia encontrada em um jardim",
+        "description": "Um cibório roubado foi recuperado enterrado em um jardim, e as hóstias que continha se revelaram incorruptas, apesar de um longo período sob a terra. O bispo Volrad de Erfurt investigou e autenticou o milagre; uma igreja foi construída no local."
+      },
+      "36": {
+        "title": "Um cavaleiro arrogante humilhado",
+        "description": "Um cavaleiro exigiu a grande hóstia reservada aos sacerdotes. Quando o padre cedeu sob coação, a hóstia começou a sangrar. O cavaleiro afundou no piso de pedra até os joelhos antes de implorar misericórdia. A marca na pedra ainda é visível hoje."
+      },
+      "37": {
+        "title": "Uma hóstia roubada sangra",
+        "description": "Um agiota exigiu de uma cristã que lhe trouxesse uma hóstia em troca do cancelamento de sua dívida. Quando a perfurou com uma faca, ela sangrou abundantemente. Ele tentou queimá-la e fervê-la, mas ela permaneceu intacta e sangrando até que ele se convertesse."
+      },
+      "38": {
+        "title": "Hóstias intactas após uma enchente",
+        "description": "As cheias do Ródano submergiram por muitas semanas a igreja dos Celestinos. Quando as águas baixaram, as hóstias do sacrário estavam perfeitamente secas e incorruptas. O papa Eugênio IV foi informado e documentou o evento."
+      },
+      "39": {
+        "title": "Uma hóstia roubada encontrada em uma colmeia",
+        "description": "Apicultores encontraram dentro de sua colmeia uma hóstia roubada de uma igreja de Dijon, cercada por uma elaborada construção de cera. A hóstia foi recuperada e encontrada intacta, semelhante ao milagre parecido de Macerata, na Itália."
+      },
+      "40": {
+        "title": "Cura miraculosa junto ao altar",
+        "description": "Uma mulher paralisada, levada para receber a comunhão, relatou que, depois de receber a hóstia, sentiu uma onda de calor e conseguiu levantar-se e andar sem ajuda. A cura foi examinada e certificada pelo bispo de Bordeaux."
+      },
+      "41": {
+        "title": "Sangue no corporal de Marselha",
+        "description": "Durante a missa, apareceu sangue no corporal colocado sob o cálice, sem qualquer causa visível. Vários padres e testemunhas verificaram a mancha, que se espalhou apesar das tentativas de removê-la. O corporal está guardado nos arquivos diocesanos."
+      },
+      "42": {
+        "title": "Tecido cardíaco em uma igreja paroquial",
+        "description": "Uma hóstia colocada na água para se dissolver desenvolveu um tecido avermelhado em poucas semanas. Histopatologistas poloneses confirmaram tecido miocárdico em estado de sofrimento extremo, compatível com um coração agonizante. O arcebispo de Białystok o reconheceu oficialmente em 2012."
+      },
+      "43": {
+        "title": "Tecido miocárdico em um milagre moderno",
+        "description": "Uma hóstia colocada na água desenvolveu um tecido avermelhado. O exame médico confirmou tecido do músculo cardíaco de um ser humano vivo, submetido a um estresse extremo. O bispo Stefan Cichy reconheceu o evento em 2016."
+      },
+      "44": {
+        "title": "Hóstias perfuradas e jogadas em um pântano",
+        "description": "Três hóstias consagradas foram roubadas e perfuradas repetidas vezes, das quais brotava sangue. Jogadas em um pântano, foram encontradas brilhando. No local foi construída uma igreja, e os panos ensanguentados são conservados em seus arquivos."
+      },
+      "45": {
+        "title": "Hóstia encontrada intacta na lama",
+        "description": "Um cibório roubado foi jogado em um lago lamacento perto de Cracóvia. Os moradores foram conduzidos até ele quando uma luz apareceu sobre a água. As hóstias do interior foram encontradas limpas e ilesas. O rei Casimiro, o Grande, mandou construir uma igreja no local."
+      },
+      "46": {
+        "title": "Hóstias miraculosamente preservadas",
+        "description": "Um cibório com hóstias, roubado de uma igreja, foi abandonado dentro de uma caixa por meses. Quando as autoridades investigaram, as hóstias estavam perfeitamente incorruptas. O arcebispo de Toledo verificou o milagre e as hóstias foram levadas em procissão."
+      },
+      "47": {
+        "title": "Seis hóstias preservadas durante uma batalha",
+        "description": "Durante uma batalha contra os mouros, seis hóstias consagradas foram escondidas em um pano para ficarem seguras. Quando foram recuperadas, o pano estava manchado de sangue e as hóstias haviam se transformado em carne. Uma mula que levava as relíquias parou e se recusou a seguir; ali foi construída uma igreja."
+      },
+      "48": {
+        "title": "Uma hóstia cai e se transforma",
+        "description": "Uma hóstia escapou das mãos de um sacerdote durante a missa e foi encontrada no chão, cercada de sangue. Várias testemunhas verificaram o fenômeno e o bispo abriu uma investigação oficial. O corporal manchado de sangue é conservado na paróquia."
+      },
+      "49": {
+        "title": "O santuário e a Eucaristia",
+        "description": "No famoso santuário de Nossa Senhora de Guadalupe, na Estremadura, um sacerdote relatou que uma hóstia de um cibório havia se transformado. As autoridades eclesiásticas investigaram e documentaram os depoimentos de várias testemunhas, reforçando o significado eucarístico do santuário."
+      },
+      "50": {
+        "title": "A hóstia roubada que sangra",
+        "description": "Uma mulher roubou uma hóstia a pedido de uma feiticeira e a envolveu em seu véu. Imediatamente ela começou a sangrar. Apavorada, levou-a para casa, onde luzes a rodearam durante toda a noite. Confessou-se ao sacerdote, a hóstia foi recuperada e ainda sangrava."
+      },
+      "51": {
+        "title": "Hóstia incorrupta após anos",
+        "description": "Durante a restauração de uma igreja, foi aberto um sacrário lacrado e esquecido havia anos. As hóstias consagradas em seu interior estavam em perfeito estado. O bispo de Viseu investigou e certificou o milagre; as hóstias foram conservadas como relíquias."
+      },
+      "52": {
+        "title": "Uma hóstia sobrevive ao fogo duas vezes",
+        "description": "Um moribundo vomitou uma hóstia que havia recebido. Foi colocada no fogo para ser destruída com respeito, mas não queimou. Quando uma mulher a recuperou e a guardou, o fenômeno se repetiu. Uma capela foi construída, e o bispo de Utrecht certificou o milagre."
+      },
+      "53": {
+        "title": "Hóstia encontrada em um ninho de pássaro",
+        "description": "Uma hóstia roubada foi procurada por dias. Um pastor notou que pássaros se reuniam de forma incomum em volta de uma árvore. Ao subir nela, encontrou um ninho com a hóstia, perfeitamente conservada. O pároco comunicou o milagre ao bispo."
+      },
+      "54": {
+        "title": "Tecido cardíaco confirmado pela ciência",
+        "description": "Uma hóstia descartada, colocada na água, transformou-se visivelmente em um tecido avermelhado. Uma análise científica confirmou a presença de miocárdio humano vivo sob estresse. O milagre foi aprovado pelo então arcebispo Jorge Bergoglio, mais tarde papa Francisco."
+      },
+      "55": {
+        "title": "Hóstia em um cálice com água",
+        "description": "Uma hóstia caída durante a distribuição da comunhão foi colocada em um recipiente com água. Dias depois, foi encontrada transformada em uma substância avermelhada. Uma análise científica preliminar indicou material biológico de origem humana. O bispo local acompanhou a investigação."
+      },
+      "56": {
+        "title": "Hóstia preservada durante uma enchente",
+        "description": "Após uma grave enchente em uma igreja de Rosário, todo o seu conteúdo foi destruído. O sacrário foi encontrado intacto, e as hóstias em seu interior estavam secas e perfeitamente conservadas, embora o prédio tivesse ficado submerso por dias."
+      },
+      "57": {
+        "title": "Tecido cardíaco vivo",
+        "description": "Durante uma missa de retiro paroquial, uma hóstia começou a emitir uma substância avermelhada vinda de seu interior. As análises confirmaram sangue humano do tipo AB e tecido miocárdico vivo. Aconteceu no mesmo ano da morte de Carlo Acutis, que catalogou este milagre, aos quinze anos."
+      },
+      "58": {
+        "title": "Hóstias conservadas após um terremoto",
+        "description": "Um forte terremoto danificou uma igreja da Cidade do México e o sacrário caiu ao chão. Quando foi recuperado, as hóstias consagradas em seu interior estavam intactas e incorruptas. Testemunhas e o bispo local atestaram o milagre."
+      },
+      "59": {
+        "title": "Uma hóstia preservada em um medalhão",
+        "description": "Elizabeth Ann Seton, mais tarde canonizada como a primeira santa nascida nos Estados Unidos, relatou que uma hóstia guardada em um medalhão, quando estava separada de um sacerdote, permaneceu fresca e intacta por um longo período. O fato foi incluído em seu processo de beatificação."
+      },
+      "60": {
+        "title": "Uma hóstia se transforma em carne",
+        "description": "Na diocese de Trivandrum, uma hóstia colocada na água depois de cair durante a comunhão transformou-se em uma substância orgânica avermelhada. O bispo abriu uma investigação oficial e o material foi enviado para exame científico."
+      },
+      "61": {
+        "title": "Sangue aparece no corporal",
+        "description": "Durante a missa em uma paróquia do Kerala, apareceram manchas avermelhadas no corporal colocado sob o cálice. Vários padres e fiéis presenciaram o fenômeno. O arcebispo de Ernakulam-Angamaly ordenou uma investigação; o material foi confirmado como sangue humano."
+      },
+      "62": {
+        "title": "Hóstia preservada durante as guerras de independência",
+        "description": "Durante as guerras de independência, uma igreja de Bogotá foi saqueada e os vasos sagrados foram derrubados. Quando os soldados partiram, o padre constatou que as hóstias consagradas tinham rolado para um canto, mas estavam perfeitamente conservadas e intactas."
+      },
+      "63": {
+        "title": "A hóstia que não queimou",
+        "description": "Durante um incêndio em uma igreja de Guayaquil, o sacrário foi consumido pelas chamas junto com todo o altar. Ao vasculharem os escombros, o cibório foi encontrado intacto e as hóstias em seu interior não tinham sido atingidas pelo fogo. O bispo de Guayaquil certificou o acontecimento."
+      },
+      "64": {
+        "title": "Tecido eucarístico ao microscópio",
+        "description": "Um sacristão colocou na água uma hóstia que se transformou parcialmente em tecido avermelhado, após um acidente durante uma distribuição. O arcebispo de São Paulo ordenou uma análise científica, que confirmou material biológico de origem humana."
+      },
+      "65": {
+        "title": "O precioso Sangue de Bruges",
+        "description": "Uma relíquia do Sangue de Cristo, que se dizia trazida da Terra Santa durante as cruzadas, foi guardada na Basílica do Preciosíssimo Sangue. Conta-se que a relíquia se liquefez várias vezes, e ela ainda é venerada toda sexta-feira na basílica."
+      },
+      "66": {
+        "title": "Hóstias perfuradas por ladrões sangram",
+        "description": "Ladrões que roubaram hóstias consagradas de uma igreja de Lovaina as apunhalaram com facas, e de cada uma escorreu sangue. Aterrorizados, abandonaram-nas. As hóstias foram recuperadas e as manchas de sangue examinadas. O milagre deu origem a uma grande peregrinação."
+      },
+      "67": {
+        "title": "A origem da festa do Corpus Christi",
+        "description": "Santa Juliana de Liège teve a visão da lua com uma mancha escura, interpretada como a ausência da festa da Eucaristia no calendário da Igreja. Sua insistência levou o papa Urbano IV a instituir a festa do Corpus Christi."
+      },
+      "68": {
+        "title": "Hóstia encontrada em um poço",
+        "description": "Uma hóstia roubada de uma igreja de Gante foi jogada em um poço. Dias depois, foi encontrada flutuando na superfície, brilhando, sem sinais de dissolução. O bispo de Gante certificou o milagre e uma capela foi erguida junto ao poço."
+      },
+      "69": {
+        "title": "Uma criança leva a hóstia para casa",
+        "description": "Uma criança pequena guardou em segredo uma hóstia recebida em sua primeira comunhão. Quando a família abriu a pequena bolsa, encontrou a hóstia irradiando luz e perfeitamente conservada sobre um leito de flores frescas. O pároco foi chamado para recuperá-la."
+      },
+      "70": {
+        "title": "Um nobre arrogante afunda",
+        "description": "O conde Oswald exigiu a grande hóstia reservada aos sacerdotes. Enquanto o padre a colocava em sua língua sob coação, o conde começou a afundar no piso de pedra. Apavorado, agarrou-se ao altar e pediu perdão. As marcas de suas mãos foram preservadas."
+      },
+      "71": {
+        "title": "Um soldado se arrepende ao ver o sangue",
+        "description": "Um soldado que havia profanado uma hóstia durante um ataque a uma igreja vienense a viu começar a sangrar. Tão abalado, procurou imediatamente um sacerdote, confessou-se, cumpriu uma penitência severa e mais tarde entrou para a vida religiosa."
+      },
+      "72": {
+        "title": "Hóstias ilesas no incêndio de uma igreja",
+        "description": "Um incêndio devastador destruiu a igreja de São Pedro, em Salzburgo. Quando o arcebispo examinou as ruínas, o sacrário foi recuperado intacto. As hóstias em seu interior estavam perfeitamente brancas e secas, sem terem sido tocadas pelas chamas."
+      },
+      "73": {
+        "title": "Uma hóstia sangra diante de um rei",
+        "description": "O imperador Carlos IV estava presente quando uma hóstia na catedral de São Vito começou a exsudar sangue. O imperador se ajoelhou, e testemunhas do clero registraram seus depoimentos. Carlos IV mandou construir uma capela especial em honra do milagre."
+      },
+      "74": {
+        "title": "Hóstias sobrevivem a um ataque hussita",
+        "description": "Durante os ataques das forças hussitas, que rejeitavam a transubstanciação, a igreja de São Tiago em Brno foi atacada e o altar derrubado. As hóstias consagradas foram encontradas intactas entre os escombros, sem danos apesar de terem ficado espalhadas."
+      },
+      "75": {
+        "title": "Um bispo testemunha a transformação",
+        "description": "O bispo Bruno de Olomouc celebrava a missa quando ele e a congregação viram a hóstia se transformar visivelmente em carne. Ele interrompeu a missa, convocou os cônegos da catedral como testemunhas e enviou a Roma um documento formal registrando o acontecimento."
+      },
+      "76": {
+        "title": "Sangue de uma hóstia profanada",
+        "description": "Um grupo de homens profanou uma hóstia roubada. O sangue jorrou dela em tal quantidade que os homens fugiram apavorados. Uma mulher a encontrou na rua e a levou ao sacerdote, que comunicou o fenômeno sangrento ao bispo de Basileia."
+      },
+      "77": {
+        "title": "Hóstia preservada em um lago",
+        "description": "Um sacerdote fugindo da perseguição jogou um pixide com hóstias em um lago, para evitar que fossem profanadas. Anos depois, quando foi recuperado, o pixide estava intacto e as hóstias perfeitamente conservadas. O bispo de Genebra documentou o acontecimento."
+      },
+      "78": {
+        "title": "Uma hóstia encontrada no Danúbio",
+        "description": "Durante um ataque a uma igreja próxima de Budapeste, vasos sagrados foram jogados no Danúbio. Pescadores encontraram o cibório boiando na superfície, com as hóstias intactas. O arcebispo de Esztergom conduziu uma investigação oficial."
+      },
+      "79": {
+        "title": "Hóstias preservadas durante um cerco",
+        "description": "Durante o famoso cerco ao castelo de Eger pelas forças otomanas, uma igreja da cidade foi depois profanada por soldados. As hóstias consagradas do sacrário foram encontradas intactas e não tocadas. Sobreviventes do cerco registraram o acontecimento."
+      },
+      "80": {
+        "title": "O vinho se transforma em sangue",
+        "description": "Um sacerdote que celebrava a missa percebeu que o vinho do cálice havia se transformado visivelmente em sangue. O papa Leão X e o papa Alexandre VI concederam aprovação formal após uma investigação. A relíquia é conservada na igreja franciscana de Ludbreg."
+      },
+      "81": {
+        "title": "Hóstia intacta após um terremoto",
+        "description": "O grande terremoto de 1730, que atingiu a região de Dubrovnik, destruiu muitos edifícios, entre eles várias igrejas. Em uma paróquia, o sacrário sobreviveu intacto e as hóstias em seu interior foram encontradas perfeitamente conservadas."
+      },
+      "82": {
+        "title": "Uma aparição da Virgem com o Menino",
+        "description": "Em um campo nos arredores de Šiluva, a Virgem Maria apareceu a um grupo de crianças que chorava pela destruição de uma igreja católica, segurando o Menino Jesus. Um velho cego foi curado milagrosamente. O local tornou-se um dos grandes santuários eucarísticos da Europa Oriental."
+      },
+      "83": {
+        "title": "Hóstia descoberta após um século",
+        "description": "Durante a restauração da igreja de Santa Ana, em Vilnius, foi encontrado um nicho lacrado que continha um pixide com hóstias consagradas. Documentos históricos revelaram que ele havia sido escondido em 1530 para protegê-lo dos iconoclastas, mais de um século antes. As hóstias foram encontradas intactas."
+      },
+      "84": {
+        "title": "Uma hóstia radiante vista por centenas de pessoas",
+        "description": "Durante uma procissão pública do Corpus Christi em Bratislava, centenas de testemunhas afirmaram que a hóstia no ostensório emitiu raios de luz visíveis por vários minutos. O arcebispo de Esztergom documentou o acontecimento."
+      },
+      "85": {
+        "title": "Hóstias intactas após a destruição de uma igreja",
+        "description": "Durante a perseguição religiosa, uma igreja católica de Cluj-Napoca foi invadida e vandalizada, e os vasos sagrados foram derrubados e espalhados. Quando os católicos voltaram, as hóstias consagradas foram encontradas reunidas, perfeitamente intactas."
+      },
+      "86": {
+        "title": "Um sacerdote recebe o Viático na prisão",
+        "description": "Um sacerdote católico preso por sua fé em Iași relatou ter recebido milagrosamente a comunhão durante o isolamento, sem nenhum acesso a um padre. Na manhã seguinte, foi encontrado com sinais evidentes de ter recebido o sacramento."
+      },
+      "87": {
+        "title": "Uma hóstia preservada durante um conflito",
+        "description": "Durante um período de conflito na região, uma igreja de Belgrado foi saqueada. O sacrário foi derrubado, mas as hóstias consagradas permaneceram reunidas no centro do piso de pedra, intactas. Um bispo local certificou o milagre."
+      },
+      "88": {
+        "title": "Uma hóstia antiga preservada na pedra",
+        "description": "Na igreja de Santa Sofia, uma das igrejas cristãs mais antigas ainda em uso no mundo, foi encontrado durante obras de restauração um fragmento de uma antiga celebração eucarística, preservado em uma cavidade de pedra selada, datada do século IX."
+      },
+      "89": {
+        "title": "Uma hóstia encontrada após uma longa busca",
+        "description": "Uma hóstia roubada de uma igreja de Liubliana foi procurada por meses. Uma mulher pobre, guiada por uma visão, encontrou o cibório enterrado nos arredores da cidade, com as hóstias ainda intactas. O bispo de Liubliana abriu uma investigação canônica e certificou o milagre."
+      },
+      "90": {
+        "title": "Uma hóstia muda durante a adoração",
+        "description": "Durante a adoração eucarística em uma paróquia de Cebu, a hóstia no ostensório pareceu passar do branco para um tom avermelhado, visível a todos os presentes. Várias testemunhas e o pároco atestaram o fenômeno, que durou alguns minutos."
+      },
+      "91": {
+        "title": "Hóstias ilesas diante do fogo",
+        "description": "Um incêndio destruiu a igreja de madeira de Santo Agostinho, em Manila. As paredes de pedra sobreviveram e, entre as ruínas, o sacrário foi encontrado intacto. As hóstias em seu interior estavam perfeitamente conservadas. Os frades agostinianos documentaram o acontecimento em suas crônicas."
+      },
+      "92": {
+        "title": "Uma hóstia encontrada na selva",
+        "description": "Um cibório roubado da paróquia de Antipolo foi encontrado abandonado na selva por povos indígenas. As hóstias em seu interior estavam intactas. A conservação milagrosa foi atribuída à intercessão de Nossa Senhora da Paz e da Boa Viagem, padroeira de Antipolo."
+      },
+      "93": {
+        "title": "Uma mulher à beira da morte se recupera",
+        "description": "Uma mulher em estado terminal em um hospital de Naga recebeu o Viático. Logo após receber a hóstia, relatou que a dor havia cessado por completo e, em poucos dias, recuperou-se totalmente, algo que os médicos que a atendiam não conseguiram explicar."
+      },
+      "94": {
+        "title": "Irmã Ágata e a estátua que chora",
+        "description": "A irmã Ágata Katsuko Sasagawa recebeu os estigmas e mensagens durante a adoração. Uma estátua de madeira da Virgem Maria na capela do convento começou a derramar lágrimas e sangue. Foi examinada por especialistas médicos, entre eles um médico budista que confirmou a sua autenticidade."
+      },
+      "95": {
+        "title": "Uma igreja sobrevive à bomba",
+        "description": "Quando a bomba atômica caiu sobre Nagasaki, frades franciscanos relataram que o Santíssimo Sacramento foi encontrado intacto entre as ruínas de sua capela. O sacrário de uma igreja parcialmente destruída, perto do epicentro, também sobreviveu à explosão."
+      },
+      "96": {
+        "title": "Sangue na hóstia em Seul",
+        "description": "Durante uma missa celebrada em uma paróquia de Seul, o sacerdote e os coroinhas viram sangue aparecer em uma hóstia. O bispo local abriu uma investigação canônica e a hóstia foi enviada para exame científico. Os resultados confirmaram sangue humano."
+      },
+      "97": {
+        "title": "Sangue na hóstia de Betânia",
+        "description": "Na comunidade de Betânia, já famosa por aparições marianas aprovadas, uma hóstia durante a missa foi vista emitindo sangue. O bispo local, que havia aprovado as aparições em 1987, investigou o fenômeno eucarístico e reconheceu seu caráter milagroso."
+      },
+      "98": {
+        "title": "Um sacerdote curado após a missa",
+        "description": "Um sacerdote de Caracas, acometido de uma doença terminal, relatou ter sido completamente curado nos dias seguintes a uma celebração da missa especialmente fervorosa. Seus médicos documentaram o desaparecimento completo e súbito da doença, sem explicação médica."
+      },
+      "99": {
+        "title": "Hóstias preservadas após um terremoto",
+        "description": "Durante um terremoto que destruiu grande parte de Lima, a igreja de São Domingos sofreu graves danos. O sacrário, entre as ruínas, foi encontrado com suas hóstias intactas. O fato foi comunicado ao arcebispo e registrado nas crônicas da arquidiocese."
+      },
+      "100": {
+        "title": "Uma hóstia encontrada no Vale Sagrado",
+        "description": "Uma hóstia roubada, que um convertido havia guardado para um ritual pré-cristão, foi recuperada após uma confissão. A hóstia foi encontrada intacta no local onde havia permanecido escondida por semanas. O bispo de Cusco documentou o acontecimento e mandou construir uma capela."
+      },
+      "101": {
+        "title": "Uma cura durante a bênção",
+        "description": "Uma mulher paralisada havia anos foi levada a uma igreja durante a bênção eucarística. Quando o sacerdote ergueu o ostensório, as testemunhas a viram levantar-se da cadeira de rodas e andar. Os médicos certificaram que a cura era inexplicável do ponto de vista médico."
+      },
+      "102": {
+        "title": "Uma hóstia se transforma em Santiago",
+        "description": "Um sacristão de uma paróquia de Santiago descobriu que uma hóstia deixada na água após um acidente durante a missa havia se transformado em uma substância avermelhada. O arcebispo ordenou um exame; os resultados científicos mostraram material biológico compatível com tecido cardíaco, do tipo sanguíneo AB."
+      },
+      "103": {
+        "title": "Um marinheiro curado em alto-mar",
+        "description": "Um marinheiro moribundo a bordo de um navio perto de Valparaíso recebeu o Viático do capelão do navio e relatou uma recuperação imediata, voltando à plena saúde. Ao chegar ao porto, o capelão comunicou o fato ao bispo de Valparaíso, que abriu uma investigação."
+      },
+      "104": {
+        "title": "Hóstia intacta após o incêndio de uma igreja",
+        "description": "Durante a violência anticlerical no Paraguai, uma igreja de Assunção foi incendiada. Quando o prédio foi destruído, os socorristas encontraram o sacrário intacto entre as ruínas, com as hóstias em seu interior ilesas. O arcebispo documentou o acontecimento."
+      },
+      "105": {
+        "title": "Um milagre eucarístico durante a independência",
+        "description": "Durante o movimento de independência boliviano, uma igreja de La Paz foi invadida por soldados. O sacerdote fugiu deixando o Santíssimo Sacramento exposto. Quando os soldados entraram, dizem que recuaram diante do ostensório e foram embora sem levá-lo."
+      },
+      "106": {
+        "title": "Uma cura na capela de um hospital",
+        "description": "Um paciente de Montevidéu com um tumor avançado e inoperável recebeu o Viático na capela do hospital. Dias depois, os exames de imagem mostraram o desaparecimento completo do tumor. O médico assistente, não católico, certificou a cura como inexplicável do ponto de vista médico."
+      },
+      "107": {
+        "title": "Hóstias preservadas após uma enchente",
+        "description": "Uma cheia do rio São Lourenço danificou várias igrejas da cidade baixa de Quebec. Um sacrário submerso por dias foi aberto e continha hóstias perfeitamente intactas. O bispo de Quebec investigou e documentou o acontecimento."
+      },
+      "108": {
+        "title": "Uma hóstia encontrada por uma menina",
+        "description": "Uma menina encontrou uma hóstia intacta caída na rua em Montreal, aparentemente deixada cair durante uma visita a um doente. Ela a levou ao pároco, que a encontrou perfeitamente inteira. O bispo aproveitou o fato para promover maior reverência ao receber a comunhão."
+      },
+      "109": {
+        "title": "A aparição de Knock",
+        "description": "Na empena da igreja paroquial de Knock, quinze testemunhas viram uma aparição da Virgem Maria, de são José, de são João Evangelista e de um altar com um Cordeiro e uma Cruz: uma visão eucarística. As testemunhas tinham entre seis e setenta e cinco anos."
+      },
+      "110": {
+        "title": "Hóstia intacta sob os escombros",
+        "description": "Durante a guerra de independência, uma igreja de Dublin foi danificada por um incêndio. Quando os escombros foram removidos, o sacrário foi recuperado sob a alvenaria caída, intacto. As hóstias em seu interior estavam perfeitamente conservadas. O arcebispo certificou o acontecimento."
+      },
+      "111": {
+        "title": "Uma hóstia preservada antes da Reforma",
+        "description": "Diz-se que uma hóstia escapou da destruição durante um ataque à igreja de São Giles. Uma mulher devota a escondeu em casa antes que a igreja fosse atacada. Quando a levou a um sacerdote meses depois, ela havia permanecido incorrupta, sessenta anos antes da Reforma escocesa."
+      },
+      "112": {
+        "title": "Uma hóstia desenvolve material biológico",
+        "description": "Uma hóstia caída durante a comunhão em uma paróquia de Sydney foi colocada na água pelo sacerdote. Dias depois, não havia se dissolvido e apresentava uma coloração avermelhada. Um biólogo relatou a presença de tecido biológico. O arcebispo ordenou uma investigação aprofundada."
+      },
+      "113": {
+        "title": "Um paciente terminal se recupera",
+        "description": "Um paciente com câncer terminal em um hospital de Melbourne recebeu a Unção dos Enfermos e o Viático. Em duas semanas, os exames não mostraram mais nenhum sinal do câncer. Seu oncologista, não católico, confirmou que não havia explicação médica para a remissão completa."
+      },
+      "114": {
+        "title": "Uma hóstia encontrada após um terremoto",
+        "description": "Um pequeno terremoto danificou uma igreja de Auckland e derrubou o sacrário. Quando o sacerdote voltou a entrar, encontrou o sacrário aberto e as hóstias espalhadas pelo chão, mas perfeitamente intactas: nenhuma havia sido quebrada ou esmagada pela queda da estrutura."
+      },
+      "115": {
+        "title": "Hóstias preservadas durante um cerco",
+        "description": "Durante um período de bombardeios, uma capela de Valletta sofreu um impacto direto e desabou parcialmente. O sacrário foi encontrado intacto entre os escombros, com as hóstias em seu interior perfeitamente conservadas. O bispo de Malta documentou o acontecimento."
+      },
+      "116": {
+        "title": "Uma hóstia encontrada em um rio",
+        "description": "Um vaso sagrado atirado no rio Alzette durante uma invasão a uma igreja foi encontrado na margem vários dias depois, tendo chegado intacto. As hóstias em seu interior estavam secas e incorruptas. O bispo de Luxemburgo investigou e certificou o acontecimento."
+      },
+      "117": {
+        "title": "Uma hóstia miraculosamente preservada",
+        "description": "Durante os distúrbios religiosos que destruíram uma igreja de Jacarta, o sacrário estava entre os objetos atacados. Quando a ordem foi restabelecida e as autoridades entraram nas ruínas, o cibório foi encontrado intacto em meio à destruição, e as hóstias em seu interior não haviam sofrido dano."
+      },
+      "118": {
+        "title": "Sangue aparece no corporal",
+        "description": "Durante a missa em uma paróquia de Surabaya, apareceu sangue no corporal colocado sob o cálice, na forma de uma cruz. O sacerdote e várias testemunhas atestaram o fenômeno. O bispo abriu uma investigação oficial e o corporal foi enviado para exame científico."
+      },
+      "119": {
+        "title": "Uma hóstia preservada durante a perseguição",
+        "description": "Um católico vietnamita que havia escondido uma hóstia consagrada durante anos de perseguição religiosa relatou que ela havia permanecido intacta, em um recipiente selado, após muitos anos de ocultação. O arcebispo investigou e documentou o acontecimento."
+      },
+      "120": {
+        "title": "Um milagre eucarístico copta",
+        "description": "Na antiga igreja copta de Babilônia, no Cairo, a tradição registra uma manifestação milagrosa de Cristo na Eucaristia durante um período de perseguição. O patriarca copta documentou o acontecimento, que se tornou fonte de força para a comunidade perseguida."
+      },
+      "121": {
+        "title": "Uma hóstia encontrada no deserto",
+        "description": "Eremitas do deserto egípcio relataram ter encontrado na areia um objeto brilhante que se revelou ser uma hóstia consagrada. Sem conseguir explicar como ela havia chegado ao deserto, levaram-na ao bispo local. A hóstia foi examinada e sua autenticidade foi confirmada."
+      },
+      "122": {
+        "title": "Uma hóstia preservada em uma cidade em guerra",
+        "description": "Durante o conflito civil no Líbano, uma igreja maronita de Beirute foi atacada e parcialmente destruída. Quando os escombros foram retirados, o sacrário foi encontrado intacto. As hóstias em seu interior estavam perfeitamente conservadas. O patriarca maronita documentou o acontecimento."
+      },
+      "123": {
+        "title": "Uma hóstia brilha durante a adoração",
+        "description": "Durante uma noite de adoração eucarística em uma paróquia de Lagos, a hóstia no ostensório emitiu luz visível, testemunhada por vários fiéis e pelo pároco. O arcebispo de Lagos investigou e documentou o acontecimento."
+      },
+      "124": {
+        "title": "Sangue no corporal em Enugu",
+        "description": "Sangue apareceu no corporal em uma paróquia de Enugu durante a missa. O fenômeno foi presenciado pelo sacerdote e pela assembleia. O bispo abriu uma investigação, e o corporal foi enviado a um laboratório médico, que confirmou a presença de sangue humano."
+      },
+      "125": {
+        "title": "Uma hóstia miraculosamente transformada",
+        "description": "Uma hóstia colocada na água em uma paróquia de Campala, após um acidente durante a distribuição, foi examinada dias depois, quando não havia se dissolvido. Dentro dela era visível um material avermelhado. O arcebispo de Campala ordenou uma investigação e a amostra foi enviada para análise científica."
+      },
+      "126": {
+        "title": "Uma cura certificada por médicos",
+        "description": "Uma mulher com lúpus avançado recebeu a comunhão e a unção dos enfermos. Em poucos dias, todos os sintomas desapareceram. Três médicos independentes, entre eles um não cristão, certificaram a cura como inexplicável do ponto de vista médico."
+      },
+      "127": {
+        "title": "Hóstia intacta após um incêndio",
+        "description": "Um incêndio danificou uma igreja paroquial de Nairóbi, destruindo a sacristia e o mobiliário do altar. Quando os escombros foram revistados, o sacrário foi encontrado entre as ruínas, com as hóstias intactas e ilesas. O arcebispo de Nairóbi documentou o acontecimento."
+      },
+      "128": {
+        "title": "Um milagre eucarístico na África",
+        "description": "Em uma paróquia que atende a comunidade católica etíope, uma hóstia colocada na água depois de cair durante a comunhão desenvolveu, em poucos dias, um material avermelhado. O bispo ordenou uma investigação, e o material foi analisado e considerado de origem biológica."
+      },
+      "129": {
+        "title": "O milagre das cruzadas em Jerusalém",
+        "description": "Nos primeiros anos das cruzadas, foi relatado um fenômeno milagroso na Igreja do Santo Sepulcro, envolvendo uma hóstia consagrada que não podia ser consumida pelo fogo. O fato consta das crônicas cruzadas, e o patriarca de Jerusalém o comunicou ao papa."
+      },
+      "130": {
+        "title": "Uma antiga relíquia eucarística",
+        "description": "A antiga igreja georgiana preserva relatos de um milagre eucarístico do primeiro período cristão. Uma hóstia consagrada trazida pelos primeiros missionários à Geórgia teria sido milagrosamente preservada, e o fato está registrado nas Vidas dos Santos Padres da Geórgia."
+      },
+      "131": {
+        "title": "Uma hóstia preservada durante as guerras",
+        "description": "Durante as devastadoras guerras que atingiram a Europa Oriental no século XVII, uma igreja greco-católica de Lviv foi saqueada. O sacrário foi derrubado, mas as hóstias foram encontradas reunidas no chão, intactas. O bispo de Lviv certificou o acontecimento."
+      },
+      "132": {
+        "title": "Uma hóstia sobrevive à Reforma",
+        "description": "Durante a Reforma protestante que percorreu os Estados bálticos, igrejas católicas de Riga foram confiscadas. Um sacerdote escondeu um cibório com hóstias consagradas antes que sua igreja fosse tomada. Quando o recuperou anos depois, as hóstias estavam intactas e incorruptas."
+      },
+      "133": {
+        "title": "Um antigo milagre nórdico",
+        "description": "Antes de a Reforma chegar à Escandinávia, uma igreja de Estocolmo registrou um milagre envolvendo uma hóstia que teria emitido luz durante a missa. O bispo de Uppsala investigou e o acontecimento foi registrado nos anais diocesanos do século XII."
+      },
+      "134": {
+        "title": "Hóstia preservada após uma enchente",
+        "description": "Quando uma igreja de Copenhague foi inundada durante uma forte tempestade, o sacrário permaneceu submerso por vários dias. Quando foi recuperado, as hóstias em seu interior estavam perfeitamente secas e incorruptas. O bispo de Roskilde investigou e o milagre foi registrado nos arquivos diocesanos."
+      },
+      "135": {
+        "title": "Uma antiga hóstia de Chipre",
+        "description": "No período paleocristão de Chipre, registra-se um milagre eucarístico nas hagiografias dos bispos da ilha. Uma hóstia foi milagrosamente preservada durante um período de perseguição iconoclasta e foi mostrada aos fiéis como prova da Presença real de Cristo."
+      },
+      "136": {
+        "title": "A cidade antiga e a Eucaristia",
+        "description": "Em Mdina, a antiga capital fortificada de Malta, a tradição preserva o relato de uma hóstia consagrada que sobreviveu a uma incursão árabe na catedral. A hóstia foi encontrada intacta entre as ruínas, conforme registram as crônicas dos conquistadores normandos que depois fortificaram a cidade."
+      },
+      "137": {
+        "title": "A Eucaristia detém uma enchente catastrófica",
+        "description": "No dia seguinte à festa do Corpus Christi de 1630, chuvas torrenciais fizeram o rio Maira transbordar de forma catastrófica, ameaçando destruir a aldeia de Canosio, na diocese de Saluzzo. O pároco, padre Antonio Reinardi, avançou em direção às águas revoltas com o Santíssimo Sacramento em um ostensório, recitando o Salmo 51; ao abençoar as águas, a chuva cessou de imediato e o rio voltou ao seu nível normal. Os habitantes celebram até hoje uma festa durante a oitava do Corpus Christi em memória do acontecimento."
+      },
+      "138": {
+        "title": "Um frade capuchinho detém o incêndio da cidade",
+        "description": "Em 3 de agosto de 1631, um incêndio em Dronero, na diocese de Saluzzo, espalhou-se rapidamente pela cidade apesar de todos os esforços humanos para apagá-lo. Um frade capuchinho chamado Maurício de Ceva pegou o ostensório com a grande hóstia da igreja de Santa Brígida e avançou em direção ao fogo; naquele momento, as chamas diminuíram de imediato. O milagre está gravado em uma placa de pedra na igreja de Santa Brígida, e os habitantes de Dronero o comemoram todos os anos com uma solene procissão do Corpus Christi."
+      },
+      "139": {
+        "title": "Hóstias roubadas preservadas por décadas",
+        "description": "Em 25 de julho de 1969, ladrões invadiram a igreja paroquial de San Mauro La Bruca e roubaram um cibório com hóstias consagradas, que depois abandonaram à beira de uma estrada. Uma criança encontrou as hóstias e as devolveu ao pároco. Nos vinte e cinco anos seguintes, análises científicas repetidas constataram que as hóstias permaneciam intactas muito além dos poucos meses em que uma hóstia comum se desintegraria. Em 1994, o bispo Biagio D'Agostino reconheceu oficialmente a conservação milagrosa e autorizou a veneração pública."
+      },
+      "140": {
+        "title": "Sangue que brota de um pano de altar no lavadouro",
+        "description": "Em 1294, uma criada de Gruaro, na diocese de Concórdia, foi ao lavadouro público lavar panos de altar e viu sangue brotar de uma partícula consagrada que ficara presa nas dobras do tecido; avisou o pároco, que informou o bispo Giacomo di Ottonello. Uma disputa entre a diocese de Concórdia e os nobres condes de Valvasone pela guarda da relíquia foi finalmente resolvida pela Santa Sé, que entregou o pano aos condes com a condição de que construíssem uma igreja dedicada ao Santíssimo Corpo de Cristo, concluída em 1483. O documento mais antigo que atesta o milagre é um decreto do papa Nicolau V, datado de 1454."
+      },
+      "141": {
+        "title": "Uma hóstia sobrevive à destruição total de uma igreja",
+        "description": "Em 17 de abril de 1560, durante a oitava da Páscoa, um violento incêndio destruiu por completo a igreja franciscana de Morrovalle, na diocese de Camerino. Dez dias depois, o frade Battista da Ascoli vasculhou as ruínas e descobriu um pixide carbonizado encravado na cavidade da parede do antigo altar; o corporal ao redor estava gravemente queimado, mas a grande hóstia no interior estava perfeitamente intacta e incorrupta. O papa Pio IV enviou um bispo para investigar e depois autorizou a devoção pública pela bula «Sancta Romana Ecclesia» em 1560."
+      },
+      "142": {
+        "title": "Uma hóstia se transforma em carne durante a missa de Gregório",
+        "description": "Por volta do ano 595, durante uma missa celebrada pelo papa são Gregório Magno, uma nobre que ela mesma havia preparado o pão eucarístico riu quando Gregório lhe ofereceu a comunhão, afirmando não acreditar que o pão que ela fizera pudesse tornar-se o Corpo de Cristo. Gregório lhe retirou a comunhão e orou em voz alta pedindo a luz divina; uma parte do pão consagrado transformou-se visivelmente em carne sangrenta diante da assembleia. O milagre é narrado em detalhes por Paulo Diácono em sua Vida de são Gregório Papa, no século VIII; parte da relíquia milagrosa é conservada na abadia de Andechs, na Alemanha."
+      },
+      "143": {
+        "title": "A estátua do Sagrado Coração sangra repetidamente",
+        "description": "A partir de 4 de abril de 1948, durante o canto das Vésperas na igreja do mosteiro de Rosano, na diocese de Fiesole, testemunhas viram gotas de sangue caírem dos olhos de uma estátua em tamanho natural do Sagrado Coração, doada para cumprir uma promessa feita durante a Segunda Guerra Mundial. Os fenômenos se repetiram várias vezes entre 1948 e 1950; análises médicas confirmaram que a substância era sangue humano, e os testemunhos juramentados e os panos ensanguentados são conservados nos arquivos do mosteiro. Em 14 de novembro de 1950, por ordem do Santo Ofício, a estátua foi retirada da vista do público enquanto se aguardava uma avaliação."
+      },
+      "144": {
+        "title": "Uma hóstia roubada se transforma em carne sangrenta",
+        "description": "Por volta de 1050, no eremitério de Fonte Avellana, nos Apeninos, uma mulher foi persuadida por uma feiticeira a roubar uma hóstia consagrada para fins sacrílegos. O sacerdote percebeu, interrompeu-a e pediu que abrisse o pano que escondia a hóstia; diante do sacerdote e das testemunhas reunidas, metade da Partícula sagrada havia se transformado em carne sangrenta, enquanto a outra metade conservava a aparência de uma hóstia. São Pedro Damião, doutor da Igreja, registrou o milagre como testemunha direta em sua obra Opúsculo XXXIV."
+      },
+      "145": {
+        "title": "Burros se ajoelham diante do Viático",
+        "description": "Em agosto de 1517, um sacerdote chamado padre Lourenço, capelão da igreja de Salzano, levava o Viático a um paroquiano moribundo quando alguns burros que pastavam nos prados próximos se voltaram para a procissão, aproximaram-se e ajoelharam-se sobre as patas dianteiras diante do Santíssimo Sacramento. Os animais seguiram a procissão até a casa do enfermo, ajoelharam-se novamente e depois voltaram tranquilamente ao pasto. O episódio é relatado na Historia Societatis Iesu de Nicolò Orlandino, publicada em Bolonha em 1615."
+      },
+      "146": {
+        "title": "As chamas afastam um soldado do tabernáculo",
+        "description": "Em 1640, durante a invasão francesa de Turim, soldados entraram na igreja de Santa Maria del Monte; um soldado francês arrombou a porta do tabernáculo e estendeu a mão em direção ao cibório com as hóstias consagradas: do tabernáculo saíram chamas que o queimaram e impediram a profanação da Eucaristia. Diz-se que a porta do tabernáculo manteve a marca da mão queimada do soldado como prova material do acontecimento. O milagre está documentado nos arquivos da igreja e figura na exposição de milagres eucarísticos de Carlo Acutis."
+      },
+      "147": {
+        "title": "O Menino Jesus aparece na hóstia exposta",
+        "description": "Durante a Páscoa de 1570, o Santíssimo Sacramento foi exposto para quarenta horas de adoração na igreja de Santo Erasmo, em Veroli; várias testemunhas viram a figura do Menino Jesus aparecer dentro da hóstia, além de uma estrela brilhante na base do cálice. A testemunha ocular Giacomo Meloni prestou depoimento juramentado sobre o que viu. O cálice e a patena de prata originais usados na exposição ainda são conservados na igreja de Santo Erasmo e são usados uma vez por ano, na missa da terça-feira de Páscoa."
+      },
+      "148": {
+        "title": "As hóstias se elevam após a profanação de um soldado",
+        "description": "Em 1472, durante a guerra entre Florença e Volterra, um soldado florentino apoderou-se de um cibório com hóstias consagradas da catedral de Volterra e o atirou contra uma coluna de pedra; um terremoto sacudiu a cidade, e as hóstias voaram e se elevaram visivelmente no ar, suspensas e cercadas por uma luz misteriosa diante da assembleia. O soldado ficou subitamente cego, caiu de joelhos implorando perdão e recuperou a visão quando se submeteu ao sacerdote. Os documentos que descrevem o milagre são conservados nos arquivos da igreja de São Francisco de Volterra."
+      },
+      "149": {
+        "title": "Uma hóstia consagrada sangra durante a missa",
+        "description": "Em 5 de junho de 1405, o pároco de Ittre, celebrando a missa na capela de Isaac, descobriu no corporal um fragmento de hóstia consagrada que começou a sangrar assim que ele o tomou nas mãos; o sangue continuou a correr por quatro dias, manchando todo o corporal. O bispo de Cambrai investigou o acontecimento e, em 1410, declarou-o autêntico, autorizando que a capela se tornasse local de peregrinação. O corporal manchado de sangue ainda está exposto em Bois-Seigneur-Isaac."
+      },
+      "150": {
+        "title": "Hóstias sangrentas veneradas como Sacramento do Milagre",
+        "description": "Segundo registros históricos medievais, hóstias consagradas que teriam sido profanadas na Sexta-feira Santa de 1370 começaram a sangrar e foram levadas à colegiada dos santos Miguel e Gúdula, em Bruxelas, onde foram guardadas e veneradas como o «Sacramento do Milagre». O acontecimento foi comemorado por séculos com vitrais instalados entre 1436 e 1870 e com uma procissão anual. Carlo Acutis o incluiu em sua documentação histórica dos fenômenos eucarísticos ao longo dos séculos."
+      },
+      "151": {
+        "title": "Hóstias roubadas encontradas intactas em um campo",
+        "description": "Em 1412, um ladrão de igrejas roubou um cálice e um cibório com cinco hóstias consagradas na aldeia de Poederlee; sentindo-se misteriosamente incapaz de seguir adiante, escondeu as hóstias na toca de um coelho e foi preso mais tarde. Quando revelou o esconderijo, as autoridades encontraram as cinco hóstias perfeitamente intactas após dias de chuva, dispostas em forma de cruz e cercadas por uma luz intensa. O magistrado de Herentals declarou o milagre autêntico em 2 de janeiro de 1442, e no local foi construída uma capela chamada «De Hegge»."
+      },
+      "152": {
+        "title": "Uma hóstia manchada de sangue junto a um moribundo",
+        "description": "Em 25 de julho de 1317, um sacerdote de Viversel deixou sua bolsa com uma hóstia consagrada na entrada da casa de um doente enquanto ouvia uma confissão; um familiar abriu o pixide e tocou a hóstia. Quando o sacerdote a recuperou, ela estava manchada de sangue; em 1º de agosto, mostrava também uma imagem do rosto de Cristo coroado de espinhos, testemunhada pelas monjas da abadia de Herkenrode. A relíquia foi guardada na abadia de Herkenrode até a Revolução Francesa e, em 1804, foi transferida para a igreja de São Quintino, em Hasselt, onde permanece até hoje."
+      },
+      "153": {
+        "title": "Uma hóstia se transforma em carne para um comungante indigno",
+        "description": "Em 1374, durante a Quaresma, em uma igreja de Middelburg, um criado chamado Jan, que não se confessava havia anos, recebeu a comunhão indignamente; a hóstia sobre sua língua transformou-se em carne sangrenta, e o sangue pingou sobre a toalha do altar. O sacerdote guardou a partícula milagrosa, Jan se arrependeu publicamente, e as autoridades eclesiásticas e civis investigaram e aprovaram a veneração da relíquia. Segundo a tradição, em 1380 a hóstia se dividiu milagrosamente: uma parte permaneceu em Colônia e a outra foi levada a Lovaina, onde, em 1426, foi fundada uma confraria para sua veneração."
+      },
+      "154": {
+        "title": "Uma hóstia se transforma em sangue sobre um pano",
+        "description": "No domingo de Páscoa, 31 de março de 1331, durante a primeira missa celebrada por Hugues de la Baume, vigário de Blanot, uma hóstia consagrada caiu da boca de uma viúva chamada Jacquette sobre um pano de comunhão e transformou-se em uma mancha de sangue exatamente do tamanho da hóstia. A diocese de Autun conduziu uma investigação, e o papa João XXII reconheceu o acontecimento como milagre eucarístico. O pano manchado é conservado na igreja da aldeia de Blanot, onde é solenemente exposto a cada Corpus Christi."
+      },
+      "155": {
+        "title": "O ostensório suspenso no ar após um incêndio",
+        "description": "Na véspera de Pentecostes, em 25 de maio de 1608, um incêndio irrompeu durante a noite na abadia de Faverney e reduziu a cinzas o altar provisório; o ostensório com duas hóstias consagradas permaneceu suspenso no ar sobre as ruínas, intacto, sem ser tocado pelas chamas. O ostensório flutuou por cerca de trinta e três horas antes de descer suavemente sobre um novo altar durante a missa. O arcebispo de Besançon declarou o milagre autêntico em 10 de julho de 1608, o papa Paulo V emitiu uma bula de indulgência, e uma das duas hóstias intactas ainda é venerada em Faverney."
+      },
+      "156": {
+        "title": "Um menino paralisado e mudo curado na comunhão",
+        "description": "No domingo de Páscoa de 1461, um menino de doze anos chamado Bertrand, paralisado e mudo desde os sete anos após uma queda, foi levado à igreja de São Bartolomeu, em La Rochelle, e recebeu a comunhão. No momento em que recebeu a hóstia, foi curado instantaneamente; suas primeiras palavras foram «Adjutorium nostrum in nomine Domini» («Nosso socorro está no nome do Senhor»). Um manuscrito iluminado que documenta o acontecimento está guardado na catedral de La Rochelle."
+      },
+      "157": {
+        "title": "Uma relíquia do Preciosíssimo Sangue trazida da Terra Santa",
+        "description": "Em 15 de julho de 1257, o cardeal Eudes de Châteauroux voltou das cruzadas e doou à igreja de Neuvy-Saint-Sépulcre duas gotas do Sangue de Cristo recolhidas no Calvário e seladas em um frasco de cristal, além de um fragmento do túmulo. A igreja fora construída no século XI como réplica arquitetônica da igreja do Santo Sepulcro de Jerusalém, e o papa Gregório XV concedeu indulgências em 1623 aos peregrinos que venerassem a relíquia. A Santa Sé elevou a igreja a basílica menor em 1910, e o Preciosíssimo Sangue ainda é exposto para veneração na segunda-feira de Páscoa e em 1º de julho."
+      },
+      "158": {
+        "title": "O rosto de Cristo visto em uma hóstia consagrada",
+        "description": "Em 2 de junho de 1668, cerca de duzentos fiéis reuniram-se na igreja de Les Ulmes para a bênção do Santíssimo Sacramento, conduzida pelo pároco Nicolas Nézan; enquanto se cantava o hino Pange Lingua, uma imagem visível do rosto de Cristo apareceu na hóstia exposta e permaneceu visível por cerca de quinze minutos. O padre Nézan comunicou o acontecimento ao bispo de Angers, Henri Arnauld, em 13 de junho, que declarou o milagre autêntico antes do fim do mês. O evento é um dos muitos fenômenos eucarísticos documentados na diocese de Angers no século XVII."
+      },
+      "159": {
+        "title": "Hóstias roubadas encontradas intactas após uma nevasca",
+        "description": "Em dezembro de 1532, ladrões invadiram a igreja paroquial de Marseille-en-Beauvais, na Picardia, roubaram um cibório de prata com hóstias consagradas e o abandonaram sob uma pedra na rua principal. Em 1º de janeiro de 1533, um transeunte chamado Jean Moucque percebeu que a pedra estava completamente livre de neve apesar de uma forte nevasca; ao levantá-la, encontrou as hóstias totalmente intactas. Foram depois relatadas várias curas milagrosas no local, foi construída a Capela das Sagradas Hóstias e, todo dia 2 de janeiro, ainda se celebra uma missa solene em memória do fato."
+      },
+      "160": {
+        "title": "Uma hóstia permanece intacta enquanto o cálice derrete no incêndio",
+        "description": "Na Quinta-feira Santa de 1643, um incêndio irrompeu na igreja paroquial de Pressac e destruiu um cálice com uma hóstia consagrada perto do altar da Virgem. O cálice foi quase totalmente consumido e fundiu-se em gotas de estanho, mas formou-se uma bolha de estanho sob a qual a hóstia foi encontrada completamente intacta, apenas com um leve tom avermelhado nas bordas. O abade de Availles-Limouzine registrou todos os depoimentos e os enviou ao bispo de Poitiers, que emitiu um ato solene autorizando a veneração; vitrais que representam o milagre ainda existem na igreja de Pressac."
+      },
+      "161": {
+        "title": "A hóstia roubada de um moleiro sangra abundantemente",
+        "description": "Em 1216, um moleiro de Benningen roubou uma hóstia consagrada logo após receber a comunhão e a escondeu entre as pedras do moinho do vizinho, com a intenção de caluniá-lo. No dia da festa de são Gregório, a hóstia começou a sangrar tão abundantemente que alarmou toda a aldeia e o bispo local; o moleiro culpado arrependeu-se e confessou seu sacrilégio. Em 1221, os habitantes construíram uma capela em honra do milagre, conhecida como Riedkapelle zum Hochwürdigen Gut, que continua sendo um local de peregrinação."
+      },
+      "162": {
+        "title": "Uma hóstia imóvel em um campo",
+        "description": "Por volta de 1125, um camponês piedoso dos arredores de Viehbrunn escondeu em segredo uma hóstia consagrada dentro de um cajado; num impulso, arremessou o cajado contra um rebanho desgarrado, e a hóstia caiu ao chão. Todas as tentativas de recuperá-la foram vãs, até que o bispo Hartwich de Ratisbona chegou ao local e só conseguiu levantá-la depois de prometer construir ali uma capela. A capela foi concluída em 1125 e deu origem à aldeia de Bettbrunn, que se tornou um local de peregrinação na diocese de Ratisbona."
+      },
+      "163": {
+        "title": "Uma hóstia transformada em crucifixo",
+        "description": "Em 1280, um pastor de Kranenburg, perto de Kleve, recebeu a comunhão mas não conseguiu engolir a hóstia e a atirou contra uma árvore; atormentado pelo remorso, confessou-se ao seu pároco, mas uma busca minuciosa nada encontrou. Quando a árvore foi derrubada mais tarde, de dentro dela caiu um crucifixo perfeitamente esculpido. No local foi erguida uma igreja; a construção da atual igreja gótica começou em 1408 e foi concluída em 1444, e o crucifixo milagroso continua venerado ali com uma procissão anual em 14 de setembro."
+      },
+      "164": {
+        "title": "Três hóstias sangrentas sobrevivem a um incêndio de igreja",
+        "description": "Em agosto de 1383, durante uma violenta disputa, a aldeia de Wilsnack e sua igreja paroquial foram reduzidas a cinzas. Quando o pároco vasculhou as ruínas, descobriu três hóstias intactas no sacrário do altar, cada uma com manchas de sangue visíveis. O bispo Dietrich von Havelberg verificou o milagre em 1384, e o papa Eugênio IV confirmou a veneração por meio de duas bulas papais em 1447; Wilsnack tornou-se um dos mais importantes santuários de peregrinação da Europa do fim da Idade Média, até que os reformadores protestantes destruíram as hóstias em 1552."
+      },
+      "165": {
+        "title": "O vinho consagrado se torna sangue vivo",
+        "description": "Em 1º de maio de 1429, um sacerdote que celebrava sua primeira missa na catedral de São Lourenço, em Alkmaar, derrubou acidentalmente o cálice após a consagração; três gotas do vinho consagrado transformaram-se milagrosamente em sangue e deixaram manchas permanentes que não puderam ser removidas por nenhum meio. O sacerdote enterrou o pano, que foi reencontrado mais tarde graças a uma visão concedida ao capitão de um navio durante uma tempestade. O bispo de Utrecht declarou oficialmente o fato milagroso em 1433, e a relíquia manchada de sangue ainda se conserva na catedral de São Lourenço."
+      },
+      "166": {
+        "title": "Hóstias descartadas são encontradas encharcadas de sangue",
+        "description": "No domingo anterior a Pentecostes de 1421, um pároco da igreja dos santos Pedro e Paulo, em Bergen op Zoom, aparentemente cético quanto à transubstanciação, jogou em um canal as hóstias consagradas que sobraram após a missa. Vários meses depois, pescadores recuperaram as hóstias flutuando na água, visivelmente encharcadas de sangue coagulado. O bispo local aprovou a veneração do milagre, e a devoção foi oficialmente restabelecida no século XX, com celebrações comemorativas anuais que continuam até hoje."
+      },
+      "167": {
+        "title": "Um sacerdote duvidoso vê sangue jorrar do cálice",
+        "description": "Em 1400, o padre Arnoldo Groen celebrava a missa na igreja dos santos Pedro e Paulo, em Boxmeer, quando foi tomado por uma dúvida sobre a Presença real; de imediato, o vinho consagrado começou a borbulhar e a transbordar do cálice sobre o corporal, e o sacerdote implorou o perdão de Deus, após o que o sangramento cessou. O sangue que caiu sobre o corporal coagulou-se em um grumo do tamanho aproximado de uma noz, que permanece visível e inalterado em Boxmeer até hoje. Em 2000, o papa João Paulo II elevou a igreja de São Pedro de Boxmeer à categoria de basílica."
+      },
+      "168": {
+        "title": "Um cálice derramado mancha de sangue o corporal",
+        "description": "Por volta de 1380, o padre Eligio van der Aker celebrava a missa em Boxtel quando derrubou acidentalmente o cálice que continha o vinho branco consagrado; o vinho transformou-se imediatamente em sangue, que manchou tanto o corporal quanto a toalha do altar. Um decreto publicado em 1380 pelo cardeal Pileus está entre os documentos mais confiáveis que atestam o milagre. O corporal manchado de sangue permaneceu em Boxtel, enquanto a toalha do altar foi entregue à cidade de Hoogstraten; ambas as relíquias continuam sendo veneradas em suas respectivas cidades."
+      },
+      "169": {
+        "title": "Uma hóstia roubada é encontrada intacta sob a terra",
+        "description": "Em 24 de junho de 1300, um soldado que saqueava a região roubou uma hóstia consagrada; ela foi encontrada mais tarde por um camponês local, Jan Bautoen, perfeitamente intacta e escondida sob um torrão de terra. O bispo de Liège conduziu uma investigação oficial, que deixou um dos documentos eclesiásticos mais confiáveis ligados ao acontecimento. Uma capela foi construída no local em memória, e a história é lembrada por pinturas conservadas na igreja local."
+      },
+      "170": {
+        "title": "Sangue escorre de uma hóstia; a relíquia sobrevive ao incêndio",
+        "description": "Em 1222, durante a missa dominical na igreja beneditina de Meerssen, sangue começou a escorrer da grande hóstia consagrada sobre o corporal, e foi reconhecido pelas autoridades eclesiásticas. Em 1465, quando atacantes atearam fogo à igreja, um camponês da região conseguiu resgatar a relíquia manchada de sangue, que saiu do fogo completamente ilesa. Em 1938, o papa Pio XI elevou a igreja à basílica do Santíssimo Sacramento; as relíquias da hóstia e o corporal manchado de sangue permanecem na basílica e são levadas em procissão todos os anos durante a oitava do Corpus Christi."
+      },
+      "171": {
+        "title": "Uma hóstia preservada durante a invasão lituana",
+        "description": "Durante uma invasão lituana em 1290, um sacerdote local enterrou um cibório com uma hóstia consagrada em um campo para protegê-la; a aldeia e a igreja foram arrasadas. Anos depois, um camponês que arava o campo encontrou o cibório quando seus bois pararam inexplicavelmente e se inclinaram até o chão; a hóstia emitia uma luz intensa. Quando foi levada a uma igreja próxima, reapareceu milagrosamente no local original, e ali foi construída uma igreja dedicada ao Corpus Christi; o santuário foi consagrado pelo bispo Krzysztof Potocki em 1726 e continua atraindo peregrinos."
+      },
+      "172": {
+        "title": "Três peixes devolvem as hóstias ao sacerdote",
+        "description": "Em 1348, durante a peste negra, um sacerdote perdeu um cofre com hóstias consagradas quando sua mula escorregou ao atravessar um barranco perto de Valência, e as hóstias caíram na correnteza. Três peixes emergiram com a cabeça fora da água, cada um com uma hóstia na ponta da boca; imóveis, nadaram até o cálice que o sacerdote segurava sobre a água e depositaram cada hóstia dentro dele antes de se afastarem nadando. O bispo local reconheceu oficialmente o milagre; os documentos históricos estão nos arquivos diocesanos de Valência, e o local é marcado pela ermida dels Peixets, construída em 1907."
+      },
+      "173": {
+        "title": "A estátua do Menino Jesus aponta as hóstias escondidas",
+        "description": "Em 29 de janeiro de 1568, um tosquiador de tecidos chamado Joan Prats invadiu sua igreja paroquial em Alcoy e roubou um cibório de prata com quarenta hóstias consagradas e um relicário, escondendo-os sob pedras ao pé de sua escada. Quando o furto foi descoberto, uma imagenzinha do Menino Jesus numa casa vizinha inclinou-se e apontou o esconderijo, levando as autoridades aos objetos roubados. A casa do ladrão foi transformada em oratório, e a cada ano, em 31 de janeiro, o povo de Alcoy celebra a procissão do Menino Jesus Milagroso em memória do acontecimento."
+      },
+      "174": {
+        "title": "Anjos trazem a cruz durante uma missa de cativos",
+        "description": "Em 1231, o sacerdote cristão cativo Ginés Pérez Chirinos foi solicitado pelo governante muçulmano Zeyt-Abuzeyt a celebrar a missa para que ele pudesse assistir ao rito cristão; ao descobrir que não havia crucifixo sobre o altar, dois anjos desceram do céu trazendo uma cruz, colocaram-na diante do altar e desapareceram. Durante a consagração, o governante teria visto uma criança radiante na hóstia e, junto com sua família, converteu-se ao cristianismo. A relíquia da Vera Cruz ainda se conserva na basílica de Caravaca de la Cruz, reconhecida pelo papa João Paulo II como uma das seis Cidades Santas."
+      },
+      "175": {
+        "title": "A hóstia se torna carne, o sangue impregna o linho",
+        "description": "Em 1370, o pároco de Cimballa, em Aragão, dom Tomás, duvidava há muito tempo da Presença real; no momento da consagração durante uma missa dominical, a hóstia transformou-se em carne e o sangue começou a correr, encharcando o linho do altar. Tomado pelo remorso, dom Tomás retirou-se depois para um mosteiro, para passar o resto da vida em penitência. O corporal manchado de sangue, guardado em um relicário trabalhado em 1594, é exposto a cada 12 de setembro; o acontecimento é conhecido no local como o «Santíssimo Mistério Duvidoso»."
+      },
+      "176": {
+        "title": "Na boca de um sacerdote, a hóstia se torna carne",
+        "description": "Em 1297, em Girona, na Catalunha, um sacerdote que celebrava a missa foi tomado pela dúvida sobre a Presença real; no momento da comunhão, não conseguiu engolir a hóstia, que se transformara em carne dentro de sua boca. O sacerdote confessou sua dúvida e o pedaço de carne foi oficialmente conservado e venerado como relíquia. Foi guardado até ser destruído em 1936, durante a guerra civil espanhola."
+      },
+      "177": {
+        "title": "Uma hóstia profanada sangra e é conservada por séculos",
+        "description": "Em 1572, em Gorcum (Países Baixos), seguidores de Zuínglio retiraram hóstias consagradas do sacrário de uma catedral; um dos hereges pisou em uma hóstia com botas de cravos, perfurando-a em três pontos; de cada ferida começou imediatamente a escorrer sangue e, testemunha do milagre, o autor da profanação converteu-se ali mesmo. Escondida pelos franciscanos e transportada por Antuérpia e Viena, a hóstia chegou à corte do rei Filipe II da Espanha por volta de 1592. A hóstia incorrupta e sangrenta é venerada até hoje na sacristia do Mosteiro Real de São Lourenço do Escorial, perto de Madri, onde é exposta ao público duas vezes por ano."
+      },
+      "178": {
+        "title": "O vinho se transforma em sangue que escorre pelo altar",
+        "description": "Em 1010, o pároco de Ivorra, na Catalunha, dom Bernat Oliver, duvidava da transubstanciação; durante a missa, o vinho do cálice transformou-se inteiramente em sangue, que transbordou sobre a toalha do altar e escorreu até o chão. Santo Ermengol, bispo de Urgell, viajou a Ivorra para investigar e depois levou o cálice e o pano manchado de sangue a Roma, onde o papa Sérgio IV emitiu uma bula pontifícia certificando o milagre. As relíquias sagradas são conservadas em um relicário gótico de 1426 na igreja paroquial de São Cugat, em Ivorra; o milagre é comemorado anualmente como «a Santa Dúvida»."
+      },
+      "179": {
+        "title": "Uma menina reconhece a verdadeira hóstia",
+        "description": "No dia de Natal de 1392, uma menina de cinco anos chamada Inés, que assistia à missa em Moncada, viu o Menino Jesus aparecer na hóstia consagrada; o sacerdote que celebrava a missa havia duvidado em particular da validade de sua ordenação durante o Cisma do Ocidente. No dia seguinte, o sacerdote lhe apresentou uma hóstia consagrada e outra não consagrada, e ela identificou corretamente a sagrada, dissipando suas dúvidas. O milagre consta nos Anais Eclesiásticos do padre Odorico Raynaldi e nos arquivos municipais de Moncada."
+      },
+      "180": {
+        "title": "Um pai é libertado do purgatório durante a missa",
+        "description": "No mosteiro beneditino de Nossa Senhora de Montserrat, uma menina aflita pediu ao abade que celebrasse três missas pela alma de seu pai falecido. Durante a primeira missa, ela viu o pai cercado de chamas, visíveis apenas para ela; quando um lenço foi colocado no lugar que ela indicava, pegou fogo imediatamente diante dos olhos do clero. Na terceira missa, o pai apareceu vestido de branco e subiu ao céu no momento da celebração eucarística, confirmando a eficácia da missa oferecida pelos defuntos."
+      },
+      "181": {
+        "title": "A hóstia e o vinho se tornam carne e sangue",
+        "description": "Por volta de 1300, um monge sacerdote beneditino da igreja de Santa Maria la Real, no alto de O Cebreiro, uma das igrejas mais antigas do Caminho de Santiago, havia perdido o fervor da fé e duvidava da Presença real; durante as palavras da consagração, a hóstia transformou-se visivelmente em carne e o vinho em sangue, que transbordou do cálice e manchou o corporal. Em 1486, a rainha Isabel de Castela encomendou um precioso relicário para guardar a carne milagrosa, o cálice e os corporais manchados de sangue durante a sua própria peregrinação; essas relíquias são veneradas até hoje na igreja."
+      },
+      "182": {
+        "title": "Hóstias roubadas encontradas perfeitamente conservadas",
+        "description": "Em 5 de novembro de 1824, um antigo coroinha chamado Nicolás Bernabeu roubou um ostensório e vasos sagrados da igreja de Onil; um pixide com hóstias consagradas foi escondido em um campo perto de Tibi, onde foi descoberto em 28 de novembro de 1824 por uma mulher chamada Teresa Carbonell. As hóstias consagradas foram encontradas completamente intactas apesar de semanas de exposição. Em 28 de novembro de 1943, exatamente 119 anos depois, o delegado do arcebispo de Valência confirmou oficialmente a incorruptibilidade milagrosa; as hóstias são veneradas na igreja de São Tiago Apóstolo, em Onil."
+      },
+      "183": {
+        "title": "Hóstias roubadas brilham em uma moita de amoras",
+        "description": "Em 1533, um paroquiano roubou um cibório de prata com hóstias consagradas de sua igreja em Ponferrada e o jogou em um amoreiral depois de ele ter ficado inexplicavelmente pesado quando tentou atirá-lo ao rio; testemunhas relataram depois estranhas luzes à noite e pombas brancas que pairavam durante o dia. Um moleiro chamado Nogaledo descobriu o sacrário enquanto procurava as pombas e encontrou as hóstias intactas e emitindo luz. Uma capela foi erguida no local, e em 1570 foi instituída uma solene procissão anual na oitava do Corpus Christi."
+      },
+      "184": {
+        "title": "Uma hóstia incorrupta por 175 anos dentro de um crucifixo",
+        "description": "Em 1251, uma hóstia consagrada foi colocada em uma pequena cavidade na fronte do grupo escultórico românico conhecido como o «Santo Mistério», no mosteiro de Sant Joan de les Abadesses, na Catalunha, e a cavidade foi selada com uma placa de prata. Em 1426, durante obras de restauração, os trabalhadores descobriram a cavidade selada e encontraram lá dentro, envolta em linho branco, a hóstia de 175 anos completamente incorrupta. A hóstia conservada, conhecida como «O Santíssimo Mistério de Sant Joan de les Abadesses», continua sendo venerada pelos peregrinos na igreja do mosteiro."
+      },
+      "185": {
+        "title": "O Santo Cálice da Última Ceia",
+        "description": "A catedral de Valência guarda o que a tradição identifica como o Santo Cálice usado por Jesus Cristo na Última Ceia: uma taça de ágata talhada por volta do século I ou II a.C., que se diz ter sido levada de Jerusalém a Roma por são Pedro e confiada ao diácono são Lourenço em 258. O rei Afonso V de Aragão a entregou à catedral de Valência em 1437, onde é venerada desde então. Até o século XVIII, o cálice foi usado para conter a hóstia consagrada nas cerimônias da Quinta-feira Santa; hoje está exposto permanentemente na capela do Santo Cálice da catedral."
+      },
+      "186": {
+        "title": "Uma hóstia roubada aparece como uma criança viva",
+        "description": "Em 1427, em Saragoça, uma mulher levou uma hóstia consagrada roubada a um feiticeiro mouro; quando ele abriu a caixa, não encontrou uma hóstia, mas um bebê vivo cercado de luz radiante, e todas as tentativas de queimá-lo falharam. O arcebispo de Saragoça organizou uma procissão solene, e quando a Criança milagrosa foi colocada sobre o altar durante o ofertório da missa, a Criança desapareceu e a hóstia consagrada reapareceu em seu lugar. O acontecimento consta nos arquivos da prefeitura de Saragoça, e um quadro que o comemora está pendurado na catedral."
+      },
+      "187": {
+        "title": "O Sagrado Coração aparece durante uma erupção vulcânica",
+        "description": "Em 8 de maio de 1902 (dia da Ascensão), enquanto o monte Pelée entrava em erupção e destruía a cidade vizinha de Saint-Pierre, os habitantes de Morne-Rouge reuniram-se em sua igreja paroquial para a missa e a adoração eucarística. Durante a exposição do Santíssimo Sacramento, numerosas testemunhas afirmaram ter visto surgir na hóstia uma imagem de Jesus mostrando seu Sagrado Coração coroado de espinhos. Naquele dia, a aldeia foi poupada; o acontecimento foi relatado publicamente no Congresso Eucarístico de Angoulême em 1904."
+      },
+      "188": {
+        "title": "O rosto de Cristo visto na hóstia",
+        "description": "Em 26 de janeiro de 1902, durante a devoção das Quarenta Horas na igreja paroquial de Saint-André, na ilha de Reunião, o abade Henri Lacombe observou um halo luminoso ao redor do ostensório, seguido do aparecimento na hóstia do rosto de Cristo coroado de espinhos. A visão evoluiu ao longo de várias horas: o rosto se animou e, por fim, transformou-se na imagem de um crucifixo que cobria toda a hóstia; milhares de testemunhas, da localidade e da capital Saint-Denis, confirmaram o fenômeno. O abade Lacombe relatou publicamente o acontecimento no Congresso Eucarístico de Angoulême em 1904."
+      }
+    }
+  }
+}

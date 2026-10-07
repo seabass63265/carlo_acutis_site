@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import CarloStoryPage from "@/components/CarloStoryPage";
 
-export const metadata: Metadata = {
-  title: "Carlo's Story",
-  description:
-    "Discover the life of St. Carlo Acutis — the first millennial saint who used technology to bring millions closer to God.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("carlo");
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
 export default function CarloPage() {
   return <CarloStoryPage />;

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { FaLinkedinIn, FaTwitter, FaBehance, FaInstagram } from "react-icons/fa";
 import { cn } from "@/lib/utils";
 
@@ -137,6 +138,7 @@ function MemberRow({
   hoveredId: string | null;
   onHover: (id: string | null) => void;
 }) {
+  const t = useTranslations("common");
   const [expanded, setExpanded] = useState(false);
   const isActive = hoveredId === member.id;
   const isDimmed = hoveredId !== null && !isActive;
@@ -235,7 +237,7 @@ function MemberRow({
       </p>
       {hasBio && (
         <p className="mt-1.5 pl-[35px] text-[14px] md:text-[16px] font-medium normal-case tracking-normal text-white/30 transition-colors duration-200 hover:text-white/60">
-          {expanded ? "− Less" : "+ Bio"}
+          {expanded ? t("hideBio") : t("showBio")}
         </p>
       )}
 

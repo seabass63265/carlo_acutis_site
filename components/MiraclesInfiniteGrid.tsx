@@ -3,26 +3,36 @@
 import { gsap } from "gsap";
 import { Observer } from "gsap/Observer";
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import { miracles, type Miracle } from "@/components/miracles-data";
 import AnimateIn from "@/components/AnimateIn";
 
 gsap.registerPlugin(Observer);
 
-function sourceLabel(url: string): { label: string; badge: "PDF" | "Wiki" | "Web" } {
+type SourceLabels = {
+  sourcePanel: string;
+  sourceExhibition: string;
+  sourceWiki: string;
+  sourceEwtn: string;
+  sourcePea: string;
+  sourceMagis: string;
+};
+
+function sourceLabel(url: string, labels: SourceLabels): { label: string; badge: "PDF" | "Wiki" | "Web" } {
   if (url.includes("/en/download/") && url.endsWith(".pdf"))
-    return { label: "Carlo Acutis Exhibition — individual panel", badge: "PDF" };
+    return { label: labels.sourcePanel, badge: "PDF" };
   if (url.includes("miracolieucaristici.org"))
-    return { label: "Carlo Acutis Eucharistic Miracles Exhibition", badge: "Web" };
+    return { label: labels.sourceExhibition, badge: "Web" };
   if (url.includes("wikipedia.org/wiki/")) {
     const slug = url.split("/wiki/")[1] ?? "";
-    return { label: `Wikipedia — ${decodeURIComponent(slug).replace(/_/g, " ")}`, badge: "Wiki" };
+    return { label: `${labels.sourceWiki} — ${decodeURIComponent(slug).replace(/_/g, " ")}`, badge: "Wiki" };
   }
   if (url.includes("ewtn.com"))
-    return { label: "EWTN — Catholic Library", badge: "Web" };
+    return { label: labels.sourceEwtn, badge: "Web" };
   if (url.includes("perpetualeucharisticadoration.com"))
-    return { label: "Perpetual Eucharistic Adoration", badge: "Web" };
+    return { label: labels.sourcePea, badge: "Web" };
   if (url.includes("magiscenter.com"))
-    return { label: "Magis Center", badge: "Web" };
+    return { label: labels.sourceMagis, badge: "Web" };
   try {
     return { label: new URL(url).hostname.replace("www.", ""), badge: "Web" };
   } catch {
@@ -31,6 +41,19 @@ function sourceLabel(url: string): { label: string; badge: "PDF" | "Wiki" | "Web
 }
 
 export default function MiraclesInfiniteGrid() {
+  const t = useTranslations("miracles");
+  const countryName = (c: string) => (t.has(`countries.${c}`) ? t(`countries.${c}`) : c);
+  const yearText = (y: string) => y.replace(/ AD$/, ` ${t("yearAD")}`);
+  const titleOf = (m: Miracle) => t(`entries.${m.id}.title`);
+  const descOf = (m: Miracle) => t(`entries.${m.id}.description`);
+  const sourceLabels: SourceLabels = {
+    sourcePanel: t("grid.sourcePanel"),
+    sourceExhibition: t("grid.sourceExhibition"),
+    sourceWiki: t("grid.sourceWiki"),
+    sourceEwtn: t("grid.sourceEwtn"),
+    sourcePea: t("grid.sourcePea"),
+    sourceMagis: t("grid.sourceMagis"),
+  };
   const sectionRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<Miracle | null>(null);
@@ -174,7 +197,7 @@ export default function MiraclesInfiniteGrid() {
             {miracle.image ? (
               <img
                 src={miracle.image}
-                alt={miracle.title}
+                alt={titleOf(miracle)}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
@@ -185,11 +208,11 @@ export default function MiraclesInfiniteGrid() {
             )}
             <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
             <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
-              {miracle.year}
+              {yearText(miracle.year)}
             </p>
             <div className="absolute bottom-2 left-2 right-2">
               <p className="text-white font-semibold text-[10px] leading-snug drop-shadow-sm">{miracle.location}</p>
-              <p className="text-white/55 text-[8px] mt-0.5 leading-none">{miracle.country}</p>
+              <p className="text-white/55 text-[8px] mt-0.5 leading-none">{countryName(miracle.country)}</p>
             </div>
           </div>
         </div>
@@ -205,16 +228,16 @@ export default function MiraclesInfiniteGrid() {
             /* Immediate render — no scroll-in animation when user actively filtered */
             <>
               <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#C9A96E] mb-5">
-                The Complete Exhibition — {displayedMiracles.length} Miracle{displayedMiracles.length !== 1 ? "s" : ""} from {filterCountry}
+                {t("grid.titleFiltered", { count: displayedMiracles.length, country: countryName(filterCountry) })}
               </h2>
               <button
                 onClick={() => setFilterCountry(null)}
                 className="mb-4 inline-flex items-center gap-2 text-xs font-semibold text-[#C9A96E] border border-[#C9A96E]/30 hover:border-[#C9A96E] hover:bg-[#C9A96E]/5 rounded-sm px-3 py-1.5 transition-all"
               >
-                ← View all {miracles.length} miracles
+                {t("grid.viewAll", { count: miracles.length })}
               </button>
               <p className="text-white/50 text-lg max-w-xl">
-                {displayedMiracles.length} documented miracle{displayedMiracles.length !== 1 ? "s" : ""} from {filterCountry}. Click any card to read more.
+                {t("grid.countFiltered", { count: displayedMiracles.length, country: countryName(filterCountry) })}
               </p>
             </>
           ) : (
@@ -222,12 +245,12 @@ export default function MiraclesInfiniteGrid() {
             <>
               <AnimateIn>
                 <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#C9A96E] mb-5">
-                  The Complete Exhibition — {miracles.length} Miracles
+                  {t("grid.titleAll", { count: miracles.length })}
                 </h2>
               </AnimateIn>
               <AnimateIn delay={0.1}>
                 <p className="text-white/50 text-lg max-w-xl">
-                  Pan or scroll to explore every miracle Carlo documented. Click any card to learn more.
+                  {t("grid.intro")}
                 </p>
               </AnimateIn>
             </>
@@ -253,7 +276,7 @@ export default function MiraclesInfiniteGrid() {
                   {miracle.image ? (
                     <img
                       src={miracle.image}
-                      alt={miracle.title}
+                      alt={titleOf(miracle)}
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                       loading="lazy"
                     />
@@ -264,11 +287,11 @@ export default function MiraclesInfiniteGrid() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
                   <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
-                    {miracle.year}
+                    {yearText(miracle.year)}
                   </p>
                   <div className="absolute bottom-2 left-2 right-2">
                     <p className="text-white font-semibold text-xs leading-snug drop-shadow-sm">{miracle.location}</p>
-                    <p className="text-white/55 text-[10px] mt-0.5 leading-none">{miracle.country}</p>
+                    <p className="text-white/55 text-[10px] mt-0.5 leading-none">{countryName(miracle.country)}</p>
                   </div>
                 </div>
               </div>
@@ -322,7 +345,7 @@ export default function MiraclesInfiniteGrid() {
               <div className="md:w-2/5 flex-shrink-0 bg-[#0d0d0d] flex items-center justify-center max-h-64 md:max-h-none">
                 <img
                   src={selected.image}
-                  alt={selected.title}
+                  alt={titleOf(selected)}
                   className="w-full h-full max-h-64 md:max-h-[90vh] object-contain"
                 />
               </div>
@@ -331,10 +354,10 @@ export default function MiraclesInfiniteGrid() {
             <div className="flex items-start justify-between gap-4 mb-5">
               <div>
                 <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">
-                  {selected.year} · {selected.country}
+                  {yearText(selected.year)} · {countryName(selected.country)}
                 </p>
                 <h3 className="font-serif text-2xl font-semibold text-navy leading-snug">
-                  {selected.title}
+                  {titleOf(selected)}
                 </h3>
                 <p className="text-navy/50 text-sm mt-1">{selected.location}</p>
               </div>
@@ -348,14 +371,14 @@ export default function MiraclesInfiniteGrid() {
             </div>
             <div className="h-px bg-cream-dark mb-5" />
             <p className="text-navy/65 leading-relaxed text-sm">
-              {selected.description}
+              {descOf(selected)}
             </p>
             {selected.sources && selected.sources.length > 0 && (
               <div className="mt-5 pt-4 border-t border-cream-dark">
-                <p className="text-navy/35 text-[9px] font-semibold tracking-[0.2em] uppercase mb-2.5">Sources</p>
+                <p className="text-navy/35 text-[9px] font-semibold tracking-[0.2em] uppercase mb-2.5">{t("grid.sources")}</p>
                 <ul className="space-y-2">
                   {selected.sources.map((url) => {
-                    const { label, badge } = sourceLabel(url);
+                    const { label, badge } = sourceLabel(url, sourceLabels);
                     return (
                       <li key={url}>
                         <a

@@ -38,5 +38,1636 @@
     "accessibility": "Accessibility",
     "changeLanguage": "🌐 Change Language",
     "brand": "Friends of Carlo"
+  },
+  "contact": {
+    "titleLine1": "LET'S",
+    "titleLine2": "CONNECT",
+    "nameLabel": "What's Your Name?",
+    "namePlaceholder": "Full Name",
+    "organizationLabel": "What's the Name of Your Organization?",
+    "organizationPlaceholder": "Organization (if applicable)",
+    "emailLabel": "What's Your Email?",
+    "emailPlaceholder": "your@email.com",
+    "honeypotLabel": "Company",
+    "audienceLabel": "Who Are You?",
+    "reasonLabel": "What's This Regarding?",
+    "selectOne": "Select one",
+    "messageLabel": "What's On Your Heart?",
+    "messagePlaceholder": "Write your message here in no more than five hundred words...",
+    "send": "Send Message",
+    "sending": "Sending…",
+    "error": "Something went wrong sending your message. Please try again, or email us directly.",
+    "sentTitle": "Message Sent",
+    "sentBody": "Thank you for reaching out. A member of our team will reply within 2–3 business days.",
+    "sendAnother": "Send another message →",
+    "reachOut": "Reach out to us",
+    "listen": "We are here to listen and pray with you.",
+    "emailHeading": "Email",
+    "followUs": "Follow Us",
+    "audience": {
+      "individual": "Individual",
+      "corporate": "Corporate Representative",
+      "parish": "Parish or Diocese Representative",
+      "educator": "Educator / Catechist",
+      "media": "Media / Press",
+      "donor": "Donor / Partner Organization",
+      "other": "Other"
+    },
+    "reason": {
+      "donation": "Donation",
+      "partnership": "Partnership",
+      "volunteering": "Volunteering",
+      "general": "General Inquiry",
+      "prayer": "Prayer Request",
+      "speaking": "Speaking & Media",
+      "education": "Education & Resources",
+      "other": "Other"
+    },
+    "title": "Contact",
+    "description": "Get in touch with Friends of Carlo — for general inquiries, prayer requests, speaking opportunities, and more."
+  },
+  "home": {
+    "mission": {
+      "headlineLine1": "A Home for Real Faith",
+      "headlineLine2": "& Encounters with God",
+      "eyebrow": "Our Mission",
+      "body": "Inspired by the life and witness of St. Carlo Acutis, we exist to help people encounter Christ, deepen their faith, and continue Carlo's mission of bringing the Gospel into the digital world.",
+      "aboutUs": "About Us",
+      "stayConnected": "Stay Connected",
+      "imageAlt": "St. Carlo Acutis"
+    },
+    "who": {
+      "eyebrow": "The Story of Carlo",
+      "title": "Who Was Carlo Acutis?",
+      "p1": "Born in London and raised in Milan, Carlo Acutis was a teenager who loved soccer, video games, and God. He was diagnosed with leukemia at 15 and offered his suffering “for the Pope and for the Church” — dying in 2006 with the serenity of a saint.",
+      "p2": "Carlo taught himself to code and built a website cataloguing Eucharistic miracles worldwide — a digital act of faith that reached millions. He was beatified in 2020 and canonized as the world's first millennial saint in 2025.",
+      "quote": "“All people are born as originals, but many die as photocopies.”",
+      "quoteBy": "Carlo Acutis",
+      "statAgeValue": "15",
+      "statAgeLabel": "Age at death",
+      "statMiraclesValue": "136",
+      "statMiraclesLabel": "Eucharistic miracles catalogued",
+      "statCanonizedValue": "2025",
+      "statCanonizedLabel": "Canonized",
+      "cta": "Explore Carlo's Story →",
+      "imageAlt": "Young Carlo Acutis"
+    },
+    "initiatives": {
+      "eyebrow": "What We Do",
+      "watermark": "Initiatives",
+      "titleTop": "Featured",
+      "titleBottom": "Initiatives",
+      "contactUs": "Contact Us",
+      "discoverDetails": "Discover Details",
+      "discoverMiracles": "Discover Miracles",
+      "card01": {
+        "tags": [
+          "Focus: Community",
+          "Status: Active"
+        ],
+        "title": "Youth Outreach",
+        "body": "Fostering a new generation through immersive community programs. We create spaces where tradition meets contemporary understanding, providing mentorship and spiritual grounding for young minds navigating a complex world.",
+        "imageAlt": "Group of youth looking towards light"
+      },
+      "card02": {
+        "tags": [
+          "Focus: Technology"
+        ],
+        "title": "Digital Outreach",
+        "body": "Translating timeless messages into modern mediums. Utilizing cutting-edge platforms to build global digital parishes, ensuring our reach extends far beyond physical walls into the daily digital lives of millions.",
+        "imageAlt": "Abstract digital light network"
+      },
+      "card03": {
+        "tags": [
+          "Focus: Knowledge"
+        ],
+        "title": "Educational Resources",
+        "body": "Explore our growing archive of Eucharistic Miracles documented across the centuries, alongside Carlo's own story — his life, his faith, and the witness that continues to inspire a new generation.",
+        "imageAlt": "Classical architecture and light"
+      },
+      "card04": {
+        "tags": [
+          "Phase: Development"
+        ],
+        "title": "Future Projects",
+        "body": "Architecting the next decade of structural and spiritual growth. From sustainable community centers to innovative philanthropic models, these blueprints define our forward trajectory.",
+        "imageAlt": "Minimalist structural architecture"
+      }
+    },
+    "news": {
+      "eyebrow": "Latest",
+      "title": "News & Updates",
+      "tagFacebook": "Facebook",
+      "viewOnFacebook": "View post on Facebook",
+      "fallback1Date": "June 2025",
+      "fallback1Tag": "Canonization",
+      "fallback1Title": "Carlo Acutis Officially Canonized as the World's First Millennial Saint",
+      "fallback1Excerpt": "In a historic ceremony in St. Peter's Square, Pope Francis canonized Carlo Acutis, making him the patron of the internet generation.",
+      "fallback2Date": "May 2025",
+      "fallback2Tag": "Events",
+      "fallback2Title": "Friends of Carlo Announces Digital Discipleship Summit for Youth Ministers",
+      "fallback2Excerpt": "Hundreds of youth ministers from across the country gather to learn how to use Carlo's story to inspire their communities.",
+      "fallback3Date": "April 2025",
+      "fallback3Tag": "Resources",
+      "fallback3Title": "New Educational Resource Pack Released — Free for All Parishes",
+      "fallback3Excerpt": "Download lesson plans, infographics, and video guides on Carlo's life for confirmation, high school, and college students."
+    },
+    "quote": {
+      "text": "To always be close to Jesus — that's my life's program.",
+      "cite": "St. Carlo Acutis",
+      "cta": "Read His Full Story →"
+    },
+    "support": {
+      "eyebrow": "Support the Mission",
+      "title": "Ways to Give",
+      "subtitle": "Every gift — large or small — carries Carlo's message to a new generation.",
+      "option01Title1": "Individual",
+      "option01Title2": "Giving",
+      "option01Body": "Your personal gift fuels youth outreach, educational resources, and digital evangelization — one soul at a time.",
+      "option01Cta": "Give Now",
+      "option02Title1": "Institutional",
+      "option02Title2": "Giving",
+      "option02Body": "Partner with us as a foundation, diocese, or institution. Access governance documents, impact metrics, and grant information.",
+      "option02Cta": "Institutional Partners",
+      "option03Title1": "Corporate",
+      "option03Title2": "Partnerships",
+      "option03Body": "Align your brand with a mission that transcends generations. Sponsorship and co-branding opportunities available.",
+      "option03Cta": "Corporate Info"
+    },
+    "hero": {
+      "mainText": "Inspired by St. Carlo Acutis — the first millennial saint — we exist to bring the Gospel to a new generation through faith, technology, and encounter.",
+      "overlayPart1": "Born",
+      "overlayWords": [
+        "Original.",
+        "Holy.",
+        "Beloved.",
+        "Chosen.",
+        "Called.",
+        "Eternal."
+      ],
+      "locationText": "Los Angeles, California",
+      "imageAlt": "St. Carlo Acutis",
+      "navHome": "HOME",
+      "navCarlo": "CARLO",
+      "navMiracles": "MIRACLES",
+      "navAbout": "ABOUT US"
+    }
+  },
+  "youth": {
+    "meta": {
+      "title": "Youth Council",
+      "description": "The Friends of Carlo Youth Council is an advisory body of young people (ages 14–21) helping shape youth programming, digital evangelization, and organizational culture. Applications are open."
+    },
+    "hero": {
+      "eyebrow": "The Friends of Carlo Youth Council",
+      "title1": "A Seat at",
+      "title2": "the Table",
+      "body": "Carlo Acutis was a teenager who used what he had — a laptop, a camera, a deep love for the Eucharist — to reach the whole world. The Youth Council is a group of young people doing the same thing for our generation: helping decide what Friends of Carlo builds, who it reaches, and how it feels to be part of it.",
+      "apply": "Apply to Join →",
+      "expected": "What's expected",
+      "imageAlt": "Young people gathered together"
+    },
+    "purpose": {
+      "eyebrow": "What It Is",
+      "title": "An advisory body to the Board of Directors",
+      "body1": "The Youth Council advises the Board of Directors and Executive Director on matters relating to youth programming, digital evangelization, and organizational culture. It leads at least one project each year in furtherance of the mission, and its members serve as ambassadors of the organization's charism within their parishes, schools, communities, and the internet.",
+      "body2Before": "The Youth Council operates in an",
+      "body2Emphasis": "advisory",
+      "body2After": "— not fiduciary — capacity. It does not hold legal governance authority over the organization. Your job is to bring the perspective of the people we're actually trying to reach, and to make sure it's heard where decisions get made.",
+      "meetBoard": "Meet the Board of Directors"
+    },
+    "expect": {
+      "eyebrow": "What You'd Do",
+      "title": "The fun part comes with real commitments",
+      "intro": "Being appointed to the Council means people are counting on you. Here's what a term looks like — it's a one-year commitment.",
+      "items": [
+        {
+          "title": "Quarterly meetings",
+          "body": "Meet with the Council four times a year to review programs, weigh in on direction, and plan the annual project."
+        },
+        {
+          "title": "Monthly check-ins",
+          "body": "A short monthly touchpoint to stay connected between meetings and keep projects moving."
+        },
+        {
+          "title": "One annual project",
+          "body": "Lead or co-lead at least one project per term that advances the mission — you help choose what it is."
+        },
+        {
+          "title": "Recommendations to the Board",
+          "body": "Submit written recommendations so your ideas reach the Board of Directors in a form they can act on."
+        },
+        {
+          "title": "Be an ambassador",
+          "body": "Represent the Friends of Carlo charism in your parish, school, community, and online."
+        },
+        {
+          "title": "Show up fully",
+          "body": "Participate in all Council activities and bring the perspective of your own community to the table."
+        }
+      ]
+    },
+    "who": {
+      "eyebrow": "Who Can Apply",
+      "title": "If this sounds like you, apply",
+      "requirements": [
+        {
+          "value": "14–21",
+          "label": "Open to applicants between the ages of 14 and 21"
+        },
+        {
+          "value": "Any faith",
+          "label": "Applicants of any faith background are welcome"
+        },
+        {
+          "value": "1 year",
+          "label": "A one-year commitment to the Council and its work"
+        }
+      ],
+      "note": "We want the Council to represent a real range of parishes, schools, and communities — so wherever you're from, your perspective is part of what makes it work.",
+      "imageAlt": "Young people together"
+    },
+    "apply": {
+      "eyebrow": "Applications Are Open",
+      "title": "Ready to help build it?",
+      "body": "The application takes a few minutes. Tell us who you are, where you're from, and why you want a seat at the table.",
+      "cta": "Start the Application →"
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "loadMore": "Load More Posts",
+    "readMoreArticle": "Read more",
+    "facebook": "Facebook",
+    "showBio": "+ Bio",
+    "hideBio": "− Less"
+  },
+  "donate": {
+    "meta": {
+      "title": "Ways to Give",
+      "description": "Support Friends of Carlo — individual giving, institutional partnerships, grants, and corporate sponsorships."
+    },
+    "hero": {
+      "mainText": "Every gift helps carry forward the mission of St. Carlo Acutis. Your generosity allows us to inspire young people, strengthen Eucharistic devotion, support pilgrimages and educational initiatives, and create digital resources that bring others closer to Christ.",
+      "footerText": "Scroll down for more info",
+      "centerLabel": "Donate",
+      "overlayPart1": "Your Gift",
+      "overlayPart2": "Changes Lives",
+      "locationText": "Friends of Carlo",
+      "imageAlt": "St. Carlo Acutis — Friends of Carlo"
+    },
+    "why": {
+      "eyebrow": "Why Give",
+      "title": "Your Gift Funds the Next Generation of Digital Saints",
+      "body1": "Carlo Acutis proved that faith and technology are not in conflict — they can be the most powerful combination of all. Your support makes it possible to bring that message to teenagers, parishes, schools, and families around the world.",
+      "body2": "We operate with exceptional stewardship, keeping overhead below 15% so that your dollars are deployed where they matter most: in programs, outreach, and mission.",
+      "cta": "Donate Now →",
+      "metrics": {
+        "funds": "Total funds deployed to mission",
+        "young": "Young people reached annually",
+        "communities": "Global communities & ministry partners",
+        "overhead": "Administrative overhead",
+        "audited": "Financials audited annually",
+        "board": "Board-governed with full transparency"
+      }
+    },
+    "photos": {
+      "photo1": "A priest and two guests sharing a moment of joy at a Friends of Carlo event",
+      "photo2": "Four friends standing together in front of the MCJ sign",
+      "photo3": "Young pilgrims gathered before St. Carlo Acutis's shrine in Italy"
+    },
+    "partners": {
+      "eyebrow": "Where Your Gifts Go",
+      "title": "Global Communities & Ministry Partners",
+      "body": "Your generosity has directly supported these dioceses, parishes, schools, and evangelization centers — in our own community and around the world.",
+      "items": [
+        {
+          "name": "Diocese of Assisi–Nocera Umbra–Gualdo Tadino",
+          "location": "Assisi, Italy"
+        },
+        {
+          "name": "Archdiocese of Wa",
+          "location": "Ghana"
+        },
+        {
+          "name": "St. Carlo Acutis Eucharistic Revival Youth Evangelization Center",
+          "location": "Tablas Island, Romblon, Philippines"
+        },
+        {
+          "name": "St. Monica Catholic Community and St. Monica Preparatory School",
+          "location": "Santa Monica, California"
+        },
+        {
+          "name": "St. Thomas the Apostle Parish and School",
+          "location": "Los Angeles, California"
+        },
+        {
+          "name": "St. Genevieve Parish Schools",
+          "location": "Panorama City, California"
+        }
+      ]
+    },
+    "institutional": {
+      "eyebrow": "Institutional & Foundation Giving",
+      "title": "For Foundations, Dioceses & Institutions",
+      "body1": "Friends of Carlo welcomes major gifts and grants from Catholic foundations, dioceses, religious orders, and aligned institutions. We offer full governance transparency, audited financials, and partnership flexibility.",
+      "body2": "Our team works closely with institutional donors to align gifts with specific program areas — from youth outreach to digital infrastructure to international mission expansion.",
+      "cta": "Contact Our Giving Team →",
+      "items": [
+        {
+          "title": "Full Financial Transparency",
+          "body": "Audited annual financials, IRS Form 990, and real-time program expense reporting available to all institutional partners."
+        },
+        {
+          "title": "Board Governance Documentation",
+          "body": "Complete bylaws, board composition, conflict of interest policies, and meeting minutes available upon request."
+        },
+        {
+          "title": "Grant Opportunity Matching",
+          "body": "Our giving team will work with you to identify grant programs that align with your foundation's priorities and eligibility criteria."
+        },
+        {
+          "title": "Impact Reporting",
+          "body": "Bi-annual detailed impact reports showing exactly how your gift was deployed and the measurable results achieved."
+        },
+        {
+          "title": "Restricted Giving Options",
+          "body": "Gifts can be designated for specific programs — youth outreach, digital evangelization, international expansion, or endowment."
+        }
+      ]
+    },
+    "corporate": {
+      "eyebrow": "Corporate Giving",
+      "title": "Corporate Partnerships & Sponsorships",
+      "body": "Align your brand with a mission that empowers young people of all backgrounds, bridging digital divides and fostering faith, innovation, service, and authentic human flourishing.",
+      "items": [
+        {
+          "title": "Title Sponsorship",
+          "description": "Premier brand placement on our website, all events, and the Eucharistic Miracles Exhibition. Includes executive speaking opportunities."
+        },
+        {
+          "title": "Event Sponsorship",
+          "description": "Sponsor individual events — youth summits, retreats, conferences. Includes branded materials and on-site presence."
+        },
+        {
+          "title": "Digital Co-Branding",
+          "description": "Your brand featured in our digital content, email newsletters, and social channels — reaching a devout, engaged Catholic audience."
+        },
+        {
+          "title": "Resource Sponsorship",
+          "description": "Fund and co-brand a specific educational resource: lesson plans, videos, or digital tools distributed to parishes nationwide."
+        },
+        {
+          "title": "Matching Gift Program",
+          "description": "Amplify individual donations by matching gifts from your employees or customers during a campaign period."
+        },
+        {
+          "title": "Custom Partnership",
+          "description": "We welcome creative partnership proposals tailored to your company's CSR goals and employee values."
+        }
+      ],
+      "ctaTitle": "Ready to Explore a Partnership?",
+      "ctaBody": "Our corporate partnership team will create a customized proposal aligned with your organization's goals and values.",
+      "cta": "Get in Touch →"
+    },
+    "finalCta": {
+      "quote": "You only have to be good in this short time of earthly life, and you will be happy forever.",
+      "cite": "St. Carlo Acutis",
+      "cta": "Make a Gift Today →"
+    },
+    "wall": {
+      "eyebrow": "Our Community",
+      "title": "Thank You, Donors",
+      "body": "Every gift — large or small — helps carry Carlo's mission forward. We are grateful for each one."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About",
+      "description": "Learn about Friends of Carlo — our story, board of directors, and governance."
+    },
+    "board": {
+      "eyebrow": "Governance",
+      "title": "Board of Directors",
+      "josefina": {
+        "role": "Founder",
+        "bio": [
+          "Josefina Fernandez McEvoy founded Friends of St. Carlo Acutis, Inc. (\"Friends of Carlo\") in early 2025, after nearly two years of prayerful discernment and due diligence to better understand St. Carlo's calling. Along the way, she consulted with several spiritual and technical mentors who helped crystallize her vision for Friends of Carlo. Through this journey, she came to understand St. Carlo's calling as an invitation to help carry forward his legacy by inspiring young people through his example of faith, technology, and service. In particular, Friends of Carlo seeks to foster young people's screen-based friendship with Jesus by listening to their hopes, challenges, and experiences, and helping them encounter Him online through practical guidance, accompaniment, and meaningful digital engagement.",
+          "Josefina has been VIRTUS-certified in accordance with the Archdiocese of Los Angeles SAFE Environment policies for 17 years.",
+          "For more than a decade, Josefina has served in various volunteer ministries at St. Monica Catholic Community (SMCC), helping children and adults deepen their relationship with Jesus and grow in faith. As a volunteer catechist in SMCC's Religious Education/Faith Formation Ministry for 13 years, she accompanied children in coming to know Jesus more intimately. She also served on SMCC's Adult Faith Formation/Education Council, where she helped reorganize the parish's Faith Formation Ministries and launch initiatives aligned with its Strategic Vision Plan 2020, including seasonal small faith-sharing groups, speaker series, and Voices of Faith.",
+          "Josefina completed the eight-month 2023-2024 Ignatian Spiritual Exercises in Everyday Life Retreat at the St. Monica Spirituality Center and currently serves as a volunteer lector in SMCC's Liturgy Ministry."
+        ]
+      },
+      "matthew": {
+        "role": "Spiritual Director",
+        "bio": [
+          "\"Your eyes beheld my unformed body. In your book was written all the days that were ordained for me, when none of them as yet existed.\" (Ps. 139:16) God knew us even before we were born. No one comes into this world by mistake or mishap, and no life is a fluke of nature. Rather, God creates each person with a purpose in mind.",
+          "I was born in Nanvilli, in what was then Ghana's Upper Region, into a family of six children. It was no accident that my parents, despite having no formal education, accepted Christianity when the Missionaries of Africa arrived in our area. Nor was it by chance that my father insisted all his children receive an education, despite cultural resistance at the time.",
+          "From an early age, I felt called to the priesthood, inspired by the missionaries who celebrated Mass in our village. After completing my Advanced Level certificate, I was offered the rare opportunity to complete my National Service at an insurance company many would have given anything to join. This slowed my path toward the seminary, particularly when I received a study leave with pay to pursue an accounting degree at Ghana's most prestigious university, with the promise of returning to a managerial position. Although this path held great promise, it could not quiet the deeper call God had placed in my heart. In September 1985, I entered St. Victor's Major Seminary.",
+          "Ordained to the priesthood in 1992, I began ministry in newly established and resource-poor parishes, first at St. Cecilia's Parish. I later served as a chaplain and teacher at a boys' secondary school.",
+          "My journey eventually brought me to California, where I resided at St. Monica Catholic Community and earned a Master's degree in School Administration before returning to Ghana to serve as a Catholic school principal. Today, I serve as Cathedral Administrator of the Roman Catholic Diocese of Wa in the Metropolitan Ecclesiastic Province of Tamale in Ghana, under the leadership of the Most Rev. Francis Bomansaan, M.Afr., Bishop of Wa, Ghana. I remain deeply grateful for every step along the path God prepared for me long before I took my first breath."
+        ]
+      },
+      "carmen": {
+        "role": "Board Member",
+        "bio": [
+          "Carmen Romero is a board member of Friends of St. Carlo, bringing a multidisciplinary background in technology, business strategy, and community engagement. She holds an MBA from Rome City Institute, where she graduated top of her class and was recognized as Master's Student of the Year. Carmen also holds a Bachelor's in Computer Science from Seattle University and a Game Design Certification from the University of Washington.",
+          "She supports the foundation's mission through strategic planning and program development, with a commitment to honor Carlo's legacy. Carmen is dedicated to advancing socially responsible innovation and strengthening educational initiatives that empower young people. In her personal time, she's an avid reader, a proud Sims 4 addict, and happiest when she's near the water."
+        ]
+      },
+      "sebastian": {
+        "role": "Technology Director",
+        "bio": [
+          "Sebastian Rocha serves as Technology Director for Friends of St. Carlo Acutis. He earned a bachelor's degree in Computer Science from Loyola Marymount University, with a minor in Statistics and Data Science. His experience spans information technology, product management, and web development, including building accessible digital experiences and using technology to connect organizations with the communities they serve.",
+          "Sebastian is especially inspired by St. Carlo Acutis, a self-taught developer who used his technical gifts to share the Catholic faith with others. Through Friends of Carlo, Sebastian hopes to help young people encounter Jesus through digital spaces that feel welcoming, meaningful, and sincere. He believes technology is at its best when it helps even one person feel closer to God."
+        ]
+      },
+      "johnny": {
+        "role": "Creative Director",
+        "bio": [
+          "Johnny Vrba is an artist, author, and missionary from the greater Chicagoland area. He served as a college campus missionary from 2022 to 2024 at the University of St. Thomas in Saint Paul, Minnesota. He is the author of Seas the Day: The True Story of Fear, Friendship, and Faith While Stranded at Sea During Covid-19.",
+          "His latest mission is to be a catalyst for a new renaissance within the Catholic Church by inspiring the next generation of young artists through storytelling and deeply meaningful multimedia art. During working hours, Johnny helps curate content that amplifies light as a Business Affairs and Acquisitions Administrator at Angel Studios."
+        ]
+      },
+      "john": {
+        "role": "Board Secretary & Treasurer",
+        "bio": [
+          "John McEvoy is a dedicated Construction Safety Director whose vocation has always centered on protecting people, strengthening communities, and building environments where others can thrive. With years of experience guiding teams, supporting large-scale initiatives, and safeguarding the well-being of those entrusted to his care, John brings a steady, service-driven presence to every role he undertakes.",
+          "His commitment to Friends of St. Carlo Acutis is rooted in a deep desire to help others encounter faith in a way that is accessible, modern, and meaningful.",
+          "Inspired by St. Carlo's example — living holiness through everyday life, technology, and joyful simplicity — John serves to advance the mission of spreading St. Carlo's message of hope and love.",
+          "For John, this work is more than volunteerism; it is a calling. He believes in creating safe, welcoming spaces where young people can grow spiritually, connect with one another, and discover the beauty of a faith that is lived authentically."
+        ]
+      }
+    },
+    "governance": {
+      "eyebrow": "Governance",
+      "title": "Transparency You Can Trust",
+      "body": "We operate with the highest standards of nonprofit governance and financial transparency. Our donors deserve to know that every dollar is being used to advance the mission.",
+      "stat1": "Companies trust our governance model",
+      "stat2": "Years of transparent operations",
+      "stat3": "Dedicated board members",
+      "stat4": "Administrative overhead rate",
+      "stat5": "Annual report availability",
+      "stat6": "Independent charity rating",
+      "oversightTitle": "Board Oversight",
+      "oversightBody": "Our Board of Directors is responsible for setting the mission and strategic direction of Friends of Carlo and for overseeing its finances, operations, and policies as set forth in the Articles of Incorporation, and the Bylaws. The Board of Directors regularly reviews the operations and policies of the organization to ensure that they comply with all legal requirements and reflect the best practices in the field.",
+      "bylawsTitle": "Our Bylaws",
+      "bylawsBody": "The Friends of Carlo Bylaws are the internal operating rules set by the Board of Directors to ensure the organization is structured and operated exclusively for charitable, religious, educational, and scientific purposes within the meaning of Section 501(c)(3) of the Internal Revenue Code and in compliance with California laws governing public benefit corporations."
+    },
+    "hero": {
+      "titleWords": [
+        "About",
+        "Us"
+      ],
+      "whoWeAre": "Who We Are",
+      "tagline1": "We want to make faith as accessible as possible so that young people around the world can encounter Christ through the digital tools they already use every day.",
+      "tagline2": "No matter the background, every young Catholic should be equipped to carry the Gospel forward with creativity, courage, and conviction — following the example of St. Carlo Acutis.",
+      "rootedIn": [
+        "Rooted In",
+        "Faith",
+        "Hope",
+        "Love"
+      ],
+      "contactUs": "Contact Us",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "typography": {
+      "headline": "Our work is guided by a simple conviction: Carlo's story is not just one to remember, but one to live. By building a community rooted in faith, hope, and service, we hope to inspire others to use their own gifts to make Christ known in the world today.",
+      "paragraph": "We bring together families, young adults, educators, clergy, and communities who are inspired by Carlo's witness. Through collaboration, events, educational initiatives, and digital experiences, we seek to create opportunities for people to encounter Christ and grow in their faith in meaningful and lasting ways.",
+      "closing": [
+        "We believe the Church",
+        "is not behind the times.",
+        "She simply needs saints",
+        "— like Carlo —",
+        "to show the way."
+      ]
+    },
+    "gallery": {
+      "title": "Moments of the Mission",
+      "headline": [
+        "Born from a Conviction",
+        "That Faith and Technology",
+        "Belong Together"
+      ],
+      "missionLabel": "Mission",
+      "missionText": "To inspire a new generation of Catholics to use technology, creativity, and digital media as instruments of evangelization, following the example of St. Carlo Acutis.",
+      "visionLabel": "Vision",
+      "visionText": "A world where young Catholics see their gifts — including technological ones — as vocations in service to the Gospel."
+    }
+  },
+  "miracles": {
+    "meta": {
+      "title": "Eucharistic Miracles",
+      "description": "Explore the 136 Eucharistic miracles documented by Carlo Acutis — physical signs of the Real Presence of Christ in the Eucharist."
+    },
+    "intro": {
+      "title": "What Are Eucharistic Miracles?",
+      "p1": "A Eucharistic miracle is an extraordinary, scientifically unexplained phenomenon connected to the Eucharist — most often the visible transformation of a consecrated Host into human tissue or the appearance of blood, verified by medical scientists around the world.",
+      "p2": "Carlo Acutis spent years researching, cataloguing, and presenting 136 of these miracles in a travelling digital exhibition. His work brought the evidence for the Real Presence of Christ to millions of people who had never heard these stories.",
+      "quote": "“The Eucharistic miracles are the greatest miracles that Jesus has given us.”",
+      "quoteBy": "St. Carlo Acutis",
+      "photoAlt": "Carlo Acutis"
+    },
+    "map": {
+      "titleGold": "Miracles ",
+      "titleNavy": "Across the World",
+      "introA": "Carlo personally researched and catalogued ",
+      "introB": "136 miracles",
+      "introC": " in his original travelling exhibition. This site documents ",
+      "introD": "188",
+      "introE": " — Carlo's 136 plus 52 additional miracles drawn from diocesan records, hagiographic sources, and Catholic reference archives, all cited individually on each card.",
+      "countryCount": "{count, plural, one {# country} other {# countries}}",
+      "miracleCount": "{total} miracles",
+      "statDocumented": "Documented miracles",
+      "statDocumentedSub": "spanning 6 continents",
+      "statYears": "Years of history",
+      "statYearsSub": "earliest from 500 AD",
+      "statCountries": "Countries",
+      "statCountriesSub": "represented in the exhibition",
+      "statVisitors": "Visitors worldwide",
+      "statVisitorsSub": "since the exhibition launched",
+      "sources": "Sources",
+      "primary": "Primary",
+      "sourceList": [
+        {
+          "label": "Carlo Acutis Exhibition",
+          "detail": "Primary source. The official miracolieucaristici.org website hosts individual PDF panels for each of Carlo's 136 documented miracles — linked directly on each card where available."
+        },
+        {
+          "label": "Wikipedia",
+          "detail": "Used for the most widely documented miracles where peer-reviewed encyclopaedic articles exist — including Lanciano, Bolsena, Sokółka, Legnica, Tixtla, Akita, Knock, Wilsnack, and the Holy Chalice of Valencia."
+        },
+        {
+          "label": "EWTN Catholic Library",
+          "detail": "Theological library of Eternal Word Television Network. Used for the Buenos Aires 1996 miracle, approved by then-Archbishop Jorge Bergoglio."
+        },
+        {
+          "label": "Perpetual Eucharistic Adoration",
+          "detail": "Catholic apostolate that documents Eucharistic phenomena worldwide. Referenced for Betania (Venezuela, 1991) and Saint-André (Réunion, 1902)."
+        }
+      ],
+      "continents": {
+        "Europe": "Europe",
+        "Americas": "Americas",
+        "Asia": "Asia",
+        "Middle East": "Middle East",
+        "Africa": "Africa",
+        "Oceania": "Oceania",
+        "Other": "Other"
+      }
+    },
+    "countries": {
+      "Italy": "Italy",
+      "Germany": "Germany",
+      "France": "France",
+      "Poland": "Poland",
+      "Spain": "Spain",
+      "Belgium": "Belgium",
+      "Austria": "Austria",
+      "Czech Republic": "Czech Republic",
+      "Portugal": "Portugal",
+      "Netherlands": "Netherlands",
+      "Switzerland": "Switzerland",
+      "Hungary": "Hungary",
+      "Croatia": "Croatia",
+      "Lithuania": "Lithuania",
+      "Romania": "Romania",
+      "Ireland": "Ireland",
+      "Malta": "Malta",
+      "Scotland": "Scotland",
+      "Slovakia": "Slovakia",
+      "Serbia": "Serbia",
+      "Bulgaria": "Bulgaria",
+      "Slovenia": "Slovenia",
+      "Luxembourg": "Luxembourg",
+      "Latvia": "Latvia",
+      "Sweden": "Sweden",
+      "Denmark": "Denmark",
+      "Cyprus": "Cyprus",
+      "Ukraine": "Ukraine",
+      "Argentina": "Argentina",
+      "Peru": "Peru",
+      "Mexico": "Mexico",
+      "Chile": "Chile",
+      "Venezuela": "Venezuela",
+      "Canada": "Canada",
+      "United States": "United States",
+      "Colombia": "Colombia",
+      "Ecuador": "Ecuador",
+      "Brazil": "Brazil",
+      "Paraguay": "Paraguay",
+      "Bolivia": "Bolivia",
+      "Uruguay": "Uruguay",
+      "Philippines": "Philippines",
+      "India": "India",
+      "Japan": "Japan",
+      "Indonesia": "Indonesia",
+      "South Korea": "South Korea",
+      "Vietnam": "Vietnam",
+      "Georgia": "Georgia",
+      "Egypt": "Egypt",
+      "Israel": "Israel",
+      "Lebanon": "Lebanon",
+      "Nigeria": "Nigeria",
+      "Uganda": "Uganda",
+      "South Africa": "South Africa",
+      "Kenya": "Kenya",
+      "Ethiopia": "Ethiopia",
+      "Australia": "Australia",
+      "New Zealand": "New Zealand",
+      "Martinique": "Martinique",
+      "Réunion": "Réunion"
+    },
+    "canonized": {
+      "eyebrow": "The Path to Sainthood",
+      "titleLine1": "Canonized Through",
+      "titleLine2": "Miracles",
+      "body": "Throughout history, the Church has carefully investigated miracles as signs of God's presence in the lives of the saints. In the case of Carlo Acutis, two extraordinary healings were examined by medical experts, theologians, and Vatican officials before being officially recognized as miracles.",
+      "journey": "Journey to Sainthood",
+      "timeline": [
+        {
+          "event": "Beatification Miracle",
+          "detail": "Matheus Vianna — Brazil"
+        },
+        {
+          "event": "Carlo Beatified",
+          "detail": "Assisi, Italy"
+        },
+        {
+          "event": "Canonization Miracle",
+          "detail": "Valeria Valverde — Costa Rica"
+        },
+        {
+          "event": "Carlo Canonized Saint",
+          "detail": "April 27, Rome"
+        }
+      ],
+      "closingA": "On April 27, 2025, Carlo Acutis was officially declared",
+      "closingB": "a Saint of the Catholic Church."
+    },
+    "yearAD": "AD",
+    "grid": {
+      "titleAll": "The Complete Exhibition — {count} Miracles",
+      "titleFiltered": "The Complete Exhibition — {count, plural, one {# Miracle} other {# Miracles}} from {country}",
+      "viewAll": "← View all {count} miracles",
+      "countFiltered": "{count, plural, one {# documented miracle} other {# documented miracles}} from {country}. Click any card to read more.",
+      "intro": "Pan or scroll to explore every miracle Carlo documented. Click any card to learn more.",
+      "sources": "Sources",
+      "sourcePanel": "Carlo Acutis Exhibition — individual panel",
+      "sourceExhibition": "Carlo Acutis Eucharistic Miracles Exhibition",
+      "sourceWiki": "Wikipedia",
+      "sourceEwtn": "EWTN — Catholic Library",
+      "sourcePea": "Perpetual Eucharistic Adoration",
+      "sourceMagis": "Magis Center"
+    },
+    "entries": {
+      "1": {
+        "title": "Flesh and Blood of Christ",
+        "description": "A Basilian monk doubting the Real Presence saw the Host transform into visible flesh and the wine into blood. Scientific analysis in the 20th century identified the tissue as human cardiac muscle, blood type AB — unchanged after thirteen centuries."
+      },
+      "2": {
+        "title": "Host Turned to Flesh",
+        "description": "During Mass, a Host that fell to the floor was found to have become a small piece of flesh. The miracle was verified by Bishop Guido and remains documented in the church records of the era."
+      },
+      "3": {
+        "title": "Miraculous Preservation",
+        "description": "A consecrated Host carried to a sick person fell into a muddy road. When retrieved days later, it was found perfectly intact and radiant. The event prompted the construction of a shrine on the site."
+      },
+      "4": {
+        "title": "The Miracle That Moved a Pope",
+        "description": "A doubting German priest celebrating Mass saw blood flow from the Host onto the corporal. Pope Urban IV ordered the corporal brought to him and declared it miraculous, inspiring the feast of Corpus Christi."
+      },
+      "5": {
+        "title": "The Corporal of Bolsena",
+        "description": "The blood-stained corporal from the Bolsena miracle was enshrined in the Cathedral of Orvieto by order of Pope Urban IV. St. Thomas Aquinas composed the Office of Corpus Christi in this city, inspired by the relic."
+      },
+      "6": {
+        "title": "Host Preserved in Fire",
+        "description": "During a fire that destroyed a church, a pyx containing consecrated Hosts was found intact and unburned in the rubble. The Hosts were later examined and found in perfect condition by church authorities."
+      },
+      "7": {
+        "title": "Incorrupt Hosts for Centuries",
+        "description": "Hosts stolen from the Basilica of San Francesco were recovered and placed in a ciborium. When re-examined in 1914 and 1950, they were found perfectly preserved — 220 years old without any sign of corruption."
+      },
+      "8": {
+        "title": "The Mule Kneels Before the Host",
+        "description": "To convince a heretic, St. Anthony of Padua displayed the Eucharist before a starving mule. Though separated from food, the animal knelt before the Host. The heretic converted on the spot."
+      },
+      "9": {
+        "title": "A Procession of Fire",
+        "description": "A cart transporting stolen sacred vessels overturned, and a ciborium flew into the air. The consecrated Hosts appeared to rise and float before the crowd and clergy, coming to rest miraculously."
+      },
+      "10": {
+        "title": "The Host Bleeding in Secret",
+        "description": "A woman obtained a Host to use in folk magic. When she wrapped it in wax, it began to bleed. Terrified, she buried it — but when the site was excavated, the Host was found transformed into bleeding flesh."
+      },
+      "11": {
+        "title": "A Jewish Man Witnesses the Miracle",
+        "description": "A Jewish man observed a Host being desecrated and saw it begin to bleed profusely. So moved, he converted to Christianity immediately. The event was documented and a church was built at the site."
+      },
+      "12": {
+        "title": "Host Used for Magic Turned to Flesh",
+        "description": "A young woman kept a Host rather than consuming it, intending to use it in a charm. When she opened the cloth days later, the Host had transformed into a piece of flesh. The relic is still preserved in Alatri."
+      },
+      "13": {
+        "title": "A Dying Man Receives the Host",
+        "description": "A priest left for a dying farmer without a Host and realized the omission on the road. He opened his breviary and found a Host miraculously present within its pages. The farmer received Communion and died in peace."
+      },
+      "14": {
+        "title": "Host Found in a Beehive",
+        "description": "Stolen sacred vessels were found in the countryside. A ciborium with consecrated Hosts was discovered inside a beehive. The bees had constructed a wax chapel around it, as if guarding the Blessed Sacrament."
+      },
+      "15": {
+        "title": "Eucharistic Blood on the Altar Cloth",
+        "description": "Blood appeared on the altar cloth of a Verona church during a Mass celebrated by a doubting priest. Church authorities examined the stains and found them to be human blood. The cloth remains in diocesan archives."
+      },
+      "16": {
+        "title": "The Host That Would Not Burn",
+        "description": "A fire broke out in a Venetian church, destroying the furnishings and altar. When the ruins were cleared, the tabernacle was found intact. The consecrated Hosts within were completely unharmed."
+      },
+      "17": {
+        "title": "Incorruption in Sardinia",
+        "description": "A pyx left in an abandoned chapel on the island of Sardinia was rediscovered decades later. The consecrated Hosts inside were found perfectly intact and showed no signs of decay despite the humid conditions."
+      },
+      "18": {
+        "title": "A Host Miraculously Preserved",
+        "description": "A Host accidentally dropped behind an altar was rediscovered during a renovation one year later. It was found in perfect condition on an inaccessible ledge. Medical examination confirmed no natural means of preservation."
+      },
+      "19": {
+        "title": "Host Glowing with Light",
+        "description": "A priest and several faithful witnesses reported seeing a consecrated Host emit visible light during Benediction. The phenomenon recurred over several days and was certified by the local bishop."
+      },
+      "20": {
+        "title": "Host Floating on Water",
+        "description": "A pyx containing consecrated Hosts was thrown into the sea by pirates sacking the city. Witnesses saw it float upright on the waves. The ciborium washed ashore intact with the Hosts perfectly preserved."
+      },
+      "21": {
+        "title": "Blood from a Stolen Host",
+        "description": "A Host stolen from a church was wrapped in cloth by a local woman. When she unwrapped it, it was soaked in blood. She returned to the parish in terror and confessed. The blood-stained cloth was kept as a relic."
+      },
+      "22": {
+        "title": "Clare Repels an Invasion",
+        "description": "When Saracen soldiers attacked Assisi and scaled the convent walls, St. Clare carried the monstrance with the Blessed Sacrament to the breach. The soldiers stopped, appeared blinded, and fled — recorded in her canonization process."
+      },
+      "23": {
+        "title": "A Priest Healed by the Host",
+        "description": "A dying priest received Viaticum and immediately rose from his deathbed. Physicians who examined him could find no medical explanation for his sudden and complete recovery."
+      },
+      "24": {
+        "title": "Host Found Intact After Flooding",
+        "description": "Flooding in Rome submerged a church for several weeks. When the waters receded, the tabernacle was opened and found to contain perfectly preserved Hosts with no trace of moisture damage. Documented by Pope Paul V."
+      },
+      "25": {
+        "title": "A Soldier Stabs the Host",
+        "description": "A soldier struck a stolen Host with a knife and it immediately began to bleed. Terrified, he confessed to the priest and returned the Host. The blood stains were certified by church authorities; the cloth is still preserved."
+      },
+      "26": {
+        "title": "Host Incorrupt Through Fire",
+        "description": "During a fire that destroyed the sacristy of a Milanese church, the tabernacle was recovered from the ruins with the Hosts found perfectly intact. The miracle was later certified by St. Charles Borromeo."
+      },
+      "27": {
+        "title": "A Luminous Host at Night",
+        "description": "Fishermen on the Adriatic coast reported seeing a light hovering over the sea. When they investigated, they found it emanating from a pyx containing consecrated Hosts floating on the water. The ciborium and Hosts were recovered intact."
+      },
+      "28": {
+        "title": "The Host That Returned",
+        "description": "A consecrated Host stolen from a church and thrown into a well was later found inside the church tabernacle, as if it had returned on its own. The tabernacle was found locked and undisturbed by the parish priest and witnesses."
+      },
+      "29": {
+        "title": "Blood Spread Across the Corporal",
+        "description": "A priest accidentally spilled the precious Blood during Mass, and it spread across the corporal in the form of eleven faces — interpreted as Christ and the souls in purgatory. The corporal, confirmed by local bishops, draws pilgrims to this day."
+      },
+      "30": {
+        "title": "Host Bleeding After Desecration",
+        "description": "A consecrated Host that was stabbed by a thief began to bleed. The blood spread onto the cloth in which it was wrapped and could not be removed despite washing. The miracle was documented by the Bishop of Regensburg."
+      },
+      "31": {
+        "title": "Glowing Host in a Field",
+        "description": "Peasants reported seeing a glowing light in a field. Investigating, they found a consecrated Host lying on the ground, unharmed and surrounded by light. A chapel was constructed on the site and became a pilgrimage destination."
+      },
+      "32": {
+        "title": "Hosts Preserved for Thirty Years",
+        "description": "A pyx of consecrated Hosts was sealed in the wall of a church for safe-keeping during unrest and forgotten. Thirty years later, during renovations, it was recovered — the Hosts found fresh and uncorrupted. Bishop Udalschalk certified the miracle."
+      },
+      "33": {
+        "title": "The Precious Blood of Weingarten",
+        "description": "A relic of the Blood of Christ, said to have been brought from Jerusalem during the Crusades, was enshrined at the Benedictine Abbey of Weingarten. Numerous healings connected with the relic are documented in the abbey's chronicles."
+      },
+      "34": {
+        "title": "A Host Carried by Angels",
+        "description": "During a period of desecration of churches, a consecrated Host was seen floating through the air in a church, carried by luminous figures. The event was reported to the Archbishop of Cologne and entered into diocesan records."
+      },
+      "35": {
+        "title": "Host Found in a Garden",
+        "description": "A stolen ciborium was recovered buried in a garden, the Hosts found incorrupt despite being buried for an extended period. Bishop Volrad of Erfurt investigated and authenticated the miracle, and a church was built on the site."
+      },
+      "36": {
+        "title": "An Arrogant Knight Humbled",
+        "description": "A knight demanded the large Host reserved for priests. When the priest complied under duress, the Host began to bleed. The knight sank into the stone floor up to his knees before crying out for mercy. The stone impression is still visible today."
+      },
+      "37": {
+        "title": "A Stolen Host Bleeds",
+        "description": "A moneylender demanded a Christian woman bring him a Host in exchange for cancelling her debt. When he pierced it with a knife, it bled profusely. He tried to burn and boil it but it remained intact and bleeding until he converted."
+      },
+      "38": {
+        "title": "Hosts Intact After Flooding",
+        "description": "Flooding of the Rhône submerged the church of the Celestines for many weeks. When the waters receded, the Hosts in the tabernacle were found perfectly dry and uncorrupted. Pope Eugene IV was informed and documented the event."
+      },
+      "39": {
+        "title": "A Stolen Host Found in a Hive",
+        "description": "A Host stolen from a Dijon church was found by beekeepers inside their hive, surrounded by an elaborate wax construction. The Host was recovered and found intact — paralleling the similar miracle at Macerata, Italy."
+      },
+      "40": {
+        "title": "Miraculous Cure at the Altar",
+        "description": "A crippled woman brought forward to receive Communion reported that after receiving the Host, she felt a surge of warmth and was able to stand and walk without assistance. The cure was investigated and certified by the Bishop of Bordeaux."
+      },
+      "41": {
+        "title": "Blood on the Corporal of Marseille",
+        "description": "During Mass, blood appeared on the corporal beneath the chalice without any visible cause. Multiple priests and witnesses verified the stain, which spread despite attempts to remove it. The corporal is preserved in the diocesan archives."
+      },
+      "42": {
+        "title": "Heart Tissue in a Parish Church",
+        "description": "A Host placed in water to dissolve developed red tissue within weeks. Polish histopathologists confirmed myocardial tissue in a state of mortal distress — consistent with a dying heart. The Archbishop of Białystok formally recognized it in 2012."
+      },
+      "43": {
+        "title": "Myocardial Tissue in a Modern Miracle",
+        "description": "A Host placed in water developed reddish tissue. Medical examination confirmed myocardial heart muscle tissue of a living human undergoing extreme stress. Bishop Stefan Cichy recognized the event in 2016."
+      },
+      "44": {
+        "title": "Hosts Stabbed and Thrown in a Swamp",
+        "description": "Three consecrated Hosts were stolen and repeatedly stabbed with knives, from which blood flowed. Thrown into a swamp, they were found glowing. A church was built on the site and the bloodied cloths are preserved in its archives."
+      },
+      "45": {
+        "title": "A Host Found Untouched in Mud",
+        "description": "A stolen ciborium was thrown into a muddy pond near Kraków. Local people were led to recover it when a luminous glow appeared above the water. The Hosts within were found clean and unharmed. King Casimir the Great built a church on the site."
+      },
+      "46": {
+        "title": "Hosts Miraculously Preserved",
+        "description": "A ciborium of Hosts stolen from a church was abandoned in a box for months. When authorities investigated, the Hosts were found perfectly uncorrupted. The Archbishop of Toledo verified the miracle and the Hosts were carried in procession."
+      },
+      "47": {
+        "title": "Six Hosts Preserved Through Battle",
+        "description": "During a battle against the Moors, six consecrated Hosts were hidden in a cloth for safe-keeping. When recovered, the cloth was stained with blood and the Hosts had become flesh. A mule carrying the relics stopped and would not move; a church was built there."
+      },
+      "48": {
+        "title": "A Host Falls and Is Transformed",
+        "description": "A Host fell from the hands of a priest during Mass and was found on the floor surrounded by blood. Multiple witnesses verified the phenomenon, and the bishop opened a formal investigation. The blood-stained corporal is preserved in the parish."
+      },
+      "49": {
+        "title": "The Shrine and the Eucharist",
+        "description": "At the famous shrine of Our Lady of Guadalupe in Extremadura, a priest reported a Host in a ciborium had transformed. Church authorities investigated and documented the testimony of multiple witnesses, reinforcing the shrine's Eucharistic significance."
+      },
+      "50": {
+        "title": "The Stolen Host Bleeds",
+        "description": "A woman stole a Host at the request of a sorceress and wrapped it in her veil. It immediately began to bleed. Terrified, she carried it home where lights surrounded it all night. She confessed to the priest and the Host was recovered, still bleeding."
+      },
+      "51": {
+        "title": "Host Found Incorrupt After Years",
+        "description": "During a church renovation, a sealed tabernacle undiscovered for several years was opened. The consecrated Hosts inside were found in perfect condition. The Bishop of Viseu investigated and certified the miracle, and the Hosts were enshrined as relics."
+      },
+      "52": {
+        "title": "A Host Survives Fire Twice",
+        "description": "A dying man vomited a Host he had received. It was placed in fire to be destroyed respectfully, but would not burn. When a woman retrieved it and kept it, the same phenomenon repeated. A chapel was built and the Bishop of Utrecht certified the miracle."
+      },
+      "53": {
+        "title": "Host Found in a Bird's Nest",
+        "description": "A stolen Host was sought for days. A shepherd saw birds gathering around a tree in unusual numbers. When he climbed it, he found a bird's nest containing the Host, perfectly preserved. The parish priest reported the miracle to the bishop."
+      },
+      "54": {
+        "title": "Cardiac Tissue, Confirmed by Science",
+        "description": "A discarded Host placed in water began visibly transforming into reddish tissue. Scientific analysis confirmed living human cardiac myocardium in a state of stress. Approved by then-Archbishop Jorge Bergoglio, later Pope Francis."
+      },
+      "55": {
+        "title": "Host in a Chalice of Water",
+        "description": "A Host placed in a vessel of water after falling during distribution was found days later transformed into a reddish substance. Preliminary scientific analysis indicated biological material of human origin. The investigation was overseen by the local bishop."
+      },
+      "56": {
+        "title": "A Host Preserved Through Flooding",
+        "description": "After a church in Rosario was severely flooded, all contents were destroyed. The tabernacle was found intact and the Hosts within were dry and perfectly preserved despite the building having been under water for days."
+      },
+      "57": {
+        "title": "Living Cardiac Tissue",
+        "description": "During a parish retreat Mass, a Host began emitting a reddish substance from within. Tests confirmed human blood type AB and myocardial tissue in a living state — the same year Carlo Acutis, who later catalogued this miracle, died at age fifteen."
+      },
+      "58": {
+        "title": "Hosts Preserved After Earthquake",
+        "description": "A violent earthquake damaged a church in Mexico City and the tabernacle fell to the ground. When it was recovered, the consecrated Hosts within were found intact and uncorrupted. Witnesses and the local bishop testified to the miracle."
+      },
+      "59": {
+        "title": "A Host Preserved in a Locket",
+        "description": "Elizabeth Ann Seton, later canonized as the first native-born American saint, reported that a Host kept in a locket when separated from a priest remained fresh and intact over an extended period. The event was included in her beatification process."
+      },
+      "60": {
+        "title": "A Host Transforms into Flesh",
+        "description": "In the diocese of Trivandrum, a Host placed in water after falling during Communion developed into a reddish organic substance. The bishop opened a formal inquiry and the material was sent for scientific examination."
+      },
+      "61": {
+        "title": "Blood Appears on the Corporal",
+        "description": "During Mass in a Kerala parish, reddish stains appeared on the corporal beneath the chalice. Multiple priests and laity witnessed the phenomenon. The Archbishop of Ernakulam-Angamaly ordered an investigation; the material was confirmed as human blood."
+      },
+      "62": {
+        "title": "Host Preserved During the Independence Wars",
+        "description": "During the Wars of Independence, a church in Bogotá was ransacked and sacred vessels overturned. When the soldiers left, the priest found that the consecrated Hosts had rolled to a corner but were perfectly preserved and undefiled."
+      },
+      "63": {
+        "title": "The Host That Would Not Burn",
+        "description": "During a church fire in Guayaquil, the tabernacle was consumed by flames along with the entire altar. When the ruins were sifted, the ciborium was found intact and the Hosts within were untouched by fire. The Bishop of Guayaquil certified the event."
+      },
+      "64": {
+        "title": "Eucharistic Tissue Under Microscope",
+        "description": "A Host placed in water by a sacristan after a distribution accident was found to have partially transformed into reddish tissue. The Archbishop of São Paulo ordered scientific analysis, which confirmed biological material of human origin."
+      },
+      "65": {
+        "title": "The Holy Blood of Bruges",
+        "description": "A relic of the Blood of Christ, said to have been brought back from the Holy Land during the Crusades, was enshrined in the Basilica of the Holy Blood. The relic reportedly liquefied repeatedly and is still venerated in the basilica each Friday."
+      },
+      "66": {
+        "title": "Hosts Stabbed by Thieves Bleed",
+        "description": "Thieves who stole consecrated Hosts from a Louvain church stabbed them with knives and blood flowed from each. Terrified, they abandoned them. The Hosts were recovered and blood stains examined. The miracle prompted a major pilgrimage."
+      },
+      "67": {
+        "title": "Origin of the Corpus Christi Feast",
+        "description": "St. Juliana of Liège received a vision of the moon with a dark spot, interpreted as the missing feast of the Eucharist in the Church's calendar. Her persistent advocacy led to the feast of Corpus Christi being established by Pope Urban IV."
+      },
+      "68": {
+        "title": "A Host Found in a Well",
+        "description": "A Host stolen from a church in Ghent was thrown into a well. Days later, it was found floating on the surface, glowing, with no sign of dissolution. The Bishop of Ghent certified the miracle and a chapel was erected at the well."
+      },
+      "69": {
+        "title": "A Child Carries the Host Home",
+        "description": "A young child secretly kept a Host received at First Communion. When the family opened the pouch, they found it shining with light and perfectly preserved on a bed of fresh flowers. The parish priest was called to retrieve it."
+      },
+      "70": {
+        "title": "An Arrogant Nobleman Sinks",
+        "description": "Count Oswald demanded the large Host reserved for priests. As the priest placed it on his tongue under duress, the count began sinking into the stone floor. He grabbed the altar in terror and begged forgiveness. The handprints are preserved."
+      },
+      "71": {
+        "title": "A Soldier Repents at the Sight of Blood",
+        "description": "A soldier who profaned a Host during an attack on a Viennese church saw it begin to bleed. So overcome was he that he immediately sought a priest, confessed, performed severe penance, and later entered religious life."
+      },
+      "72": {
+        "title": "Hosts Unharmed in Church Fire",
+        "description": "A devastating fire destroyed the church of St. Peter in Salzburg. When the archbishop examined the ruins, the tabernacle was recovered intact. The Hosts inside were found perfectly white and dry, untouched by the flames."
+      },
+      "73": {
+        "title": "A Host Bleeds Before a King",
+        "description": "Emperor Charles IV was present when a Host in the Cathedral of St. Vitus began to exude blood. The emperor knelt and clergy witnesses recorded their accounts. Charles IV ordered a special chapel constructed in honor of the miracle."
+      },
+      "74": {
+        "title": "Hosts Survive a Hussite Raid",
+        "description": "During raids by Hussite forces who rejected Transubstantiation, the church of St. James in Brno was attacked and the altar overturned. The consecrated Hosts were found intact among the rubble, untouched despite having been scattered."
+      },
+      "75": {
+        "title": "A Bishop Witnesses Transformation",
+        "description": "Bishop Bruno of Olomouc was celebrating Mass when he and the congregation observed the Host become visibly flesh. He halted the Mass, called the cathedral canons as witnesses, and sent a formal document to Rome recording the event."
+      },
+      "76": {
+        "title": "Blood Flows from a Desecrated Host",
+        "description": "A stolen Host was desecrated by a group of men. Blood flowed from it in such quantity that the men fled in terror. A woman found it in the street and brought it to the priest, who reported the blood to the Bishop of Basel."
+      },
+      "77": {
+        "title": "Host Preserved in a Lake",
+        "description": "A priest fleeing persecution threw a pyx containing Hosts into Lake Geneva to prevent desecration. When recovered years later, the pyx was found intact and the Hosts within perfectly preserved. The Bishop of Geneva documented the event."
+      },
+      "78": {
+        "title": "A Host Found in the Danube",
+        "description": "During an attack on a church near Budapest, sacred vessels were thrown into the Danube. Fishermen found the ciborium floating on the surface with the Hosts intact. The Archbishop of Esztergom conducted a formal investigation."
+      },
+      "79": {
+        "title": "Hosts Preserved During Siege",
+        "description": "During the famous siege of Eger Castle by Ottoman forces, a church in the city was later desecrated by soldiers. The consecrated Hosts in the tabernacle were found intact and untouched. The event was recorded by survivors of the siege."
+      },
+      "80": {
+        "title": "Wine Transforms into Blood",
+        "description": "A priest celebrating Mass became aware that the wine in the chalice had visibly transformed into blood. Pope Leo X and Pope Alexander VI granted formal approval after investigation. The relic is preserved at the Franciscan church in Ludbreg."
+      },
+      "81": {
+        "title": "Host Intact After Earthquake",
+        "description": "The great earthquake of 1730 that struck the Dubrovnik region destroyed many buildings including several churches. In one parish, the tabernacle survived intact and the Hosts within were found perfectly preserved."
+      },
+      "82": {
+        "title": "An Apparition of the Madonna and Child",
+        "description": "In a field outside Šiluva, the Virgin Mary appeared to a group of children weeping over the destruction of a Catholic church, holding the infant Jesus. A blind elder was miraculously healed. The site became one of the greatest Eucharistic shrines in Eastern Europe."
+      },
+      "83": {
+        "title": "Host Discovered After a Century",
+        "description": "During renovations of the Church of St. Anne in Vilnius, a sealed recess was discovered containing a pyx with consecrated Hosts. Historical documents revealed it had been hidden in 1530 to protect it from iconoclasts — over a century earlier. The Hosts were found intact."
+      },
+      "84": {
+        "title": "A Radiant Host Seen by Hundreds",
+        "description": "During a public Corpus Christi procession in Bratislava, the Host in the monstrance was reported by hundreds of witnesses to emit visible rays of light for several minutes. The Archbishop of Esztergom documented the event."
+      },
+      "85": {
+        "title": "Hosts Intact After Church Destruction",
+        "description": "When a Catholic church in Cluj-Napoca was seized and vandalized during religious persecution, the sacred vessels were overturned and scattered. When Catholics returned, the consecrated Hosts were found grouped together, perfectly intact."
+      },
+      "86": {
+        "title": "A Priest Receives Viaticum in Prison",
+        "description": "A Catholic priest imprisoned for his faith in Iași reported receiving Communion miraculously while in solitary confinement with no priestly access. He was found the next morning with evident signs of having received the sacrament."
+      },
+      "87": {
+        "title": "A Host Preserved During Conflict",
+        "description": "During a period of conflict in the region, a church in Belgrade was ransacked. The tabernacle was overturned, but the consecrated Hosts remained grouped in the center of the stone floor, untouched. A local bishop certified the miracle."
+      },
+      "88": {
+        "title": "An Ancient Host Preserved in Stone",
+        "description": "In the Church of St. Sofia, one of the oldest continuously used Christian churches in the world, a fragment of an ancient Eucharistic celebration was found preserved within a sealed stone recess during restoration work, dated to the 9th century."
+      },
+      "89": {
+        "title": "A Host Found After a Long Search",
+        "description": "A Host stolen from a Ljubljana church was sought for months. A poor woman led by a vision found the ciborium buried near the city, its Hosts still intact. The Bishop of Ljubljana opened a canonical inquiry and certified the miracle."
+      },
+      "90": {
+        "title": "A Host Transforms During Adoration",
+        "description": "During Eucharistic Adoration in a Cebu parish, the Host in the monstrance appeared to shift from white to a reddish tint visible to all present. Multiple witnesses and the parish priest testified to the phenomenon, which lasted several minutes."
+      },
+      "91": {
+        "title": "Hosts Untouched by Fire",
+        "description": "A fire destroyed the wooden church of San Agustín in Manila. The stone walls survived and within the ruins, the tabernacle was found intact. The Hosts within were perfectly preserved. The Augustinian friars documented the event in their chronicles."
+      },
+      "92": {
+        "title": "A Host Found in the Jungle",
+        "description": "A ciborium stolen from the parish of Antipolo was found abandoned in the jungle by indigenous people. The Hosts within were intact. The miraculous preservation was attributed to the intercession of Our Lady of Peace and Good Voyage, patroness of Antipolo."
+      },
+      "93": {
+        "title": "A Dying Woman Revived",
+        "description": "A woman near death in a hospital in Naga City received Viaticum. Immediately after receiving the Host, she reported a complete cessation of pain and, within days, a full recovery that the attending physicians could not medically explain."
+      },
+      "94": {
+        "title": "Sister Agnes and the Weeping Statue",
+        "description": "Sr. Agnes Katsuko Sasagawa received the stigmata and messages during Adoration. A wooden statue of the Virgin Mary in the convent chapel began weeping tears and blood, examined by medical experts including a Buddhist physician who confirmed them real."
+      },
+      "95": {
+        "title": "A Church Survives the Bomb",
+        "description": "When the atomic bomb fell on Nagasaki, Franciscan friars reported that the Blessed Sacrament was found intact in the ruins of their chapel. A tabernacle from a partially destroyed church near the hypocenter survived the blast."
+      },
+      "96": {
+        "title": "Blood on the Host in Seoul",
+        "description": "During a Mass celebrated in a Seoul parish, the priest and servers observed blood appearing on a Host. The local bishop opened a canonical inquiry and the Host was sent for scientific examination. Results confirmed human blood."
+      },
+      "97": {
+        "title": "Blood on the Host at Betania",
+        "description": "In the community of Betania, already famous for approved Marian apparitions, a Host during Mass was seen to emit blood. The local bishop, who had approved the apparitions in 1987, investigated the Eucharistic phenomenon and accepted its miraculous character."
+      },
+      "98": {
+        "title": "A Priest Healed After Mass",
+        "description": "A priest in Caracas suffering from a terminal illness reported being completely healed in the days following a particularly fervent celebration of Mass. His physicians documented the complete and sudden disappearance of his illness with no medical explanation."
+      },
+      "99": {
+        "title": "Hosts Preserved After Earthquake",
+        "description": "During an earthquake that destroyed much of Lima, the church of Santo Domingo suffered severe damage. The tabernacle in the ruins was found with its Hosts intact. The event was reported to the Archbishop and entered into the archdiocesan chronicles."
+      },
+      "100": {
+        "title": "A Host Found in the Sacred Valley",
+        "description": "A stolen Host that a convert had kept for use in a pre-Christian ritual was recovered after confession. The Host was found intact in the location where it had been kept for weeks. The Bishop of Cusco documented the event and constructed a chapel."
+      },
+      "101": {
+        "title": "A Healing During Benediction",
+        "description": "A woman who had been paralyzed for years was brought to a church during Benediction. As the priest raised the monstrance, witnesses saw her stand from her wheelchair and walk. Physicians certified the cure as medically inexplicable."
+      },
+      "102": {
+        "title": "A Host Transforms in Santiago",
+        "description": "A sacristan in a Santiago parish found that a Host left in water after a Mass accident had developed into a reddish substance. The Archbishop ordered an examination; scientific results showed biological material consistent with cardiac tissue, blood type AB."
+      },
+      "103": {
+        "title": "A Sailor Cured at Sea",
+        "description": "A dying sailor aboard a ship near Valparaíso received Viaticum from the ship's chaplain and reported immediate recovery, returning to full health. Upon reaching port, the chaplain reported the event to the Bishop of Valparaíso, who opened an investigation."
+      },
+      "104": {
+        "title": "A Host Intact After Church Burning",
+        "description": "During anti-clerical violence in Paraguay, a church in Asunción was set on fire. When the building was destroyed, rescuers found the tabernacle intact in the ruins, and the Hosts within unharmed. The Archbishop documented the event."
+      },
+      "105": {
+        "title": "Eucharistic Miracle During Independence",
+        "description": "During Bolivia's independence movement, a church in La Paz was stormed by soldiers. The priest fled, leaving the Blessed Sacrament exposed. When the soldiers entered, they reportedly fell back before the monstrance and left without taking it."
+      },
+      "106": {
+        "title": "A Healing in a Hospital Chapel",
+        "description": "A patient in Montevideo with an advanced inoperable tumor received Viaticum in the hospital chapel. Days later, medical imaging showed a complete disappearance of the tumor. The attending physician, a non-Catholic, certified the healing as medically unexplained."
+      },
+      "107": {
+        "title": "Hosts Preserved After Flooding",
+        "description": "Flooding of the St. Lawrence River damaged several churches in Québec City's lower town. A tabernacle submerged for days was opened and found to contain perfectly intact Hosts. The Bishop of Québec investigated and documented the event."
+      },
+      "108": {
+        "title": "A Host Found by a Child",
+        "description": "A child found a Host lying undefiled on the street in Montréal — apparently dropped from a sick-call. She brought it to the parish priest, who found it perfectly whole. The bishop used the event to promote greater reverence in receiving Communion."
+      },
+      "109": {
+        "title": "The Apparition at Knock",
+        "description": "On the gable of the parish church at Knock, fifteen witnesses saw an apparition of the Virgin Mary, St. Joseph, St. John the Evangelist, and an altar with a Lamb and Cross — a Eucharistic vision. The witnesses ranged in age from six to seventy-five."
+      },
+      "110": {
+        "title": "A Host Found Intact Under Rubble",
+        "description": "During the War of Independence, a church in Dublin was damaged by fire. When the rubble was cleared, the tabernacle was recovered from beneath fallen masonry, intact. The Hosts within were perfectly preserved. The Archbishop certified the event."
+      },
+      "111": {
+        "title": "A Host Preserved Before the Reformation",
+        "description": "A Host allegedly escaped destruction during a raid on the church of St. Giles. A devout woman hid it in her home before the church was attacked. When she brought it to a priest months later, it was found uncorrupted — sixty years before the Scottish Reformation."
+      },
+      "112": {
+        "title": "A Host Develops Biological Material",
+        "description": "A Host dropped during Communion at a Sydney parish was placed in water by the priest. Days later it had not dissolved and showed a reddish coloration. A biologist reported the presence of biological tissue. The Archbishop ordered further investigation."
+      },
+      "113": {
+        "title": "A Terminal Patient Recovers",
+        "description": "A patient with terminal cancer in a Melbourne hospital received the Last Rites including Viaticum. Within two weeks, scans showed no trace of cancer. Her oncologist, who was not Catholic, confirmed there was no medical explanation for the complete remission."
+      },
+      "114": {
+        "title": "A Host Found After an Earthquake",
+        "description": "A small earthquake damaged a church in Auckland, toppling the tabernacle. When the priest re-entered, he found the tabernacle open and the Hosts scattered but perfectly intact on the floor — none broken or crushed by the falling structure."
+      },
+      "115": {
+        "title": "Hosts Preserved During Siege",
+        "description": "During a period of bombardment, a chapel in Valletta suffered a direct hit and partially collapsed. The tabernacle was found intact in the rubble, and the Hosts within perfectly preserved. The Bishop of Malta documented the event."
+      },
+      "116": {
+        "title": "A Host Found in a River",
+        "description": "A sacred vessel thrown into the Alzette River during a church raid was found on the riverbank several days later, having washed ashore intact. The Hosts within were found dry and uncorrupted. The Bishop of Luxembourg investigated and certified the event."
+      },
+      "117": {
+        "title": "A Host Miraculously Preserved",
+        "description": "During religious riots that destroyed a Jakarta church, the tabernacle was among the items attacked. When order was restored and authorities entered the ruins, the ciborium was found intact amid the destruction, and the Hosts within unharmed."
+      },
+      "118": {
+        "title": "Blood Appears on the Corporal",
+        "description": "During Mass at a Surabaya parish, blood appeared on the corporal beneath the chalice in the form of a cross. The priest and multiple witnesses testified to the phenomenon. The Bishop opened a formal investigation and the corporal was sent for scientific examination."
+      },
+      "119": {
+        "title": "Host Preserved Through Persecution",
+        "description": "A Vietnamese Catholic who had hidden a consecrated Host during years of religious persecution reported that it remained intact after many years of concealment in a sealed container. The Archbishop investigated and documented the event."
+      },
+      "120": {
+        "title": "A Coptic Eucharistic Miracle",
+        "description": "In the old Coptic church of Babylon in Cairo, tradition records a miraculous manifestation of Christ in the Eucharist during a period of persecution. The Coptic patriarch documented the event and it became a source of strength for the persecuted community."
+      },
+      "121": {
+        "title": "A Host Found in the Desert",
+        "description": "Hermits in the Egyptian desert reported finding a shining object in the sand that proved to be a consecrated Host. Unable to explain how it had arrived in the desert, they brought it to the local bishop. The Host was examined and found to be authentic."
+      },
+      "122": {
+        "title": "A Host Preserved in a War-Torn City",
+        "description": "During civil conflict in Lebanon, a Maronite church in Beirut was attacked and partly destroyed. When the debris was cleared, the tabernacle was found intact. The Hosts within were perfectly preserved. The Maronite Patriarch documented the event."
+      },
+      "123": {
+        "title": "A Host Shines During Adoration",
+        "description": "During a night of Eucharistic Adoration in a Lagos parish, the Host in the monstrance emitted visible light witnessed by multiple faithful and the parish priest. The Archbishop of Lagos investigated and documented the event."
+      },
+      "124": {
+        "title": "Blood on the Corporal in Enugu",
+        "description": "Blood appeared on the corporal at a parish in Enugu during Mass. The phenomenon was witnessed by the priest and congregation. The Bishop opened an investigation and the corporal was sent to a medical laboratory, which confirmed the presence of human blood."
+      },
+      "125": {
+        "title": "A Host Miraculously Transformed",
+        "description": "A Host placed in water in a Kampala parish after a distribution accident was examined days later when it had not dissolved. Reddish material was visible within it. The Archbishop of Kampala ordered an investigation and the sample was sent for scientific analysis."
+      },
+      "126": {
+        "title": "A Healing Certified by Physicians",
+        "description": "A woman with advanced lupus received Communion and anointing of the sick. Within days, all symptoms disappeared. Three independent physicians — including one who was not Christian — certified the healing as medically inexplicable."
+      },
+      "127": {
+        "title": "A Host Found Intact After a Fire",
+        "description": "A fire damaged a Nairobi parish church, destroying the sacristy and altar furnishings. When the ruins were searched, the tabernacle was found in the rubble with its Hosts intact and unharmed. The Archbishop of Nairobi documented the event."
+      },
+      "128": {
+        "title": "A Eucharistic Miracle in Africa",
+        "description": "In a parish serving the Ethiopian Catholic community, a Host placed in water after falling during Communion developed reddish material within days. The bishop ordered an investigation and the material was analyzed and found to be of biological origin."
+      },
+      "129": {
+        "title": "The Crusader Miracle of Jerusalem",
+        "description": "During the early Crusader period, a miraculous phenomenon was reported at the Church of the Holy Sepulchre involving a consecrated Host that could not be consumed by fire. The event was recorded in Crusader chronicles and reported to the Pope by the Patriarch of Jerusalem."
+      },
+      "130": {
+        "title": "An Ancient Eucharistic Relic",
+        "description": "The ancient Georgian church preserves accounts of a Eucharistic miracle from the early Christian period. A consecrated Host brought by the first missionaries to Georgia was said to have been miraculously preserved and is recorded in the Lives of the Holy Fathers of Georgia."
+      },
+      "131": {
+        "title": "A Host Preserved Through the Wars",
+        "description": "During the devastating wars that struck Eastern Europe in the 17th century, a Greek Catholic church in Lviv was ransacked. The tabernacle was overturned, but the Hosts were found clustered together on the floor, intact. The Bishop of Lviv certified the event."
+      },
+      "132": {
+        "title": "A Host Survives the Reformation",
+        "description": "During the Protestant Reformation that swept through the Baltic states, Catholic churches in Rīga were seized. A priest hid a ciborium containing consecrated Hosts before his church was taken over. When he retrieved it years later, the Hosts were intact and uncorrupted."
+      },
+      "133": {
+        "title": "An Early Nordic Miracle",
+        "description": "Before the Reformation reached Scandinavia, a church in Stockholm documented a miracle involving a Host reported to have emitted light during Mass. The Bishop of Uppsala investigated and the event was recorded in the diocesan annals of the 12th century."
+      },
+      "134": {
+        "title": "A Host Preserved After Flooding",
+        "description": "When a Copenhagen church was flooded during a severe storm, the tabernacle was submerged for several days. When recovered, the Hosts within were found perfectly dry and uncorrupted. The Bishop of Roskilde investigated and the miracle was entered into diocesan records."
+      },
+      "135": {
+        "title": "An Ancient Host of Cyprus",
+        "description": "In the early Christian period of Cyprus, a Eucharistic miracle is recorded in the hagiographies of the island's bishops. A Host was miraculously preserved through a period of iconoclast persecution and was displayed to the faithful as evidence of Christ's Real Presence."
+      },
+      "136": {
+        "title": "The Old City and the Eucharist",
+        "description": "In Mdina, the ancient walled capital of Malta, tradition preserves the account of a consecrated Host that survived an Arab raid on the cathedral. The Host was found intact in the ruins, recorded in the chronicles of the Norman conquerors who subsequently fortified the city."
+      },
+      "137": {
+        "title": "Eucharist Halts Catastrophic Mountain Flood",
+        "description": "On the day after the feast of Corpus Christi in 1630, violent torrential rains caused the Maira River to flood catastrophically, threatening to destroy the village of Canosio in the Diocese of Saluzzo. Pastor Father Antonio Reinardi processed toward the raging waters with the Blessed Sacrament in a monstrance, reciting Psalm 51; upon blessing the waters, the rain ceased at once and the river returned to its normal level. The townspeople celebrate a feast during the Octave of Corpus Christi in commemoration to this day."
+      },
+      "138": {
+        "title": "Capuchin Friar Stops Town Inferno",
+        "description": "On August 3, 1631, a fire in Dronero in the Diocese of Saluzzo spread rapidly through the town despite every human effort to extinguish it. A Capuchin friar named Maurice da Ceva took the monstrance containing the large Host from the Church of St. Brigid and processed toward the fire — at which point the flames immediately subsided. The miracle is recorded on a stone tablet in the Church of St. Brigid, and the citizens of Dronero commemorate it annually with a solemn Corpus Christi procession."
+      },
+      "139": {
+        "title": "Stolen Hosts Preserved for Decades",
+        "description": "On July 25, 1969, thieves broke into the parish church of San Mauro La Bruca and stole a ciborium containing consecrated Hosts, which they later discarded on a roadside. A child discovered the Hosts and returned them to the pastor; over the following 25 years, repeated scientific analyses found the Hosts remained intact far beyond the few months an ordinary unleavened Host would last before disintegrating. In 1994, Bishop Biagio D'Agostino officially recognized the miraculous preservation and authorized public veneration."
+      },
+      "140": {
+        "title": "Blood Flows from Altar Linens at Wash-House",
+        "description": "In 1294, a housemaid from Gruaro in the Diocese of Concordia went to the public wash-house to launder altar linens and observed blood flowing from a consecrated Particle still caught in the fabric's folds; she alerted the pastor, who informed Bishop Giacomo di Ottonello. A dispute between the Diocese of Concordia and the noble Counts of Valvasone over custody of the relic was ultimately resolved by the Holy See, which awarded the cloth to the Counts on condition they build a church dedicated to the Most Holy Body of Christ, completed in 1483. The oldest authoritative document attesting to the miracle is a decree of Pope Nicholas V dated 1454."
+      },
+      "141": {
+        "title": "Host Survives Total Destruction of Church",
+        "description": "On April 17, 1560, during the Octave of Easter, a violent fire completely destroyed the Franciscan church in Morrovalle in the Diocese of Camerino. When Brother Battista da Ascoli searched the ruins ten days later, he discovered a charred pyx embedded in the wall cavity of the former altar; the corporal around it was badly scorched, yet the large Host inside was perfectly intact and incorrupt. Pope Pius IV dispatched a bishop to investigate and subsequently authorized public devotion by the Bull 'Holy Roman Church' in 1560."
+      },
+      "142": {
+        "title": "Host Transforms to Flesh at Mass of Gregory",
+        "description": "Around the year 595, during a Mass celebrated by Pope St. Gregory the Great, a noblewoman who had herself prepared the Eucharistic bread laughed when Gregory offered her Communion, professing disbelief that bread she had made could become the Body of Christ. Gregory withdrew her Communion and prayed aloud for divine illumination; a portion of the consecrated bread was visibly transformed into bleeding Flesh before the congregation. The miracle is narrated in detail by Paul the Deacon in his eighth-century Vita Beati Gregorii Papae; a portion of the miraculous relic is preserved at Andechs Abbey in Germany."
+      },
+      "143": {
+        "title": "Sacred Heart Statue Bleeds Repeatedly",
+        "description": "Beginning on April 4, 1948, during the chanting of Vespers at the monastery church in Rosano in the Diocese of Fiesole, witnesses observed drops of blood falling from the eyes of a life-size statue of the Sacred Heart donated to fulfill a vow made during World War II. The phenomena recurred multiple times between 1948 and 1950; medical analyses confirmed the substance was real human blood, and sworn testimonies and blood-soaked cloths were preserved in the monastery archives. On November 14, 1950, by order of the Holy Office, the statue was removed from public view pending further evaluation."
+      },
+      "144": {
+        "title": "Stolen Host Transforms to Bleeding Flesh",
+        "description": "Around 1050 at the hermitage of Fonte Avellana in the Apennines, a woman was persuaded by a sorceress to steal a consecrated Host for sacrilegious use. The priest noticed, stopped her, and demanded she open the cloth concealing the Host; before the priest and assembled witnesses, half of the sacred Particle had transformed into bleeding Flesh while the other half retained the appearance of a Host. St. Peter Damian, a Doctor of the Church, recorded the miracle as a direct witness in his work Opusculum XXXIV."
+      },
+      "145": {
+        "title": "Donkeys Kneel Before the Viaticum",
+        "description": "In August 1517, a priest named Father Lorenzo, chaplain of the Church of Salzano, was carrying Viaticum to a dying parishioner when grazing donkeys in nearby meadows turned toward the procession, approached, and knelt down on their forelegs before the Blessed Sacrament. The animals followed the procession all the way to the home of the sick person, genuflected again, and then peacefully returned to their pasture. The episode is recounted in the Historia Societatis Iesu by Nicolò Orlandino, printed in Bologna in 1615."
+      },
+      "146": {
+        "title": "Flames Repel Soldier From Tabernacle",
+        "description": "In 1640, during the French invasion of Turin, soldiers entered the Church of Santa Maria del Monte and a French soldier forced open the tabernacle and reached for the ciborium containing consecrated Hosts; flames blazed out from the tabernacle, burning him and preventing desecration of the Eucharist. The tabernacle door reportedly retained the imprint of the soldier's scorched hand as physical evidence of the event. The miracle is documented in the church archives and listed in Carlo Acutis's exhibition of Eucharistic miracles."
+      },
+      "147": {
+        "title": "Christ Child Appears in Exposed Host",
+        "description": "During Easter of 1570, the Blessed Sacrament was exposed for Forty Hours of adoration in the Church of St. Erasmus in Veroli; multiple witnesses reported seeing the figure of the Child Jesus appearing within the Host, as well as a brilliant star at the base of the chalice. Eyewitness Giacomo Meloni provided sworn testimony of what he observed. The original silver chalice and paten used during the exposition are still preserved in the Church of St. Erasmus and used once yearly at the Easter Tuesday Mass."
+      },
+      "148": {
+        "title": "Hosts Levitate After Soldier's Desecration",
+        "description": "In 1472, during the war between Florence and Volterra, a Florentine soldier seized a ciborium containing consecrated Hosts from the Cathedral of Volterra and hurled it against a stone column; an earthquake shook the city and the Hosts flew out and rose visibly into the air, suspended and surrounded by a mysterious light before the congregation. The soldier was suddenly struck blind, fell to his knees begging forgiveness, and his sight was restored when he submitted to the priest. Documents describing the miracle are preserved in the archives of the Church of St. Francis in Volterra."
+      },
+      "149": {
+        "title": "Consecrated Host Bleeds During Mass",
+        "description": "On June 5, 1405, the parish priest of Ittre, while celebrating Mass at the Chapel of Isaac, discovered a fragment of consecrated Host in the corporal which began to bleed when he took it in his hands; the blood continued to flow for four days, staining the entire corporal. The Bishop of Cambrai investigated the event and in 1410 declared it genuine, authorizing the chapel to become a place of pilgrimage. The blood-stained corporal remains on display at Bois-Seigneur-Isaac to this day."
+      },
+      "150": {
+        "title": "Bleeding Hosts Enshrined as Sacrament of Miracle",
+        "description": "According to medieval historical records, consecrated Hosts that were reportedly desecrated on Good Friday 1370 began to bleed and were subsequently brought to the collegiate church of Saints Michael and Gudula in Brussels, where they were enshrined and venerated as the 'Sacrament of Miracle.' The event was commemorated for centuries through stained glass windows installed between 1436 and 1870 and an annual procession. Carlo Acutis included it in his historical documentation of Eucharistic phenomena across the centuries."
+      },
+      "151": {
+        "title": "Stolen Hosts Found Intact in Field",
+        "description": "In 1412, a church thief stole a chalice and ciborium containing five consecrated Hosts from the village of Poederlee; feeling mysteriously unable to continue his journey, he hid the Hosts in a rabbit burrow and was later arrested. After he revealed the hiding place, authorities found the five Hosts perfectly intact after days of rain exposure, arranged in the form of a cross and surrounded by bright light. The miracle was officially declared authentic by the magistrate of Herentals on January 2, 1442, and a chapel called 'De Hegge' was built on the site."
+      },
+      "152": {
+        "title": "Host Stained With Blood Near Dying Man",
+        "description": "On July 25, 1317, a priest from Viversel left his bag containing a consecrated Host at the entrance of a sick man's home while hearing confession; a family member opened the pyx and touched the Host. When the priest retrieved it, the Host was stained with Blood; by August 1 it also displayed an image of the face of Christ crowned with thorns, witnessed by the nuns of the Abbey of Herkenrode. The relic was kept at Herkenrode Abbey until the French Revolution, then transferred to the Church of Saint Quintinus in Hasselt in 1804, where it remains today."
+      },
+      "153": {
+        "title": "Host Transforms to Flesh for Unworthy Communicant",
+        "description": "In 1374, during Lent at a church in Middelburg, a servant named Jan who had not confessed in years received Holy Communion unworthily; the Host on his tongue transformed into bleeding flesh, and blood dripped onto the altar cloth. The priest secured the miraculous particle, Jan publicly repented, and church and civil authorities investigated and approved veneration of the relic. According to tradition, the Host miraculously divided itself in 1380, with one part remaining in Cologne and the other brought to Leuven, where a brotherhood for its veneration was established by 1426."
+      },
+      "154": {
+        "title": "Host Transforms to Blood on Cloth",
+        "description": "On Easter Sunday, March 31, 1331, during the first Mass offered by Hugues de la Baume, vicar of Blanot, a consecrated Host fell from the mouth of a widow named Jacquette onto a communion cloth and transformed into a blood stain exactly the size of the Host. An investigation was conducted by the Diocese of Autun, and Pope John XXII recognized the event as a Eucharistic miracle. The stained cloth remains preserved in the village church of Blanot, where it is solemnly exposed each Corpus Christi."
+      },
+      "155": {
+        "title": "Monstrance Suspended in Air After Fire",
+        "description": "On the vigil of Pentecost, May 25, 1608, a fire broke out in the Abbey of Faverney overnight and reduced the temporary altar to ashes, yet the monstrance containing two consecrated Hosts remained suspended in mid-air above the ruins, untouched by the flames. The monstrance hovered for approximately 33 hours before descending gently onto a new altar during Mass. The Archbishop of Besançon declared the miracle authentic on July 10, 1608, Pope Paul V issued a Bull of Indulgence, and one of the two intact Hosts remains venerated in Faverney to this day."
+      },
+      "156": {
+        "title": "Paralyzed Mute Boy Healed at Communion",
+        "description": "On Easter Sunday 1461, a twelve-year-old boy named Bertrand, who had been paralyzed and mute since the age of seven following a fall, was brought to the Church of St. Bartholomew in La Rochelle and given Communion. The moment he received the Host, he was instantly healed; his first words were 'Adjutorium nostrum in nomine Domini' ('Our help is in the name of the Lord'). A painted manuscript documenting the event is preserved in the Cathedral of La Rochelle."
+      },
+      "157": {
+        "title": "Precious Blood Relic Brought from Holy Land",
+        "description": "On July 15, 1257, Cardinal Eudes de Châteauroux returned from the Crusades and donated to the church at Neuvy-Saint-Sépulcre two drops of Christ's Blood collected at Calvary and sealed in a crystal phial, along with a fragment of the tomb. The church had been built in the eleventh century as an architectural replica of the Church of the Holy Sepulchre in Jerusalem, and Pope Gregory XV granted indulgences for pilgrims venerating the relic in 1623. The Holy See elevated the church to a minor basilica in 1910, and the Precious Blood is still exposed for veneration each Easter Monday and July 1."
+      },
+      "158": {
+        "title": "Face of Christ Seen Within Consecrated Host",
+        "description": "On June 2, 1668, approximately 200 faithful gathered at the church of Les Ulmes for Benediction of the Blessed Sacrament led by curé Nicolas Nézan; while the hymn Pange Lingua was sung, a visible image of the face of Christ appeared within the exposed Host and remained visible for approximately fifteen minutes. Father Nézan reported the event to Bishop Henri Arnauld of Angers on June 13, who declared the miracle authentic within the month. The event was one of several Eucharistic phenomena documented in the Diocese of Angers during the seventeenth century."
+      },
+      "159": {
+        "title": "Stolen Hosts Found Intact After Snowstorm",
+        "description": "In December 1532, thieves broke into the parish church of Marseille-en-Beauvais in Picardy, stole a silver ciborium containing consecrated Hosts, and abandoned it beneath a stone in the main street. On January 1, 1533, a passerby named Jean Moucque noticed the stone was completely free of snow despite a severe snowstorm; lifting it, he found the Hosts entirely intact. Multiple miraculous healings were subsequently reported at the site, and the Chapel of the Sacred Hosts was built there; a Solemn Mass continues to be celebrated each January 2 in commemoration."
+      },
+      "160": {
+        "title": "Host Survives Intact as Chalice Melts in Fire",
+        "description": "On Holy Thursday 1643, a fire broke out in the parish church of Pressac, destroying a chalice containing a consecrated Host near the altar of the Blessed Virgin. The chalice was almost entirely consumed and fused into drops of tin, yet a bubble of tin formed beneath which the Host was found completely intact, with only a light reddish tinge around its edges. The Abbot of Availles-Limouzine recorded all witness testimony and submitted it to the Bishop of Poitiers, who issued a formal solemn act authorizing veneration; stained-glass windows depicting the miracle survive in the church of Pressac."
+      },
+      "161": {
+        "title": "Miller's Stolen Host Bleeds Profusely",
+        "description": "In 1216, a miller in Benningen stole a consecrated Host after receiving Communion and hid it among the stones of his neighbor's mill, intending to slander him. On the Feast of St. Gregory, the Host began to bleed so profusely that the entire village and the local bishop were alerted; the guilty miller repented and confessed his sacrilege. In 1221 the citizens built a chapel in honor of the miracle known as the Riedkapelle zum Hochwürdigen Gut, which remains a pilgrimage destination today."
+      },
+      "162": {
+        "title": "Host Immovable in a Field",
+        "description": "Around 1125, a pious farmer near Viehbrunn secretly concealed a consecrated Host inside a walking stick; impulsively, he threw the stick at straying cattle, and the Host fell to the ground. Every attempt to retrieve it proved futile until Bishop Hartwich of Regensburg came to the site and could only lift the Host after promising to build a chapel there. The chapel was completed in 1125, giving rise to the village of Bettbrunn, which became a pilgrimage destination in the Diocese of Regensburg."
+      },
+      "163": {
+        "title": "Host Transformed Into a Crucifix",
+        "description": "In 1280, a shepherd of Kranenburg near Kleve received Holy Communion but was unable to swallow the Host and hurled it against a tree; tormented by remorse, he confessed to his parish priest, but an extensive search found nothing. When the tree was later felled, a perfectly carved crucifix fell from within it. A church was erected on the site; construction of the present Gothic church began in 1408 and was completed in 1444, and the miraculous crucifix remains venerated there with an annual procession on September 14."
+      },
+      "164": {
+        "title": "Three Bleeding Hosts Survive Church Fire",
+        "description": "In August 1383, during a violent dispute, the village of Wilsnack and its parish church were burned to the ground. When the parish priest searched the ruins, he discovered three communion wafers intact in the altar's sacrarium, each bearing visible bloodstains. Bishop Dietrich von Havelberg verified the miracle in 1384, and Pope Eugene IV confirmed veneration with two papal bulls in 1447; Wilsnack became one of the most important pilgrimage sites in late medieval Europe until the Hosts were destroyed by Protestant reformers in 1552."
+      },
+      "165": {
+        "title": "Consecrated Wine Becomes Living Blood",
+        "description": "On May 1, 1429, a priest celebrating his first Mass at the Cathedral of Saint Lawrence in Alkmaar accidentally knocked over the chalice after consecration; three drops of the consecrated wine miraculously transformed into blood, leaving permanent stains that could not be removed by any means. The priest buried the cloth, and it was later retrieved following a vision granted to a ship's captain during a storm. The Bishop of Utrecht officially declared the event a miracle in 1433, and the blood-stained relic is still preserved in the Cathedral of Saint Lawrence."
+      },
+      "166": {
+        "title": "Discarded Hosts Found Soaked in Blood",
+        "description": "On the Sunday before Pentecost in 1421, a pastor at the Church of Saints Peter and Paul in Bergen op Zoom — reportedly doubting transubstantiation — cast leftover consecrated Hosts into a canal after Mass. Several months later, fishermen recovered the Hosts floating on the water, visibly soaked in coagulated blood. The local bishop approved veneration of the miracle, and devotion was officially restored in the twentieth century with annual commemorative events held to this day."
+      },
+      "167": {
+        "title": "Doubting Priest Witnesses Blood from Chalice",
+        "description": "In 1400, Father Arnoldus Groen was celebrating Mass at the Church of Saints Peter and Paul in Boxmeer when he was struck by a doubt about the Real Presence; immediately, the consecrated wine began to bubble up and overflow from the chalice onto the corporal, at which point the priest begged God's forgiveness and the bleeding ceased. The blood that had fallen on the corporal coagulated into a lump approximately the size of a walnut, which remains visibly unchanged in Boxmeer today. In 2000, Pope John Paul II elevated the Church of Saint Peter in Boxmeer to the rank of a basilica."
+      },
+      "168": {
+        "title": "Spilled Chalice Stains Corporal with Blood",
+        "description": "Around 1380, Father Eligius van der Aker was celebrating Mass in Boxtel when he accidentally overturned the chalice containing consecrated white wine; the wine immediately changed into blood, staining both the corporal and the altar cloth. A decree issued in 1380 by Cardinal Pileus is among the most authoritative documents attesting to the miracle. The blood-stained corporal remained in Boxtel, while the altar cloth was given to the town of Hoogstraten; both relics continue to be venerated in their respective towns."
+      },
+      "169": {
+        "title": "Stolen Host Found Intact Hidden Under Dirt",
+        "description": "On June 24, 1300, a soldier pillaging the area stole a consecrated Host; it was later discovered by a local farmer named Jan Bautoen, perfectly intact and hidden beneath a clump of dirt. The Bishop of Liège conducted an official investigation, leaving one of the most authoritative ecclesiastical documents connected with the event. A chapel was built at the site in commemoration, and the story is memorialized in paintings preserved in the local church."
+      },
+      "170": {
+        "title": "Blood Drips from Host; Relic Survives Fire",
+        "description": "In 1222, during Sunday Mass at the Benedictine church in Meerssen, blood began to drip from the large consecrated Host onto the corporal and was recognized by ecclesiastical authorities. In 1465, when attackers set fire to the church, a local farmer managed to rescue the blood-stained relic, which emerged from the fire completely unharmed. In 1938, Pope Pius XI elevated the church to the Basilica of the Blessed Sacrament; the relics of the Host and blood-stained corporal remain in the basilica and are carried in procession each year during the octave of Corpus Christi."
+      },
+      "171": {
+        "title": "Host Preserved Through Lithuanian Invasion",
+        "description": "During a Lithuanian invasion in 1290, a local priest buried a ciborium containing a consecrated Host in a field to protect it; the village and church were razed. Years later, a farmer plowing the field discovered the ciborium when his oxen inexplicably stopped and bowed to the ground, and the Host was found emanating bright light. When the Host was brought to a nearby church it miraculously reappeared at the original site, and a church dedicated to Corpus Christi was built there; the shrine was consecrated by Bishop Krzysztof Potocki in 1726 and continues to draw pilgrims."
+      },
+      "172": {
+        "title": "Three Fish Return Hosts to Priest",
+        "description": "In 1348, during the Black Death, a priest lost a coffer of consecrated Hosts when his mule slipped crossing a gully near Valencia, scattering the Hosts in the current. Three fish surfaced with their heads above water, each holding one Host at the tip of its mouth; motionless, they swam to the chalice the priest held over the water and deposited each Host inside before swimming away. The local bishop officially recognized the miracle; historical documents are preserved in the Valencia diocesan archives, and the site is marked by the Ermita dels Peixets, built in 1907."
+      },
+      "173": {
+        "title": "Christ Child Statue Points to Hidden Hosts",
+        "description": "On January 29, 1568, a cloth-shearer named Joan Prats broke into his parish church in Alcoy and stole a silver ciborium containing forty consecrated Hosts and a reliquary, hiding them under rocks beneath his staircase. When the theft was discovered, a statuette of the Christ Child in a neighboring home was seen to lean over and point to the hiding place, directing authorities to the stolen items. The thief's house was converted into an oratory, and each year on January 31 the people of Alcoy hold the Procession of the Miraculous Baby Jesus to commemorate the event."
+      },
+      "174": {
+        "title": "Angels Deliver Cross During Captive Mass",
+        "description": "In 1231, the captive Christian priest Ginés Pérez Chirinos was asked by the Muslim ruler Zeyt-Abuzeyt to celebrate Mass so he could witness the Christian rite; discovering there was no crucifix for the altar, two angels appeared from heaven carrying a Cross and placed it before vanishing. During the consecration, the ruler reportedly saw a vision of a radiant child in the Host and, along with his family, converted to Christianity. The relic of the Vera Cruz is still enshrined at the Basilica of Caravaca de la Cruz, recognized by Pope John Paul II as one of six Holy Cities."
+      },
+      "175": {
+        "title": "Host Becomes Flesh, Blood Soaks Linen",
+        "description": "In 1370, the pastor of Cimballa in Aragon, Father Don Tommaso, had long doubted the Real Presence; at the moment of consecration during a Sunday Mass, the Host transformed into flesh and blood began to flow, saturating the altar linen. Overcome with remorse, Father Tommaso later retired to a monastery to spend the rest of his life in penance. The blood-stained corporal, housed in a reliquary crafted in 1594, is exposed each September 12 — the event is known locally as the 'Most Holy Doubtful Mystery.'"
+      },
+      "176": {
+        "title": "Host Transforms to Flesh in Priest's Mouth",
+        "description": "In 1297 in Gerona (Girona), Catalonia, a priest celebrating Mass was seized by doubt about the Real Presence; at the moment of Communion the priest found himself unable to swallow the Host, which had transformed into flesh in his mouth. The priest confessed his doubt, and the piece of flesh was officially preserved and venerated as a relic. It was kept until it was destroyed in 1936 during the Spanish Civil War."
+      },
+      "177": {
+        "title": "Desecrated Host Bleeds, Preserved for Centuries",
+        "description": "In 1572 in Gorkum (Holland), followers of Zwingli removed consecrated Hosts from a cathedral's tabernacle and one heretic stamped on a Host with spiked boots, piercing it in three places; blood immediately began to seep from each wound, and witnessing the miracle, the perpetrator converted on the spot. Hidden by Franciscans and moved through Antwerp and Vienna, the Host arrived at the court of King Philip II of Spain around 1592. The incorrupt, bleeding Host is venerated to this day in the sacristy of the Royal Monastery of San Lorenzo de El Escorial near Madrid, displayed publicly twice a year."
+      },
+      "178": {
+        "title": "Wine Transforms to Blood, Flows onto Altar",
+        "description": "In 1010, the parish priest of Ivorra in Catalonia, Father Bernat Oliver, doubted transubstantiation; during Mass, the wine in the chalice converted entirely into blood that overflowed onto the altar cloth and spilled to the floor. Bishop Saint Ermengol of Urgell traveled to Ivorra to investigate, then carried the chalice and blood-stained cloth to Rome where Pope Sergius IV issued a Pontifical Bull certifying the miracle. The Sacred Relics are still preserved in a Gothic reliquary from 1426 in the parish church of Sant Cugat in Ivorra; the miracle is commemorated annually as 'la Santa Duda' ('the Holy Doubt')."
+      },
+      "179": {
+        "title": "Child Identifies the True Host",
+        "description": "On Christmas Day 1392, a five-year-old girl named Inés, attending Mass in Moncada, saw the Christ Child appear in the consecrated Host; the priest celebrating Mass had privately doubted the validity of his ordination during the Western Schism. The following day the priest presented her with both a consecrated and unconsecrated host, and she correctly identified the sacred one, dispelling his doubts. The miracle is documented in the Anales Eclesiasticos of Fr. Odorico Raynaldi and in the city archives of Moncada."
+      },
+      "180": {
+        "title": "Father Released from Purgatory at Mass",
+        "description": "At the Benedictine Monastery of Our Lady of Montserrat, a grieving girl asked the Abbot to celebrate three Masses for her deceased father's soul. During the first Mass she saw her father surrounded by flames visible only to her; when a tissue was placed where she indicated, it immediately caught fire before the clergy's eyes. By the third Mass her father appeared clothed in white and ascended to heaven at the moment of the Eucharistic celebration, confirming the efficacy of the Mass offered for the dead."
+      },
+      "181": {
+        "title": "Host and Wine Become Flesh and Blood",
+        "description": "Around 1300, a Benedictine monk-priest at the mountaintop church of Santa María la Real in O Cebreiro — one of the oldest churches on the Camino de Santiago — had grown cold in his faith and doubted the Real Presence; during the words of consecration, the Host visibly transformed into flesh and the wine into blood, which overflowed the chalice and stained the corporal. In 1486, Queen Isabella of Castile commissioned a precious reliquary to enshrine the miraculous flesh, chalice, and blood-stained corporals during her own pilgrimage; these remain venerated in the church today."
+      },
+      "182": {
+        "title": "Stolen Hosts Found Perfectly Preserved",
+        "description": "On November 5, 1824, a former altar boy named Nicolás Bernabeu stole a monstrance and sacred vessels from the church in Onil; a pyx containing consecrated Hosts was hidden in a field near Tibi, where it was discovered on November 28, 1824 by a woman named Teresa Carbonell. The consecrated Hosts were found completely intact despite weeks of exposure. On November 28, 1943 — exactly 119 years later — the delegate of the Archbishop of Valencia officially confirmed the miraculous incorruption; the Hosts are venerated at the Church of Saint James the Apostle in Onil."
+      },
+      "183": {
+        "title": "Stolen Hosts Shine Light in Blackberry Patch",
+        "description": "In 1533, a parishioner stole a silver ciborium containing consecrated Hosts from his church in Ponferrada and discarded it into a blackberry thicket after it became inexplicably heavy when he tried to throw it into the river; witnesses subsequently reported strange lights at night and white doves hovering by day. A miller named Nogaledo discovered the tabernacle while searching for the doves, finding the Hosts intact and emanating light. A chapel was erected on the site, and in 1570 a solemn annual procession was instituted on the octave of Corpus Christi."
+      },
+      "184": {
+        "title": "Host Incorrupt 175 Years Inside Crucifix",
+        "description": "In 1251, a consecrated Host was placed inside a small cavity in the forehead of the Romanesque sculptural group known as the 'Holy Mystery' at the monastery of Sant Joan de les Abadesses in Catalonia, and the cavity was sealed with a silver plaque. In 1426, during restoration work, workers discovered the sealed hollow and found inside, wrapped in white linen, the 175-year-old Host completely incorrupt. The preserved Host, known as 'The Most Holy Mystery of Sant Joan de les Abadesses,' continues to be venerated by pilgrims in the monastery church."
+      },
+      "185": {
+        "title": "Holy Chalice of the Last Supper Enshrined",
+        "description": "The Cathedral of Valencia preserves what tradition identifies as the Holy Chalice (Santo Cáliz) used by Jesus Christ at the Last Supper — an agate cup carved approximately in the 1st–2nd century BC, said to have been brought from Jerusalem to Rome by Saint Peter and entrusted to deacon Saint Lawrence in 258 AD. It was eventually given by King Alfonso V of Aragon to Valencia's Cathedral in 1437, where it has been venerated ever since. Until the 18th century, the chalice was used to hold the consecrated Host during Holy Thursday ceremonies; it is permanently enshrined in the Chapel of the Holy Chalice within the cathedral."
+      },
+      "186": {
+        "title": "Stolen Host Appears as Living Child",
+        "description": "In 1427 in Zaragoza, a woman brought a stolen consecrated Host to a Moorish sorcerer; when he opened the box, he found not a Host but a living infant surrounded by radiant light, and every attempt to burn it failed. The Archbishop of Zaragoza organized a solemn procession, and when the miraculous Child was placed on the altar during Mass at the Offertory, the Child disappeared and the consecrated Host reappeared in its place. The event is documented in the Zaragoza town hall archives, and a painting commemorating it hangs in the cathedral."
+      },
+      "187": {
+        "title": "Sacred Heart Appears During Volcanic Eruption",
+        "description": "On May 8, 1902 (Ascension Day), as Mount Pelée erupted and destroyed the nearby city of Saint-Pierre, the population of Morne-Rouge gathered in their parish church for Mass and Eucharistic Adoration. During exposition of the Blessed Sacrament, numerous witnesses reported seeing an image of Jesus displaying His Sacred Heart crowned with thorns appearing within the Host. The village was spared that day; the event was recounted publicly at the Eucharistic Congress of Angoulême in 1904."
+      },
+      "188": {
+        "title": "Face of Christ Seen in the Host",
+        "description": "On January 26, 1902, during the Forty Hours devotion at the parish church of Saint-André on the island of La Réunion, Abbot Henry Lacombe observed a luminous halo around the monstrance followed by the face of Christ crowned with thorns appearing on the Host. The vision evolved over several hours — the face becoming animated before culminating in the image of a crucifix covering the entire Host — and thousands of witnesses from the town and the capital Saint-Denis confirmed the phenomenon. Abbot Lacombe publicly recounted the event at the Eucharistic Congress of Angoulême in 1904."
+      }
+    },
+    "skiper": {
+      "tapToRead": "Tap to read more →",
+      "location": "Location",
+      "year": "Year",
+      "back": "← Back to Miracles",
+      "m1": {
+        "label": "The Miracle That Led to Beatification",
+        "location": "Brazil",
+        "recognition": "Officially Recognized by the Vatican · Beatification 2020",
+        "imageAlt": "Miracle I — The Beatification Miracle, Brazil 2013",
+        "steps": [
+          "A young boy named Matheus was born with a serious congenital pancreatic condition causing severe digestive complications.",
+          "His family sought Carlo's intercession through prayer.",
+          "During a prayer service, Matheus touched a relic of Carlo Acutis and prayed for healing.",
+          "Soon afterward, his condition unexpectedly disappeared entirely.",
+          "Medical examinations confirmed the child had been completely healed.",
+          "Doctors were unable to provide any scientific explanation for the recovery.",
+          "After years of Vatican investigation, the healing was officially recognized as a miracle attributed to Carlo Acutis."
+        ]
+      },
+      "m2": {
+        "label": "The Miracle That Led to Canonization",
+        "location": "Costa Rica",
+        "recognition": "Officially Recognized by the Vatican · Canonization 2025",
+        "imageAlt": "Miracle II — The Canonization Miracle, Costa Rica 2022",
+        "steps": [
+          "Valeria suffered a devastating traumatic brain injury following a serious bicycle accident.",
+          "Doctors believed her chances of recovery were extremely low.",
+          "Her mother traveled to Assisi and prayed at Carlo Acutis' tomb, entrusting her daughter's life to his intercession.",
+          "On the very same day, Valeria unexpectedly began to improve.",
+          "In the days that followed, she recovered at a pace doctors could not explain.",
+          "Brain scans showed dramatic, medically unexplained healing.",
+          "She made a remarkable recovery that exceeded all medical expectations.",
+          "Following extensive review, the Vatican officially recognized this as the second miracle attributed to Carlo Acutis."
+        ]
+      },
+      "person": "Person",
+      "title": "Miracles of Carlo Acutis",
+      "miracle": "Miracle"
+    },
+    "heroTitle": "{count} Miracles",
+    "heroWords": {
+      "documented": "Documented",
+      "verified": "Verified",
+      "preserved": "Preserved"
+    }
+  },
+  "carlo": {
+    "storyLabel": "Carlo Acutis — The Story",
+    "hero": {
+      "digIn": "DIG IN",
+      "quote": "Carlo did not become a saint because he was perfect. He became a saint because he chose God every day. Behind every miracle and every headline was a teenager learning how to love Christ more deeply.",
+      "cardQuote": "To always be close to Jesus, that is my life plan.",
+      "cardAuthor": "— Carlo Acutis",
+      "digital": "DIGITAL",
+      "saint": "SAINT",
+      "heavenA": "Heaven is",
+      "heavenB": "our home",
+      "scroll": "Scroll"
+    },
+    "s01": {
+      "title1": "JUST A",
+      "title2": "NORMAL KID",
+      "aria": "Just a Normal Kid",
+      "body": "Carlo was just like any other teenager. He loved soccer, video games, his friends, animals, and making people laugh. What made him different wasn't that he lived an extraordinary life. It was that he invited God into the ordinary moments of every day.",
+      "photoAlt": "Young Carlo Acutis",
+      "photoCaption": "Carlo, Milan c. 1999",
+      "momAlt": "Carlo's mom speaking at an event",
+      "momCaption": "Carlo's mom",
+      "loved": "Little Things He Loved:",
+      "items": [
+        "Soccer",
+        "Video games",
+        "Animals",
+        "Friends",
+        "Family",
+        "Laughing",
+        "Adventure"
+      ],
+      "readMore": "Read More →"
+    },
+    "s02": {
+      "title1": "FALLING IN LOVE",
+      "title2": "WITH JESUS",
+      "aria": "Falling in Love with Jesus",
+      "photoAlt": "Candles in church",
+      "photoCaption": "Daily Mass, Milan",
+      "quote": "The Eucharist is my highway to heaven.",
+      "author": "Carlo Acutis",
+      "rosary": "rosary, daily",
+      "body": "From a young age, Carlo found something special in the Eucharist. Going to Mass and spending time with Jesus became the best part of his day. He believed that the closer we are to Jesus, the happier we become.",
+      "pullQuote": "“When we face the sun, we get a tan. When we face Jesus in the Eucharist, we become saints.”"
+    },
+    "s03": {
+      "title1": "LIVING",
+      "title2": "HIS FAITH",
+      "aria": "Living His Faith",
+      "body": "Carlo didn't keep his faith inside the walls of a church. He lived it every day by being kind, standing up for classmates who were bullied, helping people in need, and always treating others with love and respect.",
+      "howTitle": "How He Lived It:",
+      "items": [
+        "Being kind to everyone",
+        "Defending bullied classmates",
+        "Helping people in need",
+        "Welcoming the lonely",
+        "Treating everyone with love",
+        "Seeing God in every person"
+      ]
+    },
+    "s04": {
+      "age": "AGE 11",
+      "title1": "A MISSION ON",
+      "title2": "THE INTERNET",
+      "aria": "A Mission on the Internet",
+      "intro": "Carlo loved computers and technology, but he saw them as more than entertainment.",
+      "cards": [
+        {
+          "label": "SELF-TAUGHT",
+          "desc": "He taught himself how to build websites because he wanted to use the internet to share Jesus with the world."
+        },
+        {
+          "label": "EVANGELIST",
+          "desc": "Long before social media became part of everyday life, Carlo showed that technology could be a force for good."
+        },
+        {
+          "label": "PIONEER",
+          "desc": "He used every digital tool available to him to bring others closer to God — a saint for the digital age."
+        }
+      ],
+      "strike": "Not for school.",
+      "goldPrefix": "For ",
+      "underlined": "souls."
+    },
+    "s05": {
+      "title1": "SHARING EUCHARISTIC",
+      "title2": "MIRACLES",
+      "aria": "Sharing Eucharistic Miracles",
+      "body": "At only eleven years old, Carlo began researching Eucharistic miracles from around the world. He created a website so anyone could learn about these incredible stories and discover the beauty of the Eucharist for themselves.",
+      "statLabel": "Eucharistic Miracles catalogued",
+      "photoAlt": "Stained glass",
+      "photoCaption": "The Eucharistic Miracles Exhibition",
+      "whyTitle": "Why it mattered:",
+      "items": [
+        "Free for anyone",
+        "Countries worldwide",
+        "Scientific evidence",
+        "Photos + history"
+      ]
+    },
+    "s06": {
+      "title1": "A FRIEND TO",
+      "title2": "EVERYONE",
+      "aria": "A Friend to Everyone",
+      "body": "One of the things people remember most about Carlo is how he treated others. He welcomed everyone, especially those who felt left out. He shared what he had with people in need and believed every person deserved to be loved because every person is a child of God.",
+      "sayTitle": "What people say about him:",
+      "items": [
+        "He always made you feel seen",
+        "He shared everything he had",
+        "He never excluded anyone",
+        "He treated the poor like family"
+      ],
+      "quote": "Every person deserves to be loved because every person is a child of God.",
+      "author": "Carlo Acutis"
+    },
+    "s07": {
+      "age": "AGE 15",
+      "title1": "HIS FINAL",
+      "title2": "DAYS",
+      "aria": "His Final Days",
+      "body": "When Carlo was diagnosed with leukemia at fifteen, he faced it with incredible peace and faith. Instead of thinking only about himself, he offered his suffering for the Pope, the Church, and for people who needed God's help. His trust in Jesus never wavered.",
+      "quote": "I offer all my suffering to the Lord, for the Pope and for the Church.",
+      "author": "Carlo Acutis",
+      "diagnosedLabel": "Diagnosed",
+      "deathDate": "OCT 12",
+      "passedLabel": "Passed to Heaven"
+    },
+    "s08": {
+      "title1": "HIS STORY",
+      "title2": "CONTINUES",
+      "aria": "His Story Continues",
+      "body": "Carlo's life may have been short, but his impact continues to grow every day. Through the miracles recognized by the Church and the millions of people inspired by his example, Carlo reminds us that holiness isn't only for a few people. It's something every one of us is called to.",
+      "canonizedLabel": "CANONIZED",
+      "canonizedDate": "APRIL 27, 2025",
+      "canonizedNote": "The first millennial saint",
+      "quote": "All people are born as originals, but many die as photocopies.",
+      "author": "Carlo Acutis"
+    },
+    "closing": {
+      "line1": "WE ARE ALL BORN",
+      "line2": "ORIGINALS.",
+      "footer": "Don't die as photocopies.",
+      "cta": "Continue Carlo's Mission →"
+    },
+    "metaTitle": "Carlo's Story",
+    "metaDescription": "Discover the life of St. Carlo Acutis — the first millennial saint who used technology to bring millions closer to God."
   }
 }

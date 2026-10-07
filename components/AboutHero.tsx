@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 import { SplitText } from "gsap/SplitText";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const CASCADE = [
@@ -27,6 +28,7 @@ const THUMB_GAP = 14;
 const PAD       = 32;
 
 export default function AboutHero() {
+  const t = useTranslations("about.hero");
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -229,7 +231,7 @@ export default function AboutHero() {
 
         {/* Page title — top left */}
         <div className="ah-foundation-name absolute right-8 flex gap-5" style={{ top: "15%" }}>
-          {["About", "Us"].map(w => (
+          {(t.raw("titleWords") as string[]).map(w => (
             <div key={w} className="overflow-hidden">
               <div className="ah-reveal font-sans font-bold text-navy"
                 style={{ fontSize: "clamp(40px, 5.5vw, 80px)", lineHeight: 1 }}>
@@ -253,15 +255,15 @@ export default function AboutHero() {
             <div style={{ flex: 1, marginTop: "-8rem" }}>
               <div className="overflow-hidden">
                 <div className="ah-reveal font-semibold tracking-[0.25em] uppercase"
-                  style={{ color: "#A07840", fontSize: "clamp(16px, 1.8vw, 24px)", whiteSpace: "nowrap" }}>Who We Are</div>
+                  style={{ color: "#A07840", fontSize: "clamp(16px, 1.8vw, 24px)", whiteSpace: "nowrap" }}>{t("whoWeAre")}</div>
               </div>
             </div>
             <div style={{ flex: 1 }}>
               <h2 className="ah-tagline font-sans text-navy"
                 style={{ fontSize: "clamp(14px, 1.2vw, 18px)", fontWeight: 500, lineHeight: 1.4 }}>
-                We want to make faith as accessible as possible so that young people around the world can encounter Christ through the digital tools they already use every day.
+                {t("tagline1")}
                 <br /><br />
-                No matter the background, every young Catholic should be equipped to carry the Gospel forward with creativity, courage, and conviction — following the example of St. Carlo Acutis.
+                {t("tagline2")}
               </h2>
             </div>
           </div>
@@ -270,7 +272,7 @@ export default function AboutHero() {
             <div style={{ flex: 1 }} />
             <div style={{ flex: 1, display: "flex", gap: "2rem" }}>
               <div style={{ flex: 1 }}>
-                {["Rooted In", "Faith", "Hope", "Love"].map(line => (
+                {(t.raw("rootedIn") as string[]).map(line => (
                   <div key={line} className="overflow-hidden">
                     <div className="ah-reveal text-[11px] font-medium uppercase leading-relaxed"
                       style={{ color: "#6B7280" }}>{line}</div>
@@ -278,7 +280,7 @@ export default function AboutHero() {
                 ))}
               </div>
               <div style={{ flex: 1 }}>
-                {["Contact Us", " ", "Facebook", "LinkedIn"].map((line, i) => (
+                {[t("contactUs"), " ", t("facebook"), t("linkedin")].map((line, i) => (
                   <div key={i} className="overflow-hidden">
                     {i === 0 ? (
                       <Link href="/contact" className="ah-reveal block pointer-events-auto text-[11px] font-medium leading-relaxed"

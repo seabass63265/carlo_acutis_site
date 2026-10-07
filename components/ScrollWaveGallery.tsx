@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
@@ -32,6 +33,7 @@ const CLIP_MAX = 20;
 const CLIP_POWER = 2;
 
 export default function ScrollWaveGallery() {
+  const t = useTranslations("about.gallery");
   const containerRef = useRef<HTMLDivElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -177,7 +179,7 @@ export default function ScrollWaveGallery() {
     <section className="relative w-full bg-cream">
       <div className="flex items-center justify-center px-8" style={{ height: "100svh" }}>
         <h2 className="font-serif text-navy text-center" style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)", fontWeight: 500, lineHeight: 1 }}>
-          Moments of the Mission
+          {t("title")}
         </h2>
       </div>
 
@@ -198,22 +200,27 @@ export default function ScrollWaveGallery() {
         <div className="relative lg:w-1/2">
           <div className="swg-headline absolute hidden lg:block" style={{ top: "22%", left: 0, right: 0, padding: "0 4rem" }}>
             <h2 className="font-serif text-navy" style={{ fontSize: "clamp(2.2rem, 3.6vw, 4rem)", fontWeight: 500, lineHeight: 1.35 }}>
-              Born from a Conviction<br />That Faith and Technology<br />Belong Together
+              {(t.raw("headline") as string[]).map((line, i, lines) => (
+                <span key={i}>
+                  {line}
+                  {i < lines.length - 1 && <br />}
+                </span>
+              ))}
             </h2>
           </div>
 
           <div className="swg-headline absolute hidden lg:block max-w-lg" style={{ top: "42%", left: 0, right: 0, padding: "0 4rem" }}>
-            <p className="text-gold-dark text-xs font-semibold tracking-[0.25em] uppercase mb-6">Mission</p>
+            <p className="text-gold-dark text-xs font-semibold tracking-[0.25em] uppercase mb-6">{t("missionLabel")}</p>
             <h2 className="font-serif text-navy" style={{ fontSize: "clamp(1.4rem, 2vw, 1.9rem)", fontWeight: 500, lineHeight: 1.4 }}>
-              To inspire a new generation of Catholics to use technology, creativity, and digital media as instruments of evangelization, following the example of St. Carlo Acutis.
+              {t("missionText")}
             </h2>
           </div>
 
           <div ref={panelRef} className="hidden lg:flex flex-col items-start justify-center gap-8 px-8 py-16 lg:h-screen lg:px-16 lg:py-0 max-w-lg">
             <div>
-              <p className="text-gold-dark text-xs font-semibold tracking-[0.25em] uppercase mb-6">Vision</p>
+              <p className="text-gold-dark text-xs font-semibold tracking-[0.25em] uppercase mb-6">{t("visionLabel")}</p>
               <h2 className="swg-panel-text font-serif text-navy" style={{ fontSize: "clamp(1.4rem, 2vw, 1.9rem)", fontWeight: 500, lineHeight: 1.4 }}>
-                A world where young Catholics see their gifts — including technological ones — as vocations in service to the Gospel.
+                {t("visionText")}
               </h2>
             </div>
           </div>

@@ -1,1 +1,1673 @@
-{}
+{
+  "nav": {
+    "aboutUs": "À propos",
+    "carloStory": "L'histoire de Carlo",
+    "miracles": "Miracles",
+    "youthCouncil": "Conseil des jeunes",
+    "contact": "Contact",
+    "donate": "Faire un don",
+    "skip": "Passer →",
+    "menuToggle": "Afficher ou masquer le menu de navigation",
+    "changeLanguage": "Changer de langue",
+    "brand": "Friends of Carlo",
+    "tagline": "Bâtir une communauté mondiale de jeunes, de foi, de technologie et de service"
+  },
+  "footer": {
+    "brandTagline": "Bâtir une communauté mondiale de jeunes, de foi, de technologie et de service",
+    "description": "Inspirer une nouvelle génération à utiliser la technologie, la foi et le service pour transformer le monde, à l'exemple de Carlo Acutis.",
+    "quote": "« L'Eucharistie est mon autoroute vers le Ciel. »",
+    "quoteBy": "— Saint Carlo Acutis",
+    "about": "À propos",
+    "getInvolved": "S'impliquer",
+    "resources": "Ressources",
+    "aboutUs": "À propos",
+    "carloStory": "L'histoire de Carlo",
+    "eucharisticMiracles": "Miracles eucharistiques",
+    "governance": "Gouvernance",
+    "youthCouncil": "Conseil des jeunes",
+    "waysToGive": "Façons de donner",
+    "institutionalGiving": "Dons institutionnels",
+    "corporatePartners": "Partenaires d'entreprise",
+    "volunteer": "Bénévolat",
+    "miracleArchive": "Archives des miracles",
+    "prayerRequests": "Demandes de prière",
+    "speakingRequests": "Demandes d'intervention",
+    "copyright": "© {year} Friends of Carlo. Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "accessibility": "Accessibilité",
+    "changeLanguage": "🌐 Changer de langue",
+    "brand": "Friends of Carlo"
+  },
+  "contact": {
+    "titleLine1": "PARLONS-EN",
+    "titleLine2": "ENSEMBLE",
+    "nameLabel": "Comment vous appelez-vous ?",
+    "namePlaceholder": "Nom complet",
+    "organizationLabel": "Quel est le nom de votre organisation ?",
+    "organizationPlaceholder": "Organisation (le cas échéant)",
+    "emailLabel": "Quelle est votre adresse e-mail ?",
+    "emailPlaceholder": "vous@courriel.com",
+    "honeypotLabel": "Entreprise",
+    "audienceLabel": "Qui êtes-vous ?",
+    "reasonLabel": "Quel est l'objet de votre message ?",
+    "selectOne": "Choisissez une option",
+    "messageLabel": "Qu'avez-vous sur le cœur ?",
+    "messagePlaceholder": "Écrivez votre message ici, en cinq cents mots au maximum...",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours…",
+    "error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer ou nous écrire directement.",
+    "sentTitle": "Message envoyé",
+    "sentBody": "Merci de nous avoir écrit. Un membre de notre équipe vous répondra dans un délai de 2 à 3 jours ouvrables.",
+    "sendAnother": "Envoyer un autre message →",
+    "reachOut": "Écrivez-nous",
+    "listen": "Nous sommes là pour vous écouter et prier avec vous.",
+    "emailHeading": "Adresse e-mail",
+    "followUs": "Suivez-nous",
+    "audience": {
+      "individual": "Particulier",
+      "corporate": "Représentant d'entreprise",
+      "parish": "Représentant de paroisse ou de diocèse",
+      "educator": "Éducateur / catéchiste",
+      "media": "Médias / presse",
+      "donor": "Donateur / organisation partenaire",
+      "other": "Autre"
+    },
+    "reason": {
+      "donation": "Don",
+      "partnership": "Partenariat",
+      "volunteering": "Bénévolat",
+      "general": "Demande générale",
+      "prayer": "Demande de prière",
+      "speaking": "Interventions et médias",
+      "education": "Éducation et ressources",
+      "other": "Autre"
+    },
+    "title": "Contact",
+    "description": "Contactez Friends of Carlo : demandes générales, demandes de prière, invitations à intervenir et plus encore."
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "loadMore": "Charger plus de publications",
+    "readMoreArticle": "Lire la suite",
+    "facebook": "Facebook",
+    "showBio": "+ Biographie",
+    "hideBio": "− Réduire"
+  },
+  "youth": {
+    "meta": {
+      "title": "Conseil des jeunes",
+      "description": "Le Conseil des jeunes de Friends of Carlo est un organe consultatif de jeunes (âgés de 14 à 21 ans) qui contribue à façonner les programmes jeunesse, l'évangélisation numérique et la culture de l'organisation. Les candidatures sont ouvertes."
+    },
+    "hero": {
+      "eyebrow": "Le Conseil des jeunes de Friends of Carlo",
+      "title1": "Une place",
+      "title2": "à la table",
+      "body": "Carlo Acutis était un adolescent qui a utilisé ce qu'il avait — un ordinateur portable, un appareil photo, un amour profond pour l'Eucharistie — pour rejoindre le monde entier. Le Conseil des jeunes réunit des jeunes qui font la même chose pour notre génération : aider à décider ce que Friends of Carlo bâtit, qui il rejoint et ce que l'on ressent à en faire partie.",
+      "apply": "Postuler →",
+      "expected": "Ce qui est attendu",
+      "imageAlt": "De jeunes personnes réunies"
+    },
+    "purpose": {
+      "eyebrow": "Ce que c'est",
+      "title": "Un organe consultatif auprès du conseil d'administration",
+      "body1": "Le Conseil des jeunes conseille le conseil d'administration et la directrice générale sur les questions de programmation jeunesse, d'évangélisation numérique et de culture organisationnelle. Il dirige au moins un projet chaque année au service de la mission, et ses membres sont les ambassadeurs du charisme de l'organisation dans leurs paroisses, écoles, communautés et sur internet.",
+      "body2Before": "Le Conseil des jeunes agit à titre",
+      "body2Emphasis": "consultatif",
+      "body2After": "— et non fiduciaire. Il n'exerce aucune autorité légale de gouvernance sur l'organisation. Votre rôle est d'apporter le point de vue des personnes que nous cherchons réellement à atteindre, et de veiller à ce qu'il soit entendu là où les décisions se prennent.",
+      "meetBoard": "Rencontrer le conseil d'administration"
+    },
+    "expect": {
+      "eyebrow": "Ce que vous feriez",
+      "title": "La partie amusante s'accompagne d'engagements réels",
+      "intro": "Être nommé au Conseil signifie que des personnes comptent sur vous. Voici à quoi ressemble un mandat : c'est un engagement d'un an.",
+      "items": [
+        {
+          "title": "Réunions trimestrielles",
+          "body": "Rencontrer le Conseil quatre fois par an pour examiner les programmes, donner votre avis sur l'orientation et planifier le projet annuel."
+        },
+        {
+          "title": "Points mensuels",
+          "body": "Un bref contact mensuel pour rester en lien entre les réunions et faire avancer les projets."
+        },
+        {
+          "title": "Un projet annuel",
+          "body": "Diriger ou co-diriger au moins un projet par mandat qui fait progresser la mission : vous contribuez à choisir lequel."
+        },
+        {
+          "title": "Recommandations au conseil d'administration",
+          "body": "Soumettre des recommandations écrites pour que vos idées parviennent au conseil d'administration sous une forme qu'il peut mettre en œuvre."
+        },
+        {
+          "title": "Soyez un ambassadeur",
+          "body": "Représenter le charisme de Friends of Carlo dans votre paroisse, votre école, votre communauté et en ligne."
+        },
+        {
+          "title": "Participez pleinement",
+          "body": "Prendre part à toutes les activités du Conseil et apporter à la table le point de vue de votre propre communauté."
+        }
+      ]
+    },
+    "who": {
+      "eyebrow": "Qui peut postuler",
+      "title": "Si cela vous ressemble, postulez",
+      "requirements": [
+        {
+          "value": "14–21",
+          "label": "Ouvert aux candidats âgés de 14 à 21 ans"
+        },
+        {
+          "value": "Toute foi",
+          "label": "Les candidats de toute appartenance religieuse sont les bienvenus"
+        },
+        {
+          "value": "1 an",
+          "label": "Un engagement d'un an envers le Conseil et son travail"
+        }
+      ],
+      "note": "Nous voulons que le Conseil représente une réelle diversité de paroisses, d'écoles et de communautés : d'où que vous veniez, votre point de vue fait partie de ce qui le fait fonctionner.",
+      "imageAlt": "De jeunes personnes ensemble"
+    },
+    "apply": {
+      "eyebrow": "Les candidatures sont ouvertes",
+      "title": "Prêt à contribuer à sa construction ?",
+      "body": "La candidature prend quelques minutes. Dites-nous qui vous êtes, d'où vous venez et pourquoi vous souhaitez avoir une place à la table.",
+      "cta": "Commencer la candidature →"
+    }
+  },
+  "home": {
+    "mission": {
+      "headlineLine1": "Un foyer pour une foi vraie",
+      "headlineLine2": "et la rencontre avec Dieu",
+      "eyebrow": "Notre mission",
+      "body": "Inspirés par la vie et le témoignage de saint Carlo Acutis, nous existons pour aider les personnes à rencontrer le Christ, à approfondir leur foi et à poursuivre la mission de Carlo : porter l'Évangile dans le monde numérique.",
+      "aboutUs": "À propos",
+      "stayConnected": "Restez en lien",
+      "imageAlt": "Saint Carlo Acutis"
+    },
+    "who": {
+      "eyebrow": "L'histoire de Carlo",
+      "title": "Qui était Carlo Acutis ?",
+      "p1": "Né à Londres et élevé à Milan, Carlo Acutis était un adolescent qui aimait le football, les jeux vidéo et Dieu. On lui diagnostique une leucémie à 15 ans, et il offre ses souffrances « pour le Pape et pour l'Église ». Il meurt en 2006, avec la sérénité d'un saint.",
+      "p2": "Carlo a appris seul à programmer et a créé un site web recensant les miracles eucharistiques du monde entier, un acte de foi numérique qui a touché des millions de personnes. Il a été béatifié en 2020 et canonisé en 2025 comme premier saint millénaire du monde.",
+      "quote": "« Tous les hommes naissent comme des originaux, mais beaucoup meurent en photocopies. »",
+      "quoteBy": "Carlo Acutis",
+      "statAgeValue": "15",
+      "statAgeLabel": "Âge à sa mort",
+      "statMiraclesValue": "136",
+      "statMiraclesLabel": "Miracles eucharistiques recensés",
+      "statCanonizedValue": "2025",
+      "statCanonizedLabel": "Canonisé",
+      "cta": "Découvrir l'histoire de Carlo →",
+      "imageAlt": "Carlo Acutis jeune"
+    },
+    "initiatives": {
+      "eyebrow": "Ce que nous faisons",
+      "watermark": "Initiatives",
+      "titleTop": "En vedette",
+      "titleBottom": "Initiatives",
+      "contactUs": "Nous contacter",
+      "discoverDetails": "Découvrir les détails",
+      "discoverMiracles": "Découvrir les miracles",
+      "card01": {
+        "tags": [
+          "Axe : communauté",
+          "Statut : actif"
+        ],
+        "title": "Rayonnement auprès des jeunes",
+        "body": "Former une nouvelle génération grâce à des programmes communautaires immersifs. Nous créons des espaces où la tradition rencontre la compréhension contemporaine, en offrant accompagnement et repères spirituels à de jeunes esprits qui naviguent dans un monde complexe.",
+        "imageAlt": "Un groupe de jeunes tournés vers la lumière"
+      },
+      "card02": {
+        "tags": [
+          "Axe : technologie"
+        ],
+        "title": "Rayonnement numérique",
+        "body": "Traduire des messages intemporels dans des formes modernes. Nous utilisons des plateformes de pointe pour bâtir des paroisses numériques mondiales, afin que notre portée dépasse largement les murs physiques et atteigne la vie numérique quotidienne de millions de personnes.",
+        "imageAlt": "Un réseau numérique de lumière abstraite"
+      },
+      "card03": {
+        "tags": [
+          "Axe : savoir"
+        ],
+        "title": "Ressources éducatives",
+        "body": "Explorez notre archive grandissante des miracles eucharistiques documentés au fil des siècles, ainsi que l'histoire de Carlo : sa vie, sa foi et le témoignage qui continue d'inspirer une nouvelle génération.",
+        "imageAlt": "Architecture classique et lumière"
+      },
+      "card04": {
+        "tags": [
+          "Phase : développement"
+        ],
+        "title": "Projets à venir",
+        "body": "Concevoir la prochaine décennie de croissance structurelle et spirituelle. Des centres communautaires durables aux modèles philanthropiques innovants, ces plans dessinent notre trajectoire future.",
+        "imageAlt": "Architecture structurelle minimaliste"
+      }
+    },
+    "news": {
+      "eyebrow": "Dernières",
+      "title": "Actualités et nouvelles",
+      "tagFacebook": "Facebook",
+      "viewOnFacebook": "Voir la publication sur Facebook",
+      "fallback1Date": "juin 2025",
+      "fallback1Tag": "Canonisation",
+      "fallback1Title": "Carlo Acutis officiellement canonisé, premier saint millénaire du monde",
+      "fallback1Excerpt": "Lors d'une cérémonie historique sur la place Saint-Pierre, le pape François a canonisé Carlo Acutis, faisant de lui le patron de la génération internet.",
+      "fallback2Date": "mai 2025",
+      "fallback2Tag": "Événements",
+      "fallback2Title": "Friends of Carlo annonce un sommet sur le discipulat numérique pour les responsables de jeunesse",
+      "fallback2Excerpt": "Des centaines de responsables de jeunesse venus de tout le pays se réunissent pour apprendre à utiliser l'histoire de Carlo afin d'inspirer leurs communautés.",
+      "fallback3Date": "avril 2025",
+      "fallback3Tag": "Ressources",
+      "fallback3Title": "Nouveau kit de ressources pédagogiques disponible, gratuit pour toutes les paroisses",
+      "fallback3Excerpt": "Téléchargez des plans de cours, des infographies et des guides vidéo sur la vie de Carlo, destinés aux élèves de la confirmation, du lycée et de l'université."
+    },
+    "quote": {
+      "text": "Être toujours proche de Jésus : tel est le programme de ma vie.",
+      "cite": "Saint Carlo Acutis",
+      "cta": "Lire son histoire complète →"
+    },
+    "support": {
+      "eyebrow": "Soutenir la mission",
+      "title": "Façons de donner",
+      "subtitle": "Chaque don, grand ou petit, porte le message de Carlo à une nouvelle génération.",
+      "option01Title1": "Don",
+      "option01Title2": "individuel",
+      "option01Body": "Votre don personnel finance le rayonnement auprès des jeunes, les ressources éducatives et l'évangélisation numérique, une âme à la fois.",
+      "option01Cta": "Donner maintenant",
+      "option02Title1": "Don",
+      "option02Title2": "institutionnel",
+      "option02Body": "Associez-vous à nous en tant que fondation, diocèse ou institution. Accédez aux documents de gouvernance, aux indicateurs d'impact et aux informations sur les subventions.",
+      "option02Cta": "Partenaires institutionnels",
+      "option03Title1": "Partenariats",
+      "option03Title2": "d'entreprise",
+      "option03Body": "Alignez votre marque sur une mission qui transcende les générations. Des possibilités de parrainage et de co-marquage sont disponibles.",
+      "option03Cta": "Informations entreprises"
+    },
+    "hero": {
+      "mainText": "Inspirés par saint Carlo Acutis, le premier saint millénaire, nous existons pour porter l'Évangile à une nouvelle génération, par la foi, la technologie et la rencontre.",
+      "overlayPart1": "Né",
+      "overlayWords": [
+        "Original.",
+        "Saint.",
+        "Bien-aimé.",
+        "Choisi.",
+        "Appelé.",
+        "Éternel."
+      ],
+      "locationText": "Los Angeles, Californie",
+      "imageAlt": "Saint Carlo Acutis",
+      "navHome": "ACCUEIL",
+      "navCarlo": "CARLO",
+      "navMiracles": "MIRACLES",
+      "navAbout": "À PROPOS"
+    }
+  },
+  "donate": {
+    "meta": {
+      "title": "Façons de donner",
+      "description": "Soutenez Friends of Carlo : dons individuels, partenariats institutionnels, subventions et parrainages d'entreprise."
+    },
+    "hero": {
+      "mainText": "Chaque don aide à poursuivre la mission de saint Carlo Acutis. Votre générosité nous permet d'inspirer les jeunes, de renforcer la dévotion eucharistique, de soutenir les pèlerinages et les initiatives éducatives, et de créer des ressources numériques qui rapprochent d'autres personnes du Christ.",
+      "footerText": "Faites défiler pour en savoir plus",
+      "centerLabel": "Donner",
+      "overlayPart1": "Votre don",
+      "overlayPart2": "change des vies",
+      "locationText": "Friends of Carlo",
+      "imageAlt": "Saint Carlo Acutis — Friends of Carlo"
+    },
+    "why": {
+      "eyebrow": "Pourquoi donner",
+      "title": "Votre don finance la prochaine génération de saints numériques",
+      "body1": "Carlo Acutis a montré que la foi et la technologie ne sont pas en conflit : elles peuvent former la combinaison la plus puissante de toutes. Votre soutien permet de porter ce message à des adolescents, des paroisses, des écoles et des familles du monde entier.",
+      "body2": "Nous gérons nos ressources avec une grande rigueur et maintenons les frais généraux en dessous de 15 %, afin que vos dollars soient investis là où ils comptent le plus : programmes, rayonnement et mission.",
+      "cta": "Faire un don →",
+      "metrics": {
+        "funds": "Fonds totaux affectés à la mission",
+        "young": "Jeunes touchés chaque année",
+        "communities": "Communautés et partenaires pastoraux dans le monde",
+        "overhead": "Frais administratifs",
+        "audited": "États financiers audités chaque année",
+        "board": "Gouvernance par un conseil, avec une transparence totale"
+      }
+    },
+    "photos": {
+      "photo1": "Un prêtre et deux invités partageant un moment de joie lors d'un événement de Friends of Carlo",
+      "photo2": "Quatre amis réunis devant l'enseigne MCJ",
+      "photo3": "De jeunes pèlerins rassemblés devant le sanctuaire de saint Carlo Acutis en Italie"
+    },
+    "partners": {
+      "eyebrow": "Où vont vos dons",
+      "title": "Communautés mondiales et partenaires pastoraux",
+      "body": "Votre générosité a directement soutenu ces diocèses, paroisses, écoles et centres d'évangélisation, dans notre propre communauté et à travers le monde.",
+      "items": [
+        {
+          "name": "Diocèse d'Assise–Nocera Umbra–Gualdo Tadino",
+          "location": "Assise, Italie"
+        },
+        {
+          "name": "Archidiocèse de Wa",
+          "location": "Ghana"
+        },
+        {
+          "name": "Centre d'évangélisation des jeunes pour le renouveau eucharistique saint Carlo Acutis",
+          "location": "Île de Tablas, Romblon, Philippines"
+        },
+        {
+          "name": "Communauté catholique Sainte-Monique et école préparatoire Sainte-Monique",
+          "location": "Santa Monica, Californie"
+        },
+        {
+          "name": "Paroisse et école Saint-Thomas l'Apôtre",
+          "location": "Los Angeles, Californie"
+        },
+        {
+          "name": "Écoles paroissiales Sainte-Geneviève",
+          "location": "Panorama City, Californie"
+        }
+      ]
+    },
+    "institutional": {
+      "eyebrow": "Dons institutionnels et de fondations",
+      "title": "Pour les fondations, diocèses et institutions",
+      "body1": "Friends of Carlo accueille avec reconnaissance les dons importants et les subventions des fondations catholiques, des diocèses, des ordres religieux et des institutions partageant ses valeurs. Nous offrons une transparence totale en matière de gouvernance, des états financiers audités et une grande souplesse dans les partenariats.",
+      "body2": "Notre équipe travaille étroitement avec les donateurs institutionnels pour aligner leurs dons sur des domaines de programme précis, du rayonnement auprès des jeunes à l'infrastructure numérique, en passant par l'expansion missionnaire internationale.",
+      "cta": "Contacter notre équipe des dons →",
+      "items": [
+        {
+          "title": "Transparence financière totale",
+          "body": "Des états financiers annuels audités, le formulaire 990 de l'IRS et un suivi en temps réel des dépenses des programmes, accessibles à tous les partenaires institutionnels."
+        },
+        {
+          "title": "Documentation de gouvernance",
+          "body": "Statuts complets, composition du conseil, politiques de conflits d'intérêts et procès-verbaux des réunions, disponibles sur demande."
+        },
+        {
+          "title": "Recherche de subventions",
+          "body": "Notre équipe des dons vous aidera à repérer les programmes de subvention qui correspondent aux priorités et aux critères d'éligibilité de votre fondation."
+        },
+        {
+          "title": "Rapports d'impact",
+          "body": "Des rapports d'impact détaillés, publiés deux fois par an, montrant précisément comment votre don a été utilisé et les résultats mesurables obtenus."
+        },
+        {
+          "title": "Options de dons affectés",
+          "body": "Les dons peuvent être orientés vers des programmes précis : rayonnement auprès des jeunes, évangélisation numérique, expansion internationale ou dotation."
+        }
+      ]
+    },
+    "corporate": {
+      "eyebrow": "Dons d'entreprise",
+      "title": "Partenariats et parrainages d'entreprise",
+      "body": "Alignez votre marque sur une mission qui donne aux jeunes de tous horizons le pouvoir d'agir, comble les fractures numériques et encourage la foi, l'innovation, le service et l'épanouissement humain authentique.",
+      "items": [
+        {
+          "title": "Parrainage titre",
+          "description": "Présence de premier plan de votre marque sur notre site web, lors de tous les événements et dans l'Exposition des miracles eucharistiques. Comprend des occasions de prise de parole pour vos dirigeants."
+        },
+        {
+          "title": "Parrainage d'événement",
+          "description": "Parrainez des événements précis : sommets de jeunesse, retraites, conférences. Comprend des supports à votre image et une présence sur place."
+        },
+        {
+          "title": "Co-marquage numérique",
+          "description": "Votre marque mise en avant dans nos contenus numériques, nos infolettres et nos réseaux sociaux, auprès d'un public catholique engagé et fervent."
+        },
+        {
+          "title": "Parrainage de ressources",
+          "description": "Financez et co-marquez une ressource éducative précise : plans de cours, vidéos ou outils numériques distribués aux paroisses de tout le pays."
+        },
+        {
+          "title": "Programme de dons jumelés",
+          "description": "Amplifiez les dons individuels en doublant les contributions de vos employés ou de vos clients pendant une campagne."
+        },
+        {
+          "title": "Partenariat sur mesure",
+          "description": "Nous accueillons volontiers des propositions de partenariat créatives, adaptées aux objectifs de responsabilité sociale de votre entreprise et aux valeurs de ses employés."
+        }
+      ],
+      "ctaTitle": "Prêt à explorer un partenariat ?",
+      "ctaBody": "Notre équipe de partenariats d'entreprise établira une proposition personnalisée, en accord avec les objectifs et les valeurs de votre organisation.",
+      "cta": "Prendre contact →"
+    },
+    "finalCta": {
+      "quote": "Il vous suffit d'être bon pendant ce court passage sur terre, et vous serez heureux pour toujours.",
+      "cite": "Saint Carlo Acutis",
+      "cta": "Faites un don aujourd'hui →"
+    },
+    "wall": {
+      "eyebrow": "Notre communauté",
+      "title": "Merci, donateurs",
+      "body": "Chaque don, grand ou petit, aide à faire avancer la mission de Carlo. Nous sommes reconnaissants pour chacun d'eux."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "À propos",
+      "description": "Découvrez Friends of Carlo : notre histoire, notre conseil d'administration et notre gouvernance."
+    },
+    "board": {
+      "eyebrow": "Gouvernance",
+      "title": "Conseil d'administration",
+      "josefina": {
+        "role": "Fondatrice",
+        "bio": [
+          "Josefina Fernandez McEvoy a fondé Friends of St. Carlo Acutis, Inc. (« Friends of Carlo ») au début de 2025, après près de deux ans de discernement dans la prière et de recherches approfondies pour mieux comprendre la vocation de saint Carlo. Au fil de ce cheminement, elle a consulté plusieurs mentors spirituels et techniques qui l'ont aidée à préciser sa vision de Friends of Carlo. Elle a compris que la vocation de saint Carlo était une invitation à poursuivre son héritage en inspirant les jeunes par son exemple de foi, de technologie et de service. Friends of Carlo cherche en particulier à favoriser l'amitié que les jeunes vivent avec Jésus à travers leurs écrans, en écoutant leurs espoirs, leurs défis et leurs expériences, et en les aidant à le rencontrer en ligne par un accompagnement pratique, un soutien et un engagement numérique significatif.",
+          "Josefina est certifiée VIRTUS, conformément aux politiques SAFE Environment de l'archidiocèse de Los Angeles, depuis 17 ans.",
+          "Depuis plus de dix ans, Josefina s'est engagée dans divers ministères bénévoles à la Communauté catholique Sainte-Monique (SMCC), en aidant enfants et adultes à approfondir leur relation avec Jésus et à grandir dans la foi. Catéchiste bénévole au ministère de l'éducation religieuse et de la formation chrétienne de la SMCC pendant 13 ans, elle a accompagné des enfants à connaître Jésus plus intimement. Elle a également siégé au Conseil de formation et d'éducation chrétienne des adultes de la SMCC, où elle a contribué à réorganiser les ministères de formation de la paroisse et à lancer des initiatives conformes à son Plan stratégique 2020, notamment des petits groupes saisonniers de partage de la foi, des cycles de conférences et « Voix de la foi ».",
+          "Josefina a suivi les Exercices spirituels ignatiens dans la vie quotidienne 2023-2024, une retraite de huit mois au Centre de spiritualité Sainte-Monique, et elle est actuellement lectrice bénévole au ministère liturgique de la SMCC."
+        ]
+      },
+      "matthew": {
+        "role": "Directeur spirituel",
+        "bio": [
+          "« Tes yeux ont vu mon être informe ; tous les jours qui m'étaient destinés étaient inscrits dans ton livre avant qu'aucun d'eux n'existe. » (Ps 139, 16) Dieu nous connaissait avant même notre naissance. Personne ne vient au monde par erreur ou par hasard, et aucune vie n'est un simple caprice de la nature. Dieu crée chaque personne avec un dessein précis.",
+          "Je suis né à Nanvilli, dans ce qui était alors la Région supérieure du Ghana, dans une famille de six enfants. Ce n'est pas un hasard si mes parents, bien qu'ils n'aient pas reçu d'instruction formelle, ont accepté le christianisme lorsque les Missionnaires d'Afrique sont arrivés dans notre région. Ce n'est pas non plus par hasard que mon père a insisté pour que tous ses enfants soient scolarisés, malgré les résistances culturelles de l'époque.",
+          "Très jeune, j'ai ressenti l'appel au sacerdoce, inspiré par les missionnaires qui célébraient la messe dans notre village. Après l'obtention de mon certificat de niveau avancé, j'ai eu la chance rare d'effectuer mon service national dans une compagnie d'assurances que beaucoup auraient donné cher pour rejoindre. Cela a ralenti mon chemin vers le séminaire, d'autant plus que j'ai obtenu un congé d'études rémunéré pour suivre une licence de comptabilité dans l'université la plus prestigieuse du Ghana, avec la promesse de reprendre un poste de direction. Bien que cette voie fût prometteuse, elle ne pouvait faire taire l'appel plus profond que Dieu avait placé dans mon cœur. En septembre 1985, je suis entré au Grand Séminaire Saint-Victor.",
+          "Ordonné prêtre en 1992, j'ai commencé mon ministère dans des paroisses nouvellement créées et aux moyens limités, d'abord à la paroisse Sainte-Cécile. J'ai ensuite servi comme aumônier et professeur dans un lycée pour garçons.",
+          "Mon parcours m'a finalement conduit en Californie, où j'ai résidé à la Communauté catholique Sainte-Monique et obtenu une maîtrise en administration scolaire, avant de retourner au Ghana comme directeur d'une école catholique. Aujourd'hui, je suis administrateur de la cathédrale du diocèse catholique romain de Wa, dans la province ecclésiastique métropolitaine de Tamale au Ghana, sous la direction de Mgr Francis Bomansaan, M.Afr., évêque de Wa. Je demeure profondément reconnaissant pour chaque étape du chemin que Dieu a préparé pour moi bien avant mon premier souffle."
+        ]
+      },
+      "carmen": {
+        "role": "Membre du conseil",
+        "bio": [
+          "Carmen Romero est membre du conseil d'administration de Friends of St. Carlo. Elle apporte une formation pluridisciplinaire en technologie, stratégie d'entreprise et engagement communautaire. Elle est titulaire d'un MBA du Rome City Institute, où elle a terminé première de sa promotion et a été distinguée comme étudiante de master de l'année. Carmen est également diplômée en informatique de l'Université de Seattle et détient une certification en conception de jeux vidéo de l'Université de Washington.",
+          "Elle soutient la mission de la fondation par la planification stratégique et le développement de programmes, dans le souci d'honorer l'héritage de Carlo. Carmen se consacre à promouvoir une innovation socialement responsable et à renforcer les initiatives éducatives qui donnent du pouvoir aux jeunes. Dans son temps libre, c'est une lectrice passionnée, une fervente adepte des Sims 4 et elle est plus heureuse lorsqu'elle se trouve près de l'eau."
+        ]
+      },
+      "sebastian": {
+        "role": "Directeur technologique",
+        "bio": [
+          "Sebastian Rocha est directeur technologique de Friends of St. Carlo Acutis. Il est titulaire d'une licence en informatique de la Loyola Marymount University, avec une mineure en statistiques et science des données. Son expérience couvre les technologies de l'information, la gestion de produits et le développement web, notamment la conception d'expériences numériques accessibles et l'utilisation de la technologie pour relier les organisations aux communautés qu'elles servent.",
+          "Sebastian s'inspire particulièrement de saint Carlo Acutis, un développeur autodidacte qui a mis ses dons techniques au service du partage de la foi catholique. Par Friends of Carlo, Sebastian espère aider les jeunes à rencontrer Jésus dans des espaces numériques accueillants, porteurs de sens et sincères. Il croit que la technologie est à son meilleur lorsqu'elle aide ne serait-ce qu'une seule personne à se sentir plus proche de Dieu."
+        ]
+      },
+      "johnny": {
+        "role": "Directeur de la création",
+        "bio": [
+          "Johnny Vrba est un artiste, auteur et missionnaire originaire de la grande région de Chicago. Il a exercé une mission universitaire de 2022 à 2024 à l'Université Saint-Thomas, à Saint Paul, dans le Minnesota. Il est l'auteur de « Seas the Day » : l'histoire vraie de la peur, de l'amitié et de la foi vécues en mer pendant la pandémie de Covid-19.",
+          "Sa mission actuelle est d'être un catalyseur d'une nouvelle renaissance au sein de l'Église catholique, en inspirant la prochaine génération de jeunes artistes par la narration et un art multimédia profondément porteur de sens. Dans son travail quotidien, Johnny contribue à sélectionner des contenus qui font rayonner la lumière, en tant qu'administrateur des affaires et des acquisitions chez Angel Studios."
+        ]
+      },
+      "john": {
+        "role": "Secrétaire et trésorier du conseil",
+        "bio": [
+          "John McEvoy est un directeur de la sécurité sur les chantiers, dont la vocation a toujours consisté à protéger les personnes, à renforcer les communautés et à construire des environnements où les autres peuvent s'épanouir. Fort de plusieurs années à guider des équipes, à soutenir des initiatives de grande ampleur et à veiller au bien-être de ceux qui lui sont confiés, John apporte une présence stable et tournée vers le service dans chaque rôle qu'il assume.",
+          "Son engagement envers Friends of St. Carlo Acutis découle d'un désir profond d'aider les autres à rencontrer la foi d'une manière accessible, moderne et porteuse de sens.",
+          "Inspiré par l'exemple de saint Carlo — vivre la sainteté dans la vie quotidienne, la technologie et la simplicité joyeuse —, John sert la mission de diffuser le message d'espérance et d'amour de saint Carlo.",
+          "Pour John, ce travail est plus qu'un bénévolat : c'est un appel. Il croit à la création d'espaces sûrs et accueillants où les jeunes peuvent grandir spirituellement, se connecter les uns aux autres et découvrir la beauté d'une foi vécue avec authenticité."
+        ]
+      }
+    },
+    "governance": {
+      "eyebrow": "Gouvernance",
+      "title": "Une transparence à laquelle vous pouvez faire confiance",
+      "body": "Nous fonctionnons selon les plus hauts standards de gouvernance associative et de transparence financière. Nos donateurs ont le droit de savoir que chaque dollar sert à faire avancer la mission.",
+      "stat1": "Des entreprises font confiance à notre modèle de gouvernance",
+      "stat2": "Années d'activité transparente",
+      "stat3": "Membres du conseil engagés",
+      "stat4": "Taux de frais administratifs",
+      "stat5": "Disponibilité du rapport annuel",
+      "stat6": "Notation indépendante de l'organisme de bienfaisance",
+      "oversightTitle": "Supervision par le conseil",
+      "oversightBody": "Notre conseil d'administration est chargé de fixer la mission et l'orientation stratégique de Friends of Carlo, ainsi que de superviser ses finances, ses opérations et ses politiques, selon ce qui est prévu dans les statuts et les règlements intérieurs. Le conseil examine régulièrement les opérations et les politiques de l'organisation afin de s'assurer qu'elles respectent toutes les exigences légales et reflètent les meilleures pratiques du secteur.",
+      "bylawsTitle": "Nos règlements intérieurs",
+      "bylawsBody": "Les règlements intérieurs de Friends of Carlo sont les règles de fonctionnement interne établies par le conseil d'administration pour garantir que l'organisation est structurée et gérée exclusivement à des fins caritatives, religieuses, éducatives et scientifiques, au sens de la section 501(c)(3) du Code des impôts fédéraux américain, et conformément aux lois de Californie régissant les sociétés d'intérêt public."
+    },
+    "hero": {
+      "titleWords": [
+        "À",
+        "propos"
+      ],
+      "whoWeAre": "Qui nous sommes",
+      "tagline1": "Nous voulons rendre la foi aussi accessible que possible, afin que les jeunes du monde entier puissent rencontrer le Christ grâce aux outils numériques qu'ils utilisent déjà chaque jour.",
+      "tagline2": "Quel que soit leur parcours, chaque jeune catholique doit être en mesure de porter l'Évangile avec créativité, courage et conviction, à l'exemple de saint Carlo Acutis.",
+      "rootedIn": [
+        "Enracinés dans",
+        "la foi",
+        "l'espérance",
+        "l'amour"
+      ],
+      "contactUs": "Nous contacter",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "typography": {
+      "headline": "Notre travail est guidé par une conviction simple : l'histoire de Carlo n'est pas seulement à se rappeler, elle est à vivre. En bâtissant une communauté enracinée dans la foi, l'espérance et le service, nous espérons inspirer d'autres personnes à utiliser leurs propres dons pour faire connaître le Christ dans le monde d'aujourd'hui.",
+      "paragraph": "Nous réunissons des familles, de jeunes adultes, des éducateurs, des membres du clergé et des communautés inspirés par le témoignage de Carlo. Par la collaboration, les événements, les initiatives éducatives et les expériences numériques, nous cherchons à offrir à chacun des occasions de rencontrer le Christ et de grandir dans sa foi, de manière profonde et durable.",
+      "closing": [
+        "Nous croyons que l'Église",
+        "n'est pas en retard sur son temps.",
+        "Elle a simplement besoin de saints",
+        "— comme Carlo —",
+        "pour montrer le chemin."
+      ]
+    },
+    "gallery": {
+      "title": "Moments de la mission",
+      "headline": [
+        "Née d'une conviction :",
+        "que la foi et la technologie",
+        "sont faites pour aller ensemble"
+      ],
+      "missionLabel": "Mission",
+      "missionText": "Inspirer une nouvelle génération de catholiques à utiliser la technologie, la créativité et les médias numériques comme instruments d'évangélisation, à l'exemple de saint Carlo Acutis.",
+      "visionLabel": "Vision",
+      "visionText": "Un monde où les jeunes catholiques voient leurs dons, y compris technologiques, comme des vocations au service de l'Évangile."
+    }
+  },
+  "carlo": {
+    "storyLabel": "Carlo Acutis — L'histoire",
+    "metaTitle": "L'histoire de Carlo",
+    "metaDescription": "Découvrez la vie de saint Carlo Acutis, le premier saint millénaire, qui a utilisé la technologie pour rapprocher des millions de personnes de Dieu.",
+    "hero": {
+      "digIn": "CREUSEZ",
+      "quote": "Carlo n'est pas devenu saint parce qu'il était parfait. Il est devenu saint parce qu'il a choisi Dieu chaque jour. Derrière chaque miracle et chaque gros titre, il y avait un adolescent qui apprenait à aimer le Christ plus profondément.",
+      "cardQuote": "Être toujours proche de Jésus : tel est le programme de ma vie.",
+      "cardAuthor": "— Carlo Acutis",
+      "digital": "NUMÉRIQUE",
+      "saint": "SAINT",
+      "heavenA": "Le ciel est",
+      "heavenB": "notre demeure",
+      "scroll": "Défilez"
+    },
+    "s01": {
+      "title1": "SIMPLE",
+      "title2": "GARÇON ORDINAIRE",
+      "aria": "Simplement un garçon ordinaire",
+      "body": "Carlo était comme n'importe quel autre adolescent. Il aimait le football, les jeux vidéo, ses amis, les animaux et faire rire les gens. Ce qui le distinguait n'était pas qu'il ait mené une vie extraordinaire. C'est qu'il invitait Dieu dans les moments ordinaires de chaque jour.",
+      "photoAlt": "Carlo Acutis jeune",
+      "photoCaption": "Carlo, Milan vers 1999",
+      "momAlt": "La mère de Carlo qui prend la parole lors d'un événement",
+      "momCaption": "La mère de Carlo",
+      "loved": "Les petites choses qu'il aimait :",
+      "items": [
+        "Le football",
+        "Les jeux vidéo",
+        "Les animaux",
+        "Ses amis",
+        "Sa famille",
+        "Rire",
+        "L'aventure"
+      ],
+      "readMore": "Lire la suite →"
+    },
+    "s02": {
+      "title1": "TOMBÉ AMOUREUX",
+      "title2": "DE JÉSUS",
+      "aria": "Tombé amoureux de Jésus",
+      "photoAlt": "Des bougies dans une église",
+      "photoCaption": "La messe quotidienne, Milan",
+      "quote": "L'Eucharistie est mon autoroute vers le ciel.",
+      "author": "Carlo Acutis",
+      "rosary": "chapelet, chaque jour",
+      "body": "Dès son plus jeune âge, Carlo a trouvé quelque chose de spécial dans l'Eucharistie. Aller à la messe et passer du temps avec Jésus est devenu la meilleure partie de sa journée. Il croyait que plus nous sommes proches de Jésus, plus nous sommes heureux.",
+      "pullQuote": "« Quand on regarde le soleil, on bronze. Quand on regarde Jésus dans l'Eucharistie, on devient saint. »"
+    },
+    "s03": {
+      "title1": "VIVRE",
+      "title2": "SA FOI",
+      "aria": "Vivre sa foi",
+      "body": "Carlo ne gardait pas sa foi à l'intérieur des murs d'une église. Il la vivait chaque jour en étant bienveillant, en défendant les camarades victimes d'intimidation, en aidant ceux qui étaient dans le besoin et en traitant toujours les autres avec amour et respect.",
+      "howTitle": "Comment il la vivait :",
+      "items": [
+        "Être bienveillant envers tous",
+        "Défendre les camarades harcelés",
+        "Aider ceux qui sont dans le besoin",
+        "Accueillir les personnes seules",
+        "Traiter chacun avec amour",
+        "Voir Dieu en chaque personne"
+      ]
+    },
+    "s04": {
+      "age": "11 ANS",
+      "title1": "UNE MISSION",
+      "title2": "SUR INTERNET",
+      "aria": "Une mission sur internet",
+      "intro": "Carlo aimait les ordinateurs et la technologie, mais il les voyait comme bien plus qu'un divertissement.",
+      "cards": [
+        {
+          "label": "AUTODIDACTE",
+          "desc": "Il a appris seul à créer des sites web, parce qu'il voulait utiliser internet pour faire connaître Jésus au monde."
+        },
+        {
+          "label": "ÉVANGÉLISTE",
+          "desc": "Bien avant que les réseaux sociaux ne fassent partie de la vie quotidienne, Carlo a montré que la technologie pouvait être une force pour le bien."
+        },
+        {
+          "label": "PIONNIER",
+          "desc": "Il a utilisé chaque outil numérique à sa disposition pour rapprocher les autres de Dieu : un saint pour l'ère numérique."
+        }
+      ],
+      "strike": "Pas pour l'école.",
+      "goldPrefix": "Pour les ",
+      "underlined": "âmes."
+    },
+    "s05": {
+      "title1": "PARTAGER LES",
+      "title2": "MIRACLES EUCHARISTIQUES",
+      "aria": "Partager les miracles eucharistiques",
+      "body": "Dès l'âge de onze ans, Carlo a commencé à recenser les miracles eucharistiques du monde entier. Il a créé un site web pour que chacun puisse découvrir ces histoires extraordinaires et percevoir par lui-même la beauté de l'Eucharistie.",
+      "statLabel": "miracles eucharistiques recensés",
+      "photoAlt": "Vitrail",
+      "photoCaption": "L'Exposition des miracles eucharistiques",
+      "whyTitle": "Pourquoi c'était important :",
+      "items": [
+        "Gratuit pour tous",
+        "Des pays du monde entier",
+        "Des preuves scientifiques",
+        "Photos et histoire"
+      ]
+    },
+    "s06": {
+      "title1": "UN AMI POUR",
+      "title2": "TOUS",
+      "aria": "Un ami pour tous",
+      "body": "L'une des choses dont on se souvient le plus chez Carlo, c'est la manière dont il traitait les autres. Il accueillait tout le monde, surtout ceux qui se sentaient mis à l'écart. Il partageait ce qu'il avait avec les personnes dans le besoin et croyait que chaque personne méritait d'être aimée, car chacune est un enfant de Dieu.",
+      "sayTitle": "Ce que disent les gens de lui :",
+      "items": [
+        "Il vous faisait toujours sentir vu",
+        "Il partageait tout ce qu'il avait",
+        "Il n'excluait jamais personne",
+        "Il traitait les pauvres comme sa famille"
+      ],
+      "quote": "Chaque personne mérite d'être aimée, car chaque personne est un enfant de Dieu.",
+      "author": "Carlo Acutis"
+    },
+    "s07": {
+      "age": "15 ANS",
+      "title1": "SES DERNIERS",
+      "title2": "JOURS",
+      "aria": "Ses derniers jours",
+      "body": "Lorsque Carlo a appris qu'il était atteint de leucémie à quinze ans, il l'a affrontée avec une paix et une foi remarquables. Plutôt que de ne penser qu'à lui-même, il a offert ses souffrances pour le Pape, pour l'Église et pour les personnes qui avaient besoin de l'aide de Dieu. Sa confiance en Jésus n'a jamais faibli.",
+      "quote": "J'offre toutes mes souffrances au Seigneur, pour le Pape et pour l'Église.",
+      "author": "Carlo Acutis",
+      "diagnosedLabel": "Diagnostic",
+      "deathDate": "12 OCT",
+      "passedLabel": "Parti au ciel"
+    },
+    "s08": {
+      "title1": "SON HISTOIRE",
+      "title2": "CONTINUE",
+      "aria": "Son histoire continue",
+      "body": "La vie de Carlo a pu être courte, mais son impact ne cesse de grandir chaque jour. À travers les miracles reconnus par l'Église et les millions de personnes inspirées par son exemple, Carlo nous rappelle que la sainteté n'est pas réservée à quelques-uns. C'est un appel qui nous est adressé à tous.",
+      "canonizedLabel": "CANONISÉ",
+      "canonizedDate": "27 AVRIL 2025",
+      "canonizedNote": "Le premier saint millénaire",
+      "quote": "Tous les hommes naissent comme des originaux, mais beaucoup meurent en photocopies.",
+      "author": "Carlo Acutis"
+    },
+    "closing": {
+      "line1": "NOUS SOMMES TOUS NÉS",
+      "line2": "ORIGINAUX.",
+      "footer": "Ne mourez pas en photocopies.",
+      "cta": "Poursuivre la mission de Carlo →"
+    }
+  },
+  "miracles": {
+    "meta": {
+      "title": "Miracles eucharistiques",
+      "description": "Découvrez les 136 miracles eucharistiques documentés par Carlo Acutis : des signes physiques de la Présence réelle du Christ dans l'Eucharistie."
+    },
+    "intro": {
+      "title": "Qu'est-ce qu'un miracle eucharistique ?",
+      "p1": "Un miracle eucharistique est un phénomène extraordinaire, scientifiquement inexpliqué, lié à l'Eucharistie. Le plus souvent, il s'agit de la transformation visible d'une hostie consacrée en tissu humain ou de l'apparition de sang, vérifiée par des scientifiques médicaux du monde entier.",
+      "p2": "Carlo Acutis a passé des années à étudier, recenser et présenter 136 de ces miracles dans une exposition numérique itinérante. Son travail a fait connaître les preuves de la Présence réelle du Christ à des millions de personnes qui n'avaient jamais entendu ces histoires.",
+      "quote": "« Les miracles eucharistiques sont les plus grands miracles que Jésus nous a donnés. »",
+      "quoteBy": "Saint Carlo Acutis",
+      "photoAlt": "Carlo Acutis"
+    },
+    "map": {
+      "titleGold": "Des miracles ",
+      "titleNavy": "à travers le monde",
+      "introA": "Carlo a personnellement étudié et recensé ",
+      "introB": "136 miracles",
+      "introC": " dans son exposition itinérante d'origine. Ce site en documente ",
+      "introD": "188",
+      "introE": " : les 136 de Carlo, auxquels s'ajoutent 52 miracles supplémentaires tirés des archives diocésaines, de sources hagiographiques et de fonds catholiques de référence, tous cités individuellement sur chaque carte.",
+      "countryCount": "{count, plural, one {# pays} other {# pays}}",
+      "miracleCount": "{total} miracles",
+      "statDocumented": "Miracles documentés",
+      "statDocumentedSub": "répartis sur 6 continents",
+      "statYears": "Années d'histoire",
+      "statYearsSub": "le plus ancien remonte à l'an 500",
+      "statCountries": "Pays",
+      "statCountriesSub": "représentés dans l'exposition",
+      "statVisitors": "Visiteurs dans le monde",
+      "statVisitorsSub": "depuis le lancement de l'exposition",
+      "sources": "Sources",
+      "primary": "Principale",
+      "sourceList": [
+        {
+          "label": "Exposition de Carlo Acutis",
+          "detail": "Source principale. Le site officiel miracolieucaristici.org héberge des panneaux PDF individuels pour chacun des 136 miracles documentés par Carlo, reliés directement à chaque carte lorsqu'ils sont disponibles."
+        },
+        {
+          "label": "Wikipédia",
+          "detail": "Utilisée pour les miracles les plus documentés, lorsqu'il existe des articles encyclopédiques évalués par des pairs, notamment Lanciano, Bolsena, Sokółka, Legnica, Tixtla, Akita, Knock, Wilsnack et le Saint-Calice de Valence."
+        },
+        {
+          "label": "Bibliothèque catholique EWTN",
+          "detail": "Bibliothèque théologique de l'Eternal Word Television Network. Utilisée pour le miracle de Buenos Aires de 1996, approuvé à l'époque par l'archevêque Jorge Bergoglio."
+        },
+        {
+          "label": "Adoration eucharistique perpétuelle",
+          "detail": "Apostolat catholique qui documente les phénomènes eucharistiques dans le monde entier. Cité pour Betania (Venezuela, 1991) et Saint-André (La Réunion, 1902)."
+        }
+      ],
+      "continents": {
+        "Europe": "Europe",
+        "Americas": "Amériques",
+        "Asia": "Asie",
+        "Middle East": "Moyen-Orient",
+        "Africa": "Afrique",
+        "Oceania": "Océanie",
+        "Other": "Autres"
+      }
+    },
+    "countries": {
+      "Italy": "Italie",
+      "Germany": "Allemagne",
+      "France": "France",
+      "Poland": "Pologne",
+      "Spain": "Espagne",
+      "Belgium": "Belgique",
+      "Austria": "Autriche",
+      "Czech Republic": "République tchèque",
+      "Portugal": "Portugal",
+      "Netherlands": "Pays-Bas",
+      "Switzerland": "Suisse",
+      "Hungary": "Hongrie",
+      "Croatia": "Croatie",
+      "Lithuania": "Lituanie",
+      "Romania": "Roumanie",
+      "Ireland": "Irlande",
+      "Malta": "Malte",
+      "Scotland": "Écosse",
+      "Slovakia": "Slovaquie",
+      "Serbia": "Serbie",
+      "Bulgaria": "Bulgarie",
+      "Slovenia": "Slovénie",
+      "Luxembourg": "Luxembourg",
+      "Latvia": "Lettonie",
+      "Sweden": "Suède",
+      "Denmark": "Danemark",
+      "Cyprus": "Chypre",
+      "Ukraine": "Ukraine",
+      "Argentina": "Argentine",
+      "Peru": "Pérou",
+      "Mexico": "Mexique",
+      "Chile": "Chili",
+      "Venezuela": "Venezuela",
+      "Canada": "Canada",
+      "United States": "États-Unis",
+      "Colombia": "Colombie",
+      "Ecuador": "Équateur",
+      "Brazil": "Brésil",
+      "Paraguay": "Paraguay",
+      "Bolivia": "Bolivie",
+      "Uruguay": "Uruguay",
+      "Philippines": "Philippines",
+      "India": "Inde",
+      "Japan": "Japon",
+      "Indonesia": "Indonésie",
+      "South Korea": "Corée du Sud",
+      "Vietnam": "Viêt Nam",
+      "Georgia": "Géorgie",
+      "Egypt": "Égypte",
+      "Israel": "Israël",
+      "Lebanon": "Liban",
+      "Nigeria": "Nigéria",
+      "Uganda": "Ouganda",
+      "South Africa": "Afrique du Sud",
+      "Kenya": "Kenya",
+      "Ethiopia": "Éthiopie",
+      "Australia": "Australie",
+      "New Zealand": "Nouvelle-Zélande",
+      "Martinique": "Martinique",
+      "Réunion": "La Réunion"
+    },
+    "canonized": {
+      "eyebrow": "Le chemin vers la sainteté",
+      "titleLine1": "Canonisé grâce",
+      "titleLine2": "à des miracles",
+      "body": "Tout au long de l'histoire, l'Église a examiné avec soin les miracles comme signes de la présence de Dieu dans la vie des saints. Dans le cas de Carlo Acutis, deux guérisons extraordinaires ont été examinées par des experts médicaux, des théologiens et des responsables du Vatican avant d'être officiellement reconnues comme des miracles.",
+      "journey": "Le chemin vers la sainteté",
+      "timeline": [
+        {
+          "event": "Miracle de la béatification",
+          "detail": "Matheus Vianna — Brésil"
+        },
+        {
+          "event": "Carlo est béatifié",
+          "detail": "Assise, Italie"
+        },
+        {
+          "event": "Miracle de la canonisation",
+          "detail": "Valeria Valverde — Costa Rica"
+        },
+        {
+          "event": "Carlo est canonisé",
+          "detail": "27 avril, Rome"
+        }
+      ],
+      "closingA": "Le 27 avril 2025, Carlo Acutis a été officiellement déclaré",
+      "closingB": "saint de l'Église catholique."
+    },
+    "heroTitle": "{count} miracles",
+    "heroWords": {
+      "documented": "Documentés",
+      "verified": "Vérifiés",
+      "preserved": "Préservés"
+    },
+    "yearAD": "apr. J.-C.",
+    "grid": {
+      "titleAll": "L'exposition complète — {count} miracles",
+      "titleFiltered": "L'exposition complète — {count, plural, one {# miracle} other {# miracles}} de {country}",
+      "viewAll": "← Voir les {count} miracles",
+      "countFiltered": "{count, plural, one {# miracle documenté} other {# miracles documentés}} de {country}. Cliquez sur une carte pour en savoir plus.",
+      "intro": "Faites défiler ou glissez pour explorer chaque miracle documenté par Carlo. Cliquez sur une carte pour en savoir plus.",
+      "sources": "Sources",
+      "sourcePanel": "Exposition de Carlo Acutis — panneau individuel",
+      "sourceExhibition": "Exposition des miracles eucharistiques de Carlo Acutis",
+      "sourceWiki": "Wikipédia",
+      "sourceEwtn": "EWTN — Bibliothèque catholique",
+      "sourcePea": "Adoration eucharistique perpétuelle",
+      "sourceMagis": "Magis Center"
+    },
+    "skiper": {
+      "title": "Miracles de Carlo Acutis",
+      "miracle": "Miracle",
+      "tapToRead": "Touchez pour lire la suite →",
+      "location": "Lieu",
+      "year": "Année",
+      "person": "Personne",
+      "back": "← Retour aux miracles",
+      "m1": {
+        "label": "Le miracle qui a conduit à la béatification",
+        "location": "Brésil",
+        "recognition": "Reconnu officiellement par le Vatican · Béatification 2020",
+        "imageAlt": "Miracle I — le miracle de la béatification, Brésil 2013",
+        "steps": [
+          "Un jeune garçon, Matheus, est né avec une grave malformation congénitale du pancréas entraînant de sévères complications digestives.",
+          "Sa famille a demandé l'intercession de Carlo par la prière.",
+          "Lors d'une célébration de prière, Matheus a touché une relique de Carlo Acutis et a prié pour sa guérison.",
+          "Peu après, sa maladie a disparu de façon inattendue et complète.",
+          "Les examens médicaux ont confirmé que l'enfant était totalement guéri.",
+          "Les médecins n'ont pu fournir aucune explication scientifique à cette guérison.",
+          "Après plusieurs années d'enquête du Vatican, la guérison a été officiellement reconnue comme un miracle attribué à Carlo Acutis."
+        ]
+      },
+      "m2": {
+        "label": "Le miracle qui a conduit à la canonisation",
+        "location": "Costa Rica",
+        "recognition": "Reconnu officiellement par le Vatican · Canonisation 2025",
+        "imageAlt": "Miracle II — le miracle de la canonisation, Costa Rica 2022",
+        "steps": [
+          "Valeria a subi un traumatisme crânien grave à la suite d'un accident de vélo.",
+          "Les médecins estimaient que ses chances de guérison étaient extrêmement faibles.",
+          "Sa mère s'est rendue à Assise et a prié sur la tombe de Carlo Acutis, confiant la vie de sa fille à son intercession.",
+          "Le jour même, Valeria a commencé à aller mieux, de façon inattendue.",
+          "Dans les jours qui ont suivi, elle s'est rétablie à un rythme que les médecins ne pouvaient pas expliquer.",
+          "Les examens cérébraux ont montré une guérison spectaculaire et inexplicable sur le plan médical.",
+          "Elle a connu un rétablissement remarquable, qui a dépassé toutes les attentes médicales.",
+          "Après un examen approfondi, le Vatican a officiellement reconnu ce fait comme le second miracle attribué à Carlo Acutis."
+        ]
+      }
+    },
+    "entries": {
+      "1": {
+        "title": "Chair et sang du Christ",
+        "description": "Un moine basilien qui doutait de la Présence réelle vit l'hostie se transformer en chair visible et le vin en sang. Les analyses scientifiques du XXe siècle ont identifié un tissu de muscle cardiaque humain, de groupe sanguin AB, qui n'avait pas changé après treize siècles."
+      },
+      "2": {
+        "title": "Hostie transformée en chair",
+        "description": "Pendant la messe, on découvrit qu'une hostie tombée au sol s'était transformée en un petit morceau de chair. L'évêque Guido vérifia le miracle, qui reste documenté dans les registres de l'église de l'époque."
+      },
+      "3": {
+        "title": "Conservation miraculeuse",
+        "description": "Une hostie consacrée, portée à un malade, tomba dans un chemin boueux. Lorsqu'on la retrouva quelques jours plus tard, elle était parfaitement intacte et rayonnante. Cet événement inspira la construction d'un sanctuaire sur le site."
+      },
+      "4": {
+        "title": "Le miracle qui bouleversa un pape",
+        "description": "Un prêtre allemand qui doutait, en célébrant la messe, vit le sang jaillir de l'hostie sur le corporal. Le pape Urbain IV fit apporter le corporal, le déclara miraculeux et inspira la fête du Corpus Christi."
+      },
+      "5": {
+        "title": "Le corporal de Bolsena",
+        "description": "Le corporal taché de sang du miracle de Bolsena fut placé dans la cathédrale d'Orvieto sur ordre du pape Urbain IV. C'est dans cette ville que saint Thomas d'Aquin composa l'Office du Corpus Christi, inspiré par cette relique."
+      },
+      "6": {
+        "title": "Hostie préservée du feu",
+        "description": "Lors d'un incendie qui détruisit une église, un ciboire contenant des hosties consacrées fut retrouvé intact et non brûlé dans les décombres. Les hosties furent ensuite examinées par les autorités de l'église, qui les trouvèrent en parfait état."
+      },
+      "7": {
+        "title": "Hosties incorruptibles pendant des siècles",
+        "description": "Des hosties volées dans la basilique Saint-François furent retrouvées et placées dans un ciboire. Lorsqu'elles furent réexaminées en 1914 et en 1950, elles étaient parfaitement conservées : âgées de 220 ans, elles ne montraient aucun signe de corruption."
+      },
+      "8": {
+        "title": "La mule s'agenouille devant l'hostie",
+        "description": "Pour convaincre un hérétique, saint Antoine de Padoue présenta l'Eucharistie devant une mule affamée. Bien que séparée de la nourriture, l'animal s'agenouilla devant l'hostie. L'hérétique se convertit sur-le-champ."
+      },
+      "9": {
+        "title": "Une procession de feu",
+        "description": "Une charrette transportant des vases sacrés volés se renversa, et un ciboire s'envola dans les airs. Les hosties consacrées semblèrent s'élever et flotter devant la foule et le clergé, avant de se poser miraculeusement."
+      },
+      "10": {
+        "title": "L'hostie qui saignait en secret",
+        "description": "Une femme se procura une hostie pour l'utiliser dans une pratique de magie populaire. Lorsqu'elle l'enveloppa de cire, elle se mit à saigner. Terrifiée, elle l'enterra, mais lorsque le lieu fut fouillé, l'hostie s'était transformée en chair saignante."
+      },
+      "11": {
+        "title": "Un Juif témoin du miracle",
+        "description": "Un homme juif assista à la profanation d'une hostie et vit celle-ci se mettre à saigner abondamment. Tellement bouleversé, il se convertit immédiatement au christianisme. L'événement fut documenté et une église fut construite sur le site."
+      },
+      "12": {
+        "title": "Hostie utilisée pour la magie transformée en chair",
+        "description": "Une jeune femme garda une hostie au lieu de la consommer, dans l'intention de l'utiliser pour un charme. Quelques jours plus tard, en ouvrant le linge, elle découvrit que l'hostie s'était transformée en un morceau de chair. La relique est toujours conservée à Alatri."
+      },
+      "13": {
+        "title": "Un mourant reçoit l'hostie",
+        "description": "Un prêtre partit porter la communion à un paysan mourant sans avoir d'hostie, et s'en aperçut en chemin. Il ouvrit son bréviaire et y trouva une hostie présente de manière miraculeuse. Le paysan reçut la communion et mourut en paix."
+      },
+      "14": {
+        "title": "Hostie trouvée dans une ruche",
+        "description": "Des vases sacrés volés furent retrouvés dans la campagne. Un ciboire contenant des hosties consacrées fut découvert à l'intérieur d'une ruche. Les abeilles avaient construit une chapelle de cire autour, comme pour garder le Saint-Sacrement."
+      },
+      "15": {
+        "title": "Sang eucharistique sur la nappe d'autel",
+        "description": "Du sang apparut sur la nappe d'autel d'une église de Vérone, pendant une messe célébrée par un prêtre qui doutait. Les autorités ecclésiastiques examinèrent les taches et constatèrent qu'il s'agissait de sang humain. La nappe est conservée dans les archives diocésaines."
+      },
+      "16": {
+        "title": "L'hostie qui ne brûla pas",
+        "description": "Un incendie éclata dans une église vénitienne et détruisit le mobilier et l'autel. Lorsque les ruines furent dégagées, le tabernacle fut retrouvé intact. Les hosties consacrées qu'il contenait n'avaient subi aucun dommage."
+      },
+      "17": {
+        "title": "Incorruption en Sardaigne",
+        "description": "Un pyxide laissée dans une chapelle abandonnée de l'île de Sardaigne fut retrouvée des décennies plus tard. Les hosties consacrées qu'elle contenait étaient parfaitement intactes et ne montraient aucun signe de décomposition, malgré l'humidité des lieux."
+      },
+      "18": {
+        "title": "Une hostie miraculeusement préservée",
+        "description": "Une hostie tombée par accident derrière l'autel fut retrouvée un an plus tard, lors de travaux de rénovation. Elle était en parfait état, sur une corniche inaccessible. L'examen médical confirma qu'aucun moyen naturel de conservation n'expliquait cet état."
+      },
+      "19": {
+        "title": "Hostie rayonnant de lumière",
+        "description": "Un prêtre et plusieurs fidèles témoins affirmèrent avoir vu une hostie consacrée émettre une lumière visible pendant la bénédiction eucharistique. Le phénomène se reproduisit pendant plusieurs jours et fut certifié par l'évêque local."
+      },
+      "20": {
+        "title": "Hostie flottant sur l'eau",
+        "description": "Un pyxide contenant des hosties consacrées fut jetée à la mer par des pirates qui pillaient la ville. Des témoins la virent flotter debout sur les vagues. Le ciboire fut rejeté intact sur le rivage, avec des hosties parfaitement conservées."
+      },
+      "21": {
+        "title": "Sang d'une hostie volée",
+        "description": "Une femme du lieu enveloppa dans un linge une hostie volée dans une église. Lorsqu'elle le déplia, le linge était imbibé de sang. Terrifiée, elle retourna à la paroisse et se confessa. Le linge taché de sang fut conservé comme relique."
+      },
+      "22": {
+        "title": "Claire repousse une invasion",
+        "description": "Lorsque des soldats sarrasins attaquèrent Assise et escaladèrent les murs du couvent, sainte Claire porta l'ostensoir contenant le Saint-Sacrement jusqu'à la brèche. Les soldats s'arrêtèrent, semblèrent aveuglés et s'enfuirent. L'événement est consigné dans son procès de canonisation."
+      },
+      "23": {
+        "title": "Un prêtre guéri par l'hostie",
+        "description": "Un prêtre mourant reçut le Viatique et se leva immédiatement de son lit de mort. Les médecins qui l'examinèrent ne purent trouver aucune explication médicale à sa guérison soudaine et complète."
+      },
+      "24": {
+        "title": "Hostie retrouvée intacte après une inondation",
+        "description": "Une inondation submergea une église de Rome pendant plusieurs semaines. Lorsque les eaux se retirèrent, le tabernacle fut ouvert et l'on découvrit des hosties parfaitement conservées, sans trace de dommages dus à l'humidité. Le pape Paul V documenta l'événement."
+      },
+      "25": {
+        "title": "Un soldat poignarde l'hostie",
+        "description": "Un soldat frappa d'un couteau une hostie volée, et celle-ci se mit immédiatement à saigner. Terrifié, il se confessa au prêtre et rendit l'hostie. Les autorités ecclésiastiques certifièrent les taches de sang ; le linge est encore conservé."
+      },
+      "26": {
+        "title": "Hostie incorruptible à travers le feu",
+        "description": "Lors d'un incendie qui détruisit la sacristie d'une église milanaise, le tabernacle fut retiré des ruines, et les hosties qu'il contenait furent trouvées parfaitement intactes. Le miracle fut plus tard certifié par saint Charles Borromée."
+      },
+      "27": {
+        "title": "Une hostie lumineuse dans la nuit",
+        "description": "Des pêcheurs de la côte adriatique virent une lumière flotter au-dessus de la mer. En s'approchant, ils découvrirent qu'elle émanait d'une pyxide contenant des hosties consacrées, flottant sur l'eau. Le ciboire et les hosties furent récupérés intacts."
+      },
+      "28": {
+        "title": "L'hostie qui revint",
+        "description": "Une hostie consacrée, volée dans une église et jetée dans un puits, fut retrouvée plus tard à l'intérieur du tabernacle de l'église, comme si elle était revenue d'elle-même. Le tabernacle était fermé à clé et sans trace de manipulation, selon le curé et les témoins."
+      },
+      "29": {
+        "title": "Du sang qui s'étend sur le corporal",
+        "description": "Un prêtre renversa accidentellement le précieux Sang pendant la messe, et celui-ci s'étendit sur le corporal sous la forme de onze visages, interprétés comme le Christ et les âmes du purgatoire. Le corporal, reconnu par les évêques locaux, attire encore aujourd'hui des pèlerins."
+      },
+      "30": {
+        "title": "Hostie qui saigne après une profanation",
+        "description": "Une hostie consacrée qu'un voleur avait transpercée se mit à saigner. Le sang s'étendit sur le linge dans lequel elle était enveloppée et ne put être enlevé malgré les lavages. L'évêque de Ratisbonne documenta le miracle."
+      },
+      "31": {
+        "title": "Hostie lumineuse dans un champ",
+        "description": "Des paysans signalèrent une lumière brillante dans un champ. En s'approchant, ils trouvèrent une hostie consacrée gisant au sol, intacte et entourée de lumière. Une chapelle fut construite sur le site et devint un lieu de pèlerinage."
+      },
+      "32": {
+        "title": "Hosties conservées pendant trente ans",
+        "description": "Un pyxide contenant des hosties consacrées fut scellée dans le mur d'une église pour la mettre à l'abri pendant des troubles, puis oubliée. Trente ans plus tard, lors de travaux, elle fut retrouvée : les hosties étaient fraîches et incorruptibles. L'évêque Udalschalk certifia le miracle."
+      },
+      "33": {
+        "title": "Le précieux Sang de Weingarten",
+        "description": "Une relique du Sang du Christ, dit-on rapportée de Jérusalem pendant les croisades, fut placée dans l'abbaye bénédictine de Weingarten. De nombreuses guérisons liées à cette relique sont consignées dans les chroniques de l'abbaye."
+      },
+      "34": {
+        "title": "Une hostie portée par des anges",
+        "description": "Pendant une période de profanations d'églises, une hostie consacrée fut vue flottant dans les airs au sein d'une église, portée par des figures lumineuses. L'événement fut signalé à l'archevêque de Cologne et consigné dans les archives diocésaines."
+      },
+      "35": {
+        "title": "Hostie retrouvée dans un jardin",
+        "description": "Un ciboire volé fut retrouvé enterré dans un jardin, et les hosties qu'il contenait se révélèrent incorruptibles malgré une longue période d'enfouissement. L'évêque Volrad d'Erfurt enquêta et authentifia le miracle ; une église fut construite sur le site."
+      },
+      "36": {
+        "title": "Un chevalier arrogant humilié",
+        "description": "Un chevalier exigea la grande hostie réservée aux prêtres. Lorsque le prêtre céda sous la contrainte, l'hostie se mit à saigner. Le chevalier s'enfonça dans le sol de pierre jusqu'aux genoux avant de crier grâce. L'empreinte dans la pierre est encore visible aujourd'hui."
+      },
+      "37": {
+        "title": "Une hostie volée saigne",
+        "description": "Un usurier exigea d'une chrétienne qu'elle lui apporte une hostie en échange de l'annulation de sa dette. Lorsqu'il la perça d'un couteau, elle saigna abondamment. Il tenta de la brûler et de la faire bouillir, mais elle resta intacte et saignante jusqu'à sa conversion."
+      },
+      "38": {
+        "title": "Hosties intactes après une inondation",
+        "description": "La crue du Rhône submergea pendant plusieurs semaines l'église des Célestins. Lorsque les eaux se retirèrent, les hosties du tabernacle étaient parfaitement sèches et incorruptibles. Le pape Eugène IV fut informé et documenta l'événement."
+      },
+      "39": {
+        "title": "Une hostie volée retrouvée dans une ruche",
+        "description": "Des apiculteurs découvrirent une hostie volée dans une église de Dijon, à l'intérieur de leur ruche, entourée d'une élaborée construction de cire. L'hostie fut récupérée et trouvée intacte, à l'instar du miracle similaire de Macerata, en Italie."
+      },
+      "40": {
+        "title": "Guérison miraculeuse à l'autel",
+        "description": "Une femme paralysée, amenée au moment de recevoir la communion, déclara qu'après avoir reçu l'hostie, elle avait ressenti une vague de chaleur et avait pu se lever et marcher sans aide. La guérison fut examinée et certifiée par l'évêque de Bordeaux."
+      },
+      "41": {
+        "title": "Du sang sur le corporal de Marseille",
+        "description": "Pendant la messe, du sang apparut sur le corporal placé sous le calice, sans cause visible. Plusieurs prêtres et témoins vérifièrent la tache, qui s'étendit malgré les tentatives pour l'ôter. Le corporal est conservé dans les archives diocésaines."
+      },
+      "42": {
+        "title": "Tissu cardiaque dans une église paroissiale",
+        "description": "Une hostie placée dans l'eau pour se dissoudre développa un tissu rougeâtre en quelques semaines. Des histopathologistes polonais confirmèrent la présence de tissu myocardique en détresse mortelle, compatible avec un cœur agonisant. L'archevêque de Białystok le reconnut officiellement en 2012."
+      },
+      "43": {
+        "title": "Tissu myocardique dans un miracle moderne",
+        "description": "Une hostie placée dans l'eau développa un tissu rougeâtre. L'examen médical confirma la présence de tissu du muscle cardiaque d'un être humain vivant, soumis à un stress extrême. L'évêque Stefan Cichy reconnut l'événement en 2016."
+      },
+      "44": {
+        "title": "Hosties poignardées et jetées dans un marais",
+        "description": "Trois hosties consacrées furent volées puis poignardées à plusieurs reprises, d'où le sang s'écoulait. Jetées dans un marais, elles furent retrouvées luisantes. Une église fut construite sur le site, et les linges ensanglantés sont conservés dans ses archives."
+      },
+      "45": {
+        "title": "Hostie trouvée intacte dans la boue",
+        "description": "Un ciboire volé fut jeté dans un étang boueux près de Cracovie. Les habitants furent guidés jusqu'à lui lorsqu'une lueur apparut au-dessus de l'eau. Les hosties qu'il contenait furent retrouvées propres et indemnes. Le roi Casimir le Grand fit construire une église sur le site."
+      },
+      "46": {
+        "title": "Hosties miraculeusement préservées",
+        "description": "Un ciboire contenant des hosties, volé dans une église, fut abandonné dans une boîte pendant des mois. Lorsque les autorités enquêtèrent, les hosties étaient parfaitement incorruptibles. L'archevêque de Tolède vérifia le miracle et les hosties furent portées en procession."
+      },
+      "47": {
+        "title": "Six hosties préservées pendant une bataille",
+        "description": "Pendant une bataille contre les Maures, six hosties consacrées furent cachées dans un linge pour être mises à l'abri. Lorsqu'on les récupéra, le linge était taché de sang et les hosties s'étaient transformées en chair. Une mule qui transportait les reliques s'arrêta et refusa d'avancer ; une église fut construite à cet endroit."
+      },
+      "48": {
+        "title": "Une hostie tombe et se transforme",
+        "description": "Une hostie tomba des mains d'un prêtre pendant la messe et fut retrouvée au sol, entourée de sang. Plusieurs témoins vérifièrent le phénomène et l'évêque ouvrit une enquête officielle. Le corporal taché de sang est conservé dans la paroisse."
+      },
+      "49": {
+        "title": "Le sanctuaire et l'Eucharistie",
+        "description": "Au célèbre sanctuaire de Notre-Dame de Guadalupe, en Estrémadure, un prêtre signala qu'une hostie d'un ciboire s'était transformée. Les autorités ecclésiastiques enquêtèrent et consignèrent les témoignages de plusieurs témoins, renforçant la dimension eucharistique du sanctuaire."
+      },
+      "50": {
+        "title": "L'hostie volée qui saigne",
+        "description": "Une femme vola une hostie à la demande d'une sorcière et l'enveloppa dans son voile. Elle se mit aussitôt à saigner. Terrifiée, elle la rapporta chez elle, où des lumières l'entourèrent toute la nuit. Elle se confessa au prêtre, l'hostie fut retrouvée, et elle saignait encore."
+      },
+      "51": {
+        "title": "Hostie incorruptible après des années",
+        "description": "Lors de la restauration d'une église, on ouvrit un tabernacle scellé et oublié depuis plusieurs années. Les hosties consacrées qu'il contenait étaient en parfait état. L'évêque de Viseu enquêta et certifia le miracle ; les hosties furent conservées comme reliques."
+      },
+      "52": {
+        "title": "Une hostie survit au feu deux fois",
+        "description": "Un mourant vomit une hostie qu'il avait reçue. On voulut la détruire avec respect en la jetant au feu, mais elle ne brûla pas. Lorsqu'une femme la récupéra et la garda, le phénomène se reproduisit. Une chapelle fut construite, et l'évêque d'Utrecht certifia le miracle."
+      },
+      "53": {
+        "title": "Hostie trouvée dans un nid d'oiseau",
+        "description": "Une hostie volée fut recherchée pendant des jours. Un berger remarqua que des oiseaux se rassemblaient de façon inhabituelle autour d'un arbre. En grimpant, il trouva un nid contenant l'hostie, parfaitement conservée. Le curé signala le miracle à l'évêque."
+      },
+      "54": {
+        "title": "Tissu cardiaque confirmé par la science",
+        "description": "Une hostie abandonnée, placée dans l'eau, se transforma visiblement en un tissu rougeâtre. Une analyse scientifique confirma la présence de myocarde humain vivant, soumis à un stress. Le miracle fut approuvé par l'archevêque de l'époque, Jorge Bergoglio, devenu plus tard le pape François."
+      },
+      "55": {
+        "title": "Hostie dans un calice d'eau",
+        "description": "Une hostie tombée pendant la distribution de la communion fut placée dans un récipient d'eau. Quelques jours plus tard, elle fut retrouvée transformée en une substance rougeâtre. Une première analyse scientifique indiqua la présence de matière biologique d'origine humaine. L'évêque local supervisa l'enquête."
+      },
+      "56": {
+        "title": "Hostie préservée lors d'une inondation",
+        "description": "Après une grave inondation dans une église de Rosario, tout son contenu fut détruit. Le tabernacle fut retrouvé intact, et les hosties qu'il contenait étaient sèches et parfaitement conservées, bien que le bâtiment ait été sous l'eau pendant plusieurs jours."
+      },
+      "57": {
+        "title": "Tissu cardiaque vivant",
+        "description": "Lors d'une messe de retraite paroissiale, une hostie se mit à laisser s'écouler une substance rougeâtre venant de l'intérieur. Des analyses confirmèrent du sang humain du groupe AB et du tissu myocardique vivant. C'était la même année que la mort de Carlo Acutis, qui catalogua ce miracle, à l'âge de quinze ans."
+      },
+      "58": {
+        "title": "Hosties conservées après un tremblement de terre",
+        "description": "Un violent séisme endommagea une église de Mexico et le tabernacle tomba au sol. Lorsqu'on le récupéra, les hosties consacrées qu'il contenait étaient intactes et incorruptibles. Des témoins et l'évêque local attestèrent du miracle."
+      },
+      "59": {
+        "title": "Une hostie préservée dans un médaillon",
+        "description": "Elizabeth Ann Seton, canonisée plus tard comme la première sainte née aux États-Unis, rapporta qu'une hostie gardée dans un médaillon, lorsqu'elle était séparée d'un prêtre, était restée fraîche et intacte pendant une longue période. L'événement fut inclus dans son procès de béatification."
+      },
+      "60": {
+        "title": "Une hostie se transforme en chair",
+        "description": "Dans le diocèse de Trivandrum, une hostie placée dans l'eau après être tombée pendant la communion se transforma en une substance organique rougeâtre. L'évêque ouvrit une enquête officielle et la matière fut envoyée à un examen scientifique."
+      },
+      "61": {
+        "title": "Du sang apparaît sur le corporal",
+        "description": "Pendant la messe dans une paroisse du Kerala, des taches rougeâtres apparurent sur le corporal placé sous le calice. Plusieurs prêtres et fidèles furent témoins du phénomène. L'archevêque d'Ernakulam-Angamaly ordonna une enquête ; la matière fut confirmée comme étant du sang humain."
+      },
+      "62": {
+        "title": "Hostie préservée pendant les guerres d'indépendance",
+        "description": "Pendant les guerres d'indépendance, une église de Bogotá fut pillée et les vases sacrés renversés. Lorsque les soldats partirent, le prêtre constata que les hosties consacrées avaient roulé dans un coin, mais étaient parfaitement conservées et intactes."
+      },
+      "63": {
+        "title": "L'hostie qui ne brûla pas",
+        "description": "Lors d'un incendie dans une église de Guayaquil, le tabernacle fut consumé par les flammes avec tout l'autel. Lorsqu'on fouilla les ruines, le ciboire fut retrouvé intact et les hosties qu'il contenait n'avaient pas été touchées par le feu. L'évêque de Guayaquil certifia l'événement."
+      },
+      "64": {
+        "title": "Tissu eucharistique sous le microscope",
+        "description": "Un sacristain plaça dans l'eau une hostie qui s'était partiellement transformée en tissu rougeâtre à la suite d'un accident lors d'une distribution. L'archevêque de São Paulo ordonna une analyse scientifique, qui confirma la présence de matière biologique d'origine humaine."
+      },
+      "65": {
+        "title": "Le précieux Sang de Bruges",
+        "description": "Une relique du Sang du Christ, dit-on rapportée de Terre sainte pendant les croisades, fut placée dans la basilique du Saint-Sang. La relique se serait liquéfiée à plusieurs reprises et elle est encore vénérée chaque vendredi dans la basilique."
+      },
+      "66": {
+        "title": "Des hosties poignardées par des voleurs saignent",
+        "description": "Des voleurs qui avaient dérobé des hosties consacrées dans une église de Louvain les poignardèrent avec des couteaux, et du sang s'écoula de chacune. Terrifiés, ils les abandonnèrent. Les hosties furent récupérées et les taches de sang examinées. Le miracle suscita un important pèlerinage."
+      },
+      "67": {
+        "title": "L'origine de la fête du Corpus Christi",
+        "description": "Sainte Julienne de Liège eut une vision de la lune avec une tache sombre, interprétée comme l'absence de la fête de l'Eucharistie dans le calendrier de l'Église. Sa persévérance conduisit à l'institution de la fête du Corpus Christi par le pape Urbain IV."
+      },
+      "68": {
+        "title": "Hostie retrouvée dans un puits",
+        "description": "Une hostie volée dans une église de Gand fut jetée dans un puits. Quelques jours plus tard, elle fut retrouvée flottant à la surface, lumineuse, sans trace de dissolution. L'évêque de Gand certifia le miracle et une chapelle fut érigée près du puits."
+      },
+      "69": {
+        "title": "Un enfant rapporte l'hostie à la maison",
+        "description": "Un jeune enfant garda en secret une hostie reçue lors de sa première communion. Lorsque la famille ouvrit la petite bourse, elle la trouva rayonnante de lumière et parfaitement conservée sur un lit de fleurs fraîches. Le curé fut appelé pour la récupérer."
+      },
+      "70": {
+        "title": "Un noble arrogant s'enfonce",
+        "description": "Le comte Oswald exigea la grande hostie réservée aux prêtres. Au moment où le prêtre la plaça sur sa langue sous la contrainte, le comte commença à s'enfoncer dans le sol de pierre. Il s'agrippa à l'autel, effrayé, et demanda pardon. Les empreintes de ses mains sont conservées."
+      },
+      "71": {
+        "title": "Un soldat se repent à la vue du sang",
+        "description": "Un soldat qui avait profané une hostie lors d'une attaque contre une église viennoise la vit se mettre à saigner. Tellement bouleversé, il chercha aussitôt un prêtre, se confessa, accomplit une pénitence sévère et entra plus tard dans la vie religieuse."
+      },
+      "72": {
+        "title": "Hosties intactes dans l'incendie d'une église",
+        "description": "Un incendie dévastateur détruisit l'église Saint-Pierre de Salzbourg. Lorsque l'archevêque examina les ruines, le tabernacle fut retrouvé intact. Les hosties qu'il contenait étaient parfaitement blanches et sèches, sans avoir été touchées par les flammes."
+      },
+      "73": {
+        "title": "Une hostie saigne devant un roi",
+        "description": "L'empereur Charles IV était présent lorsqu'une hostie de la cathédrale Saint-Guy se mit à exsuder du sang. L'empereur s'agenouilla, et des témoins ecclésiastiques consignèrent leur témoignage. Charles IV fit construire une chapelle spéciale en l'honneur du miracle."
+      },
+      "74": {
+        "title": "Des hosties survivent à un raid hussite",
+        "description": "Lors de raids menés par des forces hussites, qui rejetaient la transsubstantiation, l'église Saint-Jacques de Brno fut attaquée et l'autel renversé. Les hosties consacrées furent retrouvées intactes parmi les décombres, sans dommage malgré leur dispersion."
+      },
+      "75": {
+        "title": "Un évêque témoin de la transformation",
+        "description": "L'évêque Bruno d'Olomouc célébrait la messe lorsque lui et l'assemblée virent l'hostie devenir visiblement de la chair. Il interrompit la messe, appela les chanoines de la cathédrale comme témoins et envoya à Rome un document officiel relatant l'événement."
+      },
+      "76": {
+        "title": "Le sang jaillit d'une hostie profanée",
+        "description": "Un groupe d'hommes profana une hostie volée. Le sang en jaillit en si grande quantité que les hommes prirent la fuite, terrifiés. Une femme la retrouva dans la rue et la porta au prêtre, qui signala le phénomène sanglant à l'évêque de Bâle."
+      },
+      "77": {
+        "title": "Hostie préservée dans un lac",
+        "description": "Un prêtre fuyant la persécution jeta dans le lac Léman un pyxide contenant des hosties pour éviter qu'elles ne soient profanées. Des années plus tard, lorsqu'il fut récupéré, le pyxide était intact et les hosties parfaitement conservées. L'évêque de Genève documenta l'événement."
+      },
+      "78": {
+        "title": "Une hostie retrouvée dans le Danube",
+        "description": "Lors d'une attaque contre une église près de Budapest, des vases sacrés furent jetés dans le Danube. Des pêcheurs découvrirent le ciboire flottant à la surface, avec les hosties intactes. L'archevêque d'Esztergom mena une enquête officielle."
+      },
+      "79": {
+        "title": "Hosties préservées pendant un siège",
+        "description": "Pendant le fameux siège du château d'Eger par les forces ottomanes, une église de la ville fut plus tard profanée par des soldats. Les hosties consacrées du tabernacle furent retrouvées intactes et non touchées. Des survivants du siège rapportèrent l'événement."
+      },
+      "80": {
+        "title": "Le vin se transforme en sang",
+        "description": "Un prêtre qui célébrait la messe remarqua que le vin du calice s'était visiblement transformé en sang. Le pape Léon X et le pape Alexandre VI accordèrent leur approbation officielle après enquête. La relique est conservée dans l'église franciscaine de Ludbreg."
+      },
+      "81": {
+        "title": "Hostie intacte après un tremblement de terre",
+        "description": "Le grand séisme de 1730, qui frappa la région de Dubrovnik, détruisit de nombreux bâtiments, dont plusieurs églises. Dans une paroisse, le tabernacle survécut intact et les hosties qu'il contenait furent retrouvées parfaitement conservées."
+      },
+      "82": {
+        "title": "Une apparition de la Vierge et de l'Enfant",
+        "description": "Dans un champ aux abords de Šiluva, la Vierge Marie apparut à un groupe d'enfants qui pleuraient la destruction d'une église catholique, tenant l'Enfant Jésus. Un vieillard aveugle fut guéri miraculeusement. Le lieu devint l'un des grands sanctuaires eucharistiques d'Europe de l'Est."
+      },
+      "83": {
+        "title": "Hostie découverte après un siècle",
+        "description": "Lors de la restauration de l'église Sainte-Anne de Vilnius, on découvrit une niche scellée contenant un pyxide avec des hosties consacrées. Des documents historiques révélèrent qu'elle avait été cachée en 1530 pour la protéger des iconoclastes, plus d'un siècle plus tôt. Les hosties furent retrouvées intactes."
+      },
+      "84": {
+        "title": "Une hostie rayonnante vue par des centaines de personnes",
+        "description": "Pendant une procession publique du Corpus Christi à Bratislava, des centaines de témoins affirmèrent que l'hostie de l'ostensoir émit des rayons lumineux visibles pendant plusieurs minutes. L'archevêque d'Esztergom documenta l'événement."
+      },
+      "85": {
+        "title": "Hosties intactes après la destruction d'une église",
+        "description": "Lors d'une persécution religieuse, une église catholique de Cluj-Napoca fut occupée et saccagée, et les vases sacrés furent renversés et dispersés. Lorsque les catholiques revinrent, les hosties consacrées furent retrouvées regroupées, parfaitement intactes."
+      },
+      "86": {
+        "title": "Un prêtre reçoit le Viatique en prison",
+        "description": "Un prêtre catholique emprisonné pour sa foi à Iași affirma avoir miraculeusement reçu la communion pendant qu'il était à l'isolement, sans aucun accès à un prêtre. Le lendemain matin, on le trouva avec des signes évidents d'avoir reçu le sacrement."
+      },
+      "87": {
+        "title": "Une hostie préservée pendant un conflit",
+        "description": "Pendant une période de conflit dans la région, une église de Belgrade fut saccagée. Le tabernacle fut renversé, mais les hosties consacrées restèrent regroupées au centre du sol de pierre, sans être touchées. Un évêque local certifia le miracle."
+      },
+      "88": {
+        "title": "Une ancienne hostie conservée dans la pierre",
+        "description": "Dans l'église Sainte-Sophie, l'une des plus anciennes églises chrétiennes encore utilisées au monde, on découvrit lors de travaux de restauration un fragment d'une célébration eucharistique ancienne, conservé dans une niche de pierre scellée, datée du IXe siècle."
+      },
+      "89": {
+        "title": "Une hostie retrouvée après une longue recherche",
+        "description": "Une hostie volée dans une église de Ljubljana fut recherchée pendant des mois. Une femme pauvre, guidée par une vision, retrouva le ciboire enterré près de la ville, avec les hosties encore intactes. L'évêque de Ljubljana ouvrit une enquête canonique et certifia le miracle."
+      },
+      "90": {
+        "title": "Une hostie se transforme pendant l'adoration",
+        "description": "Pendant l'adoration eucharistique dans une paroisse de Cebu, l'hostie de l'ostensoir sembla passer du blanc à une teinte rougeâtre, visible par tous les présents. Plusieurs témoins et le curé attestèrent du phénomène, qui dura plusieurs minutes."
+      },
+      "91": {
+        "title": "Hosties indemnes devant le feu",
+        "description": "Un incendie détruisit l'église en bois de Saint-Augustin à Manille. Les murs de pierre survécurent et, parmi les ruines, le tabernacle fut retrouvé intact. Les hosties qu'il contenait étaient parfaitement conservées. Les frères augustins documentèrent l'événement dans leurs chroniques."
+      },
+      "92": {
+        "title": "Une hostie retrouvée dans la jungle",
+        "description": "Un ciboire volé à la paroisse d'Antipolo fut retrouvé abandonné dans la jungle par des populations autochtones. Les hosties qu'il contenait étaient intactes. Cette conservation miraculeuse fut attribuée à l'intercession de Notre-Dame de la Paix et du Bon Voyage, patronne d'Antipolo."
+      },
+      "93": {
+        "title": "Une femme mourante ressuscite",
+        "description": "Une femme en fin de vie dans un hôpital de Naga reçut le Viatique. Immédiatement après avoir reçu l'hostie, elle déclara que toute douleur avait disparu, puis, en quelques jours, se rétablit complètement, sans explication médicale pour les médecins qui la soignaient."
+      },
+      "94": {
+        "title": "Sœur Agnès et la statue qui pleure",
+        "description": "Sœur Agnès Katsuko Sasagawa reçut les stigmates et des messages pendant l'adoration. Une statue en bois de la Vierge Marie dans la chapelle du couvent se mit à verser des larmes et du sang. Des experts médicaux l'examinèrent, dont un médecin bouddhiste qui confirma leur authenticité."
+      },
+      "95": {
+        "title": "Une église survit à la bombe",
+        "description": "Lorsque la bombe atomique tomba sur Nagasaki, des frères franciscains rapportèrent que le Saint-Sacrement fut retrouvé intact parmi les ruines de leur chapelle. Un tabernacle d'une église en partie détruite, près de l'hypocentre, survécut également à l'explosion."
+      },
+      "96": {
+        "title": "Du sang sur l'hostie à Séoul",
+        "description": "Pendant une messe célébrée dans une paroisse de Séoul, le prêtre et les servants d'autel virent du sang apparaître sur une hostie. L'évêque local ouvrit une enquête canonique et l'hostie fut envoyée à un examen scientifique. Les résultats confirmèrent la présence de sang humain."
+      },
+      "97": {
+        "title": "Du sang sur l'hostie à Betania",
+        "description": "Dans la communauté de Betania, déjà célèbre pour des apparitions mariales approuvées, une hostie pendant la messe fut vue émettant du sang. L'évêque local, qui avait approuvé les apparitions en 1987, enquêta sur ce phénomène eucharistique et en reconnut le caractère miraculeux."
+      },
+      "98": {
+        "title": "Un prêtre guéri après la messe",
+        "description": "Un prêtre de Caracas, atteint d'une maladie en phase terminale, rapporta avoir été complètement guéri dans les jours qui suivirent une célébration de la messe particulièrement fervente. Ses médecins constatèrent la disparition complète et soudaine de sa maladie, sans explication médicale."
+      },
+      "99": {
+        "title": "Hosties préservées après un tremblement de terre",
+        "description": "Pendant un tremblement de terre qui détruisit une grande partie de Lima, l'église de Santo Domingo subit de graves dommages. Le tabernacle, parmi les ruines, fut retrouvé avec ses hosties intactes. L'événement fut signalé à l'archevêque et consigné dans les chroniques de l'archidiocèse."
+      },
+      "100": {
+        "title": "Une hostie retrouvée dans la vallée sacrée",
+        "description": "Une hostie volée, qu'un converti avait gardée pour un rituel préchrétien, fut récupérée après une confession. L'hostie fut retrouvée intacte à l'endroit où elle avait été cachée pendant des semaines. L'évêque de Cuzco documenta l'événement et fit construire une chapelle."
+      },
+      "101": {
+        "title": "Une guérison pendant la bénédiction",
+        "description": "Une femme paralysée depuis des années fut amenée dans une église pendant la bénédiction eucharistique. Lorsque le prêtre éleva l'ostensoir, les témoins la virent se lever de son fauteuil roulant et marcher. Des médecins certifièrent que la guérison était inexplicable sur le plan médical."
+      },
+      "102": {
+        "title": "Une hostie se transforme à Santiago",
+        "description": "Un sacristain d'une paroisse de Santiago découvrit qu'une hostie laissée dans l'eau après un accident pendant la messe s'était transformée en une substance rougeâtre. L'archevêque ordonna un examen ; les résultats scientifiques révélèrent une matière biologique compatible avec du tissu cardiaque, de groupe sanguin AB."
+      },
+      "103": {
+        "title": "Un marin guéri en mer",
+        "description": "Un marin mourant, à bord d'un navire près de Valparaíso, reçut le Viatique de l'aumônier du bord et rapporta un rétablissement immédiat, retrouvant pleinement la santé. Une fois au port, l'aumônier signala l'événement à l'évêque de Valparaíso, qui ouvrit une enquête."
+      },
+      "104": {
+        "title": "Hostie intacte après l'incendie d'une église",
+        "description": "Pendant les violences anticléricales au Paraguay, une église d'Asunción fut incendiée. Lorsque le bâtiment fut détruit, les sauveteurs trouvèrent le tabernacle intact parmi les ruines, et les hosties qu'il contenait indemnes. L'archevêque documenta l'événement."
+      },
+      "105": {
+        "title": "Un miracle eucharistique pendant l'indépendance",
+        "description": "Pendant le mouvement d'indépendance bolivien, une église de La Paz fut prise d'assaut par des soldats. Le prêtre s'enfuit en laissant le Saint-Sacrement exposé. Lorsque les soldats entrèrent, ils auraient reculé devant l'ostensoir et seraient partis sans l'emporter."
+      },
+      "106": {
+        "title": "Une guérison dans une chapelle d'hôpital",
+        "description": "Un patient de Montevideo, atteint d'une tumeur avancée et inopérable, reçut le Viatique dans la chapelle de l'hôpital. Quelques jours plus tard, l'imagerie médicale montra la disparition complète de la tumeur. Le médecin traitant, non catholique, certifia la guérison comme inexplicable sur le plan médical."
+      },
+      "107": {
+        "title": "Hosties préservées après une inondation",
+        "description": "Une crue du fleuve Saint-Laurent endommagea plusieurs églises du quartier bas de Québec. Un tabernacle submergé pendant plusieurs jours fut ouvert et contenait des hosties parfaitement intactes. L'évêque de Québec enquêta et documenta l'événement."
+      },
+      "108": {
+        "title": "Une hostie trouvée par une enfant",
+        "description": "Une enfant trouva une hostie intacte sur une rue de Montréal, apparemment tombée lors d'une visite à un malade. Elle la rapporta au curé, qui la trouva parfaitement entière. L'évêque saisit l'occasion pour promouvoir un plus grand respect lors de la réception de la communion."
+      },
+      "109": {
+        "title": "L'apparition de Knock",
+        "description": "Sur le pignon de l'église paroissiale de Knock, quinze témoins virent une apparition de la Vierge Marie, de saint Joseph, de saint Jean l'Évangéliste et d'un autel avec un Agneau et une Croix : une vision eucharistique. Les témoins avaient entre six et soixante-quinze ans."
+      },
+      "110": {
+        "title": "Hostie intacte sous les décombres",
+        "description": "Pendant la guerre d'indépendance, une église de Dublin fut endommagée par un incendie. Lorsque les décombres furent dégagés, le tabernacle fut retrouvé intact sous la maçonnerie effondrée. Les hosties qu'il contenait étaient parfaitement conservées. L'archevêque certifia l'événement."
+      },
+      "111": {
+        "title": "Une hostie préservée avant la Réforme",
+        "description": "On dit qu'une hostie échappa à la destruction lors d'un raid contre l'église Saint-Gilles. Une femme pieuse la cacha chez elle avant que l'église ne soit attaquée. Lorsqu'elle la rapporta à un prêtre quelques mois plus tard, elle était restée incorruptible, soixante ans avant la Réforme écossaise."
+      },
+      "112": {
+        "title": "Une hostie développe une matière biologique",
+        "description": "Une hostie tombée pendant la communion dans une paroisse de Sydney fut placée dans l'eau par le prêtre. Quelques jours plus tard, elle ne s'était pas dissoute et montrait une coloration rougeâtre. Un biologiste signala la présence de tissu biologique. L'archevêque ordonna une enquête approfondie."
+      },
+      "113": {
+        "title": "Un malade en phase terminale se rétablit",
+        "description": "Un patient atteint d'un cancer en phase terminale dans un hôpital de Melbourne reçut l'onction des malades et le Viatique. En deux semaines, les examens ne montrèrent plus aucune trace du cancer. Son oncologue, non catholique, confirma qu'aucune explication médicale ne pouvait justifier cette rémission complète."
+      },
+      "114": {
+        "title": "Une hostie retrouvée après un tremblement de terre",
+        "description": "Un léger séisme endommagea une église d'Auckland et fit tomber le tabernacle. Lorsque le prêtre revint, il trouva le tabernacle ouvert et les hosties éparpillées sur le sol, mais parfaitement intactes : aucune n'avait été brisée ou écrasée par la chute de la structure."
+      },
+      "115": {
+        "title": "Hosties préservées pendant un siège",
+        "description": "Pendant une période de bombardements, une chapelle de La Valette subit un impact direct et s'effondra en partie. Le tabernacle fut retrouvé intact sous les décombres, et les hosties qu'il contenait étaient parfaitement conservées. L'évêque de Malte documenta l'événement."
+      },
+      "116": {
+        "title": "Une hostie retrouvée dans une rivière",
+        "description": "Un vase sacré jeté dans l'Alzette lors d'un raid contre une église fut retrouvé sur la rive plusieurs jours plus tard, ayant accosté intact. Les hosties qu'il contenait étaient sèches et incorruptibles. L'évêque de Luxembourg enquêta et certifia l'événement."
+      },
+      "117": {
+        "title": "Une hostie miraculeusement préservée",
+        "description": "Pendant les émeutes religieuses qui détruisirent une église de Jakarta, le tabernacle figurait parmi les objets attaqués. Lorsque l'ordre fut rétabli et que les autorités pénétrèrent dans les ruines, le ciboire fut retrouvé intact au milieu de la destruction, et les hosties qu'il contenait n'avaient subi aucun dommage."
+      },
+      "118": {
+        "title": "Du sang sur le corporal",
+        "description": "Pendant la messe dans une paroisse de Surabaya, du sang apparut sur le corporal placé sous le calice, sous la forme d'une croix. Le prêtre et plusieurs témoins attestèrent du phénomène. L'évêque ouvrit une enquête officielle et le corporal fut envoyé à un examen scientifique."
+      },
+      "119": {
+        "title": "Une hostie préservée pendant la persécution",
+        "description": "Un catholique vietnamien qui avait caché une hostie consacrée pendant des années de persécution religieuse affirma qu'elle était restée intacte, dans un contenant scellé, après de nombreuses années de dissimulation. L'archevêque enquêta et documenta l'événement."
+      },
+      "120": {
+        "title": "Un miracle eucharistique copte",
+        "description": "Dans l'ancienne église copte de Babylone, au Caire, la tradition rapporte une manifestation miraculeuse du Christ dans l'Eucharistie pendant une période de persécution. Le patriarche copte documenta l'événement, qui devint une source de force pour la communauté persécutée."
+      },
+      "121": {
+        "title": "Une hostie trouvée dans le désert",
+        "description": "Des ermites du désert égyptien signalèrent avoir trouvé dans le sable un objet brillant qui se révéla être une hostie consacrée. Incapables d'expliquer comment elle était arrivée dans le désert, ils la portèrent à l'évêque local. L'hostie fut examinée et son authenticité confirmée."
+      },
+      "122": {
+        "title": "Une hostie préservée dans une ville en guerre",
+        "description": "Pendant le conflit civil au Liban, une église maronite de Beyrouth fut attaquée et en partie détruite. Lorsque les décombres furent dégagés, le tabernacle fut retrouvé intact. Les hosties qu'il contenait étaient parfaitement conservées. Le patriarche maronite documenta l'événement."
+      },
+      "123": {
+        "title": "Une hostie brille pendant l'adoration",
+        "description": "Pendant une nuit d'adoration eucharistique dans une paroisse de Lagos, l'hostie de l'ostensoir émit une lumière visible, observée par plusieurs fidèles et par le curé. L'archevêque de Lagos enquêta et documenta l'événement."
+      },
+      "124": {
+        "title": "Du sang sur le corporal à Enugu",
+        "description": "Du sang apparut sur le corporal dans une paroisse d'Enugu pendant la messe. Le phénomène fut témoigné par le prêtre et l'assemblée. L'évêque ouvrit une enquête et le corporal fut envoyé dans un laboratoire médical, qui confirma la présence de sang humain."
+      },
+      "125": {
+        "title": "Une hostie miraculeusement transformée",
+        "description": "Une hostie placée dans l'eau dans une paroisse de Kampala, après un accident pendant la distribution, fut examinée quelques jours plus tard : elle ne s'était pas dissoute. Une matière rougeâtre y était visible. L'archevêque de Kampala ordonna une enquête et l'échantillon fut envoyé à une analyse scientifique."
+      },
+      "126": {
+        "title": "Une guérison certifiée par des médecins",
+        "description": "Une femme atteinte d'un lupus avancé reçut la communion et l'onction des malades. En quelques jours, tous les symptômes disparurent. Trois médecins indépendants, dont un non chrétien, certifièrent la guérison comme inexplicable sur le plan médical."
+      },
+      "127": {
+        "title": "Une hostie intacte après un incendie",
+        "description": "Un incendie endommagea une église paroissiale de Nairobi, détruisant la sacristie et le mobilier de l'autel. Lorsque les ruines furent fouillées, le tabernacle fut retrouvé sous les décombres, avec ses hosties intactes et indemnes. L'archevêque de Nairobi documenta l'événement."
+      },
+      "128": {
+        "title": "Un miracle eucharistique en Afrique",
+        "description": "Dans une paroisse qui accueille la communauté catholique éthiopienne, une hostie placée dans l'eau après être tombée pendant la communion développa en quelques jours une matière rougeâtre. L'évêque ordonna une enquête ; la matière fut analysée et jugée d'origine biologique."
+      },
+      "129": {
+        "title": "Le miracle des croisades à Jérusalem",
+        "description": "Pendant la première période des croisades, un phénomène miraculeux fut signalé dans l'église du Saint-Sépulcre, impliquant une hostie consacrée qui ne pouvait être consumée par le feu. L'événement est consigné dans les chroniques des croisés, et le patriarche de Jérusalem le rapporta au pape."
+      },
+      "130": {
+        "title": "Une ancienne relique eucharistique",
+        "description": "L'ancienne église géorgienne conserve le récit d'un miracle eucharistique de la période paléochrétienne. Une hostie consacrée apportée par les premiers missionnaires en Géorgie aurait été miraculeusement préservée, et le fait est consigné dans les Vies des saints Pères de Géorgie."
+      },
+      "131": {
+        "title": "Une hostie préservée pendant les guerres",
+        "description": "Pendant les guerres dévastatrices qui frappèrent l'Europe de l'Est au XVIIe siècle, une église gréco-catholique de Lviv fut pillée. Le tabernacle fut renversé, mais les hosties furent retrouvées regroupées sur le sol, intactes. L'évêque de Lviv certifia l'événement."
+      },
+      "132": {
+        "title": "Une hostie survit à la Réforme",
+        "description": "Pendant la Réforme protestante qui traversa les États baltes, les églises catholiques de Riga furent saisies. Un prêtre cacha un ciboire contenant des hosties consacrées avant que son église ne soit occupée. Lorsqu'il le récupéra des années plus tard, les hosties étaient intactes et incorruptibles."
+      },
+      "133": {
+        "title": "Un miracle nordique ancien",
+        "description": "Avant que la Réforme n'atteigne la Scandinavie, une église de Stockholm consigna un miracle concernant une hostie qui aurait émis une lumière pendant la messe. L'évêque d'Uppsala enquêta et l'événement fut inscrit dans les annales diocésaines du XIIe siècle."
+      },
+      "134": {
+        "title": "Une hostie préservée après une inondation",
+        "description": "Lorsqu'une église de Copenhague fut inondée pendant une violente tempête, le tabernacle resta submergé plusieurs jours. Lorsqu'on le récupéra, les hosties qu'il contenait étaient parfaitement sèches et incorruptibles. L'évêque de Roskilde enquêta et le miracle fut consigné dans les registres diocésains."
+      },
+      "135": {
+        "title": "Une ancienne hostie de Chypre",
+        "description": "Pendant la période paléochrétienne de Chypre, un miracle eucharistique est consigné dans les hagiographies des évêques de l'île. Une hostie fut miraculeusement préservée pendant une période de persécution iconoclaste et fut présentée aux fidèles comme preuve de la Présence réelle du Christ."
+      },
+      "136": {
+        "title": "La vieille ville et l'Eucharistie",
+        "description": "À Mdina, l'ancienne capitale fortifiée de Malte, la tradition conserve le récit d'une hostie consacrée qui survécut à une incursion arabe dans la cathédrale. L'hostie fut retrouvée intacte parmi les ruines, comme le rapportent les chroniques des conquérants normands qui fortifièrent ensuite la ville."
+      },
+      "137": {
+        "title": "L'Eucharistie arrête une crue catastrophique",
+        "description": "Le lendemain de la fête du Corpus Christi de 1630, de violentes pluies torrentielles firent déborder le fleuve Maira de façon catastrophique, menaçant de détruire le village de Canosio, dans le diocèse de Saluzzo. Le curé, le père Antonio Reinardi, s'avança vers les eaux déchaînées avec le Saint-Sacrement dans un ostensoir, en récitant le psaume 51. Lorsqu'il bénit les eaux, la pluie cessa aussitôt et le fleuve retrouva son niveau normal. Les habitants célèbrent encore aujourd'hui une fête pendant l'octave du Corpus Christi en souvenir de cet événement."
+      },
+      "138": {
+        "title": "Un frère capucin arrête l'incendie de la ville",
+        "description": "Le 3 août 1631, un incendie à Dronero, dans le diocèse de Saluzzo, se propagea rapidement dans la ville malgré tous les efforts humains pour l'éteindre. Un frère capucin nommé Maurice de Ceva prit l'ostensoir contenant la grande hostie de l'église Sainte-Brigitte et avança vers le feu : à cet instant, les flammes s'apaisèrent aussitôt. Le miracle est gravé sur une plaque de pierre dans l'église Sainte-Brigitte, et les habitants de Dronero le commémorent chaque année par une procession solennelle du Corpus Christi."
+      },
+      "139": {
+        "title": "Des hosties volées conservées pendant des décennies",
+        "description": "Le 25 juillet 1969, des voleurs pénétrèrent dans l'église paroissiale de San Mauro La Bruca et dérobèrent un ciboire contenant des hosties consacrées, qu'ils jetèrent ensuite au bord d'une route. Un enfant trouva les hosties et les rapporta au curé. Pendant les vingt-cinq années qui suivirent, des analyses scientifiques répétées montrèrent que les hosties étaient restées intactes bien au-delà des quelques mois au terme desquels une hostie ordinaire se désintègre. En 1994, l'évêque Biagio D'Agostino reconnut officiellement cette conservation miraculeuse et autorisa la vénération publique."
+      },
+      "140": {
+        "title": "Du sang coule de linges d'autel au lavoir",
+        "description": "En 1294, une servante de Gruaro, dans le diocèse de Concordia, se rendit au lavoir public pour laver des linges d'autel et vit du sang couler d'une particule consacrée restée prise dans les plis du tissu. Elle prévint le curé, qui informa l'évêque Giacomo di Ottonello. Un différend entre le diocèse de Concordia et les comtes de Valvasone, nobles de la région, au sujet de la garde de la relique fut finalement tranché par le Saint-Siège, qui confia le linge aux comtes à condition qu'ils construisent une église dédiée au Très Saint Corps du Christ, achevée en 1483. Le document le plus ancien attestant le miracle est un décret du pape Nicolas V, daté de 1454."
+      },
+      "141": {
+        "title": "Une hostie survit à la destruction totale d'une église",
+        "description": "Le 17 avril 1560, pendant l'octave de Pâques, un violent incendie détruisit complètement l'église franciscaine de Morrovalle, dans le diocèse de Camerino. Dix jours plus tard, le frère Battista da Ascoli fouilla les ruines et découvrit un pyxide carbonisé encastré dans la cavité du mur de l'ancien autel ; le corporal qui l'entourait était gravement brûlé, mais la grande hostie à l'intérieur était parfaitement intacte et incorruptible. Le pape Pie IV envoya un évêque enquêter et autorisa ensuite la dévotion publique par la bulle « Sancta Romana Ecclesia » en 1560."
+      },
+      "142": {
+        "title": "Une hostie se transforme en chair pendant la messe de Grégoire",
+        "description": "Vers l'an 595, pendant une messe célébrée par le pape saint Grégoire le Grand, une noble qui avait elle-même préparé le pain eucharistique éclata de rire lorsque Grégoire lui offrit la communion, affirmant ne pas croire que le pain qu'elle avait fait pût devenir le Corps du Christ. Grégoire lui retira la communion et pria à haute voix pour obtenir la lumière divine ; une partie du pain consacré se transforma visiblement en chair sanglante sous les yeux de l'assemblée. Le miracle est raconté en détail par Paul Diacre dans sa Vie de saint Grégoire le Pape, au VIIIe siècle ; une partie de la relique miraculeuse est conservée à l'abbaye d'Andechs, en Allemagne."
+      },
+      "143": {
+        "title": "La statue du Sacré-Cœur saigne à plusieurs reprises",
+        "description": "À partir du 4 avril 1948, pendant le chant des vêpres dans l'église du monastère de Rosano, dans le diocèse de Fiesole, des témoins virent des gouttes de sang tomber des yeux d'une statue grandeur nature du Sacré-Cœur, offerte pour accomplir un vœu fait pendant la Seconde Guerre mondiale. Les phénomènes se répétèrent plusieurs fois entre 1948 et 1950 ; des analyses médicales confirmèrent que la substance était du sang humain, et les témoignages sous serment ainsi que les linges imprégnés de sang sont conservés dans les archives du monastère. Le 14 novembre 1950, sur ordre du Saint-Office, la statue fut retirée de la vue du public dans l'attente d'une évaluation complémentaire."
+      },
+      "144": {
+        "title": "Une hostie volée se transforme en chair sanglante",
+        "description": "Vers 1050, à l'ermitage de Fonte Avellana, dans les Apennins, une femme fut persuadée par une sorcière de voler une hostie consacrée à des fins sacrilèges. Le prêtre s'en aperçut, l'arrêta et lui demanda d'ouvrir le linge qui cachait l'hostie ; devant le prêtre et les témoins réunis, la moitié de la particule sacrée s'était transformée en chair sanglante, tandis que l'autre moitié gardait l'apparence d'une hostie. Saint Pierre Damien, docteur de l'Église, consigna le miracle comme témoin direct dans son ouvrage Opuscule XXXIV."
+      },
+      "145": {
+        "title": "Des ânes s'agenouillent devant le Viatique",
+        "description": "En août 1517, un prêtre nommé le père Lorenzo, aumônier de l'église de Salzano, portait le Viatique à un paroissien mourant lorsque des ânes qui paissaient dans les prés voisins se tournèrent vers la procession, s'approchèrent et s'agenouillèrent sur leurs pattes avant devant le Saint-Sacrement. Les animaux suivirent la procession jusqu'à la maison du malade, s'agenouillèrent de nouveau, puis regagnèrent paisiblement leur pâturage. L'épisode est relaté dans l'Historia Societatis Iesu de Nicolò Orlandino, publiée à Bologne en 1615."
+      },
+      "146": {
+        "title": "Les flammes repoussent un soldat du tabernacle",
+        "description": "En 1640, pendant l'invasion française de Turin, des soldats entrèrent dans l'église de Santa Maria del Monte. Un soldat français força la porte du tabernacle et tendit la main vers le ciboire contenant les hosties consacrées ; des flammes jaillirent du tabernacle, le brûlèrent et empêchèrent la profanation de l'Eucharistie. La porte du tabernacle aurait conservé l'empreinte de la main brûlée du soldat, preuve matérielle de l'événement. Le miracle est documenté dans les archives de l'église et figure dans l'exposition des miracles eucharistiques de Carlo Acutis."
+      },
+      "147": {
+        "title": "L'Enfant Jésus apparaît dans l'hostie exposée",
+        "description": "À Pâques 1570, le Saint-Sacrement fut exposé pour quarante heures d'adoration dans l'église Saint-Érasme de Veroli ; plusieurs témoins virent la figure de l'Enfant Jésus apparaître dans l'hostie, ainsi qu'une étoile brillante à la base du calice. Le témoin oculaire Giacomo Meloni fit une déposition sous serment de ce qu'il avait vu. Le calice et la patène d'argent d'origine utilisés pendant l'exposition sont toujours conservés dans l'église Saint-Érasme et servent une fois par an, à la messe du mardi de Pâques."
+      },
+      "148": {
+        "title": "Les hosties s'élèvent après la profanation d'un soldat",
+        "description": "En 1472, pendant la guerre entre Florence et Volterra, un soldat florentin s'empara d'un ciboire contenant des hosties consacrées de la cathédrale de Volterra et le jeta contre une colonne de pierre ; un tremblement de terre secoua la ville, et les hosties s'envolèrent et s'élevèrent visiblement dans les airs, suspendues et entourées d'une lumière mystérieuse devant l'assemblée. Le soldat fut soudain frappé de cécité, tomba à genoux en implorant le pardon, et recouvra la vue lorsqu'il se soumit au prêtre. Les documents décrivant le miracle sont conservés dans les archives de l'église Saint-François de Volterra."
+      },
+      "149": {
+        "title": "Une hostie consacrée saigne pendant la messe",
+        "description": "Le 5 juin 1405, le curé d'Ittre, en célébrant la messe à la chapelle d'Isaac, découvrit dans le corporal un fragment d'hostie consacrée qui se mit à saigner dès qu'il le prit dans ses mains ; le sang continua de couler pendant quatre jours, tachant tout le corporal. L'évêque de Cambrai enquêta sur l'événement et en 1410 le déclara authentique, autorisant la chapelle à devenir un lieu de pèlerinage. Le corporal taché de sang est toujours exposé à Bois-Seigneur-Isaac."
+      },
+      "150": {
+        "title": "Des hosties sanglantes vénérées comme Sacrement du Miracle",
+        "description": "Selon les archives historiques médiévales, des hosties consacrées qui auraient été profanées le Vendredi saint 1370 se mirent à saigner. Elles furent ensuite portées à l'église collégiale des saints Michel et Gudule, à Bruxelles, où elles furent placées dans un reliquaire et vénérées comme « Sacrement du Miracle ». L'événement fut commémoré pendant des siècles par des vitraux installés entre 1436 et 1870, ainsi que par une procession annuelle. Carlo Acutis l'a intégré à sa documentation historique des phénomènes eucharistiques à travers les siècles."
+      },
+      "151": {
+        "title": "Des hosties volées retrouvées intactes dans un champ",
+        "description": "En 1412, un voleur d'églises déroba un calice et un ciboire contenant cinq hosties consacrées dans le village de Poederlee ; ressentant mystérieusement l'impossibilité de poursuivre son chemin, il cacha les hosties dans le terrier d'un lapin et fut arrêté plus tard. Lorsqu'il révéla la cachette, les autorités trouvèrent les cinq hosties parfaitement intactes après plusieurs jours de pluie, disposées en forme de croix et entourées d'une lumière vive. Le magistrat de Herentals déclara le miracle authentique le 2 janvier 1442, et une chapelle appelée « De Hegge » fut construite sur le site."
+      },
+      "152": {
+        "title": "Une hostie tachée de sang près d'un mourant",
+        "description": "Le 25 juillet 1317, un prêtre de Viversel laissa sa bourse contenant une hostie consacrée à l'entrée de la maison d'un malade, pendant qu'il entendait une confession ; un membre de la famille ouvrit le pyxide et toucha l'hostie. Lorsque le prêtre la reprit, elle était tachée de sang ; le 1er août, elle montrait aussi une image du visage du Christ couronné d'épines, constatée par les religieuses de l'abbaye d'Herkenrode. La relique fut conservée à l'abbaye d'Herkenrode jusqu'à la Révolution française, puis transférée en 1804 à l'église Saint-Quentin de Hasselt, où elle se trouve toujours."
+      },
+      "153": {
+        "title": "Une hostie se transforme en chair pour un communiant indigne",
+        "description": "En 1374, pendant le Carême, dans une église de Middelburg, un serviteur nommé Jan, qui ne s'était pas confessé depuis des années, reçut la communion indignement ; l'hostie posée sur sa langue se transforma en chair sanglante, et du sang coula sur la nappe de l'autel. Le prêtre conserva la particule miraculeuse, Jan se repentit publiquement, et les autorités ecclésiastiques et civiles enquêtèrent puis approuvèrent la vénération de la relique. Selon la tradition, l'hostie se divisa miraculeusement en 1380 : une partie resta à Cologne et l'autre fut portée à Louvain, où une confrérie pour sa vénération fut fondée en 1426."
+      },
+      "154": {
+        "title": "Une hostie se transforme en sang sur un linge",
+        "description": "Le dimanche de Pâques, 31 mars 1331, pendant la première messe célébrée par Hugues de la Baume, vicaire de Blanot, une hostie consacrée tomba de la bouche d'une veuve nommée Jacquette sur un linge de communion et se transforma en une tache de sang exactement de la taille de l'hostie. Le diocèse d'Autun mena une enquête, et le pape Jean XXII reconnut l'événement comme un miracle eucharistique. Le linge taché est conservé dans l'église du village de Blanot, où il est solennellement exposé à chaque Fête-Dieu."
+      },
+      "155": {
+        "title": "L'ostensoir suspendu dans les airs après un incendie",
+        "description": "La veille de la Pentecôte, le 25 mai 1608, un incendie éclata pendant la nuit dans l'abbaye de Faverney et réduisit en cendres l'autel provisoire, mais l'ostensoir contenant deux hosties consacrées resta suspendu dans les airs au-dessus des ruines, sans être touché par les flammes. L'ostensoir flotta pendant environ trente-trois heures avant de descendre doucement sur un nouvel autel pendant la messe. L'archevêque de Besançon déclara le miracle authentique le 10 juillet 1608, le pape Paul V publia une bulle d'indulgence, et l'une des deux hosties intactes est toujours vénérée à Faverney."
+      },
+      "156": {
+        "title": "Un garçon paralysé et muet guéri à la communion",
+        "description": "Le dimanche de Pâques 1461, un garçon de douze ans nommé Bertrand, paralysé et muet depuis l'âge de sept ans à la suite d'une chute, fut amené à l'église Saint-Barthélemy de La Rochelle et reçut la communion. Au moment où il reçut l'hostie, il fut guéri instantanément ; ses premiers mots furent « Adjutorium nostrum in nomine Domini » (« Notre secours est dans le nom du Seigneur »). Un manuscrit enluminé qui documente l'événement est conservé dans la cathédrale de La Rochelle."
+      },
+      "157": {
+        "title": "Une relique du Précieux Sang rapportée de Terre sainte",
+        "description": "Le 15 juillet 1257, le cardinal Eudes de Châteauroux revint des croisades et offrit à l'église de Neuvy-Saint-Sépulcre deux gouttes du Sang du Christ recueillies au Calvaire et scellées dans une fiole de cristal, ainsi qu'un fragment du tombeau. L'église avait été construite au XIe siècle comme réplique architecturale de l'église du Saint-Sépulcre de Jérusalem, et le pape Grégoire XV accorda en 1623 des indulgences aux pèlerins qui vénéreraient la relique. Le Saint-Siège éleva l'église au rang de basilique mineure en 1910, et le Précieux Sang est toujours exposé à la vénération le lundi de Pâques et le 1er juillet."
+      },
+      "158": {
+        "title": "Le visage du Christ aperçu dans une hostie consacrée",
+        "description": "Le 2 juin 1668, environ deux cents fidèles se réunirent à l'église de Les Ulmes pour la bénédiction du Saint-Sacrement, conduite par le curé Nicolas Nézan ; pendant le chant du Pange Lingua, une image visible du visage du Christ apparut dans l'hostie exposée et resta visible pendant une quinzaine de minutes. Le père Nézan signala l'événement à l'évêque d'Angers, Henri Arnauld, le 13 juin, qui déclara le miracle authentique avant la fin du mois. Cet événement fait partie des nombreux phénomènes eucharistiques documentés dans le diocèse d'Angers au XVIIe siècle."
+      },
+      "159": {
+        "title": "Des hosties volées retrouvées intactes après une chute de neige",
+        "description": "En décembre 1532, des voleurs pénétrèrent dans l'église paroissiale de Marseille-en-Beauvais, en Picardie, dérobèrent un ciboire d'argent contenant des hosties consacrées et l'abandonnèrent sous une pierre dans la rue principale. Le 1er janvier 1533, un passant nommé Jean Moucque remarqua que la pierre était totalement dégagée de neige malgré une forte chute ; en la soulevant, il trouva les hosties entièrement intactes. Plusieurs guérisons miraculeuses furent ensuite signalées sur le lieu, la chapelle des Saintes Hosties y fut construite, et une messe solennelle est toujours célébrée chaque 2 janvier en souvenir."
+      },
+      "160": {
+        "title": "Une hostie reste intacte pendant que le calice fond dans l'incendie",
+        "description": "Le Jeudi saint 1643, un incendie éclata dans l'église paroissiale de Pressac et détruisit un calice contenant une hostie consacrée près de l'autel de la Vierge. Le calice fut presque entièrement consumé et fondu en gouttes d'étain, mais une bulle d'étain se forma, sous laquelle l'hostie fut retrouvée parfaitement intacte, avec seulement une légère teinte rougeâtre sur les bords. L'abbé d'Availles-Limouzine consigna tous les témoignages et les transmit à l'évêque de Poitiers, qui publia un acte solennel autorisant la vénération ; des vitraux représentant le miracle subsistent dans l'église de Pressac."
+      },
+      "161": {
+        "title": "L'hostie volée d'un meunier saigne abondamment",
+        "description": "En 1216, un meunier de Benningen vola une hostie consacrée après avoir reçu la communion et la cacha entre les pierres du moulin de son voisin, dans l'intention de le calomnier. Le jour de la fête de saint Grégoire, l'hostie se mit à saigner si abondamment que tout le village et l'évêque local furent alertés ; le meunier coupable se repentit et avoua son sacrilège. En 1221, les habitants construisirent en l'honneur du miracle une chapelle connue sous le nom de Riedkapelle zum Hochwürdigen Gut, qui reste aujourd'hui un lieu de pèlerinage."
+      },
+      "162": {
+        "title": "Une hostie immobile dans un champ",
+        "description": "Vers 1125, un paysan pieux des environs de Viehbrunn cacha en secret une hostie consacrée à l'intérieur d'un bâton de marche ; dans un élan, il lança le bâton contre des bêtes égarées, et l'hostie tomba au sol. Toutes les tentatives pour la reprendre furent vaines, jusqu'à ce que l'évêque Hartwich de Ratisbonne vienne sur place et ne puisse la soulever qu'après avoir promis d'y construire une chapelle. La chapelle fut achevée en 1125 et donna naissance au village de Bettbrunn, devenu un lieu de pèlerinage du diocèse de Ratisbonne."
+      },
+      "163": {
+        "title": "Une hostie transformée en crucifix",
+        "description": "En 1280, un berger de Kranenburg, près de Clèves, reçut la communion mais ne put avaler l'hostie et la jeta contre un arbre ; rongé par le remords, il se confessa à son curé, mais une recherche minutieuse ne donna rien. Lorsque l'arbre fut abattu plus tard, un crucifix parfaitement sculpté en tomba. Une église fut élevée sur le site ; la construction de l'église gothique actuelle commença en 1408 et s'acheva en 1444, et le crucifix miraculeux y est toujours vénéré, avec une procession annuelle le 14 septembre."
+      },
+      "164": {
+        "title": "Trois hosties sanglantes survivent à un incendie d'église",
+        "description": "En août 1383, au cours d'un violent différend, le village de Wilsnack et son église paroissiale furent réduits en cendres. Lorsque le curé fouilla les ruines, il découvrit trois hosties intactes dans le sacraire de l'autel, chacune portant des taches de sang visibles. L'évêque Dietrich von Havelberg vérifia le miracle en 1384, et le pape Eugène IV confirma la vénération par deux bulles pontificales en 1447 ; Wilsnack devint l'un des sanctuaires de pèlerinage les plus importants de l'Europe de la fin du Moyen Âge, jusqu'à ce que les réformateurs protestants détruisent les hosties en 1552."
+      },
+      "165": {
+        "title": "Le vin consacré devient du sang vivant",
+        "description": "Le 1er mai 1429, un prêtre célébrant sa première messe à la cathédrale Saint-Laurent d'Alkmaar renversa accidentellement le calice après la consécration ; trois gouttes du vin consacré se transformèrent miraculeusement en sang et laissèrent des taches permanentes, impossibles à enlever par quelque moyen que ce soit. Le prêtre enterra le linge, qui fut retrouvé plus tard à la suite d'une vision accordée au capitaine d'un navire pendant une tempête. L'évêque d'Utrecht déclara officiellement l'événement miraculeux en 1433, et la relique tachée de sang est toujours conservée dans la cathédrale Saint-Laurent."
+      },
+      "166": {
+        "title": "Des hosties rejetées retrouvées imbibées de sang",
+        "description": "Le dimanche précédant la Pentecôte de 1421, un curé de l'église des saints Pierre et Paul à Bergen op Zoom, qui doutait apparemment de la transsubstantiation, jeta dans un canal les hosties consacrées restées après la messe. Plusieurs mois plus tard, des pêcheurs récupérèrent les hosties flottant sur l'eau, visiblement imprégnées de sang coagulé. L'évêque local approuva la vénération du miracle, et la dévotion fut officiellement rétablie au XXe siècle, avec des célébrations commémoratives annuelles qui ont lieu jusqu'à aujourd'hui."
+      },
+      "167": {
+        "title": "Un prêtre qui doute voit du sang jaillir du calice",
+        "description": "En 1400, le père Arnoldus Groen célébrait la messe à l'église des saints Pierre et Paul de Boxmeer lorsqu'il fut saisi d'un doute sur la Présence réelle ; aussitôt, le vin consacré se mit à bouillonner et à déborder du calice sur le corporal, et le prêtre implora le pardon de Dieu, après quoi le saignement cessa. Le sang tombé sur le corporal se coagula en un grumeau d'environ la taille d'une noix, qui reste visible et inchangé à Boxmeer aujourd'hui. En 2000, le pape Jean-Paul II éleva l'église Saint-Pierre de Boxmeer au rang de basilique."
+      },
+      "168": {
+        "title": "Un calice renversé tache le corporal de sang",
+        "description": "Vers 1380, le père Eligius van der Aker célébrait la messe à Boxtel lorsqu'il renversa accidentellement le calice contenant le vin blanc consacré ; le vin se transforma aussitôt en sang, qui tacha à la fois le corporal et la nappe d'autel. Un décret publié en 1380 par le cardinal Pileus compte parmi les documents les plus autorisés attestant le miracle. Le corporal taché de sang resta à Boxtel, tandis que la nappe d'autel fut remise à la ville de Hoogstraten ; les deux reliques continuent d'être vénérées dans leurs villes respectives."
+      },
+      "169": {
+        "title": "Une hostie volée retrouvée intacte sous la terre",
+        "description": "Le 24 juin 1300, un soldat qui pillait la région déroba une hostie consacrée ; elle fut plus tard découverte par un paysan local, Jan Bautoen, parfaitement intacte et cachée sous une motte de terre. L'évêque de Liège mena une enquête officielle, dont le procès-verbal constitue l'un des documents ecclésiastiques les plus fiables liés à l'événement. Une chapelle fut construite sur le site en souvenir, et l'histoire est évoquée par des peintures conservées dans l'église locale."
+      },
+      "170": {
+        "title": "Du sang coule d'une hostie ; la relique survit à l'incendie",
+        "description": "En 1222, pendant la messe dominicale dans l'église bénédictine de Meerssen, du sang se mit à couler de la grande hostie consacrée sur le corporal, et il fut reconnu par les autorités ecclésiastiques. En 1465, lorsque des assaillants mirent le feu à l'église, un paysan de la région parvint à sauver la relique tachée de sang, qui sortit des flammes parfaitement indemne. En 1938, le pape Pie XI éleva l'église au rang de basilique du Saint-Sacrement ; les reliques de l'hostie et le corporal taché de sang restent dans la basilique et sont portées en procession chaque année pendant l'octave de la Fête-Dieu."
+      },
+      "171": {
+        "title": "Une hostie préservée pendant l'invasion lituanienne",
+        "description": "Pendant une invasion lituanienne en 1290, un prêtre local enterra un ciboire contenant une hostie consacrée dans un champ pour la protéger ; le village et l'église furent rasés. Des années plus tard, un paysan qui labourait le champ découvrit le ciboire lorsque ses bœufs s'arrêtèrent inexplicablement et s'inclinèrent jusqu'au sol ; l'hostie émettait une lumière vive. Lorsqu'on la porta dans une église voisine, elle réapparut miraculeusement sur le lieu d'origine, et une église dédiée au Corpus Christi y fut construite ; le sanctuaire fut consacré par l'évêque Krzysztof Potocki en 1726 et attire encore des pèlerins."
+      },
+      "172": {
+        "title": "Trois poissons rapportent les hosties au prêtre",
+        "description": "En 1348, pendant la peste noire, un prêtre perdit un coffret d'hosties consacrées lorsque sa mule glissa en traversant un ravin près de Valence, et les hosties tombèrent dans le courant. Trois poissons émergèrent, la tête hors de l'eau, chacun portant une hostie au bout de la gueule ; immobiles, ils nagèrent jusqu'au calice que le prêtre tenait au-dessus de l'eau et y déposèrent chaque hostie avant de s'éloigner. L'évêque local reconnut officiellement le miracle ; les documents historiques sont conservés dans les archives diocésaines de Valence, et le lieu est marqué par l'ermitage dels Peixets, construit en 1907."
+      },
+      "173": {
+        "title": "La statue de l'Enfant Jésus désigne les hosties cachées",
+        "description": "Le 29 janvier 1568, un tondeur de draps nommé Joan Prats s'introduisit dans son église paroissiale d'Alcoy et déroba un ciboire d'argent contenant quarante hosties consacrées ainsi qu'un reliquaire, qu'il cacha sous des pierres au pied de son escalier. Lorsque le vol fut découvert, une statuette de l'Enfant Jésus dans une maison voisine se pencha et désigna le lieu de la cachette, conduisant les autorités aux objets volés. La maison du voleur fut transformée en oratoire, et chaque année, le 31 janvier, les habitants d'Alcoy organisent la procession de l'Enfant Jésus miraculeux en souvenir de l'événement."
+      },
+      "174": {
+        "title": "Des anges apportent la croix pendant une messe de captifs",
+        "description": "En 1231, le prêtre chrétien captif Ginés Pérez Chirinos fut prié par le souverain musulman Zeyt-Abuzeyt de célébrer la messe pour qu'il puisse assister au rite chrétien ; découvrant qu'il n'y avait pas de crucifix sur l'autel, deux anges descendirent du ciel en portant une croix, la posèrent devant l'autel et disparurent. Pendant la consécration, le souverain aurait eu la vision d'un enfant rayonnant dans l'hostie et, avec sa famille, se convertit au christianisme. La relique de la Vraie Croix est toujours conservée à la basilique de Caravaca de la Cruz, reconnue par le pape Jean-Paul II comme l'une des six villes saintes."
+      },
+      "175": {
+        "title": "L'hostie se transforme en chair, le sang imprègne le linge",
+        "description": "En 1370, le curé de Cimballa, en Aragon, le père Don Tomás, doutait depuis longtemps de la Présence réelle ; au moment de la consécration pendant une messe dominicale, l'hostie se transforma en chair et le sang se mit à couler, imprégnant le linge de l'autel. Rongé par le remords, le père Tomás se retira ensuite dans un monastère pour passer le reste de sa vie dans la pénitence. Le corporal taché de sang, conservé dans un reliquaire ouvragé en 1594, est exposé chaque 12 septembre ; l'événement est connu sur place sous le nom de « Très Saint Mystère douteux »."
+      },
+      "176": {
+        "title": "Dans la bouche d'un prêtre, l'hostie se transforme en chair",
+        "description": "En 1297, à Gérone, en Catalogne, un prêtre célébrant la messe fut saisi d'un doute sur la Présence réelle ; au moment de la communion, il se trouva incapable d'avaler l'hostie, qui s'était transformée en chair dans sa bouche. Le prêtre confessa son doute, et le morceau de chair fut officiellement conservé et vénéré comme relique. Elle fut conservée jusqu'à sa destruction en 1936, pendant la guerre civile espagnole."
+      },
+      "177": {
+        "title": "Une hostie profanée saigne et est conservée pendant des siècles",
+        "description": "En 1572, à Gorkum (Pays-Bas), des partisans de Zwingli retirèrent des hosties consacrées du tabernacle d'une cathédrale ; l'un des hérétiques piétina une hostie avec des bottes cloutées et la transperça en trois endroits ; du sang se mit aussitôt à suinter de chaque plaie, et, témoin du miracle, l'auteur de la profanation se convertit sur-le-champ. Cachée par les franciscains puis transportée à travers Anvers et Vienne, l'hostie parvint à la cour du roi Philippe II d'Espagne vers 1592. L'hostie incorruptible et sanglante est vénérée à ce jour dans la sacristie du monastère royal de Saint-Laurent de l'Escurial, près de Madrid, où elle est exposée au public deux fois par an."
+      },
+      "178": {
+        "title": "Le vin se transforme en sang qui coule sur l'autel",
+        "description": "En 1010, le curé d'Ivorra, en Catalogne, le père Bernat Oliver, doutait de la transsubstantiation ; pendant la messe, le vin du calice se transforma entièrement en sang qui déborda sur la nappe de l'autel et se répandit sur le sol. Saint Ermengol, évêque d'Urgell, se rendit à Ivorra pour enquêter, puis porta le calice et le linge taché de sang à Rome, où le pape Serge IV publia une bulle pontificale attestant le miracle. Les reliques sacrées sont conservées dans un reliquaire gothique de 1426 à l'église paroissiale de Sant Cugat d'Ivorra ; le miracle est commémoré chaque année sous le nom de « la Sainte Doute »."
+      },
+      "179": {
+        "title": "Une enfant reconnaît la véritable hostie",
+        "description": "Le jour de Noël 1392, une fillette de cinq ans nommée Inés, assistant à la messe à Moncada, vit l'Enfant Jésus apparaître dans l'hostie consacrée ; le prêtre qui célébrait la messe avait secrètement douté de la validité de son ordination pendant le Grand Schisme d'Occident. Le lendemain, le prêtre lui présenta une hostie consacrée et une non consacrée, et elle reconnut correctement la sainte, dissipant ses doutes. Le miracle est consigné dans les Annales ecclésiastiques du père Odorico Raynaldi et dans les archives municipales de Moncada."
+      },
+      "180": {
+        "title": "Un père libéré du purgatoire pendant la messe",
+        "description": "Au monastère bénédictin Notre-Dame de Montserrat, une jeune fille affligée demanda à l'abbé de célébrer trois messes pour l'âme de son père défunt. Pendant la première messe, elle vit son père entouré de flammes, visibles pour elle seule ; lorsqu'on plaça un mouchoir à l'endroit qu'elle désignait, il prit feu aussitôt sous les yeux du clergé. À la troisième messe, son père apparut vêtu de blanc et s'éleva au ciel au moment de la célébration eucharistique, confirmant l'efficacité de la messe offerte pour les défunts."
+      },
+      "181": {
+        "title": "L'hostie et le vin deviennent chair et sang",
+        "description": "Vers 1300, un moine bénédictin prêtre de l'église Santa María la Real, au sommet d'O Cebreiro, l'une des plus anciennes églises du chemin de Saint-Jacques, avait perdu de sa ferveur et doutait de la Présence réelle ; pendant les paroles de la consécration, l'hostie se transforma visiblement en chair et le vin en sang, qui déborda du calice et imprégna le corporal. En 1486, la reine Isabelle de Castille fit réaliser un précieux reliquaire pour abriter la chair miraculeuse, le calice et les corporaux tachés de sang, lors de son propre pèlerinage ; ces reliques sont toujours vénérées dans l'église."
+      },
+      "182": {
+        "title": "Des hosties volées retrouvées parfaitement conservées",
+        "description": "Le 5 novembre 1824, un ancien enfant de chœur nommé Nicolás Bernabeu déroba un ostensoir et des vases sacrés dans l'église d'Onil ; un pyxide contenant des hosties consacrées fut caché dans un champ près de Tibi, où une femme nommée Teresa Carbonell le découvrit le 28 novembre 1824. Les hosties consacrées furent retrouvées parfaitement intactes malgré plusieurs semaines d'exposition. Le 28 novembre 1943, soit exactement 119 ans plus tard, le délégué de l'archevêque de Valence confirma officiellement l'incorruptibilité miraculeuse ; les hosties sont vénérées dans l'église Saint-Jacques-le-Majeur d'Onil."
+      },
+      "183": {
+        "title": "Des hosties volées brillent dans un buisson de ronces",
+        "description": "En 1533, un paroissien déroba un ciboire d'argent contenant des hosties consacrées dans son église de Ponferrada, puis le jeta dans un buisson de ronces après qu'il fut devenu étrangement lourd lorsqu'il tenta de le lancer dans la rivière ; des témoins signalèrent ensuite d'étranges lumières la nuit et des colombes blanches qui planaient le jour. Un meunier nommé Nogaledo découvrit le tabernacle en cherchant les colombes, et trouva les hosties intactes et lumineuses. Une chapelle fut érigée sur le site, et en 1570 une procession annuelle solennelle fut instituée pendant l'octave de la Fête-Dieu."
+      },
+      "184": {
+        "title": "Une hostie incorruptible pendant 175 ans dans un crucifix",
+        "description": "En 1251, une hostie consacrée fut placée dans une petite cavité du front du groupe sculpté roman connu sous le nom de « Saint Mystère », au monastère de Sant Joan de les Abadesses, en Catalogne ; la cavité fut scellée par une plaque d'argent. En 1426, lors de travaux de restauration, des ouvriers découvrirent la cavité scellée et y trouvèrent, enveloppée de lin blanc, l'hostie âgée de 175 ans, parfaitement incorruptible. L'hostie conservée, connue sous le nom de « Très Saint Mystère de Sant Joan de les Abadesses », continue d'être vénérée par les pèlerins dans l'église du monastère."
+      },
+      "185": {
+        "title": "Le Saint Calice de la Cène",
+        "description": "La cathédrale de Valence conserve ce que la tradition identifie comme le Saint Calice utilisé par Jésus-Christ lors de la Cène : une coupe d'agate taillée vers le Ier ou le IIe siècle avant J.-C., qui aurait été apportée de Jérusalem à Rome par saint Pierre et confiée au diacre saint Laurent en 258. Le roi Alphonse V d'Aragon la remit à la cathédrale de Valence en 1437, où elle est vénérée depuis. Jusqu'au XVIIIe siècle, le calice servit à contenir l'hostie consacrée lors des cérémonies du Jeudi saint ; il est aujourd'hui exposé en permanence dans la chapelle du Saint Calice de la cathédrale."
+      },
+      "186": {
+        "title": "Une hostie volée apparaît sous la forme d'un enfant vivant",
+        "description": "En 1427, à Saragosse, une femme apporta une hostie consacrée volée à un sorcier maure ; lorsqu'il ouvrit la boîte, il n'y trouva pas une hostie mais un nourrisson vivant entouré d'une lumière éclatante, et toutes les tentatives pour le brûler échouèrent. L'archevêque de Saragosse organisa une procession solennelle, et lorsque l'Enfant miraculeux fut placé sur l'autel pendant l'offertoire de la messe, il disparut et l'hostie consacrée réapparut à sa place. L'événement est consigné dans les archives de l'hôtel de ville de Saragosse, et un tableau le commémorant est accroché dans la cathédrale."
+      },
+      "187": {
+        "title": "Le Sacré-Cœur apparaît pendant une éruption volcanique",
+        "description": "Le 8 mai 1902 (jour de l'Ascension), alors que le mont Pelée entrait en éruption et détruisait la ville voisine de Saint-Pierre, les habitants de Morne-Rouge se rassemblèrent dans leur église paroissiale pour la messe et l'adoration eucharistique. Pendant l'exposition du Saint-Sacrement, de nombreux témoins affirmèrent avoir vu apparaître dans l'hostie une image de Jésus montrant son Sacré-Cœur couronné d'épines. Le village fut épargné ce jour-là ; l'événement fut relaté publiquement au Congrès eucharistique d'Angoulême en 1904."
+      },
+      "188": {
+        "title": "Le visage du Christ aperçu dans l'hostie",
+        "description": "Le 26 janvier 1902, pendant la dévotion des Quarante Heures dans l'église paroissiale de Saint-André, sur l'île de La Réunion, l'abbé Henri Lacombe observa un halo lumineux autour de l'ostensoir, suivi de l'apparition dans l'hostie du visage du Christ couronné d'épines. La vision évolua pendant plusieurs heures : le visage s'anima avant de se transformer en l'image d'un crucifix couvrant toute l'hostie ; des milliers de témoins, de la ville et de la capitale Saint-Denis, confirmèrent le phénomène. L'abbé Lacombe relata publiquement l'événement au Congrès eucharistique d'Angoulême en 1904."
+      }
+    }
+  }
+}

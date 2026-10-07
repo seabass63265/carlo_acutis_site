@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import AnimateIn from "@/components/AnimateIn";
 
 const communityPhotos = [
@@ -10,24 +11,25 @@ const communityPhotos = [
   "/donors5.jpeg",
 ];
 
-export default function DonorsWall() {
+export default async function DonorsWall() {
+  const t = await getTranslations("donate.wall");
+
   return (
     <section className="py-24 bg-navy-dark text-white overflow-hidden">
       <div className="max-w-2xl mx-auto px-6 text-center">
         <AnimateIn>
           <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-            Our Community
+            {t("eyebrow")}
           </p>
         </AnimateIn>
         <AnimateIn delay={0.08}>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-white mb-4">
-            Thank You, Donors
+            {t("title")}
           </h2>
         </AnimateIn>
         <AnimateIn delay={0.14}>
           <p className="text-white/50 text-lg leading-relaxed">
-            Every gift — large or small — helps carry Carlo&apos;s mission
-            forward. We are grateful for each one.
+            {t("body")}
           </p>
         </AnimateIn>
       </div>

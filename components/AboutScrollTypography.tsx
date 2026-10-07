@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useTranslations } from "next-intl";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -32,6 +33,7 @@ const CLIP_MAX = 20;
 const CLIP_POWER = 2;
 
 export default function AboutScrollTypography() {
+  const t = useTranslations("about.typography");
   const ref = useRef<HTMLDivElement>(null);
   const imgContainerRef = useRef<HTMLDivElement>(null);
 
@@ -172,7 +174,7 @@ export default function AboutScrollTypography() {
               className="at-fx2 font-serif text-white"
               style={{ fontSize: "clamp(1.4rem, 3vw, 3.2rem)", lineHeight: 1.15 }}
             >
-              Our work is guided by a simple conviction: Carlo's story is not just one to remember, but one to live. By building a community rooted in faith, hope, and service, we hope to inspire others to use their own gifts to make Christ known in the world today.
+              {t("headline")}
             </h2>
           </div>
 
@@ -182,10 +184,7 @@ export default function AboutScrollTypography() {
               className="at-fx5 font-serif text-white/70 max-w-lg"
               style={{ fontSize: "clamp(1.1rem, 1.5vw, 1.4rem)", lineHeight: 1.6 }}
             >
-              We bring together families, young adults, educators, clergy, and communities who are
-              inspired by Carlo's witness. Through collaboration, events, educational initiatives,
-              and digital experiences, we seek to create opportunities for people to encounter
-              Christ and grow in their faith in meaningful and lasting ways.
+              {t("paragraph")}
             </p>
           </div>
 
@@ -195,7 +194,12 @@ export default function AboutScrollTypography() {
               className="at-fx3 font-serif text-gold"
               style={{ fontSize: "clamp(1.6rem, 2.8vw, 3.2rem)", lineHeight: 1.15 }}
             >
-              We believe the Church<br />is not behind the times.<br />She simply needs saints<br />— like Carlo —<br />to show the way.
+              {(t.raw("closing") as string[]).map((line, i, lines) => (
+                <span key={i}>
+                  {line}
+                  {i < lines.length - 1 && <br />}
+                </span>
+              ))}
             </h2>
           </div>
 

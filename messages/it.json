@@ -1,1 +1,1673 @@
-{}
+{
+  "nav": {
+    "aboutUs": "Chi siamo",
+    "carloStory": "La storia di Carlo",
+    "miracles": "Miracoli",
+    "youthCouncil": "Consiglio giovanile",
+    "contact": "Contatti",
+    "donate": "Dona",
+    "skip": "Salta →",
+    "menuToggle": "Apri o chiudi il menu di navigazione",
+    "changeLanguage": "Cambia lingua",
+    "brand": "Friends of Carlo",
+    "tagline": "Costruire una comunità globale di giovani, fede, tecnologia e servizio"
+  },
+  "footer": {
+    "brandTagline": "Costruire una comunità globale di giovani, fede, tecnologia e servizio",
+    "description": "Ispirare una nuova generazione a usare la tecnologia, la fede e il servizio per trasformare il mondo, sull'esempio di Carlo Acutis.",
+    "quote": "«L'Eucaristia è la mia autostrada per il Cielo.»",
+    "quoteBy": "— San Carlo Acutis",
+    "about": "Chi siamo",
+    "getInvolved": "Partecipa",
+    "resources": "Risorse",
+    "aboutUs": "Chi siamo",
+    "carloStory": "La storia di Carlo",
+    "eucharisticMiracles": "Miracoli eucaristici",
+    "governance": "Governance",
+    "youthCouncil": "Consiglio giovanile",
+    "waysToGive": "Modi per donare",
+    "institutionalGiving": "Donazioni istituzionali",
+    "corporatePartners": "Partner aziendali",
+    "volunteer": "Volontariato",
+    "miracleArchive": "Archivio dei miracoli",
+    "prayerRequests": "Richieste di preghiera",
+    "speakingRequests": "Richieste di interventi",
+    "copyright": "© {year} Friends of Carlo. Tutti i diritti riservati.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Condizioni d'uso",
+    "accessibility": "Accessibilità",
+    "changeLanguage": "🌐 Cambia lingua",
+    "brand": "Friends of Carlo"
+  },
+  "contact": {
+    "title": "Contatti",
+    "description": "Contatta Friends of Carlo: per richieste generali, richieste di preghiera, opportunità di intervento e altro ancora.",
+    "titleLine1": "PARLIAMONE",
+    "titleLine2": "INSIEME",
+    "nameLabel": "Come ti chiami?",
+    "namePlaceholder": "Nome e cognome",
+    "organizationLabel": "Qual è il nome della tua organizzazione?",
+    "organizationPlaceholder": "Organizzazione (se pertinente)",
+    "emailLabel": "Qual è il tuo indirizzo e-mail?",
+    "emailPlaceholder": "tu@email.com",
+    "honeypotLabel": "Azienda",
+    "audienceLabel": "Chi sei?",
+    "reasonLabel": "Qual è il motivo della tua richiesta?",
+    "selectOne": "Seleziona un'opzione",
+    "messageLabel": "Cosa vuoi condividere con noi?",
+    "messagePlaceholder": "Scrivi qui il tuo messaggio, in non più di cinquecento parole...",
+    "send": "Invia messaggio",
+    "sending": "Invio in corso…",
+    "error": "Si è verificato un problema nell'invio del messaggio. Riprova oppure scrivici direttamente.",
+    "sentTitle": "Messaggio inviato",
+    "sentBody": "Grazie per averci scritto. Un membro del nostro team ti risponderà entro 2–3 giorni lavorativi.",
+    "sendAnother": "Invia un altro messaggio →",
+    "reachOut": "Scrivici",
+    "listen": "Siamo qui per ascoltarti e pregare con te.",
+    "emailHeading": "E-mail",
+    "followUs": "Seguici",
+    "audience": {
+      "individual": "Privato",
+      "corporate": "Rappresentante aziendale",
+      "parish": "Rappresentante di parrocchia o diocesi",
+      "educator": "Educatore / catechista",
+      "media": "Media / stampa",
+      "donor": "Donatore / organizzazione partner",
+      "other": "Altro"
+    },
+    "reason": {
+      "donation": "Donazione",
+      "partnership": "Partnership",
+      "volunteering": "Volontariato",
+      "general": "Richiesta generale",
+      "prayer": "Richiesta di preghiera",
+      "speaking": "Interventi e media",
+      "education": "Formazione e risorse",
+      "other": "Altro"
+    }
+  },
+  "common": {
+    "readMore": "Leggi di più",
+    "loadMore": "Carica altri post",
+    "readMoreArticle": "Leggi di più",
+    "facebook": "Facebook",
+    "showBio": "+ Biografia",
+    "hideBio": "− Riduci"
+  },
+  "youth": {
+    "meta": {
+      "title": "Consiglio giovanile",
+      "description": "Il Consiglio giovanile di Friends of Carlo è un organo consultivo di giovani (dai 14 ai 21 anni) che contribuisce a definire la programmazione giovanile, l'evangelizzazione digitale e la cultura dell'organizzazione. Le candidature sono aperte."
+    },
+    "hero": {
+      "eyebrow": "Il Consiglio giovanile di Friends of Carlo",
+      "title1": "Un posto",
+      "title2": "a tavola",
+      "body": "Carlo Acutis era un adolescente che ha usato ciò che aveva — un computer portatile, una macchina fotografica, un amore profondo per l'Eucaristia — per raggiungere il mondo intero. Il Consiglio giovanile riunisce giovani che fanno lo stesso per la nostra generazione: contribuire a decidere che cosa costruisce Friends of Carlo, chi raggiunge e come si vive l'appartenenza.",
+      "apply": "Candidati →",
+      "expected": "Cosa ci si aspetta",
+      "imageAlt": "Giovani riuniti insieme"
+    },
+    "purpose": {
+      "eyebrow": "Di cosa si tratta",
+      "title": "Un organo consultivo del Consiglio di amministrazione",
+      "body1": "Il Consiglio giovanile offre consulenza al Consiglio di amministrazione e alla Direttrice esecutiva su questioni di programmazione giovanile, evangelizzazione digitale e cultura organizzativa. Ogni anno guida almeno un progetto a sostegno della missione, e i suoi membri sono ambasciatori del carisma dell'organizzazione nelle parrocchie, nelle scuole, nelle comunità e su internet.",
+      "body2Before": "Il Consiglio giovanile opera con una funzione",
+      "body2Emphasis": "consultiva",
+      "body2After": "— non fiduciaria. Non ha alcuna autorità legale di governo sull'organizzazione. Il tuo compito è portare il punto di vista delle persone che vogliamo davvero raggiungere e far sì che venga ascoltato dove si prendono le decisioni.",
+      "meetBoard": "Conosci il Consiglio di amministrazione"
+    },
+    "expect": {
+      "eyebrow": "Cosa faresti",
+      "title": "La parte divertente comporta impegni concreti",
+      "intro": "Essere nominato nel Consiglio significa che le persone contano su di te. Ecco come si svolge un mandato: è un impegno di un anno.",
+      "items": [
+        {
+          "title": "Incontri trimestrali",
+          "body": "Incontrare il Consiglio quattro volte l'anno per esaminare i programmi, dare il tuo parere sulla direzione e pianificare il progetto annuale."
+        },
+        {
+          "title": "Verifiche mensili",
+          "body": "Un breve contatto mensile per restare in collegamento tra un incontro e l'altro e far progredire i progetti."
+        },
+        {
+          "title": "Un progetto annuale",
+          "body": "Guidare o co-guidare almeno un progetto per mandato che faccia avanzare la missione: aiuterai a scegliere quale."
+        },
+        {
+          "title": "Raccomandazioni al Consiglio di amministrazione",
+          "body": "Presentare raccomandazioni scritte perché le tue idee arrivino al Consiglio di amministrazione in una forma che possa mettere in pratica."
+        },
+        {
+          "title": "Sii un ambasciatore",
+          "body": "Rappresentare il carisma di Friends of Carlo nella tua parrocchia, scuola, comunità e online."
+        },
+        {
+          "title": "Partecipa pienamente",
+          "body": "Prendere parte a tutte le attività del Consiglio e portare a tavola il punto di vista della tua comunità."
+        }
+      ]
+    },
+    "who": {
+      "eyebrow": "Chi può candidarsi",
+      "title": "Se ti riconosci in questo, candidati",
+      "requirements": [
+        {
+          "value": "14–21",
+          "label": "Aperto a candidati tra i 14 e i 21 anni"
+        },
+        {
+          "value": "Qualsiasi fede",
+          "label": "Sono benvenuti candidati di qualsiasi provenienza religiosa"
+        },
+        {
+          "value": "1 anno",
+          "label": "Un impegno di un anno nel Consiglio e nel suo lavoro"
+        }
+      ],
+      "note": "Vogliamo che il Consiglio rappresenti una reale varietà di parrocchie, scuole e comunità: da qualunque luogo tu provenga, il tuo punto di vista è parte di ciò che lo fa funzionare.",
+      "imageAlt": "Giovani insieme"
+    },
+    "apply": {
+      "eyebrow": "Le candidature sono aperte",
+      "title": "Pronto ad aiutare a costruirlo?",
+      "body": "La candidatura richiede pochi minuti. Dicci chi sei, da dove vieni e perché vuoi avere un posto a tavola.",
+      "cta": "Inizia la candidatura →"
+    }
+  },
+  "home": {
+    "mission": {
+      "headlineLine1": "Una casa per una fede autentica",
+      "headlineLine2": "e per l'incontro con Dio",
+      "eyebrow": "La nostra missione",
+      "body": "Ispirati dalla vita e dalla testimonianza di San Carlo Acutis, esistiamo per aiutare le persone a incontrare Cristo, ad approfondire la loro fede e a continuare la missione di Carlo: portare il Vangelo nel mondo digitale.",
+      "aboutUs": "Chi siamo",
+      "stayConnected": "Resta in contatto",
+      "imageAlt": "San Carlo Acutis"
+    },
+    "who": {
+      "eyebrow": "La storia di Carlo",
+      "title": "Chi era Carlo Acutis?",
+      "p1": "Nato a Londra e cresciuto a Milano, Carlo Acutis era un adolescente che amava il calcio, i videogiochi e Dio. A quindici anni gli fu diagnosticata la leucemia e offrì le sue sofferenze «per il Papa e per la Chiesa»; morì nel 2006 con la serenità di un santo.",
+      "p2": "Carlo imparò a programmare da solo e costruì un sito web che catalogava i miracoli eucaristici nel mondo, un atto di fede digitale che raggiunse milioni di persone. Fu beatificato nel 2020 e canonizzato nel 2025 come primo santo millennial del mondo.",
+      "quote": "«Tutti nascono come originali, ma molti muoiono come fotocopie.»",
+      "quoteBy": "Carlo Acutis",
+      "statAgeValue": "15",
+      "statAgeLabel": "Età alla morte",
+      "statMiraclesValue": "136",
+      "statMiraclesLabel": "Miracoli eucaristici catalogati",
+      "statCanonizedValue": "2025",
+      "statCanonizedLabel": "Canonizzato",
+      "cta": "Scopri la storia di Carlo →",
+      "imageAlt": "Carlo Acutis da giovane"
+    },
+    "initiatives": {
+      "eyebrow": "Cosa facciamo",
+      "watermark": "Iniziative",
+      "titleTop": "In evidenza",
+      "titleBottom": "Iniziative",
+      "contactUs": "Contattaci",
+      "discoverDetails": "Scopri i dettagli",
+      "discoverMiracles": "Scopri i miracoli",
+      "card01": {
+        "tags": [
+          "Focus: comunità",
+          "Stato: attivo"
+        ],
+        "title": "Impegno con i giovani",
+        "body": "Formare una nuova generazione attraverso programmi comunitari immersivi. Creiamo spazi in cui la tradizione incontra la sensibilità contemporanea, offrendo accompagnamento e un fondamento spirituale a giovani menti che attraversano un mondo complesso.",
+        "imageAlt": "Un gruppo di giovani rivolti verso la luce"
+      },
+      "card02": {
+        "tags": [
+          "Focus: tecnologia"
+        ],
+        "title": "Impegno digitale",
+        "body": "Tradurre messaggi senza tempo in linguaggi moderni. Utilizziamo piattaforme all'avanguardia per costruire parrocchie digitali globali, portando la nostra presenza ben oltre le mura fisiche, nella vita digitale quotidiana di milioni di persone.",
+        "imageAlt": "Una rete digitale di luce astratta"
+      },
+      "card03": {
+        "tags": [
+          "Focus: conoscenza"
+        ],
+        "title": "Risorse educative",
+        "body": "Esplora il nostro archivio in crescita dei miracoli eucaristici documentati nel corso dei secoli, insieme alla storia di Carlo: la sua vita, la sua fede e la testimonianza che continua a ispirare una nuova generazione.",
+        "imageAlt": "Architettura classica e luce"
+      },
+      "card04": {
+        "tags": [
+          "Fase: sviluppo"
+        ],
+        "title": "Progetti futuri",
+        "body": "Progettare il prossimo decennio di crescita strutturale e spirituale. Dai centri comunitari sostenibili ai modelli filantropici innovativi, questi progetti definiscono la nostra traiettoria futura.",
+        "imageAlt": "Architettura strutturale minimalista"
+      }
+    },
+    "news": {
+      "eyebrow": "Ultime",
+      "title": "Notizie e aggiornamenti",
+      "tagFacebook": "Facebook",
+      "viewOnFacebook": "Vedi il post su Facebook",
+      "fallback1Date": "giugno 2025",
+      "fallback1Tag": "Canonizzazione",
+      "fallback1Title": "Carlo Acutis canonizzato ufficialmente come primo santo millennial del mondo",
+      "fallback1Excerpt": "In una cerimonia storica in piazza San Pietro, papa Francesco ha canonizzato Carlo Acutis, facendone il patrono della generazione internet.",
+      "fallback2Date": "maggio 2025",
+      "fallback2Tag": "Eventi",
+      "fallback2Title": "Friends of Carlo annuncia un vertice sul discepolato digitale per i responsabili della pastorale giovanile",
+      "fallback2Excerpt": "Centinaia di responsabili della pastorale giovanile provenienti da tutto il Paese si riuniscono per imparare a usare la storia di Carlo per ispirare le proprie comunità.",
+      "fallback3Date": "aprile 2025",
+      "fallback3Tag": "Risorse",
+      "fallback3Title": "Pubblicato un nuovo kit di risorse educative, gratuito per tutte le parrocchie",
+      "fallback3Excerpt": "Scarica piani di lezione, infografiche e guide video sulla vita di Carlo, pensati per studenti della cresima, delle superiori e dell'università."
+    },
+    "quote": {
+      "text": "Essere sempre vicino a Gesù: questo è il programma della mia vita.",
+      "cite": "San Carlo Acutis",
+      "cta": "Leggi la sua storia completa →"
+    },
+    "support": {
+      "eyebrow": "Sostieni la missione",
+      "title": "Modi per donare",
+      "subtitle": "Ogni dono, grande o piccolo, porta il messaggio di Carlo a una nuova generazione.",
+      "option01Title1": "Donazione",
+      "option01Title2": "individuale",
+      "option01Body": "Il tuo dono personale sostiene l'impegno con i giovani, le risorse educative e l'evangelizzazione digitale, un'anima alla volta.",
+      "option01Cta": "Dona ora",
+      "option02Title1": "Donazione",
+      "option02Title2": "istituzionale",
+      "option02Body": "Collabora con noi come fondazione, diocesi o istituzione. Accedi ai documenti di governance, alle metriche d'impatto e alle informazioni sui finanziamenti.",
+      "option02Cta": "Partner istituzionali",
+      "option03Title1": "Partnership",
+      "option03Title2": "aziendali",
+      "option03Body": "Allinea il tuo marchio a una missione che va oltre le generazioni. Sono disponibili opportunità di sponsorizzazione e co-branding.",
+      "option03Cta": "Informazioni aziendali"
+    },
+    "hero": {
+      "mainText": "Ispirati da San Carlo Acutis, il primo santo millennial, esistiamo per portare il Vangelo a una nuova generazione attraverso la fede, la tecnologia e l'incontro.",
+      "overlayPart1": "Nato",
+      "overlayWords": [
+        "Originale.",
+        "Santo.",
+        "Amato.",
+        "Scelto.",
+        "Chiamato.",
+        "Eterno."
+      ],
+      "locationText": "Los Angeles, California",
+      "imageAlt": "San Carlo Acutis",
+      "navHome": "HOME",
+      "navCarlo": "CARLO",
+      "navMiracles": "MIRACOLI",
+      "navAbout": "CHI SIAMO"
+    }
+  },
+  "donate": {
+    "meta": {
+      "title": "Modi per donare",
+      "description": "Sostieni Friends of Carlo: donazioni individuali, partnership istituzionali, sovvenzioni e sponsorizzazioni aziendali."
+    },
+    "hero": {
+      "mainText": "Ogni dono aiuta a portare avanti la missione di San Carlo Acutis. La tua generosità ci permette di ispirare i giovani, rafforzare la devozione eucaristica, sostenere i pellegrinaggi e le iniziative educative, e creare risorse digitali che avvicinano altre persone a Cristo.",
+      "footerText": "Scorri verso il basso per maggiori informazioni",
+      "centerLabel": "Dona",
+      "overlayPart1": "Il tuo dono",
+      "overlayPart2": "cambia le vite",
+      "locationText": "Friends of Carlo",
+      "imageAlt": "San Carlo Acutis — Friends of Carlo"
+    },
+    "why": {
+      "eyebrow": "Perché donare",
+      "title": "Il tuo dono sostiene la prossima generazione di santi digitali",
+      "body1": "Carlo Acutis ha dimostrato che fede e tecnologia non sono in conflitto: possono essere la combinazione più potente di tutte. Il tuo sostegno rende possibile portare questo messaggio ad adolescenti, parrocchie, scuole e famiglie in tutto il mondo.",
+      "body2": "Gestiamo le risorse con grande responsabilità, mantenendo i costi generali sotto il 15%, perché i tuoi fondi siano impiegati dove contano di più: programmi, attività di sensibilizzazione e missione.",
+      "cta": "Dona ora →",
+      "metrics": {
+        "funds": "Fondi totali destinati alla missione",
+        "young": "Giovani raggiunti ogni anno",
+        "communities": "Comunità e partner pastorali nel mondo",
+        "overhead": "Costi amministrativi",
+        "audited": "Bilanci certificati ogni anno",
+        "board": "Governance affidata a un consiglio, con piena trasparenza"
+      }
+    },
+    "photos": {
+      "photo1": "Un sacerdote e due ospiti che condividono un momento di gioia durante un evento di Friends of Carlo",
+      "photo2": "Quattro amici insieme davanti all'insegna MCJ",
+      "photo3": "Giovani pellegrini riuniti davanti al santuario di San Carlo Acutis in Italia"
+    },
+    "partners": {
+      "eyebrow": "Dove vanno i tuoi doni",
+      "title": "Comunità globali e partner pastorali",
+      "body": "La tua generosità ha sostenuto direttamente queste diocesi, parrocchie, scuole e centri di evangelizzazione, nella nostra comunità e nel mondo.",
+      "items": [
+        {
+          "name": "Diocesi di Assisi–Nocera Umbra–Gualdo Tadino",
+          "location": "Assisi, Italia"
+        },
+        {
+          "name": "Arcidiocesi di Wa",
+          "location": "Ghana"
+        },
+        {
+          "name": "Centro di evangelizzazione giovanile per il risveglio eucaristico San Carlo Acutis",
+          "location": "Isola di Tablas, Romblon, Filippine"
+        },
+        {
+          "name": "Comunità cattolica Santa Monica e Scuola preparatoria Santa Monica",
+          "location": "Santa Monica, California"
+        },
+        {
+          "name": "Parrocchia e scuola San Tommaso Apostolo",
+          "location": "Los Angeles, California"
+        },
+        {
+          "name": "Scuole parrocchiali Santa Genoveffa",
+          "location": "Panorama City, California"
+        }
+      ]
+    },
+    "institutional": {
+      "eyebrow": "Donazioni istituzionali e di fondazioni",
+      "title": "Per fondazioni, diocesi e istituzioni",
+      "body1": "Friends of Carlo accoglie con gratitudine donazioni importanti e sovvenzioni da fondazioni cattoliche, diocesi, ordini religiosi e istituzioni affini. Offriamo piena trasparenza nella governance, bilanci certificati e flessibilità nelle partnership.",
+      "body2": "Il nostro team lavora a stretto contatto con i donatori istituzionali per allineare i contributi ad aree specifiche dei programmi, dalla pastorale giovanile all'infrastruttura digitale fino all'espansione missionaria internazionale.",
+      "cta": "Contatta il nostro team donazioni →",
+      "items": [
+        {
+          "title": "Piena trasparenza finanziaria",
+          "body": "Bilanci annuali certificati, modulo 990 dell'IRS e rendicontazione in tempo reale delle spese dei programmi, disponibili per tutti i partner istituzionali."
+        },
+        {
+          "title": "Documentazione di governance",
+          "body": "Statuto completo, composizione del consiglio, politiche sul conflitto di interessi e verbali delle riunioni, disponibili su richiesta."
+        },
+        {
+          "title": "Ricerca di opportunità di finanziamento",
+          "body": "Il nostro team donazioni ti aiuterà a individuare programmi di sovvenzione coerenti con le priorità e i criteri di ammissibilità della tua fondazione."
+        },
+        {
+          "title": "Rendicontazione d'impatto",
+          "body": "Rapporti d'impatto dettagliati, pubblicati due volte l'anno, che mostrano con precisione come è stato utilizzato il tuo dono e i risultati misurabili raggiunti."
+        },
+        {
+          "title": "Opzioni di donazione vincolata",
+          "body": "I doni possono essere destinati a programmi specifici: pastorale giovanile, evangelizzazione digitale, espansione internazionale o dotazione patrimoniale."
+        }
+      ]
+    },
+    "corporate": {
+      "eyebrow": "Donazioni aziendali",
+      "title": "Partnership e sponsorizzazioni aziendali",
+      "body": "Allinea il tuo marchio a una missione che dà forza ai giovani di ogni provenienza, colma il divario digitale e favorisce la fede, l'innovazione, il servizio e la piena realizzazione umana.",
+      "items": [
+        {
+          "title": "Sponsorizzazione del titolo",
+          "description": "Visibilità di primo piano per il tuo marchio sul nostro sito, in tutti gli eventi e nella Mostra dei miracoli eucaristici. Include opportunità di intervento per i tuoi dirigenti."
+        },
+        {
+          "title": "Sponsorizzazione di eventi",
+          "description": "Sostieni singoli eventi: vertici giovanili, ritiri, conferenze. Include materiali con il tuo marchio e una presenza sul posto."
+        },
+        {
+          "title": "Co-branding digitale",
+          "description": "Il tuo marchio presente nei nostri contenuti digitali, nelle newsletter e sui canali social, con un pubblico cattolico devoto e coinvolto."
+        },
+        {
+          "title": "Sponsorizzazione di risorse",
+          "description": "Finanzia e co-brandizza una risorsa educativa specifica: piani di lezione, video o strumenti digitali distribuiti alle parrocchie di tutto il Paese."
+        },
+        {
+          "title": "Programma di donazioni abbinate",
+          "description": "Amplifica le donazioni individuali abbinando i contributi dei tuoi dipendenti o dei tuoi clienti durante una campagna."
+        },
+        {
+          "title": "Partnership personalizzata",
+          "description": "Accogliamo proposte di partnership creative, su misura per gli obiettivi di responsabilità sociale della tua azienda e per i valori dei suoi dipendenti."
+        }
+      ],
+      "ctaTitle": "Pronto a valutare una partnership?",
+      "ctaBody": "Il nostro team per le partnership aziendali preparerà una proposta personalizzata, in linea con gli obiettivi e i valori della tua organizzazione.",
+      "cta": "Mettiti in contatto →"
+    },
+    "finalCta": {
+      "quote": "Basta essere buoni in questo breve tempo di vita terrena, e sarai felice per sempre.",
+      "cite": "San Carlo Acutis",
+      "cta": "Fai un dono oggi →"
+    },
+    "wall": {
+      "eyebrow": "La nostra comunità",
+      "title": "Grazie, donatori",
+      "body": "Ogni dono, grande o piccolo, aiuta a portare avanti la missione di Carlo. Siamo grati per ciascuno di essi."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Chi siamo",
+      "description": "Scopri Friends of Carlo: la nostra storia, il consiglio di amministrazione e la nostra governance."
+    },
+    "board": {
+      "eyebrow": "Governance",
+      "title": "Consiglio di amministrazione",
+      "josefina": {
+        "role": "Fondatrice",
+        "bio": [
+          "Josefina Fernandez McEvoy ha fondato Friends of St. Carlo Acutis, Inc. («Friends of Carlo») all'inizio del 2025, dopo quasi due anni di discernimento nella preghiera e di ricerche accurate per comprendere meglio la vocazione di San Carlo. Lungo il cammino ha consultato diversi mentori spirituali e tecnici, che l'hanno aiutata a mettere a fuoco la sua visione di Friends of Carlo. Attraverso questo percorso ha compreso che la vocazione di San Carlo è un invito a portare avanti la sua eredità, ispirando i giovani con il suo esempio di fede, tecnologia e servizio. In particolare, Friends of Carlo intende favorire l'amicizia dei giovani con Gesù vissuta attraverso gli schermi, ascoltandone speranze, sfide ed esperienze, e aiutandoli a incontrarlo online attraverso un accompagnamento pratico, un sostegno personale e un impegno digitale significativo.",
+          "Josefina è certificata VIRTUS, in conformità con le politiche SAFE Environment dell'Arcidiocesi di Los Angeles, da 17 anni.",
+          "Da oltre un decennio Josefina presta servizio in diversi ministeri di volontariato presso la Comunità cattolica Santa Monica (SMCC), aiutando bambini e adulti ad approfondire il loro rapporto con Gesù e a crescere nella fede. Per 13 anni è stata catechista volontaria nel Ministero di educazione religiosa e formazione alla fede della SMCC, accompagnando i bambini a conoscere Gesù più intimamente. Ha inoltre fatto parte del Consiglio per la formazione e l'educazione alla fede degli adulti della SMCC, dove ha contribuito a riorganizzare i ministeri di formazione della parrocchia e ad avviare iniziative in linea con il suo Piano strategico 2020, tra cui piccoli gruppi stagionali di condivisione della fede, cicli di conferenze e «Voci di fede».",
+          "Josefina ha completato gli Esercizi spirituali ignaziani nella vita quotidiana 2023-2024, un ritiro di otto mesi presso il Centro di spiritualità Santa Monica, e attualmente presta servizio come lettrice volontaria nel Ministero liturgico della SMCC."
+        ]
+      },
+      "matthew": {
+        "role": "Direttore spirituale",
+        "bio": [
+          "«I tuoi occhi hanno visto il mio corpo ancora informe; tutti i giorni che mi erano destinati erano scritti nel tuo libro prima che uno solo di essi esistesse.» (Sal 139,16) Dio ci conosceva ancor prima che nascessimo. Nessuno viene al mondo per errore o per caso, e nessuna vita è un semplice capriccio della natura. Dio crea ogni persona con uno scopo preciso.",
+          "Sono nato a Nanvilli, in quella che allora era la Regione settentrionale del Ghana, in una famiglia di sei figli. Non è stato un caso che i miei genitori, pur senza un'istruzione formale, abbiano accolto il cristianesimo quando i Missionari d'Africa sono arrivati nella nostra zona. Né è stato per caso che mio padre abbia insistito perché tutti i suoi figli ricevessero un'istruzione, nonostante le resistenze culturali dell'epoca.",
+          "Fin da giovane ho sentito la chiamata al sacerdozio, ispirato dai missionari che celebravano la Messa nel nostro villaggio. Dopo aver conseguito il certificato di livello avanzato, ho avuto la rara opportunità di svolgere il servizio nazionale presso una compagnia assicurativa a cui molti avrebbero dato qualsiasi cosa pur di entrare. Questo ha rallentato il mio cammino verso il seminario, soprattutto quando ho ottenuto un congedo di studio retribuito per frequentare una laurea in contabilità presso l'università più prestigiosa del Ghana, con la promessa di tornare a un incarico direttivo. Sebbene questa strada fosse promettente, non poteva mettere a tacere la chiamata più profonda che Dio aveva posto nel mio cuore. Nel settembre 1985 sono entrato nel Seminario maggiore San Vittore.",
+          "Ordinato sacerdote nel 1992, ho iniziato il mio ministero in parrocchie di nuova istituzione e con risorse limitate, dapprima presso la parrocchia di Santa Cecilia. In seguito ho prestato servizio come cappellano e insegnante in una scuola secondaria maschile.",
+          "Il mio cammino mi ha portato infine in California, dove ho vissuto presso la Comunità cattolica Santa Monica e ho conseguito un master in amministrazione scolastica, prima di tornare in Ghana come preside di una scuola cattolica. Oggi sono amministratore della cattedrale della Diocesi cattolica romana di Wa, nella Provincia ecclesiastica metropolitana di Tamale, in Ghana, sotto la guida di monsignor Francis Bomansaan, M.Afr., vescovo di Wa. Resto profondamente grato per ogni passo del cammino che Dio ha preparato per me molto prima del mio primo respiro."
+        ]
+      },
+      "carmen": {
+        "role": "Membro del consiglio",
+        "bio": [
+          "Carmen Romero è membro del consiglio di amministrazione di Friends of St. Carlo. Porta una formazione multidisciplinare in tecnologia, strategia aziendale e impegno comunitario. Ha conseguito un MBA presso il Rome City Institute, dove si è laureata prima della sua classe ed è stata riconosciuta come Studentessa di master dell'anno. Carmen è anche laureata in informatica presso la Seattle University e ha una certificazione in game design presso la University of Washington.",
+          "Sostiene la missione della fondazione attraverso la pianificazione strategica e lo sviluppo di programmi, con l'impegno di onorare l'eredità di Carlo. Carmen si dedica a promuovere un'innovazione socialmente responsabile e a rafforzare le iniziative educative che rendono i giovani protagonisti. Nel tempo libero è una lettrice appassionata, una fan dichiarata dei Sims 4 e si sente più felice quando si trova vicino all'acqua."
+        ]
+      },
+      "sebastian": {
+        "role": "Direttore tecnologico",
+        "bio": [
+          "Sebastian Rocha è direttore tecnologico di Friends of St. Carlo Acutis. Ha conseguito una laurea in informatica presso la Loyola Marymount University, con un minor in statistica e scienza dei dati. La sua esperienza spazia dalle tecnologie dell'informazione alla gestione di prodotto e allo sviluppo web, inclusa la creazione di esperienze digitali accessibili e l'uso della tecnologia per collegare le organizzazioni alle comunità che servono.",
+          "Sebastian è particolarmente ispirato da San Carlo Acutis, uno sviluppatore autodidatta che ha messo i suoi doni tecnici al servizio della condivisione della fede cattolica. Attraverso Friends of Carlo, Sebastian spera di aiutare i giovani a incontrare Gesù in spazi digitali accoglienti, significativi e sinceri. Crede che la tecnologia dia il meglio di sé quando aiuta anche una sola persona a sentirsi più vicina a Dio."
+        ]
+      },
+      "johnny": {
+        "role": "Direttore creativo",
+        "bio": [
+          "Johnny Vrba è un artista, autore e missionario originario della grande area di Chicago. Ha svolto il servizio di missionario universitario dal 2022 al 2024 presso la University of St. Thomas, a Saint Paul, nel Minnesota. È autore di «Seas the Day»: la storia vera di paura, amicizia e fede vissute mentre era bloccato in mare durante la pandemia di Covid-19.",
+          "La sua missione attuale è essere un catalizzatore di un nuovo rinascimento all'interno della Chiesa cattolica, ispirando la prossima generazione di giovani artisti attraverso la narrazione e un'arte multimediale profondamente significativa. Nel lavoro quotidiano, Johnny contribuisce a selezionare contenuti che amplificano la luce, come amministratore per gli affari e le acquisizioni presso Angel Studios."
+        ]
+      },
+      "john": {
+        "role": "Segretario e tesoriere del consiglio",
+        "bio": [
+          "John McEvoy è un dedicato direttore della sicurezza nei cantieri, la cui vocazione è sempre stata proteggere le persone, rafforzare le comunità e costruire ambienti in cui gli altri possano prosperare. Con anni di esperienza nel guidare squadre, nel sostenere iniziative di grande portata e nel vegliare sul benessere di chi gli è affidato, John porta una presenza costante e orientata al servizio in ogni incarico che assume.",
+          "Il suo impegno per Friends of St. Carlo Acutis nasce da un profondo desiderio di aiutare gli altri a incontrare la fede in modo accessibile, moderno e significativo.",
+          "Ispirato dall'esempio di San Carlo — vivere la santità nella vita quotidiana, nella tecnologia e nella gioiosa semplicità — John si mette al servizio della missione di diffondere il messaggio di speranza e amore di San Carlo.",
+          "Per John, questo lavoro è più di un volontariato: è una vocazione. Crede nel creare spazi sicuri e accoglienti in cui i giovani possano crescere spiritualmente, entrare in relazione tra loro e scoprire la bellezza di una fede vissuta con autenticità."
+        ]
+      }
+    },
+    "governance": {
+      "eyebrow": "Governance",
+      "title": "Una trasparenza di cui ci si può fidare",
+      "body": "Operiamo con i più alti standard di governance non profit e di trasparenza finanziaria. I nostri donatori meritano di sapere che ogni dollaro serve a far progredire la missione.",
+      "stat1": "Le aziende si fidano del nostro modello di governance",
+      "stat2": "Anni di attività trasparente",
+      "stat3": "Membri del consiglio impegnati",
+      "stat4": "Tasso di costi amministrativi",
+      "stat5": "Disponibilità del rapporto annuale",
+      "stat6": "Valutazione indipendente dell'ente di beneficenza",
+      "oversightTitle": "Supervisione del consiglio",
+      "oversightBody": "Il nostro Consiglio di amministrazione è responsabile di definire la missione e l'orientamento strategico di Friends of Carlo, nonché di sorvegliare le finanze, le attività e le politiche dell'organizzazione, secondo quanto previsto dagli atti costitutivi e dallo statuto. Il consiglio esamina regolarmente le attività e le politiche dell'organizzazione per garantire che rispettino tutti i requisiti di legge e riflettano le migliori pratiche del settore.",
+      "bylawsTitle": "Il nostro statuto",
+      "bylawsBody": "Lo statuto di Friends of Carlo stabilisce le regole interne di funzionamento approvate dal Consiglio di amministrazione per garantire che l'organizzazione sia strutturata e gestita esclusivamente per finalità caritative, religiose, educative e scientifiche, ai sensi della Sezione 501(c)(3) dell'Internal Revenue Code statunitense, e in conformità con le leggi della California che disciplinano le società a beneficio pubblico."
+    },
+    "hero": {
+      "titleWords": [
+        "Chi",
+        "siamo"
+      ],
+      "whoWeAre": "Chi siamo",
+      "tagline1": "Vogliamo rendere la fede il più accessibile possibile, affinché i giovani di tutto il mondo possano incontrare Cristo attraverso gli strumenti digitali che già usano ogni giorno.",
+      "tagline2": "Indipendentemente dalla sua provenienza, ogni giovane cattolico deve essere in grado di portare avanti il Vangelo con creatività, coraggio e convinzione, sull'esempio di San Carlo Acutis.",
+      "rootedIn": [
+        "Radicati in",
+        "fede",
+        "speranza",
+        "amore"
+      ],
+      "contactUs": "Contattaci",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn"
+    },
+    "typography": {
+      "headline": "Il nostro lavoro è guidato da una convinzione semplice: la storia di Carlo non è solo da ricordare, ma da vivere. Costruendo una comunità radicata nella fede, nella speranza e nel servizio, speriamo di ispirare altri a usare i propri doni per far conoscere Cristo nel mondo di oggi.",
+      "paragraph": "Riuniamo famiglie, giovani adulti, educatori, clero e comunità ispirati dalla testimonianza di Carlo. Attraverso la collaborazione, gli eventi, le iniziative educative e le esperienze digitali, cerchiamo di creare occasioni perché le persone incontrino Cristo e crescano nella fede in modi significativi e duraturi.",
+      "closing": [
+        "Crediamo che la Chiesa",
+        "non sia rimasta indietro.",
+        "Ha semplicemente bisogno di santi",
+        "— come Carlo —",
+        "che indichino la strada."
+      ]
+    },
+    "gallery": {
+      "title": "Momenti della missione",
+      "headline": [
+        "Nata da una convinzione:",
+        "che fede e tecnologia",
+        "sono fatte per stare insieme"
+      ],
+      "missionLabel": "Missione",
+      "missionText": "Ispirare una nuova generazione di cattolici a usare la tecnologia, la creatività e i media digitali come strumenti di evangelizzazione, sull'esempio di San Carlo Acutis.",
+      "visionLabel": "Visione",
+      "visionText": "Un mondo in cui i giovani cattolici vedano i propri doni, anche quelli tecnologici, come vocazioni al servizio del Vangelo."
+    }
+  },
+  "carlo": {
+    "storyLabel": "Carlo Acutis — La storia",
+    "metaTitle": "La storia di Carlo",
+    "metaDescription": "Scopri la vita di San Carlo Acutis, il primo santo millennial, che ha usato la tecnologia per avvicinare milioni di persone a Dio.",
+    "hero": {
+      "digIn": "SCAVA",
+      "quote": "Carlo non è diventato santo perché era perfetto. È diventato santo perché ogni giorno ha scelto Dio. Dietro ogni miracolo e ogni titolo c'era un adolescente che imparava ad amare Cristo più profondamente.",
+      "cardQuote": "Essere sempre vicino a Gesù: questo è il piano della mia vita.",
+      "cardAuthor": "— Carlo Acutis",
+      "digital": "DIGITALE",
+      "saint": "SANTO",
+      "heavenA": "Il cielo è",
+      "heavenB": "la nostra casa",
+      "scroll": "Scorri"
+    },
+    "s01": {
+      "title1": "SOLO UN",
+      "title2": "RAGAZZO NORMALE",
+      "aria": "Solo un ragazzo normale",
+      "body": "Carlo era come qualsiasi altro adolescente. Amava il calcio, i videogiochi, i suoi amici, gli animali e far ridere la gente. Ciò che lo rendeva diverso non era una vita straordinaria. Era il fatto che invitava Dio nei momenti ordinari di ogni giorno.",
+      "photoAlt": "Carlo Acutis da giovane",
+      "photoCaption": "Carlo, Milano c. 1999",
+      "momAlt": "La mamma di Carlo che parla durante un evento",
+      "momCaption": "La mamma di Carlo",
+      "loved": "Le piccole cose che amava:",
+      "items": [
+        "Il calcio",
+        "I videogiochi",
+        "Gli animali",
+        "Gli amici",
+        "La famiglia",
+        "Ridere",
+        "L'avventura"
+      ],
+      "readMore": "Leggi di più →"
+    },
+    "s02": {
+      "title1": "INNAMORATO",
+      "title2": "DI GESÙ",
+      "aria": "Innamorato di Gesù",
+      "photoAlt": "Candele in chiesa",
+      "photoCaption": "La messa quotidiana, Milano",
+      "quote": "L'Eucaristia è la mia autostrada per il cielo.",
+      "author": "Carlo Acutis",
+      "rosary": "rosario, ogni giorno",
+      "body": "Fin da piccolo, Carlo trovò qualcosa di speciale nell'Eucaristia. Andare a messa e trascorrere del tempo con Gesù divenne la parte più bella della sua giornata. Credeva che più siamo vicini a Gesù, più siamo felici.",
+      "pullQuote": "«Quando guardiamo il sole, ci abbronziamo. Quando guardiamo Gesù nell'Eucaristia, diventiamo santi.»"
+    },
+    "s03": {
+      "title1": "VIVERE",
+      "title2": "LA SUA FEDE",
+      "aria": "Vivere la sua fede",
+      "body": "Carlo non teneva la sua fede chiusa tra le mura di una chiesa. La viveva ogni giorno essendo gentile, difendendo i compagni vittime di bullismo, aiutando chi era nel bisogno e trattando sempre gli altri con amore e rispetto.",
+      "howTitle": "Come la viveva:",
+      "items": [
+        "Essere gentile con tutti",
+        "Difendere i compagni vittime di bullismo",
+        "Aiutare chi è nel bisogno",
+        "Accogliere chi è solo",
+        "Trattare tutti con amore",
+        "Vedere Dio in ogni persona"
+      ]
+    },
+    "s04": {
+      "age": "11 ANNI",
+      "title1": "UNA MISSIONE",
+      "title2": "SU INTERNET",
+      "aria": "Una missione su internet",
+      "intro": "Carlo amava i computer e la tecnologia, ma li vedeva come qualcosa di più del semplice intrattenimento.",
+      "cards": [
+        {
+          "label": "AUTODIDATTA",
+          "desc": "Imparò da solo a costruire siti web, perché voleva usare internet per far conoscere Gesù al mondo."
+        },
+        {
+          "label": "EVANGELIZZATORE",
+          "desc": "Molto prima che i social media entrassero nella vita quotidiana, Carlo dimostrò che la tecnologia poteva essere una forza per il bene."
+        },
+        {
+          "label": "PIONIERE",
+          "desc": "Usò ogni strumento digitale a sua disposizione per avvicinare gli altri a Dio: un santo per l'era digitale."
+        }
+      ],
+      "strike": "Non per la scuola.",
+      "goldPrefix": "Per le ",
+      "underlined": "anime."
+    },
+    "s05": {
+      "title1": "CONDIVIDERE I",
+      "title2": "MIRACOLI EUCARISTICI",
+      "aria": "Condividere i miracoli eucaristici",
+      "body": "A soli undici anni, Carlo iniziò a studiare i miracoli eucaristici di tutto il mondo. Creò un sito web perché chiunque potesse conoscere queste storie straordinarie e scoprire personalmente la bellezza dell'Eucaristia.",
+      "statLabel": "miracoli eucaristici catalogati",
+      "photoAlt": "Vetrata",
+      "photoCaption": "La Mostra dei miracoli eucaristici",
+      "whyTitle": "Perché era importante:",
+      "items": [
+        "Gratuito per tutti",
+        "Paesi di tutto il mondo",
+        "Prove scientifiche",
+        "Foto e storia"
+      ]
+    },
+    "s06": {
+      "title1": "UN AMICO PER",
+      "title2": "TUTTI",
+      "aria": "Un amico per tutti",
+      "body": "Una delle cose che la gente ricorda di più di Carlo è il modo in cui trattava gli altri. Accoglieva tutti, soprattutto chi si sentiva escluso. Condivideva ciò che aveva con chi era nel bisogno e credeva che ogni persona meritasse di essere amata, perché ogni persona è figlia di Dio.",
+      "sayTitle": "Ciò che la gente dice di lui:",
+      "items": [
+        "Ti faceva sempre sentire visto",
+        "Condivideva tutto ciò che aveva",
+        "Non escludeva mai nessuno",
+        "Trattava i poveri come una famiglia"
+      ],
+      "quote": "Ogni persona merita di essere amata, perché ogni persona è figlia di Dio.",
+      "author": "Carlo Acutis"
+    },
+    "s07": {
+      "age": "15 ANNI",
+      "title1": "I SUOI ULTIMI",
+      "title2": "GIORNI",
+      "aria": "I suoi ultimi giorni",
+      "body": "Quando a quindici anni gli fu diagnosticata la leucemia, Carlo la affrontò con una pace e una fede straordinarie. Invece di pensare solo a se stesso, offrì le sue sofferenze per il Papa, per la Chiesa e per le persone che avevano bisogno dell'aiuto di Dio. La sua fiducia in Gesù non vacillò mai.",
+      "quote": "Offro tutte le mie sofferenze al Signore, per il Papa e per la Chiesa.",
+      "author": "Carlo Acutis",
+      "diagnosedLabel": "Diagnosi",
+      "deathDate": "12 OTT",
+      "passedLabel": "Partito per il cielo"
+    },
+    "s08": {
+      "title1": "LA SUA STORIA",
+      "title2": "CONTINUA",
+      "aria": "La sua storia continua",
+      "body": "La vita di Carlo può essere stata breve, ma il suo impatto continua a crescere ogni giorno. Attraverso i miracoli riconosciuti dalla Chiesa e i milioni di persone ispirate dal suo esempio, Carlo ci ricorda che la santità non è riservata a pochi. È una chiamata che riguarda ciascuno di noi.",
+      "canonizedLabel": "CANONIZZATO",
+      "canonizedDate": "27 APRILE 2025",
+      "canonizedNote": "Il primo santo millennial",
+      "quote": "Tutti nascono come originali, ma molti muoiono come fotocopie.",
+      "author": "Carlo Acutis"
+    },
+    "closing": {
+      "line1": "TUTTI NASCIAMO",
+      "line2": "ORIGINALI.",
+      "footer": "Non morire come fotocopia.",
+      "cta": "Continua la missione di Carlo →"
+    }
+  },
+  "miracles": {
+    "meta": {
+      "title": "Miracoli eucaristici",
+      "description": "Scopri i 136 miracoli eucaristici documentati da Carlo Acutis: segni fisici della Presenza reale di Cristo nell'Eucaristia."
+    },
+    "intro": {
+      "title": "Cosa sono i miracoli eucaristici?",
+      "p1": "Un miracolo eucaristico è un fenomeno straordinario, scientificamente inspiegato, legato all'Eucaristia. Più spesso si tratta della trasformazione visibile di un'ostia consacrata in tessuto umano o della comparsa di sangue, verificata da scienziati medici di tutto il mondo.",
+      "p2": "Carlo Acutis ha dedicato anni a studiare, catalogare e presentare 136 di questi miracoli in una mostra digitale itinerante. Il suo lavoro ha portato le prove della Presenza reale di Cristo a milioni di persone che non avevano mai sentito queste storie.",
+      "quote": "«I miracoli eucaristici sono i più grandi miracoli che Gesù ci ha donato.»",
+      "quoteBy": "San Carlo Acutis",
+      "photoAlt": "Carlo Acutis"
+    },
+    "map": {
+      "titleGold": "Miracoli ",
+      "titleNavy": "in tutto il mondo",
+      "introA": "Carlo ha personalmente studiato e catalogato ",
+      "introB": "136 miracoli",
+      "introC": " nella sua mostra itinerante originale. Questo sito ne documenta ",
+      "introD": "188",
+      "introE": ": i 136 di Carlo, più 52 miracoli aggiuntivi tratti da archivi diocesani, fonti agiografiche e archivi cattolici di riferimento, tutti citati singolarmente su ogni scheda.",
+      "countryCount": "{count, plural, one {# paese} other {# paesi}}",
+      "miracleCount": "{total} miracoli",
+      "statDocumented": "Miracoli documentati",
+      "statDocumentedSub": "in 6 continenti",
+      "statYears": "Anni di storia",
+      "statYearsSub": "il più antico risale al 500",
+      "statCountries": "Paesi",
+      "statCountriesSub": "rappresentati nella mostra",
+      "statVisitors": "Visitatori nel mondo",
+      "statVisitorsSub": "dal lancio della mostra",
+      "sources": "Fonti",
+      "primary": "Principale",
+      "sourceList": [
+        {
+          "label": "Mostra di Carlo Acutis",
+          "detail": "Fonte principale. Il sito ufficiale miracolieucaristici.org ospita pannelli PDF individuali per ciascuno dei 136 miracoli documentati da Carlo, collegati direttamente a ogni scheda quando disponibili."
+        },
+        {
+          "label": "Wikipedia",
+          "detail": "Usata per i miracoli più documentati, dove esistono voci enciclopediche sottoposte a revisione, tra cui Lanciano, Bolsena, Sokółka, Legnica, Tixtla, Akita, Knock, Wilsnack e il Santo Calice di Valencia."
+        },
+        {
+          "label": "Biblioteca cattolica EWTN",
+          "detail": "Biblioteca teologica dell'Eternal Word Television Network. Usata per il miracolo di Buenos Aires del 1996, approvato all'epoca dall'arcivescovo Jorge Bergoglio."
+        },
+        {
+          "label": "Adorazione eucaristica perpetua",
+          "detail": "Apostolato cattolico che documenta i fenomeni eucaristici nel mondo. Citato per Betania (Venezuela, 1991) e Saint-André (Riunione, 1902)."
+        }
+      ],
+      "continents": {
+        "Europe": "Europa",
+        "Americas": "Americhe",
+        "Asia": "Asia",
+        "Middle East": "Medio Oriente",
+        "Africa": "Africa",
+        "Oceania": "Oceania",
+        "Other": "Altri"
+      }
+    },
+    "countries": {
+      "Italy": "Italia",
+      "Germany": "Germania",
+      "France": "Francia",
+      "Poland": "Polonia",
+      "Spain": "Spagna",
+      "Belgium": "Belgio",
+      "Austria": "Austria",
+      "Czech Republic": "Repubblica Ceca",
+      "Portugal": "Portogallo",
+      "Netherlands": "Paesi Bassi",
+      "Switzerland": "Svizzera",
+      "Hungary": "Ungheria",
+      "Croatia": "Croazia",
+      "Lithuania": "Lituania",
+      "Romania": "Romania",
+      "Ireland": "Irlanda",
+      "Malta": "Malta",
+      "Scotland": "Scozia",
+      "Slovakia": "Slovacchia",
+      "Serbia": "Serbia",
+      "Bulgaria": "Bulgaria",
+      "Slovenia": "Slovenia",
+      "Luxembourg": "Lussemburgo",
+      "Latvia": "Lettonia",
+      "Sweden": "Svezia",
+      "Denmark": "Danimarca",
+      "Cyprus": "Cipro",
+      "Ukraine": "Ucraina",
+      "Argentina": "Argentina",
+      "Peru": "Perù",
+      "Mexico": "Messico",
+      "Chile": "Cile",
+      "Venezuela": "Venezuela",
+      "Canada": "Canada",
+      "United States": "Stati Uniti",
+      "Colombia": "Colombia",
+      "Ecuador": "Ecuador",
+      "Brazil": "Brasile",
+      "Paraguay": "Paraguay",
+      "Bolivia": "Bolivia",
+      "Uruguay": "Uruguay",
+      "Philippines": "Filippine",
+      "India": "India",
+      "Japan": "Giappone",
+      "Indonesia": "Indonesia",
+      "South Korea": "Corea del Sud",
+      "Vietnam": "Vietnam",
+      "Georgia": "Georgia",
+      "Egypt": "Egitto",
+      "Israel": "Israele",
+      "Lebanon": "Libano",
+      "Nigeria": "Nigeria",
+      "Uganda": "Uganda",
+      "South Africa": "Sudafrica",
+      "Kenya": "Kenya",
+      "Ethiopia": "Etiopia",
+      "Australia": "Australia",
+      "New Zealand": "Nuova Zelanda",
+      "Martinique": "Martinica",
+      "Réunion": "Riunione"
+    },
+    "canonized": {
+      "eyebrow": "Il cammino verso la santità",
+      "titleLine1": "Canonizzato attraverso",
+      "titleLine2": "i miracoli",
+      "body": "Nel corso della storia, la Chiesa ha esaminato con cura i miracoli come segni della presenza di Dio nella vita dei santi. Nel caso di Carlo Acutis, due guarigioni straordinarie sono state esaminate da esperti medici, teologi e funzionari vaticani prima di essere riconosciute ufficialmente come miracoli.",
+      "journey": "Il cammino verso la santità",
+      "timeline": [
+        {
+          "event": "Miracolo della beatificazione",
+          "detail": "Matheus Vianna — Brasile"
+        },
+        {
+          "event": "Carlo viene beatificato",
+          "detail": "Assisi, Italia"
+        },
+        {
+          "event": "Miracolo della canonizzazione",
+          "detail": "Valeria Valverde — Costa Rica"
+        },
+        {
+          "event": "Carlo viene canonizzato",
+          "detail": "27 aprile, Roma"
+        }
+      ],
+      "closingA": "Il 27 aprile 2025, Carlo Acutis è stato ufficialmente dichiarato",
+      "closingB": "santo della Chiesa cattolica."
+    },
+    "heroTitle": "{count} miracoli",
+    "heroWords": {
+      "documented": "Documentati",
+      "verified": "Verificati",
+      "preserved": "Conservati"
+    },
+    "yearAD": "d.C.",
+    "grid": {
+      "titleAll": "La mostra completa — {count} miracoli",
+      "titleFiltered": "La mostra completa — {count, plural, one {# miracolo} other {# miracoli}} da {country}",
+      "viewAll": "← Vedi tutti i {count} miracoli",
+      "countFiltered": "{count, plural, one {# miracolo documentato} other {# miracoli documentati}} da {country}. Clicca su una scheda per saperne di più.",
+      "intro": "Scorri o trascina per esplorare ogni miracolo documentato da Carlo. Clicca su una scheda per saperne di più.",
+      "sources": "Fonti",
+      "sourcePanel": "Mostra di Carlo Acutis — pannello individuale",
+      "sourceExhibition": "Mostra dei miracoli eucaristici di Carlo Acutis",
+      "sourceWiki": "Wikipedia",
+      "sourceEwtn": "EWTN — Biblioteca cattolica",
+      "sourcePea": "Adorazione eucaristica perpetua",
+      "sourceMagis": "Magis Center"
+    },
+    "skiper": {
+      "title": "Miracoli di Carlo Acutis",
+      "miracle": "Miracolo",
+      "tapToRead": "Tocca per leggere di più →",
+      "location": "Luogo",
+      "year": "Anno",
+      "person": "Persona",
+      "back": "← Torna ai miracoli",
+      "m1": {
+        "label": "Il miracolo che ha portato alla beatificazione",
+        "location": "Brasile",
+        "recognition": "Riconosciuto ufficialmente dal Vaticano · Beatificazione 2020",
+        "imageAlt": "Miracolo I — il miracolo della beatificazione, Brasile 2013",
+        "steps": [
+          "Un bambino di nome Matheus è nato con una grave malformazione congenita del pancreas, che causava gravi complicazioni digestive.",
+          "La sua famiglia ha chiesto l'intercessione di Carlo con la preghiera.",
+          "Durante una celebrazione di preghiera, Matheus ha toccato una reliquia di Carlo Acutis e ha pregato per la guarigione.",
+          "Poco dopo, la sua malattia è scomparsa in modo inatteso e completo.",
+          "Gli esami medici hanno confermato che il bambino era completamente guarito.",
+          "I medici non hanno saputo fornire alcuna spiegazione scientifica della guarigione.",
+          "Dopo anni di indagini del Vaticano, la guarigione è stata riconosciuta ufficialmente come miracolo attribuito a Carlo Acutis."
+        ]
+      },
+      "m2": {
+        "label": "Il miracolo che ha portato alla canonizzazione",
+        "location": "Costa Rica",
+        "recognition": "Riconosciuto ufficialmente dal Vaticano · Canonizzazione 2025",
+        "imageAlt": "Miracolo II — il miracolo della canonizzazione, Costa Rica 2022",
+        "steps": [
+          "Valeria ha subito un devastante trauma cranico in seguito a un grave incidente in bicicletta.",
+          "I medici ritenevano che le sue possibilità di recupero fossero estremamente scarse.",
+          "Sua madre si è recata ad Assisi e ha pregato sulla tomba di Carlo Acutis, affidando la vita della figlia alla sua intercessione.",
+          "Lo stesso giorno, Valeria ha iniziato inaspettatamente a migliorare.",
+          "Nei giorni successivi, si è ripresa a un ritmo che i medici non riuscivano a spiegare.",
+          "Gli esami del cervello hanno mostrato una guarigione straordinaria, inspiegabile dal punto di vista medico.",
+          "Ha avuto una ripresa notevole, che ha superato tutte le aspettative mediche.",
+          "Dopo un esame approfondito, il Vaticano ha riconosciuto ufficialmente questo fatto come il secondo miracolo attribuito a Carlo Acutis."
+        ]
+      }
+    },
+    "entries": {
+      "1": {
+        "title": "Carne e sangue di Cristo",
+        "description": "Un monaco basiliano che dubitava della Presenza reale vide l'ostia trasformarsi in carne visibile e il vino in sangue. Le analisi scientifiche del XX secolo hanno identificato il tessuto come muscolo cardiaco umano, di gruppo sanguigno AB, rimasto immutato dopo tredici secoli."
+      },
+      "2": {
+        "title": "Ostia trasformata in carne",
+        "description": "Durante la messa, un'ostia caduta a terra fu trovata trasformata in un piccolo pezzo di carne. Il vescovo Guido verificò il miracolo, che resta documentato nei registri della chiesa dell'epoca."
+      },
+      "3": {
+        "title": "Conservazione miracolosa",
+        "description": "Un'ostia consacrata, portata a un malato, cadde in una strada fangosa. Quando fu ritrovata giorni dopo, era perfettamente intatta e radiosa. L'evento portò alla costruzione di un santuario sul luogo."
+      },
+      "4": {
+        "title": "Il miracolo che commosse un papa",
+        "description": "Un sacerdote tedesco che dubitava, mentre celebrava la messa, vide sangue sgorgare dall'ostia sul corporale. Il papa Urbano IV fece portare il corporale, lo dichiarò miracoloso e ispirò la festa del Corpus Domini."
+      },
+      "5": {
+        "title": "Il corporale di Bolsena",
+        "description": "Il corporale macchiato di sangue del miracolo di Bolsena fu custodito nella cattedrale di Orvieto per volere del papa Urbano IV. In questa città san Tommaso d'Aquino compose l'Ufficio del Corpus Domini, ispirato dalla reliquia."
+      },
+      "6": {
+        "title": "Ostia preservata dal fuoco",
+        "description": "Durante un incendio che distrusse una chiesa, tra le macerie fu ritrovato un ciborio con ostie consacrate, intatto e non bruciato. Le autorità ecclesiastiche esaminarono poi le ostie e le trovarono in perfetto stato."
+      },
+      "7": {
+        "title": "Ostie incorrotte per secoli",
+        "description": "Ostie rubate alla basilica di San Francesco furono recuperate e poste in un ciborio. Quando vennero riesaminate nel 1914 e nel 1950, erano perfettamente conservate: avevano 220 anni e non presentavano alcun segno di corruzione."
+      },
+      "8": {
+        "title": "La mula si inginocchia davanti all'ostia",
+        "description": "Per convincere un eretico, sant'Antonio da Padova mostrò l'Eucaristia a una mula affamata. Pur separata dal cibo, l'animale si inginocchiò davanti all'ostia. L'eretico si convertì sul momento."
+      },
+      "9": {
+        "title": "Una processione di fuoco",
+        "description": "Un carro che trasportava vasi sacri rubati si rovesciò e un ciborio volò in aria. Le ostie consacrate sembrarono sollevarsi e fluttuare davanti alla folla e al clero, per poi posarsi miracolosamente."
+      },
+      "10": {
+        "title": "L'ostia che sanguinava in segreto",
+        "description": "Una donna ottenne un'ostia da usare in una pratica di magia popolare. Quando la avvolse nella cera, questa cominciò a sanguinare. Spaventata, la seppellì, ma quando il luogo fu scavato, l'ostia si era trasformata in carne sanguinante."
+      },
+      "11": {
+        "title": "Un ebreo testimone del miracolo",
+        "description": "Un uomo ebreo assistette alla profanazione di un'ostia e vide che questa cominciava a sanguinare copiosamente. Così commosso, si convertì subito al cristianesimo. L'evento fu documentato e sul luogo fu costruita una chiesa."
+      },
+      "12": {
+        "title": "Ostia usata per la magia trasformata in carne",
+        "description": "Una giovane donna conservò un'ostia anziché consumarla, con l'intenzione di usarla in un incantesimo. Giorni dopo, aprendo il panno, trovò l'ostia trasformata in un pezzo di carne. La reliquia si conserva ancora ad Alatri."
+      },
+      "13": {
+        "title": "Un moribondo riceve l'ostia",
+        "description": "Un sacerdote partì per portare la comunione a un contadino morente senza avere con sé un'ostia, e se ne accorse durante il cammino. Aprì il breviario e vi trovò un'ostia misteriosamente presente. Il contadino ricevette la comunione e morì in pace."
+      },
+      "14": {
+        "title": "Ostia trovata in un alveare",
+        "description": "Nelle campagne furono ritrovati vasi sacri rubati. Dentro un alveare fu scoperto un ciborio con ostie consacrate. Le api avevano costruito intorno una cappella di cera, come a custodire il Santissimo Sacramento."
+      },
+      "15": {
+        "title": "Sangue eucaristico sulla tovaglia dell'altare",
+        "description": "Durante una messa celebrata da un sacerdote che dubitava, comparve del sangue sulla tovaglia dell'altare di una chiesa di Verona. Le autorità ecclesiastiche esaminarono le macchie e stabilirono che si trattava di sangue umano. Il tessuto è conservato negli archivi diocesani."
+      },
+      "16": {
+        "title": "L'ostia che non bruciò",
+        "description": "Scoppiò un incendio in una chiesa veneziana, distruggendo arredi e altare. Quando le macerie furono rimosse, il tabernacolo fu trovato intatto. Le ostie consacrate al suo interno non avevano subito alcun danno."
+      },
+      "17": {
+        "title": "Incorruttibilità in Sardegna",
+        "description": "Un pisside lasciato in una cappella abbandonata nell'isola di Sardegna fu ritrovato decenni dopo. Le ostie consacrate all'interno erano perfettamente intatte e non mostravano segni di decomposizione, nonostante l'umidità del luogo."
+      },
+      "18": {
+        "title": "Un'ostia conservata miracolosamente",
+        "description": "Un'ostia caduta per sbaglio dietro l'altare fu ritrovata un anno dopo, durante dei lavori di restauro. Era in perfette condizioni, su una mensola inaccessibile. L'esame medico confermò che non c'era alcun mezzo naturale di conservazione."
+      },
+      "19": {
+        "title": "Ostia che risplende di luce",
+        "description": "Un sacerdote e diversi fedeli testimoni riferirono di aver visto un'ostia consacrata emettere luce visibile durante la benedizione eucaristica. Il fenomeno si ripeté per più giorni e fu certificato dal vescovo locale."
+      },
+      "20": {
+        "title": "Ostia che galleggia sull'acqua",
+        "description": "Dei pirati che saccheggiavano la città gettarono in mare un pisside con ostie consacrate. I testimoni la videro galleggiare dritta sulle onde. Il ciborio approdò intatto sulla riva, con le ostie perfettamente conservate."
+      },
+      "21": {
+        "title": "Sangue da un'ostia rubata",
+        "description": "Una donna del luogo avvolse in un panno un'ostia rubata da una chiesa. Quando lo aprì, il panno era zuppo di sangue. Terrorizzata, tornò in parrocchia e si confessò. Il panno macchiato di sangue fu conservato come reliquia."
+      },
+      "22": {
+        "title": "Chiara respinge un'invasione",
+        "description": "Quando dei soldati saraceni attaccarono Assisi e scalarono le mura del convento, santa Chiara portò l'ostensorio con il Santissimo Sacramento fino alla breccia. I soldati si fermarono, sembrarono accecati e fuggirono. L'episodio è registrato nel suo processo di canonizzazione."
+      },
+      "23": {
+        "title": "Un sacerdote guarito dall'ostia",
+        "description": "Un sacerdote morente ricevette il Viatico e si alzò immediatamente dal letto di morte. I medici che lo visitarono non trovarono alcuna spiegazione medica per la sua improvvisa e completa guarigione."
+      },
+      "24": {
+        "title": "Ostia ritrovata intatta dopo un'inondazione",
+        "description": "Un'alluvione sommerse per diverse settimane una chiesa di Roma. Quando le acque si ritirarono, il tabernacolo fu aperto e si trovò che conteneva ostie perfettamente conservate, senza alcuna traccia di danni dovuti all'umidità. L'evento fu documentato dal papa Paolo V."
+      },
+      "25": {
+        "title": "Un soldato trafigge l'ostia",
+        "description": "Un soldato colpì con un coltello un'ostia rubata e questa cominciò subito a sanguinare. Terrorizzato, si confessò al sacerdote e restituì l'ostia. Le autorità ecclesiastiche certificarono le macchie di sangue; il tessuto è ancora conservato."
+      },
+      "26": {
+        "title": "Ostia incorrotta attraverso il fuoco",
+        "description": "Durante un incendio che distrusse la sagrestia di una chiesa milanese, il tabernacolo fu recuperato dalle macerie con le ostie trovate perfettamente intatte. Il miracolo fu in seguito certificato da san Carlo Borromeo."
+      },
+      "27": {
+        "title": "Un'ostia luminosa nella notte",
+        "description": "Dei pescatori della costa adriatica videro una luce sospesa sul mare. Avvicinandosi, scoprirono che proveniva da un pisside contenente ostie consacrate che galleggiava sull'acqua. Il ciborio e le ostie furono recuperati intatti."
+      },
+      "28": {
+        "title": "L'ostia che tornò",
+        "description": "Un'ostia consacrata rubata da una chiesa e gettata in un pozzo fu ritrovata in seguito all'interno del tabernacolo della chiesa, come se fosse tornata da sola. Il tabernacolo era chiuso a chiave e non presentava segni di manomissione, secondo il parroco e i testimoni."
+      },
+      "29": {
+        "title": "Sangue che si diffonde sul corporale",
+        "description": "Un sacerdote versò accidentalmente il prezioso Sangue durante la messa, e questo si diffuse sul corporale formando undici volti, interpretati come Cristo e le anime del purgatorio. Il corporale, riconosciuto dai vescovi locali, attira ancora oggi i pellegrini."
+      },
+      "30": {
+        "title": "Ostia che sanguina dopo una profanazione",
+        "description": "Un'ostia consacrata che un ladro aveva trafitto cominciò a sanguinare. Il sangue si diffuse sul panno in cui era avvolta e non poté essere rimosso nemmeno con i lavaggi. Il vescovo di Ratisbona documentò il miracolo."
+      },
+      "31": {
+        "title": "Ostia luminosa in un campo",
+        "description": "Dei contadini segnalarono una luce intensa in un campo. Avvicinandosi, trovarono a terra un'ostia consacrata, intatta e circondata dalla luce. Sul luogo fu costruita una cappella che divenne meta di pellegrinaggi."
+      },
+      "32": {
+        "title": "Ostie conservate per trent'anni",
+        "description": "Un pisside con ostie consacrate fu murato in una parete di una chiesa per metterlo al sicuro durante dei disordini e fu dimenticato. Trent'anni dopo, durante dei lavori, fu ritrovato: le ostie erano fresche e incorrotte. Il vescovo Udalschalk certificò il miracolo."
+      },
+      "33": {
+        "title": "Il prezioso Sangue di Weingarten",
+        "description": "Una reliquia del Sangue di Cristo, che si diceva portata da Gerusalemme durante le crociate, fu custodita nell'abbazia benedettina di Weingarten. Nelle cronache dell'abbazia sono documentate numerose guarigioni legate alla reliquia."
+      },
+      "34": {
+        "title": "Un'ostia portata dagli angeli",
+        "description": "In un periodo di profanazioni di chiese, un'ostia consacrata fu vista fluttuare nell'aria all'interno di una chiesa, trasportata da figure luminose. L'evento fu segnalato all'arcivescovo di Colonia e registrato negli archivi diocesani."
+      },
+      "35": {
+        "title": "Ostia ritrovata in un giardino",
+        "description": "Un ciborio rubato fu ritrovato sepolto in un giardino, e le ostie al suo interno risultarono incorrotte nonostante un lungo periodo di sepoltura. Il vescovo Volrad di Erfurt indagò e autenticò il miracolo; sul luogo fu costruita una chiesa."
+      },
+      "36": {
+        "title": "Un cavaliere arrogante umiliato",
+        "description": "Un cavaliere pretese la grande ostia riservata ai sacerdoti. Quando il sacerdote acconsentì sotto costrizione, l'ostia cominciò a sanguinare. Il cavaliere sprofondò nel pavimento di pietra fino alle ginocchia prima di implorare pietà. L'impronta nella pietra è ancora visibile oggi."
+      },
+      "37": {
+        "title": "Un'ostia rubata sanguina",
+        "description": "Un usuraio pretese da una donna cristiana che gli portasse un'ostia in cambio della cancellazione di un debito. Quando la trafisse con un coltello, questa sanguinò copiosamente. Provò a bruciarla e a farla bollire, ma restò intatta e sanguinante fino alla sua conversione."
+      },
+      "38": {
+        "title": "Ostie intatte dopo un'inondazione",
+        "description": "Le piene del Rodano sommersero per molte settimane la chiesa dei Celestini. Quando le acque si ritirarono, le ostie nel tabernacolo erano perfettamente asciutte e incorrotte. Fu informato il papa Eugenio IV, che documentò l'evento."
+      },
+      "39": {
+        "title": "Un'ostia rubata ritrovata in un alveare",
+        "description": "Degli apicoltori trovarono nel loro alveare un'ostia rubata a una chiesa di Digione, circondata da un'elaborata costruzione di cera. L'ostia fu recuperata e trovata intatta, in analogia con il miracolo simile di Macerata, in Italia."
+      },
+      "40": {
+        "title": "Guarigione miracolosa all'altare",
+        "description": "Una donna paralizzata che si avvicinò per ricevere la comunione riferì che, dopo aver ricevuto l'ostia, aveva sentito un'ondata di calore ed era riuscita ad alzarsi e a camminare senza aiuto. La guarigione fu esaminata e certificata dal vescovo di Bordeaux."
+      },
+      "41": {
+        "title": "Sangue sul corporale di Marsiglia",
+        "description": "Durante la messa, sul corporale posto sotto il calice comparve del sangue senza alcuna causa visibile. Diversi sacerdoti e testimoni verificarono la macchia, che si diffuse nonostante i tentativi di rimuoverla. Il corporale è conservato negli archivi diocesani."
+      },
+      "42": {
+        "title": "Tessuto cardiaco in una chiesa parrocchiale",
+        "description": "Un'ostia posta in acqua per dissolversi sviluppò un tessuto rossastro nel giro di poche settimane. Istopatologi polacchi confermarono un tessuto miocardico in stato di grave sofferenza, compatibile con un cuore agonizzante. L'arcivescovo di Białystok lo riconobbe ufficialmente nel 2012."
+      },
+      "43": {
+        "title": "Tessuto miocardico in un miracolo moderno",
+        "description": "Un'ostia posta in acqua sviluppò un tessuto rossastro. L'esame medico confermò un tessuto del muscolo cardiaco di un essere umano vivente, sottoposto a uno stress estremo. Il vescovo Stefan Cichy riconobbe l'evento nel 2016."
+      },
+      "44": {
+        "title": "Ostie trafitte e gettate in una palude",
+        "description": "Tre ostie consacrate furono rubate e più volte trafitte, dalle quali sgorgò sangue. Gettate in una palude, furono ritrovate luminose. Sul luogo fu costruita una chiesa, e i panni insanguinati sono conservati nei suoi archivi."
+      },
+      "45": {
+        "title": "Ostia trovata intatta nel fango",
+        "description": "Un ciborio rubato fu gettato in uno stagno fangoso vicino a Cracovia. Le persone del posto vi furono guidate quando apparve una luce sull'acqua. Le ostie al suo interno furono trovate pulite e illese. Il re Casimiro il Grande fece costruire una chiesa sul luogo."
+      },
+      "46": {
+        "title": "Ostie miracolosamente conservate",
+        "description": "Un ciborio con ostie, rubato a una chiesa, fu abbandonato in una scatola per mesi. Quando le autorità indagarono, le ostie erano perfettamente incorrotte. L'arcivescovo di Toledo verificò il miracolo e le ostie furono portate in processione."
+      },
+      "47": {
+        "title": "Sei ostie preservate durante una battaglia",
+        "description": "Durante una battaglia contro i mori, sei ostie consacrate furono nascoste in un panno per metterle al sicuro. Quando furono recuperate, il panno era macchiato di sangue e le ostie si erano trasformate in carne. Una mula che trasportava le reliquie si fermò e rifiutò di muoversi; in quel luogo fu costruita una chiesa."
+      },
+      "48": {
+        "title": "Un'ostia cade e si trasforma",
+        "description": "Un'ostia sfuggì dalle mani di un sacerdote durante la messa e fu ritrovata a terra, circondata da sangue. Diversi testimoni verificarono il fenomeno e il vescovo aprì un'indagine ufficiale. Il corporale macchiato di sangue è conservato nella parrocchia."
+      },
+      "49": {
+        "title": "Il santuario e l'Eucaristia",
+        "description": "Nel celebre santuario di Nostra Signora di Guadalupe, in Estremadura, un sacerdote riferì che un'ostia di un ciborio si era trasformata. Le autorità ecclesiastiche indagarono e documentarono le testimonianze di diversi testimoni, rafforzando il significato eucaristico del santuario."
+      },
+      "50": {
+        "title": "L'ostia rubata che sanguina",
+        "description": "Una donna rubò un'ostia su richiesta di una strega e la avvolse nel suo velo. Subito cominciò a sanguinare. Spaventata, la portò a casa, dove luci la circondarono per tutta la notte. Si confessò al sacerdote, l'ostia fu recuperata e sanguinava ancora."
+      },
+      "51": {
+        "title": "Ostia incorrotta dopo anni",
+        "description": "Durante il restauro di una chiesa fu aperto un tabernacolo sigillato, rimasto nascosto per anni. Le ostie consacrate al suo interno erano in perfetto stato. Il vescovo di Viseu indagò e certificò il miracolo; le ostie furono conservate come reliquie."
+      },
+      "52": {
+        "title": "Un'ostia sopravvive due volte al fuoco",
+        "description": "Un moribondo rigurgitò un'ostia che aveva ricevuto. Fu gettata nel fuoco per essere distrutta con rispetto, ma non bruciò. Quando una donna la recuperò e la custodì, il fenomeno si ripeté. Fu costruita una cappella e il vescovo di Utrecht certificò il miracolo."
+      },
+      "53": {
+        "title": "Ostia ritrovata in un nido d'uccello",
+        "description": "Per giorni fu cercata un'ostia rubata. Un pastore notò che degli uccelli si radunavano in modo insolito attorno a un albero. Arrampicandosi, trovò un nido con l'ostia, perfettamente conservata. Il parroco riferì il miracolo al vescovo."
+      },
+      "54": {
+        "title": "Tessuto cardiaco confermato dalla scienza",
+        "description": "Un'ostia scartata, posta in acqua, si trasformò visibilmente in un tessuto rossastro. Un'analisi scientifica confermò la presenza di miocardio umano vivente, sottoposto a stress. Il miracolo fu approvato dall'allora arcivescovo Jorge Bergoglio, poi papa Francesco."
+      },
+      "55": {
+        "title": "Ostia in un calice d'acqua",
+        "description": "Un'ostia caduta durante la distribuzione della comunione fu posta in un recipiente d'acqua. Giorni dopo fu ritrovata trasformata in una sostanza rossastra. Una prima analisi scientifica indicò materiale biologico di origine umana. L'indagine fu seguita dal vescovo locale."
+      },
+      "56": {
+        "title": "Ostia preservata durante un'inondazione",
+        "description": "Dopo una grave alluvione in una chiesa di Rosario, tutto il contenuto fu distrutto. Il tabernacolo fu trovato intatto, e le ostie al suo interno erano asciutte e perfettamente conservate, nonostante l'edificio fosse rimasto sott'acqua per giorni."
+      },
+      "57": {
+        "title": "Tessuto cardiaco vivente",
+        "description": "Durante una messa di ritiro parrocchiale, un'ostia cominciò a emettere una sostanza rossastra dall'interno. Le analisi confermarono sangue umano del gruppo AB e tessuto miocardico vivo. Accadde nello stesso anno della morte di Carlo Acutis, che catalogò questo miracolo, morto a quindici anni."
+      },
+      "58": {
+        "title": "Ostie conservate dopo un terremoto",
+        "description": "Un violento terremoto danneggiò una chiesa di Città del Messico e il tabernacolo cadde a terra. Quando fu recuperato, le ostie consacrate al suo interno erano intatte e incorrotte. Testimoni e il vescovo locale attestarono il miracolo."
+      },
+      "59": {
+        "title": "Un'ostia conservata in un medaglione",
+        "description": "Elizabeth Ann Seton, poi canonizzata come prima santa nata negli Stati Uniti, riferì che un'ostia custodita in un medaglione, quando era separata da un sacerdote, era rimasta fresca e intatta per lungo tempo. L'evento fu incluso nel suo processo di beatificazione."
+      },
+      "60": {
+        "title": "Un'ostia si trasforma in carne",
+        "description": "Nella diocesi di Trivandrum, un'ostia posta in acqua dopo essere caduta durante la comunione si trasformò in una sostanza organica rossastra. Il vescovo aprì un'indagine ufficiale e il materiale fu inviato per un esame scientifico."
+      },
+      "61": {
+        "title": "Sangue sul corporale",
+        "description": "Durante la messa in una parrocchia del Kerala, sul corporale posto sotto il calice comparvero macchie rossastre. Diversi sacerdoti e fedeli furono testimoni del fenomeno. L'arcivescovo di Ernakulam-Angamaly ordinò un'indagine; il materiale fu confermato come sangue umano."
+      },
+      "62": {
+        "title": "Ostia preservata durante le guerre d'indipendenza",
+        "description": "Durante le guerre d'indipendenza, una chiesa di Bogotà fu saccheggiata e i vasi sacri rovesciati. Quando i soldati se ne andarono, il sacerdote constatò che le ostie consacrate erano rotolate in un angolo, ma erano perfettamente conservate e intatte."
+      },
+      "63": {
+        "title": "L'ostia che non bruciò",
+        "description": "Durante un incendio in una chiesa di Guayaquil, il tabernacolo fu consumato dalle fiamme insieme a tutto l'altare. Frugando tra le rovine, il ciborio fu trovato intatto e le ostie al suo interno non erano state toccate dal fuoco. Il vescovo di Guayaquil certificò l'evento."
+      },
+      "64": {
+        "title": "Tessuto eucaristico al microscopio",
+        "description": "Un sacrestano pose in acqua un'ostia che si era trasformata parzialmente in tessuto rossastro dopo un incidente durante una distribuzione. L'arcivescovo di San Paolo ordinò un'analisi scientifica, che confermò materiale biologico di origine umana."
+      },
+      "65": {
+        "title": "Il prezioso Sangue di Bruges",
+        "description": "Una reliquia del Sangue di Cristo, che si diceva riportata dalla Terra Santa durante le crociate, fu custodita nella basilica del Preziosissimo Sangue. Si narra che la reliquia si sia liquefatta più volte, ed è ancora venerata ogni venerdì nella basilica."
+      },
+      "66": {
+        "title": "Ostie trafitte dai ladri sanguinano",
+        "description": "Dei ladri che avevano rubato delle ostie consacrate da una chiesa di Lovanio le trafissero con dei coltelli, e da ciascuna sgorgò sangue. Terrorizzati, le abbandonarono. Le ostie furono recuperate e le macchie di sangue esaminate. Il miracolo diede origine a un grande pellegrinaggio."
+      },
+      "67": {
+        "title": "L'origine della festa del Corpus Domini",
+        "description": "Santa Giuliana di Liegi ebbe la visione della luna con una macchia scura, interpretata come l'assenza della festa dell'Eucaristia nel calendario della Chiesa. La sua insistenza portò all'istituzione della festa del Corpus Domini da parte del papa Urbano IV."
+      },
+      "68": {
+        "title": "Ostia ritrovata in un pozzo",
+        "description": "Un'ostia rubata da una chiesa di Gand fu gettata in un pozzo. Giorni dopo fu ritrovata galleggiante in superficie, luminosa e senza segni di dissoluzione. Il vescovo di Gand certificò il miracolo e fu eretta una cappella presso il pozzo."
+      },
+      "69": {
+        "title": "Un bambino riporta l'ostia a casa",
+        "description": "Un bambino piccolo tenne segretamente un'ostia ricevuta alla sua prima comunione. Quando la famiglia aprì la piccola borsa, la trovò risplendente di luce e perfettamente conservata su un letto di fiori freschi. Fu chiamato il parroco per recuperarla."
+      },
+      "70": {
+        "title": "Un nobile arrogante sprofonda",
+        "description": "Il conte Oswald pretese la grande ostia riservata ai sacerdoti. Mentre il sacerdote gliela posava sulla lingua sotto costrizione, il conte cominciò a sprofondare nel pavimento di pietra. Terrorizzato, si aggrappò all'altare e implorò perdono. Le impronte delle sue mani si conservano."
+      },
+      "71": {
+        "title": "Un soldato si pente alla vista del sangue",
+        "description": "Un soldato che aveva profanato un'ostia durante un assalto a una chiesa viennese la vide cominciare a sanguinare. Così sconvolto, cercò subito un sacerdote, si confessò, compì una severa penitenza e in seguito entrò nella vita religiosa."
+      },
+      "72": {
+        "title": "Ostie illese nell'incendio di una chiesa",
+        "description": "Un incendio devastante distrusse la chiesa di San Pietro a Salisburgo. Quando l'arcivescovo esaminò le rovine, il tabernacolo fu recuperato intatto. Le ostie al suo interno erano perfettamente bianche e asciutte, senza essere state toccate dalle fiamme."
+      },
+      "73": {
+        "title": "Un'ostia sanguina davanti a un re",
+        "description": "L'imperatore Carlo IV era presente quando un'ostia nella cattedrale di San Vito cominciò a trasudare sangue. L'imperatore si inginocchiò e i testimoni del clero registrarono le loro testimonianze. Carlo IV ordinò la costruzione di una cappella speciale in onore del miracolo."
+      },
+      "74": {
+        "title": "Le ostie sopravvivono a un'incursione hussita",
+        "description": "Durante le incursioni delle forze hussite, che rifiutavano la transustanziazione, la chiesa di San Giacomo a Brno fu attaccata e l'altare rovesciato. Le ostie consacrate furono ritrovate intatte tra le macerie, senza danni nonostante fossero state disperse."
+      },
+      "75": {
+        "title": "Un vescovo testimone della trasformazione",
+        "description": "Il vescovo Bruno di Olomouc stava celebrando la messa quando lui e la comunità videro l'ostia trasformarsi visibilmente in carne. Interruppe la messa, chiamò i canonici della cattedrale come testimoni e inviò a Roma un documento ufficiale che registrava l'evento."
+      },
+      "76": {
+        "title": "Sangue da un'ostia profanata",
+        "description": "Un gruppo di uomini profanò un'ostia rubata. Il sangue ne sgorgò in tale quantità che gli uomini fuggirono terrorizzati. Una donna la trovò per strada e la portò al sacerdote, che segnalò il fenomeno sanguinoso al vescovo di Basilea."
+      },
+      "77": {
+        "title": "Un'ostia preservata in un lago",
+        "description": "Un sacerdote in fuga dalle persecuzioni gettò un pisside contenente ostie in un lago, per evitare che fossero profanate. Anni dopo, quando fu recuperato, il pisside era intatto e le ostie perfettamente conservate. Il vescovo di Ginevra documentò l'evento."
+      },
+      "78": {
+        "title": "Un'ostia ritrovata nel Danubio",
+        "description": "Durante l'assalto a una chiesa nei pressi di Budapest, dei vasi sacri furono gettati nel Danubio. Dei pescatori trovarono il ciborio che galleggiava in superficie, con le ostie intatte. L'arcivescovo di Esztergom condusse un'indagine ufficiale."
+      },
+      "79": {
+        "title": "Ostie preservate durante un assedio",
+        "description": "Durante il celebre assedio del castello di Eger da parte delle forze ottomane, una chiesa della città fu più tardi profanata dai soldati. Le ostie consacrate nel tabernacolo furono trovate intatte e non toccate. Il fatto fu registrato dai sopravvissuti all'assedio."
+      },
+      "80": {
+        "title": "Il vino si trasforma in sangue",
+        "description": "Un sacerdote che celebrava la messa si accorse che il vino nel calice si era visibilmente trasformato in sangue. Il papa Leone X e il papa Alessandro VI concessero l'approvazione formale dopo un'indagine. La reliquia è conservata nella chiesa francescana di Ludbreg."
+      },
+      "81": {
+        "title": "Ostia intatta dopo un terremoto",
+        "description": "Il grande terremoto del 1730, che colpì la regione di Dubrovnik, distrusse molti edifici, tra cui diverse chiese. In una parrocchia il tabernacolo sopravvisse intatto e le ostie al suo interno furono trovate perfettamente conservate."
+      },
+      "82": {
+        "title": "Un'apparizione della Madonna con il Bambino",
+        "description": "In un campo fuori Šiluva, la Vergine Maria apparve a un gruppo di bambini che piangevano per la distruzione di una chiesa cattolica, tenendo in braccio il Bambino Gesù. Un anziano cieco fu miracolosamente guarito. Il luogo divenne uno dei più grandi santuari eucaristici dell'Europa orientale."
+      },
+      "83": {
+        "title": "Ostia scoperta dopo un secolo",
+        "description": "Durante i lavori di restauro della chiesa di Sant'Anna a Vilnius fu scoperta una nicchia sigillata contenente un pisside con ostie consacrate. I documenti storici rivelarono che era stato nascosto nel 1530 per proteggerlo dagli iconoclasti, più di un secolo prima. Le ostie furono trovate intatte."
+      },
+      "84": {
+        "title": "Un'ostia radiosa vista da centinaia di persone",
+        "description": "Durante una processione pubblica del Corpus Domini a Bratislava, centinaia di testimoni riferirono che l'ostia nell'ostensorio emise raggi di luce visibili per diversi minuti. L'arcivescovo di Esztergom documentò l'evento."
+      },
+      "85": {
+        "title": "Ostie intatte dopo la distruzione di una chiesa",
+        "description": "Durante la persecuzione religiosa, una chiesa cattolica di Cluj-Napoca fu occupata e devastata, e i vasi sacri furono rovesciati e dispersi. Quando i cattolici tornarono, le ostie consacrate furono ritrovate raccolte insieme, perfettamente intatte."
+      },
+      "86": {
+        "title": "Un sacerdote riceve il Viatico in carcere",
+        "description": "Un sacerdote cattolico imprigionato per la sua fede a Iași riferì di aver ricevuto miracolosamente la comunione mentre era in isolamento, senza alcun accesso a un sacerdote. La mattina seguente fu trovato con evidenti segni di aver ricevuto il sacramento."
+      },
+      "87": {
+        "title": "Un'ostia conservata durante un conflitto",
+        "description": "Durante un periodo di conflitto nella regione, una chiesa di Belgrado fu saccheggiata. Il tabernacolo fu rovesciato, ma le ostie consacrate rimasero raccolte al centro del pavimento di pietra, intatte. Un vescovo locale certificò il miracolo."
+      },
+      "88": {
+        "title": "Un'antica ostia conservata nella pietra",
+        "description": "Nella chiesa di Santa Sofia, una delle più antiche chiese cristiane ancora in uso al mondo, durante lavori di restauro fu ritrovato un frammento di un'antica celebrazione eucaristica, conservato in una cavità di pietra sigillata, datata al IX secolo."
+      },
+      "89": {
+        "title": "Un'ostia ritrovata dopo una lunga ricerca",
+        "description": "Un'ostia rubata da una chiesa di Lubiana fu cercata per mesi. Una donna povera, guidata da una visione, ritrovò il ciborio sepolto nei pressi della città, con le ostie ancora intatte. Il vescovo di Lubiana aprì un'indagine canonica e certificò il miracolo."
+      },
+      "90": {
+        "title": "Un'ostia cambia durante l'adorazione",
+        "description": "Durante l'adorazione eucaristica in una parrocchia di Cebu, l'ostia nell'ostensorio sembrò passare dal bianco a una tonalità rossastra, visibile a tutti i presenti. Diversi testimoni e il parroco attestarono il fenomeno, che durò diversi minuti."
+      },
+      "91": {
+        "title": "Ostie illese davanti al fuoco",
+        "description": "Un incendio distrusse la chiesa di legno di Sant'Agostino a Manila. I muri di pietra sopravvissero e tra le rovine il tabernacolo fu trovato intatto. Le ostie al suo interno erano perfettamente conservate. I frati agostiniani documentarono l'evento nelle loro cronache."
+      },
+      "92": {
+        "title": "Un'ostia ritrovata nella giungla",
+        "description": "Un ciborio rubato alla parrocchia di Antipolo fu ritrovato abbandonato nella giungla da alcuni indigeni. Le ostie al suo interno erano intatte. La miracolosa conservazione fu attribuita all'intercessione di Nostra Signora della Pace e del Buon Viaggio, patrona di Antipolo."
+      },
+      "93": {
+        "title": "Una donna morente torna in vita",
+        "description": "Una donna in fin di vita in un ospedale di Naga ricevette il Viatico. Subito dopo aver ricevuto l'ostia, dichiarò che il dolore era scomparso del tutto e, nel giro di pochi giorni, guarì completamente, cosa che i medici curanti non seppero spiegare."
+      },
+      "94": {
+        "title": "Suor Agnese e la statua che piange",
+        "description": "Suor Agnese Katsuko Sasagawa ricevette le stimmate e dei messaggi durante l'adorazione. Una statua in legno della Vergine Maria nella cappella del convento cominciò a versare lacrime e sangue. Fu esaminata da esperti medici, tra cui un medico buddhista che ne confermò la realtà."
+      },
+      "95": {
+        "title": "Una chiesa sopravvive alla bomba",
+        "description": "Quando la bomba atomica cadde su Nagasaki, dei frati francescani riferirono che il Santissimo Sacramento fu ritrovato intatto tra le rovine della loro cappella. Anche un tabernacolo di una chiesa parzialmente distrutta, vicino all'ipocentro, sopravvisse all'esplosione."
+      },
+      "96": {
+        "title": "Sangue sull'ostia a Seul",
+        "description": "Durante una messa celebrata in una parrocchia di Seul, il sacerdote e i chierichetti videro comparire del sangue su un'ostia. Il vescovo locale aprì un'indagine canonica e l'ostia fu inviata a un esame scientifico. I risultati confermarono la presenza di sangue umano."
+      },
+      "97": {
+        "title": "Sangue sull'ostia a Betania",
+        "description": "Nella comunità di Betania, già famosa per apparizioni mariane approvate, durante la messa un'ostia fu vista emettere sangue. Il vescovo locale, che aveva approvato le apparizioni nel 1987, indagò sul fenomeno eucaristico e ne riconobbe il carattere miracoloso."
+      },
+      "98": {
+        "title": "Un sacerdote guarito dopo la messa",
+        "description": "Un sacerdote di Caracas affetto da una malattia terminale riferì di essere guarito completamente nei giorni successivi a una celebrazione della messa particolarmente fervente. I suoi medici documentarono la scomparsa completa e improvvisa della malattia, senza alcuna spiegazione medica."
+      },
+      "99": {
+        "title": "Ostie conservate dopo un terremoto",
+        "description": "Durante un terremoto che distrusse gran parte di Lima, la chiesa di Santo Domingo subì gravi danni. Il tabernacolo, tra le rovine, fu ritrovato con le sue ostie intatte. L'evento fu segnalato all'arcivescovo e registrato nelle cronache dell'arcidiocesi."
+      },
+      "100": {
+        "title": "Un'ostia ritrovata nella valle sacra",
+        "description": "Un'ostia rubata, che un convertito aveva conservato per un rito precristiano, fu recuperata dopo una confessione. L'ostia fu ritrovata intatta nel luogo in cui era rimasta nascosta per settimane. Il vescovo di Cuzco documentò l'evento e fece costruire una cappella."
+      },
+      "101": {
+        "title": "Una guarigione durante la benedizione",
+        "description": "Una donna paralizzata da anni fu portata in una chiesa durante la benedizione eucaristica. Quando il sacerdote alzò l'ostensorio, i testimoni la videro alzarsi dalla sedia a rotelle e camminare. I medici certificarono che la guarigione era inspiegabile sul piano medico."
+      },
+      "102": {
+        "title": "Un'ostia si trasforma a Santiago",
+        "description": "Un sacrestano di una parrocchia di Santiago scoprì che un'ostia lasciata in acqua dopo un incidente durante la messa si era trasformata in una sostanza rossastra. L'arcivescovo ordinò un esame; i risultati scientifici mostrarono materiale biologico compatibile con tessuto cardiaco, di gruppo sanguigno AB."
+      },
+      "103": {
+        "title": "Un marinaio guarito in mare",
+        "description": "Un marinaio morente a bordo di una nave vicino a Valparaíso ricevette il Viatico dal cappellano di bordo e riferì una ripresa immediata, tornando in piena salute. Una volta in porto, il cappellano segnalò l'evento al vescovo di Valparaíso, che aprì un'indagine."
+      },
+      "104": {
+        "title": "Ostia intatta dopo l'incendio di una chiesa",
+        "description": "Durante le violenze anticlericali in Paraguay, una chiesa di Asunción fu data alle fiamme. Quando l'edificio fu distrutto, i soccorritori trovarono il tabernacolo intatto tra le rovine, con le ostie al suo interno illese. L'arcivescovo documentò l'evento."
+      },
+      "105": {
+        "title": "Un miracolo eucaristico durante l'indipendenza",
+        "description": "Durante il movimento d'indipendenza boliviano, una chiesa di La Paz fu presa d'assalto dai soldati. Il sacerdote fuggì lasciando esposto il Santissimo Sacramento. Quando i soldati entrarono, si narra che indietreggiarono davanti all'ostensorio e se ne andarono senza portarlo via."
+      },
+      "106": {
+        "title": "Una guarigione in una cappella ospedaliera",
+        "description": "Un paziente di Montevideo affetto da un tumore avanzato e inoperabile ricevette il Viatico nella cappella dell'ospedale. Giorni dopo, le immagini mediche mostrarono la completa scomparsa del tumore. Il medico curante, non cattolico, certificò la guarigione come inspiegabile sul piano medico."
+      },
+      "107": {
+        "title": "Ostie preservate dopo un'inondazione",
+        "description": "Una piena del fiume San Lorenzo danneggiò diverse chiese della città bassa di Québec. Un tabernacolo sommerso per giorni fu aperto e risultò contenere ostie perfettamente intatte. Il vescovo di Québec indagò e documentò l'evento."
+      },
+      "108": {
+        "title": "Un'ostia trovata da una bambina",
+        "description": "Una bambina trovò un'ostia intatta per strada a Montréal, apparentemente caduta durante una visita a un malato. La portò al parroco, che la trovò perfettamente integra. Il vescovo colse l'occasione per promuovere una maggiore reverenza nel ricevere la comunione."
+      },
+      "109": {
+        "title": "L'apparizione di Knock",
+        "description": "Sul frontone della chiesa parrocchiale di Knock, quindici testimoni videro un'apparizione della Vergine Maria, di san Giuseppe, di san Giovanni Evangelista e di un altare con un Agnello e una Croce: una visione eucaristica. I testimoni avevano un'età compresa tra i sei e i settantacinque anni."
+      },
+      "110": {
+        "title": "Ostia intatta sotto le macerie",
+        "description": "Durante la guerra d'indipendenza, una chiesa di Dublino fu danneggiata da un incendio. Quando furono rimosse le macerie, il tabernacolo fu recuperato sotto la muratura crollata, intatto. Le ostie al suo interno erano perfettamente conservate. L'arcivescovo certificò l'evento."
+      },
+      "111": {
+        "title": "Un'ostia preservata prima della Riforma",
+        "description": "Si dice che un'ostia sfuggì alla distruzione durante un assalto alla chiesa di San Giles. Una donna devota la nascose in casa prima che la chiesa venisse attaccata. Quando la portò a un sacerdote mesi dopo, era rimasta incorrotta, sessant'anni prima della Riforma scozzese."
+      },
+      "112": {
+        "title": "Un'ostia sviluppa materiale biologico",
+        "description": "Un'ostia caduta durante la comunione in una parrocchia di Sydney fu posta in acqua dal sacerdote. Giorni dopo non si era dissolta e presentava una colorazione rossastra. Un biologo segnalò la presenza di tessuto biologico. L'arcivescovo ordinò un'indagine approfondita."
+      },
+      "113": {
+        "title": "Un malato terminale guarisce",
+        "description": "Un paziente affetto da un cancro terminale in un ospedale di Melbourne ricevette l'unzione degli infermi e il Viatico. In due settimane, gli esami non mostrarono più traccia del cancro. Il suo oncologo, non cattolico, confermò che non c'era alcuna spiegazione medica per la remissione completa."
+      },
+      "114": {
+        "title": "Un'ostia ritrovata dopo un terremoto",
+        "description": "Un piccolo terremoto danneggiò una chiesa di Auckland, facendo cadere il tabernacolo. Quando il sacerdote rientrò, trovò il tabernacolo aperto e le ostie sparse sul pavimento, ma perfettamente intatte: nessuna era stata spezzata o schiacciata dal crollo della struttura."
+      },
+      "115": {
+        "title": "Ostie conservate durante un assedio",
+        "description": "Durante un periodo di bombardamenti, una cappella di La Valletta fu colpita direttamente e crollò in parte. Il tabernacolo fu ritrovato intatto tra le macerie, con le ostie al suo interno perfettamente conservate. Il vescovo di Malta documentò l'evento."
+      },
+      "116": {
+        "title": "Un'ostia ritrovata in un fiume",
+        "description": "Un vaso sacro gettato nell'Alzette durante un'incursione in una chiesa fu ritrovato sulla riva diversi giorni dopo, approdato intatto. Le ostie al suo interno erano asciutte e incorrotte. Il vescovo di Lussemburgo indagò e certificò l'evento."
+      },
+      "117": {
+        "title": "Un'ostia miracolosamente preservata",
+        "description": "Durante i disordini religiosi che distrussero una chiesa di Giacarta, il tabernacolo fu tra gli oggetti presi di mira. Quando l'ordine fu ristabilito e le autorità entrarono tra le rovine, il ciborio fu trovato intatto in mezzo alla distruzione, e le ostie al suo interno erano illese."
+      },
+      "118": {
+        "title": "Sangue sul corporale",
+        "description": "Durante la messa in una parrocchia di Surabaya, sul corporale posto sotto il calice comparve del sangue a forma di croce. Il sacerdote e diversi testimoni attestarono il fenomeno. Il vescovo aprì un'indagine ufficiale e il corporale fu inviato a un esame scientifico."
+      },
+      "119": {
+        "title": "Un'ostia preservata durante la persecuzione",
+        "description": "Un cattolico vietnamita che aveva nascosto un'ostia consacrata durante anni di persecuzione religiosa riferì che era rimasta intatta, in un contenitore sigillato, dopo molti anni di occultamento. L'arcivescovo indagò e documentò l'evento."
+      },
+      "120": {
+        "title": "Un miracolo eucaristico copto",
+        "description": "Nell'antica chiesa copta di Babilonia, al Cairo, la tradizione tramanda una manifestazione miracolosa di Cristo nell'Eucaristia durante un periodo di persecuzione. Il patriarca copto documentò l'evento, che divenne fonte di forza per la comunità perseguitata."
+      },
+      "121": {
+        "title": "Un'ostia ritrovata nel deserto",
+        "description": "Alcuni eremiti del deserto egiziano dissero di aver trovato nella sabbia un oggetto luminoso che si rivelò essere un'ostia consacrata. Incapaci di spiegare come fosse arrivata nel deserto, la portarono al vescovo locale. L'ostia fu esaminata e ne fu confermata l'autenticità."
+      },
+      "122": {
+        "title": "Un'ostia preservata in una città in guerra",
+        "description": "Durante il conflitto civile in Libano, una chiesa maronita di Beirut fu attaccata e parzialmente distrutta. Quando le macerie furono rimosse, il tabernacolo fu trovato intatto. Le ostie al suo interno erano perfettamente conservate. Il patriarca maronita documentò l'evento."
+      },
+      "123": {
+        "title": "Un'ostia che risplende durante l'adorazione",
+        "description": "Durante una notte di adorazione eucaristica in una parrocchia di Lagos, l'ostia nell'ostensorio emise una luce visibile, testimoniata da diversi fedeli e dal parroco. L'arcivescovo di Lagos indagò e documentò l'evento."
+      },
+      "124": {
+        "title": "Sangue sul corporale a Enugu",
+        "description": "Durante la messa in una parrocchia di Enugu, sul corporale comparve del sangue. Il fenomeno fu testimoniato dal sacerdote e dalla comunità. Il vescovo aprì un'indagine e il corporale fu inviato a un laboratorio medico, che confermò la presenza di sangue umano."
+      },
+      "125": {
+        "title": "Un'ostia miracolosamente trasformata",
+        "description": "Un'ostia posta in acqua in una parrocchia di Kampala, dopo un incidente durante la distribuzione, fu esaminata giorni dopo, quando non si era dissolta. Al suo interno era visibile del materiale rossastro. L'arcivescovo di Kampala ordinò un'indagine e il campione fu inviato a un'analisi scientifica."
+      },
+      "126": {
+        "title": "Una guarigione certificata dai medici",
+        "description": "Una donna affetta da lupus avanzato ricevette la comunione e l'unzione degli infermi. Nel giro di pochi giorni tutti i sintomi scomparvero. Tre medici indipendenti, tra cui uno non cristiano, certificarono la guarigione come inspiegabile sul piano medico."
+      },
+      "127": {
+        "title": "Un'ostia intatta dopo un incendio",
+        "description": "Un incendio danneggiò una chiesa parrocchiale di Nairobi, distruggendo la sacrestia e gli arredi dell'altare. Quando le rovine furono setacciate, il tabernacolo fu trovato tra le macerie, con le sue ostie intatte e illese. L'arcivescovo di Nairobi documentò l'evento."
+      },
+      "128": {
+        "title": "Un miracolo eucaristico in Africa",
+        "description": "In una parrocchia che serve la comunità cattolica etiope, un'ostia posta in acqua dopo essere caduta durante la comunione sviluppò in pochi giorni del materiale rossastro. Il vescovo ordinò un'indagine e il materiale, analizzato, risultò di origine biologica."
+      },
+      "129": {
+        "title": "Il miracolo delle crociate a Gerusalemme",
+        "description": "Durante i primi anni delle crociate fu segnalato un fenomeno miracoloso nella chiesa del Santo Sepolcro, riguardante un'ostia consacrata che non poteva essere consumata dal fuoco. L'evento è registrato nelle cronache crociate, e il patriarca di Gerusalemme ne informò il papa."
+      },
+      "130": {
+        "title": "Un'antica reliquia eucaristica",
+        "description": "L'antica chiesa georgiana conserva racconti di un miracolo eucaristico del primo periodo cristiano. Un'ostia consacrata portata in Georgia dai primi missionari sarebbe stata miracolosamente preservata, e il fatto è registrato nelle Vite dei Santi Padri di Georgia."
+      },
+      "131": {
+        "title": "Un'ostia preservata durante le guerre",
+        "description": "Durante le devastanti guerre che colpirono l'Europa orientale nel XVII secolo, una chiesa greco-cattolica di Leopoli fu saccheggiata. Il tabernacolo fu rovesciato, ma le ostie furono ritrovate raccolte insieme sul pavimento, intatte. Il vescovo di Leopoli certificò l'evento."
+      },
+      "132": {
+        "title": "Un'ostia sopravvive alla Riforma",
+        "description": "Durante la Riforma protestante che attraversò gli Stati baltici, le chiese cattoliche di Riga furono confiscate. Un sacerdote nascose un ciborio con ostie consacrate prima che la sua chiesa venisse occupata. Quando lo recuperò anni dopo, le ostie erano intatte e incorrotte."
+      },
+      "133": {
+        "title": "Un antico miracolo nordico",
+        "description": "Prima che la Riforma raggiungesse la Scandinavia, una chiesa di Stoccolma registrò un miracolo che riguardava un'ostia che si diceva avesse emesso luce durante la messa. Il vescovo di Uppsala indagò e l'evento fu registrato negli annali diocesani del XII secolo."
+      },
+      "134": {
+        "title": "Un'ostia preservata dopo un'inondazione",
+        "description": "Quando una chiesa di Copenaghen fu allagata durante una violenta tempesta, il tabernacolo rimase sommerso per diversi giorni. Quando fu recuperato, le ostie al suo interno erano perfettamente asciutte e incorrotte. Il vescovo di Roskilde indagò e il miracolo fu registrato negli archivi diocesani."
+      },
+      "135": {
+        "title": "Un'antica ostia di Cipro",
+        "description": "Nel periodo paleocristiano di Cipro, un miracolo eucaristico è registrato nelle agiografie dei vescovi dell'isola. Un'ostia fu miracolosamente preservata durante un periodo di persecuzione iconoclasta e fu mostrata ai fedeli come prova della Presenza reale di Cristo."
+      },
+      "136": {
+        "title": "La città antica e l'Eucaristia",
+        "description": "A Mdina, l'antica capitale fortificata di Malta, la tradizione conserva il racconto di un'ostia consacrata sopravvissuta a un'incursione araba nella cattedrale. L'ostia fu ritrovata intatta tra le rovine, come riportano le cronache dei conquistatori normanni che fortificarono poi la città."
+      },
+      "137": {
+        "title": "L'Eucaristia ferma una piena catastrofica",
+        "description": "Il giorno dopo la festa del Corpus Domini del 1630, violente piogge torrenziali fecero straripare in modo catastrofico il fiume Maira, minacciando di distruggere il villaggio di Canosio, nella diocesi di Saluzzo. Il parroco, padre Antonio Reinardi, avanzò verso le acque in piena con il Santissimo Sacramento in un ostensorio, recitando il Salmo 51; benedicendo le acque, la pioggia cessò all'istante e il fiume tornò al suo livello normale. Gli abitanti celebrano ancora oggi una festa durante l'ottava del Corpus Domini in memoria dell'evento."
+      },
+      "138": {
+        "title": "Un frate cappuccino ferma l'incendio del paese",
+        "description": "Il 3 agosto 1631, un incendio a Dronero, nella diocesi di Saluzzo, si diffuse rapidamente in paese nonostante ogni sforzo umano per spegnerlo. Un frate cappuccino di nome Maurizio da Ceva prese l'ostensorio con la grande ostia dalla chiesa di Santa Brigida e avanzò verso il fuoco; in quel momento le fiamme si placarono all'istante. Il miracolo è inciso su una lapide nella chiesa di Santa Brigida, e i cittadini di Dronero lo commemorano ogni anno con una solenne processione del Corpus Domini."
+      },
+      "139": {
+        "title": "Ostie rubate conservate per decenni",
+        "description": "Il 25 luglio 1969, dei ladri penetrarono nella chiesa parrocchiale di San Mauro La Bruca e rubarono un ciborio contenente ostie consacrate, che poi abbandonarono lungo una strada. Un bambino ritrovò le ostie e le restituì al parroco. Nei venticinque anni successivi, ripetute analisi scientifiche accertarono che le ostie erano rimaste intatte molto oltre i pochi mesi in cui un'ostia comune si sarebbe disgregata. Nel 1994, il vescovo Biagio D'Agostino riconobbe ufficialmente la conservazione miracolosa e autorizzò la venerazione pubblica."
+      },
+      "140": {
+        "title": "Sangue che sgorga da un panno d'altare al lavatoio",
+        "description": "Nel 1294, una domestica di Gruaro, nella diocesi di Concordia, andò al lavatoio pubblico per lavare dei panni d'altare e vide sgorgare sangue da una particola consacrata rimasta impigliata nelle pieghe del tessuto; avvertì il parroco, che informò il vescovo Giacomo di Ottonello. Una disputa tra la diocesi di Concordia e i nobili conti di Valvasone per la custodia della reliquia fu infine risolta dalla Santa Sede, che assegnò il panno ai conti a condizione che costruissero una chiesa dedicata al Santissimo Corpo di Cristo, completata nel 1483. Il più antico documento autorevole che attesta il miracolo è un decreto di papa Niccolò V datato 1454."
+      },
+      "141": {
+        "title": "Un'ostia sopravvive alla distruzione totale di una chiesa",
+        "description": "Il 17 aprile 1560, durante l'ottava di Pasqua, un violento incendio distrusse completamente la chiesa francescana di Morrovalle, nella diocesi di Camerino. Dieci giorni dopo, il frate Battista da Ascoli frugò tra le rovine e scoprì un pisside carbonizzato incastrato nella cavità del muro dell'antico altare; il corporale che lo avvolgeva era gravemente bruciato, ma la grande ostia all'interno era perfettamente intatta e incorrotta. Papa Pio IV inviò un vescovo a indagare e in seguito autorizzò la devozione pubblica con la bolla «Sancta Romana Ecclesia» nel 1560."
+      },
+      "142": {
+        "title": "Un'ostia si trasforma in carne durante la messa di Gregorio",
+        "description": "Intorno all'anno 595, durante una messa celebrata da papa san Gregorio Magno, una nobildonna che aveva preparato lei stessa il pane eucaristico scoppiò a ridere quando Gregorio le offrì la comunione, dichiarando di non credere che il pane da lei fatto potesse diventare il Corpo di Cristo. Gregorio le ritirò la comunione e pregò ad alta voce chiedendo la luce divina; una parte del pane consacrato si trasformò visibilmente in carne sanguinante davanti all'assemblea. Il miracolo è narrato in dettaglio da Paolo Diacono nella sua Vita del beato Gregorio Papa nell'VIII secolo; una parte della reliquia miracolosa è conservata nell'abbazia di Andechs, in Germania."
+      },
+      "143": {
+        "title": "La statua del Sacro Cuore sanguina più volte",
+        "description": "A partire dal 4 aprile 1948, durante il canto dei Vespri nella chiesa del monastero di Rosano, nella diocesi di Fiesole, dei testimoni videro cadere gocce di sangue dagli occhi di una statua a grandezza naturale del Sacro Cuore, donata per adempiere a un voto fatto durante la Seconda guerra mondiale. I fenomeni si ripeterono più volte tra il 1948 e il 1950; le analisi mediche confermarono che la sostanza era sangue umano, e le testimonianze giurate e i panni insanguinati sono conservati negli archivi del monastero. Il 14 novembre 1950, per ordine del Sant'Uffizio, la statua fu rimossa dalla vista del pubblico in attesa di ulteriori valutazioni."
+      },
+      "144": {
+        "title": "Un'ostia rubata si trasforma in carne sanguinante",
+        "description": "Intorno al 1050, presso l'eremo di Fonte Avellana, sugli Appennini, una donna fu persuasa da una strega a rubare un'ostia consacrata per usi sacrileghi. Il sacerdote se ne accorse, la fermò e le chiese di aprire il panno che celava l'ostia; davanti al sacerdote e ai testimoni radunati, metà della Particola sacra si era trasformata in carne sanguinante, mentre l'altra metà conservava l'aspetto di un'ostia. San Pier Damiani, dottore della Chiesa, registrò il miracolo come testimone diretto nella sua opera Opuscolo XXXIV."
+      },
+      "145": {
+        "title": "Gli asini si inginocchiano davanti al Viatico",
+        "description": "Nell'agosto 1517, un sacerdote di nome padre Lorenzo, cappellano della chiesa di Salzano, portava il Viatico a un parrocchiano morente quando alcuni asini al pascolo nei prati vicini si voltarono verso la processione, si avvicinarono e si inginocchiarono sulle zampe anteriori davanti al Santissimo Sacramento. Gli animali seguirono la processione fino alla casa dell'infermo, si inginocchiarono di nuovo e poi tornarono tranquillamente al pascolo. L'episodio è narrato nella Historia Societatis Iesu di Nicolò Orlandino, stampata a Bologna nel 1615."
+      },
+      "146": {
+        "title": "Le fiamme allontanano un soldato dal tabernacolo",
+        "description": "Nel 1640, durante l'invasione francese di Torino, dei soldati entrarono nella chiesa di Santa Maria del Monte; un soldato francese forzò la porta del tabernacolo e allungò la mano verso il ciborio con le ostie consacrate: dal tabernacolo uscirono fiamme che lo bruciarono e impedirono la profanazione dell'Eucaristia. La porta del tabernacolo avrebbe conservato l'impronta della mano bruciata del soldato come prova materiale dell'evento. Il miracolo è documentato negli archivi della chiesa ed è incluso nella mostra dei miracoli eucaristici di Carlo Acutis."
+      },
+      "147": {
+        "title": "Il Bambino Gesù appare nell'ostia esposta",
+        "description": "Durante la Pasqua del 1570, il Santissimo Sacramento fu esposto per quaranta ore di adorazione nella chiesa di Sant'Erasmo a Veroli; più testimoni videro apparire nell'ostia la figura del Bambino Gesù, insieme a una stella luminosa alla base del calice. Il testimone oculare Giacomo Meloni rese una testimonianza giurata di ciò che aveva visto. Il calice e la patena d'argento originali usati durante l'esposizione sono ancora conservati nella chiesa di Sant'Erasmo e utilizzati una volta all'anno, nella messa del martedì di Pasqua."
+      },
+      "148": {
+        "title": "Le ostie si sollevano dopo la profanazione di un soldato",
+        "description": "Nel 1472, durante la guerra tra Firenze e Volterra, un soldato fiorentino si impossessò di un ciborio con ostie consacrate dalla cattedrale di Volterra e lo scagliò contro una colonna di pietra; un terremoto scosse la città e le ostie volarono via e si innalzarono visibilmente nell'aria, sospese e circondate da una luce misteriosa davanti all'assemblea. Il soldato fu improvvisamente colpito da cecità, cadde in ginocchio implorando perdono e recuperò la vista quando si sottomise al sacerdote. I documenti che descrivono il miracolo sono conservati negli archivi della chiesa di San Francesco a Volterra."
+      },
+      "149": {
+        "title": "Un'ostia consacrata sanguina durante la messa",
+        "description": "Il 5 giugno 1405, il parroco di Ittre, mentre celebrava la messa nella cappella di Isacco, scoprì nel corporale un frammento di ostia consacrata che cominciò a sanguinare non appena lo prese in mano; il sangue continuò a scorrere per quattro giorni, macchiando l'intero corporale. Il vescovo di Cambrai indagò sull'evento e nel 1410 lo dichiarò autentico, autorizzando la cappella a diventare meta di pellegrinaggio. Il corporale macchiato di sangue è tuttora esposto a Bois-Seigneur-Isaac."
+      },
+      "150": {
+        "title": "Ostie sanguinanti venerate come Sacramento del Miracolo",
+        "description": "Secondo antichi documenti storici, delle ostie consacrate che sarebbero state profanate il Venerdì Santo del 1370 cominciarono a sanguinare e furono poi portate nella chiesa collegiata dei santi Michele e Gudula a Bruxelles, dove furono custodite e venerate come «Sacramento del Miracolo». L'evento fu commemorato per secoli da vetrate installate tra il 1436 e il 1870 e da una processione annuale. Carlo Acutis lo incluse nella sua documentazione storica dei fenomeni eucaristici nel corso dei secoli."
+      },
+      "151": {
+        "title": "Ostie rubate ritrovate intatte in un campo",
+        "description": "Nel 1412, un ladro di chiese rubò un calice e un ciborio con cinque ostie consacrate nel villaggio di Poederlee; sentendosi misteriosamente incapace di proseguire, nascose le ostie in una tana di coniglio e fu arrestato in seguito. Quando rivelò il nascondiglio, le autorità trovarono le cinque ostie perfettamente intatte dopo giorni di pioggia, disposte a forma di croce e circondate da una luce intensa. Il magistrato di Herentals dichiarò autentico il miracolo il 2 gennaio 1442, e sul luogo fu costruita una cappella chiamata «De Hegge»."
+      },
+      "152": {
+        "title": "Un'ostia macchiata di sangue accanto a un moribondo",
+        "description": "Il 25 luglio 1317, un sacerdote di Viversel lasciò la sua borsa con un'ostia consacrata all'ingresso della casa di un malato mentre ascoltava una confessione; un familiare aprì il pisside e toccò l'ostia. Quando il sacerdote la riprese, era macchiata di sangue; l'1 agosto mostrava anche un'immagine del volto di Cristo coronato di spine, testimoniata dalle monache dell'abbazia di Herkenrode. La reliquia fu custodita nell'abbazia di Herkenrode fino alla Rivoluzione francese, poi nel 1804 fu trasferita nella chiesa di San Quintino a Hasselt, dove si trova ancora oggi."
+      },
+      "153": {
+        "title": "Un'ostia si trasforma in carne per un comunicante indegno",
+        "description": "Nel 1374, durante la Quaresima in una chiesa di Middelburg, un servitore di nome Jan, che non si confessava da anni, ricevette la comunione in modo indegno; l'ostia sulla sua lingua si trasformò in carne sanguinante e il sangue gocciolò sulla tovaglia dell'altare. Il sacerdote custodì la particola miracolosa, Jan si pentì pubblicamente e le autorità ecclesiastiche e civili indagarono e approvarono la venerazione della reliquia. Secondo la tradizione, nel 1380 l'ostia si divise miracolosamente: una parte rimase a Colonia e l'altra fu portata a Lovanio, dove nel 1426 fu fondata una confraternita per la sua venerazione."
+      },
+      "154": {
+        "title": "Un'ostia si trasforma in sangue su un panno",
+        "description": "La domenica di Pasqua, 31 marzo 1331, durante la prima messa celebrata da Hugues de la Baume, vicario di Blanot, un'ostia consacrata cadde dalla bocca di una vedova di nome Jacquette su un panno della comunione e si trasformò in una macchia di sangue esattamente della grandezza dell'ostia. La diocesi di Autun condusse un'indagine e papa Giovanni XXII riconobbe l'evento come miracolo eucaristico. Il panno macchiato è conservato nella chiesa del villaggio di Blanot, dove viene solennemente esposto ogni Corpus Domini."
+      },
+      "155": {
+        "title": "L'ostensorio sospeso in aria dopo un incendio",
+        "description": "Alla vigilia di Pentecoste, il 25 maggio 1608, durante la notte scoppiò un incendio nell'abbazia di Faverney, che ridusse in cenere l'altare provvisorio; l'ostensorio con due ostie consacrate rimase sospeso in aria sopra le rovine, intatto, senza essere toccato dalle fiamme. L'ostensorio rimase sospeso per circa trentatré ore prima di scendere dolcemente su un nuovo altare durante la messa. L'arcivescovo di Besançon dichiarò autentico il miracolo il 10 luglio 1608, papa Paolo V emanò una bolla di indulgenza, e una delle due ostie intatte è ancora venerata a Faverney."
+      },
+      "156": {
+        "title": "Un ragazzo paralizzato e muto guarito alla comunione",
+        "description": "La domenica di Pasqua del 1461, un ragazzo di dodici anni di nome Bertrand, paralizzato e muto dall'età di sette anni in seguito a una caduta, fu portato nella chiesa di San Bartolomeo a La Rochelle e ricevette la comunione. Nel momento in cui ricevette l'ostia, fu guarito all'istante; le sue prime parole furono «Adjutorium nostrum in nomine Domini» («Il nostro aiuto è nel nome del Signore»). Un manoscritto miniato che documenta l'evento è conservato nella cattedrale di La Rochelle."
+      },
+      "157": {
+        "title": "Una reliquia del Preziosissimo Sangue portata dalla Terra Santa",
+        "description": "Il 15 luglio 1257, il cardinale Eudes de Châteauroux tornò dalle crociate e donò alla chiesa di Neuvy-Saint-Sépulcre due gocce del Sangue di Cristo raccolte al Calvario e sigillate in una fiala di cristallo, insieme a un frammento della tomba. La chiesa era stata costruita nell'XI secolo come replica architettonica della chiesa del Santo Sepolcro di Gerusalemme, e papa Gregorio XV concesse indulgenze nel 1623 ai pellegrini che avessero venerato la reliquia. La Santa Sede elevò la chiesa a basilica minore nel 1910, e il Preziosissimo Sangue è ancora esposto per la venerazione il lunedì di Pasqua e il 1° luglio."
+      },
+      "158": {
+        "title": "Il volto di Cristo visto in un'ostia consacrata",
+        "description": "Il 2 giugno 1668, circa duecento fedeli si riunirono nella chiesa di Les Ulmes per la benedizione del Santissimo Sacramento guidata dal parroco Nicolas Nézan; mentre si cantava l'inno Pange Lingua, un'immagine visibile del volto di Cristo apparve nell'ostia esposta e rimase visibile per circa quindici minuti. Padre Nézan riferì l'evento al vescovo di Angers, Henri Arnauld, il 13 giugno, che dichiarò il miracolo autentico entro il mese. L'evento è uno dei numerosi fenomeni eucaristici documentati nella diocesi di Angers nel XVII secolo."
+      },
+      "159": {
+        "title": "Ostie rubate ritrovate intatte dopo una nevicata",
+        "description": "Nel dicembre 1532, dei ladri entrarono nella chiesa parrocchiale di Marseille-en-Beauvais, in Piccardia, rubarono un ciborio d'argento con ostie consacrate e lo abbandonarono sotto una pietra nella via principale. Il 1° gennaio 1533, un passante di nome Jean Moucque notò che la pietra era completamente libera dalla neve nonostante una forte nevicata; sollevandola, trovò le ostie completamente intatte. Furono poi segnalate diverse guarigioni miracolose sul luogo, fu costruita la Cappella delle Sacre Ostie e ogni 2 gennaio si celebra ancora una messa solenne in memoria."
+      },
+      "160": {
+        "title": "Un'ostia resta intatta mentre il calice si fonde nell'incendio",
+        "description": "Il Giovedì Santo del 1643, un incendio scoppiò nella chiesa parrocchiale di Pressac, distruggendo un calice contenente un'ostia consacrata vicino all'altare della Vergine. Il calice fu quasi completamente consumato e fuso in gocce di stagno, ma si formò una bolla di stagno sotto la quale l'ostia fu ritrovata completamente intatta, con solo una lieve tinta rossastra sui bordi. L'abate di Availles-Limouzine registrò tutte le testimonianze e le inviò al vescovo di Poitiers, che emise un atto solenne che autorizzava la venerazione; le vetrate raffiguranti il miracolo si conservano nella chiesa di Pressac."
+      },
+      "161": {
+        "title": "L'ostia rubata da un mugnaio sanguina abbondantemente",
+        "description": "Nel 1216, un mugnaio di Benningen rubò un'ostia consacrata dopo aver ricevuto la comunione e la nascose tra le pietre del mulino del suo vicino, con l'intenzione di calunniarlo. Il giorno della festa di san Gregorio, l'ostia cominciò a sanguinare così abbondantemente da allarmare tutto il paese e il vescovo locale; il mugnaio colpevole si pentì e confessò il suo sacrilegio. Nel 1221, gli abitanti costruirono una cappella in onore del miracolo, nota come Riedkapelle zum Hochwürdigen Gut, che resta ancora oggi meta di pellegrinaggi."
+      },
+      "162": {
+        "title": "Un'ostia immobile in un campo",
+        "description": "Intorno al 1125, un contadino devoto dei dintorni di Viehbrunn nascose segretamente un'ostia consacrata all'interno di un bastone; d'impulso, scagliò il bastone contro del bestiame sbandato e l'ostia cadde a terra. Ogni tentativo di recuperarla fu vano, finché il vescovo Hartwich di Ratisbona non si recò sul posto e riuscì a sollevarla solo dopo aver promesso di costruirvi una cappella. La cappella fu completata nel 1125 e diede origine al villaggio di Bettbrunn, divenuto meta di pellegrinaggi nella diocesi di Ratisbona."
+      },
+      "163": {
+        "title": "Un'ostia trasformata in crocifisso",
+        "description": "Nel 1280, un pastore di Kranenburg, vicino a Kleve, ricevette la comunione ma non riuscì a inghiottire l'ostia e la scagliò contro un albero; tormentato dal rimorso, si confessò al parroco, ma una ricerca accurata non trovò nulla. Quando l'albero fu abbattuto più tardi, da dentro di esso cadde un crocifisso perfettamente scolpito. Sul luogo fu eretta una chiesa; la costruzione dell'attuale chiesa gotica iniziò nel 1408 e fu completata nel 1444, e il crocifisso miracoloso vi è ancora venerato con una processione annuale il 14 settembre."
+      },
+      "164": {
+        "title": "Tre ostie sanguinanti sopravvivono a un incendio di chiesa",
+        "description": "Nell'agosto 1383, durante una violenta lite, il villaggio di Wilsnack e la sua chiesa parrocchiale furono ridotti in cenere. Quando il parroco frugò tra le rovine, scoprì tre ostie intatte nel sacrario dell'altare, ciascuna con macchie di sangue visibili. Il vescovo Dietrich von Havelberg verificò il miracolo nel 1384, e papa Eugenio IV confermò la venerazione con due bolle papali nel 1447; Wilsnack divenne uno dei più importanti santuari di pellegrinaggio dell'Europa tardomedievale, fino a quando i riformatori protestanti distrussero le ostie nel 1552."
+      },
+      "165": {
+        "title": "Il vino consacrato diventa sangue vivo",
+        "description": "Il 1° maggio 1429, un sacerdote che celebrava la sua prima messa nella cattedrale di San Lorenzo ad Alkmaar rovesciò accidentalmente il calice dopo la consacrazione; tre gocce del vino consacrato si trasformarono miracolosamente in sangue e lasciarono macchie permanenti che non poterono essere rimosse in alcun modo. Il sacerdote seppellì il panno, che fu ritrovato in seguito grazie a una visione concessa al capitano di una nave durante una tempesta. Il vescovo di Utrecht dichiarò ufficialmente il fatto miracoloso nel 1433, e la reliquia macchiata di sangue è ancora conservata nella cattedrale di San Lorenzo."
+      },
+      "166": {
+        "title": "Ostie scartate ritrovate imbevute di sangue",
+        "description": "La domenica prima di Pentecoste del 1421, un parroco della chiesa dei santi Pietro e Paolo a Bergen op Zoom, apparentemente dubbioso sulla transustanziazione, gettò nel canale le ostie consacrate avanzate dopo la messa. Diversi mesi dopo, dei pescatori recuperarono le ostie che galleggiavano sull'acqua, visibilmente imbevute di sangue coagulato. Il vescovo locale approvò la venerazione del miracolo, e la devozione fu ufficialmente ripristinata nel XX secolo, con celebrazioni commemorative annuali che proseguono ancora oggi."
+      },
+      "167": {
+        "title": "Un sacerdote dubbioso vede il sangue sgorgare dal calice",
+        "description": "Nel 1400, padre Arnoldo Groen celebrava la messa nella chiesa dei santi Pietro e Paolo a Boxmeer quando fu assalito dal dubbio sulla Presenza reale; subito il vino consacrato cominciò a ribollire e a traboccare dal calice sul corporale, e il sacerdote implorò il perdono di Dio, dopo di che il sanguinamento cessò. Il sangue caduto sul corporale si coagulò in un grumo delle dimensioni di una noce, che rimane visibile e immutato a Boxmeer ancora oggi. Nel 2000, papa Giovanni Paolo II elevò la chiesa di San Pietro di Boxmeer al rango di basilica."
+      },
+      "168": {
+        "title": "Un calice rovesciato macchia di sangue il corporale",
+        "description": "Intorno al 1380, padre Eligio van der Aker celebrava la messa a Boxtel quando rovesciò accidentalmente il calice contenente il vino bianco consacrato; il vino si trasformò immediatamente in sangue, macchiando sia il corporale sia la tovaglia dell'altare. Un decreto emesso nel 1380 dal cardinale Pileus è tra i documenti più autorevoli che attestano il miracolo. Il corporale macchiato di sangue rimase a Boxtel, mentre la tovaglia dell'altare fu affidata alla città di Hoogstraten; entrambe le reliquie continuano a essere venerate nelle rispettive città."
+      },
+      "169": {
+        "title": "Un'ostia rubata ritrovata intatta sotto la terra",
+        "description": "Il 24 giugno 1300, un soldato che saccheggiava la zona rubò un'ostia consacrata; fu poi ritrovata da un contadino locale, Jan Bautoen, perfettamente intatta e nascosta sotto una zolla di terra. Il vescovo di Liegi condusse un'indagine ufficiale, che lasciò uno dei documenti ecclesiastici più autorevoli legati all'evento. Sul luogo fu costruita una cappella in memoria e la storia è ricordata da dipinti conservati nella chiesa locale."
+      },
+      "170": {
+        "title": "Sangue che stilla da un'ostia; la reliquia sopravvive all'incendio",
+        "description": "Nel 1222, durante la messa domenicale nella chiesa benedettina di Meerssen, dalla grande ostia consacrata cominciò a stillare sangue sul corporale, e fu riconosciuto dalle autorità ecclesiastiche. Nel 1465, quando degli assalitori appiccarono il fuoco alla chiesa, un contadino della zona riuscì a salvare la reliquia macchiata di sangue, che uscì dalle fiamme completamente illesa. Nel 1938, papa Pio XI elevò la chiesa a basilica del Santissimo Sacramento; le reliquie dell'ostia e il corporale macchiato di sangue restano nella basilica e vengono portati in processione ogni anno durante l'ottava del Corpus Domini."
+      },
+      "171": {
+        "title": "Un'ostia preservata durante l'invasione lituana",
+        "description": "Durante un'invasione lituana nel 1290, un sacerdote del luogo seppellì un ciborio contenente un'ostia consacrata in un campo per proteggerla; il villaggio e la chiesa furono rasi al suolo. Anni dopo, un contadino che arava il campo trovò il ciborio quando i suoi buoi si fermarono inspiegabilmente e si inchinarono a terra; l'ostia emanava una luce intensa. Quando fu portata in una chiesa vicina, ricomparve miracolosamente sul luogo originario, e lì fu costruita una chiesa dedicata al Corpus Domini; il santuario fu consacrato dal vescovo Krzysztof Potocki nel 1726 e continua ad attirare pellegrini."
+      },
+      "172": {
+        "title": "Tre pesci riportano le ostie al sacerdote",
+        "description": "Nel 1348, durante la peste nera, un sacerdote perse uno scrigno con ostie consacrate quando la sua mula scivolò attraversando un burrone vicino a Valencia, e le ostie caddero nella corrente. Tre pesci emersero con la testa fuori dall'acqua, ciascuno con un'ostia nella bocca; immobili, nuotarono fino al calice che il sacerdote teneva sopra l'acqua e vi deposero ogni ostia prima di allontanarsi a nuoto. Il vescovo locale riconobbe ufficialmente il miracolo; i documenti storici sono conservati negli archivi diocesani di Valencia, e il luogo è segnato dall'eremo dels Peixets, costruito nel 1907."
+      },
+      "173": {
+        "title": "La statua del Bambino Gesù indica le ostie nascoste",
+        "description": "Il 29 gennaio 1568, un tosatore di panni di nome Joan Prats entrò nella sua chiesa parrocchiale di Alcoy e rubò un ciborio d'argento contenente quaranta ostie consacrate e un reliquiario, nascondendoli sotto delle pietre ai piedi della sua scala. Quando il furto fu scoperto, una statuetta del Bambino Gesù in una casa vicina si chinò e indicò il nascondiglio, conducendo le autorità agli oggetti rubati. La casa del ladro fu trasformata in oratorio, e ogni anno, il 31 gennaio, gli abitanti di Alcoy celebrano la processione del Bambino Gesù miracoloso in ricordo dell'evento."
+      },
+      "174": {
+        "title": "Angeli portano la croce durante una messa di prigionieri",
+        "description": "Nel 1231, il sacerdote cristiano prigioniero Ginés Pérez Chirinos fu chiesto dal sovrano musulmano Zeyt-Abuzeyt di celebrare la messa, affinché potesse assistere al rito cristiano; scoprendo che sull'altare non c'era alcun crocifisso, due angeli scesero dal cielo portando una croce, la posarono davanti all'altare e scomparvero. Durante la consacrazione, il sovrano avrebbe avuto una visione di un bambino radioso nell'ostia e, insieme alla sua famiglia, si convertì al cristianesimo. La reliquia della Vera Croce è tuttora custodita nella basilica di Caravaca de la Cruz, riconosciuta da papa Giovanni Paolo II come una delle sei Città sante."
+      },
+      "175": {
+        "title": "L'ostia diventa carne, il sangue impregna il lino",
+        "description": "Nel 1370, il parroco di Cimballa, in Aragona, don Tommaso, dubitava da tempo della Presenza reale; al momento della consacrazione durante una messa domenicale, l'ostia si trasformò in carne e cominciò a scorrere sangue, che imbevve il lino dell'altare. Sopraffatto dal rimorso, don Tommaso si ritirò poi in un monastero per trascorrere il resto della vita in penitenza. Il corporale macchiato di sangue, custodito in un reliquiario lavorato nel 1594, viene esposto ogni 12 settembre; l'evento è noto in loco come «Santissimo Mistero dubbio»."
+      },
+      "176": {
+        "title": "Nella bocca di un sacerdote, l'ostia diventa carne",
+        "description": "Nel 1297, a Girona, in Catalogna, un sacerdote che celebrava la messa fu colto dal dubbio sulla Presenza reale; al momento della comunione, non riuscì a inghiottire l'ostia, che si era trasformata in carne nella sua bocca. Il sacerdote confessò il suo dubbio e il pezzo di carne fu ufficialmente conservato e venerato come reliquia. Restò custodito fino alla sua distruzione nel 1936, durante la guerra civile spagnola."
+      },
+      "177": {
+        "title": "Un'ostia profanata sanguina e viene conservata per secoli",
+        "description": "Nel 1572, a Gorcum (Olanda), seguaci di Zwingli rimossero delle ostie consacrate dal tabernacolo di una cattedrale; uno degli eretici calpestò un'ostia con stivali chiodati, trafiggendola in tre punti; da ogni ferita cominciò subito a scorrere sangue e, testimone del miracolo, il profanatore si convertì sul posto. Nascosta dai francescani e spostata attraverso Anversa e Vienna, l'ostia giunse alla corte del re Filippo II di Spagna intorno al 1592. L'ostia incorrotta e sanguinante è venerata ancora oggi nella sacrestia del Monastero reale di San Lorenzo de El Escorial, vicino a Madrid, dove viene esposta al pubblico due volte l'anno."
+      },
+      "178": {
+        "title": "Il vino diventa sangue che scorre sull'altare",
+        "description": "Nel 1010, il parroco di Ivorra, in Catalogna, don Bernat Oliver, dubitava della transustanziazione; durante la messa, il vino nel calice si trasformò interamente in sangue che traboccò sulla tovaglia dell'altare e si riversò sul pavimento. Sant'Ermengol, vescovo di Urgell, si recò a Ivorra per indagare, poi portò il calice e il panno macchiato di sangue a Roma, dove papa Sergio IV emanò una bolla pontificia che certificava il miracolo. Le reliquie sacre sono conservate in un reliquiario gotico del 1426 nella chiesa parrocchiale di Sant Cugat a Ivorra; il miracolo è commemorato ogni anno come «la Santa Dubbio»."
+      },
+      "179": {
+        "title": "Una bambina riconosce la vera ostia",
+        "description": "Il giorno di Natale del 1392, una bambina di cinque anni di nome Inés, che assisteva alla messa a Moncada, vide apparire il Bambino Gesù nell'ostia consacrata; il sacerdote che celebrava la messa aveva dubitato in privato della validità della sua ordinazione durante lo Scisma d'Occidente. Il giorno seguente il sacerdote le presentò un'ostia consacrata e una non consacrata, ed ella riconobbe correttamente quella sacra, dissipando i suoi dubbi. Il miracolo è documentato negli Annali ecclesiastici di padre Odorico Raynaldi e negli archivi comunali di Moncada."
+      },
+      "180": {
+        "title": "Un padre liberato dal purgatorio durante la messa",
+        "description": "Nel monastero benedettino di Nostra Signora di Montserrat, una ragazza afflitta chiese all'abate di celebrare tre messe per l'anima del padre defunto. Durante la prima messa vide il padre circondato da fiamme, visibili solo a lei; quando un fazzoletto fu posto nel punto da lei indicato, prese fuoco all'istante sotto gli occhi del clero. Alla terza messa, il padre apparve vestito di bianco e ascese al cielo nel momento della celebrazione eucaristica, confermando l'efficacia della messa offerta per i defunti."
+      },
+      "181": {
+        "title": "L'ostia e il vino diventano carne e sangue",
+        "description": "Intorno al 1300, un monaco sacerdote benedettino della chiesa di Santa Maria la Real, in cima a O Cebreiro, una delle chiese più antiche del Cammino di Santiago, aveva perso il fervore della fede e dubitava della Presenza reale; durante le parole della consacrazione, l'ostia si trasformò visibilmente in carne e il vino in sangue, che traboccò dal calice e macchiò il corporale. Nel 1486, la regina Isabella di Castiglia commissionò un prezioso reliquiario per custodire la carne miracolosa, il calice e i corporali macchiati di sangue durante il proprio pellegrinaggio; queste reliquie sono ancora venerate nella chiesa."
+      },
+      "182": {
+        "title": "Ostie rubate ritrovate perfettamente conservate",
+        "description": "Il 5 novembre 1824, un ex chierichetto di nome Nicolás Bernabeu rubò un ostensorio e dei vasi sacri dalla chiesa di Onil; un pisside con ostie consacrate fu nascosto in un campo vicino a Tibi, dove fu scoperto il 28 novembre 1824 da una donna di nome Teresa Carbonell. Le ostie consacrate furono ritrovate completamente intatte nonostante settimane di esposizione. Il 28 novembre 1943, esattamente 119 anni dopo, il delegato dell'arcivescovo di Valencia confermò ufficialmente l'incorruttibilità miracolosa; le ostie sono venerate nella chiesa di San Giacomo Apostolo a Onil."
+      },
+      "183": {
+        "title": "Ostie rubate brillano in un cespuglio di more",
+        "description": "Nel 1533, un parrocchiano rubò un ciborio d'argento contenente ostie consacrate dalla sua chiesa di Ponferrada e lo gettò in un roveto dopo che, inspiegabilmente, era diventato pesantissimo mentre tentava di gettarlo nel fiume; testimoni riferirono in seguito strane luci di notte e colombe bianche che volavano di giorno. Un mugnaio di nome Nogaledo scoprì il tabernacolo mentre cercava le colombe e trovò le ostie intatte, che emanavano luce. Sul luogo fu eretta una cappella e nel 1570 fu istituita una solenne processione annuale nell'ottava del Corpus Domini."
+      },
+      "184": {
+        "title": "Un'ostia incorrotta per 175 anni dentro un crocifisso",
+        "description": "Nel 1251, un'ostia consacrata fu collocata in una piccola cavità nella fronte del gruppo scultoreo romanico noto come il «Santo Mistero», nel monastero di Sant Joan de les Abadesses, in Catalogna, e la cavità fu sigillata con una lamina d'argento. Nel 1426, durante lavori di restauro, gli operai scoprirono la cavità sigillata e trovarono al suo interno, avvolta in lino bianco, l'ostia di 175 anni completamente incorrotta. L'ostia conservata, nota come «Il Santissimo Mistero di Sant Joan de les Abadesses», continua a essere venerata dai pellegrini nella chiesa del monastero."
+      },
+      "185": {
+        "title": "Il Santo Calice dell'Ultima Cena",
+        "description": "La cattedrale di Valencia conserva ciò che la tradizione identifica come il Santo Calice usato da Gesù Cristo nell'Ultima Cena: una coppa d'agata scolpita intorno al I-II secolo a.C., che si dice fu portata da Gerusalemme a Roma da san Pietro e affidata al diacono san Lorenzo nel 258 d.C. Il re Alfonso V d'Aragona la donò alla cattedrale di Valencia nel 1437, dove è venerata da allora. Fino al XVIII secolo, il calice fu usato per contenere l'ostia consacrata nelle cerimonie del Giovedì Santo; oggi è custodito in permanenza nella cappella del Santo Calice della cattedrale."
+      },
+      "186": {
+        "title": "Un'ostia rubata appare come un bambino vivo",
+        "description": "Nel 1427, a Saragozza, una donna portò un'ostia consacrata rubata a uno stregone moro; quando questi aprì la scatola, non trovò un'ostia ma un bambino vivo circondato da una luce radiosa, e ogni tentativo di bruciarlo fallì. L'arcivescovo di Saragozza organizzò una processione solenne, e quando il Bambino miracoloso fu posto sull'altare durante l'offertorio della messa, il Bambino scomparve e l'ostia consacrata riapparve al suo posto. L'evento è registrato negli archivi del comune di Saragozza, e un dipinto che lo commemora è appeso nella cattedrale."
+      },
+      "187": {
+        "title": "Il Sacro Cuore appare durante un'eruzione vulcanica",
+        "description": "L'8 maggio 1902 (giorno dell'Ascensione), mentre il monte Pelée eruttava e distruggeva la vicina città di Saint-Pierre, gli abitanti di Morne-Rouge si radunarono nella loro chiesa parrocchiale per la messa e l'adorazione eucaristica. Durante l'esposizione del Santissimo Sacramento, numerosi testimoni dichiararono di aver visto apparire nell'ostia un'immagine di Gesù che mostrava il suo Sacro Cuore coronato di spine. Quel giorno il villaggio fu risparmiato; l'evento fu raccontato pubblicamente al Congresso eucaristico di Angoulême nel 1904."
+      },
+      "188": {
+        "title": "Il volto di Cristo visto nell'ostia",
+        "description": "Il 26 gennaio 1902, durante la devozione delle Quarant'ore nella chiesa parrocchiale di Saint-André, sull'isola di La Riunione, l'abate Henri Lacombe osservò un alone luminoso attorno all'ostensorio, seguito dall'apparizione nell'ostia del volto di Cristo coronato di spine. La visione si protrasse per diverse ore: il volto si animò fino a trasformarsi nell'immagine di un crocifisso che copriva l'intera ostia; migliaia di testimoni, della località e della capitale Saint-Denis, confermarono il fenomeno. L'abate Lacombe ne fece un resoconto pubblico al Congresso eucaristico di Angoulême nel 1904."
+      }
+    }
+  }
+}

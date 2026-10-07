@@ -11,6 +11,7 @@ const LOCALES = [
   { code: "it", label: "Italiano",  native: "Italiano"   },
   { code: "fr", label: "Français",  native: "Français"   },
   { code: "pt", label: "Português", native: "Português"  },
+  { code: "de", label: "Deutsch",   native: "Deutsch"    },
 ];
 
 // Deterministic particle positions to avoid hydration mismatch

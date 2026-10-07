@@ -4,9 +4,11 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { CustomEase } from "gsap/CustomEase";
+import { useTranslations } from "next-intl";
 import { miracles } from "@/components/miracles-data";
 
 export default function MiraclesIntroHero() {
+  const t = useTranslations("miracles");
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -148,7 +150,7 @@ export default function MiraclesIntroHero() {
             className="mih-title font-serif text-[#D8C9A8]"
             style={{ fontSize: "clamp(2.5rem, 7vw, 8rem)", lineHeight: 1 }}
           >
-            {miracles.length} Miracles
+            {t("heroTitle", { count: miracles.length })}
           </h1>
 
           {/* Progress bar — sits flush below title */}
@@ -170,9 +172,9 @@ export default function MiraclesIntroHero() {
 
           {/* Footer words */}
           <div className="mih-footer flex justify-between items-start pt-4">
-            {["Documented", "Verified", "Preserved"].map((word) => (
+            {(["documented", "verified", "preserved"] as const).map((word) => (
               <p key={word} className="text-[#D8C9A8]/60 text-sm font-medium tracking-wide">
-                {word}
+                {t(`heroWords.${word}`)}
               </p>
             ))}
           </div>

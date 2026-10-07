@@ -2,6 +2,7 @@
 
 import { useState, useEffect, ComponentType } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
 
 type IconComponent = ComponentType<{ className?: string }>;
@@ -51,6 +52,7 @@ export const MinimalistHero = ({
   footerText,
   onReadMoreClick,
 }: MinimalistHeroProps) => {
+  const t = useTranslations('common');
   const words = Array.isArray(overlayText.part2) ? overlayText.part2 : [overlayText.part2];
   const [wordIndex, setWordIndex] = useState(0);
 
@@ -166,7 +168,7 @@ export const MinimalistHero = ({
                 onClick={onReadMoreClick}
                 className="mt-4 inline-block text-sm font-medium text-foreground underline decoration-from-font"
               >
-                Read More
+                {t('readMore')}
               </a>
             </>
           )}

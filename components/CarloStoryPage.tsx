@@ -3,6 +3,7 @@ import { useEffect, useId, useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { gsap } from "gsap";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import FlowArt, { FlowSection } from "@/components/ui/story-scroll";
 
@@ -204,6 +205,7 @@ function GhostNum({ num, dark = false }: { num: string; dark?: boolean }) {
 
 /* ─── Hero ─────────────────────────────────────────────────────────────── */
 function Hero() {
+  const t = useTranslations("carlo");
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
@@ -356,7 +358,7 @@ function Hero() {
             whiteSpace: "nowrap",
           }}
         >
-          DIG IN
+          {t("hero.digIn")}
         </h1>
       </div>
 
@@ -384,9 +386,7 @@ function Hero() {
             maxWidth: 960,
           }}
         >
-          Carlo did not become a saint because he was perfect. He became a saint because he
-          chose God every day. Behind every miracle and every headline was a teenager learning
-          how to love Christ more deeply.
+          {t("hero.quote")}
         </p>
       </motion.div>
 
@@ -423,9 +423,9 @@ function Hero() {
         >
           <Tape style={{ top: -11, left: "50%", transform: "translateX(-50%) rotate(-1deg)", width: 42, height: 17 }} />
           <p style={{ fontFamily: C.caveat, fontSize: 19, color: C.text, lineHeight: 1.45 }}>
-            To always be close to Jesus, that is my life plan.
+            {t("hero.cardQuote")}
           </p>
-          <p style={{ fontFamily: C.caveat, fontSize: 13, color: "#888", marginTop: 10 }}>— Carlo Acutis</p>
+          <p style={{ fontFamily: C.caveat, fontSize: 13, color: "#888", marginTop: 10 }}>{t("hero.cardAuthor")}</p>
           <svg style={{ position: "absolute", bottom: 10, right: 12 }} width="22" height="20" viewBox="0 0 22 20" fill="none">
             <path d="M11 18C11 18 2 12 2 6C2 3.2 4.2 1 7 1C8.8 1 10.3 2 11 3.5C11.7 2 13.2 1 15 1C17.8 1 20 3.2 20 6C20 12 11 18 11 18Z" stroke={C.accent} strokeWidth="1.5" fill="rgba(199,74,42,0.1)" />
           </svg>
@@ -437,8 +437,8 @@ function Hero() {
           transition={{ duration: 0.7, delay: 1.25 }}
           style={{ border: `2.5px solid rgba(217,164,65,0.65)`, padding: "12px 20px", textAlign: "center", marginLeft: 36, marginTop: 14 }}
         >
-          <p style={{ fontFamily: C.bebas, fontSize: 20, color: C.gold, letterSpacing: "0.08em" }}>DIGITAL</p>
-          <p style={{ fontFamily: C.bebas, fontSize: 20, color: C.gold, letterSpacing: "0.08em" }}>SAINT</p>
+          <p style={{ fontFamily: C.bebas, fontSize: 20, color: C.gold, letterSpacing: "0.08em" }}>{t("hero.digital")}</p>
+          <p style={{ fontFamily: C.bebas, fontSize: 20, color: C.gold, letterSpacing: "0.08em" }}>{t("hero.saint")}</p>
         </motion.div>
 
         <motion.div
@@ -447,12 +447,14 @@ function Hero() {
           transition={{ duration: 0.55, delay: 1.5 }}
           style={{ background: C.accent, padding: "11px 18px", textAlign: "center", transform: "rotate(-2deg)", marginLeft: 10, marginTop: 10 }}
         >
-          <p style={{ fontFamily: C.caveat, fontSize: 15, color: "#fff", lineHeight: 1.3 }}>Heaven is<br />our home</p>
+          <p style={{ fontFamily: C.caveat, fontSize: 15, color: "#fff", lineHeight: 1.3 }}>
+            {t("hero.heavenA")}<br />{t("hero.heavenB")}
+          </p>
         </motion.div>
       </div>
 
       <div style={{ position: "absolute", bottom: 28, left: "50%", transform: "translateX(-50%)", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, zIndex: 10 }}>
-        <span style={{ color: "rgba(255,255,255,0.28)", fontSize: 8.5, letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: C.sans }}>Scroll</span>
+        <span style={{ color: "rgba(255,255,255,0.28)", fontSize: 8.5, letterSpacing: "0.3em", textTransform: "uppercase", fontFamily: C.sans }}>{t("hero.scroll")}</span>
         <motion.div
           animate={{ y: [0, 7, 0] }}
           transition={{ duration: 1.6, repeat: Infinity }}
@@ -465,6 +467,7 @@ function Hero() {
 
 /* ─── Closing statement ───────────────────────────────────────────────── */
 function ClosingStatement() {
+  const t = useTranslations("carlo");
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -481,11 +484,11 @@ function ClosingStatement() {
       <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(ellipse at 50% 0%, rgba(199,74,42,0.06) 0%, transparent 60%)", pointerEvents: "none" }} />
       <motion.div ref={ref} initial={{ opacity: 0, y: 44 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.9 }}>
         <p style={{ fontFamily: C.bebas, fontSize: "clamp(2.8rem,7vw,6.5rem)", color: "#fff", lineHeight: 0.92, marginBottom: 4 }}>
-          WE ARE ALL BORN
+          {t("closing.line1")}
         </p>
         <div style={{ display: "inline-block", position: "relative" }}>
           <p style={{ fontFamily: C.bebas, fontSize: "clamp(2.8rem,7vw,6.5rem)", color: "#fff", lineHeight: 0.92 }}>
-            ORIGINALS.
+            {t("closing.line2")}
           </p>
           <svg
             style={{ position: "absolute", bottom: -10, left: 0, width: "100%", overflow: "visible" }}
@@ -512,7 +515,7 @@ function ClosingStatement() {
         transition={{ duration: 0.8, delay: 0.65 }}
         style={{ fontFamily: C.caveat, fontSize: "clamp(1.4rem,3vw,2.2rem)", color: "rgba(255,255,255,0.38)", marginTop: 24, marginBottom: 54 }}
       >
-        Don&apos;t die as photocopies.
+        {t("closing.footer")}
       </motion.p>
 
       <motion.div
@@ -535,7 +538,7 @@ function ClosingStatement() {
             display: "inline-block",
           }}
         >
-          Continue Carlo&apos;s Mission →
+          {t("closing.cta")}
         </Link>
       </motion.div>
     </section>
@@ -544,49 +547,56 @@ function ClosingStatement() {
 
 /* ─── Root export ─────────────────────────────────────────────────────── */
 export default function CarloStoryPage() {
+  const t = useTranslations("carlo");
+  const loved = t.raw("s01.items") as string[];
+  const howItems = t.raw("s03.items") as string[];
+  const s04Cards = t.raw("s04.cards") as { label: string; desc: string }[];
+  const miracleItems = t.raw("s05.items") as string[];
+  const sayItems = t.raw("s06.items") as string[];
+
   return (
     <div>
       <Hero />
 
-      <FlowArt aria-label="Carlo Acutis — The Story">
+      <FlowArt aria-label={t("storyLabel")}>
 
         {/* ── 01 Just A Normal Kid ──────────────────────────────────────── */}
-        <FlowSection aria-label="Just a Normal Kid" style={{ backgroundColor: C.paper }}>
+        <FlowSection aria-label={t("s01.aria")} style={{ backgroundColor: C.paper }}>
           <GhostNum num="01" />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>01 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3.5rem, 9vw, 9rem)", color: "#1a1a1a", lineHeight: 0.88 }}>
-              JUST A<br />NORMAL KID
+              {t("s01.title1")}<br />{t("s01.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "#444", lineHeight: 1.72, maxWidth: 420 }}>
-                Carlo was just like any other teenager. He loved soccer, video games, his friends, animals, and making people laugh. What made him different wasn&apos;t that he lived an extraordinary life. It was that he invited God into the ordinary moments of every day.
+                {t("s01.body")}
               </p>
             </Fade>
 
             <div style={{ position: "relative", minHeight: 600 }}>
               <Fade delay={0.05}>
                 <div style={{ position: "absolute", top: 0, right: 10 }}>
-                  <PhotoCard src="/youngcarlo.png" alt="Young Carlo Acutis" w={175} h={220} rotate={-2} caption="Carlo, Milan c. 1999" />
+                  <PhotoCard src="/youngcarlo.png" alt={t("s01.photoAlt")} w={175} h={220} rotate={-2} caption={t("s01.photoCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.12}>
                 <div style={{ position: "absolute", top: 330, right: 40, zIndex: 4 }}>
-                  <PhotoCard src="/carlomom.png" alt="Carlo's mom speaking at an event" w={190} h={180} rotate={1.5} caption="Carlo's mom" />
+                  <PhotoCard src="/carlomom.png" alt={t("s01.momAlt")} w={190} h={180} rotate={1.5} caption={t("s01.momCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.18}>
                 <div style={{ position: "absolute", top: 64, left: 0, zIndex: 5 }}>
                   <NotebookPaper rotate={1.5}>
                     <p style={{ fontFamily: C.caveat, fontSize: 16.5, fontWeight: 700, color: "#333", marginBottom: 10, textDecoration: "underline" }}>
-                      Little Things He Loved:
+                      {t("s01.loved")}
                     </p>
-                    {["→  Soccer", "→  Video games", "→  Animals", "→  Friends", "→  Family", "→  Laughing", "→  Adventure"].map((item) => (
-                      <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>{item}</p>
+                    {loved.map((item) => (
+                      <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>→  {item}</p>
                     ))}
                   </NotebookPaper>
                 </div>
@@ -597,7 +607,7 @@ export default function CarloStoryPage() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <Fade delay={0.22}>
               <button style={{ fontFamily: C.sans, fontSize: 10.5, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: C.accent, border: `1.5px solid ${C.accent}`, background: "transparent", padding: "10px 22px", cursor: "pointer" }}>
-                Read More →
+                {t("s01.readMore")}
               </button>
             </Fade>
             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" style={{ opacity: 0.4 }}>
@@ -610,36 +620,36 @@ export default function CarloStoryPage() {
         </FlowSection>
 
         {/* ── 02 Falling in Love with Jesus ────────────────────────────── */}
-        <FlowSection aria-label="Falling in Love with Jesus" style={{ backgroundColor: C.paper2 }}>
+        <FlowSection aria-label={t("s02.aria")} style={{ backgroundColor: C.paper2 }}>
           <GhostNum num="02" />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>02 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3rem, 8vw, 8.5rem)", color: "#1a1a1a", lineHeight: 0.88 }}>
-              FALLING IN LOVE<br />WITH JESUS
+              {t("s02.title1")}<br />{t("s02.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
             <Fade delay={0.06}>
-              <PhotoCard src="/carlopic2.jpg" alt="Candles in church" w={220} h={270} rotate={-1.5} caption="Daily Mass, Milan" />
+              <PhotoCard src="/carlopic2.jpg" alt={t("s02.photoAlt")} w={220} h={270} rotate={-1.5} caption={t("s02.photoCaption")} />
             </Fade>
 
             <Fade delay={0.14}>
-              <QuoteCard quote="The Eucharist is my highway to heaven." author="Carlo Acutis" rotate={1.5} />
+              <QuoteCard quote={t("s02.quote")} author={t("s02.author")} rotate={1.5} />
               <div style={{ marginTop: 22, display: "flex", alignItems: "center", gap: 8, opacity: 0.5, paddingLeft: 6 }}>
                 {[0,1,2,3,4].map((i) => (
                   <svg key={i} width="12" height="12" viewBox="0 0 12 12">
                     <circle cx="6" cy="6" r="5" fill="none" stroke={C.accent} strokeWidth="1.3" />
                   </svg>
                 ))}
-                <span style={{ fontFamily: C.caveat, fontSize: 12, color: "#999" }}>rosary, daily</span>
+                <span style={{ fontFamily: C.caveat, fontSize: 12, color: "#999" }}>{t("s02.rosary")}</span>
               </div>
             </Fade>
 
             <Fade delay={0.2}>
               <p style={{ fontFamily: C.sans, fontSize: 15, color: "#555", lineHeight: 1.72 }}>
-                From a young age, Carlo found something special in the Eucharist. Going to Mass and spending time with Jesus became the best part of his day. He believed that the closer we are to Jesus, the happier we become.
+                {t("s02.body")}
               </p>
             </Fade>
           </div>
@@ -647,44 +657,37 @@ export default function CarloStoryPage() {
           <Fade delay={0.26}>
             <div style={{ padding: "14px 18px", background: "rgba(199,74,42,0.06)", borderLeft: `3px solid ${C.accent}`, maxWidth: 520 }}>
               <p style={{ fontFamily: C.caveat, fontSize: 16, color: C.accent, lineHeight: 1.55 }}>
-                &ldquo;When we face the sun, we get a tan. When we face Jesus in the Eucharist, we become saints.&rdquo;
+                {t("s02.pullQuote")}
               </p>
             </div>
           </Fade>
         </FlowSection>
 
         {/* ── 03 Living His Faith ───────────────────────────────────────── */}
-        <FlowSection aria-label="Living His Faith" style={{ backgroundColor: C.paper3 }}>
+        <FlowSection aria-label={t("s03.aria")} style={{ backgroundColor: C.paper3 }}>
           <GhostNum num="03" />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>03 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3.5rem, 9vw, 9rem)", color: "#1a1a1a", lineHeight: 0.88 }}>
-              LIVING<br />HIS FAITH
+              {t("s03.title1")}<br />{t("s03.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "#444", lineHeight: 1.72, maxWidth: 420 }}>
-                Carlo didn&apos;t keep his faith inside the walls of a church. He lived it every day by being kind, standing up for classmates who were bullied, helping people in need, and always treating others with love and respect.
+                {t("s03.body")}
               </p>
             </Fade>
 
             <Fade delay={0.18}>
               <NotebookPaper rotate={-1.5}>
                 <p style={{ fontFamily: C.caveat, fontSize: 16.5, fontWeight: 700, color: "#333", marginBottom: 10, textDecoration: "underline" }}>
-                  How He Lived It:
+                  {t("s03.howTitle")}
                 </p>
-                {[
-                  "→  Being kind to everyone",
-                  "→  Defending bullied classmates",
-                  "→  Helping people in need",
-                  "→  Welcoming the lonely",
-                  "→  Treating everyone with love",
-                  "→  Seeing God in every person",
-                ].map((item) => (
-                  <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>{item}</p>
+                {howItems.map((item) => (
+                  <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>→  {item}</p>
                 ))}
               </NotebookPaper>
             </Fade>
@@ -692,31 +695,31 @@ export default function CarloStoryPage() {
         </FlowSection>
 
         {/* ── 04 A Mission on the Internet ─────────────────────────────── */}
-        <FlowSection aria-label="A Mission on the Internet" style={{ backgroundColor: C.dark }}>
+        <FlowSection aria-label={t("s04.aria")} style={{ backgroundColor: C.dark }}>
           <GhostNum num="04" dark />
 
           <div>
             <Fade>
               <div style={{ display: "inline-block", border: `2px solid ${C.accent}`, borderRadius: "50%", padding: "5px 16px", marginBottom: 14 }}>
-                <span style={{ fontFamily: C.caveat, fontSize: 14, color: C.accent }}>AGE 11</span>
+                <span style={{ fontFamily: C.caveat, fontSize: 14, color: C.accent }}>{t("s04.age")}</span>
               </div>
             </Fade>
             <Fade delay={0.06}>
               <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>04 ✳</p>
               <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3rem, 8vw, 8.5rem)", color: "#fff", lineHeight: 0.88 }}>
-                A MISSION ON<br />THE INTERNET
+                {t("s04.title1")}<br />{t("s04.title2")}
               </h2>
               <p style={{ fontFamily: C.sans, fontSize: 15, color: "rgba(255,255,255,0.46)", maxWidth: 440, lineHeight: 1.7, marginTop: 10 }}>
-                Carlo loved computers and technology, but he saw them as more than entertainment.
+                {t("s04.intro")}
               </p>
             </Fade>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {[
-              { icon: "</>", label: "SELF-TAUGHT", desc: "He taught himself how to build websites because he wanted to use the internet to share Jesus with the world." },
-              { icon: "✦", label: "EVANGELIST", desc: "Long before social media became part of everyday life, Carlo showed that technology could be a force for good." },
-              { icon: "⊕", label: "PIONEER", desc: "He used every digital tool available to him to bring others closer to God — a saint for the digital age." },
+              { icon: "</>", label: s04Cards[0].label, desc: s04Cards[0].desc },
+              { icon: "✦", label: s04Cards[1].label, desc: s04Cards[1].desc },
+              { icon: "⊕", label: s04Cards[2].label, desc: s04Cards[2].desc },
             ].map(({ icon, label, desc }, i) => (
               <Fade key={label} delay={i * 0.1}>
                 <div style={{ background: "#1a1a1a", border: "1px solid rgba(255,255,255,0.07)", padding: "32px 24px" }}>
@@ -730,46 +733,46 @@ export default function CarloStoryPage() {
 
           <Fade delay={0.3}>
             <p style={{ fontFamily: C.caveat, fontSize: 22, color: "rgba(255,255,255,0.22)" }}>
-              <span style={{ textDecoration: "line-through" }}>Not for school.</span>{" "}
-              <span style={{ color: C.gold }}>For <span style={{ textDecorationColor: C.accent, textDecoration: "underline" }}>souls.</span></span>
+              <span style={{ textDecoration: "line-through" }}>{t("s04.strike")}</span>{" "}
+              <span style={{ color: C.gold }}>{t("s04.goldPrefix")}<span style={{ textDecorationColor: C.accent, textDecoration: "underline" }}>{t("s04.underlined")}</span></span>
             </p>
           </Fade>
         </FlowSection>
 
         {/* ── 05 Sharing Eucharistic Miracles ──────────────────────────── */}
-        <FlowSection aria-label="Sharing Eucharistic Miracles" style={{ backgroundColor: C.paper }}>
+        <FlowSection aria-label={t("s05.aria")} style={{ backgroundColor: C.paper }}>
           <GhostNum num="05" />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>05 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(2.8rem, 7vw, 8rem)", color: "#1a1a1a", lineHeight: 0.88 }}>
-              SHARING EUCHARISTIC<br />MIRACLES
+              {t("s05.title1")}<br />{t("s05.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "#444", lineHeight: 1.72, maxWidth: 420 }}>
-                At only eleven years old, Carlo began researching Eucharistic miracles from around the world. He created a website so anyone could learn about these incredible stories and discover the beauty of the Eucharist for themselves.
+                {t("s05.body")}
               </p>
               <div style={{ marginTop: 24, padding: "18px 22px", background: "rgba(199,74,42,0.06)", borderLeft: `3px solid ${C.accent}`, display: "inline-block" }}>
                 <p style={{ fontFamily: C.bebas, fontSize: 56, color: C.accent, lineHeight: 1 }}>136</p>
-                <p style={{ fontFamily: C.caveat, fontSize: 15, color: "#888", marginTop: 2 }}>Eucharistic Miracles catalogued</p>
+                <p style={{ fontFamily: C.caveat, fontSize: 15, color: "#888", marginTop: 2 }}>{t("s05.statLabel")}</p>
               </div>
             </Fade>
 
             <div style={{ position: "relative", minHeight: 340 }}>
               <Fade delay={0.1}>
                 <div style={{ position: "absolute", top: 0, left: 20 }}>
-                  <PhotoCard src="/carlopic3.jpg" alt="Stained glass" w={180} h={220} rotate={2} caption="The Eucharistic Miracles Exhibition" />
+                  <PhotoCard src="/carlopic3.jpg" alt={t("s05.photoAlt")} w={180} h={220} rotate={2} caption={t("s05.photoCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.22}>
                 <div style={{ position: "absolute", top: 80, right: 0, zIndex: 5 }}>
                   <NotebookPaper rotate={-2} style={{ maxWidth: 200 }}>
-                    <p style={{ fontFamily: C.caveat, fontSize: 15, fontWeight: 700, color: "#333", marginBottom: 8, textDecoration: "underline" }}>Why it mattered:</p>
-                    {["→  Free for anyone", "→  Countries worldwide", "→  Scientific evidence", "→  Photos + history"].map((item) => (
-                      <p key={item} style={{ fontFamily: C.caveat, fontSize: 13.5, color: "#666", lineHeight: 2.0 }}>{item}</p>
+                    <p style={{ fontFamily: C.caveat, fontSize: 15, fontWeight: 700, color: "#333", marginBottom: 8, textDecoration: "underline" }}>{t("s05.whyTitle")}</p>
+                    {miracleItems.map((item) => (
+                      <p key={item} style={{ fontFamily: C.caveat, fontSize: 13.5, color: "#666", lineHeight: 2.0 }}>→  {item}</p>
                     ))}
                   </NotebookPaper>
                 </div>
@@ -779,20 +782,20 @@ export default function CarloStoryPage() {
         </FlowSection>
 
         {/* ── 06 A Friend to Everyone ───────────────────────────────────── */}
-        <FlowSection aria-label="A Friend to Everyone" style={{ backgroundColor: C.paper2 }}>
+        <FlowSection aria-label={t("s06.aria")} style={{ backgroundColor: C.paper2 }}>
           <GhostNum num="06" />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>06 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3.5rem, 9vw, 9rem)", color: "#1a1a1a", lineHeight: 0.88 }}>
-              A FRIEND TO<br />EVERYONE
+              {t("s06.title1")}<br />{t("s06.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "#444", lineHeight: 1.72 }}>
-                One of the things people remember most about Carlo is how he treated others. He welcomed everyone, especially those who felt left out. He shared what he had with people in need and believed every person deserved to be loved because every person is a child of God.
+                {t("s06.body")}
               </p>
             </Fade>
 
@@ -800,22 +803,17 @@ export default function CarloStoryPage() {
               <Fade delay={0.14}>
                 <NotebookPaper rotate={1}>
                   <p style={{ fontFamily: C.caveat, fontSize: 16.5, fontWeight: 700, color: "#333", marginBottom: 10, textDecoration: "underline" }}>
-                    What people say about him:
+                    {t("s06.sayTitle")}
                   </p>
-                  {[
-                    "→  He always made you feel seen",
-                    "→  He shared everything he had",
-                    "→  He never excluded anyone",
-                    "→  He treated the poor like family",
-                  ].map((item) => (
-                    <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>{item}</p>
+                  {sayItems.map((item) => (
+                    <p key={item} style={{ fontFamily: C.caveat, fontSize: 15.5, color: "#555", lineHeight: 2.05 }}>→  {item}</p>
                   ))}
                 </NotebookPaper>
               </Fade>
               <Fade delay={0.22}>
                 <QuoteCard
-                  quote="Every person deserves to be loved because every person is a child of God."
-                  author="Carlo Acutis"
+                  quote={t("s06.quote")}
+                  author={t("s06.author")}
                   rotate={-1.5}
                 />
               </Fade>
@@ -824,19 +822,19 @@ export default function CarloStoryPage() {
         </FlowSection>
 
         {/* ── 07 His Final Days ─────────────────────────────────────────── */}
-        <FlowSection aria-label="His Final Days" style={{ backgroundColor: C.dark2 }}>
+        <FlowSection aria-label={t("s07.aria")} style={{ backgroundColor: C.dark2 }}>
           <GhostNum num="07" dark />
 
           <div>
             <Fade>
               <div style={{ display: "inline-block", border: `2px solid ${C.accent}`, borderRadius: "50%", padding: "5px 16px", marginBottom: 14 }}>
-                <span style={{ fontFamily: C.caveat, fontSize: 14, color: C.accent }}>AGE 15</span>
+                <span style={{ fontFamily: C.caveat, fontSize: 14, color: C.accent }}>{t("s07.age")}</span>
               </div>
             </Fade>
             <Fade delay={0.06}>
               <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>07 ✳</p>
               <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3.5rem, 9vw, 9rem)", color: "#fff", lineHeight: 0.88 }}>
-                HIS FINAL<br />DAYS
+                {t("s07.title1")}<br />{t("s07.title2")}
               </h2>
             </Fade>
           </div>
@@ -844,26 +842,26 @@ export default function CarloStoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "rgba(255,255,255,0.52)", lineHeight: 1.72, maxWidth: 400 }}>
-                When Carlo was diagnosed with leukemia at fifteen, he faced it with incredible peace and faith. Instead of thinking only about himself, he offered his suffering for the Pope, the Church, and for people who needed God&apos;s help. His trust in Jesus never wavered.
+                {t("s07.body")}
               </p>
             </Fade>
 
             <Fade delay={0.18}>
               <QuoteCard
-                quote="I offer all my suffering to the Lord, for the Pope and for the Church."
-                author="Carlo Acutis"
+                quote={t("s07.quote")}
+                author={t("s07.author")}
                 rotate={-1}
                 dark
               />
               <div style={{ marginTop: 24, display: "flex", gap: 16, paddingLeft: 4 }}>
                 <div style={{ textAlign: "center" }}>
                   <p style={{ fontFamily: C.bebas, fontSize: 36, color: C.gold, lineHeight: 1 }}>2006</p>
-                  <p style={{ fontFamily: C.caveat, fontSize: 12, color: "rgba(255,255,255,0.3)", marginTop: 3 }}>Diagnosed</p>
+                  <p style={{ fontFamily: C.caveat, fontSize: 12, color: "rgba(255,255,255,0.3)", marginTop: 3 }}>{t("s07.diagnosedLabel")}</p>
                 </div>
                 <div style={{ width: 1, background: "rgba(255,255,255,0.1)", alignSelf: "stretch" }} />
                 <div style={{ textAlign: "center" }}>
-                  <p style={{ fontFamily: C.bebas, fontSize: 36, color: C.gold, lineHeight: 1 }}>OCT 12</p>
-                  <p style={{ fontFamily: C.caveat, fontSize: 12, color: "rgba(255,255,255,0.3)", marginTop: 3 }}>Passed to Heaven</p>
+                  <p style={{ fontFamily: C.bebas, fontSize: 36, color: C.gold, lineHeight: 1 }}>{t("s07.deathDate")}</p>
+                  <p style={{ fontFamily: C.caveat, fontSize: 12, color: "rgba(255,255,255,0.3)", marginTop: 3 }}>{t("s07.passedLabel")}</p>
                 </div>
               </div>
             </Fade>
@@ -871,32 +869,32 @@ export default function CarloStoryPage() {
         </FlowSection>
 
         {/* ── 08 His Story Continues ────────────────────────────────────── */}
-        <FlowSection aria-label="His Story Continues" style={{ backgroundColor: C.dark }}>
+        <FlowSection aria-label={t("s08.aria")} style={{ backgroundColor: C.dark }}>
           <GhostNum num="08" dark />
 
           <Fade>
             <p style={{ fontFamily: C.sans, fontSize: 9.5, fontWeight: 700, letterSpacing: "0.3em", color: C.accent, textTransform: "uppercase", marginBottom: 6 }}>08 ✳</p>
             <h2 style={{ fontFamily: C.bebas, fontSize: "clamp(3.5rem, 9vw, 9rem)", color: "#fff", lineHeight: 0.88 }}>
-              HIS STORY<br />CONTINUES
+              {t("s08.title1")}<br />{t("s08.title2")}
             </h2>
           </Fade>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             <Fade delay={0.1}>
               <p style={{ fontFamily: C.sans, fontSize: 16, color: "rgba(255,255,255,0.52)", lineHeight: 1.72 }}>
-                Carlo&apos;s life may have been short, but his impact continues to grow every day. Through the miracles recognized by the Church and the millions of people inspired by his example, Carlo reminds us that holiness isn&apos;t only for a few people. It&apos;s something every one of us is called to.
+                {t("s08.body")}
               </p>
               <div style={{ marginTop: 28, padding: "18px 22px", border: `1px solid rgba(217,164,65,0.3)`, display: "inline-block" }}>
-                <p style={{ fontFamily: C.bebas, fontSize: 13, color: C.gold, letterSpacing: "0.18em", marginBottom: 4 }}>CANONIZED</p>
-                <p style={{ fontFamily: C.bebas, fontSize: 28, color: "#fff", lineHeight: 1 }}>APRIL 27, 2025</p>
-                <p style={{ fontFamily: C.caveat, fontSize: 13, color: "rgba(255,255,255,0.3)", marginTop: 6 }}>The first millennial saint</p>
+                <p style={{ fontFamily: C.bebas, fontSize: 13, color: C.gold, letterSpacing: "0.18em", marginBottom: 4 }}>{t("s08.canonizedLabel")}</p>
+                <p style={{ fontFamily: C.bebas, fontSize: 28, color: "#fff", lineHeight: 1 }}>{t("s08.canonizedDate")}</p>
+                <p style={{ fontFamily: C.caveat, fontSize: 13, color: "rgba(255,255,255,0.3)", marginTop: 6 }}>{t("s08.canonizedNote")}</p>
               </div>
             </Fade>
 
             <Fade delay={0.18}>
               <QuoteCard
-                quote="All people are born as originals, but many die as photocopies."
-                author="Carlo Acutis"
+                quote={t("s08.quote")}
+                author={t("s08.author")}
                 rotate={1.5}
                 dark
               />

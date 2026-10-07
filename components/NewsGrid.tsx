@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { FiArrowRight, FiFacebook } from "react-icons/fi";
 import AnimateIn from "@/components/AnimateIn";
 
@@ -18,6 +19,7 @@ export type NewsCard = {
 const INITIAL_VISIBLE = 6;
 
 export default function NewsGrid({ items }: { items: NewsCard[] }) {
+  const t = useTranslations("common");
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const visibleItems = items.slice(0, visibleCount);
   const hasMore = visibleCount < items.length;
@@ -41,7 +43,7 @@ export default function NewsGrid({ items }: { items: NewsCard[] }) {
               <div className="p-8 md:p-10 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-6">
                   {item.tag === "Facebook" ? (
-                    <FiFacebook className="w-4 h-4 text-navy/60" aria-label="Facebook" />
+                    <FiFacebook className="w-4 h-4 text-navy/60" aria-label={t("facebook")} />
                   ) : (
                     <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-gold-dark bg-gold/10 border border-gold/20 px-3 py-1 rounded">
                       {item.tag}
@@ -59,7 +61,7 @@ export default function NewsGrid({ items }: { items: NewsCard[] }) {
                   rel={item.external ? "noopener noreferrer" : undefined}
                   className="group/arrow inline-flex items-center gap-2 text-gold text-sm font-semibold tracking-wide hover:text-gold-dark transition-colors w-fit"
                 >
-                  Read more
+                  {t("readMoreArticle")}
                   <FiArrowRight className="transition-transform duration-300 group-hover/arrow:translate-x-1" />
                 </a>
               </div>
@@ -74,7 +76,7 @@ export default function NewsGrid({ items }: { items: NewsCard[] }) {
             onClick={() => setVisibleCount((c) => c + INITIAL_VISIBLE)}
             className="px-8 py-3 rounded border border-navy text-navy font-semibold text-xs tracking-widest uppercase hover:bg-navy hover:text-white transition-colors duration-300"
           >
-            Load More Posts
+            {t("loadMore")}
           </button>
         </div>
       )}

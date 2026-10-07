@@ -1,18 +1,31 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import AnimateIn from "@/components/AnimateIn";
 import { Link } from "@/i18n/navigation";
 import DonorsWall from "@/components/DonorsWall";
 import DonateHero from "@/components/DonateHero";
 
-export const metadata: Metadata = {
-  title: "Ways to Give",
-  description:
-    "Support Friends of Carlo — individual giving, institutional partnerships, grants, and corporate sponsorships.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("donate.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 /* ─── Why Support ────────────────────────────────────────────────────── */
-function WhySupport() {
+async function WhySupport() {
+  const t = await getTranslations("donate.why");
+  const metrics = [
+    { value: "___", label: t("metrics.funds") },
+    { value: "___", label: t("metrics.young") },
+    { value: "6", label: t("metrics.communities") },
+    { value: "< 15%", label: t("metrics.overhead") },
+    { value: "100%", label: t("metrics.audited") },
+    { value: "6", label: t("metrics.board") },
+  ];
+
   return (
     <section className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -20,27 +33,22 @@ function WhySupport() {
           <div>
             <AnimateIn>
               <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                Why Give
+                {t("eyebrow")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.1}>
               <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-navy leading-tight mb-8">
-                Your Gift Funds the Next Generation of Digital Saints
+                {t("title")}
               </h2>
             </AnimateIn>
             <AnimateIn delay={0.15}>
               <p className="text-navy/65 text-lg leading-relaxed mb-6">
-                Carlo Acutis proved that faith and technology are not in
-                conflict — they can be the most powerful combination of all.
-                Your support makes it possible to bring that message to
-                teenagers, parishes, schools, and families around the world.
+                {t("body1")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.2}>
               <p className="text-navy/65 text-lg leading-relaxed mb-8">
-                We operate with exceptional stewardship, keeping overhead
-                below 15% so that your dollars are deployed where they matter
-                most: in programs, outreach, and mission.
+                {t("body2")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.25}>
@@ -48,21 +56,14 @@ function WhySupport() {
                 href="#donate-now"
                 className="inline-block bg-gold text-navy-dark font-semibold px-8 py-4 rounded-sm text-sm tracking-wide hover:bg-gold-light transition-colors"
               >
-                Donate Now →
+                {t("cta")}
               </Link>
             </AnimateIn>
           </div>
 
           {/* Impact metrics */}
           <div className="grid grid-cols-2 gap-5">
-            {[
-              { value: "___", label: "Total funds deployed to mission" },
-              { value: "___", label: "Young people reached annually" },
-              { value: "6", label: "Global communities & ministry partners" },
-              { value: "< 15%", label: "Administrative overhead" },
-              { value: "100%", label: "Financials audited annually" },
-              { value: "6", label: "Board-governed with full transparency" },
-            ].map(({ value, label }, i) => (
+            {metrics.map(({ value, label }, i) => (
               <AnimateIn key={label} delay={i * 0.08}>
                 <div className="bg-cream border border-cream-dark rounded-sm p-6 hover:shadow-lg hover:shadow-navy/5 transition-all">
                   <p className="font-serif text-3xl font-semibold text-gold mb-1">{value}</p>
@@ -77,41 +78,17 @@ function WhySupport() {
   );
 }
 
-/* ─── Ministry Partners ──────────────────────────────────────────────── */
-const ministryPartners = [
-  {
-    name: "Diocese of Assisi–Nocera Umbra–Gualdo Tadino",
-    location: "Assisi, Italy",
-  },
-  {
-    name: "Archdiocese of Wa",
-    location: "Ghana",
-  },
-  {
-    name: "St. Carlo Acutis Eucharistic Revival Youth Evangelization Center",
-    location: "Tablas Island, Romblon, Philippines",
-  },
-  {
-    name: "St. Monica Catholic Community and St. Monica Preparatory School",
-    location: "Santa Monica, California",
-  },
-  {
-    name: "St. Thomas the Apostle Parish and School",
-    location: "Los Angeles, California",
-  },
-  {
-    name: "St. Genevieve Parish Schools",
-    location: "Panorama City, California",
-  },
-];
+/* ─── Photo strip ────────────────────────────────────────────────────── */
+const photoStripSources = ["/aboutus26.jpeg", "/aboutus6.jpeg", "/Aboutus3.png"];
 
-const photoStrip = [
-  { src: "/aboutus26.jpeg", alt: "A priest and two guests sharing a moment of joy at a Friends of Carlo event" },
-  { src: "/aboutus6.jpeg", alt: "Four friends standing together in front of the MCJ sign" },
-  { src: "/Aboutus3.png", alt: "Young pilgrims gathered before St. Carlo Acutis's shrine in Italy" },
-];
+async function PhotoStrip() {
+  const t = await getTranslations("donate.photos");
+  const photoStrip = [
+    { src: photoStripSources[0], alt: t("photo1") },
+    { src: photoStripSources[1], alt: t("photo2") },
+    { src: photoStripSources[2], alt: t("photo3") },
+  ];
 
-function PhotoStrip() {
   return (
     <section className="py-16 px-6 bg-white">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -127,26 +104,30 @@ function PhotoStrip() {
   );
 }
 
-function MinistryPartners() {
+/* ─── Ministry Partners ──────────────────────────────────────────────── */
+type Partner = { name: string; location: string };
+
+async function MinistryPartners() {
+  const t = await getTranslations("donate.partners");
+  const ministryPartners = t.raw("items") as Partner[];
+
   return (
     <section className="py-24 px-6 bg-cream" id="partners">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <AnimateIn>
             <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Where Your Gifts Go
+              {t("eyebrow")}
             </p>
           </AnimateIn>
           <AnimateIn delay={0.1}>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy mb-6">
-              Global Communities &amp; Ministry Partners
+              {t("title")}
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="text-navy/60 text-lg leading-relaxed max-w-2xl mx-auto">
-              Your generosity has directly supported these dioceses, parishes,
-              schools, and evangelization centers — in our own community and
-              around the world.
+              {t("body")}
             </p>
           </AnimateIn>
         </div>
@@ -286,7 +267,12 @@ function GivingTiers() {
 }
 
 /* ─── Institutional Giving ───────────────────────────────────────────── */
-function InstitutionalGiving() {
+type Item = { title: string; body: string };
+
+async function InstitutionalGiving() {
+  const t = await getTranslations("donate.institutional");
+  const items = t.raw("items") as Item[];
+
   return (
     <section className="py-24 px-6 bg-navy" id="institutional">
       <div className="max-w-7xl mx-auto">
@@ -294,27 +280,22 @@ function InstitutionalGiving() {
           <div>
             <AnimateIn>
               <p className="text-gold text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-                Institutional &amp; Foundation Giving
+                {t("eyebrow")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.1}>
               <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-white leading-tight mb-8">
-                For Foundations, Dioceses &amp; Institutions
+                {t("title")}
               </h2>
             </AnimateIn>
             <AnimateIn delay={0.15}>
               <p className="text-white/60 text-lg leading-relaxed mb-6">
-                Friends of Carlo welcomes major gifts
-                and grants from Catholic foundations, dioceses, religious
-                orders, and aligned institutions. We offer full governance
-                transparency, audited financials, and partnership flexibility.
+                {t("body1")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.2}>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Our team works closely with institutional donors to align gifts
-                with specific program areas — from youth outreach to digital
-                infrastructure to international mission expansion.
+                {t("body2")}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.25}>
@@ -322,35 +303,14 @@ function InstitutionalGiving() {
                 href="/contact"
                 className="inline-block bg-gold text-navy-dark font-semibold px-8 py-4 rounded-sm text-sm tracking-wide hover:bg-gold-light transition-colors"
               >
-                Contact Our Giving Team →
+                {t("cta")}
               </Link>
             </AnimateIn>
           </div>
 
           {/* What we offer */}
           <div className="space-y-4">
-            {[
-              {
-                title: "Full Financial Transparency",
-                body: "Audited annual financials, IRS Form 990, and real-time program expense reporting available to all institutional partners.",
-              },
-              {
-                title: "Board Governance Documentation",
-                body: "Complete bylaws, board composition, conflict of interest policies, and meeting minutes available upon request.",
-              },
-              {
-                title: "Grant Opportunity Matching",
-                body: "Our giving team will work with you to identify grant programs that align with your foundation's priorities and eligibility criteria.",
-              },
-              {
-                title: "Impact Reporting",
-                body: "Bi-annual detailed impact reports showing exactly how your gift was deployed and the measurable results achieved.",
-              },
-              {
-                title: "Restricted Giving Options",
-                body: "Gifts can be designated for specific programs — youth outreach, digital evangelization, international expansion, or endowment.",
-              },
-            ].map(({ title, body }, i) => (
+            {items.map(({ title, body }, i) => (
               <AnimateIn key={title} direction="left" delay={i * 0.08}>
                 <div className="border border-white/10 rounded-sm p-6 hover:border-gold/30 transition-colors">
                   <h3 className="text-white font-semibold text-sm mb-2">{title}</h3>
@@ -366,63 +326,35 @@ function InstitutionalGiving() {
 }
 
 /* ─── Corporate ──────────────────────────────────────────────────────── */
-function CorporatePartnerships() {
+type CorporateItem = { title: string; description: string };
+
+async function CorporatePartnerships() {
+  const t = await getTranslations("donate.corporate");
+  const items = t.raw("items") as CorporateItem[];
+
   return (
     <section className="py-24 px-6 bg-white" id="corporate">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <AnimateIn>
             <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
-              Corporate Giving
+              {t("eyebrow")}
             </p>
           </AnimateIn>
           <AnimateIn delay={0.1}>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-              Corporate Partnerships &amp; Sponsorships
+              {t("title")}
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="mt-5 text-navy/55 text-lg max-w-2xl mx-auto">
-              Align your brand with a mission that empowers young people of all
-              backgrounds, bridging digital divides and fostering faith,
-              innovation, service, and authentic human flourishing.
+              {t("body")}
             </p>
           </AnimateIn>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
-          {[
-            {
-              title: "Title Sponsorship",
-              description:
-                "Premier brand placement on our website, all events, and the Eucharistic Miracles Exhibition. Includes executive speaking opportunities.",
-            },
-            {
-              title: "Event Sponsorship",
-              description:
-                "Sponsor individual events — youth summits, retreats, conferences. Includes branded materials and on-site presence.",
-            },
-            {
-              title: "Digital Co-Branding",
-              description:
-                "Your brand featured in our digital content, email newsletters, and social channels — reaching a devout, engaged Catholic audience.",
-            },
-            {
-              title: "Resource Sponsorship",
-              description:
-                "Fund and co-brand a specific educational resource: lesson plans, videos, or digital tools distributed to parishes nationwide.",
-            },
-            {
-              title: "Matching Gift Program",
-              description:
-                "Amplify individual donations by matching gifts from your employees or customers during a campaign period.",
-            },
-            {
-              title: "Custom Partnership",
-              description:
-                "We welcome creative partnership proposals tailored to your company's CSR goals and employee values.",
-            },
-          ].map(({ title, description }, i) => (
+          {items.map(({ title, description }, i) => (
             <AnimateIn key={title} delay={(i % 3) * 0.08}>
               <div className="border border-cream-dark rounded-sm p-8 hover:border-gold/30 hover:shadow-lg hover:shadow-navy/5 transition-all duration-300">
                 <div className="w-8 h-[2px] bg-gold mb-5" />
@@ -436,16 +368,16 @@ function CorporatePartnerships() {
         <AnimateIn delay={0.3}>
           <div className="bg-navy rounded-sm p-10 text-center">
             <h3 className="font-serif text-3xl font-semibold text-white mb-4">
-              Ready to Explore a Partnership?
+              {t("ctaTitle")}
             </h3>
             <p className="text-white/60 mb-8 max-w-xl mx-auto">
-              Our corporate partnership team will create a customized proposal aligned with your organization&apos;s goals and values.
+              {t("ctaBody")}
             </p>
             <Link
               href="/contact"
               className="inline-block bg-gold text-navy-dark font-semibold px-8 py-4 rounded-sm text-sm tracking-wide hover:bg-gold-light transition-colors"
             >
-              Get in Touch →
+              {t("cta")}
             </Link>
           </div>
         </AnimateIn>
@@ -455,7 +387,9 @@ function CorporatePartnerships() {
 }
 
 /* ─── Final CTA ──────────────────────────────────────────────────────── */
-function FinalCTA() {
+async function FinalCTA() {
+  const t = await getTranslations("donate.finalCta");
+
   return (
     <section className="py-24 px-6 bg-navy-dark">
       <div className="max-w-3xl mx-auto text-center">
@@ -464,13 +398,12 @@ function FinalCTA() {
         </AnimateIn>
         <AnimateIn delay={0.1}>
           <blockquote className="font-serif text-3xl md:text-4xl text-white font-semibold italic leading-tight mb-8 text-balance">
-            You only have to be good in this short time of earthly life,
-            and you will be happy forever.
+            {t("quote")}
           </blockquote>
         </AnimateIn>
         <AnimateIn delay={0.2}>
           <cite className="block text-white/35 text-xs tracking-widest uppercase not-italic mb-10">
-            St. Carlo Acutis
+            {t("cite")}
           </cite>
         </AnimateIn>
         <AnimateIn delay={0.3}>
@@ -478,7 +411,7 @@ function FinalCTA() {
             href="#donate-now"
             className="inline-block bg-gold text-navy-dark font-semibold px-10 py-5 rounded-sm text-sm tracking-wide hover:bg-gold-light transition-colors shadow-lg shadow-gold/20"
           >
-            Make a Gift Today →
+            {t("cta")}
           </Link>
         </AnimateIn>
       </div>

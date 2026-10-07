@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
+import { getLocale, getTranslations } from "next-intl/server";
 import AnimateIn from "@/components/AnimateIn";
 import HomeHero from "@/components/HomeHero";
 import CarloStoryButton from "@/components/CarloStoryButton";
@@ -8,7 +9,9 @@ import WipeLink from "@/components/WipeLink";
 import { getFacebookPosts, type FacebookPost } from "@/lib/facebook";
 
 /* ─── Mission ────────────────────────────────────────────────────────── */
-function Mission() {
+async function Mission() {
+  const t = await getTranslations("home.mission");
+
   return (
     <section className="overflow-hidden bg-navy-dark">
 
@@ -19,7 +22,7 @@ function Mission() {
             className="font-sans font-black uppercase leading-[0.88] tracking-tight text-balance mx-auto text-white"
             style={{ fontSize: "clamp(2.4rem, 6vw, 5.5rem)", maxWidth: "860px" }}
           >
-            A Home for Real Faith<br />&amp; Encounters with God
+            {t("headlineLine1")}<br />{t("headlineLine2")}
           </h2>
         </AnimateIn>
         <AnimateIn delay={0.15}>
@@ -51,7 +54,7 @@ function Mission() {
           <div className="relative z-10">
             <AnimateIn direction="left">
               <p className="text-white/50 text-xs font-sans font-semibold tracking-[0.25em] uppercase mb-6">
-                Our Mission
+                {t("eyebrow")}
               </p>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.1}>
@@ -59,7 +62,7 @@ function Mission() {
                 className="font-serif font-semibold text-gold leading-snug mb-10"
                 style={{ fontSize: "clamp(1.25rem, 2.2vw, 1.75rem)" }}
               >
-                Inspired by the life and witness of St. Carlo Acutis, we exist to help people encounter Christ, deepen their faith, and continue Carlo&apos;s mission of bringing the Gospel into the digital world.
+                {t("body")}
               </p>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.2}>
@@ -68,14 +71,14 @@ function Mission() {
                   href="/about"
                   className="bg-gold text-navy-dark text-sm font-semibold px-6 py-3 transition-all duration-200 hover:bg-gold-light"
                 >
-                  About Us
+                  {t("aboutUs")}
                 </WipeLink>
                 <WipeLink
                   href="/contact"
                   className="text-white text-sm font-semibold px-6 py-3 transition-all duration-200 hover:bg-white/10"
                   style={{ border: "1.5px solid rgba(201,169,110,0.45)" }}
                 >
-                  Stay Connected
+                  {t("stayConnected")}
                 </WipeLink>
               </div>
             </AnimateIn>
@@ -94,7 +97,7 @@ function Mission() {
             >
               <Image
                 src="/calro1.webp"
-                alt="St. Carlo Acutis"
+                alt={t("imageAlt")}
                 fill
                 className="object-cover object-center"
               />
@@ -108,7 +111,9 @@ function Mission() {
 }
 
 /* ─── Who Was Carlo? ─────────────────────────────────────────────────── */
-function WhoWasCarlo() {
+async function WhoWasCarlo() {
+  const t = await getTranslations("home.who");
+
   return (
     <section className="py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
@@ -118,7 +123,7 @@ function WhoWasCarlo() {
               <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
                 <Image
                   src="/youngcarlo.png"
-                  alt="Young Carlo Acutis"
+                  alt={t("imageAlt")}
                   fill
                   className="object-cover object-top"
                   priority
@@ -127,9 +132,9 @@ function WhoWasCarlo() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8">
                   <p className="text-gold font-serif italic text-xl leading-relaxed mb-2">
-                    &ldquo;All people are born as originals, but many die as photocopies.&rdquo;
+                    {t("quote")}
                   </p>
-                  <p className="text-white/50 text-xs tracking-widest uppercase">Carlo Acutis</p>
+                  <p className="text-white/50 text-xs tracking-widest uppercase">{t("quoteBy")}</p>
                 </div>
               </div>
               <div className="absolute -bottom-5 -right-5 bg-gold text-navy-dark font-serif text-sm px-6 py-3 shadow-xl">
@@ -143,36 +148,26 @@ function WhoWasCarlo() {
           <div className="space-y-6 order-1 lg:order-2">
             <AnimateIn direction="left">
               <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase">
-                The Story of Carlo
+                {t("eyebrow")}
               </p>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.1}>
               <h2 className="font-serif text-4xl lg:text-5xl font-semibold text-navy leading-tight">
-                Who Was Carlo Acutis?
+                {t("title")}
               </h2>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.15}>
-              <p className="text-navy/65 text-lg leading-relaxed">
-                Born in London and raised in Milan, Carlo Acutis was a teenager
-                who loved soccer, video games, and God. He was diagnosed with
-                leukemia at 15 and offered his suffering &ldquo;for the Pope and for
-                the Church&rdquo; — dying in 2006 with the serenity of a saint.
-              </p>
+              <p className="text-navy/65 text-lg leading-relaxed">{t("p1")}</p>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.2}>
-              <p className="text-navy/65 text-lg leading-relaxed">
-                Carlo taught himself to code and built a website cataloguing
-                Eucharistic miracles worldwide — a digital act of faith that
-                reached millions. He was beatified in 2020 and canonized as the
-                world&apos;s first millennial saint in 2025.
-              </p>
+              <p className="text-navy/65 text-lg leading-relaxed">{t("p2")}</p>
             </AnimateIn>
             <AnimateIn direction="left" delay={0.25}>
               <div className="flex gap-8 pt-4 border-t border-cream-dark">
                 {[
-                  { value: "15", label: "Age at death" },
-                  { value: "136", label: "Eucharistic miracles catalogued" },
-                  { value: "2025", label: "Canonized" },
+                  { value: t("statAgeValue"), label: t("statAgeLabel") },
+                  { value: t("statMiraclesValue"), label: t("statMiraclesLabel") },
+                  { value: t("statCanonizedValue"), label: t("statCanonizedLabel") },
                 ].map(({ value, label }) => (
                   <div key={label}>
                     <p className="font-serif text-3xl font-semibold text-gold">{value}</p>
@@ -183,7 +178,7 @@ function WhoWasCarlo() {
             </AnimateIn>
             <AnimateIn direction="left" delay={0.3}>
               <CarloStoryButton className="inline-block mt-2 bg-navy text-white text-sm font-semibold px-8 py-4 rounded-sm hover:bg-navy-light transition-colors duration-200">
-                Explore Carlo&apos;s Story →
+                {t("cta")}
               </CarloStoryButton>
             </AnimateIn>
           </div>
@@ -221,7 +216,7 @@ function CardTitle({ children, center = false }: { children: React.ReactNode; ce
   );
 }
 
-function CardLink({ text = "Discover Details", href = "#" }: { text?: string; href?: string }) {
+function CardLink({ text, href = "#" }: { text: string; href?: string }) {
   return (
     <WipeLink
       href={href}
@@ -233,7 +228,9 @@ function CardLink({ text = "Discover Details", href = "#" }: { text?: string; hr
   );
 }
 
-function Initiatives() {
+async function Initiatives() {
+  const t = await getTranslations("home.initiatives");
+
   return (
     <section className="relative overflow-hidden bg-navy-dark py-24 md:py-40 px-6 md:px-[5vw]">
       {/* Background grid lines */}
@@ -248,22 +245,22 @@ function Initiatives() {
         className="absolute top-[22%] -left-[5%] font-sans font-light uppercase tracking-[0.1em] text-white/[0.025] whitespace-nowrap pointer-events-none select-none"
         style={{ fontSize: "15vw" }}
       >
-        Initiatives
+        {t("watermark")}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <AnimateIn>
           <p className="flex items-center gap-4 text-gold text-[10px] font-semibold tracking-[0.3em] uppercase mb-6">
-            What We Do
+            {t("eyebrow")}
             <span className="h-px w-10 bg-gold" />
           </p>
         </AnimateIn>
         <AnimateIn delay={0.1}>
           <h2 className="mb-16 md:mb-24">
             <span className="block font-sans text-2xl md:text-3xl font-light tracking-[0.2em] uppercase text-white">
-              Featured
+              {t("titleTop")}
             </span>
-            <em className="block font-serif italic text-5xl md:text-6xl text-white mt-2">Initiatives</em>
+            <em className="block font-serif italic text-5xl md:text-6xl text-white mt-2">{t("titleBottom")}</em>
           </h2>
         </AnimateIn>
 
@@ -273,23 +270,21 @@ function Initiatives() {
             delay={0.15}
             className="group lg:col-start-1 lg:col-span-7 lg:row-start-1 lg:row-span-3 lg:pr-10 lg:border-r lg:border-white/10"
           >
-            <CardMeta number="01" tags={["Focus: Community", "Status: Active"]} />
+            <CardMeta number="01" tags={t.raw("card01.tags") as string[]} />
             <div className="relative w-full h-[280px] lg:h-[600px] overflow-hidden bg-navy mb-6">
               <Image
                 src="/aboutus43.jpeg"
-                alt="Group of youth looking towards light"
+                alt={t("card01.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
                 className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
               />
             </div>
-            <CardTitle>Youth Outreach</CardTitle>
+            <CardTitle>{t("card01.title")}</CardTitle>
             <p className="text-white/40 text-base font-light leading-relaxed max-w-[80%]">
-              Fostering a new generation through immersive community programs. We create spaces where tradition
-              meets contemporary understanding, providing mentorship and spiritual grounding for young minds
-              navigating a complex world.
+              {t("card01.body")}
             </p>
-            <CardLink text="Contact Us" href="/contact" />
+            <CardLink text={t("contactUs")} href="/contact" />
           </AnimateIn>
 
           {/* 02 — Digital Outreach */}
@@ -297,23 +292,21 @@ function Initiatives() {
             delay={0.2}
             className="group lg:col-start-8 lg:col-span-5 lg:row-start-1 lg:row-span-2 lg:pl-10 lg:top-20 lg:relative"
           >
-            <CardMeta number="02" tags={["Focus: Technology"]} />
+            <CardMeta number="02" tags={t.raw("card02.tags") as string[]} />
             <div className="relative w-full h-[240px] lg:h-[350px] overflow-hidden bg-navy mb-6">
               <Image
                 src="/aboutus15.jpeg"
-                alt="Abstract digital light network"
+                alt={t("card02.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
               />
             </div>
-            <CardTitle>Digital Outreach</CardTitle>
+            <CardTitle>{t("card02.title")}</CardTitle>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
-              Translating timeless messages into modern mediums. Utilizing cutting-edge platforms to build global
-              digital parishes, ensuring our reach extends far beyond physical walls into the daily digital lives
-              of millions.
+              {t("card02.body")}
             </p>
-            <CardLink text="Contact Us" href="/contact" />
+            <CardLink text={t("contactUs")} href="/contact" />
           </AnimateIn>
 
           {/* 03 — Educational Resources */}
@@ -321,23 +314,21 @@ function Initiatives() {
             delay={0.25}
             className="group lg:col-start-2 lg:col-span-4 lg:row-start-4 lg:row-span-2 lg:mt-16 flex flex-col items-start lg:items-center lg:text-center"
           >
-            <CardMeta number="03" tags={["Focus: Knowledge"]} />
+            <CardMeta number="03" tags={t.raw("card03.tags") as string[]} />
             <div className="relative w-full h-[280px] lg:w-[280px] lg:h-[280px] lg:rounded-full overflow-hidden bg-navy mb-8 lg:mx-auto">
               <Image
                 src="/aboutus17.jpeg"
-                alt="Classical architecture and light"
+                alt={t("card03.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 280px"
                 className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
               />
             </div>
-            <CardTitle center>Educational Resources</CardTitle>
+            <CardTitle center>{t("card03.title")}</CardTitle>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[90%]">
-              Explore our growing archive of Eucharistic Miracles documented across the centuries, alongside
-              Carlo&apos;s own story — his life, his faith, and the witness that continues to inspire a new
-              generation.
+              {t("card03.body")}
             </p>
-            <CardLink text="Discover Miracles" href="/eucharistic-miracles" />
+            <CardLink text={t("discoverMiracles")} href="/eucharistic-miracles" />
           </AnimateIn>
 
           {/* 04 — Future Projects */}
@@ -348,19 +339,18 @@ function Initiatives() {
             <div className="relative w-full h-[240px] overflow-hidden bg-navy mb-8">
               <Image
                 src="/aboutus21.jpeg"
-                alt="Minimalist structural architecture"
+                alt={t("card04.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 46vw"
                 className="object-cover [filter:brightness(0.8)_contrast(1.1)_saturate(0.8)] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-105"
               />
             </div>
-            <CardMeta number="04" tags={["Phase: Development"]} />
-            <CardTitle>Future Projects</CardTitle>
+            <CardMeta number="04" tags={t.raw("card04.tags") as string[]} />
+            <CardTitle>{t("card04.title")}</CardTitle>
             <p className="text-white/40 text-sm font-light leading-relaxed">
-              Architecting the next decade of structural and spiritual growth. From sustainable community centers
-              to innovative philanthropic models, these blueprints define our forward trajectory.
+              {t("card04.body")}
             </p>
-            <CardLink text="Contact Us" href="/contact" />
+            <CardLink text={t("contactUs")} href="/contact" />
           </AnimateIn>
         </div>
       </div>
@@ -371,49 +361,16 @@ function Initiatives() {
 /* ─── News ───────────────────────────────────────────────────────────── */
 // Shown whenever FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN aren't set, or
 // the Graph API request fails — keeps the section populated either way.
-const fallbackNewsItems: NewsCard[] = [
-  {
-    date: "June 2025",
-    tag: "Canonization",
-    title: "Carlo Acutis Officially Canonized as the World's First Millennial Saint",
-    excerpt:
-      "In a historic ceremony in St. Peter's Square, Pope Francis canonized Carlo Acutis, making him the patron of the internet generation.",
-    href: "#",
-    external: false,
-    image: "/gallery/vatican-square.jpg",
-  },
-  {
-    date: "May 2025",
-    tag: "Events",
-    title: "Friends of Carlo Announces Digital Discipleship Summit for Youth Ministers",
-    excerpt:
-      "Hundreds of youth ministers from across the country gather to learn how to use Carlo's story to inspire their communities.",
-    href: "#",
-    external: false,
-    image: "/gallery/cathedral-interior.jpg",
-  },
-  {
-    date: "April 2025",
-    tag: "Resources",
-    title: "New Educational Resource Pack Released — Free for All Parishes",
-    excerpt:
-      "Download lesson plans, infographics, and video guides on Carlo's life for confirmation, high school, and college students.",
-    href: "#",
-    external: false,
-    image: "/gallery/candles-church.jpg",
-  },
-];
-
 const FALLBACK_POST_IMAGE = "/gallery/church-dome.jpg";
 
-function fbPostToCard(post: FacebookPost): NewsCard {
+function fbPostToCard(post: FacebookPost, locale: string, fallbackTitle: string): NewsCard {
   const message = post.message ?? "";
   const firstLine = message.split("\n")[0] ?? "";
   const title = firstLine.length > 90 ? `${firstLine.slice(0, 87)}…` : firstLine;
   return {
-    date: new Date(post.created_time).toLocaleDateString("en-US", { month: "long", year: "numeric" }),
+    date: new Date(post.created_time).toLocaleDateString(locale, { month: "long", year: "numeric" }),
     tag: "Facebook",
-    title: title || "View post on Facebook",
+    title: title || fallbackTitle,
     excerpt: message,
     href: post.permalink_url,
     external: true,
@@ -422,8 +379,44 @@ function fbPostToCard(post: FacebookPost): NewsCard {
 }
 
 async function LatestNews() {
+  const t = await getTranslations("home.news");
+  const locale = await getLocale();
   const posts = await getFacebookPosts(24);
-  const newsItems = posts && posts.length > 0 ? posts.map(fbPostToCard) : fallbackNewsItems;
+
+  const fallbackNewsItems: NewsCard[] = [
+    {
+      date: t("fallback1Date"),
+      tag: t("fallback1Tag"),
+      title: t("fallback1Title"),
+      excerpt: t("fallback1Excerpt"),
+      href: "#",
+      external: false,
+      image: "/gallery/vatican-square.jpg",
+    },
+    {
+      date: t("fallback2Date"),
+      tag: t("fallback2Tag"),
+      title: t("fallback2Title"),
+      excerpt: t("fallback2Excerpt"),
+      href: "#",
+      external: false,
+      image: "/gallery/cathedral-interior.jpg",
+    },
+    {
+      date: t("fallback3Date"),
+      tag: t("fallback3Tag"),
+      title: t("fallback3Title"),
+      excerpt: t("fallback3Excerpt"),
+      href: "#",
+      external: false,
+      image: "/gallery/candles-church.jpg",
+    },
+  ];
+
+  const newsItems =
+    posts && posts.length > 0
+      ? posts.map((post) => fbPostToCard(post, locale, t("viewOnFacebook")))
+      : fallbackNewsItems;
 
   return (
     <section className="py-24 px-6 bg-cream">
@@ -431,12 +424,12 @@ async function LatestNews() {
         <div className="mb-14">
           <AnimateIn>
             <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-4">
-              Latest
+              {t("eyebrow")}
             </p>
           </AnimateIn>
           <AnimateIn delay={0.1}>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-navy">
-              News &amp; Updates
+              {t("title")}
             </h2>
           </AnimateIn>
         </div>
@@ -448,7 +441,9 @@ async function LatestNews() {
 }
 
 /* ─── Quote Banner ───────────────────────────────────────────────────── */
-function QuoteBanner() {
+async function QuoteBanner() {
+  const t = await getTranslations("home.quote");
+
   return (
     <section className="py-24 px-6 bg-navy-dark">
       <div className="max-w-4xl mx-auto text-center">
@@ -457,18 +452,18 @@ function QuoteBanner() {
         </AnimateIn>
         <AnimateIn delay={0.1}>
           <blockquote className="font-serif text-3xl md:text-4xl lg:text-5xl text-white font-semibold italic leading-tight text-balance">
-            To always be close to Jesus — that&apos;s my life&apos;s program.
+            {t("text")}
           </blockquote>
         </AnimateIn>
         <AnimateIn delay={0.2}>
           <cite className="block mt-8 text-white/40 text-sm tracking-widest uppercase not-italic">
-            St. Carlo Acutis
+            {t("cite")}
           </cite>
         </AnimateIn>
         <AnimateIn delay={0.3}>
           <div className="mt-10">
             <WipeLink href="/carlo" className="text-gold text-sm font-semibold hover:text-gold-light tracking-wide transition-colors">
-              Read His Full Story →
+              {t("cta")}
             </WipeLink>
           </div>
         </AnimateIn>
@@ -478,43 +473,42 @@ function QuoteBanner() {
 }
 
 /* ─── Ways to Support ────────────────────────────────────────────────── */
-const supportOptions = [
-  {
-    number: "01",
-    titleLines: ["Individual", "Giving"],
-    description:
-      "Your personal gift fuels youth outreach, educational resources, and digital evangelization — one soul at a time.",
-    cta: "Give Now",
-    href: "/donate" as const,
-    barClass: "bg-gold",
-    numberClass: "text-gold/40",
-    ctaClass: "bg-gold text-navy-dark hover:bg-gold-light",
-  },
-  {
-    number: "02",
-    titleLines: ["Institutional", "Giving"],
-    description:
-      "Partner with us as a foundation, diocese, or institution. Access governance documents, impact metrics, and grant information.",
-    cta: "Institutional Partners",
-    href: "/donate" as const,
-    barClass: "bg-navy",
-    numberClass: "text-navy/20",
-    ctaClass: "bg-navy text-white hover:bg-navy-light",
-  },
-  {
-    number: "03",
-    titleLines: ["Corporate", "Partnerships"],
-    description:
-      "Align your brand with a mission that transcends generations. Sponsorship and co-branding opportunities available.",
-    cta: "Corporate Info",
-    href: "/donate" as const,
-    barClass: "bg-navy",
-    numberClass: "text-navy/20",
-    ctaClass: "bg-navy text-white hover:bg-navy-light",
-  },
-];
+async function WaysToSupport() {
+  const t = await getTranslations("home.support");
 
-function WaysToSupport() {
+  const supportOptions = [
+    {
+      number: "01",
+      titleLines: [t("option01Title1"), t("option01Title2")],
+      description: t("option01Body"),
+      cta: t("option01Cta"),
+      href: "/donate" as const,
+      barClass: "bg-gold",
+      numberClass: "text-gold/40",
+      ctaClass: "bg-gold text-navy-dark hover:bg-gold-light",
+    },
+    {
+      number: "02",
+      titleLines: [t("option02Title1"), t("option02Title2")],
+      description: t("option02Body"),
+      cta: t("option02Cta"),
+      href: "/donate" as const,
+      barClass: "bg-navy",
+      numberClass: "text-navy/20",
+      ctaClass: "bg-navy text-white hover:bg-navy-light",
+    },
+    {
+      number: "03",
+      titleLines: [t("option03Title1"), t("option03Title2")],
+      description: t("option03Body"),
+      cta: t("option03Cta"),
+      href: "/donate" as const,
+      barClass: "bg-navy",
+      numberClass: "text-navy/20",
+      ctaClass: "bg-navy text-white hover:bg-navy-light",
+    },
+  ];
+
   return (
     <section className="py-24 px-6 bg-cream">
       <div className="max-w-7xl mx-auto">
@@ -522,26 +516,26 @@ function WaysToSupport() {
           <AnimateIn>
             <div className="flex flex-col items-center gap-6">
               <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase">
-                Support the Mission
+                {t("eyebrow")}
               </p>
               <span className="w-12 h-px bg-gold/50" />
             </div>
           </AnimateIn>
           <AnimateIn delay={0.1}>
             <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-navy mt-8 mb-6 leading-tight">
-              Ways to Give
+              {t("title")}
             </h2>
           </AnimateIn>
           <AnimateIn delay={0.15}>
             <p className="text-lg md:text-xl text-navy/55 font-light leading-relaxed">
-              Every gift — large or small — carries Carlo&apos;s message to a new generation.
+              {t("subtitle")}
             </p>
           </AnimateIn>
         </div>
 
         <div className="border-t border-navy/10">
           {supportOptions.map((opt, i) => (
-            <AnimateIn key={opt.titleLines.join(" ")} delay={i * 0.1}>
+            <AnimateIn key={opt.number} delay={i * 0.1}>
               <div className="group relative flex flex-col lg:flex-row lg:items-center py-10 lg:py-14 border-b border-navy/10 transition-colors duration-500 hover:bg-white/70 -mx-6 px-6 lg:-mx-12 lg:px-12">
                 <span
                   className={`absolute left-0 top-0 bottom-0 w-1 ${opt.barClass} scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-center hidden lg:block`}
