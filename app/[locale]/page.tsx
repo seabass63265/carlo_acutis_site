@@ -295,7 +295,7 @@ async function Initiatives() {
             <CardMeta number="02" tags={t.raw("card02.tags") as string[]} />
             <div className="relative w-full h-[240px] lg:h-[350px] overflow-hidden bg-navy mb-6">
               <Image
-                src="/aboutus15.jpeg"
+                src="/aboutus13.jpeg"
                 alt={t("card02.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -317,7 +317,7 @@ async function Initiatives() {
             <CardMeta number="03" tags={t.raw("card03.tags") as string[]} />
             <div className="relative w-full h-[280px] lg:w-[280px] lg:h-[280px] lg:rounded-full overflow-hidden bg-navy mb-8 lg:mx-auto">
               <Image
-                src="/aboutus17.jpeg"
+                src="/aboutpage01.png"
                 alt={t("card03.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 280px"
