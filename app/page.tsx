@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Preloader from "@/components/Preloader";
+import Preloader from "@/components/splash/Preloader";
 
 const LOCALES = [
   { code: "en", label: "English",   native: "English"    },
@@ -86,7 +86,7 @@ export default function SplashPage() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage: "url('/language_section.png')",
+          backgroundImage: "url('/splash/language_section.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

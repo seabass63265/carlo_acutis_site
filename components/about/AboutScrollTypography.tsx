@@ -7,16 +7,16 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const STORY_IMAGES = [
-  "/aboutus11.jpeg",
-  "/aboutus12.jpeg",
-  "/aboutus13.jpeg",
-  "/aboutus16.jpeg",
-  "/aboutpage01.png",
-  "/aboutus19.jpeg",
-  "/aboutus20.jpeg",
-  "/aboutus27.jpeg",
-  "/aboutus28.jpeg",
-  "/aboutus29.jpeg",
+  "/about-us/aboutus11.jpeg",
+  "/about-us/aboutus12.jpeg",
+  "/about-us/aboutus13.jpeg",
+  "/about-us/aboutus16.jpeg",
+  "/shared/aboutpage01.png",
+  "/about-us/aboutus19.jpeg",
+  "/about-us/aboutus20.jpeg",
+  "/about-us/aboutus27.jpeg",
+  "/about-us/aboutus28.jpeg",
+  "/about-us/aboutus29.jpeg",
 ];
 
 const ASPECT_RATIOS = ["3/2", "4/3", "5/4", "7/5"];

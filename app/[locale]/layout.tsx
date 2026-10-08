@@ -3,10 +3,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import { SvgWipeProvider } from "@/components/SvgWipeProvider";
-import ScrollToTop from "@/components/ScrollToTop";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import { SvgWipeProvider } from "@/components/shared/SvgWipeProvider";
+import ScrollToTop from "@/components/shared/ScrollToTop";
 
 type Props = {
   children: React.ReactNode;

@@ -1,13 +1,10 @@
 "use client";
 
-import { gsap } from "gsap";
-import { Observer } from "gsap/Observer";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { miracles, type Miracle } from "@/components/miracles-data";
-import AnimateIn from "@/components/AnimateIn";
-
-gsap.registerPlugin(Observer);
+import { useState } from "react";
+import { miracles, CONTINENT_MAP, CONTINENT_ORDER, type Miracle } from "@/components/eucharistic-miracles/miracles-data";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 type SourceLabels = {
   sourcePanel: string;
@@ -40,6 +37,11 @@ function sourceLabel(url: string, labels: SourceLabels): { label: string; badge:
   }
 }
 
+// Every country appears in CONTINENT_MAP; miracles-data.ts is the source of
+// truth for both, so this only matters if a new country is added to one and
+// not the other.
+const continentOf = (country: string) => CONTINENT_MAP[country] ?? "Other";
+
 export default function MiraclesInfiniteGrid() {
   const t = useTranslations("miracles");
   const countryName = (c: string) => (t.has(`countries.${c}`) ? t(`countries.${c}`) : c);
@@ -54,11 +56,8 @@ export default function MiraclesInfiniteGrid() {
     sourcePea: t("grid.sourcePea"),
     sourceMagis: t("grid.sourceMagis"),
   };
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<Miracle | null>(null);
   const [filterCountry, setFilterCountry] = useState<string | null>(null);
-  const pointerRef = useRef({ totalMoved: 0 });
 
   // Listen for country filter events from the map
   useEffect(() => {
@@ -73,8 +72,8 @@ export default function MiraclesInfiniteGrid() {
   // Scroll the grid into view only after the filtered (much shorter) layout has
   // painted — scrolling immediately on the map-click event races the browser's
   // smooth-scroll against React's re-render, so the target position is computed
-  // against the old, taller infinite-scroll layout and the page overshoots past
-  // the actual cards into blank space below them.
+  // against the old, taller layout and the page overshoots past the actual
+  // cards into blank space below them.
   useEffect(() => {
     if (!filterCountry) return;
     const raf = requestAnimationFrame(() => {
@@ -83,140 +82,44 @@ export default function MiraclesInfiniteGrid() {
     return () => cancelAnimationFrame(raf);
   }, [filterCountry]);
 
-  // GSAP infinite scroll — only active when no filter is applied
-  useEffect(() => {
-    if (filterCountry) return;
-    const container = containerRef.current;
-    const section = sectionRef.current;
-    if (!container || !section) return;
-
-    // Reset position when re-entering unfiltered view
-    gsap.set(container, { x: 0, y: 0 });
-
-    const halfX = container.clientWidth / 2;
-    const wrapX = gsap.utils.wrap(-halfX, 0);
-    const xTo = gsap.quickTo(container, "x", {
-      duration: 1.5,
-      ease: "power4",
-      modifiers: { x: gsap.utils.unitize(wrapX) },
-    });
-
-    const halfY = container.clientHeight / 2;
-    const wrapY = gsap.utils.wrap(-halfY, 0);
-    const yTo = gsap.quickTo(container, "y", {
-      duration: 1.5,
-      ease: "power4",
-      modifiers: { y: gsap.utils.unitize(wrapY) },
-    });
-
-    let incrX = 0;
-    let incrY = 0;
-    let lastInteraction = Date.now();
-    let isAutoScrolling = false;
-
-    const AUTO_DELAY = 3000;
-    const AUTO_SPEED = 0.4;
-
-    const ticker = gsap.ticker.add(() => {
-      const idle = Date.now() - lastInteraction > AUTO_DELAY;
-      if (idle && !isAutoScrolling) isAutoScrolling = true;
-      if (!idle && isAutoScrolling) isAutoScrolling = false;
-      if (isAutoScrolling) {
-        incrX -= AUTO_SPEED;
-        incrY -= AUTO_SPEED * 0.55;
-        xTo(incrX);
-        yTo(incrY);
-      }
-    });
-
-    const resetIdle = () => { lastInteraction = Date.now(); };
-    idleResetRef.current = resetIdle;
-
-    const observer = Observer.create({
-      target: section,
-      type: "wheel,touch,pointer",
-      onChangeX: (self) => {
-        resetIdle();
-        const delta =
-          self.event.type === "wheel" ? -self.deltaX : self.deltaX * 2;
-        if (self.event.type !== "wheel")
-          pointerRef.current.totalMoved += Math.abs(self.deltaX);
-        incrX += delta;
-        xTo(incrX);
-      },
-      onChangeY: (self) => {
-        resetIdle();
-        const delta =
-          self.event.type === "wheel" ? -self.deltaY : self.deltaY * 2;
-        if (self.event.type !== "wheel")
-          pointerRef.current.totalMoved += Math.abs(self.deltaY);
-        incrY += delta;
-        yTo(incrY);
-      },
-    });
-
-    return () => {
-      observer.kill();
-      gsap.ticker.remove(ticker);
-    };
-  }, [filterCountry]);
-
-  const idleResetRef = useRef<(() => void) | null>(null);
-
-  const handlePointerDown = () => {
-    pointerRef.current.totalMoved = 0;
-    idleResetRef.current?.();
-  };
-
-  const handleCardClick = (miracle: Miracle) => {
-    if (pointerRef.current.totalMoved > 6) return;
-    setSelected(miracle);
-  };
-
   const displayedMiracles = filterCountry
     ? miracles.filter((m) => m.country === filterCountry)
     : miracles;
 
-  const renderCards = (setKey: string) => (
+  const byContinent = CONTINENT_ORDER.map((continent) => {
+    const items = miracles.filter((m) => continentOf(m.country) === continent);
+    const countries = new Set(items.map((m) => m.country));
+    return { continent, items, countryCount: countries.size };
+  }).filter((group) => group.items.length > 0);
+
+  const renderCard = (miracle: Miracle) => (
     <div
-      className="grid p-4"
-      style={{
-        gap: "8px",
-        gridTemplateColumns: "repeat(11, 152px)",
-      }}
-      aria-hidden={setKey !== "orig" ? true : undefined}
+      key={miracle.id}
+      className="cursor-pointer"
+      onClick={() => setSelected(miracle)}
     >
-      {miracles.map((miracle, i) => (
-        <div
-          key={`${setKey}-${i}`}
-          className="pointer-events-auto cursor-pointer select-none"
-          onPointerDown={handlePointerDown}
-          onClick={() => handleCardClick(miracle)}
-        >
-          <div className="relative overflow-hidden rounded-sm group" style={{ height: 196 }}>
-            {miracle.image ? (
-              <img
-                src={miracle.image}
-                alt={titleOf(miracle)}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            ) : (
-              <div className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center">
-                <span className="text-white/10 text-4xl font-serif font-bold">{miracle.location[0]}</span>
-              </div>
-            )}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
-            <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
-              {yearText(miracle.year)}
-            </p>
-            <div className="absolute bottom-2 left-2 right-2">
-              <p className="text-white font-semibold text-[10px] leading-snug drop-shadow-sm">{miracle.location}</p>
-              <p className="text-white/55 text-[8px] mt-0.5 leading-none">{countryName(miracle.country)}</p>
-            </div>
+      <div className="relative overflow-hidden rounded-sm group" style={{ aspectRatio: "3/4" }}>
+        {miracle.image ? (
+          <img
+            src={miracle.image}
+            alt={titleOf(miracle)}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center">
+            <span className="text-white/10 text-5xl font-serif font-bold">{miracle.location[0]}</span>
           </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
+        <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
+          {yearText(miracle.year)}
+        </p>
+        <div className="absolute bottom-2 left-2 right-2">
+          <p className="text-white font-semibold text-xs leading-snug drop-shadow-sm">{miracle.location}</p>
+          <p className="text-white/55 text-[10px] mt-0.5 leading-none">{countryName(miracle.country)}</p>
         </div>
-      ))}
+      </div>
     </div>
   );
 
@@ -259,75 +162,32 @@ export default function MiraclesInfiniteGrid() {
       </section>
 
       {filterCountry ? (
-        /* Static grid for filtered results — keyed so React always mounts a
-           fresh node here instead of reusing the infinite-scroll grid's DOM
-           element, which GSAP moves around with a raw `transform` outside of
-           React's tracking (a stale transform inherited that way would shove
-           this grid off-screen and make its cards unclickable). */
-        <div key="filtered" className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
+        <div className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
           <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
-            {displayedMiracles.map((miracle) => (
-              <div
-                key={miracle.id}
-                className="cursor-pointer"
-                onClick={() => setSelected(miracle)}
-              >
-                <div className="relative overflow-hidden rounded-sm group" style={{ aspectRatio: "3/4" }}>
-                  {miracle.image ? (
-                    <img
-                      src={miracle.image}
-                      alt={titleOf(miracle)}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-[#1c1c1c] flex items-center justify-center">
-                      <span className="text-white/10 text-5xl font-serif font-bold">{miracle.location[0]}</span>
-                    </div>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-transparent to-black/70 pointer-events-none" />
-                  <p className="absolute top-2 left-2 text-[#C9A96E] text-[9px] font-semibold tracking-wide leading-none drop-shadow-sm">
-                    {yearText(miracle.year)}
+            {displayedMiracles.map(renderCard)}
+          </div>
+        </div>
+      ) : (
+        /* Grouped by continent, same organization as the region list above */
+        <div className="pt-6 pb-24 px-6" style={{ background: "#0d0d0d" }}>
+          <div className="max-w-7xl mx-auto space-y-14">
+            {byContinent.map(({ continent, items, countryCount }) => (
+              <div key={continent}>
+                <div className="flex items-center gap-4 mb-5">
+                  <p className="text-[#C9A96E] font-semibold text-xs tracking-[0.2em] uppercase shrink-0">
+                    {t(`map.continents.${continent}`)}
                   </p>
-                  <div className="absolute bottom-2 left-2 right-2">
-                    <p className="text-white font-semibold text-xs leading-snug drop-shadow-sm">{miracle.location}</p>
-                    <p className="text-white/55 text-[10px] mt-0.5 leading-none">{countryName(miracle.country)}</p>
-                  </div>
+                  <div className="flex-1 h-px bg-white/10" />
+                  <p className="text-white/35 text-[10px] tracking-widest uppercase shrink-0">
+                    {t("map.countryCount", { count: countryCount })} · {t("map.miracleCount", { total: items.length })}
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+                  {items.map(renderCard)}
                 </div>
               </div>
             ))}
           </div>
-        </div>
-      ) : (
-        /* Infinite scroll grid */
-        <div
-          key="infinite"
-          ref={sectionRef}
-          className="relative h-[75vh] overflow-hidden cursor-grab active:cursor-grabbing pb-24"
-          style={{ background: "#0d0d0d" }}
-        >
-          <div
-            ref={containerRef}
-            className="grid w-max grid-cols-2 will-change-transform pointer-events-none"
-          >
-            {renderCards("orig")}
-            {renderCards("dup1")}
-            {renderCards("dup2")}
-            {renderCards("dup3")}
-            {renderCards("dup4")}
-            {renderCards("dup5")}
-            {renderCards("dup6")}
-            {renderCards("dup7")}
-          </div>
-
-          {/* Edge vignette */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(ellipse 90% 90% at 50% 50%, transparent 40%, #0d0d0d 100%)",
-            }}
-          />
         </div>
       )}
 

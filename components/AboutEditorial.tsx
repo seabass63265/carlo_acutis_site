@@ -8,20 +8,20 @@ const ease: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 const ROWS = [
   {
     cells: [
-      { src: "/aboutus24.jpeg", alt: "About us", flex: 1,         aspectRatio: "3/2",  delay: 0    },
-      { src: "/aboutus21.jpeg", alt: "About us", flex: 1,         aspectRatio: "3/2",  delay: 0.08 },
+      { src: "/about-us/aboutus24.jpeg", alt: "About us", flex: 1,         aspectRatio: "3/2",  delay: 0    },
+      { src: "/about-us/aboutus21.jpeg", alt: "About us", flex: 1,         aspectRatio: "3/2",  delay: 0.08 },
     ],
   },
   {
     cells: [
-      { src: "/aboutus26.jpeg", alt: "About us", flex: "0 0 36%", aspectRatio: "2/3",  delay: 0.14 },
-      { src: "/aboutus23.jpeg", alt: "About us", flex: 1,         aspectRatio: null,   delay: 0.20 },
+      { src: "/about-us/aboutus26.jpeg", alt: "About us", flex: "0 0 36%", aspectRatio: "2/3",  delay: 0.14 },
+      { src: "/about-us/aboutus23.jpeg", alt: "About us", flex: 1,         aspectRatio: null,   delay: 0.20 },
     ],
   },
   {
     cells: [
-      { src: "/aboutus10.jpeg", alt: "About us", flex: 2,         aspectRatio: "16/9", delay: 0.18 },
-      { src: "/aboutus19.jpeg", alt: "About us", flex: 1,         aspectRatio: null,   delay: 0.26 },
+      { src: "/about-us/aboutus10.jpeg", alt: "About us", flex: 2,         aspectRatio: "16/9", delay: 0.18 },
+      { src: "/about-us/aboutus19.jpeg", alt: "About us", flex: 1,         aspectRatio: null,   delay: 0.26 },
     ],
   },
 ];
@@ -44,8 +44,8 @@ export default function AboutEditorial() {
               className="flex gap-3 mb-0 pt-6 lg:pt-[120px]"
             >
               {[
-                { src: "/aboutus25.jpeg", alt: "About us", rotate: "-rotate-2", objPos: "center",     fixed: true  },
-                { src: "/aboutus22.JPG", alt: "About us", rotate: "rotate-1",  objPos: "50% 20%",    fixed: false },
+                { src: "/about-us/aboutus25.jpeg", alt: "About us", rotate: "-rotate-2", objPos: "center",     fixed: true  },
+                { src: "/about-us/aboutus22.JPG", alt: "About us", rotate: "rotate-1",  objPos: "50% 20%",    fixed: false },
               ].map(({ src, alt, rotate, objPos, fixed }, i) => (
                 <motion.div
                   key={src}

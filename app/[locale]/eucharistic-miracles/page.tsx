@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import AnimateIn from "@/components/AnimateIn";
-import MiraclesIntroHero from "@/components/MiraclesIntroHero";
-import MiraclesMapClient from "@/components/MiraclesMapClient";
-import MiraclesInfiniteGrid from "@/components/MiraclesInfiniteGrid";
-import MiracleSkiper from "@/components/MiracleSkiper";
-import { miracles } from "@/components/miracles-data";
-import RegionCard from "@/components/RegionCard";
+import AnimateIn from "@/components/shared/AnimateIn";
+import MiraclesIntroHero from "@/components/eucharistic-miracles/MiraclesIntroHero";
+import MiraclesMapClient from "@/components/eucharistic-miracles/MiraclesMapClient";
+import MiraclesInfiniteGrid from "@/components/eucharistic-miracles/MiraclesInfiniteGrid";
+import MiracleSkiper from "@/components/eucharistic-miracles/MiracleSkiper";
+import { miracles, CONTINENT_MAP, CONTINENT_ORDER } from "@/components/eucharistic-miracles/miracles-data";
+import RegionCard from "@/components/eucharistic-miracles/RegionCard";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("miracles.meta");
@@ -59,7 +59,7 @@ async function Intro() {
           <AnimateIn delay={0.2} direction="right">
             <div className="relative rounded-sm overflow-hidden max-w-md mx-auto">
               <img
-                src="/carlo2.jpg"
+                src="/eucharistic-miracles/carlo2.jpg"
                 alt={t("photoAlt")}
                 className="w-full h-auto"
               />
@@ -80,30 +80,6 @@ for (const m of miracles) {
 const miracleRegions = Object.entries(countryCounts)
   .sort((a, b) => b[1] - a[1])
   .map(([name, count]) => ({ name, count }));
-
-const CONTINENT_MAP: Record<string, string> = {
-  "Italy": "Europe", "Germany": "Europe", "France": "Europe", "Poland": "Europe",
-  "Spain": "Europe", "Belgium": "Europe", "Austria": "Europe", "Czech Republic": "Europe",
-  "Portugal": "Europe", "Netherlands": "Europe", "Switzerland": "Europe", "Hungary": "Europe",
-  "Croatia": "Europe", "Lithuania": "Europe", "Romania": "Europe", "Ireland": "Europe",
-  "Malta": "Europe", "Scotland": "Europe", "Slovakia": "Europe", "Serbia": "Europe",
-  "Bulgaria": "Europe", "Slovenia": "Europe", "Luxembourg": "Europe", "Latvia": "Europe",
-  "Sweden": "Europe", "Denmark": "Europe", "Cyprus": "Europe", "Ukraine": "Europe",
-  "Argentina": "Americas", "Peru": "Americas", "Mexico": "Americas", "Chile": "Americas",
-  "Venezuela": "Americas", "Canada": "Americas", "United States": "Americas",
-  "Colombia": "Americas", "Ecuador": "Americas", "Brazil": "Americas",
-  "Paraguay": "Americas", "Bolivia": "Americas", "Uruguay": "Americas",
-  "Philippines": "Asia", "India": "Asia", "Japan": "Asia", "Indonesia": "Asia",
-  "South Korea": "Asia", "Vietnam": "Asia", "Georgia": "Asia",
-  "Egypt": "Middle East", "Israel": "Middle East", "Lebanon": "Middle East",
-  "Nigeria": "Africa", "Uganda": "Africa", "South Africa": "Africa",
-  "Kenya": "Africa", "Ethiopia": "Africa",
-  "Australia": "Oceania", "New Zealand": "Oceania",
-  "Martinique": "Americas",
-  "Réunion": "Africa",
-};
-
-const CONTINENT_ORDER = ["Europe", "Americas", "Asia", "Middle East", "Africa", "Oceania"];
 
 const byContinent = miracleRegions.reduce<Record<string, { name: string; count: number }[]>>(
   (acc, region) => {

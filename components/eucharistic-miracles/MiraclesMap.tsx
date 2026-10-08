@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
-import { Map, MapMarker, MarkerContent, MarkerTooltip, MapArc, type MapRef } from "@/components/ui/mapcn-map-arc";
-import { miracles } from "@/components/miracles-data";
+import { Map, MapMarker, MarkerContent, MarkerTooltip, MapArc, type MapRef } from "@/components/eucharistic-miracles/mapcn-map-arc";
+import { miracles } from "@/components/eucharistic-miracles/miracles-data";
 
 const ROME: [number, number] = [12.4534, 41.9029];
 

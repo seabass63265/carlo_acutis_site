@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import AnimateIn from "@/components/AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 const communityPhotos = [
-  "/donors.jpeg",
-  "/donors1.jpeg",
-  "/donors2.jpeg",
-  "/donors3.jpeg",
-  "/donors4.jpeg",
-  "/donors5.jpeg",
+  "/donate/donors.jpeg",
+  "/donate/donors1.jpeg",
+  "/donate/donors2.jpeg",
+  "/donate/donors3.jpeg",
+  "/donate/donors4.jpeg",
+  "/donate/donors5.jpeg",
 ];
 
 export default async function DonorsWall() {

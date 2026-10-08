@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { FiChevronDown } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import AnimateIn from "@/components/AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 const fieldWrap = "flex flex-col gap-2";
 const labelClass = "text-xs font-semibold tracking-widest uppercase text-navy/70";

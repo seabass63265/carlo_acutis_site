@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { usePathname } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { useSvgWipe } from "@/components/SvgWipeProvider";
+import { useSvgWipe } from "@/components/shared/SvgWipeProvider";
 import { useTranslations } from "next-intl";
 
 function GlobeIcon() {

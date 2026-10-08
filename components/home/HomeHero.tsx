@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { FiFacebook, FiMail, FiLinkedin } from "react-icons/fi";
-import { MinimalistHero } from "@/components/ui/minimalist-hero";
+import { MinimalistHero } from "@/components/shared/minimalist-hero";
 
 export default function HomeHero() {
   const t = useTranslations("home.hero");
@@ -22,7 +22,7 @@ export default function HomeHero() {
         e.preventDefault();
         window.dispatchEvent(new CustomEvent("carlo-story-click"));
       }}
-      imageSrc="/carloheropic0.png"
+      imageSrc="/home/carloheropic0.png"
       imageAlt={t("imageAlt")}
       overlayText={{ part1: t("overlayPart1"), part2: t.raw("overlayWords") as string[] }}
       socialLinks={[

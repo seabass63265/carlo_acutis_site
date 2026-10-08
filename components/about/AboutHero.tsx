@@ -9,17 +9,17 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const CASCADE = [
-  "/aboutus21.jpeg",
-  "/aboutus23.jpeg",
-  "/aboutus24.jpeg",
-  "/aboutus18.jpeg",
-  "/aboutus10.jpeg",
+  "/about-us/aboutus21.jpeg",
+  "/about-us/aboutus23.jpeg",
+  "/about-us/aboutus24.jpeg",
+  "/about-us/aboutus18.jpeg",
+  "/about-us/aboutus10.jpeg",
 ];
 
 const MAIN = [
-  "/aboutus25.jpeg",
-  "/aboutus22.JPG",
-  "/aboutus26.jpeg",
+  "/about-us/aboutus25.jpeg",
+  "/about-us/aboutus22.JPG",
+  "/about-us/aboutus26.jpeg",
 ];
 
 const THUMB_W   = 150;
@@ -244,7 +244,7 @@ export default function AboutHero() {
         {/* Team photo — bottom right (desktop only, animated via GSAP) */}
         <div className="ah-team-img absolute right-8 bottom-8 overflow-hidden"
           style={{ width: "38%", height: "52%", clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}>
-          <Image src="/aboutus19.jpeg" alt="" fill className="object-cover" sizes="40vw" />
+          <Image src="/about-us/aboutus19.jpeg" alt="" fill className="object-cover" sizes="40vw" />
         </div>
 
         {/* Bottom-left info */}

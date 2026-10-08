@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import AnimateIn from "@/components/AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("youth.meta");
@@ -67,7 +67,7 @@ async function Hero() {
         <AnimateIn delay={0.15} direction="left">
           <div className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-xl shadow-navy/10">
             <Image
-              src="/youthsitting.jpeg"
+              src="/youth-council/youthsitting.jpeg"
               alt={t("imageAlt")}
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -211,7 +211,7 @@ async function WhoCanApply() {
         <AnimateIn delay={0.12} direction="left">
           <div className="relative w-full aspect-[4/5] rounded-sm overflow-hidden shadow-xl shadow-navy/10">
             <Image
-              src="/youth2.jpg"
+              src="/youth-council/youth2.jpg"
               alt={t("imageAlt")}
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

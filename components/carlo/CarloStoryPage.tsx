@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import FlowArt, { FlowSection } from "@/components/ui/story-scroll";
+import FlowArt, { FlowSection } from "@/components/carlo/story-scroll";
 
 /* ─── Design tokens ────────────────────────────────────────────────────── */
 const C = {
@@ -581,12 +581,12 @@ export default function CarloStoryPage() {
             <div style={{ position: "relative", minHeight: 600 }}>
               <Fade delay={0.05}>
                 <div style={{ position: "absolute", top: 0, right: 10 }}>
-                  <PhotoCard src="/youngcarlo.png" alt={t("s01.photoAlt")} w={175} h={220} rotate={-2} caption={t("s01.photoCaption")} />
+                  <PhotoCard src="/shared/youngcarlo.png" alt={t("s01.photoAlt")} w={175} h={220} rotate={-2} caption={t("s01.photoCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.12}>
                 <div style={{ position: "absolute", top: 330, right: 40, zIndex: 4 }}>
-                  <PhotoCard src="/carlomom.png" alt={t("s01.momAlt")} w={190} h={180} rotate={1.5} caption={t("s01.momCaption")} />
+                  <PhotoCard src="/carlo/carlomom.png" alt={t("s01.momAlt")} w={190} h={180} rotate={1.5} caption={t("s01.momCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.18}>
@@ -632,7 +632,7 @@ export default function CarloStoryPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
             <Fade delay={0.06}>
-              <PhotoCard src="/carlopic2.jpg" alt={t("s02.photoAlt")} w={220} h={270} rotate={-1.5} caption={t("s02.photoCaption")} />
+              <PhotoCard src="/carlo/carlopic2.jpg" alt={t("s02.photoAlt")} w={220} h={270} rotate={-1.5} caption={t("s02.photoCaption")} />
             </Fade>
 
             <Fade delay={0.14}>
@@ -764,7 +764,7 @@ export default function CarloStoryPage() {
             <div style={{ position: "relative", minHeight: 340 }}>
               <Fade delay={0.1}>
                 <div style={{ position: "absolute", top: 0, left: 20 }}>
-                  <PhotoCard src="/carlopic3.jpg" alt={t("s05.photoAlt")} w={180} h={220} rotate={2} caption={t("s05.photoCaption")} />
+                  <PhotoCard src="/carlo/carlopic3.jpg" alt={t("s05.photoAlt")} w={180} h={220} rotate={2} caption={t("s05.photoCaption")} />
                 </div>
               </Fade>
               <Fade delay={0.22}>

@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
-import ChangeLanguageButton from "@/components/ChangeLanguageButton";
+import ChangeLanguageButton from "@/components/shared/ChangeLanguageButton";
 import { getTranslations } from "next-intl/server";
 
 const footerSections = [

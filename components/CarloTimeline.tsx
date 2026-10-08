@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import AnimateIn from "./AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 const timelineEvents = [
   {

@@ -10,16 +10,16 @@ const MIRACLES = [
     num: "I",
     person: "Matheus Vianna",
     year: "2013",
-    imageSrc: "/mircale1.png",
-    expandedImageSrc: "/miracle01.png",
+    imageSrc: "/eucharistic-miracles/mircale1.png",
+    expandedImageSrc: "/eucharistic-miracles/miracle01.png",
   },
   {
     key: "m2",
     num: "II",
     person: "Valeria Valverde",
     year: "2022",
-    imageSrc: "/miracle002.png",
-    expandedImageSrc: "/miracle02.png",
+    imageSrc: "/eucharistic-miracles/miracle002.png",
+    expandedImageSrc: "/eucharistic-miracles/miracle02.png",
   },
 ];
 

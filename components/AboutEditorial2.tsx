@@ -6,12 +6,12 @@ import { Link } from "@/i18n/navigation";
 const ease: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
 const GRID_PHOTOS = [
-  { src: "/aboutus10.jpeg", alt: "About us" },
-  { src: "/aboutus11.jpeg", alt: "About us" },
-  { src: "/aboutus12.jpeg", alt: "About us" },
-  { src: "/aboutus13.jpeg", alt: "About us" },
-  { src: "/aboutus14.jpeg", alt: "About us" },
-  { src: "/aboutus15.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus10.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus11.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus12.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus13.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus14.jpeg", alt: "About us" },
+  { src: "/about-us/aboutus15.jpeg", alt: "About us" },
 ];
 
 export default function AboutEditorial2() {
@@ -30,8 +30,8 @@ export default function AboutEditorial2() {
               className="flex gap-3 mb-8"
             >
               {[
-                { src: "/aboutus16.jpeg", alt: "About us", rotate: "-rotate-2" },
-                { src: "/aboutus17.jpeg", alt: "About us", rotate: "rotate-1" },
+                { src: "/about-us/aboutus16.jpeg", alt: "About us", rotate: "-rotate-2" },
+                { src: "/about-us/aboutus17.jpeg", alt: "About us", rotate: "rotate-1" },
               ].map(({ src, alt, rotate }, i) => (
                 <motion.div
                   key={src}

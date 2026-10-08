@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import AnimateIn from "@/components/AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 import { Link } from "@/i18n/navigation";
-import DonorsWall from "@/components/DonorsWall";
-import DonateHero from "@/components/DonateHero";
+import DonorsWall from "@/components/donate/DonorsWall";
+import DonateHero from "@/components/donate/DonateHero";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("donate.meta");
@@ -79,7 +79,7 @@ async function WhySupport() {
 }
 
 /* ─── Photo strip ────────────────────────────────────────────────────── */
-const photoStripSources = ["/aboutus26.jpeg", "/aboutus6.jpeg", "/Aboutus3.png"];
+const photoStripSources = ["/about-us/aboutus26.jpeg", "/about-us/aboutus6.jpeg", "/about-us/Aboutus3.png"];
 
 async function PhotoStrip() {
   const t = await getTranslations("donate.photos");

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import AnimateIn from "@/components/AnimateIn";
-import HashScroll from "@/components/HashScroll";
-import AboutHero from "@/components/AboutHero";
-import ScrollWaveGallery from "@/components/ScrollWaveGallery";
-import AboutScrollTypography from "@/components/AboutScrollTypography";
-import TeamShowcase, { type TeamMember } from "@/components/ui/team-showcase";
+import AnimateIn from "@/components/shared/AnimateIn";
+import HashScroll from "@/components/about/HashScroll";
+import AboutHero from "@/components/about/AboutHero";
+import ScrollWaveGallery from "@/components/about/ScrollWaveGallery";
+import AboutScrollTypography from "@/components/about/AboutScrollTypography";
+import TeamShowcase, { type TeamMember } from "@/components/about/team-showcase";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("about.meta");
@@ -23,7 +23,7 @@ const boardMembers: (Omit<TeamMember, "role" | "bio"> & { key: string })[] = [
     key: "josefina",
     id: "2",
     name: "Josefina Fernandez McEvoy",
-    image: "/jfm-foc.jpg",
+    image: "/about/board/jfm-foc.jpg",
     column: 2,
     social: { linkedin: "https://www.linkedin.com/in/josefinafernandezmcevoy/" },
   },
@@ -31,7 +31,7 @@ const boardMembers: (Omit<TeamMember, "role" | "bio"> & { key: string })[] = [
     key: "matthew",
     id: "7",
     name: "Father Matthew",
-    image: "/Fr.Matthew-FOC.png",
+    image: "/about/board/Fr.Matthew-FOC.png",
     column: 1,
     social: { linkedin: "#" },
   },
@@ -39,14 +39,14 @@ const boardMembers: (Omit<TeamMember, "role" | "bio"> & { key: string })[] = [
     key: "carmen",
     id: "1",
     name: "Carmen Romero",
-    image: "/carmenpic1.jpeg",
+    image: "/about/board/carmenpic1.jpeg",
     social: { linkedin: "https://www.linkedin.com/in/romerocarmen/" },
   },
   {
     key: "sebastian",
     id: "3",
     name: "Sebastian Rocha",
-    image: "/seaheadshot.jpg",
+    image: "/about/board/seaheadshot.jpg",
     objectPosition: "center 25%",
     social: { linkedin: "https://www.linkedin.com/in/sebastian-rocha1/" },
   },
@@ -54,7 +54,7 @@ const boardMembers: (Omit<TeamMember, "role" | "bio"> & { key: string })[] = [
     key: "johnny",
     id: "6",
     name: "Johnny Vrba",
-    image: "/JohnnyVrba_Headshot_02.webp",
+    image: "/about/board/JohnnyVrba_Headshot_02.webp",
     column: 3,
     social: { linkedin: "https://www.linkedin.com/in/vrba/" },
   },
@@ -62,7 +62,7 @@ const boardMembers: (Omit<TeamMember, "role" | "bio"> & { key: string })[] = [
     key: "john",
     id: "4",
     name: "John McEvoy",
-    image: "/john-foc.jpg",
+    image: "/about/board/john-foc.jpg",
     column: 2,
     social: { linkedin: "#" },
   },

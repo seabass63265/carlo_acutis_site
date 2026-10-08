@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { FiArrowRight, FiFacebook } from "react-icons/fi";
-import AnimateIn from "@/components/AnimateIn";
+import AnimateIn from "@/components/shared/AnimateIn";
 
 export type NewsCard = {
   date: string;

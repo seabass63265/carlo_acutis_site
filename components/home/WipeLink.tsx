@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { useSvgWipe } from "@/components/SvgWipeProvider";
+import { useSvgWipe } from "@/components/shared/SvgWipeProvider";
 
 export default function WipeLink({
   href,

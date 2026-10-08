@@ -11,14 +11,14 @@ if (typeof window !== "undefined") {
 }
 
 const IMAGES = [
-  "/aboutus25.jpeg",
-  "/aboutus22.JPG",
-  "/aboutus26.jpeg",
-  "/aboutus33.jpeg",
-  "/aboutus36.jpeg",
-  "/aboutus39.jpeg",
-  "/aboutus42.jpeg",
-  "/aboutus8.jpeg",
+  "/about-us/aboutus25.jpeg",
+  "/about-us/aboutus22.JPG",
+  "/about-us/aboutus26.jpeg",
+  "/about-us/aboutus33.jpeg",
+  "/about-us/aboutus36.jpeg",
+  "/about-us/aboutus39.jpeg",
+  "/about-us/aboutus42.jpeg",
+  "/about-us/aboutus8.jpeg",
 ];
 
 const ASPECT_RATIOS = ["3/2", "4/3", "5/4", "7/5"];

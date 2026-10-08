@@ -712,7 +712,7 @@
       "titleFiltered": "La Exposición Completa — {count, plural, one {# milagro} other {# milagros}} de {country}",
       "viewAll": "← Ver los {count} milagros",
       "countFiltered": "{count, plural, one {# milagro documentado} other {# milagros documentados}} de {country}. Haz clic en cualquier tarjeta para leer más.",
-      "intro": "Desliza o haz scroll para explorar cada milagro que Carlo documentó. Haz clic en cualquier tarjeta para saber más.",
+      "intro": "Explora cada milagro que documentó Carlo, organizado por región. Haz clic en cualquier tarjeta para saber más.",
       "sources": "Fuentes",
       "sourcePanel": "Exposición de Carlo Acutis: panel individual",
       "sourceExhibition": "Exposición de Milagros Eucarísticos de Carlo Acutis",

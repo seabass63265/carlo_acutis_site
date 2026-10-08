@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { CustomEase } from "gsap/CustomEase";
 import { useTranslations } from "next-intl";
-import { miracles } from "@/components/miracles-data";
+import { miracles } from "@/components/eucharistic-miracles/miracles-data";
 
 export default function MiraclesIntroHero() {
   const t = useTranslations("miracles");
@@ -134,7 +134,7 @@ export default function MiraclesIntroHero() {
           }}
         >
           <img
-            src="/calrohero1.png"
+            src="/eucharistic-miracles/calrohero1.png"
             alt=""
             className="absolute top-1/2 left-1/2 w-full h-full object-cover"
             style={{ transform: "translate(-50%, -50%) scale(2)" }}

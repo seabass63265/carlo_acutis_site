@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import { getLocale, getTranslations } from "next-intl/server";
-import AnimateIn from "@/components/AnimateIn";
-import HomeHero from "@/components/HomeHero";
-import CarloStoryButton from "@/components/CarloStoryButton";
-import NewsGrid, { type NewsCard } from "@/components/NewsGrid";
-import WipeLink from "@/components/WipeLink";
+import AnimateIn from "@/components/shared/AnimateIn";
+import HomeHero from "@/components/home/HomeHero";
+import CarloStoryButton from "@/components/home/CarloStoryButton";
+import NewsGrid, { type NewsCard } from "@/components/home/NewsGrid";
+import WipeLink from "@/components/home/WipeLink";
 import { getFacebookPosts, type FacebookPost } from "@/lib/facebook";
 
 /* ─── Mission ────────────────────────────────────────────────────────── */
@@ -96,7 +96,7 @@ async function Mission() {
               }}
             >
               <Image
-                src="/calro1.webp"
+                src="/home/calro1.webp"
                 alt={t("imageAlt")}
                 fill
                 className="object-cover object-center"
@@ -122,7 +122,7 @@ async function WhoWasCarlo() {
             <div className="relative">
               <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
                 <Image
-                  src="/youngcarlo.png"
+                  src="/shared/youngcarlo.png"
                   alt={t("imageAlt")}
                   fill
                   className="object-cover object-top"
@@ -273,7 +273,7 @@ async function Initiatives() {
             <CardMeta number="01" tags={t.raw("card01.tags") as string[]} />
             <div className="relative w-full h-[280px] lg:h-[600px] overflow-hidden bg-navy mb-6">
               <Image
-                src="/aboutus43.jpeg"
+                src="/about-us/aboutus43.jpeg"
                 alt={t("card01.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
@@ -295,7 +295,7 @@ async function Initiatives() {
             <CardMeta number="02" tags={t.raw("card02.tags") as string[]} />
             <div className="relative w-full h-[240px] lg:h-[350px] overflow-hidden bg-navy mb-6">
               <Image
-                src="/aboutus13.jpeg"
+                src="/about-us/aboutus13.jpeg"
                 alt={t("card02.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -317,7 +317,7 @@ async function Initiatives() {
             <CardMeta number="03" tags={t.raw("card03.tags") as string[]} />
             <div className="relative w-full h-[280px] lg:w-[280px] lg:h-[280px] lg:rounded-full overflow-hidden bg-navy mb-8 lg:mx-auto">
               <Image
-                src="/aboutpage01.png"
+                src="/shared/aboutpage01.png"
                 alt={t("card03.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 280px"
@@ -338,7 +338,7 @@ async function Initiatives() {
           >
             <div className="relative w-full h-[240px] overflow-hidden bg-navy mb-8">
               <Image
-                src="/aboutus21.jpeg"
+                src="/about-us/aboutus21.jpeg"
                 alt={t("card04.imageAlt")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 46vw"
@@ -361,7 +361,7 @@ async function Initiatives() {
 /* ─── News ───────────────────────────────────────────────────────────── */
 // Shown whenever FACEBOOK_PAGE_ID / FACEBOOK_PAGE_ACCESS_TOKEN aren't set, or
 // the Graph API request fails — keeps the section populated either way.
-const FALLBACK_POST_IMAGE = "/gallery/church-dome.jpg";
+const FALLBACK_POST_IMAGE = "/home/gallery/church-dome.jpg";
 
 function fbPostToCard(post: FacebookPost, locale: string, fallbackTitle: string): NewsCard {
   const message = post.message ?? "";
@@ -391,7 +391,7 @@ async function LatestNews() {
       excerpt: t("fallback1Excerpt"),
       href: "#",
       external: false,
-      image: "/gallery/vatican-square.jpg",
+      image: "/home/gallery/vatican-square.jpg",
     },
     {
       date: t("fallback2Date"),
@@ -400,7 +400,7 @@ async function LatestNews() {
       excerpt: t("fallback2Excerpt"),
       href: "#",
       external: false,
-      image: "/gallery/cathedral-interior.jpg",
+      image: "/home/gallery/cathedral-interior.jpg",
     },
     {
       date: t("fallback3Date"),
@@ -409,7 +409,7 @@ async function LatestNews() {
       excerpt: t("fallback3Excerpt"),
       href: "#",
       external: false,
-      image: "/gallery/candles-church.jpg",
+      image: "/home/gallery/candles-church.jpg",
     },
   ];
 
