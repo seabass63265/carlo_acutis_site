@@ -855,7 +855,7 @@
       "titleFiltered": "L'exposition complète — {count, plural, one {# miracle} other {# miracles}} de {country}",
       "viewAll": "← Voir les {count} miracles",
       "countFiltered": "{count, plural, one {# miracle documenté} other {# miracles documentés}} de {country}. Cliquez sur une carte pour en savoir plus.",
-      "intro": "Faites défiler ou glissez pour explorer chaque miracle documenté par Carlo. Cliquez sur une carte pour en savoir plus.",
+      "intro": "Faites glisser ou défilez pour explorer chaque miracle documenté par Carlo. Cliquez sur une carte pour en savoir plus.",
       "sources": "Sources",
       "sourcePanel": "Exposition de Carlo Acutis — panneau individuel",
       "sourceExhibition": "Exposition des miracles eucharistiques de Carlo Acutis",

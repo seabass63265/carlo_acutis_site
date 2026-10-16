@@ -855,7 +855,7 @@
       "titleFiltered": "La mostra completa — {count, plural, one {# miracolo} other {# miracoli}} da {country}",
       "viewAll": "← Vedi tutti i {count} miracoli",
       "countFiltered": "{count, plural, one {# miracolo documentato} other {# miracoli documentati}} da {country}. Clicca su una scheda per saperne di più.",
-      "intro": "Scorri o trascina per esplorare ogni miracolo documentato da Carlo. Clicca su una scheda per saperne di più.",
+      "intro": "Trascina o scorri per esplorare ogni miracolo documentato da Carlo. Clicca su una scheda per saperne di più.",
       "sources": "Fonti",
       "sourcePanel": "Mostra di Carlo Acutis — pannello individuale",
       "sourceExhibition": "Mostra dei miracoli eucaristici di Carlo Acutis",
