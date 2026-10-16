@@ -234,36 +234,25 @@
       "body2Before": "Der Jugendrat arbeitet in einer",
       "body2Emphasis": "beratenden",
       "body2After": "– nicht treuhänderischen – Funktion. Er übt keine rechtliche Governance-Befugnis über die Organisation aus. Ihre Aufgabe ist es, die Perspektive der Menschen einzubringen, die wir tatsächlich erreichen wollen, und dafür zu sorgen, dass sie dort gehört wird, wo Entscheidungen getroffen werden.",
-      "meetBoard": "Den Vorstand kennenlernen"
+      "meetBoard": "Den Vorstand kennenlernen",
+      "imageAlt": "Mitglieder des Jugendrats bei einem Treffen"
     },
     "expect": {
       "eyebrow": "Was Sie tun würden",
-      "title": "Der spannende Teil kommt mit echten Verpflichtungen",
-      "intro": "Eine Berufung in den Rat bedeutet, dass andere auf Sie zählen. So sieht eine Amtszeit aus – sie ist ein einjähriges Engagement.",
+      "title": "Führen, lernen und etwas bewirken",
+      "intro": "Sammeln Sie Führungserfahrung, wirken Sie an bedeutungsvollen Projekten mit und stärken Sie dabei Ihren Lebenslauf.",
       "items": [
-        {
-          "title": "Vierteljährliche Treffen",
-          "body": "Treffen Sie sich viermal im Jahr mit dem Rat, um Programme zu prüfen, die Richtung mitzugestalten und das Jahresprojekt zu planen."
-        },
         {
           "title": "Monatliche Austauschtermine",
           "body": "Ein kurzer monatlicher Kontakt, damit Sie zwischen den Treffen verbunden bleiben und Projekte vorankommen."
         },
         {
-          "title": "Ein jährliches Projekt",
-          "body": "Leiten oder begleiten Sie mindestens ein Projekt pro Amtszeit, das die Mission voranbringt – Sie helfen zu entscheiden, worum es geht."
-        },
-        {
           "title": "Empfehlungen an den Vorstand",
-          "body": "Reichen Sie schriftliche Empfehlungen ein, damit Ihre Ideen den Vorstand in einer umsetzbaren Form erreichen."
+          "body": "Teilen Sie Ihre Ideen mit dem Vorstand, damit er Ihre Empfehlungen umsetzen kann."
         },
         {
-          "title": "Botschafter sein",
-          "body": "Vertreten Sie das Charisma von Freunde von Carlo in Ihrer Pfarrei, Schule, Gemeinschaft und online."
-        },
-        {
-          "title": "Ganz dabei sein",
-          "body": "Nehmen Sie an allen Aktivitäten des Rates teil und bringen Sie die Perspektive Ihrer eigenen Gemeinschaft ein."
+          "title": "Ein jährliches Projekt",
+          "body": "Leiten Sie ein Projekt, das die Mission voranbringt – Sie entscheiden, worum es geht."
         }
       ]
     },

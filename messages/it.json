@@ -115,36 +115,25 @@
       "body2Before": "Il Consiglio giovanile opera con una funzione",
       "body2Emphasis": "consultiva",
       "body2After": "— non fiduciaria. Non ha alcuna autorità legale di governo sull'organizzazione. Il tuo compito è portare il punto di vista delle persone che vogliamo davvero raggiungere e far sì che venga ascoltato dove si prendono le decisioni.",
-      "meetBoard": "Conosci il Consiglio di amministrazione"
+      "meetBoard": "Conosci il Consiglio di amministrazione",
+      "imageAlt": "Membri del Consiglio dei Giovani riuniti"
     },
     "expect": {
       "eyebrow": "Cosa faresti",
-      "title": "La parte divertente comporta impegni concreti",
-      "intro": "Essere nominato nel Consiglio significa che le persone contano su di te. Ecco come si svolge un mandato: è un impegno di un anno.",
+      "title": "Guida, impara e fai la differenza",
+      "intro": "Sviluppa esperienza di leadership, contribuisci a iniziative significative e arricchisci il tuo curriculum lungo il percorso.",
       "items": [
-        {
-          "title": "Incontri trimestrali",
-          "body": "Incontrare il Consiglio quattro volte l'anno per esaminare i programmi, dare il tuo parere sulla direzione e pianificare il progetto annuale."
-        },
         {
           "title": "Verifiche mensili",
           "body": "Un breve contatto mensile per restare in collegamento tra un incontro e l'altro e far progredire i progetti."
         },
         {
-          "title": "Un progetto annuale",
-          "body": "Guidare o co-guidare almeno un progetto per mandato che faccia avanzare la missione: aiuterai a scegliere quale."
-        },
-        {
           "title": "Raccomandazioni al Consiglio di amministrazione",
-          "body": "Presentare raccomandazioni scritte perché le tue idee arrivino al Consiglio di amministrazione in una forma che possa mettere in pratica."
+          "body": "Condividi le tue idee con il Consiglio di amministrazione, così potrà metterle in pratica."
         },
         {
-          "title": "Sii un ambasciatore",
-          "body": "Rappresentare il carisma di Friends of Carlo nella tua parrocchia, scuola, comunità e online."
-        },
-        {
-          "title": "Partecipa pienamente",
-          "body": "Prendere parte a tutte le attività del Consiglio e portare a tavola il punto di vista della tua comunità."
+          "title": "Un progetto annuale",
+          "body": "Guida un progetto che faccia avanzare la missione — scegli tu quale."
         }
       ]
     },

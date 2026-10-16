@@ -67,7 +67,7 @@ async function Hero() {
         <AnimateIn delay={0.15} direction="left">
           <div className="relative w-full aspect-[4/3] rounded-sm overflow-hidden shadow-xl shadow-navy/10">
             <Image
-              src="/youth-council/youthsitting.jpeg"
+              src="/carlospeakingtokids.png"
               alt={t("imageAlt")}
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -105,12 +105,14 @@ async function Purpose() {
             </p>
           </AnimateIn>
           <AnimateIn delay={0.18}>
-            <div className="bg-cream border border-cream-dark rounded-sm p-8">
-              <p className="text-navy/70 text-base leading-relaxed">
-                {t("body2Before")}{" "}
-                <span className="font-semibold text-navy">{t("body2Emphasis")}</span>{" "}
-                {t("body2After")}
-              </p>
+            <div className="relative min-h-[260px] h-full rounded-sm overflow-hidden shadow-xl shadow-navy/10">
+              <Image
+                src="/youth-council/youthsitting.jpeg"
+                alt={t("imageAlt")}
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-cover"
+              />
             </div>
           </AnimateIn>
         </div>

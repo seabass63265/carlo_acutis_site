@@ -115,36 +115,25 @@
       "body2Before": "Le Conseil des jeunes agit à titre",
       "body2Emphasis": "consultatif",
       "body2After": "— et non fiduciaire. Il n'exerce aucune autorité légale de gouvernance sur l'organisation. Votre rôle est d'apporter le point de vue des personnes que nous cherchons réellement à atteindre, et de veiller à ce qu'il soit entendu là où les décisions se prennent.",
-      "meetBoard": "Rencontrer le conseil d'administration"
+      "meetBoard": "Rencontrer le conseil d'administration",
+      "imageAlt": "Membres du Conseil des jeunes réunis"
     },
     "expect": {
       "eyebrow": "Ce que vous feriez",
-      "title": "La partie amusante s'accompagne d'engagements réels",
-      "intro": "Être nommé au Conseil signifie que des personnes comptent sur vous. Voici à quoi ressemble un mandat : c'est un engagement d'un an.",
+      "title": "Diriger, apprendre et faire la différence",
+      "intro": "Développez une expérience de leadership, contribuez à des initiatives porteuses de sens et enrichissez votre CV en chemin.",
       "items": [
-        {
-          "title": "Réunions trimestrielles",
-          "body": "Rencontrer le Conseil quatre fois par an pour examiner les programmes, donner votre avis sur l'orientation et planifier le projet annuel."
-        },
         {
           "title": "Points mensuels",
           "body": "Un bref contact mensuel pour rester en lien entre les réunions et faire avancer les projets."
         },
         {
-          "title": "Un projet annuel",
-          "body": "Diriger ou co-diriger au moins un projet par mandat qui fait progresser la mission : vous contribuez à choisir lequel."
-        },
-        {
           "title": "Recommandations au conseil d'administration",
-          "body": "Soumettre des recommandations écrites pour que vos idées parviennent au conseil d'administration sous une forme qu'il peut mettre en œuvre."
+          "body": "Partagez vos idées avec le conseil d'administration afin qu'il puisse les mettre en œuvre."
         },
         {
-          "title": "Soyez un ambassadeur",
-          "body": "Représenter le charisme de Friends of Carlo dans votre paroisse, votre école, votre communauté et en ligne."
-        },
-        {
-          "title": "Participez pleinement",
-          "body": "Prendre part à toutes les activités du Conseil et apporter à la table le point de vue de votre propre communauté."
+          "title": "Un projet annuel",
+          "body": "Dirigez un projet qui fait progresser la mission — vous choisissez lequel."
         }
       ]
     },

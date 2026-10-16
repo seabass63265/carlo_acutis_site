@@ -115,36 +115,25 @@
       "body2Before": "O Conselho Jovem atua em caráter",
       "body2Emphasis": "consultivo",
       "body2After": "— e não fiduciário. Ele não possui autoridade legal de governança sobre a organização. Sua função é trazer a perspectiva das pessoas que realmente queremos alcançar e garantir que ela seja ouvida onde as decisões são tomadas.",
-      "meetBoard": "Conheça o Conselho de Administração"
+      "meetBoard": "Conheça o Conselho de Administração",
+      "imageAlt": "Membros do Conselho de Jovens reunidos"
     },
     "expect": {
       "eyebrow": "O que você faria",
-      "title": "A parte divertida vem com compromissos reais",
-      "intro": "Ser nomeado para o Conselho significa que as pessoas contam com você. Veja como é um mandato: é um compromisso de um ano.",
+      "title": "Lidere, aprenda e faça a diferença",
+      "intro": "Desenvolva experiência em liderança, contribua com iniciativas significativas e fortaleça seu currículo ao longo do caminho.",
       "items": [
-        {
-          "title": "Reuniões trimestrais",
-          "body": "Reunir-se com o Conselho quatro vezes por ano para revisar programas, opinar sobre o rumo e planejar o projeto anual."
-        },
         {
           "title": "Acompanhamentos mensais",
           "body": "Um breve contato mensal para manter-se conectado entre as reuniões e fazer os projetos andarem."
         },
         {
-          "title": "Um projeto anual",
-          "body": "Liderar ou coliderar pelo menos um projeto por mandato que avance a missão — você ajuda a escolher qual."
-        },
-        {
           "title": "Recomendações ao Conselho de Administração",
-          "body": "Enviar recomendações por escrito para que suas ideias cheguem ao Conselho de Administração em uma forma que possa ser colocada em prática."
+          "body": "Compartilhe suas ideias com o Conselho de Administração, para que possam colocar suas recomendações em prática."
         },
         {
-          "title": "Seja um embaixador",
-          "body": "Representar o carisma da Friends of Carlo na sua paróquia, escola, comunidade e on-line."
-        },
-        {
-          "title": "Participe por completo",
-          "body": "Tomar parte em todas as atividades do Conselho e levar à mesa a perspectiva da sua própria comunidade."
+          "title": "Um projeto anual",
+          "body": "Lidere um projeto que avance a missão — você escolhe qual."
         }
       ]
     },

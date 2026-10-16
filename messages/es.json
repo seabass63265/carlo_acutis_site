@@ -230,40 +230,29 @@
     "purpose": {
       "eyebrow": "Qué es",
       "title": "Un órgano consultivo de la Junta Directiva",
-      "body1": "El Consejo Juvenil asesora a la Junta Directiva y a la Directora Ejecutiva en temas de programación juvenil, evangelización digital y cultura organizacional. Cada año lidera al menos un proyecto en favor de la misión, y sus miembros son embajadores del carisma de la organización en sus parroquias, escuelas, comunidades e internet.",
+      "body1": "El Consejo Juvenil asesora a la Junta Directiva en temas de programación juvenil y evangelización digital. Tu función es aportar la perspectiva de las personas a las que realmente buscamos llegar, y asegurarte de que se escuche donde se toman las decisiones.",
       "body2Before": "El Consejo Juvenil actúa en calidad",
       "body2Emphasis": "consultiva",
       "body2After": "—no fiduciaria—. No tiene autoridad legal de gobierno sobre la organización. Tu tarea es aportar la perspectiva de las personas a las que realmente queremos llegar, y asegurarte de que se escuche donde se toman las decisiones.",
-      "meetBoard": "Conoce a la Junta Directiva"
+      "meetBoard": "Conoce a la Junta Directiva",
+      "imageAlt": "Miembros del Consejo de Jóvenes reunidos"
     },
     "expect": {
       "eyebrow": "Qué harías",
-      "title": "La parte divertida viene con compromisos reales",
-      "intro": "Ser nombrado en el Consejo significa que otras personas cuentan contigo. Así es un período: es un compromiso de un año.",
+      "title": "Lidera, aprende y marca la diferencia",
+      "intro": "Desarrolla experiencia en liderazgo, contribuye a iniciativas significativas y fortalece tu currículum en el camino.",
       "items": [
-        {
-          "title": "Reuniones trimestrales",
-          "body": "Reunirte con el Consejo cuatro veces al año para revisar programas, opinar sobre la dirección y planear el proyecto anual."
-        },
         {
           "title": "Seguimientos mensuales",
           "body": "Un breve contacto mensual para mantenerte conectado entre reuniones y que los proyectos avancen."
         },
         {
-          "title": "Un proyecto anual",
-          "body": "Liderar o co-liderar al menos un proyecto por período que impulse la misión: tú ayudas a elegir cuál es."
-        },
-        {
           "title": "Recomendaciones a la Junta",
-          "body": "Presentar recomendaciones por escrito para que tus ideas lleguen a la Junta Directiva en una forma que pueda poner en práctica."
+          "body": "Comparte tus ideas con la Junta Directiva, para que puedan poner en práctica tus recomendaciones."
         },
         {
-          "title": "Sé embajador",
-          "body": "Representar el carisma de Friends of Carlo en tu parroquia, escuela, comunidad y en línea."
-        },
-        {
-          "title": "Participa plenamente",
-          "body": "Tomar parte en todas las actividades del Consejo y llevar a la mesa la perspectiva de tu propia comunidad."
+          "title": "Un proyecto anual",
+          "body": "Lidera un proyecto que impulse la misión — tú eliges cuál."
         }
       ]
     },

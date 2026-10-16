@@ -230,40 +230,29 @@
     "purpose": {
       "eyebrow": "What It Is",
       "title": "An advisory body to the Board of Directors",
-      "body1": "The Youth Council advises the Board of Directors and Executive Director on matters relating to youth programming, digital evangelization, and organizational culture. It leads at least one project each year in furtherance of the mission, and its members serve as ambassadors of the organization's charism within their parishes, schools, communities, and the internet.",
+      "body1": "The Youth Council advises the Board of Directors on matters relating to youth programming and digital evangelization. Your job is to bring the perspective of the people we're actually trying to reach, and to make sure it's heard where decisions get made.",
       "body2Before": "The Youth Council operates in an",
       "body2Emphasis": "advisory",
       "body2After": "— not fiduciary — capacity. It does not hold legal governance authority over the organization. Your job is to bring the perspective of the people we're actually trying to reach, and to make sure it's heard where decisions get made.",
-      "meetBoard": "Meet the Board of Directors"
+      "meetBoard": "Meet the Board of Directors",
+      "imageAlt": "Youth Council members meeting together"
     },
     "expect": {
       "eyebrow": "What You'd Do",
-      "title": "The fun part comes with real commitments",
-      "intro": "Being appointed to the Council means people are counting on you. Here's what a term looks like — it's a one-year commitment.",
+      "title": "Lead, Learn, and Make a Difference",
+      "intro": "Build leadership experience, contribute to meaningful initiatives, and strengthen your resume along the way.",
       "items": [
-        {
-          "title": "Quarterly meetings",
-          "body": "Meet with the Council four times a year to review programs, weigh in on direction, and plan the annual project."
-        },
         {
           "title": "Monthly check-ins",
           "body": "A short monthly touchpoint to stay connected between meetings and keep projects moving."
         },
         {
-          "title": "One annual project",
-          "body": "Lead or co-lead at least one project per term that advances the mission — you help choose what it is."
-        },
-        {
           "title": "Recommendations to the Board",
-          "body": "Submit written recommendations so your ideas reach the Board of Directors in a form they can act on."
+          "body": "Share your ideas with the Board of Directors, so they can implement your recommendations."
         },
         {
-          "title": "Be an ambassador",
-          "body": "Represent the Friends of Carlo charism in your parish, school, community, and online."
-        },
-        {
-          "title": "Show up fully",
-          "body": "Participate in all Council activities and bring the perspective of your own community to the table."
+          "title": "One annual project",
+          "body": "Lead one project that advances the mission — you choose what it is."
         }
       ]
     },
@@ -272,7 +261,7 @@
       "title": "If this sounds like you, apply",
       "requirements": [
         {
-          "value": "14–21",
+          "value": "Ages 14–21",
           "label": "Open to applicants between the ages of 14 and 21"
         },
         {
