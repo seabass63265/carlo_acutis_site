@@ -77,6 +77,7 @@ function PhotoCard({
   w = 200,
   h = 160,
   className,
+  imgClassName,
   style,
 }: {
   src: string;
@@ -86,6 +87,7 @@ function PhotoCard({
   w?: number;
   h?: number;
   className?: string;
+  imgClassName?: string;
   style?: React.CSSProperties;
 }) {
   return (
@@ -104,7 +106,7 @@ function PhotoCard({
       transition={{ type: "spring", stiffness: 260, damping: 22 }}
     >
       <Tape style={{ top: -13, left: "50%", transform: "translateX(-50%) rotate(-1.5deg)", width: 52, height: 20 }} />
-      <div style={{ position: "relative", overflow: "hidden", width: w, height: h }}>
+      <div className={imgClassName} style={{ position: "relative", overflow: "hidden", width: w, height: h }}>
         <Image src={src} alt={alt} fill sizes="300px" className="object-cover" />
       </div>
       {caption && (
@@ -888,6 +890,17 @@ export default function CarloStoryPage() {
                 <p style={{ fontFamily: C.bebas, fontSize: 13, color: C.gold, letterSpacing: "0.18em", marginBottom: 4 }}>{t("s08.canonizedLabel")}</p>
                 <p style={{ fontFamily: C.bebas, fontSize: 28, color: "#fff", lineHeight: 1 }}>{t("s08.canonizedDate")}</p>
                 <p style={{ fontFamily: C.caveat, fontSize: 13, color: "rgba(255,255,255,0.3)", marginTop: 6 }}>{t("s08.canonizedNote")}</p>
+              </div>
+            </Fade>
+
+            <Fade delay={0.14}>
+              <div className="relative h-[280px] md:h-auto md:flex md:gap-[18px]" style={{ marginBottom: 28 }}>
+                <div className="absolute top-0 left-0 z-[2] md:static">
+                  <PhotoCard src="/carlo/historycont0.png" alt={t("s08.photo0Alt")} w={210} h={165} imgClassName="md:!w-[340px] md:!h-[270px]" rotate={-3} />
+                </div>
+                <div className="absolute top-[130px] left-[110px] z-[3] md:static">
+                  <PhotoCard src="/carlo/historycont1.png" alt={t("s08.photo1Alt")} w={210} h={165} imgClassName="md:!w-[340px] md:!h-[270px]" rotate={3} />
+                </div>
               </div>
             </Fade>
 

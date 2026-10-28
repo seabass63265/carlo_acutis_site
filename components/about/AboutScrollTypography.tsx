@@ -16,7 +16,6 @@ const STORY_IMAGES = [
   "/about-us/aboutus20.jpeg",
   "/about-us/aboutus27.jpeg",
   "/about-us/aboutus28.jpeg",
-  "/about-us/aboutus29.jpeg",
 ];
 
 const ASPECT_RATIOS = ["3/2", "4/3", "5/4", "7/5"];

@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
   }
 
   const resend = new Resend(apiKey);
-  const from = process.env.CONTACT_FROM_EMAIL || "Friends of Carlo <onboarding@resend.dev>";
+  const from = process.env.CONTACT_FROM_EMAIL || "Friends of St. Carlo Acutis <onboarding@resend.dev>";
 
   const { error } = await resend.emails.send({
     from,

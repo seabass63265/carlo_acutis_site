@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
 const IMAGES = [
   "/about-us/aboutus25.jpeg",
   "/about-us/aboutus22.JPG",
-  "/about-us/aboutus26.jpeg",
+  "/about-us/newaboutus.png",
   "/about-us/aboutus33.jpeg",
   "/about-us/aboutus36.jpeg",
   "/about-us/aboutus39.jpeg",

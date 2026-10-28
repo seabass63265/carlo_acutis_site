@@ -9,7 +9,7 @@
     "skip": "Passer →",
     "menuToggle": "Afficher ou masquer le menu de navigation",
     "changeLanguage": "Changer de langue",
-    "brand": "Friends of Carlo",
+    "brand": "Friends of St. Carlo Acutis",
     "tagline": "Bâtir une communauté mondiale de jeunes, de foi, de technologie et de service"
   },
   "footer": {
@@ -32,12 +32,12 @@
     "miracleArchive": "Archives des miracles",
     "prayerRequests": "Demandes de prière",
     "speakingRequests": "Demandes d'intervention",
-    "copyright": "© {year} Friends of Carlo. Tous droits réservés.",
+    "copyright": "© {year} Friends of St. Carlo Acutis. Tous droits réservés.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "accessibility": "Accessibilité",
     "changeLanguage": "🌐 Changer de langue",
-    "brand": "Friends of Carlo"
+    "brand": "Friends of St. Carlo Acutis"
   },
   "contact": {
     "titleLine1": "PARLONS-EN",
@@ -681,8 +681,10 @@
       "aria": "Son histoire continue",
       "body": "La vie de Carlo a pu être courte, mais son impact ne cesse de grandir chaque jour. À travers les miracles reconnus par l'Église et les millions de personnes inspirées par son exemple, Carlo nous rappelle que la sainteté n'est pas réservée à quelques-uns. C'est un appel qui nous est adressé à tous.",
       "canonizedLabel": "CANONISÉ",
-      "canonizedDate": "27 AVRIL 2025",
+      "canonizedDate": "7 SEPTEMBRE 2025",
       "canonizedNote": "Le premier saint millénaire",
+      "photo0Alt": "L'héritage de Carlo Acutis",
+      "photo1Alt": "L'héritage de Carlo Acutis",
       "quote": "Tous les hommes naissent comme des originaux, mais beaucoup meurent en photocopies.",
       "author": "Carlo Acutis"
     },
@@ -837,10 +839,10 @@
         },
         {
           "event": "Carlo est canonisé",
-          "detail": "27 avril, Rome"
+          "detail": "7 septembre, Rome"
         }
       ],
-      "closingA": "Le 27 avril 2025, Carlo Acutis a été officiellement déclaré",
+      "closingA": "Le 7 septembre 2025, Carlo Acutis a été officiellement déclaré",
       "closingB": "saint de l'Église catholique."
     },
     "heroTitle": "{count} miracles",

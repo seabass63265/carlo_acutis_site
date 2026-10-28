@@ -9,7 +9,7 @@
     "skip": "Überspringen →",
     "menuToggle": "Navigationsmenü ein- und ausblenden",
     "changeLanguage": "Sprache ändern",
-    "brand": "Freunde von Carlo",
+    "brand": "Freunde von Hl. Carlo Acutis",
     "tagline": "Aufbau einer weltweiten Gemeinschaft für Jugend, Glaube, Technik und Dienst"
   },
   "footer": {
@@ -32,12 +32,12 @@
     "miracleArchive": "Wunder-Archiv",
     "prayerRequests": "Gebetsanliegen",
     "speakingRequests": "Vortragsanfragen",
-    "copyright": "© {year} Freunde von Carlo. Alle Rechte vorbehalten.",
+    "copyright": "© {year} Freunde von Hl. Carlo Acutis. Alle Rechte vorbehalten.",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "accessibility": "Barrierefreiheit",
     "changeLanguage": "🌐 Sprache ändern",
-    "brand": "Freunde von Carlo"
+    "brand": "Freunde von Hl. Carlo Acutis"
   },
   "contact": {
     "titleLine1": "LASST UNS",
@@ -689,10 +689,10 @@
         },
         {
           "event": "Carlo wird heiliggesprochen",
-          "detail": "27. April, Rom"
+          "detail": "7. September, Rom"
         }
       ],
-      "closingA": "Am 27. April 2025 wurde Carlo Acutis offiziell zum",
+      "closingA": "Am 7. September 2025 wurde Carlo Acutis offiziell zum",
       "closingB": "Heiligen der katholischen Kirche erklärt."
     },
     "yearAD": "n. Chr.",
@@ -1645,8 +1645,10 @@
       "aria": "Seine Geschichte geht weiter",
       "body": "Carlos Leben mag kurz gewesen sein, doch seine Wirkung wächst jeden Tag weiter. Durch die von der Kirche anerkannten Wunder und die Millionen Menschen, die sich von seinem Beispiel inspirieren lassen, erinnert Carlo uns daran, dass Heiligkeit nicht nur wenigen vorbehalten ist. Sie ist etwas, wozu jeder von uns berufen ist.",
       "canonizedLabel": "HEILIGGESPROCHEN",
-      "canonizedDate": "27. APRIL 2025",
+      "canonizedDate": "7. SEPTEMBER 2025",
       "canonizedNote": "Der erste Heilige des Millennials",
+      "photo0Alt": "Das Vermächtnis von Carlo Acutis",
+      "photo1Alt": "Das Vermächtnis von Carlo Acutis",
       "quote": "Alle Menschen werden als Originale geboren, aber viele sterben als Fotokopien.",
       "author": "Carlo Acutis"
     },

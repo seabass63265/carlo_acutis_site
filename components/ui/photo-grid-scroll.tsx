@@ -27,7 +27,6 @@ const IMAGES = [
   "/about-us/aboutus26.jpeg",
   "/about-us/aboutus27.jpeg",
   "/about-us/aboutus28.jpeg",
-  "/about-us/aboutus29.jpeg",
   "/about-us/aboutus30.jpeg",
   "/about-us/aboutus31.jpeg",
 ];

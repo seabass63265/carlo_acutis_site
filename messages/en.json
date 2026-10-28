@@ -9,7 +9,7 @@
     "skip": "Skip →",
     "menuToggle": "Toggle navigation menu",
     "changeLanguage": "Change language",
-    "brand": "Friends of Carlo",
+    "brand": "Friends of St. Carlo Acutis",
     "tagline": "Building a Global Community of Youth, Faith, Technology & Service"
   },
   "footer": {
@@ -32,12 +32,12 @@
     "miracleArchive": "Miracle Archive",
     "prayerRequests": "Prayer Requests",
     "speakingRequests": "Speaking Requests",
-    "copyright": "© {year} Friends of Carlo. All rights reserved.",
+    "copyright": "© {year} Friends of St. Carlo Acutis. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "accessibility": "Accessibility",
     "changeLanguage": "🌐 Change Language",
-    "brand": "Friends of Carlo"
+    "brand": "Friends of St. Carlo Acutis"
   },
   "contact": {
     "titleLine1": "LET'S",
@@ -689,10 +689,10 @@
         },
         {
           "event": "Carlo Canonized Saint",
-          "detail": "April 27, Rome"
+          "detail": "September 7, Rome"
         }
       ],
-      "closingA": "On April 27, 2025, Carlo Acutis was officially declared",
+      "closingA": "On September 7, 2025, Carlo Acutis was officially declared",
       "closingB": "a Saint of the Catholic Church."
     },
     "yearAD": "AD",
@@ -1645,8 +1645,10 @@
       "aria": "His Story Continues",
       "body": "Carlo's life may have been short, but his impact continues to grow every day. Through the miracles recognized by the Church and the millions of people inspired by his example, Carlo reminds us that holiness isn't only for a few people. It's something every one of us is called to.",
       "canonizedLabel": "CANONIZED",
-      "canonizedDate": "APRIL 27, 2025",
+      "canonizedDate": "SEPTEMBER 7, 2025",
       "canonizedNote": "The first millennial saint",
+      "photo0Alt": "Photo honoring Carlo Acutis's legacy",
+      "photo1Alt": "Photo honoring Carlo Acutis's legacy",
       "quote": "All people are born as originals, but many die as photocopies.",
       "author": "Carlo Acutis"
     },

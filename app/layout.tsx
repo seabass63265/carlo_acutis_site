@@ -34,24 +34,24 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://friendsofstcarloacutis.com"),
   title: {
-    default: "Friends of Carlo",
-    template: "%s | Friends of Carlo",
+    default: "Friends of St. Carlo Acutis",
+    template: "%s | Friends of St. Carlo Acutis",
   },
   description:
     "Building a global community of youth, faith, technology & service — inspiring a new generation to encounter Christ through the example of St. Carlo Acutis.",
   keywords: ["Carlo Acutis", "Catholic", "youth", "digital evangelization", "Eucharistic miracles", "faith"],
   openGraph: {
-    title: "Friends of Carlo",
+    title: "Friends of St. Carlo Acutis",
     description:
       "Building a global community of youth, faith, technology & service — inspiring a new generation to encounter Christ through the example of St. Carlo Acutis.",
     url: "https://friendsofstcarloacutis.com",
-    siteName: "Friends of Carlo",
+    siteName: "Friends of St. Carlo Acutis",
     images: [{ url: "/foc-logo-halo.png", width: 2000, height: 2000 }],
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Friends of Carlo",
+    title: "Friends of St. Carlo Acutis",
     description:
       "Building a global community of youth, faith, technology & service — inspiring a new generation to encounter Christ through the example of St. Carlo Acutis.",
     images: ["/foc-logo-halo.png"],

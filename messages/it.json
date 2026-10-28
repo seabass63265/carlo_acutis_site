@@ -9,7 +9,7 @@
     "skip": "Salta →",
     "menuToggle": "Apri o chiudi il menu di navigazione",
     "changeLanguage": "Cambia lingua",
-    "brand": "Friends of Carlo",
+    "brand": "Friends of St. Carlo Acutis",
     "tagline": "Costruire una comunità globale di giovani, fede, tecnologia e servizio"
   },
   "footer": {
@@ -32,12 +32,12 @@
     "miracleArchive": "Archivio dei miracoli",
     "prayerRequests": "Richieste di preghiera",
     "speakingRequests": "Richieste di interventi",
-    "copyright": "© {year} Friends of Carlo. Tutti i diritti riservati.",
+    "copyright": "© {year} Friends of St. Carlo Acutis. Tutti i diritti riservati.",
     "privacy": "Informativa sulla privacy",
     "terms": "Condizioni d'uso",
     "accessibility": "Accessibilità",
     "changeLanguage": "🌐 Cambia lingua",
-    "brand": "Friends of Carlo"
+    "brand": "Friends of St. Carlo Acutis"
   },
   "contact": {
     "title": "Contatti",
@@ -681,8 +681,10 @@
       "aria": "La sua storia continua",
       "body": "La vita di Carlo può essere stata breve, ma il suo impatto continua a crescere ogni giorno. Attraverso i miracoli riconosciuti dalla Chiesa e i milioni di persone ispirate dal suo esempio, Carlo ci ricorda che la santità non è riservata a pochi. È una chiamata che riguarda ciascuno di noi.",
       "canonizedLabel": "CANONIZZATO",
-      "canonizedDate": "27 APRILE 2025",
+      "canonizedDate": "7 SETTEMBRE 2025",
       "canonizedNote": "Il primo santo millennial",
+      "photo0Alt": "L'eredità di Carlo Acutis",
+      "photo1Alt": "L'eredità di Carlo Acutis",
       "quote": "Tutti nascono come originali, ma molti muoiono come fotocopie.",
       "author": "Carlo Acutis"
     },
@@ -837,10 +839,10 @@
         },
         {
           "event": "Carlo viene canonizzato",
-          "detail": "27 aprile, Roma"
+          "detail": "7 settembre, Roma"
         }
       ],
-      "closingA": "Il 27 aprile 2025, Carlo Acutis è stato ufficialmente dichiarato",
+      "closingA": "Il 7 settembre 2025, Carlo Acutis è stato ufficialmente dichiarato",
       "closingB": "santo della Chiesa cattolica."
     },
     "heroTitle": "{count} miracoli",

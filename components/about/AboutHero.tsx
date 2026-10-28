@@ -19,7 +19,7 @@ const CASCADE = [
 const MAIN = [
   "/about-us/aboutus25.jpeg",
   "/about-us/aboutus22.JPG",
-  "/about-us/aboutus26.jpeg",
+  "/about-us/newaboutus.png",
 ];
 
 const THUMB_W   = 150;

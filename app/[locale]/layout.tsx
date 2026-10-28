@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -13,12 +12,9 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export const metadata: Metadata = {
-  title: {
-    default: "Friends of Carlo",
-    template: "%s | Friends of Carlo",
-  },
-};
+// Title default/template already come from the root app/layout.tsx; redefining
+// the same pair here made every untitled page's <title> render twice
+// ("Friends of St. Carlo Acutis | Friends of St. Carlo Acutis").
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

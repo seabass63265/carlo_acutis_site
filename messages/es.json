@@ -9,7 +9,7 @@
     "skip": "Omitir →",
     "menuToggle": "Abrir u ocultar el menú de navegación",
     "changeLanguage": "Cambiar idioma",
-    "brand": "Friends of Carlo",
+    "brand": "Friends of St. Carlo Acutis",
     "tagline": "Construyendo una comunidad global de jóvenes, fe, tecnología y servicio"
   },
   "footer": {
@@ -32,12 +32,12 @@
     "miracleArchive": "Archivo de milagros",
     "prayerRequests": "Peticiones de oración",
     "speakingRequests": "Solicitudes de charlas",
-    "copyright": "© {year} Friends of Carlo. Todos los derechos reservados.",
+    "copyright": "© {year} Friends of St. Carlo Acutis. Todos los derechos reservados.",
     "privacy": "Política de privacidad",
     "terms": "Términos de uso",
     "accessibility": "Accesibilidad",
     "changeLanguage": "🌐 Cambiar idioma",
-    "brand": "Friends of Carlo"
+    "brand": "Friends of St. Carlo Acutis"
   },
   "contact": {
     "titleLine1": "HABLEMOS",
@@ -689,10 +689,10 @@
         },
         {
           "event": "Carlo es canonizado",
-          "detail": "27 de abril, Roma"
+          "detail": "7 de septiembre, Roma"
         }
       ],
-      "closingA": "El 27 de abril de 2025, Carlo Acutis fue declarado oficialmente",
+      "closingA": "El 7 de septiembre de 2025, Carlo Acutis fue declarado oficialmente",
       "closingB": "santo de la Iglesia católica."
     },
     "yearAD": "d. C.",
@@ -1645,8 +1645,10 @@
       "aria": "Su historia continúa",
       "body": "La vida de Carlo pudo ser breve, pero su impacto sigue creciendo cada día. A través de los milagros reconocidos por la Iglesia y de los millones de personas inspiradas por su ejemplo, Carlo nos recuerda que la santidad no es solo para unos pocos. Es algo a lo que todos estamos llamados.",
       "canonizedLabel": "CANONIZADO",
-      "canonizedDate": "27 DE ABRIL DE 2025",
+      "canonizedDate": "7 DE SEPTIEMBRE DE 2025",
       "canonizedNote": "El primer santo millennial",
+      "photo0Alt": "El legado de Carlo Acutis",
+      "photo1Alt": "El legado de Carlo Acutis",
       "quote": "Todas las personas nacen como originales, pero muchas mueren como fotocopias.",
       "author": "Carlo Acutis"
     },
