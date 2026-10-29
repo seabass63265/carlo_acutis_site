@@ -31,6 +31,23 @@ describe("isValidAccessToken", () => {
     expect(isValidAccessToken("b".repeat(24))).toBe(false);
     expect(isValidAccessToken("a".repeat(23))).toBe(false);
   });
+
+  it("rejects a configured secret containing standard-base64 characters (+, /, =), which query-string parsing would mangle", async () => {
+    // Regression test: openssl rand -base64 can produce "+", "/", or "="
+    // padding. URLSearchParams decodes a literal "+" as a space, so such a
+    // token could never match itself once round-tripped through a browser
+    // URL — it would always 404 with no indication why. Reject it outright
+    // at config-read time instead.
+    process.env.DONATE_PRIVATE_ACCESS_TOKEN = "abcdefgh+ijklmnop/qrstuv==";
+    const { isValidAccessToken } = await import("./accessGate");
+    expect(isValidAccessToken("abcdefgh+ijklmnop/qrstuv==")).toBe(false);
+  });
+
+  it("accepts a base64url-safe configured secret (the recommended format)", async () => {
+    process.env.DONATE_PRIVATE_ACCESS_TOKEN = "abcdefgh-ijklmnop_qrstuv12";
+    const { isValidAccessToken } = await import("./accessGate");
+    expect(isValidAccessToken("abcdefgh-ijklmnop_qrstuv12")).toBe(true);
+  });
 });
 
 describe("hasDonationAccess", () => {

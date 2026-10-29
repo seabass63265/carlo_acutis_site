@@ -12,9 +12,39 @@ import { timingSafeEqual, randomBytes } from "node:crypto";
 export const DONATION_ACCESS_COOKIE = "donate_access";
 const COOKIE_MAX_AGE_SECONDS = 60 * 60 * 24; // 24 hours per grant
 
+// Query-string values go through URLSearchParams on the way in, which
+// decodes a literal "+" as a space (application/x-www-form-urlencoded
+// behavior — not a bug, just a mismatch with raw base64's alphabet). A
+// token containing "+", "/", or "=" (standard base64, e.g. from
+// `openssl rand -base64`) will silently fail to match itself once it's
+// round-tripped through a browser address bar and our query-string parser,
+// with no error anywhere — it just always 404s. Requiring a URL-safe
+// (base64url) token here closes that off entirely rather than relying on
+// everyone remembering to percent-encode it correctly.
+const URL_SAFE_TOKEN_PATTERN = /^[A-Za-z0-9_-]+$/;
+let warnedAboutUnsafeToken = false;
+
 function getAccessToken(): string | null {
   const token = process.env.DONATE_PRIVATE_ACCESS_TOKEN?.trim();
-  return token && token.length >= 16 ? token : null;
+  if (!token || token.length < 16) return null;
+
+  if (!URL_SAFE_TOKEN_PATTERN.test(token)) {
+    if (!warnedAboutUnsafeToken) {
+      warnedAboutUnsafeToken = true;
+      console.error(
+        "DONATE_PRIVATE_ACCESS_TOKEN contains characters outside [A-Za-z0-9_-] " +
+          "(likely standard base64's +, /, or = padding). Query-string parsing " +
+          "decodes a literal \"+\" as a space, so this token can never match " +
+          "itself when pasted into a URL — the preview-access link will always " +
+          "404. Regenerate it as base64url instead, e.g.: " +
+          'node -e "console.log(require(\'crypto\').randomBytes(24).toString(\'base64url\'))" ' +
+          "and update DONATE_PRIVATE_ACCESS_TOKEN in Vercel, then redeploy.",
+      );
+    }
+    return null;
+  }
+
+  return token;
 }
 
 function timingSafeStringEqual(a: string, b: string): boolean {
