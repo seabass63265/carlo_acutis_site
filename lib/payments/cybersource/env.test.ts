@@ -51,4 +51,28 @@ describe("getCybersourceCredentials", () => {
     const { getCybersourceCredentials } = await import("./env");
     expect(getCybersourceCredentials().host).toBe("api.cybersource.com");
   });
+
+  it("rejects a shared secret containing an embedded line break (multi-line paste)", async () => {
+    process.env.BOFA_MERCHANT_ID = "m";
+    process.env.BOFA_KEY_ID = "k";
+    process.env.BOFA_SHARED_SECRET = "YWJjZGVm\nZ2hpams=";
+    const { getCybersourceCredentials, PaymentConfigError } = await import("./env");
+    expect(() => getCybersourceCredentials()).toThrow(PaymentConfigError);
+  });
+
+  it("rejects a shared secret containing a non-base64 character", async () => {
+    process.env.BOFA_MERCHANT_ID = "m";
+    process.env.BOFA_KEY_ID = "k";
+    process.env.BOFA_SHARED_SECRET = "not valid base64!!";
+    const { getCybersourceCredentials, PaymentConfigError } = await import("./env");
+    expect(() => getCybersourceCredentials()).toThrow(PaymentConfigError);
+  });
+
+  it("accepts a well-formed base64 shared secret, padded or not", async () => {
+    process.env.BOFA_MERCHANT_ID = "m";
+    process.env.BOFA_KEY_ID = "k";
+    process.env.BOFA_SHARED_SECRET = "YWJjZGVmZ2hpams=";
+    const { getCybersourceCredentials } = await import("./env");
+    expect(getCybersourceCredentials().sharedSecret).toBe("YWJjZGVmZ2hpams=");
+  });
 });

@@ -63,6 +63,37 @@ function requireCredential(name: string, value: string | undefined): string {
   return value.trim();
 }
 
+// Standard base64 (what the Business Center issues the shared secret as),
+// optional padding.
+const BASE64_PATTERN = /^[A-Za-z0-9+/]+={0,2}$/;
+
+// httpSignature.ts base64-decodes this value and uses the raw bytes as the
+// HMAC-SHA256 key. A value that isn't valid base64 — or that silently
+// re-encodes to something different (e.g. a stray character, a line break
+// from a multi-line paste into an env var UI, or truncation) — produces a
+// *different* signing key than the one Cybersource has on file, with no
+// local error: the request goes out, is well-formed, and Cybersource
+// rejects it with a generic 401 "Authentication Failed" that looks
+// identical to a genuinely wrong/inactive credential. Catching malformed
+// base64 here turns that into an immediate, specific local error instead.
+function requireBase64Credential(name: string, value: string | undefined): string {
+  const trimmed = requireCredential(name, value);
+  // Character-set check only — deliberately NOT a strict re-encode/compare
+  // round-trip, since valid base64 may omit padding ("=") and Node's
+  // decoder re-adds it on re-encode, which would make a correctly-copied,
+  // merely unpadded secret look "corrupted" when it isn't. This still
+  // catches the real-world failure modes: embedded whitespace/line breaks
+  // from a multi-line paste, or stray non-base64 characters.
+  if (!BASE64_PATTERN.test(trimmed)) {
+    throw new PaymentConfigError(
+      `${name} does not look like valid base64 — it was likely corrupted when pasted ` +
+        "(stray character or embedded line break). Re-copy it exactly from the Business " +
+        "Center and redeploy.",
+    );
+  }
+  return trimmed;
+}
+
 let cached: CybersourceCredentials | null = null;
 
 export function getCybersourceCredentials(): CybersourceCredentials {
@@ -71,7 +102,7 @@ export function getCybersourceCredentials(): CybersourceCredentials {
   const environment = resolveEnvironment();
   const merchantId = requireCredential("BOFA_MERCHANT_ID", process.env.BOFA_MERCHANT_ID);
   const keyId = requireCredential("BOFA_KEY_ID", process.env.BOFA_KEY_ID);
-  const sharedSecret = requireCredential("BOFA_SHARED_SECRET", process.env.BOFA_SHARED_SECRET);
+  const sharedSecret = requireBase64Credential("BOFA_SHARED_SECRET", process.env.BOFA_SHARED_SECRET);
 
   if (environment === "production" && process.env.BOFA_PRODUCTION_READY !== "true") {
     // Deliberate extra opt-in, independent of BOFA_ENVIRONMENT. This
