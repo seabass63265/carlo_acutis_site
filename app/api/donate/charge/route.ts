@@ -19,7 +19,6 @@ import {
 } from "@/lib/payments/validation";
 import { parseDonationAmountToCents, DONATION_CURRENCY, InvalidAmountError } from "@/lib/payments/money";
 import { sendDonationReceipt } from "@/lib/payments/receipt";
-import { hasDonationAccess } from "@/lib/payments/accessGate";
 
 function statusToHttp(status: DonationRecord["status"]): number {
   switch (status) {
@@ -34,10 +33,6 @@ function statusToHttp(status: DonationRecord["status"]): number {
 }
 
 export async function POST(request: NextRequest) {
-  if (!(await hasDonationAccess())) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
-  }
-
   if (!checkOrigin(request)) {
     return NextResponse.json({ error: "Invalid origin" }, { status: 403 });
   }

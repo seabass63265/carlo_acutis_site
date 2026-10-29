@@ -6,7 +6,6 @@ import { Link } from "@/i18n/navigation";
 import DonorsWall from "@/components/donate/DonorsWall";
 import DonateHero from "@/components/donate/DonateHero";
 import DonationForm from "@/components/donate/DonationForm";
-import { hasDonationAccess } from "@/lib/payments/accessGate";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("donate.meta");
@@ -269,9 +268,7 @@ function GivingTiers() {
 }
 
 /* ─── One-Time Donation ──────────────────────────────────────────────── */
-async function OneTimeDonation() {
-  const accessGranted = await hasDonationAccess();
-
+function OneTimeDonation() {
   return (
     <section className="py-24 px-6 bg-white" id="one-time-donation">
       <div className="max-w-xl mx-auto">
@@ -288,20 +285,7 @@ async function OneTimeDonation() {
           </AnimateIn>
         </div>
         <AnimateIn delay={0.15}>
-          {accessGranted ? (
-            <DonationForm />
-          ) : (
-            <div className="bg-cream border border-cream-dark rounded-sm p-10 text-center">
-              <p className="font-serif text-2xl text-navy mb-3">Online donations coming soon.</p>
-              <p className="text-navy/60 text-sm">
-                In the meantime, please visit our{" "}
-                <Link href="/contact" className="text-gold hover:text-gold-dark underline underline-offset-2">
-                  contact page
-                </Link>{" "}
-                for other ways to give.
-              </p>
-            </div>
-          )}
+          <DonationForm />
         </AnimateIn>
       </div>
     </section>

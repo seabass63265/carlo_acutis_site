@@ -5,16 +5,8 @@ import { createCaptureContext } from "@/lib/payments/cybersource/captureContext"
 import { PaymentConfigError } from "@/lib/payments/cybersource/env";
 import { DonationStoreUnconfiguredError } from "@/lib/payments/store";
 import { checkOrigin, enforceRateLimit } from "@/lib/payments/requestGuard";
-import { hasDonationAccess } from "@/lib/payments/accessGate";
 
 export async function POST(request: NextRequest) {
-  // Defense in depth: even if someone finds this URL directly (not just
-  // through the gated page), it won't work without the same private-access
-  // cookie the donation page itself requires.
-  if (!(await hasDonationAccess())) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
-  }
-
   if (!checkOrigin(request)) {
     return NextResponse.json({ error: "Invalid origin" }, { status: 403 });
   }
