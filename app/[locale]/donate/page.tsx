@@ -270,17 +270,11 @@ function GivingTiers() {
 
 /* ─── One-Time Donation ──────────────────────────────────────────────── */
 async function OneTimeDonation() {
-  const [accessGranted, t] = await Promise.all([hasDonationAccess(), getTranslations("donate.photos")]);
-
-  const photos = [
-    { src: photoStripSources[0], alt: t("photo1") },
-    { src: photoStripSources[1], alt: t("photo2") },
-    { src: photoStripSources[2], alt: t("photo3") },
-  ];
+  const accessGranted = await hasDonationAccess();
 
   return (
     <section className="py-24 px-6 bg-white" id="one-time-donation">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-xl mx-auto">
         <div className="text-center mb-12">
           <AnimateIn>
             <p className="text-gold-dark text-[10px] font-semibold tracking-[0.25em] uppercase mb-5">
@@ -293,33 +287,22 @@ async function OneTimeDonation() {
             </h2>
           </AnimateIn>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          <AnimateIn direction="left" delay={0.1}>
-            <div className="grid grid-cols-3 lg:grid-cols-1 gap-4">
-              {photos.map(({ src, alt }) => (
-                <div key={src} className="relative aspect-[4/5] overflow-hidden rounded-xl">
-                  <Image src={src} alt={alt} fill sizes="(min-width: 1024px) 20vw, 33vw" className="object-cover" />
-                </div>
-              ))}
+        <AnimateIn delay={0.15}>
+          {accessGranted ? (
+            <DonationForm />
+          ) : (
+            <div className="bg-cream border border-cream-dark rounded-sm p-10 text-center">
+              <p className="font-serif text-2xl text-navy mb-3">Online donations coming soon.</p>
+              <p className="text-navy/60 text-sm">
+                In the meantime, please visit our{" "}
+                <Link href="/contact" className="text-gold hover:text-gold-dark underline underline-offset-2">
+                  contact page
+                </Link>{" "}
+                for other ways to give.
+              </p>
             </div>
-          </AnimateIn>
-          <AnimateIn delay={0.15}>
-            {accessGranted ? (
-              <DonationForm />
-            ) : (
-              <div className="bg-cream border border-cream-dark rounded-sm p-10 text-center">
-                <p className="font-serif text-2xl text-navy mb-3">Online donations coming soon.</p>
-                <p className="text-navy/60 text-sm">
-                  In the meantime, please visit our{" "}
-                  <Link href="/contact" className="text-gold hover:text-gold-dark underline underline-offset-2">
-                    contact page
-                  </Link>{" "}
-                  for other ways to give.
-                </p>
-              </div>
-            )}
-          </AnimateIn>
-        </div>
+          )}
+        </AnimateIn>
       </div>
     </section>
   );
